@@ -34,6 +34,10 @@ import ntumc_pronouns
 HERE = Path(__file__).resolve().parent
 MIN_FAMILIES = 5
 MIN_AREAS = 3
+#: Haspelmath's sample is almost all Eurasian, so the macroarea test cannot be
+#: met; indefinite series are admitted on families alone
+MIN_FAMILIES_SERIES = 5
+FUNCTIONS = {"SK", "SU", "IRR", "Q", "COND", "INEG", "DNEG", "COMP", "FC"}
 
 CASES = {"Subj", "Obj", "Poss"}
 
@@ -74,6 +78,15 @@ WORDS = {
     "Refl": "reflexive",
     "Recp": "reciprocal",
     "Oth": "other",
+    "SK": "specific known",
+    "SU": "specific unknown",
+    "IRR": "irrealis non-specific",
+    "Q": "question",
+    "COND": "conditional",
+    "INEG": "indirect negation",
+    "DNEG": "direct negation",
+    "COMP": "comparative",
+    "FC": "free choice",
     "Fml": "formal",
     "Infml": "informal",
     "Pol": "polite",
@@ -121,6 +134,9 @@ def label(code: str) -> str:
 def define(code: str) -> str:
     """A definition; personal pronouns say who they refer to and how many."""
     parts = code.split(";")
+    if set(code.split("+")) <= FUNCTIONS:
+        uses = ", ".join(WORDS[f] for f in code.split("+"))
+        return f"an indefinite pronoun series used for: {uses} (Haspelmath's functions)"
     if parts and parts[0] in REFERENTS:
         text = f"a pronoun referring to {REFERENTS[parts[0]]}"
         rest = parts[1:]
@@ -177,6 +193,15 @@ def pos_of(code: str, ntumc: dict[str, list[str]], extra_pos: dict[str, str]) ->
     return next((p for p in "nar" if p in found), extra_pos.get(code) or "n")
 
 
+def haspelmath_concepts() -> set[str]:
+    """Indefinite series lexicalized in at least MIN_FAMILIES_SERIES families."""
+    families: dict[str, set[str]] = defaultdict(set)
+    with (HERE / "data" / "haspelmath-series.tsv").open(encoding="utf8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            families[row["code"]].add(row["family"])
+    return {c for c, f in families.items() if len(f) >= MIN_FAMILIES_SERIES}
+
+
 def main() -> None:
     """Write data/concepts.tsv."""
     db = Path(sys.argv[1]) if len(sys.argv) > 1 else ntumc_pronouns.DEFAULT_DB
@@ -191,7 +216,8 @@ def main() -> None:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     extra = {row["code"]: row["source"] for row in rows}
     extra_pos = {row["code"]: row["pos"] for row in rows}
-    codes = set(ntumc) | from_parabank | set(extra)
+    from_haspelmath = haspelmath_concepts() - set(ntumc)
+    codes = set(ntumc) | from_parabank | from_haspelmath | set(extra)
     with (HERE / "data" / "concepts.tsv").open("w", encoding="utf8") as out:
         out.write(
             "code\tpos\tlabel\tdefinition\tsource\tntumc\tparabank_languages"
@@ -204,6 +230,8 @@ def main() -> None:
                 if c in ntumc
                 else "Parabank"
                 if c in from_parabank
+                else "Haspelmath"
+                if c in from_haspelmath
                 else extra[c]
             )
             out.write(

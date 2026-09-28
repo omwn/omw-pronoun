@@ -9,6 +9,7 @@ to the Collaborative Interlingual Index.
 uv run ntumc_pronouns.py     # NTUMC pronoun synsets -> data/ntumc-pronouns.tsv
 uv run parabank_words.py     # Parabank paradigms   -> data/parabank-lexemes.tsv
 uv run tufs_pronouns.py      # TUFS pronouns        -> data/tufs-pronouns.tsv
+uv run haspelmath_series.py  # indefinite series    -> data/haspelmath-series.tsv
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
 uv run build.py              # wn collection        -> release/omw-pronoun-0.1(.tar.xz)
 uv run --with pytest --with langcodes --with language_data pytest
@@ -69,6 +70,15 @@ in UD (PRON/DET/ADV): pronouns are `n` (`noun.pronoun`), determiners `a`
 (`adj.pronoun`: *this*, *which*, Japanese *kono*) and pro-adverbs `r`
 (`adv.pronoun`: *kō* "in this way"). An entry has one part of speech, so *this* the
 determiner and *this* the pronoun are separate entries.
+
+**Indefinites** (`haspelmath_series.py`): Haspelmath's (1997) indefinite-pronoun
+series (CLDF `cldf-datasets/haspelmathindefpro`, CC BY 4.0, 40 languages) are
+function sets over his nine functions (`SK` specific known ... `FC` free choice),
+which are also feature synsets. The English-based types are unions of them, from
+his English data: `Asrt` (some-) = SK+SU+IRR+Q+COND, `Elec` (any-) =
+Q+COND+INEG+DNEG+COMP+FC, `Neg` (no-) = DNEG. His sample is almost all Eurasian,
+so series concepts are admitted on >= 5 families alone (4 concepts); their markers
+(German *etwas*, *irgend*) are entries tagged `morph=series`.
 
 The hierarchy is computed from the features: a concept's hypernyms are its closest
 generalizations (`1e;Du` is under `1;Du` and `1e;Pl`).

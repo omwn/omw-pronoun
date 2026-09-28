@@ -155,7 +155,15 @@ SLOTS = {
     "number": {"Sg", "Du", "Tr", "Pl", "Gpl"},
     "gender": {"M", "F", "N"},
 }
-EXPAND = {"1": {"1e", "1i"}, "Pl": {"Du", "Tr", "Gpl"}}
+EXPAND = {
+    "1": {"1e", "1i"},
+    "Pl": {"Du", "Tr", "Gpl"},
+    # the English-based indefinite types are unions of Haspelmath's functions,
+    # as his English data shows: some-, any- (with ever-), no-
+    "Asrt": {"SK", "SU", "IRR", "Q", "COND"},
+    "Elec": {"Q", "COND", "INEG", "DNEG", "COMP", "FC"},
+    "Neg": {"DNEG"},
+}
 
 
 def features(code: str) -> dict[str, frozenset[str]]:
@@ -189,7 +197,25 @@ CATEGORIES = {
         "Det",
         "NStd",
     },
-    "type": {"Asrt", "Elec", "Neg", "Univ", "Int", "Refl", "Recp", "Oth"},
+    "type": {
+        "Asrt",
+        "Elec",
+        "Neg",
+        "Univ",
+        "Int",
+        "Refl",
+        "Recp",
+        "Oth",
+        "SK",
+        "SU",
+        "IRR",
+        "Q",
+        "COND",
+        "INEG",
+        "DNEG",
+        "COMP",
+        "FC",
+    },
     "formality": {"Fml", "Infml"},
     "politeness": {"Pol", "Hon", "NHon"},
     "proximity": {"Prox", "Med", "Dist", "Rem"},
@@ -380,6 +406,24 @@ def add_parabank(languages: dict[str, Language], codes: set[str]) -> None:
             case, form = variant.split(":", 1)
             tags = [("case", case)] + ([("morph", "bound")] if bound else [])
             entry.forms.setdefault(form, []).extend(tags)
+
+
+def add_haspelmath(languages: dict[str, Language], codes: set[str]) -> None:
+    """Add Haspelmath's indefinite series markers for the admitted series concepts.
+
+    A marker (German *irgend-*) is not a whole word, so its entry is tagged
+    ``morph=series``.
+    """
+    with (DATA / "haspelmath-series.tsv").open(encoding="utf8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            if row["code"] not in codes or not row["iso639_3"]:
+                continue
+            tag = bcp47(row["iso639_3"])
+            language = languages.setdefault(tag, Language(tag, row["language"]))
+            entry = language.entry(row["marker"], row["code"])
+            if ("morph", "series") not in entry.tags:
+                entry.tags.append(("morph", "series"))
+            entry.senses[row["code"]].add(f"Haspelmath 1997 {row['construction']}")
 
 
 def add_tufs(languages: dict[str, Language]) -> None:
@@ -689,6 +733,7 @@ def main() -> None:
     add_ntumc(languages, codes)
     add_extra(languages, codes)
     add_parabank(languages, codes)
+    add_haspelmath(languages, codes)
     add_tufs(languages)
     remap(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}

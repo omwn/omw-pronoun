@@ -1,0 +1,141 @@
+code	construction	glottocode	iso639_3	language	family	macroarea	marker
+IRR+Q+COND+INEG+DNEG+COMP+FC	apam1237--pis	apam1237		Ancash Quechua	Quechuan		-pis
+SK+SU	apam1237-nonebarewh	apam1237		Ancash Quechua	Quechuan		(none; bare WH)
+SU+IRR	basq1248--bait	basq1248	eus	Basque	Basque	Eurasia	-bait
+SK	basq1248-bat	basq1248	eus	Basque	Basque	Eurasia	bat
+COMP+FC	basq1248-edo--nahi	basq1248	eus	Basque	Basque	Eurasia	edo-/-nahi
+Q+COND+INEG+DNEG+COMP	basq1248-i-	basq1248	eus	Basque	Basque	Eurasia	i-
+COND+INEG+COMP+FC	bulg1262--toidae	bulg1262	bul	Bulgarian	Indo-European	Eurasia	-toidae
+INEG+DNEG	bulg1262-ni-	bulg1262	bul	Bulgarian	Indo-European	Eurasia	ni-
+SK+SU+IRR+Q+COND	bulg1262-nja-	bulg1262	bul	Bulgarian	Indo-European	Eurasia	nja-
+IRR+Q+COND+INEG+COMP+FC	dutc1256-danook	dutc1256	nld	Dutch	Indo-European	Eurasia	dan ook
+Q+COND+INEG+COMP	dutc1256-enig	dutc1256	nld	Dutch	Indo-European	Eurasia	enig
+SK+SU+IRR+Q+COND+INEG	dutc1256-iets	dutc1256	nld	Dutch	Indo-European	Eurasia	iets
+DNEG	dutc1256-niets	dutc1256	nld	Dutch	Indo-European	Eurasia	niets
+Q+INEG+DNEG+COMP	finn1318--kaan	finn1318	fin	Finnish	Uralic	Eurasia	-kaan
+SU+IRR+Q+COND	finn1318--kin	finn1318	fin	Finnish	Uralic	Eurasia	-kin
+SK	finn1318-eras	finn1318	fin	Finnish	Uralic	Eurasia	eräs
+COND+COMP+FC	finn1318-hyvansa	finn1318	fin	Finnish	Uralic	Eurasia	hyvänsä
+INEG+DNEG+COMP+FC	haus1257-koo	haus1257	hau	Hausa	Afro-Asiatic	Africa	koo
+SK+SU+IRR+Q+COND	haus1257-wani	haus1257	hau	Hausa	Afro-Asiatic	Africa	wani
+INEG+DNEG	hebr1245-afsum	hebr1245	heb	Hebrew	Afro-Asiatic	Eurasia	af/sum
+Q+COND+INEG+DNEG	hebr1245-is	hebr1245	heb	Hebrew	Afro-Asiatic	Eurasia	is
+COMP+FC	hebr1245-kol	hebr1245	heb	Hebrew	Afro-Asiatic	Eurasia	kol
+SK+SU+IRR+Q+COND+INEG	hebr1245-sehu	hebr1245	heb	Hebrew	Afro-Asiatic	Eurasia	sehu
+IRR+Q+COND+INEG+DNEG+COMP+FC	hind1269-bhii	hind1269	hin	Hindi/Urdu	Indo-European	Eurasia	bhii
+SK+SU+IRR+Q+COND+INEG+DNEG	hind1269-koii	hind1269	hin	Hindi/Urdu	Indo-European	Eurasia	koii
+COND+INEG+COMP+FC	hung1274-akar-bar-	hung1274	hun	Hungarian	Uralic	Eurasia	akar-/bar-
+DNEG	hung1274-sem	hung1274	hun	Hungarian	Uralic	Eurasia	sem
+SK+SU+IRR+Q+COND+INEG	hung1274-vala-	hung1274	hun	Hungarian	Uralic	Eurasia	vala-
+SK+SU+IRR+Q+COND	icel1247-ein-	icel1247	isl	Icelandic	Indo-European	Eurasia	ein-
+DNEG	icel1247-enginn	icel1247	isl	Icelandic	Indo-European	Eurasia	enginn
+INEG+DNEG	icel1247-n-	icel1247	isl	Icelandic	Indo-European	Eurasia	n-
+Q+INEG+COMP	icel1247-nokkur	icel1247	isl	Icelandic	Indo-European	Eurasia	nokkur
+FC	icel1247-semer	icel1247	isl	Icelandic	Indo-European	Eurasia	sem er
+Q+COND+INEG+DNEG+COMP+FC	iris1253-arbithaon	iris1253	gle	Irish	Indo-European	Eurasia	ar bith /aon
+Q+COND+INEG+DNEG+COMP	iris1253-dada	iris1253	gle	Irish	Indo-European	Eurasia	dada
+SK+SU+IRR	iris1253-eigin	iris1253	gle	Irish	Indo-European	Eurasia	eigin
+COMP+FC	ital1282--unque	ital1282	ita	Italian	Indo-European	Eurasia	-unque
+Q+INEG+DNEG	ital1282-nessuno	ital1282	ita	Italian	Indo-European	Eurasia	nessuno
+SK+SU+IRR+Q+COND+INEG	ital1282-qualche	ital1282	ita	Italian	Indo-European	Eurasia	qualche
+SK+SU	kaza1248-alde-	kaza1248	kaz	Kazakh	Turkic	Eurasia	älde-
+SK+SU+IRR+Q+COND+INEG	kaza1248-bir	kaza1248	kaz	Kazakh	Turkic	Eurasia	bir
+Q+COND+COMP+FC	kaza1248-bolsada	kaza1248	kaz	Kazakh	Turkic	Eurasia	bolsa da
+DNEG	kaza1248-es	kaza1248	kaz	Kazakh	Turkic	Eurasia	es
+FC	kore1280--na-tunci	kore1280	kor	Korean	Koreanic	Eurasia	-na/-tunci
+INEG+DNEG+COMP	kore1280--to	kore1280	kor	Korean	Koreanic	Eurasia	-to
+SK+SU+IRR+Q+COND+INEG	kore1280-barewh-nka	kore1280	kor	Korean	Koreanic	Eurasia	bare WH/-nka
+SK	lati1261--dam	lati1261	lat	Latin	Indo-European	Eurasia	-dam
+FC	lati1261--libet	lati1261	lat	Latin	Indo-European	Eurasia	-libet
+Q+COND+INEG+COMP	lati1261--quam	lati1261	lat	Latin	Indo-European	Eurasia	-quam
+FC	lati1261--vis	lati1261	lat	Latin	Indo-European	Eurasia	-vis
+SU+IRR+Q+COND	lati1261-ali-	lati1261	lat	Latin	Indo-European	Eurasia	ali-
+DNEG	lati1261-n-	lati1261	lat	Latin	Indo-European	Eurasia	n-
+INEG+COMP+FC	latv1249-jeb	latv1249	lav	Latvian	Indo-European	Eurasia	jeb
+SK+SU+IRR+Q+COND	latv1249-kaut	latv1249	lav	Latvian	Indo-European	Eurasia	kaut
+DNEG	latv1249-ne-	latv1249	lav	Latvian	Indo-European	Eurasia	ne-
+SK+SU+IRR+Q+COND	lezg1247-sawhjatani	lezg1247	lez	Lezgian	Nakh-Daghestanian	Eurasia	sa WH jat'ani
+INEG+DNEG	lezg1247-sax-ni	lezg1247	lez	Lezgian	Nakh-Daghestanian	Eurasia	sa X-ni
+COMP+FC	lezg1247-xajitani	lezg1247	lez	Lezgian	Nakh-Daghestanian	Eurasia	xajit'ani
+COMP+FC	lith1251-bet	lith1251	lit	Lithuanian	Indo-European	Eurasia	bet
+INEG+DNEG	lith1251-joks	lith1251	lit	Lithuanian	Indo-European	Eurasia	joks
+SK	lith1251-kai	lith1251	lit	Lithuanian	Indo-European	Eurasia	kai
+SU+IRR+Q+COND	lith1251-kaz-	lith1251	lit	Lithuanian	Indo-European	Eurasia	kaz-
+DNEG	lith1251-nie-	lith1251	lit	Lithuanian	Indo-European	Eurasia	nie-
+IRR+Q+COND+INEG+COMP	lith1251-nors	lith1251	lit	Lithuanian	Indo-European	Eurasia	nors
+INEG+DNEG+COMP	malt1254-ebda	malt1254	mlt	Maltese	Afro-Asiatic	Eurasia	ebda
+SK+SU+IRR+Q+COND	malt1254-xi	malt1254	mlt	Maltese	Afro-Asiatic	Eurasia	xi
+IRR+Q+COND+INEG+DNEG	mand1415-nonebarewh	mand1415	cmn	Chinese	Sino-Tibetan	Eurasia	(none; bare WH)
+SK+SU	mand1415-nonegenericnouns	mand1415	cmn	Chinese	Sino-Tibetan	Eurasia	(none; generic nouns)
+INEG+DNEG+COMP+FC	mand1415-renhe	mand1415	cmn	Chinese	Sino-Tibetan	Eurasia	renhe
+DNEG	mand1415-yedou	mand1415	cmn	Chinese	Sino-Tibetan	Eurasia	ye/dou
+COND+COMP+FC	mode1248--dhipote	mode1248	ell	Modern Greek	Indo-European	Eurasia	-dhipote
+SU+IRR+Q+COND	mode1248-ka-	mode1248	ell	Modern Greek	Indo-European	Eurasia	ka-
+IRR+Q+COND+INEG+DNEG	mode1248-tipota	mode1248	ell	Modern Greek	Indo-European	Eurasia	tipota
+IRR+Q+COND+INEG+DNEG+COMP	nana1257--daa	nana1257	gld	Nanay	Tungusic	Eurasia	-daa
+FC	nana1257--daaxemaja	nana1257	gld	Nanay	Tungusic	Eurasia	-daa xem aja
+SK+SU	nana1257--nuu	nana1257	gld	Nanay	Tungusic	Eurasia	-nuu
+SK+SU+IRR+Q+COND+INEG+DNEG	nucl1301-bir	nucl1301	tur	Turkish	Turkic	Eurasia	bir
+IRR+Q+COND+INEG+DNEG+COMP+FC	nucl1301-herhangi	nucl1301	tur	Turkish	Turkic	Eurasia	herhangi
+Q+INEG+DNEG	nucl1301-hic	nucl1301	tur	Turkish	Turkic	Eurasia	hiç
+IRR+Q+COND+INEG+COMP	nucl1302--me	nucl1302	kat	Georgian	Kartvelian	Eurasia	-me
+SK+SU	nucl1302--yac	nucl1302	kat	Georgian	Kartvelian	Eurasia	-yac
+DNEG	nucl1302-ara-	nucl1302	kat	Georgian	Kartvelian	Eurasia	ara-
+IRR+Q+COND	nucl1305--aadarun	nucl1305	kan	Kannada	Dravidian	Eurasia	-aadarun
+SU	nucl1305--oo	nucl1305	kan	Kannada	Dravidian	Eurasia	-oo
+INEG+DNEG+COMP+FC	nucl1305--uu	nucl1305	kan	Kannada	Dravidian	Eurasia	-uu
+FC	nucl1643--demo	nucl1643	jpn	Japanese	Japonic	Eurasia	-demo
+SK+SU+IRR+Q+COND	nucl1643--ka	nucl1643	jpn	Japanese	Japonic	Eurasia	-ka
+INEG+DNEG+COMP	nucl1643--mo	nucl1643	jpn	Japanese	Japonic	Eurasia	-mo
+SK+SU	osse1243--doer	osse1243		Ossetic	Indo-European	Eurasia	-doer
+COMP+FC	osse1243--doeriddoer	osse1243		Ossetic	Indo-European	Eurasia	-doeriddoer
+IRR+Q+COND+INEG	osse1243-is-	osse1243		Ossetic	Indo-European	Eurasia	is-
+DNEG	osse1243-ma-ni-	osse1243		Ossetic	Indo-European	Eurasia	ma-/ni-
+Q+COND+INEG+COMP+FC	poli1260--kolwiek	poli1260	pol	Polish	Indo-European	Eurasia	-kolwiek
+SK+SU+IRR+Q+COND+INEG	poli1260--s	poli1260	pol	Polish	Indo-European	Eurasia	-s
+DNEG	poli1260-ni-	poli1260	pol	Polish	Indo-European	Eurasia	ni-
+SK+SU+IRR+Q+COND	port1283-alg-	port1283	por	Portuguese	Indo-European	Eurasia	alg-
+INEG+DNEG	port1283-n-	port1283	por	Portuguese	Indo-European	Eurasia	n-
+SU+IRR+Q+COND+INEG+DNEG+COMP+FC	port1283-qualquer	port1283	por	Portuguese	Indo-European	Eurasia	qualquer
+SK+SU+IRR+Q+COND	roma1327--va	roma1327	ron	Romanian	Indo-European	Eurasia	-va
+INEG+DNEG	roma1327-ni-	roma1327	ron	Romanian	Indo-European	Eurasia	ni-
+COMP+FC	roma1327-ori-	roma1327	ron	Romanian	Indo-European	Eurasia	ori-
+Q+COND+INEG	roma1327-vre-un	roma1327	ron	Romanian	Indo-European	Eurasia	vre-un
+IRR+Q+COND+INEG+COMP	russ1263--libo	russ1263	rus	Russian	Indo-European	Eurasia	-libo
+IRR+Q+COND	russ1263--nibud	russ1263	rus	Russian	Indo-European	Eurasia	-nibud
+SU+IRR+Q+COND	russ1263--to	russ1263	rus	Russian	Indo-European	Eurasia	-to
+COND+INEG+COMP	russ1263-bytonibylo	russ1263	rus	Russian	Indo-European	Eurasia	by to ni bylo
+SK	russ1263-koe-	russ1263	rus	Russian	Indo-European	Eurasia	koe-
+FC	russ1263-ljubojugodno	russ1263	rus	Russian	Indo-European	Eurasia	ljuboj/ugodno
+DNEG	russ1263-ni-	russ1263	rus	Russian	Indo-European	Eurasia	ni-
+Q+COND+INEG+COMP+FC	sout1528-bilo	sout1528	hbs	Serbo-Croatian	Indo-European	Eurasia	bilo
+Q+COND+INEG+COMP	sout1528-i-	sout1528	hbs	Serbo-Croatian	Indo-European	Eurasia	i-
+SK+SU+IRR	sout1528-ne-	sout1528	hbs	Serbo-Croatian	Indo-European	Eurasia	ne-
+DNEG	sout1528-ni-	sout1528	hbs	Serbo-Croatian	Indo-European	Eurasia	ni-
+SK+SU+IRR+Q+COND+INEG	stan1289-algun	stan1289	cat	Catalan	Indo-European	Eurasia	algun
+Q+COND+INEG+DNEG+COMP	stan1289-cap	stan1289	cat	Catalan	Indo-European	Eurasia	cap
+COMP+FC	stan1289-qualsevol	stan1289	cat	Catalan	Indo-European	Eurasia	qualsevol
+COMP+FC	stan1290-nimporte	stan1290	fra	French	Indo-European	Eurasia	n'importe
+Q+COND+INEG+DNEG+COMP	stan1290-personne	stan1290	fra	French	Indo-European	Eurasia	personne
+Q+COND+INEG+DNEG+COMP+FC	stan1290-quecesoit	stan1290	fra	French	Indo-European	Eurasia	que ce soit
+SK+SU+IRR+Q+COND	stan1290-quelque	stan1290	fra	French	Indo-European	Eurasia	quelque
+Q+COND+INEG+DNEG+COMP+FC	stan1293-any	stan1293	eng	English	Indo-European	Eurasia	any
+Q+COND+INEG+DNEG+COMP	stan1293-ever	stan1293	eng	English	Indo-European	Eurasia	ever
+DNEG	stan1293-no	stan1293	eng	English	Indo-European	Eurasia	no
+SK+SU+IRR+Q+COND	stan1293-some	stan1293	eng	English	Indo-European	Eurasia	some
+SK+SU+IRR+Q+COND+INEG	stan1295-etwas	stan1295	deu	German	Indo-European	Eurasia	etwas
+SU+IRR+Q+COND+INEG+COMP+FC	stan1295-irgend	stan1295	deu	German	Indo-European	Eurasia	irgend
+Q+COND+INEG+COMP	stan1295-je	stan1295	deu	German	Indo-European	Eurasia	je
+INEG+COMP+FC	stan1295-jeder	stan1295	deu	German	Indo-European	Eurasia	jeder
+DNEG	stan1295-n-	stan1295	deu	German	Indo-European	Eurasia	n-
+Q+COND+INEG+DNEG+COMP+FC	swah1253-cl-ocl-ote	swah1253	swh	Swahili	Atlantic-Congo	Africa	CL-o Cl-ote
+SK+SU+IRR+Q+COND+INEG+DNEG	swah1253-nonegenericnouns	swah1253	swh	Swahili	Atlantic-Congo	Africa	(none; generic nouns)
+DNEG	swed1254-ingen	swed1254	swe	Swedish	Indo-European	Eurasia	ingen
+SK+SU+IRR+Q+COND+INEG+DNEG+COMP	swed1254-nagon	swed1254	swe	Swedish	Indo-European	Eurasia	nagon
+COMP+FC	swed1254-somhelst	swed1254	swe	Swedish	Indo-European	Eurasia	som helst
+SK+SU+IRR+Q+COND+INEG+DNEG	west2369--i	west2369	pes	Persian	Indo-European	Eurasia	-i
+Q+INEG+DNEG	west2369-hic	west2369	pes	Persian	Indo-European	Eurasia	hic
+INEG+DNEG+COMP+FC	yaku1245--da	yaku1245	sah	Yakut	Turkic	Eurasia	-da
+FC	yaku1245-bayarar	yaku1245	sah	Yakut	Turkic	Eurasia	bayarar
+IRR+Q+COND	yaku1245-eme	yaku1245	sah	Yakut	Turkic	Eurasia	eme
+SK+SU	yaku1245-ere	yaku1245	sah	Yakut	Turkic	Eurasia	ere

@@ -42,3 +42,12 @@ Rem	proximity	remote		77010004-a	ntumc	PronType=Dem|Deixis=Remt	relating to or c
 Men	register	men's speech		77010007-n	ntumc		speech used predominately by men
 Wom	register	women's speech		77010008-n	ntumc		speech used predominately by women
 Arch	register	archaic	i8971		check		NTUMC links PWN's antediluvian ("so extremely old..."): find the sense for words no longer in use
+SK	type	specific known			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the referent is specific and known to the speaker
+SU	type	specific unknown			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the referent is specific but not known to the speaker
+IRR	type	irrealis non-specific			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the referent is non-specific, occurring only in some imagined mental space
+Q	type	question			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the indefinite pronoun occurs in a question
+COND	type	conditional			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the indefinite pronoun occurs in a subordinate conditional clause
+INEG	type	indirect negation			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the indefinite pronoun is in the scope of negation, but not of the same clause
+DNEG	type	direct negation			new	PronType=Neg	an indefinite pronoun function (Haspelmath 1997): the indefinite pronoun is in the scope of negation within the same clause
+COMP	type	comparative			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the indefinite pronoun occurs in the standard of a comparative construction
+FC	type	free choice			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the indefinite pronoun indicates free choice

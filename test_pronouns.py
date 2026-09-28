@@ -89,3 +89,18 @@ def test_closest_hypernyms_only() -> None:
 )
 def test_script(form: str, script: str) -> None:
     assert build.script_of(form) == script
+
+
+def test_english_indefinite_types_are_unions_of_haspelmaths_functions() -> None:
+    # someone (Pers;Sg;Asrt) falls under any series covering all of some-'s uses
+    assert build.subsumes("SK+SU+IRR+Q+COND", "Pers;Sg;Asrt")
+    assert not build.subsumes("SK+SU", "Pers;Sg;Asrt")
+    assert build.subsumes("SK+SU+IRR+Q+COND+INEG", "SK+SU")
+    assert build.expand(frozenset({"Asrt"})) == {"SK", "SU", "IRR", "Q", "COND"}
+
+
+def test_series_definition_lists_its_functions() -> None:
+    assert concepts.define("SK+SU") == (
+        "an indefinite pronoun series used for: specific known, specific unknown"
+        " (Haspelmath's functions)"
+    )
