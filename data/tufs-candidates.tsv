@@ -1,0 +1,181 @@
+default_code	tufs_lang	tufs_wid	heading	form
+1;Pl	ar	233	私たち	نحن
+1;Pl	as	387	私たち	نحنا
+1;Pl	de	954	私たち	wir
+1;Pl	fr	190	私たち	on
+1;Pl	km	231	私たち	ពួកខ្ញុំ
+1;Pl	ko	736	私たち	저희
+1;Pl	lo	239	私たち	ພວກເຮົາ
+1;Pl	mn	229	私たち	бид
+1;Pl	ru	837	私たち	мы
+1;Pl	th	237	私たち	พวกเรา
+1;Pl	ur	18	私たち	ہم
+1;Pl	vi	418	私たち	chúng ta
+1;Pl	vi	419	私たち	chúng tôi
+1;Sg	ar	232	私（わたし）	أَنَا
+1;Sg	as	386	私（わたし）	أنا
+1;Sg	de	953	私（わたし）	ich
+1;Sg	fr	168	私（わたくし）	moi
+1;Sg	fr	168	私（わたし）	moi
+1;Sg	km	230	私（わたし）	ខ្ញុំ
+1;Sg	ko	735	私（わたし）	저
+1;Sg	lo	238	私（わたし）	ຂ້ອຍ
+1;Sg	mn	228	私（わたし）	би
+1;Sg	ms	13	私（わたくし）	saya
+1;Sg	ms	172	私（わたし）	saya
+1;Sg	my	13	私（わたくし）	ကျွန်တော်
+1;Sg	my	13	私（わたくし）	ကျွန်မ
+1;Sg	my	172	私（わたし）	ကျွန်တော်
+1;Sg	my	172	私（わたし）	ကျွန်မ
+1;Sg	my	172	私（わたし）	ကျွန်ုပ်
+1;Sg	ru	836	私（わたし）	я
+1;Sg	th	236	私（わたし）	ดิฉัน, ผม
+1;Sg	tr	1724	私（わたし）	ben
+1;Sg	ur	17	私（わたくし）	میں
+1;Sg	ur	17	私（わたし）	میں
+1;Sg	vi	417	私（わたし）	tôi
+2;Pl	ar	474	あなた方	أنتم
+2;Pl	as	385	あなた方	إنتو
+2;Pl	es	1211	あなた方	ustedes
+2;Sg	ar	1236	あなた	حَضْرَتُكَ
+2;Sg	as	383	あなた	إنت
+2;Sg	as	384	あなた	إنتي
+2;Sg	de	959	あなた	Sie
+2;Sg	es	936	あなた	usted
+2;Sg	km	236	あなた	លោក
+2;Sg	lo	195	あなた	ເຈົ້າ
+2;Sg	mn	233	あなた	та
+2;Sg	ms	734	あなた	awak
+2;Sg	my	734	あなた	ခင်ဗျား
+2;Sg	my	734	あなた	နင်
+2;Sg	my	734	あなた	မင်း
+2;Sg	my	734	あなた	ရှင်
+2;Sg	my	734	あなた	သင်
+2;Sg	pb	6	あなた	você
+2;Sg	pt	244	あなた	você
+2;Sg	ru	842	あなた	вы
+2;Sg	th	242	あなた	คุณ
+2;Sg	tl	955	あなた	ikaw
+2;Sg	ur	19	あなた	آپ
+2;Sg	vi	275	あなた	bạn
+2;Sg	vi	424	あなた	anh
+2;Sg	vi	425	あなた	chị
+2;Sg	vi	426	あなた	ông
+2;Sg	vi	427	あなた	bà
+2;Sg	vi	428	あなた	cô
+2;Sg	vi	429	あなた	chú
+2;Sg	vi	430	あなた	em
+2;Sg	vi	431	あなた	cháu
+2;Sg;Infml	ar	236	君（きみ）	أَنْتَ
+2;Sg;Infml	km	235	君（きみ）	គាត់ឯង
+2;Sg;Infml	ko	740	君（きみ）	너
+2;Sg;Infml	lo	195	君（きみ）	ເຈົ້າ
+2;Sg;Infml	mn	232	君（きみ）	чи
+2;Sg;Infml	pb	6	君（きみ）	você
+2;Sg;Infml	ru	841	君（きみ）	ты
+2;Sg;Infml	th	241	君（きみ）	เธอ
+2;Sg;Infml	tl	955	君（きみ）	ikaw
+2;Sg;Infml	tr	1729	君（きみ）	sen
+2;Sg;Infml	ur	20	君（きみ）	تم
+2;Sg;Infml	vi	423	君（きみ）	cậu
+3;Pl	as	382	彼ら	هنّ
+3;Pl	pb	1220	彼ら	elas
+3;Sg;F	ar	230	彼女	هو
+3;Sg;F	ar	231	彼女	هم
+3;Sg;F	ar	473	彼女	هي
+3;Sg;F	as	381	彼女	هِي
+3;Sg;F	de	952	彼女	sie
+3;Sg;F	en	978	彼女	he, she
+3;Sg;F	id	485	彼女	ia
+3;Sg;F	km	228	彼女	គាត់
+3;Sg;F	km	229	彼女	ពួកគេ
+3;Sg;F	ko	733	彼女	그, 그녀
+3;Sg;F	ko	734	彼女	그 사람들
+3;Sg;F	lo	236	彼女	ລາວ
+3;Sg;F	lo	237	彼女	ເຂົາເຈົ້າ
+3;Sg;F	mn	226	彼女	тэр
+3;Sg;F	mn	227	彼女	тэд
+3;Sg;F	pt	237	彼女	ele, ela
+3;Sg;F	pt	238	彼女	eles, elas
+3;Sg;F	ru	834	彼女	он
+3;Sg;F	ru	834	彼女	она
+3;Sg;F	ru	835	彼女	они
+3;Sg;F	th	234	彼女	เขา, เธอ
+3;Sg;F	th	235	彼女	พวกเขา, พวกเธอ
+3;Sg;F	tr	1723	彼女	onlar
+3;Sg;F	ur	21	彼女	وہ
+3;Sg;F	vi	407	彼女	anh ấy
+3;Sg;F	vi	408	彼女	ông ấy
+3;Sg;F	vi	409	彼女	chị ấy
+3;Sg;F	vi	410	彼女	cô ấy
+3;Sg;F	vi	411	彼女	bà ấy
+3;Sg;F	vi	412	彼女	các anh ấy
+3;Sg;F	vi	413	彼女	các ông ấy
+3;Sg;F	vi	414	彼女	các chị ấy
+3;Sg;F	vi	415	彼女	các cô ấy
+3;Sg;F	vi	416	彼女	các bà ấy
+3;Sg;M	ar	2393	彼（かれ）	هُوَ
+3;Sg;M	as	380	彼（かれ）	هو
+Pers;Int	ar	235	だれ	من
+Pers;Int	as	389	だれ	مين
+Pers;Int	de	956	だれ	wer
+Pers;Int	de	957	どなた	wer
+Pers;Int	es	933	だれ	quién
+Pers;Int	es	934	どなた	quién
+Pers;Int	fr	184	だれ	personne
+Pers;Int	fr	430	だれ	qui
+Pers;Int	fr	430	どなた	qui
+Pers;Int	km	233	だれ	អ្នកណា
+Pers;Int	km	234	どなた	អញ្ជើញពីខាងណា
+Pers;Int	ko	738	だれ	누구
+Pers;Int	ko	739	どなた	누구
+Pers;Int	lo	240	だれ	ໃຜ
+Pers;Int	lo	241	どなた	ຜູ້ໃດ
+Pers;Int	mn	231	だれ	хэн
+Pers;Int	mn	231	どなた	хэн
+Pers;Int	ms	1358	どなた	siapa
+Pers;Int	ms	1712	だれ	siapa
+Pers;Int	my	1358	どなた	ဘယ်ပုဂ္ဂိုလ်
+Pers;Int	my	1358	どなた	ဘယ်သူ
+Pers;Int	my	1712	だれ	ဘယ်သူ
+Pers;Int	pb	637	だれ	quem
+Pers;Int	pb	637	どなた	quem
+Pers;Int	pt	242	だれ	quem
+Pers;Int	pt	242	どなた	quem
+Pers;Int	ru	839	だれ	кто
+Pers;Int	ru	839	どなた	кто
+Pers;Int	th	239	だれ	ใคร
+Pers;Int	th	240	どなた	ท่านไหน
+Pers;Int	tl	952	だれ	sino
+Pers;Int	tl	952	どなた	sino
+Pers;Int	tr	1727	だれ	kim
+Pers;Int	tr	1727	どなた	kim
+Pers;Int	ur	22	だれ	کون
+Pers;Int	ur	23	どなた	کون صاحب
+Pers;Int	vi	421	だれ	ai
+Pers;Int	vi	421	どなた	ai
+Pers;Int	vi	422	どなた	ai
+Pers;Int	zh	552	どなた	哪位
+Pers;Refl	ar	242	自分	نَفْسٌ
+Pers;Refl	as	401	自分	نفس
+Pers;Refl	de	966	自分	selber
+Pers;Refl	en	993	自分	oneself
+Pers;Refl	es	943	自分	sí mismo
+Pers;Refl	fr	1548	自分	soi
+Pers;Refl	id	868	自分	diri
+Pers;Refl	km	243	自分	ខ្លួនឯង
+Pers;Refl	ko	748	自分	자기
+Pers;Refl	lo	248	自分	ຕົວເອງ
+Pers;Refl	mn	1	自分	өөрөө
+Pers;Refl	ms	317	自分	saya
+Pers;Refl	ms	317	自分	sendiri
+Pers;Refl	my	317	自分	ကိုယ်
+Pers;Refl	my	317	自分	ကိုယ်တိုင်
+Pers;Refl	my	317	自分	ကိုယ်ဟာကိုယ်
+Pers;Refl	pb	1049	自分	próprio
+Pers;Refl	ru	849	自分	сам
+Pers;Refl	th	249	自分	ตัวเอง
+Pers;Refl	tl	963	自分	sarili
+Pers;Refl	tr	1737	自分	kendim
+Pers;Refl	ur	25	自分	خود
+Pers;Refl	vi	440	自分	mình

@@ -1,0 +1,8 @@
+code	pos	source	note
+Pers;Int;Pol	n	TUFS ja どなた	polite "who"
+Pers;Sg;Asrt	n	TUFS ja だれか	someone; cf. Thng;Sg;Asrt 何か
+Plc;Prox	n	TUFS ja ここ	here; NTUMC has Plc;Med そこ and Plc;Rem あそこ
+Plc;Sg;Asrt	n	TUFS ja どこか	somewhere
+Tim;Sg;Asrt	n	TUFS ja いつか	sometime
+Knd;Int	a	TUFS ja どのような	what kind of
+Qnt;Int	n	TUFS ja どのぐらい, どれぐらい	how much, how long; Qnt = the paper's Quantifier head

@@ -1,0 +1,44 @@
+abbr	slot	label	ili	ntumc	status	ud	definition
+1	person	first person	i69730		pwn	Person=1	pronouns and verbs used to refer to the speaker or writer of the language in which they occur
+2	person	second person	i69731		pwn	Person=2	pronouns and verbs used to refer to the person addressed by the language in which they occur
+3	person	third person	i69732		pwn	Person=3	pronouns and verbs that are used to refer to something other than the speaker or addressee of the language in which they occur
+1i	person	inclusive		77010005-a	ntumc	Person=1|Clusivity=In	used of a word that refers to a group that includes the hearer
+1e	person	exclusive		77010006-a	ntumc	Person=1|Clusivity=Ex	used of a word that refers to a group that excludes the hearer
+Sg	number	singular	i69586		pwn	Number=Sing	the form of a word that is used to denote a singleton
+Du	number	dual	i12000		pwn	Number=Dual	a grammatical number category referring to two items or units as opposed to one item (singular) or more than two items (plural)
+Tr	number	trial			new	Number=Tri	a grammatical number category referring to three items, where it contrasts with singular, dual and plural
+Pl	number	plural	i69585		pwn	Number=Plur	the form of a word that is used to denote more than one
+Gpl	number	greater plural			new	Number=Grpl	a grammatical number category referring to more than two (or three) items, in a language where plural contrasts with dual (or trial)
+M	gender	masculine	i8148		pwn	Gender=Masc	male (of grammatical gender)
+F	gender	feminine	i8149		pwn	Gender=Fem	female (of grammatical gender)
+N	gender	neuter	i8150		pwn	Gender=Neut	neither male nor female (of grammatical gender)
+Pers	head	person	i35562		pwn		a human being
+Thng	head	thing	i60191		check		PWN's thing is "an artifact": find the right sense
+Ent	head	entity	i35545		pwn		that which is perceived or known or inferred to have its own distinct existence (living or nonliving)
+Plc	head	place	i82501		pwn		a point located with respect to surface features of some region
+Tim	head	time	i116667		pwn		an indefinite period (usually marked by specific attributes or activities)
+Mnr	head	manner	i62886		pwn		how something is done or how it happens
+Rsn	head	reason	i71919		pwn		a justification for something existing or happening
+Knd	head	kind	i67559		pwn		a category of things distinguished by some common characteristic or quality
+Dur	head	duration	i116723		pwn		the period of time during which something continues
+Qnt	head	quantity	i35594		pwn		how much there is or how many there are of something that you can quantify
+Asrt	type	assertive existential			new	PronType=Ind	of a pronoun or quantifier that asserts the existence of a referent without identifying it, as English some- (someone, something)
+Elec	type	elective existential			new	PronType=Ind	of a pronoun or quantifier that leaves the choice of referent free, as English any- (anyone, anything)
+Neg	type	negative			new	PronType=Neg	of a pronoun or quantifier that denies the existence of a referent, as English no- (nobody, nothing)
+Univ	type	universal			new	PronType=Tot	of a pronoun or quantifier that refers to every member of a set, as English every- (everyone, everything)
+Int	type	interrogative	i3826		pwn	PronType=Int	relating to the use of or having the nature of an interrogation
+Refl	type	reflexive	i69733		pwn	Reflex=Yes	a personal pronoun compounded with -self to show the agent's action affects the agent
+Recp	type	reciprocal	i69728		pwn	PronType=Rcp	a pronoun or pronominal phrase (as each other) that expresses a mutual action or relationship between the individuals indicated in the plural subject
+Oth	type	other			new		of a pronoun or quantifier that refers to a referent other than one already mentioned, as English other, another
+Fml	formality	formal	i5725		pwn	Polite=Form	(of spoken and written language) adhering to traditional standards of correctness and without casual, contracted, and colloquial forms
+Infml	formality	informal	i5727		pwn	Polite=Infm	used of spoken and written language
+Pol	politeness	polite	i3566		pwn	Polite=Elev	showing regard for others in manners, speech, behavior, etc.
+Hon	politeness	honorific	i10923		pwn	Polite=Elev	conferring or showing honor or respect
+NHon	politeness	non-honorific		77010000-a	ntumc		not conferring or showing honor or respect
+Prox	proximity	proximal		77010002-a	ntumc	PronType=Dem|Deixis=Prox	relating to or characteristic of a word referring to something at a proximal distance
+Med	proximity	medial		77010001-a	ntumc	PronType=Dem|Deixis=Med	relating to or characteristic of a word referring to something at a medium distance
+Dist	proximity	distal		77010003-a	ntumc	PronType=Dem|Deixis=Remt	relating to or characteristic of a word referring to something at a distal distance
+Rem	proximity	remote		77010004-a	ntumc	PronType=Dem|Deixis=Remt	relating to or characteristic of a word referring to something at a distal remote distance
+Men	register	men's speech		77010007-n	ntumc		speech used predominately by men
+Wom	register	women's speech		77010008-n	ntumc		speech used predominately by women
+Arch	register	archaic	i8971		check		NTUMC links PWN's antediluvian ("so extremely old..."): find the sense for words no longer in use

@@ -1,0 +1,14 @@
+lang	form	code	source	note
+jpn	どなた	Pers;Int;Pol	TUFS	
+jpn	だれか	Pers;Sg;Asrt	TUFS	
+jpn	ここ	Plc;Prox	TUFS	
+jpn	どこか	Plc;Sg;Asrt	TUFS	
+jpn	いつか	Tim;Sg;Asrt	TUFS	
+jpn	どのような	Knd;Int	TUFS	
+jpn	どのぐらい	Qnt;Int	TUFS	
+jpn	どれぐらい	Qnt;Int	TUFS	
+jpn	どう	Mnr;Int	TUFS	
+jpn	どの	Int	TUFS	determiner
+jpn	皆さん	Pers;Univ;Pol	TUFS	kanji spelling of NTUMC みなさん
+jpn	こう	Mnr;Prox	TUFS	
+jpn	そう	Mnr;Med	TUFS	
