@@ -93,8 +93,10 @@ generalizations (`1e;Du` is under `1;Du` and `1e;Pl`).
   - Its gender slots are positional (English *she* is in `3sg_n`, Hindi uses them
     for proximity), so gender is trusted only where the `f` slot is used; elsewhere
     gender-split 3rd-person lexemes are dropped (172 languages).
-  - It records one form per cell, so Mandarin *wǒmen* comes out exclusive because
-    *zánmen* fills the inclusive cell.
+  - Its `1` is exclusive only where the paradigm also has inclusive (`12`) cells;
+    Mandarin has only 1pl *wǒmen*, which is plain `1;Pl`.
+  - A genderless cell (`3p-s`) fills only genders the paradigm leaves empty:
+    Spanish has both `3pl_f` *ellas* and `3p-s` *ellos*.
   - Its forms are as transcribed in each source (IPA for English, pinyin for
     Mandarin). Languages NTUMC covers use NTUMC's spellings instead; transcribed
     forms carry a `<Pronunciation>`.

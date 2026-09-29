@@ -411,6 +411,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1;Du	anii	anii1246	hnh	Anii	Khoe-Kwadi	Africa	860	free	â-tsúm	a:tsúm; p:tsúm	2
 1;Du	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free	hawɨr	p:-awɨr	2
 1;Du	avestan	aves1237	ave	Avestan aves1237	Indo-European	Eurasia	910	free	vɑ̅		2
+1;Du	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	aŋ	o:asumgay (kondamin); p:asumgoy	1
 1;Du	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	nan	o:nane; p:nanke	2
 1;Du	bayali	baya1257	bjy	Bayali	Pama-Nyungan	Australia	131	free	ŋali	a:ŋaliraŋu; o:ŋalina; p:ŋaliraŋuṋ	2
 1;Du	bora	bora1263	boa	Bora	Boran	South America	478	free	mɯ̀ˀ-tsʰì	p:i	2
@@ -503,6 +504,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1;Gpl	antakarinya	anta1253	ant	Antakarinya	Pama-Nyungan	Australia	811	free	ŋaːli	p:ŋaːligu	2
 1;Gpl	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free	haiu	p:-aiu	2
 1;Gpl	avestan	aves1237	ave	Avestan aves1237	Indo-European	Eurasia	910	free	vɑə̅m	o:nɑ̊	2
+1;Gpl	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	aŋ	o:aŋgay; p:aŋgumgoy	1
 1;Gpl	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	nom	o:nomo; p:nomke	2
 1;Gpl	bayali	baya1257	bjy	Bayali	Pama-Nyungan	Australia	131	free	ŋanadhuru	a:ŋanadhuruŋu; o:ŋanadhuruŋa; p:ŋanadhuruŋuṋ	2
 1;Gpl	biangai	bian1252	big	Biangai	Kunimaipan	Papunesia	259	free	teni	p:tenigi	2
@@ -526,6 +528,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1;Gpl	guuguyimidhirrcoastal	gugu1255	kky	Guugu Yimidhirr coastal gugu1255	Pama-Nyungan	Australia	900	free	ngana	o:nganangan; p:nganangan	2
 1;Gpl	guuguyimidhirrinland	gugu1255	kky	Guugu Yimidhirr inland gugu1255	Pama-Nyungan	Australia	911	free	nganhdhaan	o:nganhdanun; p:ngandhanun	2
 1;Gpl	hewa	hewa1241	ham	Hewa	Sepik	Papunesia	247	free	'nati		2
+1;Gpl	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	ham	o:ham-; p:hamara	1
 1;Gpl	jinhgpaw	nort3288		Jinhgpaw	Sino-Tibetan	Eurasia	841	free	an⁵⁵the³³		2
 1;Gpl	kairiru_b	kair1263	kxa	Kairiru	Austronesian	Papunesia	387	bound	ta-	o:-qait; p:-qait	2
 1;Gpl	kalam	kala1397	kmh	Kalam	Nuclear Trans New Guinea	Papunesia	268	free	cn	o:cnp; p:cnp	2
@@ -656,6 +659,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1;Pl	dogonjamsay	jams1239	djm	Dogon, Jamsay	Dogon	Africa	593	free	ɛ̀mɛ̀	o:ɛ́mɛ́	4
 1;Pl	dre	dree1234		Dre	Yam	Papunesia	646	free	yənd	a:yəndbem; p:tǝbene	4
 1;Pl	dutch	dutc1256	nld	Dutch	Indo-European	Eurasia	34	free	wij	o:ons; p:ons	4
+1;Pl	dzongkha	dzon1239	dzo	Dzongkha	Sino-Tibetan	Eurasia	275	free	ngare	a:ngaregi; p:ngaregi	1
 1;Pl	ederaawyu	eder1237	awy	Edera Awyu	Nuclear Trans New Guinea	Papunesia	362	free	noxo	p:naxa-	4
 1;Pl	ega	egaa1242	ega	Ega	Atlantic-Congo	Africa	563	free	wa˥	o:we˥; p:w˥-	4
 1;Pl	egyptianspokenarabic	egyp1253	arz	Egyptian Spoken Arabic	Afro-Asiatic	Africa	296	free	ʔiħna	p:bituːʕna	4
@@ -750,6 +754,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1;Pl	malay_papua	papu1250	pmy	Malay	Austronesian	Papunesia	682	free	kita	s:kitoraŋ; s:kitoŋ; a:kitoraŋ; a:kitoŋ; o:kitoraŋ; o:kitoŋ; p:kitoraŋ; p:kitoŋ	4
 1;Pl	mampruli	mamp1244	maw	Mampruli	Atlantic-Congo	Africa	615	free	tɩ		4
 1;Pl	mandahuaca	mand1448	mht	Mandahuaca	Arawakan	South America	527	free	wéjhanawi	p:wa-	4
+1;Pl	mandarin	mand1415	cmn	Mandarin	Sino-Tibetan	Eurasia	272	free	wǒmen		1
 1;Pl	mandobo	mand1444	aax	Mandobo	Nuclear Trans New Guinea	Papunesia	359	free	noŋɡüp	p:noŋɡü-ne-	4
 1;Pl	mansim	hata1243	had	Mansim	Hatam-Mansim	Papunesia	254	free	niwap	p:ŋun	4
 1;Pl	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	(y)i	o:yia; p:y-; p:yiar; p:yiena	4
@@ -1619,7 +1624,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Du	arabana	arab1267	ard	Arabana	Pama-Nyungan	Australia	122	free	ari	o:arimha; p:arikuṋa	1
 1e;Du	aroplokep	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	389	free	amru	p:-mam	1
 1e;Du	asuri	asur1254	asr	Asuri	Austroasiatic	Eurasia	813	free	aliŋ	p:aliŋreṇī; p:aliŋrā; p:aliŋā	1
-1e;Du	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	aŋ	o:asumgay (kondamin); p:asumgoy	1
 1e;Du	ayiwo	ayiw1239	nfl	Ayiwo	Austronesian	Papunesia	814	free	me- -le	a:-ŋopu; o:-ŋopule; o:iungole; p:-ŋole	1
 1e;Du	bantawa	bant1281	bap	Bantawa	Sino-Tibetan	Eurasia	293	free	ankaca	s:ankaciʔa; a:ankaciʔa; o:ankaciʔa; p:ancaʔo; p:ancuʔo	1
 1e;Du	bare	bare1276	bae	Baré	Arawakan	South America	498	free	wani	p:wa-	1
@@ -1777,7 +1781,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Gpl	arabana	arab1267	ard	Arabana	Pama-Nyungan	Australia	122	free	aṇi	o:aṇiṋa; p:aṇikuṋa	1
 1e;Gpl	aroplokep	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	389	free	am	p:-mam	1
 1e;Gpl	asuri	asur1254	asr	Asuri	Austroasiatic	Eurasia	813	free	alē	p:alereṇī; p:alerā; p:aleā	1
-1e;Gpl	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	aŋ	o:aŋgay; p:aŋgumgoy	1
 1e;Gpl	ayiwo	ayiw1239	nfl	Ayiwo	Austronesian	Papunesia	814	free	me-	a:-ŋo; a:-ŋopu; o:iuŋo; o:iuŋopu; p:-ŋo	1
 1e;Gpl	bantawa	bant1281	bap	Bantawa	Sino-Tibetan	Eurasia	293	free	ankanka	a:ankankaʔa; p:ankaʔo	1
 1e;Gpl	basay	basa1287	byq	Basay	Austronesian	Papunesia	815	free	yami	o:mian; o:mianan; o:yamian; p:nami	1
@@ -1815,7 +1818,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Gpl	gurindji	guri1247	gue	Gurindji	Pama-Nyungan	Australia	193	free	ŋantipa	p:ŋantipaŋuñ	1
 1e;Gpl	hatam	hata1243	had	Hatam	Hatam-Mansim	Papunesia	255	free	ɲe	p:ide	1
 1e;Gpl	hawaiian	hawa1245	haw	Hawaiian	Austronesian	Papunesia	833	free	mākou	p:kāmākou; p:kōmākou	1
-1e;Gpl	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	ham	o:ham-; p:hamara	1
 1e;Gpl	isaka	kris1246	ksi	I'saka	Sko	Papunesia	222	free	dupu	o:die; o:nesï; p:numu	1
 1e;Gpl	jaminjung	djam1255	djd	Jaminjung	Mirndi	Australia	377	free	yiri	p:yiraɟgina	1
 1e;Gpl	jaru	jaru1254	ddj	Jaru	Pama-Nyungan	Australia	45	free	ŋaninba	a:ŋanambalu; p:ŋanimbaŋa	1
@@ -1967,7 +1969,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Pl	daasanach	daas1238	dsh	Daasanach	Afro-Asiatic	Africa	457	free	ɲaaɲi	o:ɲí; p:kíɲɲu	2
 1e;Pl	dii_mambe	diii1241	dur	Dii	Atlantic-Congo	Africa	588	free	vɔ́	p:vóó	2
 1e;Pl	dongxiang	dong1285	sce	Dongxiang	Mongolic-Khitan	Eurasia	827	free	bidʑiən	o:bidʑiənni; p:=bidʑiənni	2
-1e;Pl	dzongkha	dzon1239	dzo	Dzongkha	Sino-Tibetan	Eurasia	275	free	ngare	a:ngaregi; p:ngaregi	1
 1e;Pl	ende	ende1235		Ende	Pahoturi	Papunesia	286	free	ŋəmi	o:ŋəmim; p:ŋəma	2
 1e;Pl	fulfuldemaasina	maas1239	ffm	Fulfulde, Maasina	Atlantic-Congo	Africa	599	free	min	p:ʔamin; p:ʔamɛn	2
 1e;Pl	gapapaiwa	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	393	free	tokai	p:-kai	2
@@ -2016,7 +2017,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Pl	malecu	male1297	gut	Malecu	Chibchan	North America	465	free	toí	a:toíti; p:toi na=	1
 1e;Pl	mambay	mamb1294	mcs	Mambay	Atlantic-Congo	Africa	586	free	ri˩	o:ri˥; p:ʔi˥ri˥	2
 1e;Pl	manchu	manc1252	mnc	Manchu	Tungusic	Eurasia	314	free	be	o:membe; p:meni	2
-1e;Pl	mandarin	mand1415	cmn	Mandarin	Sino-Tibetan	Eurasia	272	free	wǒmen		1
 1e;Pl	mayogo	mayo1261	mdm	Mayogo	Atlantic-Congo	Africa	584	free	ya	p:naaya	2
 1e;Pl	mehek	mehe1243	nux	Mehek	Sepik	Papunesia	249	free	numbra		2
 1e;Pl	mekens_icrlb	saki1248	skf	Mekens	Tupian	South America	653	free	ose-	a:ose	2

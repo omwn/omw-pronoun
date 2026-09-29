@@ -112,3 +112,15 @@ def test_genderless_cells_do_not_override_explicit_gender() -> None:
     cells = next(c for (lang, _), c in paradigms.items() if lang == "spanish")
     assert cells[("3", "pl", "f")]["s"] == {"ellas"}
     assert cells[("3", "pl", "m")]["s"] == {"ellos"}
+
+
+def test_first_person_is_exclusive_only_where_an_inclusive_contrasts() -> None:
+    no_inclusive = {("1e", "sg", ""), ("1e", "pl", "")}  # Mandarin: only 1pl wǒmen
+    assert (
+        parabank_words.code(frozenset({("1e", "pl", "")}), no_inclusive, True) == "1;Pl"
+    )
+    with_inclusive = no_inclusive | {("1i", "pl", "")}
+    assert (
+        parabank_words.code(frozenset({("1e", "pl", "")}), with_inclusive, True)
+        == "1e;Pl"
+    )

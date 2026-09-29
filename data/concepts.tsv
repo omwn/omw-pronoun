@@ -1,7 +1,7 @@
 code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	parabank_macroareas
-1;Du	n	first person dual pronoun	a pronoun referring to the speaker, two in all	Parabank		92	33	7
-1;Gpl	n	first person greater plural pronoun	a pronoun referring to the speaker, more than two (where a dual contrasts) in all	Parabank		85	26	6
-1;Pl	n	first person plural pronoun	a pronoun referring to the speaker, more than one in all	NTUMC	77000002-n 77000006-a 77000006-n	299	57	5
+1;Du	n	first person dual pronoun	a pronoun referring to the speaker, two in all	Parabank		93	34	7
+1;Gpl	n	first person greater plural pronoun	a pronoun referring to the speaker, more than two (where a dual contrasts) in all	Parabank		87	27	6
+1;Pl	n	first person plural pronoun	a pronoun referring to the speaker, more than one in all	NTUMC	77000002-n 77000006-a 77000006-n	301	57	5
 1;Pl;Fml	n	first person plural formal pronoun	a pronoun referring to the speaker, more than one in all (formal)	NTUMC	77000003-n	0	0	0
 1;Pl;Fml;Pol	n	first person plural formal polite pronoun	a pronoun referring to the speaker, more than one in all (formal, polite)	TUFS curation		0	0	0
 1;Pl;Infml	n	first person plural informal pronoun	a pronoun referring to the speaker, more than one in all (informal)	NTUMC	77000004-n	0	0	0
@@ -17,9 +17,9 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 1;Sg;M;Infml;Men	n	first person singular masculine informal men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, informal, men's speech)	NTUMC	77000017-n	0	0	0
 1;Sg;M;Pol;Men	n	first person singular masculine polite men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, polite, men's speech)	TUFS curation		0	0	0
 1;Sg;Refl	n	first person singular reflexive pronoun	a pronoun referring to the speaker, one in all (reflexive)	NTUMC	77000016-n	0	0	0
-1e;Du	n	first person exclusive dual pronoun	a pronoun referring to the speaker and others, not the addressee, two in all	Parabank		158	38	6
-1e;Gpl	n	first person exclusive greater plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than two (where a dual contrasts) in all	Parabank		164	42	7
-1e;Pl	n	first person exclusive plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than one in all	Parabank		155	42	7
+1e;Du	n	first person exclusive dual pronoun	a pronoun referring to the speaker and others, not the addressee, two in all	Parabank		157	37	6
+1e;Gpl	n	first person exclusive greater plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than two (where a dual contrasts) in all	Parabank		162	41	7
+1e;Pl	n	first person exclusive plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than one in all	Parabank		153	42	7
 1i;Du	n	first person inclusive dual pronoun	a pronoun referring to the speaker and the addressee, two in all	Parabank		165	38	6
 1i;Gpl	n	first person inclusive greater plural pronoun	a pronoun referring to the speaker and the addressee, more than two (where a dual contrasts) in all	Parabank		172	41	7
 1i;Pl	n	first person inclusive plural pronoun	a pronoun referring to the speaker and the addressee, more than one in all	NTUMC	77000139-n	147	41	7

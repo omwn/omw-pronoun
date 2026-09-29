@@ -167,7 +167,11 @@ def code(atoms: frozenset, elicited: set[Atom], gender_trusted: bool) -> str:
     }
     if product != set(atoms):
         return ""
-    if numbers == {"sg"}:  # clusivity is a property of non-singular 1st person
+    # Parabank's "1" is exclusive only where the paradigm also has inclusive ("12")
+    # cells; without them (Mandarin has only 1pl wǒmen) it is plain first person.
+    # Clusivity is also no property of the singular.
+    has_inclusive = any(p == "1i" for p, _, _ in elicited)
+    if numbers == {"sg"} or not has_inclusive:
         persons = {"1" if p == "1e" else p for p in persons}
     parts = [render_person(persons)]
     if numbers != elicited_numbers:  # a form for every number leaves it unmarked
