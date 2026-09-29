@@ -5,8 +5,10 @@
 # ///
 """Extract TUFS Basic Vocabulary pronouns, with a default concept per heading.
 
-TUFS words are translations of Japanese headwords; pronouns are filed under the
-Bunrui Goihyō class 1.20. Each heading gets the concept its translations most
+TUFS words are translations of Japanese headwords. Pro-forms are filed under
+several Bunrui Goihyō classes: persons (1.20), things (1.101), places (1.17),
+times (1.1611), quantities (1.196), reasons (4.118), universals (1.194) and
+determiners and manner (3.1010). Each heading gets the concept its translations most
 likely express (``HEADINGS``). This is a default, not a checked mapping: French
 *vous* under あなた is not ``2;Sg``. Rows are marked ``default`` so that a
 curation step can override them, as for KinDiv's TUFS words.
@@ -30,6 +32,7 @@ DEFAULT = Path.home() / "git" / "tufs"
 
 #: Bunrui heading (midasi) -> default concept code
 HEADINGS = {
+    # personal (Bunrui 1.201-1.202)
     "私（わたし）": "1;Sg",
     "私（わたくし）": "1;Sg",
     "私たち": "1;Pl",
@@ -40,8 +43,47 @@ HEADINGS = {
     "彼女": "3;Sg;F",
     "彼ら": "3;Pl",
     "だれ": "Pers;Int",
-    "どなた": "Pers;Int",
+    "どなた": "Pers;Int;Pol",
+    "だれか": "Pers;Sg;Asrt",
     "自分": "Pers;Refl",
+    # universal (1.194)
+    "みんな": "Pers;Univ",
+    "皆さん": "Pers;Univ;Pol",
+    "全部": "Thng;Sg;Univ",
+    # things (1.101): Japanese has three degrees of distance
+    "これ": "Ent;Sg;Prox",
+    "それ": "Ent;Sg;Med",
+    "あれ": "Ent;Sg;Dist+Rem",
+    "どれ": "Ent;Int",
+    "どっち": "Ent;Int;Infml",
+    "何（なに・なん）": "Thng;Int",
+    # places and directions (1.17, 1.173)
+    "ここ": "Plc;Prox",
+    "そこ": "Plc;Med",
+    "あそこ": "Plc;Rem",
+    "どこ": "Plc;Int",
+    "こちら": "Plc;Prox",
+    "そちら": "Plc;Med",
+    "あちら": "Plc;Rem",
+    "どちら": "Plc;Int",
+    "こっち": "Plc;Prox",
+    "そっち": "Plc;Med",
+    "あっち": "Plc;Rem",
+    # time, quantity, reason (1.1611, 1.196, 4.118)
+    "いつ": "Tim;Int",
+    "いくつ": "Qnt;Int",
+    "いくら": "Qnt;Int",
+    "なぜ": "Rsn;Int",
+    "どうして": "Rsn;Int",
+    # determiners and manner (3.1010)
+    "この": "Prox",
+    "その": "Med",
+    "あの": "Rem",
+    "どの": "Int",
+    "こんな": "Knd;Prox",
+    "どんな": "Knd;Int",
+    "そう": "Mnr;Med",
+    "どう": "Mnr;Int",
 }
 #: TUFS language codes that differ from ISO 639-3 (TUFS `as` is Syrian Arabic)
 TUFS_ISO = {
@@ -121,7 +163,11 @@ def main() -> None:
         words = {w["id"]: w["basic"] for w in tables["t_word"]}
         word_of = {u["usage_id"]: u["word_id"] for u in tables["t_usage"]}
         for row in tables["t_usage_classified_rel"]:
-            if row["midasi"] in HEADINGS and row["usage_id"] in word_of:
+            if (
+                row["midasi"] in HEADINGS
+                and row["usage_id"] in word_of
+                and not row["bunrui_no"].startswith("4.3")  # あの(2) is a filler
+            ):
                 wid = word_of[row["usage_id"]]
                 for form in forms_of(words.get(wid, ""), lang):
                     rows.add(

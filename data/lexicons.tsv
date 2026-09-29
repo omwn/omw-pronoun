@@ -49,11 +49,11 @@ omw-pronoun-anv	Denya	5	5	5
 omw-pronoun-aoa	Angolar	5	5	5
 omw-pronoun-aoi	Anindilyakwa	10	10	10
 omw-pronoun-aoj	Mufian	10	10	10
-omw-pronoun-apc	North Levantine Arabic	5	5	5
+omw-pronoun-apc	North Levantine Arabic	34	36	26
 omw-pronoun-ape	Bukiyip	8	9	9
 omw-pronoun-app	Abma	7	11	11
 omw-pronoun-apr	Arop-Lokep	15	15	15
-omw-pronoun-ar	Standard Arabic stan1318	6	7	7
+omw-pronoun-ar	Standard Arabic stan1318	42	44	31
 omw-pronoun-ard	Arabana	11	11	11
 omw-pronoun-arh	Arhuaco	7	7	7
 omw-pronoun-arv	Arbore	5	5	5
@@ -132,7 +132,7 @@ omw-pronoun-cid	Chimariko 	4	4	4
 omw-pronoun-cjp	Cabecar	7	7	7
 omw-pronoun-cku	Koasati	4	4	4
 omw-pronoun-cmi	Embera-Chamí	6	6	6
-omw-pronoun-cmn	Mandarin Chinese	77	80	50
+omw-pronoun-cmn	Mandarin Chinese	87	90	54
 omw-pronoun-cmn-Hant	Mandarin Chinese (traditional)	1	1	1
 omw-pronoun-cof	Tsafiki	6	6	6
 omw-pronoun-cou	Konyagi	6	6	6
@@ -157,7 +157,7 @@ omw-pronoun-dar	Dargwa	4	4	4
 omw-pronoun-dbj	Ida'an	7	7	7
 omw-pronoun-dbl	Dyirbal	8	8	8
 omw-pronoun-ddj	Jaru	10	13	13
-omw-pronoun-de	German	9	10	10
+omw-pronoun-de	German	29	33	29
 omw-pronoun-den	Slavey	4	4	4
 omw-pronoun-dga	Dagaare	6	6	6
 omw-pronoun-dhv	Dehu	11	11	11
@@ -187,11 +187,11 @@ omw-pronoun-eip	Eipo	6	9	9
 omw-pronoun-el	Greek	5	5	5
 omw-pronoun-emi	Mussau-Emira	11	11	11
 omw-pronoun-emp	Northern Embera	13	13	8
-omw-pronoun-en	English	52	53	42
+omw-pronoun-en	English	60	61	49
 omw-pronoun-enn	Engenni	6	6	6
 omw-pronoun-eno	Enggano	8	8	8
 omw-pronoun-erk	South Efate	12	15	15
-omw-pronoun-es	Spanish	8	8	8
+omw-pronoun-es	Spanish	28	30	28
 omw-pronoun-etu	Ejagham	5	5	5
 omw-pronoun-eu	Basque	6	6	6
 omw-pronoun-fa	Persian (Farsi)	5	5	5
@@ -199,10 +199,9 @@ omw-pronoun-faa	Fasu	9	9	9
 omw-pronoun-fal	Fali	6	6	6
 omw-pronoun-ffm	Fulfulde, Maasina	6	6	6
 omw-pronoun-fi	Finnish	6	6	6
-omw-pronoun-fil	Tagalog	8	8	8
 omw-pronoun-fj	Boumaa Fijian	11	11	11
 omw-pronoun-fos	Siraya	7	7	7
-omw-pronoun-fr	French	11	11	9
+omw-pronoun-fr	French	37	39	34
 omw-pronoun-fub	Adamawa Fulani 	6	6	6
 omw-pronoun-fut	Futuna-Aniwa	11	11	11
 omw-pronoun-fuy	Fuyug	9	9	9
@@ -256,7 +255,7 @@ omw-pronoun-hu	Hungarian	8	8	8
 omw-pronoun-huu	Murui Huitoto	8	10	10
 omw-pronoun-ibd	Iwaidja	7	7	7
 omw-pronoun-ibe	Akpes	5	5	5
-omw-pronoun-id	Indonesian	50	55	40
+omw-pronoun-id	Indonesian	58	64	46
 omw-pronoun-ig	Igbo	6	6	6
 omw-pronoun-ilo	Iloko	8	8	8
 omw-pronoun-imn	Imonda	2	2	2
@@ -269,7 +268,7 @@ omw-pronoun-it	Italian	8	9	9
 omw-pronoun-itz	Itza'	7	7	7
 omw-pronoun-iws	Sepik Iwam	7	7	7
 omw-pronoun-izr	Izere	5	5	5
-omw-pronoun-ja	Japanese	147	151	76
+omw-pronoun-ja	Japanese	153	158	77
 omw-pronoun-jaa	Jamamadí	7	7	7
 omw-pronoun-jae	Yabem	8	8	8
 omw-pronoun-jam	Jamaican Creole English	6	6	6
@@ -298,7 +297,7 @@ omw-pronoun-kgp	Kaingang	5	5	5
 omw-pronoun-kgq	Kamoro	7	9	9
 omw-pronoun-khc	Tukang Besi	7	7	7
 omw-pronoun-khe	Korowai	6	6	6
-omw-pronoun-khk	Mongolian	6	6	6
+omw-pronoun-khk	Mongolian	29	31	26
 omw-pronoun-kig	Kimaghima	6	6	6
 omw-pronoun-kij	Kilivila	10	10	10
 omw-pronoun-kio	Kiowa	3	3	3
@@ -312,7 +311,7 @@ omw-pronoun-kky	Guugu Yimidhirr coastal gugu1255	11	11	10
 omw-pronoun-kl	Inuktitut	6	6	6
 omw-pronoun-klc	Kolbila	6	7	7
 omw-pronoun-kld	Gamilaraay	18	18	9
-omw-pronoun-km	Khmer	1	1	1
+omw-pronoun-km	Khmer	19	19	19
 omw-pronoun-kma	Konni	5	5	5
 omw-pronoun-kmh	Kalam	9	9	9
 omw-pronoun-kmn	Awtuw	8	8	8
@@ -321,7 +320,7 @@ omw-pronoun-kms	Kamasau	4	4	4
 omw-pronoun-kn	Kannada	8	8	8
 omw-pronoun-knp	Kwanja	5	5	5
 omw-pronoun-knx	Salako	6	7	7
-omw-pronoun-ko	Korean	2	2	2
+omw-pronoun-ko	Korean	28	28	23
 omw-pronoun-kog	Cogui	6	7	7
 omw-pronoun-kpc	Curripaco	5	5	5
 omw-pronoun-kpu	Kafoa	10	10	10
@@ -356,6 +355,7 @@ omw-pronoun-llj	Letyi-Lejti	8	8	8
 omw-pronoun-lmc	Limilngan	9	10	10
 omw-pronoun-lml	Raga	10	11	11
 omw-pronoun-ln	Lingala	6	6	6
+omw-pronoun-lo	Lao	25	25	23
 omw-pronoun-lob	Lobi	6	6	6
 omw-pronoun-los	Loniu	11	11	11
 omw-pronoun-lpa	Lelepa	10	11	11
@@ -413,6 +413,7 @@ omw-pronoun-mwp	Kala Lagaw Ya kala1377	11	11	11
 omw-pronoun-mwt	Moken	6	6	6
 omw-pronoun-mxt	Jamiltepec Mixtec	6	6	6
 omw-pronoun-mxw	Namo	3	6	6
+omw-pronoun-my	Burmese	53	53	34
 omw-pronoun-mzm	Mumuye	6	6	6
 omw-pronoun-naf	Nabak	9	9	9
 omw-pronoun-naj	Nalu	6	6	6
@@ -482,7 +483,7 @@ omw-pronoun-pmy	Malay	5	6	6
 omw-pronoun-ppl	Pipil	6	6	6
 omw-pronoun-pru	Puragi	5	5	5
 omw-pronoun-psa	Asue Awyu	6	6	6
-omw-pronoun-pt	Portuguese	7	7	7
+omw-pronoun-pt	Portuguese	28	32	30
 omw-pronoun-pwg	Gapapaiwa	8	9	9
 omw-pronoun-pwn	Paiwan	7	7	7
 omw-pronoun-pyu	Puyuma	5	5	5
@@ -497,7 +498,7 @@ omw-pronoun-roo	Rotokas	9	9	9
 omw-pronoun-rop	Kriol	11	11	11
 omw-pronoun-ror	Rongga	7	7	7
 omw-pronoun-rth	Ratahan	7	7	7
-omw-pronoun-ru	Russian	10	10	10
+omw-pronoun-ru	Russian	34	36	29
 omw-pronoun-sa	Sanskrit	10	11	11
 omw-pronoun-sah	Yakut	2	2	2
 omw-pronoun-sbc	Kele	11	11	11
@@ -551,6 +552,7 @@ omw-pronoun-tcs	Torres Strait Creole	11	11	11
 omw-pronoun-tdt	Tetun Dili	7	7	7
 omw-pronoun-tem	Themne	5	5	5
 omw-pronoun-tgo	Sudest	7	7	7
+omw-pronoun-th	Thai	26	28	26
 omw-pronoun-thd	Kuuk Thaayorre	11	11	11
 omw-pronoun-tih	Timugon Murut	7	7	7
 omw-pronoun-tik	Tikar	5	5	5
@@ -559,6 +561,7 @@ omw-pronoun-tiq	Tiéfo	5	5	5
 omw-pronoun-tit	Tinigua	5	5	5
 omw-pronoun-tk	Turkmen	6	6	6
 omw-pronoun-tkw	Teanu	11	11	11
+omw-pronoun-tl	Tagalog	25	25	23
 omw-pronoun-tlc	Totonac	6	6	6
 omw-pronoun-tn	Tswana	6	6	6
 omw-pronoun-tnk	Kwamera	11	11	11
@@ -566,7 +569,7 @@ omw-pronoun-tnr	Tanda	6	6	6
 omw-pronoun-tnx	Tanema	11	11	11
 omw-pronoun-tpi	Tok Pisin	11	11	11
 omw-pronoun-tqo	Toaripi	10	10	10
-omw-pronoun-tr	Turkish	6	6	6
+omw-pronoun-tr	Turkish	31	33	26
 omw-pronoun-trf	Teribe	7	7	7
 omw-pronoun-trv	Taroko	7	8	8
 omw-pronoun-tsj	Tshangla	9	9	9
@@ -586,12 +589,13 @@ omw-pronoun-ulk	Meriam	7	7	7
 omw-pronoun-ump	Umpila umpi1239	8	8	8
 omw-pronoun-ung	Ungarinyin	13	14	14
 omw-pronoun-unr	Mundari	11	15	11
-omw-pronoun-ur	Urdu	5	6	6
+omw-pronoun-ur	Urdu	32	41	28
 omw-pronoun-uri	Urim	10	10	10
 omw-pronoun-usa	Usarufa	3	3	3
 omw-pronoun-ute	Ute-Southern Paiute	8	8	8
 omw-pronoun-uur	Ura	7	7	7
 omw-pronoun-vam	Vanimo	9	9	9
+omw-pronoun-vi	Vietnamese	26	27	23
 omw-pronoun-vig	Viemo	5	5	5
 omw-pronoun-vko	Kodeoha	7	7	7
 omw-pronoun-vma	Martuthunira	9	10	10
@@ -662,4 +666,5 @@ omw-pronoun-zmr	Maranunggu	13	13	13
 omw-pronoun-zmu	Muruwari	10	10	10
 omw-pronoun-zne	Zande	5	5	5
 omw-pronoun-zrs	Mairasi	6	6	6
+omw-pronoun-zsm	Malay	24	24	23
 omw-pronoun-zu	Zulu	5	5	5

@@ -6,3 +6,23 @@ Plc;Sg;Asrt	n	TUFS ja どこか	somewhere
 Tim;Sg;Asrt	n	TUFS ja いつか	sometime
 Knd;Int	a	TUFS ja どのような	what kind of
 Qnt;Int	n	TUFS ja どのぐらい, どれぐらい	how much, how long; Qnt = the paper's Quantifier head
+1;Pl;Fml;Pol	n	TUFS curation	저희
+1;Sg;F;Fml;Pol;Wom	n	TUFS curation	ดิฉัน
+1;Sg;F;Pol;Wom	n	TUFS curation	ကျွန်မ
+1;Sg;M;Pol;Men	n	TUFS curation	ผม, ကျွန်တော်
+2;Pl;Fml;Pol	n	TUFS curation	Sie, ustedes
+2;Sg;F	n	TUFS curation	إنتي
+2;Sg;Fml	n	TUFS curation	သင်
+2;Sg;M	n	TUFS curation	أَنْتَ, إنت
+2;Sg;Pol;Men	n	TUFS curation	ခင်ဗျား
+2;Sg;Pol;Wom	n	TUFS curation	ရှင်
+3;Sg;Pol	n	TUFS curation	គាត់
+Ent;Sg;Prox+Dist	n	TUFS curation	ça
+Knd;Dist	a	TUFS curation	тийм
+Knd;Prox+Dist	a	TUFS curation	solch, such, tal, tel, такой
+Mnr;Dist	r	TUFS curation	öyle
+Mnr;Prox+Dist	r	TUFS curation	so, así, assim, так
+Plc;Dist	n	TUFS curation	dort, there, là-bas, там, orası, orada, هُنَاكَ, هنيك, тэнд, وہاں, ادھر, 那儿
+Plc;Prox+Dist	n	TUFS curation	da, là
+Prox+Dist	a	TUFS curation	ce
+Qnt;Prox	n	TUFS curation	ဒီလောက်

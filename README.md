@@ -8,7 +8,7 @@ to the Collaborative Interlingual Index.
 ```
 uv run ntumc_pronouns.py     # NTUMC pronoun synsets -> data/ntumc-pronouns.tsv
 uv run parabank_words.py     # Parabank paradigms   -> data/parabank-lexemes.tsv
-uv run tufs_pronouns.py      # TUFS pronouns        -> data/tufs-pronouns.tsv
+uv run tufs_pronouns.py      # TUFS pro-forms       -> data/tufs-pronouns.tsv (curated in data/tufs-curation.tsv)
 uv run haspelmath_series.py  # indefinite series    -> data/haspelmath-series.tsv
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
 uv run build.py              # wn collection        -> release/omw-pronoun-0.1(.tar.xz)
@@ -98,9 +98,16 @@ generalizations (`1e;Du` is under `1;Du` and `1e;Pl`).
   - Its forms are as transcribed in each source (IPA for English, pinyin for
     Mandarin). Languages NTUMC covers use NTUMC's spellings instead; transcribed
     forms carry a `<Pronunciation>`.
-- **TUFS** confirms words already found (credited in `dc:source`); its other forms
-  are in `data/tufs-candidates.tsv` for curation, since its headings are too loose
-  to map by (彼女 "she" also collects *he*, *they*).
+- **TUFS** (`tufs_pronouns.py`, then `data/tufs-curation.tsv`): 46 Japanese
+  headwords for personal pronouns, demonstratives (これ/この/ここ...),
+  interrogatives (何, どこ, いつ, なぜ...) and universals, translated into 22
+  languages. Headings are too loose to map by (彼女 "she" also collects *he*,
+  *they*), so every form was mapped by its own meaning, with a confidence and a
+  `kind`: `pronoun`, `substitute` (a kin term or title used as "I"/"you", e.g.
+  Vietnamese *anh*; kept out of the build for now) or `not-proform`. Rows of kind
+  `pronoun` with high or medium confidence are built (841 senses). The curation
+  added 20 concepts (in `extra-concepts.tsv`), e.g. `Plc;Dist` "there" in two-way
+  systems and speaker-sex *I* (Thai *phǒm*, Burmese *kyundaw*).
 
 Every lemma and form records its script (ISO 15924, e.g. `Hani`, `Hira`, `Jpan`).
 

@@ -216,7 +216,8 @@ def read(db: Path) -> list[dict[str, str]]:
         "SELECT s.synset, w.lang, w.lemma FROM sense s JOIN word w USING (wordid)"
         " WHERE s.synset LIKE '770%' ORDER BY s.freq DESC"
     ):
-        lemmas[synset][lang].append(lemma)
+        # four Japanese words (77000035-n 彼女たち ...) are filed under "jap"
+        lemmas[synset]["jpn" if lang == "jap" else lang].append(lemma)
 
     rows = []
     for synset in sorted(set(definitions) | set(links)):

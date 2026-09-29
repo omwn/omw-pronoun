@@ -3,15 +3,19 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 1;Gpl	n	first person greater plural pronoun	a pronoun referring to the speaker, more than two (where a dual contrasts) in all	Parabank		85	26	6
 1;Pl	n	first person plural pronoun	a pronoun referring to the speaker, more than one in all	NTUMC	77000002-n 77000006-a 77000006-n	299	57	5
 1;Pl;Fml	n	first person plural formal pronoun	a pronoun referring to the speaker, more than one in all (formal)	NTUMC	77000003-n	0	0	0
+1;Pl;Fml;Pol	n	first person plural formal polite pronoun	a pronoun referring to the speaker, more than one in all (formal, polite)	TUFS curation		0	0	0
 1;Pl;Infml	n	first person plural informal pronoun	a pronoun referring to the speaker, more than one in all (informal)	NTUMC	77000004-n	0	0	0
 1;Pl;M;Infml;Men	n	first person plural masculine informal men's speech pronoun	a pronoun referring to the speaker, more than one in all (masculine, informal, men's speech)	NTUMC	77000009-n	0	0	0
 1;Pl;Refl	n	first person plural reflexive pronoun	a pronoun referring to the speaker, more than one in all (reflexive)	NTUMC	77000008-n	0	0	0
 1;Sg	n	first person singular pronoun	a pronoun referring to the speaker, one in all	NTUMC	77000015-n 77000107-a 77000107-n	722	114	7
+1;Sg;F;Fml;Pol;Wom	n	first person singular feminine formal polite women's speech pronoun	a pronoun referring to the speaker, one in all (feminine, formal, polite, women's speech)	TUFS curation		0	0	0
+1;Sg;F;Pol;Wom	n	first person singular feminine polite women's speech pronoun	a pronoun referring to the speaker, one in all (feminine, polite, women's speech)	TUFS curation		0	0	0
 1;Sg;Fml	n	first person singular formal pronoun	a pronoun referring to the speaker, one in all (formal)	NTUMC	77000011-n	0	0	0
-1;Sg;Fml;Hon+Pol	n	first person singular formal honorific polite pronoun	a pronoun referring to the speaker, one in all (formal, honorific, polite)	NTUMC	77000013-n	0	0	0
+1;Sg;Fml;Hon+Pol	n	first person singular formal honorific or polite pronoun	a pronoun referring to the speaker, one in all (formal, honorific, polite)	NTUMC	77000013-n	0	0	0
 1;Sg;Fml;Pol	n	first person singular formal polite pronoun	a pronoun referring to the speaker, one in all (formal, polite)	NTUMC	77000012-n	0	0	0
-1;Sg;M;Infml;Hon;Arch+Men	n	first person singular masculine informal honorific archaic men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, informal, honorific, archaic, men's speech)	NTUMC	77000018-n	0	0	0
+1;Sg;M;Infml;Hon;Arch+Men	n	first person singular masculine informal honorific archaic or men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, informal, honorific, archaic, men's speech)	NTUMC	77000018-n	0	0	0
 1;Sg;M;Infml;Men	n	first person singular masculine informal men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, informal, men's speech)	NTUMC	77000017-n	0	0	0
+1;Sg;M;Pol;Men	n	first person singular masculine polite men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, polite, men's speech)	TUFS curation		0	0	0
 1;Sg;Refl	n	first person singular reflexive pronoun	a pronoun referring to the speaker, one in all (reflexive)	NTUMC	77000016-n	0	0	0
 1e;Du	n	first person exclusive dual pronoun	a pronoun referring to the speaker and others, not the addressee, two in all	Parabank		158	38	6
 1e;Gpl	n	first person exclusive greater plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than two (where a dual contrasts) in all	Parabank		164	42	7
@@ -23,16 +27,22 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 2;Du	n	second person dual pronoun	a pronoun referring to the addressee, two in all	Parabank		216	53	7
 2;Gpl	n	second person greater plural pronoun	a pronoun referring to the addressee, more than two (where a dual contrasts) in all	Parabank		222	52	7
 2;Pl	n	second person plural pronoun	a pronoun referring to the addressee, more than one in all	NTUMC	77000019-n	483	88	7
+2;Pl;Fml;Pol	n	second person plural formal polite pronoun	a pronoun referring to the addressee, more than one in all (formal, polite)	TUFS curation		0	0	0
 2;Pl;Refl	n	second person plural reflexive pronoun	a pronoun referring to the addressee, more than one in all (reflexive)	NTUMC	77000020-n	0	0	0
 2;Sg	n	second person singular pronoun	a pronoun referring to the addressee, one in all	NTUMC	77000021-n 77000024-a 77000024-n	719	116	7
+2;Sg;F	n	second person singular feminine pronoun	a pronoun referring to the addressee, one in all (feminine)	TUFS curation		0	0	0
+2;Sg;Fml	n	second person singular formal pronoun	a pronoun referring to the addressee, one in all (formal)	TUFS curation		0	0	0
 2;Sg;Fml;Pol	n	second person singular formal polite pronoun	a pronoun referring to the addressee, one in all (formal, polite)	NTUMC	77000022-n	0	0	0
 2;Sg;Infml	n	second person singular informal pronoun	a pronoun referring to the addressee, one in all (informal)	NTUMC	77000023-n	0	0	0
+2;Sg;M	n	second person singular masculine pronoun	a pronoun referring to the addressee, one in all (masculine)	TUFS curation		0	0	0
 2;Sg;M;Infml;Men	n	second person singular masculine informal men's speech pronoun	a pronoun referring to the addressee, one in all (masculine, informal, men's speech)	NTUMC	77000027-n	0	0	0
+2;Sg;Pol;Men	n	second person singular polite men's speech pronoun	a pronoun referring to the addressee, one in all (polite, men's speech)	TUFS curation		0	0	0
+2;Sg;Pol;Wom	n	second person singular polite women's speech pronoun	a pronoun referring to the addressee, one in all (polite, women's speech)	TUFS curation		0	0	0
 2;Sg;Refl	n	second person singular reflexive pronoun	a pronoun referring to the addressee, one in all (reflexive)	NTUMC	77000025-n	0	0	0
 2;Sg;Refl;Infml;NHon	n	second person singular reflexive informal non-honorific pronoun	a pronoun referring to the addressee, one in all (reflexive, informal, non-honorific)	NTUMC	77000026-n	0	0	0
 3;Du	n	third person dual pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all	Parabank		210	48	6
 3;Du;F	n	third person dual feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all (feminine)	Parabank		6	5	3
-3;Du;M+N	n	third person dual masculine neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all (masculine, neuter)	Parabank		6	5	3
+3;Du;M+N	n	third person dual masculine or neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all (masculine, neuter)	Parabank		6	5	3
 3;Gpl	n	third person greater plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all	Parabank		216	47	6
 3;Oth	n	third person other pronoun	a pronoun referring to someone or something other than speaker and addressee (other)	NTUMC	77000032-n	0	0	0
 3;Pl	n	third person plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all	NTUMC	77000031-n 77000039-a 77000111-n	453	79	7
@@ -46,19 +56,20 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 3;Sg;F;Refl	n	third person singular feminine reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (feminine, reflexive)	NTUMC	77000045-n	0	0	0
 3;Sg;Infml;NHon	n	third person singular informal non-honorific pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (informal, non-honorific)	NTUMC	77000038-n	0	0	0
 3;Sg;M	n	third person singular masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)	NTUMC	77000046-n 77000050-a 77000050-n	76	26	5
-3;Sg;M+N	n	third person singular masculine neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)	Parabank		27	8	3
-3;Sg;M;Infml;Dist+Rem;Men	n	third person singular masculine informal distal remote men's speech pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, informal, distal, remote, men's speech)	NTUMC	77000048-n	0	0	0
+3;Sg;M+N	n	third person singular masculine or neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)	Parabank		27	8	3
+3;Sg;M;Infml;Dist+Rem;Men	n	third person singular masculine informal distal or remote men's speech pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, informal, distal, remote, men's speech)	NTUMC	77000048-n	0	0	0
 3;Sg;M;Refl	n	third person singular masculine reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, reflexive)	NTUMC	77000052-n	0	0	0
 3;Sg;N	n	third person singular neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)	NTUMC	77000053-n 77000054-a 77000054-n	59	16	4
 3;Sg;N;Refl	n	third person singular neuter reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter, reflexive)	NTUMC	77000056-n	0	0	0
 3;Sg;Oth	n	third person singular other pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (other)	NTUMC	77000040-n	0	0	0
+3;Sg;Pol	n	third person singular polite pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (polite)	TUFS curation		0	0	0
 DNEG	n	direct negation pronoun	an indefinite pronoun series used for: direct negation (Haspelmath's functions)	Haspelmath		0	0	0
 Dist	a	distal pronoun	a distal pronoun	NTUMC	77000080-a	0	0	0
 Du;Univ	a	dual universal pronoun	a dual universal pronoun	NTUMC	77000076-a	0	0	0
-Dur+Tim;Int	n	duration time interrogative pronoun	a duration time interrogative pronoun	NTUMC	77000103-n	0	0	0
+Dur+Tim;Int	n	duration or time interrogative pronoun	a duration or time interrogative pronoun	NTUMC	77000103-n	0	0	0
 Ent;Dist	n	entity distal pronoun	an entity distal pronoun	NTUMC	77000080-n	0	0	0
 Ent;Du;Elec	n	entity dual elective existential pronoun	an entity dual elective existential pronoun	NTUMC	77000074-n	0	0	0
-Ent;Du;Fml;Dist+Rem	n	entity dual formal distal remote pronoun	an entity dual formal distal remote pronoun	NTUMC	77000070-n	0	0	0
+Ent;Du;Fml;Dist+Rem	n	entity dual formal distal or remote pronoun	an entity dual formal distal or remote pronoun	NTUMC	77000070-n	0	0	0
 Ent;Du;Fml;Med	n	entity dual formal medial pronoun	an entity dual formal medial pronoun	NTUMC	77000071-n	0	0	0
 Ent;Du;Fml;Prox	n	entity dual formal proximal pronoun	an entity dual formal proximal pronoun	NTUMC	77000072-n	0	0	0
 Ent;Du;Infml;Prox	n	entity dual informal proximal pronoun	an entity dual informal proximal pronoun	NTUMC	77000073-n	0	0	0
@@ -73,22 +84,27 @@ Ent;Pl;Med	n	entity plural medial pronoun	an entity plural medial pronoun	NTUMC	
 Ent;Pl;Prox	n	entity plural proximal pronoun	an entity plural proximal pronoun	NTUMC	77000058-n	0	0	0
 Ent;Prox	n	entity proximal pronoun	an entity proximal pronoun	NTUMC	77000075-n	0	0	0
 Ent;Sg;Dist	n	entity singular distal pronoun	an entity singular distal pronoun	NTUMC	77000079-n	0	0	0
-Ent;Sg;Dist+Rem	n	entity singular distal remote pronoun	an entity singular distal remote pronoun	NTUMC	77000059-n	0	0	0
+Ent;Sg;Dist+Rem	n	entity singular distal or remote pronoun	an entity singular distal or remote pronoun	NTUMC	77000059-n	0	0	0
 Ent;Sg;Med	n	entity singular medial pronoun	an entity singular medial pronoun	NTUMC	77000060-n	0	0	0
 Ent;Sg;Prox	n	entity singular proximal pronoun	an entity singular proximal pronoun	NTUMC	77000061-n	0	0	0
+Ent;Sg;Prox+Dist	n	entity singular proximal or distal pronoun	an entity singular proximal or distal pronoun	TUFS curation		0	0	0
 Ent;Sg;Univ	n	entity singular universal pronoun	an entity singular universal pronoun	NTUMC	77000078-n	0	0	0
 FC	n	free choice pronoun	an indefinite pronoun series used for: free choice (Haspelmath's functions)	Haspelmath		0	0	0
 Int	a	interrogative pronoun	an interrogative pronoun	NTUMC	77000091-a 77000120-a	0	0	0
+Knd;Dist	a	kind distal pronoun	a kind distal pronoun	TUFS curation		0	0	0
 Knd;Int	a	kind interrogative pronoun	a kind interrogative pronoun	TUFS ja どのような		0	0	0
 Knd;Med	a	kind medial pronoun	a kind medial pronoun	NTUMC	77000113-a	0	0	0
 Knd;Prox	a	kind proximal pronoun	a kind proximal pronoun	NTUMC	77000089-a	0	0	0
+Knd;Prox+Dist	a	kind proximal or distal pronoun	a kind proximal or distal pronoun	TUFS curation		0	0	0
 Knd;Rem	a	kind remote pronoun	a kind remote pronoun	NTUMC	77000114-a	0	0	0
 Med	a	medial pronoun	a medial pronoun	NTUMC	77000060-a	0	0	0
-Mnr;Dist+Med	r	manner distal medial pronoun	a manner distal medial pronoun	NTUMC	77000088-r	0	0	0
+Mnr;Dist	r	manner distal pronoun	a manner distal pronoun	TUFS curation		0	0	0
+Mnr;Dist+Med	r	manner distal or medial pronoun	a manner distal or medial pronoun	NTUMC	77000088-r	0	0	0
 Mnr;Elec	n	manner elective existential pronoun	a manner elective existential pronoun	NTUMC	77000028-n	0	0	0
 Mnr;Int	n	manner interrogative pronoun	a manner interrogative pronoun	NTUMC	77000090-n	0	0	0
 Mnr;Med	r	manner medial pronoun	a manner medial pronoun	NTUMC	77000113-r	0	0	0
 Mnr;Prox	r	manner proximal pronoun	a manner proximal pronoun	NTUMC	77000089-r	0	0	0
+Mnr;Prox+Dist	r	manner proximal or distal pronoun	a manner proximal or distal pronoun	TUFS curation		0	0	0
 Mnr;Rem	r	manner remote pronoun	a manner remote pronoun	NTUMC	77000114-r	0	0	0
 Oth	n	other pronoun	an other pronoun	NTUMC	77000001-n	0	0	0
 Pers;Int	n	person interrogative pronoun	a person interrogative pronoun	NTUMC	77000095-n	0	0	0
@@ -106,18 +122,22 @@ Pers;Univ	n	person universal pronoun	a person universal pronoun	NTUMC	77000099-n
 Pers;Univ;Pol	n	person universal polite pronoun	a person universal polite pronoun	NTUMC	77000100-n	0	0	0
 Pl;Dist	a	plural distal pronoun	a plural distal pronoun	NTUMC	77000082-a	0	0	0
 Pl;Prox	a	plural proximal pronoun	a plural proximal pronoun	NTUMC	77000058-a	0	0	0
+Plc;Dist	n	place distal pronoun	a place distal pronoun	TUFS curation		0	0	0
 Plc;Int	n	place interrogative pronoun	a place interrogative pronoun	NTUMC	77000084-n	0	0	0
 Plc;Med	n	place medial pronoun	a place medial pronoun	NTUMC	77000117-n	0	0	0
 Plc;Prox	n	place proximal pronoun	a place proximal pronoun	TUFS ja ここ		0	0	0
+Plc;Prox+Dist	n	place proximal or distal pronoun	a place proximal or distal pronoun	TUFS curation		0	0	0
 Plc;Rem	n	place remote pronoun	a place remote pronoun	NTUMC	77000081-n	0	0	0
 Plc;Sg;Asrt	n	place singular assertive existential pronoun	a place singular assertive existential pronoun	TUFS ja どこか		0	0	0
 Plc;Sg;Oth	n	place singular other pronoun	a place singular other pronoun	NTUMC	77000085-n	0	0	0
 Prox	a	proximal pronoun	a proximal pronoun	NTUMC	77000075-a	0	0	0
+Prox+Dist	a	proximal or distal pronoun	a proximal or distal pronoun	TUFS curation		0	0	0
 Qnt;Int	n	quantity interrogative pronoun	a quantity interrogative pronoun	TUFS ja どのぐらい, どれぐらい		0	0	0
+Qnt;Prox	n	quantity proximal pronoun	a quantity proximal pronoun	TUFS curation		0	0	0
 Rem	a	remote pronoun	a remote pronoun	NTUMC	77000059-a	0	0	0
 Rsn;Int	n	reason interrogative pronoun	a reason interrogative pronoun	NTUMC	77000112-n	0	0	0
-SK+SU	n	specific known specific unknown pronoun	an indefinite pronoun series used for: specific known, specific unknown (Haspelmath's functions)	Haspelmath		0	0	0
-SK+SU+IRR+Q+COND+INEG	n	specific known specific unknown irrealis non-specific question conditional indirect negation pronoun	an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)	Haspelmath		0	0	0
+SK+SU	n	specific known or specific unknown pronoun	an indefinite pronoun series used for: specific known, specific unknown (Haspelmath's functions)	Haspelmath		0	0	0
+SK+SU+IRR+Q+COND+INEG	n	specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun	an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)	Haspelmath		0	0	0
 Sg;Dist	a	singular distal pronoun	a singular distal pronoun	NTUMC	77000079-a	0	0	0
 Sg;Prox	a	singular proximal pronoun	a singular proximal pronoun	NTUMC	77000061-a	0	0	0
 Thng;Int	n	thing interrogative pronoun	a thing interrogative pronoun	NTUMC	77000091-n	0	0	0

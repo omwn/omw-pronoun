@@ -36,7 +36,7 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000032-n	n	3;Oth	person		3				other					3rd person, other pronoun; pronoun, person; quantifier: other		他人							
 77000033-n	n	3;Pl;Recp	person	personal	3	pl			reciprocal					3rd person, plural, reciprocal pronoun; personal pronoun, person, 3rd person, plural, reciprocal		彼此							
 77000034-n	n	3;Pl;Refl	person	personal	3	pl			reflexive					3rd person, plural, reflexive pronoun; personal pronoun, person, 3rd person, plural, reflexive	themselves								
-77000035-n	n	3;Pl;F	person	personal	3	pl	f							personal pronoun, person, 3rd person, plural, feminine		她们							
+77000035-n	n	3;Pl;F	person	personal	3	pl	f							personal pronoun, person, 3rd person, plural, feminine		她们	かのじょたち; 彼女たち; かのじょら; 彼女ら						
 77000036-n	n	3;Pl;M			3	pl	m							3rd person, plural, masculine pronoun									
 77000037-n	n	3;Pl;N	entity	personal	3	pl	n							personal pronoun, entity, 3rd person, plural, neuter		它们							
 77000038-n	n	3;Sg;Infml;NHon	entity	personal	3	sg				informal	non-honorific			3rd person, singular, informal, non-honorific pronoun; personal pronoun, entity, 3rd person, singular, informal, non-honorific			ヤツ; やつ						

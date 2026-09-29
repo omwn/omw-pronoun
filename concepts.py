@@ -123,11 +123,16 @@ def caseless(code: str) -> str:
 
 
 def label(code: str) -> str:
-    """An English label: ``1i;Du`` -> "first person inclusive dual"."""
+    """An English label: ``1i;Du`` -> "first person inclusive dual".
+
+    Alternatives in a slot read as "or": ``Plc;Prox+Dist`` -> "place proximal or
+    distal pronoun".
+    """
     words = []
     for part in code.split(";"):
-        for value in part.split("+"):
-            words.append(PERSON.get(value) or WORDS.get(value, value))
+        words.append(
+            " or ".join(PERSON.get(v) or WORDS.get(v, v) for v in part.split("+"))
+        )
     return " ".join(words) + (" pronoun" if code else "")
 
 

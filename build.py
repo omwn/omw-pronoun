@@ -79,7 +79,15 @@ NTUMC_LANGUAGES = {
     "qcn": ("cmn-Hant", "Mandarin Chinese (traditional)"),
 }
 #: individual-language codes whose macrolanguage tag is used instead
-MACRO = {"arb": "ar", "zsm": "zsm", "cmn": "cmn", "hbs": "sh", "pes": "fa", "swh": "sw"}
+MACRO = {
+    "arb": "ar",
+    "zsm": "zsm",
+    "cmn": "cmn",
+    "hbs": "sh",
+    "pes": "fa",
+    "swh": "sw",
+    "tgl": "tl",  # langcodes would make this fil
+}
 
 #: Unicode name prefix -> ISO 15924 script
 SCRIPTS = {
@@ -426,31 +434,57 @@ def add_haspelmath(languages: dict[str, Language], codes: set[str]) -> None:
             entry.senses[row["code"]].add(f"Haspelmath 1997 {row['construction']}")
 
 
-def add_tufs(languages: dict[str, Language]) -> None:
-    """Credit TUFS where its form confirms a known word; list the rest."""
-    unmatched = []
+def add_tufs(languages: dict[str, Language], codes: set[str]) -> None:
+    """Add the curated TUFS pro-forms (data/tufs-curation.tsv).
+
+    Each TUFS word was mapped by its own meaning, not by the Japanese headword it
+    translates (French *vous* under あなた is 2;Pl and 2;Sg;Fml;Pol). Only rows of
+    kind ``pronoun`` with at least medium confidence and a known concept are used;
+    pronoun substitutes (Vietnamese kin terms used as "you") and rows proposing a
+    NEW concept stay in the table for later.
+    """
+    iso = {}
     with (DATA / "tufs-pronouns.tsv").open(encoding="utf8") as handle:
         for row in csv.DictReader(handle, delimiter="\t"):
-            form = row["form"].strip(" ,")
-            language = languages.get(bcp47(row["iso639_3"]))
-            known = language.has(form) if language else {}
-            if known:
-                for entry in language.entries.values():
-                    if entry.lemma == form:
-                        for code in entry.senses:
-                            entry.senses[code].add(
-                                f"TUFS {row['tufs_lang']} {row['tufs_wid']}"
-                            )
-            else:
-                unmatched.append(row | {"form": form})
-    with (DATA / "tufs-candidates.tsv").open("w", encoding="utf8") as out:
-        out.write("default_code\ttufs_lang\ttufs_wid\theading\tform\n")
-        for row in unmatched:
-            out.write(
-                f"{row['code']}\t{row['tufs_lang']}\t{row['tufs_wid']}"
-                f"\t{row['heading']}\t{row['form']}\n"
+            iso[row["tufs_lang"]] = row["iso639_3"]
+    added = held = 0
+    with (DATA / "tufs-curation.tsv").open(encoding="utf8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            usable = (
+                row["kind"] == "pronoun"
+                and row["confidence"] in ("high", "medium")
+                and row["code"] in codes
             )
-    logger.info("%d TUFS forms left for curation (tufs-candidates.tsv)", len(unmatched))
+            if not usable:
+                held += 1
+                continue
+            tag = bcp47(iso[row["tufs_lang"]])
+            language = languages.setdefault(
+                tag, Language(tag, TUFS_NAMES.get(tag, tag))
+            )
+            entry = language.entry(row["form"], row["code"])
+            entry.senses[row["code"]].add(f"TUFS {row['tufs_lang']} {row['tufs_wid']}")
+            added += 1
+    logger.info("TUFS: %d senses added, %d rows held back", added, held)
+
+
+#: names for languages that only TUFS contributes
+TUFS_NAMES = {
+    "th": "Thai",
+    "lo": "Lao",
+    "km": "Khmer",
+    "vi": "Vietnamese",
+    "tl": "Tagalog",
+    "ko": "Korean",
+    "mn": "Mongolian",
+    "khk": "Mongolian",
+    "apc": "Syrian Arabic",
+    "ur": "Urdu",
+    "ar": "Arabic",
+    "ms": "Malay",
+    "zsm": "Malay",
+    "tr": "Turkish",
+}
 
 
 def remap(languages: dict[str, Language]) -> None:
@@ -734,7 +768,7 @@ def main() -> None:
     add_extra(languages, codes)
     add_parabank(languages, codes)
     add_haspelmath(languages, codes)
-    add_tufs(languages)
+    add_tufs(languages, codes)
     remap(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}
     attested = {

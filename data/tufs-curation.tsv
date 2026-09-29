@@ -1,0 +1,908 @@
+tufs_lang	tufs_wid	heading	tufs_form	form	code	kind	confidence	note
+de	812	あっち	dort	dort	Plc;Dist	pronoun	high	NEW
+de	959	あなた	Sie	Sie	2;Sg;Fml;Pol	pronoun	high	
+de	959	あなた	Sie	Sie	2;Pl;Fml;Pol	pronoun	high	NEW; Sie is also formal plural
+de	961	あの	der	der	Prox+Dist	pronoun	low	NEW; definite article / proximity-neutral demonstrative (no near/far contrast); distal would be jener; heading あの
+de	768	いくつ	wie viel	wie viel	Qnt;Int	pronoun	high	
+de	769	いくら	was	was	Thng;Int	pronoun	high	'what'; heading いくら via was kostet
+de	1143	いつ	wann	wann	Tim;Int	pronoun	high	
+de	810	こちら	hier	hier	Plc;Prox	pronoun	high	
+de	960	この	dieser	dieser	Prox	pronoun	high	determiner
+de	960	この	dieser	dieser	Ent;Prox	pronoun	high	pronoun use
+de	965	こんな	solch	solch	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+de	967	そう	so	so	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+de	811	そちら	da	da	Plc;Prox+Dist	pronoun	medium	NEW; proximity-neutral demonstrative (no near/far contrast); also temporal/causal
+de	956	だれ	wer	wer	Pers;Int	pronoun	high	
+de	955	だれか	jemand	jemand	Pers;Sg;Asrt	pronoun	high	
+de	813	どちら	wo	wo	Plc;Int	pronoun	high	
+de	957	どなた	wer	wer	Pers;Int	pronoun	high	not polite; heading どなた
+de	963	どの	welch	welch	Int	pronoun	high	welch- 'which' (determiner)
+de	964	どんな	welch	welch	Int	pronoun	medium	welch- 'which'; kind would be was für; heading どんな
+de	1200	みんな	alle	alle	Pers;Univ	pronoun	high	'everybody' (plural); also determiner 'all'
+de	958	君（きみ）	du	du	2;Sg;Infml	pronoun	high	
+de	952	彼女	sie	sie	3;Sg;F	pronoun	high	
+de	952	彼女	sie	sie	3;Pl	pronoun	high	sie is also 'they'
+de	951	彼（かれ）	er	er	3;Sg;M	pronoun	high	
+de	954	私たち	wir	wir	1;Pl	pronoun	high	
+de	953	私（わたし）	ich	ich	1;Sg	pronoun	high	
+de	966	自分	selber	selber	Pers;Refl	pronoun	medium	emphatic/intensifier self; reflexive proper is sich
+en	839	あっち	there	there	Plc;Dist	pronoun	high	NEW
+en	986	あなた	you	you	2;Sg	pronoun	high	
+en	986	あなた	you	you	2;Pl	pronoun	high	
+en	988	あの	that	that	Sg;Dist	pronoun	high	determiner
+en	988	あの	that	that	Ent;Sg;Dist	pronoun	high	pronoun
+en	795	いくつ	How many	how many	Qnt;Int	pronoun	high	
+en	796	いくら	How much	how much	Qnt;Int	pronoun	high	
+en	1170	いつ	when	when	Tim;Int	pronoun	high	
+en	837	こちら	here	here	Plc;Prox	pronoun	high	
+en	987	この	this	this	Sg;Prox	pronoun	high	determiner
+en	987	この	this	this	Ent;Sg;Prox	pronoun	high	pronoun
+en	992	こんな	such	such	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+en	994	そう	so	so	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+en	838	そちら	there	there	Plc;Dist	pronoun	high	NEW; heading そちら (Med); English is two-way
+en	983	だれ	who	who	Pers;Int	pronoun	high	
+en	982	だれか	someone	someone	Pers;Sg;Asrt	pronoun	high	
+en	840	どちら	where	where	Plc;Int	pronoun	high	
+en	984	どなた	who	who	Pers;Int	pronoun	high	not polite; heading どなた
+en	990	どの	which	which	Int	pronoun	high	determiner
+en	990	どの	which	which	Ent;Int	pronoun	high	pronoun
+en	991	どんな	what	what	Int	pronoun	medium	determiner 'what (kind of)'; heading どんな
+en	991	どんな	what	what	Thng;Int	pronoun	high	pronoun
+en	1227	みんな	everyone	everyone	Pers;Univ	pronoun	high	
+en	985	君（きみ）	you	you	2;Sg	pronoun	high	not specifically informal
+en	985	君（きみ）	you	you	2;Pl	pronoun	high	
+en	978	彼女	he, she	he	3;Sg;M	pronoun	high	
+en	978	彼女	he, she	she	3;Sg;F	pronoun	high	
+en	979	彼女	they	they	3;Pl	pronoun	high	
+en	981	私たち	we	we	1;Pl	pronoun	high	
+en	980	私（わたし）	I	I	1;Sg	pronoun	high	
+en	993	自分	oneself	oneself	Pers;Refl	pronoun	high	
+es	789	あっち	allí	allí	Plc;Rem	pronoun	high	aquí/ahí/allí three-way
+es	936	あなた	usted	usted	2;Sg;Fml;Pol	pronoun	high	
+es	1211	あなた方	ustedes	ustedes	2;Pl	pronoun	high	plain plural in Latin America
+es	1211	あなた方	ustedes	ustedes	2;Pl;Fml;Pol	pronoun	medium	NEW; formal plural in Spain (vs vosotros)
+es	938	あの	ese, esa, esos, esas	ese	Med	pronoun	high	medial (este/ese/aquel); heading あの is Rem, aquel would fit
+es	745	いくつ	cuántos	cuántos	Qnt;Int	pronoun	high	
+es	746	いくら	cuánto	cuánto	Qnt;Int	pronoun	high	
+es	1120	いつ	cuándo	cuándo	Tim;Int	pronoun	high	
+es	787	こちら	aquí	aquí	Plc;Prox	pronoun	high	
+es	937	この	este	este	Prox	pronoun	high	determiner; also pronoun
+es	942	こんな	tal	tal	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+es	944	そう	así	así	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+es	788	そちら	ahí	ahí	Plc;Med	pronoun	high	
+es	933	だれ	quién	quién	Pers;Int	pronoun	high	
+es	932	だれか	alguien	alguien	Pers;Sg;Asrt	pronoun	high	
+es	790	どちら	dónde	dónde	Plc;Int	pronoun	high	
+es	934	どなた	quién	quién	Pers;Int	pronoun	high	not polite; heading どなた
+es	940	どの	cuál	cuál	Ent;Int	pronoun	high	'which one'
+es	941	どんな	cómo	cómo	Mnr;Int	pronoun	high	'how'; heading どんな (kind would be qué tipo de)
+es	1177	みんな	todo el mundo	todo el mundo	Pers;Univ	pronoun	medium	multiword expression
+es	935	君（きみ）	tú	tú	2;Sg;Infml	pronoun	high	
+es	1207	彼ら	ellas	ellas	3;Pl;F	pronoun	high	
+es	929	彼ら	ellos	ellos	3;Pl;M	pronoun	high	masculine/mixed plural; known 3;Pl;F looks wrong
+es	1206	彼女	ella	ella	3;Sg;F	pronoun	high	
+es	928	彼（かれ）	él	él	3;Sg;M	pronoun	high	
+es	931	私たち	nosotros	nosotros	1;Pl	pronoun	high	masculine/mixed; feminine nosotras
+es	930	私（わたし）	yo	yo	1;Sg	pronoun	high	
+es	943	自分	sí mismo	sí mismo	Pers;Refl	pronoun	medium	3rd person/generic 'oneself' (emphatic reflexive)
+fr	79	あそこ	là-bas	là-bas	Plc;Dist	pronoun	high	NEW
+fr	79	あちら	là-bas	là-bas	Plc;Dist	pronoun	high	NEW
+fr	79	あっち	là-bas	là-bas	Plc;Dist	pronoun	high	NEW
+fr	8	あなた	vous	vous	2;Pl	pronoun	high	
+fr	8	あなた	vous	vous	2;Sg;Fml;Pol	pronoun	high	
+fr	8	あなた方	vous	vous	2;Pl	pronoun	high	
+fr	8	あなた方	vous	vous	2;Sg;Fml;Pol	pronoun	high	
+fr	18	あの	ce	ce	Prox+Dist	pronoun	high	NEW; determiner; proximity-neutral demonstrative (no near/far contrast)
+fr	18	あの	ce	ce	3;Sg;N	pronoun	medium	pronoun as in c'est
+fr	1778	あの	ce ...-là	ce ...-là	Dist	pronoun	high	discontinuous determiner
+fr	901	あれ	cela	cela	Ent;Sg;Dist	pronoun	high	contrasts with ceci
+fr	5	あれ	ça	ça	Ent;Sg;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+fr	223	いくつ	combien	combien	Qnt;Int	pronoun	high	
+fr	223	いくら	combien	combien	Qnt;Int	pronoun	high	
+fr	238	いつ	quand	quand	Tim;Int	pronoun	high	
+fr	401	ここ	ici	ici	Plc;Prox	pronoun	high	
+fr	401	こちら	ici	ici	Plc;Prox	pronoun	high	
+fr	401	こっち	ici	ici	Plc;Prox	pronoun	high	
+fr	18	この	ce	ce	Prox+Dist	pronoun	high	NEW; determiner; proximity-neutral demonstrative (no near/far contrast)
+fr	18	この	ce	ce	3;Sg;N	pronoun	medium	pronoun as in c'est
+fr	1877	この	ce ...-ci	ce ...-ci	Prox	pronoun	high	discontinuous determiner
+fr	1883	これ	ceci	ceci	Ent;Sg;Prox	pronoun	high	
+fr	882	こんな	tel	tel	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+fr	14	そう	oui	oui		not-proform	high	'yes' (answer particle); mistranslation of そう
+fr	73	そこ	là	là	Plc;Prox+Dist	pronoun	medium	NEW; proximity-neutral demonstrative (no near/far contrast); can mean here or there
+fr	73	そちら	là	là	Plc;Prox+Dist	pronoun	medium	NEW; proximity-neutral demonstrative (no near/far contrast); can mean here or there
+fr	73	そっち	là	là	Plc;Prox+Dist	pronoun	medium	NEW; proximity-neutral demonstrative (no near/far contrast); can mean here or there
+fr	18	その	ce	ce	Prox+Dist	pronoun	high	NEW; determiner; proximity-neutral demonstrative (no near/far contrast)
+fr	18	その	ce	ce	3;Sg;N	pronoun	medium	pronoun as in c'est
+fr	1778	その	ce ...-là	ce ...-là	Dist	pronoun	high	discontinuous determiner
+fr	901	それ	cela	cela	Ent;Sg;Dist	pronoun	high	contrasts with ceci
+fr	5	それ	ça	ça	Ent;Sg;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+fr	184	だれ	personne	personne	Pers;Sg;Neg	pronoun	high	'nobody' (with ne); also noun 'person'; heading だれ
+fr	430	だれ	qui	qui	Pers;Int	pronoun	high	
+fr	488	だれか	quelqu'un	quelqu'un	Pers;Sg;Asrt	pronoun	high	
+fr	264	どう	comment	comment	Mnr;Int	pronoun	high	
+fr	139	どうして	pourquoi	pourquoi	Rsn;Int	pronoun	high	
+fr	95	どこ	où	où	Plc;Int	pronoun	high	
+fr	95	どちら	où	où	Plc;Int	pronoun	high	
+fr	95	どっち	où	où	Plc;Int	pronoun	high	
+fr	430	どなた	qui	qui	Pers;Int	pronoun	high	not polite; heading どなた
+fr	955	どの	lequel	lequel	Ent;Int	pronoun	high	'which one'
+fr	955	どれ	lequel	lequel	Ent;Int	pronoun	high	'which one'
+fr	21	どんな	quel	quel	Int	pronoun	medium	determiner 'which/what'; heading どんな
+fr	139	なぜ	pourquoi	pourquoi	Rsn;Int	pronoun	high	
+fr	149	みんな	tout le monde	tout le monde	Pers;Univ	pronoun	medium	multiword expression
+fr	199	全部	tout	tout	Thng;Sg;Univ	pronoun	high	'everything'; also determiner 'all'
+fr	80	君（きみ）	tu	tu	2;Sg;Infml	pronoun	high	
+fr	214	彼女	elle	elle	3;Sg;F	pronoun	high	
+fr	2074	彼女	elles	elles	3;Pl;F	pronoun	high	heading 彼女 (sg)
+fr	27	彼（かれ）	il	il	3;Sg;M	pronoun	high	also impersonal
+fr	149	皆さん	tout le monde	tout le monde	Pers;Univ	pronoun	medium	multiword expression; not polite; heading 皆さん
+fr	54	私たち	nous	nous	1;Pl	pronoun	high	
+fr	190	私たち	on	on	1;Pl	pronoun	medium	colloquial 'we'; also generic 'one' (no code)
+fr	36	私（わたくし）	je	je	1;Sg	pronoun	high	
+fr	168	私（わたくし）	moi	moi	1;Sg	pronoun	high	stressed form
+fr	36	私（わたし）	je	je	1;Sg	pronoun	high	
+fr	168	私（わたし）	moi	moi	1;Sg	pronoun	high	stressed form
+fr	1548	自分	soi	soi	Pers;Refl	pronoun	high	
+pb	81	あっち	ali	ali	Plc;Rem	pronoun	high	aqui/aí/ali three-way
+pb	6	あなた	você	você	2;Sg	pronoun	high	unmarked you in Brazil
+pb	598	あの	aquele	aquele	Rem	pronoun	high	determiner; also pronoun
+pb	1048	あの	esse	esse	Med	pronoun	medium	medial; in Brazil esse also used for este (proximal)
+pb	197	いくつ	quanto	quanto	Qnt;Int	pronoun	high	
+pb	197	いくら	quanto	quanto	Qnt;Int	pronoun	high	
+pb	40	いつ	quando	quando	Tim;Int	pronoun	high	
+pb	283	こちら	aqui	aqui	Plc;Prox	pronoun	high	
+pb	1047	この	este	este	Prox	pronoun	high	determiner; also pronoun
+pb	595	こんな	tal	tal	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+pb	103	そう	assim	assim	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+pb	856	そちら	aí	aí	Plc;Med	pronoun	high	
+pb	637	だれ	quem	quem	Pers;Int	pronoun	high	
+pb	1046	だれか	alguém	alguém	Pers;Sg;Asrt	pronoun	high	
+pb	589	どちら	onde	onde	Plc;Int	pronoun	high	
+pb	637	どなた	quem	quem	Pers;Int	pronoun	high	not polite; heading どなた
+pb	26	どの	qual	qual	Int	pronoun	high	determiner
+pb	26	どの	qual	qual	Ent;Int	pronoun	high	pronoun
+pb	48	どんな	que	que	Int	pronoun	medium	determiner 'what (kind of)'; heading どんな
+pb	48	どんな	que	que	Thng;Int	pronoun	high	pronoun
+pb	1205	みんな	todo mundo	todo mundo	Pers;Univ	pronoun	medium	multiword expression
+pb	6	君（きみ）	você	você	2;Sg	pronoun	high	unmarked you in Brazil; not specifically informal
+pb	1220	彼ら	elas	elas	3;Pl;F	pronoun	high	
+pb	138	彼女	ela	ela	3;Sg;F	pronoun	high	
+pb	1044	彼女	ele	ele	3;Sg;M	pronoun	high	
+pb	1045	彼女	eles	eles	3;Pl;M	pronoun	high	masculine/mixed plural
+pb	768	私たち	nós	nós	1;Pl	pronoun	high	
+pb	21	私（わたし）	eu	eu	1;Sg	pronoun	high	
+pb	1049	自分	próprio	próprio		not-proform	medium	adjective 'own; self' (intensifier); reflexive is si/se
+pt	106	あっち	ali	ali	Plc;Rem	pronoun	high	aqui/aí/ali three-way
+pt	244	あなた	você	você	2;Sg;Fml;Pol	pronoun	medium	European Portuguese: semi-formal (vs tu)
+pt	246	あの	aquele	aquele	Rem	pronoun	high	determiner; also pronoun
+pt	64	いくつ	quanto	quanto	Qnt;Int	pronoun	high	
+pt	65	いくら	quanto custa	quanto custa		not-proform	high	phrase 'how much does it cost' (contains quanto Qnt;Int)
+pt	405	いつ	quando	quando	Tim;Int	pronoun	high	
+pt	104	こちら	aqui	aqui	Plc;Prox	pronoun	high	
+pt	245	この	este	este	Prox	pronoun	high	determiner; also pronoun
+pt	249	こんな	assim	assim	Mnr;Prox+Dist	pronoun	medium	NEW; proximity-neutral demonstrative (no near/far contrast); manner adverb, also adjectival 'such'; heading こんな
+pt	249	そう	assim	assim	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast); also adjectival 'such'
+pt	105	そちら	aí	aí	Plc;Med	pronoun	high	
+pt	242	だれ	quem	quem	Pers;Int	pronoun	high	
+pt	241	だれか	alguém	alguém	Pers;Sg;Asrt	pronoun	high	
+pt	107	どちら	onde	onde	Plc;Int	pronoun	high	
+pt	242	どなた	quem	quem	Pers;Int	pronoun	high	not polite; heading どなた
+pt	248	どの	qual	qual	Int	pronoun	high	determiner
+pt	248	どの	qual	qual	Ent;Int	pronoun	high	pronoun
+pt	247	どんな	como	como	Mnr;Int	pronoun	high	'how'; heading どんな
+pt	455	みんな	todas as pessoas	todas as pessoas		not-proform	medium	compositional NP 'all the people'
+pt	243	君（きみ）	tu	tu	2;Sg;Infml	pronoun	high	
+pt	237	彼女	ele, ela	ele	3;Sg;M	pronoun	high	
+pt	237	彼女	ele, ela	ela	3;Sg;F	pronoun	high	
+pt	238	彼女	eles, elas	eles	3;Pl;M	pronoun	high	masculine/mixed plural
+pt	238	彼女	eles, elas	elas	3;Pl;F	pronoun	high	
+pt	240	私たち	nós	nós	1;Pl	pronoun	high	
+pt	239	私（わたし）	eu	eu	1;Sg	pronoun	high	
+pt	239	自分	eu	eu	1;Sg	pronoun	high	'I'; heading 自分 (reflexive would be si/próprio)
+ru	695	あっち	там	там	Plc;Dist	pronoun	high	NEW
+ru	842	あなた	вы	вы	2;Pl	pronoun	high	
+ru	842	あなた	вы	вы	2;Sg;Fml;Pol	pronoun	high	
+ru	844	あの	тот	тот	Dist	pronoun	high	determiner
+ru	844	あの	тот	тот	Ent;Dist	pronoun	high	pronoun
+ru	651	いくつ	сколько	сколько	Qnt;Int	pronoun	high	
+ru	651	いくら	сколько	сколько	Qnt;Int	pronoun	high	
+ru	652	いくら	сколько	сколько	Qnt;Int	pronoun	high	
+ru	1026	いつ	когда	когда	Tim;Int	pronoun	high	
+ru	693	こちら	здесь	здесь	Plc;Prox	pronoun	high	
+ru	843	この	этот	этот	Prox	pronoun	high	determiner
+ru	843	この	этот	этот	Ent;Prox	pronoun	high	pronoun
+ru	848	こんな	такой	такой	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+ru	850	そう	так	так	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
+ru	695	そちら	там	там	Plc;Dist	pronoun	high	NEW; heading そちら (Med); Russian is two-way
+ru	839	だれ	кто	кто	Pers;Int	pronoun	high	
+ru	838	だれか	кто-то	кто-то	Pers;Sg;Asrt	pronoun	high	
+ru	696	どちら	где	где	Plc;Int	pronoun	high	
+ru	839	どなた	кто	кто	Pers;Int	pronoun	high	not polite; heading どなた
+ru	847	どの	какой	какой	Knd;Int	pronoun	high	'what kind of'
+ru	847	どの	какой	какой	Int	pronoun	high	'which/what' determiner
+ru	846	どの	который	который	Int	pronoun	high	'which' (of a series); also relative
+ru	847	どんな	какой	какой	Knd;Int	pronoun	high	'what kind of'
+ru	847	どんな	какой	какой	Int	pronoun	high	'which/what' determiner
+ru	1083	みんな	все	все	Pers;Univ	pronoun	high	'everybody' (plural)
+ru	841	君（きみ）	ты	ты	2;Sg;Infml	pronoun	high	
+ru	834	彼女	он	он	3;Sg;M	pronoun	high	
+ru	834	彼女	она	она	3;Sg;F	pronoun	high	
+ru	835	彼女	они	они	3;Pl	pronoun	high	
+ru	837	私たち	мы	мы	1;Pl	pronoun	high	
+ru	836	私（わたし）	я	я	1;Sg	pronoun	high	
+ru	849	自分	сам	сам	Pers;Refl	pronoun	medium	emphatic/intensifier self; reflexive proper is себя
+tr	1582	あっち	orası,orada	orası	Plc;Dist	pronoun	high	NEW; 'that place'; o-series
+tr	1582	あっち	orası,orada	orada	Plc;Dist	pronoun	high	NEW; locative of ora
+tr	1730	あなた	siz	siz	2;Pl	pronoun	high	
+tr	1730	あなた	siz	siz	2;Sg;Fml;Pol	pronoun	high	
+tr	1722	あの	o	o	Dist	pronoun	high	determiner
+tr	1722	あの	o	o	Ent;Sg;Dist	pronoun	high	demonstrative pronoun
+tr	1722	あの	o	o	3;Sg	pronoun	high	'he/she/it'
+tr	1539	いくつ	kaç	kaç	Qnt;Int	pronoun	high	
+tr	1540	いくら	ne kadar	ne kadar	Qnt;Int	pronoun	high	lexicalized
+tr	1914	いつ	ne zaman	ne zaman	Tim;Int	pronoun	high	lexicalized
+tr	1581	こちら	burası,burada	burası	Plc;Prox	pronoun	high	'this place'
+tr	1581	こちら	burası,burada	burada	Plc;Prox	pronoun	high	locative of bura
+tr	1731	この	bu	bu	Prox	pronoun	high	determiner
+tr	1731	この	bu	bu	Ent;Sg;Prox	pronoun	high	pronoun
+tr	1736	こんな	böyle	böyle	Knd;Prox	pronoun	high	adjectival 'such, like this'
+tr	1736	こんな	böyle	böyle	Mnr;Prox	pronoun	high	adverbial 'like this'
+tr	1738	そう	öyle	öyle	Mnr;Dist	pronoun	high	NEW; 'like that'; o-series
+tr	1582	そちら	orası,orada	orası	Plc;Dist	pronoun	high	NEW; 'that place'; o-series
+tr	1582	そちら	orası,orada	orada	Plc;Dist	pronoun	high	NEW; locative of ora
+tr	1727	だれ	kim	kim	Pers;Int	pronoun	high	
+tr	1726	だれか	kimse	kimse	Pers;Sg;Neg	pronoun	medium	'nobody' (with negation), 'anyone' in questions; heading だれか (someone = biri)
+tr	387	どこ	nereye	nereye	Plc;Int	pronoun	high	dative 'to where'
+tr	1584	どちら	neresi,nerede	neresi	Plc;Int	pronoun	high	'which place'
+tr	1584	どちら	neresi,nerede	nerede	Plc;Int	pronoun	high	locative
+tr	1727	どなた	kim	kim	Pers;Int	pronoun	high	not polite; heading どなた
+tr	1734	どの	hangi	hangi	Int	pronoun	high	
+tr	1733	どんな	nasıl	nasıl	Mnr;Int	pronoun	high	'how'; also 'what kind of' adjectivally; heading どんな
+tr	1971	みんな	herkes	herkes	Pers;Univ	pronoun	high	
+tr	1729	君（きみ）	sen	sen	2;Sg;Infml	pronoun	high	
+tr	1722	彼女	o	o	Dist	pronoun	high	determiner
+tr	1722	彼女	o	o	Ent;Sg;Dist	pronoun	high	demonstrative pronoun
+tr	1722	彼女	o	o	3;Sg	pronoun	high	'he/she/it'
+tr	1723	彼女	onlar	onlar	3;Pl	pronoun	high	
+tr	1725	私たち	biz	biz	1;Pl	pronoun	high	
+tr	1724	私（わたし）	ben	ben	1;Sg	pronoun	high	
+tr	1737	自分	kendim	kendim	1;Sg;Refl	pronoun	high	'myself'
+ar	102	あそこ	هُنَاكَ	هُنَاكَ	Plc;Dist	pronoun	high	hunāka "there"; two-way here/there system; NEW code Plc;Dist
+ar	1236	あなた	حَضْرَتُكَ	حَضْرَتُكَ	2;Sg;Fml;Pol	substitute	high	honorific address term, lit. "your presence" (ḥaḍratuka, masc.)
+ar	474	あなた方	أنتم	أنتم	2;Pl	pronoun	high	antum "you (pl.)", masculine/common plural
+ar	238	あの	ذلك	ذلك	Sg;Dist	pronoun	high	dhālika "that" (masc. sg.), determiner use
+ar	238	あの	ذلك	ذلك	Ent;Sg;Dist	pronoun	high	dhālika "that" (masc. sg.), pronoun use
+ar	1360	あの	ذٰلِكَ	ذٰلِكَ	Sg;Dist	pronoun	high	dhālika "that" (masc. sg.), determiner use
+ar	1360	あの	ذٰلِكَ	ذٰلِكَ	Ent;Sg;Dist	pronoun	high	dhālika "that" (masc. sg.), pronoun use
+ar	476	あれ	تلك	تلك	Sg;Dist	pronoun	high	tilka "that" (fem. sg.), determiner use
+ar	476	あれ	تلك	تلك	Ent;Sg;Dist	pronoun	high	tilka "that" (fem. sg.), pronoun use
+ar	238	あれ	ذلك	ذلك	Sg;Dist	pronoun	high	dhālika "that" (masc. sg.), determiner use
+ar	238	あれ	ذلك	ذلك	Ent;Sg;Dist	pronoun	high	dhālika "that" (masc. sg.), pronoun use
+ar	63	いくつ	كَمْ	كَمْ	Qnt;Int	pronoun	high	kam "how many/much"
+ar	64	いくら	بكم	بكم	Qnt;Int	pronoun	medium	bi-kam "for how much" (price): preposition bi- + kam
+ar	930	いくら	بِكَمْ	بِكَمْ	Qnt;Int	pronoun	medium	bi-kam "for how much" (price): preposition bi- + kam
+ar	399	いつ	متى	متى	Tim;Int	pronoun	high	matā "when"
+ar	2081	いつ	مَتَى	مَتَى	Tim;Int	pronoun	high	matā "when"
+ar	101	ここ	هُنَا	هُنَا	Plc;Prox	pronoun	high	hunā "here"
+ar	237	この	هذا	هذا	Sg;Prox	pronoun	high	hādhā "this" (masc. sg.), determiner use
+ar	237	この	هذا	هذا	Ent;Sg;Prox	pronoun	high	hādhā "this" (masc. sg.), pronoun use
+ar	475	この	هذه	هذه	Sg;Prox	pronoun	high	hādhihi "this" (fem. sg.), determiner use
+ar	475	この	هذه	هذه	Ent;Sg;Prox	pronoun	high	hādhihi "this" (fem. sg.), pronoun use
+ar	237	これ	هذا	هذا	Sg;Prox	pronoun	high	hādhā "this" (masc. sg.), determiner use
+ar	237	これ	هذا	هذا	Ent;Sg;Prox	pronoun	high	hādhā "this" (masc. sg.), pronoun use
+ar	475	これ	هذه	هذه	Sg;Prox	pronoun	high	hādhihi "this" (fem. sg.), determiner use
+ar	475	これ	هذه	هذه	Ent;Sg;Prox	pronoun	high	hādhihi "this" (fem. sg.), pronoun use
+ar	241	こんな	هٰكَذَا	هٰكَذَا	Mnr;Prox	pronoun	high	hākadhā "thus, like this": manner adverb, not kind
+ar	243	そう	كذلك	كذلك	Mnr;Dist+Med	pronoun	medium	kadhālika "like that, thus; also, likewise"; two-way manner code as for Mandarin 那样 / Indonesian begitu
+ar	235	だれ	من	من	Pers;Int	pronoun	high	man "who" (unvocalised; also the preposition min "from")
+ar	234	だれか	أَحَدٌ	أَحَدٌ	Pers;Sg;Asrt	pronoun	high	aḥadun "someone, one"
+ar	234	だれか	أَحَدٌ	أَحَدٌ	Pers;Sg;Elec	pronoun	medium	"anyone" in questions/negation
+ar	889	どこ	أَيْنَ	أَيْنَ	Plc;Int	pronoun	high	ayna "where"
+ar	103	どちら	أين	أين	Plc;Int	pronoun	high	ayna "where"
+ar	240	どの	أَيٌّ	أَيٌّ	Int	pronoun	high	ayy "which" (determiner, with following noun)
+ar	240	どの	أَيٌّ	أَيٌّ	Ent;Int	pronoun	medium	ayy "which one" (pronoun use, e.g. ayyuhum)
+ar	448	みんな	جَمِيعٌ	جَمِيعٌ	Pers;Univ	pronoun	medium	jamīʿ "all, the whole"; al-jamīʿ "everyone"; a quantifier noun
+ar	2034	何（なに・なん）	مَا	مَا	Thng;Int	pronoun	high	mā "what" (also relative and negator)
+ar	236	君（きみ）	أَنْتَ	أَنْتَ	2;Sg;M	pronoun	high	anta "you (masc. sg.)"; NEW code 2;Sg;M (Arabic 2nd person has gender)
+ar	231	彼女	هم	هم	3;Pl;M	pronoun	high	hum "they (masc./common pl.)"; mislisted under 彼女
+ar	230	彼女	هو	هو	3;Sg;M	pronoun	high	huwa "he"
+ar	473	彼女	هي	هي	3;Sg;F	pronoun	high	hiya "she"
+ar	2393	彼（かれ）	هُوَ	هُوَ	3;Sg;M	pronoun	high	huwa "he"
+ar	233	私たち	نحن	نحن	1;Pl	pronoun	high	naḥnu "we"
+ar	232	私（わたし）	أَنَا	أَنَا	1;Sg	pronoun	high	anā "I"
+ar	242	自分	نَفْسٌ	نَفْسٌ	Pers;Refl	pronoun	medium	nafs "self, soul": noun used as reflexive with possessive suffix (nafsuhu "himself")
+as	467	あそこ	هنيك	هنيك	Plc;Dist	pronoun	high	hnīk "there"; two-way system; NEW code Plc;Dist
+as	383	あなた	إنت	إنت	2;Sg;M	pronoun	high	ʔinta "you (masc. sg.)"; NEW code 2;Sg;M
+as	384	あなた	إنتي	إنتي	2;Sg;F	pronoun	high	ʔinti "you (fem. sg.)"; NEW code 2;Sg;F
+as	385	あなた方	إنتو	إنتو	2;Pl	pronoun	high	ʔintu "you (pl.)", no gender distinction
+as	393	あれ	هداك	هداك	Sg;Dist	pronoun	high	hadāk "that" (masc.), determiner use
+as	393	あれ	هداك	هداك	Ent;Sg;Dist	pronoun	high	hadāk "that one" (masc.), pronoun use
+as	394	あれ	هديك	هديك	Sg;Dist	pronoun	high	hadīk "that" (fem.), determiner use
+as	394	あれ	هديك	هديك	Ent;Sg;Dist	pronoun	high	hadīk "that one" (fem.), pronoun use
+as	129	いくつ	كم	كم	Qnt;Int	pronoun	high	kam "how many"
+as	130	いくら	قدّيش	قدّيش	Qnt;Int	pronoun	high	ʔaddēš "how much"
+as	611	いつ	إيمتى	إيمتى	Tim;Int	pronoun	high	ʔēmta "when"
+as	466	ここ	هون	هون	Plc;Prox	pronoun	high	hōn "here"
+as	390	この	هادا	هادا	Sg;Prox	pronoun	high	hāda "this" (masc.), determiner use
+as	390	この	هادا	هادا	Ent;Sg;Prox	pronoun	high	hāda "this one" (masc.), pronoun use
+as	391	この	هَيّ	هَيّ	Sg;Prox	pronoun	medium	hayy "this" (fem.?); usual Damascene fem. is هاي/هادي, and هيّ can be "she" (hiyye) — check
+as	391	この	هَيّ	هَيّ	Ent;Sg;Prox	pronoun	medium	as above, pronoun use
+as	390	これ	هادا	هادا	Sg;Prox	pronoun	high	hāda "this" (masc.), determiner use
+as	390	これ	هادا	هادا	Ent;Sg;Prox	pronoun	high	hāda "this one" (masc.), pronoun use
+as	391	これ	هَيّ	هَيّ	Sg;Prox	pronoun	medium	hayy "this" (fem.?); usual Damascene fem. is هاي/هادي, and هيّ can be "she" (hiyye) — check
+as	391	これ	هَيّ	هَيّ	Ent;Sg;Prox	pronoun	medium	as above, pronoun use
+as	389	だれ	مين	مين	Pers;Int	pronoun	high	mīn "who"
+as	388	だれか	حدا	حدا	Pers;Sg;Asrt	pronoun	high	ḥada "someone"
+as	388	だれか	حدا	حدا	Pers;Sg;Elec	pronoun	medium	"anyone" in questions/negation (ma fī ḥada "nobody")
+as	468	どちら	وين	وين	Plc;Int	pronoun	high	wēn "where"
+as	398	どの	أنو	أنو	Int	pronoun	medium	ʔanu "which" (determiner); same spelling as complementiser ʔinno "that"
+as	399	どの	أيّ	أيّ	Int	pronoun	high	ʔayy "which, any" (determiner)
+as	958	なぜ	ليش	ليش	Rsn;Int	pronoun	high	lēš "why"
+as	404	みんな	كلّ	كلّ	Pers;Univ	pronoun	medium	kull "all, every" (quantifier); kull ən-nās "everyone"
+as	404	みんな	كلّ	كلّ	Thng;Sg;Univ	pronoun	medium	kull "all, everything" (quantifier)
+as	937	全部	كامل	كامل		not-proform	medium	kāmil "complete, whole" (adjective)
+as	404	全部	كلّ	كلّ	Pers;Univ	pronoun	medium	kull "all, every" (quantifier); kull ən-nās "everyone"
+as	404	全部	كلّ	كلّ	Thng;Sg;Univ	pronoun	medium	kull "all, everything" (quantifier)
+as	382	彼ら	هنّ	هنّ	3;Pl	pronoun	high	hinne "they", no gender distinction
+as	381	彼女	هِي	هِي	3;Sg;F	pronoun	high	hiyye "she"
+as	380	彼（かれ）	هو	هو	3;Sg;M	pronoun	high	huwwe "he"
+as	387	私たち	نحنا	نحنا	1;Pl	pronoun	high	niḥna "we"
+as	386	私（わたし）	أنا	أنا	1;Sg	pronoun	high	ʔana "I"
+as	401	自分	نفس	نفس	Pers;Refl	pronoun	medium	nafs "self": noun used as reflexive with possessive suffix
+ja	293	あそこ	あそこ	あそこ	Plc;Rem	pronoun	high	NTUMC
+ja	1297	あちら	あちら	あちら	Ent;Du;Fml;Dist+Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction "over there"
+ja	1541	あっち	あっち	あっち	Ent;Infml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction
+ja	734	あなた	あなた	あなた	2;Sg;Infml	pronoun	high	NTUMC
+ja	1543	あの	あの	あの	Rem	pronoun	high	NTUMC
+ja	299	あれ	あれ	あれ	Ent;Sg;Dist+Rem	pronoun	high	NTUMC
+ja	745	いくつ	いくつ	いくつ	Qnt;Int	pronoun	high	not in NTUMC; "how many"
+ja	151	いくら	いくら	いくら	Qnt;Int	pronoun	high	not in NTUMC; "how much"
+ja	459	いつ	いつ	いつ	Tim;Int	pronoun	high	NTUMC
+ja	21	ここ	ここ	ここ	Plc;Prox	pronoun	high	extra-lemmas
+ja	161	こちら	こちら	こちら	Ent;Du;Fml;Prox	pronoun	high	NTUMC; TUFS heading sense is place/direction
+ja	528	こっち	こっち	こっち	Ent;Du;Infml;Prox	pronoun	high	NTUMC (note: そっち/あっち are Ent;Infml;Med/Rem, without Du)
+ja	32	この	この	この	Prox	pronoun	high	NTUMC
+ja	117	これ	これ	これ	Ent;Sg;Prox	pronoun	high	NTUMC
+ja	117	これ	これ	これ	Ent;Prox	pronoun	high	NTUMC
+ja	1659	こんな	こんな	こんな	Knd;Prox	pronoun	high	NTUMC
+ja	45	そう	そう	そう	Mnr;Med	pronoun	high	extra-lemmas
+ja	524	そこ	そこ	そこ	Plc;Med	pronoun	high	NTUMC
+ja	1262	そちら	そちら	そちら	Ent;Du;Fml;Med	pronoun	high	NTUMC; TUFS heading sense is place/direction
+ja	531	そっち	そっち	そっち	Ent;Infml;Med	pronoun	high	NTUMC
+ja	515	その	その	その	Med	pronoun	high	NTUMC
+ja	46	それ	それ	それ	Ent;Sg;Med	pronoun	high	NTUMC
+ja	1712	だれ	だれ	だれ	Pers;Int	pronoun	high	NTUMC
+ja	1713	だれか	だれか	だれか	Pers;Sg;Asrt	pronoun	high	extra-lemmas
+ja	291	どう	どう	どう	Mnr;Int	pronoun	high	extra-lemmas
+ja	398	どうして	どうして	どうして	Rsn;Int	pronoun	high	NTUMC
+ja	284	どこ	どこ	どこ	Plc;Int	pronoun	high	NTUMC
+ja	1299	どちら	どちら	どちら	Ent;Int;Fml	pronoun	high	NTUMC; TUFS heading sense is place "where"
+ja	1741	どっち	どっち	どっち	Ent;Int;Infml	pronoun	high	NTUMC
+ja	1358	どなた	どなた	どなた	Pers;Int;Pol	pronoun	high	extra-lemmas
+ja	1743	どの	どの	どの	Int	pronoun	high	extra-lemmas; determiner
+ja	296	どれ	どれ	どれ	Ent;Int	pronoun	high	NTUMC
+ja	466	どんな	どんな	どんな	Mnr;Int	pronoun	medium	NTUMC code; arguably Knd;Int (cf. extra-lemmas どのような Knd;Int)
+ja	440	なぜ	なぜ	なぜ	Rsn;Int	pronoun	high	NTUMC
+ja	1088	みんな	みんな	みんな	Pers;Univ	pronoun	high	NTUMC
+ja	1933	何（なに・なん）	何	何	Thng;Int	pronoun	high	NTUMC
+ja	1933	何（なに・なん）	何	何	Int	pronoun	high	NTUMC; determiner use (何色)
+ja	214	全部	全部	全部	Thng;Sg;Univ	pronoun	high	NTUMC
+ja	512	皆さん	皆さん	皆さん	Pers;Univ;Pol	pronoun	high	extra-lemmas
+ja	13	私（わたくし）	私	私	1;Sg;Fml;Pol	pronoun	high	NTUMC 私
+ja	13	私（わたくし）	私	私	1;Sg;Fml;Hon+Pol	pronoun	medium	TUFS reads it わたくし, which NTUMC codes Hon+Pol
+ja	172	私（わたし）	わたし	わたし	1;Sg;Fml;Pol	pronoun	high	NTUMC
+ja	317	自分	自分	自分	Pers;Refl	pronoun	high	NTUMC
+mn	102	あっち	тэнд	тэнд	Plc;Dist	pronoun	high	"there"; two-way энд/тэнд; NEW code Plc;Dist
+mn	233	あなた	та	та	2;Sg;Fml;Pol	pronoun	high	polite "you"
+mn	233	あなた	та	та	2;Pl	pronoun	medium	originally plural; modern plural is та нар
+mn	226	あの	тэр	тэр	Dist	pronoun	high	"that" (determiner)
+mn	226	あの	тэр	тэр	Ent;Sg;Dist	pronoun	high	"that (one)" (pronoun)
+mn	226	あの	тэр	тэр	3;Sg	pronoun	high	"he, she" (no gender)
+mn	65	いくつ	хэд	хэд	Qnt;Int	pronoun	high	"how many"
+mn	66	いくら	ямар үнэтэй	ямар үнэтэй		not-proform	medium	phrase "of what price" (ямар "what kind" + үнэтэй "priced")
+mn	379	いつ	хэзээ	хэзээ	Tim;Int	pronoun	high	"when"
+mn	101	こちら	энд	энд	Plc;Prox	pronoun	high	"here"
+mn	234	この	энэ	энэ	Prox	pronoun	high	"this" (determiner)
+mn	234	この	энэ	энэ	Ent;Sg;Prox	pronoun	high	"this (one)" (pronoun)
+mn	238	こんな	ийм	ийм	Knd;Prox	pronoun	high	"such, like this"
+mn	239	そう	тийм	тийм	Knd;Dist	pronoun	medium	"such, like that" (also "yes"); two-way system; NEW code Knd;Dist
+mn	102	そちら	тэнд	тэнд	Plc;Dist	pronoun	high	"there"; two-way энд/тэнд; NEW code Plc;Dist
+mn	231	だれ	хэн	хэн	Pers;Int	pronoun	high	"who" (not itself polite)
+mn	230	だれか	хэн нэгэн	хэн нэгэн	Pers;Sg;Asrt	pronoun	high	"someone" (хэн "who" + нэгэн "one"), lexicalised
+mn	103	どちら	хаана	хаана	Plc;Int	pronoun	high	"where"
+mn	231	どなた	хэн	хэн	Pers;Int	pronoun	high	"who" (not itself polite)
+mn	236	どの	аль	аль	Int	pronoun	high	"which" (determiner)
+mn	236	どの	аль	аль	Ent;Int	pronoun	medium	"which one" (pronoun use)
+mn	237	どんな	ямар	ямар	Knd;Int	pronoun	high	"what kind of"
+mn	424	みんな	бүгд	бүгд	Pers;Univ	pronoun	medium	"all, everyone"
+mn	232	君（きみ）	чи	чи	2;Sg;Infml	pronoun	high	familiar "you"
+mn	227	彼女	тэд	тэд	3;Pl	pronoun	high	"they"; mislisted under 彼女
+mn	226	彼女	тэр	тэр	Dist	pronoun	high	"that" (determiner)
+mn	226	彼女	тэр	тэр	Ent;Sg;Dist	pronoun	high	"that (one)" (pronoun)
+mn	226	彼女	тэр	тэр	3;Sg	pronoun	high	"he, she" (no gender)
+mn	229	私たち	бид	бид	1;Pl	pronoun	high	"we"
+mn	228	私（わたし）	би	би	1;Sg	pronoun	high	"I"
+mn	1	自分	өөрөө	өөрөө	Pers;Refl	pronoun	high	"oneself" (өөр + reflexive-possessive -өө)
+ur	483	あそこ	وہاں	وہاں	Plc;Dist	pronoun	high	vahāṉ "there"; two-way yahāṉ/vahāṉ; NEW code Plc;Dist
+ur	436	あちら	ادھر	ادھر	Plc;Prox	pronoun	medium	unvocalised: اِدھر idhar "here, this way"
+ur	436	あちら	ادھر	ادھر	Plc;Dist	pronoun	medium	unvocalised: اُدھر udhar "there, that way"; NEW code Plc;Dist
+ur	436	あっち	ادھر	ادھر	Plc;Prox	pronoun	medium	unvocalised: اِدھر idhar "here, this way"
+ur	436	あっち	ادھر	ادھر	Plc;Dist	pronoun	medium	unvocalised: اُدھر udhar "there, that way"; NEW code Plc;Dist
+ur	19	あなた	آپ	آپ	2;Sg;Fml;Pol	pronoun	high	āp polite "you"
+ur	19	あなた	آپ	آپ	2;Pl	pronoun	medium	āp also polite plural
+ur	21	あの	وہ	وہ	Dist	pronoun	high	vo "that" (determiner, number-neutral)
+ur	21	あの	وہ	وہ	Ent;Sg;Dist	pronoun	high	vo "that" (pronoun)
+ur	21	あの	وہ	وہ	3;Sg	pronoun	high	vo "he, she, it" (no gender)
+ur	21	あの	وہ	وہ	3;Pl	pronoun	high	vo "they"
+ur	21	あれ	وہ	وہ	Dist	pronoun	high	vo "that" (determiner, number-neutral)
+ur	21	あれ	وہ	وہ	Ent;Sg;Dist	pronoun	high	vo "that" (pronoun)
+ur	21	あれ	وہ	وہ	3;Sg	pronoun	high	vo "he, she, it" (no gender)
+ur	21	あれ	وہ	وہ	3;Pl	pronoun	high	vo "they"
+ur	377	いくつ	کتنا	کتنا	Qnt;Int	pronoun	high	kitnā "how much/many"
+ur	377	いくら	کتنا	کتنا	Qnt;Int	pronoun	high	kitnā "how much/many"
+ur	135	いつ	کب	کب	Tim;Int	pronoun	high	kab "when"
+ur	482	ここ	یہاں	یہاں	Plc;Prox	pronoun	high	yahāṉ "here"
+ur	436	こちら	ادھر	ادھر	Plc;Prox	pronoun	medium	unvocalised: اِدھر idhar "here, this way"
+ur	436	こちら	ادھر	ادھر	Plc;Dist	pronoun	medium	unvocalised: اُدھر udhar "there, that way"; NEW code Plc;Dist
+ur	488	こっち	اس طرف	اس طرف		not-proform	medium	phrase is taraf "this side/direction"
+ur	26	この	یہ	یہ	Prox	pronoun	high	ye "this" (determiner, number-neutral)
+ur	26	この	یہ	یہ	Ent;Sg;Prox	pronoun	high	ye "this" (pronoun)
+ur	26	この	یہ	یہ	3;Sg	pronoun	medium	ye "he, she, it" (proximate)
+ur	26	この	یہ	یہ	3;Pl	pronoun	medium	ye "they, these" (proximate)
+ur	26	これ	یہ	یہ	Prox	pronoun	high	ye "this" (determiner, number-neutral)
+ur	26	これ	یہ	یہ	Ent;Sg;Prox	pronoun	high	ye "this" (pronoun)
+ur	26	これ	یہ	یہ	3;Sg	pronoun	medium	ye "he, she, it" (proximate)
+ur	26	これ	یہ	یہ	3;Pl	pronoun	medium	ye "they, these" (proximate)
+ur	27	こんな	ایسا	ایسا	Knd;Prox	pronoun	high	aisā "such, like this" (distal is vaisā)
+ur	27	そう	ایسا	ایسا	Knd;Prox	pronoun	high	aisā "such, like this" (distal is vaisā)
+ur	483	そこ	وہاں	وہاں	Plc;Dist	pronoun	high	vahāṉ "there"; two-way yahāṉ/vahāṉ; NEW code Plc;Dist
+ur	436	そちら	ادھر	ادھر	Plc;Prox	pronoun	medium	unvocalised: اِدھر idhar "here, this way"
+ur	436	そちら	ادھر	ادھر	Plc;Dist	pronoun	medium	unvocalised: اُدھر udhar "there, that way"; NEW code Plc;Dist
+ur	436	そっち	ادھر	ادھر	Plc;Prox	pronoun	medium	unvocalised: اِدھر idhar "here, this way"
+ur	436	そっち	ادھر	ادھر	Plc;Dist	pronoun	medium	unvocalised: اُدھر udhar "there, that way"; NEW code Plc;Dist
+ur	21	その	وہ	وہ	Dist	pronoun	high	vo "that" (determiner, number-neutral)
+ur	21	その	وہ	وہ	Ent;Sg;Dist	pronoun	high	vo "that" (pronoun)
+ur	21	その	وہ	وہ	3;Sg	pronoun	high	vo "he, she, it" (no gender)
+ur	21	その	وہ	وہ	3;Pl	pronoun	high	vo "they"
+ur	26	それ	یہ	یہ	Prox	pronoun	high	ye "this" (determiner, number-neutral)
+ur	26	それ	یہ	یہ	Ent;Sg;Prox	pronoun	high	ye "this" (pronoun)
+ur	26	それ	یہ	یہ	3;Sg	pronoun	medium	ye "he, she, it" (proximate)
+ur	26	それ	یہ	یہ	3;Pl	pronoun	medium	ye "they, these" (proximate)
+ur	22	だれ	کون	کون	Pers;Int	pronoun	high	kaun "who"
+ur	24	だれか	کوئی	کوئی	Pers;Sg;Asrt	pronoun	high	koī "someone"
+ur	24	だれか	کوئی	کوئی	Pers;Sg;Elec	pronoun	high	koī "anyone" (questions/negation)
+ur	29	どう	کیسا	کیسا	Knd;Int	pronoun	high	kaisā "what kind of; how (is)" (adjectival; adverb is kaise)
+ur	660	どうして	کس لیے	کس لیے	Rsn;Int	pronoun	medium	kis liye "for what" = why; two-word expression
+ur	484	どこ	کہاں	کہاں	Plc;Int	pronoun	high	kahāṉ "where"
+ur	437	どちら	کدھر	کدھر	Plc;Int	pronoun	high	kidhar "where, which way"
+ur	460	どっち	کون سا	کون سا	Ent;Int	pronoun	high	kaun sā "which one"
+ur	460	どっち	کون سا	کون سا	Int	pronoun	high	kaun sā "which" (determiner)
+ur	23	どなた	کون صاحب	کون صاحب		not-proform	medium	phrase kaun sāhab "which gentleman" (respectful who)
+ur	28	どの	کونسا	کونسا	Ent;Int	pronoun	high	kaun sā "which one"
+ur	28	どの	کونسا	کونسا	Int	pronoun	high	kaun sā "which" (determiner)
+ur	460	どれ	کون سا	کون سا	Ent;Int	pronoun	high	kaun sā "which one"
+ur	460	どれ	کون سا	کون سا	Int	pronoun	high	kaun sā "which" (determiner)
+ur	29	どんな	کیسا	کیسا	Knd;Int	pronoun	high	kaisā "what kind of; how (is)" (adjectival; adverb is kaise)
+ur	659	なぜ	کیوں	کیوں	Rsn;Int	pronoun	high	kyoṉ "why"
+ur	215	みんな	سب لوگ	سب لوگ		not-proform	medium	phrase sab log "all people" = everyone
+ur	494	全部	سب	سب	Thng;Sg;Univ	pronoun	high	sab "all, everything"
+ur	494	全部	سب	سب	Pers;Univ	pronoun	medium	sab "everyone"
+ur	20	君（きみ）	تم	تم	2;Sg;Infml	pronoun	high	tum familiar "you" (grammatically plural, also used for plural)
+ur	21	彼女	وہ	وہ	Dist	pronoun	high	vo "that" (determiner, number-neutral)
+ur	21	彼女	وہ	وہ	Ent;Sg;Dist	pronoun	high	vo "that" (pronoun)
+ur	21	彼女	وہ	وہ	3;Sg	pronoun	high	vo "he, she, it" (no gender)
+ur	21	彼女	وہ	وہ	3;Pl	pronoun	high	vo "they"
+ur	495	皆さん	آپ سب لوگ	آپ سب لوگ		not-proform	medium	phrase āp sab log "all of you (people)", polite
+ur	18	私たち	ہم	ہم	1;Pl	pronoun	high	ham "we" (also used for "I")
+ur	17	私（わたくし）	میں	میں	1;Sg	pronoun	high	maiṉ "I" (homograph of postposition meṉ "in")
+ur	17	私（わたし）	میں	میں	1;Sg	pronoun	high	maiṉ "I" (homograph of postposition meṉ "in")
+ur	25	自分	خود	خود	Pers;Refl	pronoun	high	xud "self"
+km	102	あっち	កន្លែងនោះ	កន្លែងនោះ	Plc;Dist	substitute	medium	NEW code Plc;Dist (Khmer two-way នេះ/នោះ); lit. "that place" (កន្លែង place + នោះ that); proper pro-adverb is ទីនោះ
+km	236	あなた	លោក	លោក	2;Sg;Fml;Pol	substitute	high	title: "sir, Mr."; polite you addressed to men (women: អ្នកស្រី); also polite 3rd person
+km	238	あの	នោះ	នោះ	Dist	pronoun	high	
+km	63	いくつ	ប៉ុន្មាន	ប៉ុន្មាន	Qnt;Int	pronoun	high	
+km	63	いくら	ប៉ុន្មាន	ប៉ុន្មាន	Qnt;Int	pronoun	high	
+km	394	いつ	ពេលណា	ពេលណា	Tim;Int	pronoun	high	lit. "which time"
+km	101	こちら	កន្លែងនេះ	កន្លែងនេះ	Plc;Prox	substitute	medium	lit. "this place" (កន្លែង place + នេះ this); pro-adverb is ទីនេះ
+km	237	この	នេះ	នេះ	Prox	pronoun	high	
+km	242	こんな	យ៉ាងនេះ	យ៉ាងនេះ	Knd;Prox	pronoun	medium	
+km	242	こんな	យ៉ាងនេះ	យ៉ាងនេះ	Mnr;Prox	pronoun	medium	"in this way"
+km	244	そう	អញ្ចឹង	អញ្ចឹង	Mnr;Dist+Med	pronoun	medium	colloquial "like that, so"; code reused from Mandarin 那样 rather than a NEW Mnr;Dist
+km	102	そちら	កន្លែងនោះ	កន្លែងនោះ	Plc;Dist	substitute	medium	NEW code Plc;Dist (Khmer two-way នេះ/នោះ); lit. "that place" (កន្លែង place + នោះ that); proper pro-adverb is ទីនោះ
+km	233	だれ	អ្នកណា	អ្នកណា	Pers;Int	pronoun	high	
+km	232	だれか	អ្នកណាគេ	អ្នកណាគេ	Pers;Sg;Asrt	pronoun	low	អ្នកណា who + គេ "someone/others"; meaning not verified (someone? who else?); needs native check
+km	103	どちら	ឯណា	ឯណា	Plc;Int	pronoun	high	
+km	234	どなた	អញ្ជើញពីខាងណា	អញ្ជើញពីខាងណា		not-proform	medium	phrase: "(polite) come from which side?", i.e. "where are you from?"; not a pro-form
+km	240	どの	មួយណា	មួយណា	Ent;Int	pronoun	medium	"which one" (មួយ one + ណា which), pronominal; determiner is ណា
+km	241	どんな	យ៉ាងណា	យ៉ាងណា	Knd;Int	pronoun	medium	
+km	241	どんな	យ៉ាងណា	យ៉ាងណា	Mnr;Int	pronoun	medium	"how, in what way"
+km	443	みんな	ទាំងអស់គ្នា	ទាំងអស់គ្នា	Pers;Univ	pronoun	medium	lit. "all together" (ទាំងអស់ all + គ្នា one another)
+km	235	君（きみ）	គាត់ឯង	គាត់ឯង	2;Sg;Infml	pronoun	low	compound not in Wiktionary; ឯង = familiar "you" (equals/inferiors), គាត់ = polite 3sg; needs native check
+km	228	彼女	គាត់	គាត់	3;Sg;Pol	pronoun	high	NEW code 3;Sg;Pol: respectful 3rd person for people, vs plain/derogatory វា
+km	229	彼女	ពួកគេ	ពួកគេ	3;Pl	pronoun	high	
+km	231	私たち	ពួកខ្ញុំ	ពួកខ្ញុំ	1;Pl	pronoun	high	polite; tends to exclude hearer (vs ពួកយើង)
+km	230	私（わたし）	ខ្ញុំ	ខ្ញុំ	1;Sg	pronoun	high	ordinary polite I (vs intimate អញ)
+km	243	自分	ខ្លួនឯង	ខ្លួនឯង	Pers;Refl	pronoun	high	
+ko	594	あっち	저기, 저쪽	저기	Plc;Rem	pronoun	high	
+ko	594	あっち	저기, 저쪽	저쪽	Plc;Rem	pronoun	high	"that way/side over there"
+ko	743	あの	그	그	Med	pronoun	high	three-way 이/그/저; heading あの (usually 저)
+ko	550	いくつ	몇 개	몇 개	Qnt;Int	pronoun	medium	phrase: 몇 how many + 개 counter
+ko	551	いくら	얼마	얼마	Qnt;Int	pronoun	high	
+ko	925	いつ	언제	언제	Tim;Int	pronoun	high	
+ko	592	こちら	여기, 이쪽	여기	Plc;Prox	pronoun	high	
+ko	592	こちら	여기, 이쪽	이쪽	Plc;Prox	pronoun	high	"this way/side"; also polite "this person"
+ko	742	この	이	이	Prox	pronoun	high	
+ko	747	こんな	이런	이런	Knd;Prox	pronoun	high	
+ko	749	そう	그렇다	그렇다	Mnr;Med	pronoun	medium	pro-predicate (descriptive verb) "be so, be like that"; adverb is 그렇게
+ko	593	そちら	거기, 그쪽	거기	Plc;Med	pronoun	high	
+ko	593	そちら	거기, 그쪽	그쪽	Plc;Med	pronoun	high	"that way/side"
+ko	593	そちら	거기, 그쪽	그쪽	2;Sg	substitute	medium	lit. "that side"; colloquial "you" to a non-intimate equal
+ko	738	だれ	누구	누구	Pers;Int	pronoun	high	
+ko	737	だれか	누군가	누군가	Pers;Sg;Asrt	pronoun	high	
+ko	595	どちら	어디, 어느 쪽	어디	Plc;Int	pronoun	high	
+ko	595	どちら	어디, 어느 쪽	어느 쪽	Plc;Int	pronoun	medium	phrase "which way/side"
+ko	739	どなた	누구	누구	Pers;Int	pronoun	high	plain, not polite; polite is 어느 분
+ko	745	どの	어느	어느	Int	pronoun	high	
+ko	746	どんな	어떤	어떤	Knd;Int	pronoun	high	
+ko	982	みんな	모두	모두	Pers;Univ	pronoun	medium	"all, everyone"; not restricted to persons
+ko	740	君（きみ）	너	너	2;Sg;Infml	pronoun	high	plain/intimate you
+ko	734	彼女	그 사람들	그 사람들	3;Pl	substitute	medium	lit. "those people" (그 that + 사람 person + 들 PL)
+ko	733	彼女	그, 그녀	그	3;Sg;M	pronoun	medium	written "he" (occasionally gender-neutral)
+ko	733	彼女	그, 그녀	그녀	3;Sg;F	pronoun	high	written "she"
+ko	736	私たち	저희	저희	1;Pl;Fml;Pol	pronoun	high	NEW code 1;Pl;Fml;Pol (plural of 저 1;Sg;Fml;Pol): humble we, excludes hearer (vs 우리)
+ko	735	私（わたし）	저	저	1;Sg;Fml;Pol	pronoun	high	humble I (vs plain 나)
+ko	748	自分	자기	자기	Pers;Refl	pronoun	high	
+lo	103	あっち	ຢູ່ພຸ້ນ	ຢູ່ພຸ້ນ	Plc;Rem	pronoun	medium	ຢູ່ "at" + ພຸ້ນ yonder; Lao three-way ນີ້/ນັ້ນ/ພຸ້ນ
+lo	195	あなた	ເຈົ້າ	ເຈົ້າ	2;Sg	pronoun	high	standard polite-neutral you
+lo	243	あの	ນັ້ນ	ນັ້ນ	Med	pronoun	medium	Lao three-way ນີ້/ນັ້ນ/ພຸ້ນ
+lo	64	いくつ	ຈັກ -	ຈັກ	Qnt;Int	pronoun	medium	"how many", followed by a classifier
+lo	65	いくら	ເທົ່າໃດ	ເທົ່າໃດ	Qnt;Int	pronoun	high	
+lo	408	いつ	ມື້ໃດ	ມື້ໃດ	Tim;Int	pronoun	medium	lit. "which day"
+lo	101	こちら	ຢູ່ນີ້	ຢູ່ນີ້	Plc;Prox	pronoun	high	ຢູ່ "at" + ນີ້ this
+lo	242	この	ນີ້	ນີ້	Prox	pronoun	high	
+lo	247	こんな	ແນວນີ້	ແນວນີ້	Knd;Prox	pronoun	high	
+lo	247	こんな	ແນວນີ້	ແນວນີ້	Mnr;Prox	pronoun	medium	"like this"
+lo	249	そう	ແນວນັ້ນ	ແນວນັ້ນ	Mnr;Med	pronoun	medium	
+lo	249	そう	ແນວນັ້ນ	ແນວນັ້ນ	Knd;Med	pronoun	medium	
+lo	102	そちら	ຢູ່ຫັ້ນ	ຢູ່ຫັ້ນ	Plc;Med	pronoun	medium	ຫັ້ນ colloquial variant of ນັ້ນ
+lo	240	だれ	ໃຜ	ໃຜ	Pers;Int	pronoun	high	also indefinite "anyone/someone" in questions
+lo	240	だれか	ໃຜ	ໃຜ	Pers;Int	pronoun	high	also indefinite "anyone/someone" in questions
+lo	104	どちら	ຢູ່ໃສ	ຢູ່ໃສ	Plc;Int	pronoun	high	
+lo	241	どなた	ຜູ້ໃດ	ຜູ້ໃດ	Pers;Int	pronoun	medium	formal/written "who"; not specifically polite
+lo	245	どの	ໃດ	ໃດ	Int	pronoun	high	
+lo	246	どんな	ແນວໃດ	ແນວໃດ	Mnr;Int	pronoun	high	
+lo	246	どんな	ແນວໃດ	ແນວໃດ	Knd;Int	pronoun	medium	
+lo	457	みんな	ທຸກຄົນ	ທຸກຄົນ	Pers;Univ	pronoun	high	
+lo	195	君（きみ）	ເຈົ້າ	ເຈົ້າ	2;Sg	pronoun	high	standard polite-neutral you
+lo	236	彼女	ລາວ	ລາວ	3;Sg	pronoun	high	he/she, neutral
+lo	237	彼女	ເຂົາເຈົ້າ	ເຂົາເຈົ້າ	3;Pl	pronoun	high	
+lo	239	私たち	ພວກເຮົາ	ພວກເຮົາ	1;Pl	pronoun	high	
+lo	238	私（わたし）	ຂ້ອຍ	ຂ້ອຍ	1;Sg	pronoun	high	plain I (polite ຂ້ານ້ອຍ)
+lo	248	自分	ຕົວເອງ	ຕົວເອງ	Pers;Refl	pronoun	high	
+th	102	あっち	ที่โน่น	ที่โน่น	Plc;Rem	pronoun	high	Thai three-way นี่/นั่น/โน่น
+th	242	あなた	คุณ	คุณ	2;Sg;Fml;Pol	pronoun	high	polite you; also title "Mr./Ms."
+th	244	あの	นั้น	นั้น	Med	pronoun	high	Thai three-way นี้/นั้น/โน้น
+th	64	いくつ	เท่าไหร่	เท่าไหร่	Qnt;Int	pronoun	high	
+th	64	いくら	เท่าไหร่	เท่าไหร่	Qnt;Int	pronoun	high	
+th	400	いつ	เมื่อไร	เมื่อไร	Tim;Int	pronoun	high	
+th	100	こちら	ที่นี่	ที่นี่	Plc;Prox	pronoun	high	
+th	243	この	นี้	นี้	Prox	pronoun	high	
+th	248	こんな	แบบนี้	แบบนี้	Knd;Prox	pronoun	high	
+th	248	こんな	แบบนี้	แบบนี้	Mnr;Prox	pronoun	medium	"like this"
+th	244	そう	นั้น	นั้น	Med	pronoun	medium	"that" (determiner); heading そう "so" is a mistranslation
+th	101	そちら	ที่นั่น	ที่นั่น	Plc;Med	pronoun	high	
+th	239	だれ	ใคร	ใคร	Pers;Int	pronoun	high	also indefinite "anyone/someone"
+th	238	だれか	ใครบ้าง	ใครบ้าง	Pers;Int	pronoun	medium	ใคร + บ้าง "who (all)", expects several; not "someone"
+th	103	どちら	ที่ไหน	ที่ไหน	Plc;Int	pronoun	high	
+th	240	どなた	ท่านไหน	ท่านไหน	Pers;Int;Pol	pronoun	medium	ท่าน honorific + ไหน which: "which (honoured) person"
+th	246	どの	ไหน	ไหน	Int	pronoun	high	
+th	246	どの	ไหน	ไหน	Plc;Int	pronoun	medium	"where" (colloquial, e.g. ไปไหน)
+th	247	どんな	แบบไหน	แบบไหน	Knd;Int	pronoun	high	
+th	447	みんな	ทุกคน	ทุกคน	Pers;Univ	pronoun	high	
+th	241	君（きみ）	เธอ	เธอ	2;Sg;Infml	pronoun	high	intimate you (to equals/juniors)
+th	241	君（きみ）	เธอ	เธอ	3;Sg;F	pronoun	high	she
+th	235	彼女	พวกเขา, พวกเธอ	พวกเขา	3;Pl	pronoun	high	
+th	235	彼女	พวกเขา, พวกเธอ	พวกเธอ	3;Pl;F	pronoun	high	
+th	235	彼女	พวกเขา, พวกเธอ	พวกเธอ	2;Pl	pronoun	medium	you (pl.), informal
+th	234	彼女	เขา, เธอ	เขา	3;Sg	pronoun	high	he/she, esp. he
+th	234	彼女	เขา, เธอ	เธอ	3;Sg;F	pronoun	high	
+th	234	彼女	เขา, เธอ	เธอ	2;Sg;Infml	pronoun	high	
+th	237	私たち	พวกเรา	พวกเรา	1;Pl	pronoun	high	
+th	236	私（わたし）	ดิฉัน, ผม	ดิฉัน	1;Sg;F;Fml;Pol;Wom	pronoun	high	NEW code: formal polite I, female speaker; speaker sex also gender (was 1;Sg;Fml;Pol;Wom)
+th	236	私（わたし）	ดิฉัน, ผม	ผม	1;Sg;M;Pol;Men	pronoun	high	NEW code: polite I, male speaker (lit. also "hair"); speaker sex also gender (was 1;Sg;Pol;Men)
+th	249	自分	ตัวเอง	ตัวเอง	Pers;Refl	pronoun	high	
+zh	108	あっち	那儿	那儿	Plc;Dist	pronoun	high	NEW code Plc;Dist (two-way 这儿/那儿)
+zh	255	あなた	您	您	2;Sg;Fml;Pol	pronoun	high	NTUMC
+zh	257	あの	那个	那个	Dist	pronoun	high	NTUMC
+zh	257	あの	那个	那个	Ent;Dist	pronoun	medium	pronoun use "that one", parallel to 这个 Ent;Prox
+zh	64	いくつ	几	几	Qnt;Int	pronoun	high	small numbers
+zh	65	いくら	多少	多少	Qnt;Int	pronoun	high	
+zh	439	いつ	什么时候	什么时候	Tim;Int	pronoun	high	NTUMC
+zh	106	こちら	这儿	这儿	Plc;Prox	pronoun	high	
+zh	256	この	这个	这个	Ent;Prox	pronoun	high	NTUMC
+zh	256	この	这个	这个	Prox	pronoun	medium	determiner use
+zh	261	こんな	这么	这么	Mnr;Prox	pronoun	high	"so, like this"
+zh	263	そう	这样	这样	Knd;Prox	pronoun	high	NTUMC
+zh	263	そう	这样	这样	Mnr;Prox	pronoun	high	NTUMC; proximal, heading そう is medial
+zh	107	そちら	这儿	这儿	Plc;Prox	pronoun	high	heading そちら mismatched; word is proximal
+zh	108	そちら	那儿	那儿	Plc;Dist	pronoun	high	NEW code Plc;Dist (two-way 这儿/那儿)
+zh	252	だれ	谁	谁	Pers;Int	pronoun	high	NTUMC
+zh	553	だれか	有人	有人	Pers;Sg;Asrt	substitute	medium	lit. "there is a person" (有 have + 人 person)
+zh	251	だれか	谁	谁	Pers;Int	pronoun	high	NTUMC; also indefinite "someone" in some contexts
+zh	109	どちら	哪儿	哪儿	Plc;Int	pronoun	high	NTUMC
+zh	552	どなた	哪位	哪位	Pers;Int;Pol	pronoun	high	polite "which person"
+zh	252	どなた	谁	谁	Pers;Int	pronoun	high	NTUMC
+zh	253	どなた	谁	谁	Pers;Int	pronoun	high	NTUMC; not polite (polite is 哪位)
+zh	259	どの	哪个	哪个	Int	pronoun	high	
+zh	259	どの	哪个	哪个	Ent;Int	pronoun	medium	"which one"
+zh	260	どんな	什么	什么	Int	pronoun	high	NTUMC
+zh	260	どんな	什么	什么	Thng;Int	pronoun	high	NTUMC
+zh	260	どんな	什么	什么	Thng;Sg;Elec	pronoun	medium	"anything" in questions/negation
+zh	496	みんな	大家	大家	Pers;Univ	pronoun	high	NTUMC
+zh	254	君（きみ）	你	你	2;Sg;Infml	pronoun	high	NTUMC (existing 2;Sg too)
+zh	247	彼女	他	他	3;Sg;M	pronoun	high	NTUMC; heading 彼女 mismatched
+zh	248	彼女	他们	他们	3;Pl;M	pronoun	high	NTUMC; heading 彼女 mismatched
+zh	250	私たち	我们	我们	1;Pl	pronoun	high	NTUMC
+zh	249	私（わたし）	我	我	1;Sg	pronoun	high	NTUMC
+zh	262	自分	自己	自己	Pers;Refl	pronoun	high	NTUMC
+id	46	あっち	sana	sana	Plc;Rem	pronoun	high	NTUMC; sini/situ/sana three-way
+id	24	あなた	Anda	Anda	2;Sg;Fml;Pol	pronoun	high	NTUMC
+id	41	あの	itu	itu	Dist	pronoun	high	NTUMC; ini/itu two-way
+id	41	あの	itu	itu	Ent;Dist	pronoun	high	NTUMC; pronominal use
+id	21	いくつ	berapa	berapa	Qnt;Int	pronoun	high	how many/much
+id	21	いくら	berapa	berapa	Qnt;Int	pronoun	high	how many/much
+id	297	いつ	kapan	kapan	Tim;Int	pronoun	high	NTUMC
+id	216	こちら	sini	sini	Plc;Prox	pronoun	high	here
+id	19	この	ini	ini	Prox	pronoun	high	NTUMC
+id	19	この	ini	ini	Ent;Prox	pronoun	high	NTUMC; pronominal use
+id	661	こんな	begini	begini	Mnr;Prox	pronoun	high	NTUMC; like this
+id	661	こんな	begini	begini	Knd;Prox	pronoun	medium	adnominal use 'this kind of'
+id	866	こんな	seperti ini	seperti ini		not-proform	medium	phrase seperti 'like' + ini 'this'; would be Knd;Prox if phrases admitted
+id	8	そう	begitu	begitu	Mnr;Dist+Med	pronoun	high	NTUMC
+id	38	そちら	situ	situ	Plc;Med	pronoun	high	there (medial)
+id	660	だれ	siapa	siapa	Pers;Int	pronoun	high	NTUMC
+id	211	だれか	seseorang	seseorang	Pers;Sg;Asrt	pronoun	high	someone
+id	865	だれか	siapa saja	siapa saja	Pers;Sg;Elec	pronoun	high	NTUMC; anyone
+id	39	どちら	mana	mana	Plc;Int	pronoun	high	NTUMC; where
+id	39	どちら	mana	mana	Int	pronoun	high	NTUMC; which
+id	660	どなた	siapa	siapa	Pers;Int	pronoun	high	NTUMC; not honorific
+id	39	どの	mana	mana	Int	pronoun	high	NTUMC; which
+id	39	どの	mana	mana	Plc;Int	pronoun	high	NTUMC; where
+id	148	どんな	bagaimana	bagaimana	Mnr;Int	pronoun	high	NTUMC; how
+id	148	どんな	bagaimana	bagaimana	Knd;Int	pronoun	medium	'what kind of' use (orang bagaimana)
+id	867	どんな	seperti apa	seperti apa		not-proform	medium	phrase seperti 'like' + apa 'what'; would be Knd;Int if phrases admitted
+id	322	みんな	semua	semua	Pers;Univ	pronoun	low	quantifier 'all'; 'everyone' strictly semua orang
+id	393	君（きみ）	kamu	kamu	2;Sg;Infml	pronoun	high	NTUMC
+id	234	彼女	dia	dia	3;Sg	pronoun	high	gender-neutral he/she
+id	485	彼女	ia	ia	3;Sg	pronoun	high	gender-neutral he/she/it
+id	659	彼女	mereka	mereka	3;Pl	pronoun	high	they; heading presumably 彼女ら
+id	350	私たち	kami	kami	1e;Pl	pronoun	high	exclusive we; known code 1i;Pl is wrong
+id	143	私たち	kita	kita	1i;Pl	pronoun	high	NTUMC; inclusive we (colloquially also exclusive)
+id	10	私（わたし）	saya	saya	1;Sg;Fml;Pol	pronoun	high	NTUMC
+id	868	自分	diri	diri	Pers;Refl	pronoun	medium	noun 'self' used reflexively (membela diri)
+id	662	自分	diri sendiri	diri sendiri	Pers;Refl	pronoun	high	NTUMC
+ms	293	あそこ	sana	sana	Plc;Rem	pronoun	high	sini/situ/sana three-way
+ms	1297	あちら	itu	itu	Dist	pronoun	high	'that'; heading is place (mismatch)
+ms	1297	あちら	itu	itu	Ent;Dist	pronoun	high	'that'; heading is place (mismatch)
+ms	1541	あっち	sana	sana	Plc;Rem	pronoun	high	
+ms	734	あなた	awak	awak	2;Sg;Infml	pronoun	medium	you (familiar, peers); orig. 'body/self'
+ms	1543	あの	itu	itu	Dist	pronoun	high	ini/itu two-way
+ms	299	あれ	itu	itu	Ent;Dist	pronoun	high	ini/itu two-way
+ms	745	いくつ	berapa	berapa	Qnt;Int	pronoun	high	
+ms	151	いくら	berapa	berapa	Qnt;Int	pronoun	high	
+ms	459	いつ	bila	bila	Tim;Int	pronoun	high	when
+ms	21	ここ	sini	sini	Plc;Prox	pronoun	high	
+ms	161	こちら	ini	ini	Prox	pronoun	high	'this'; heading is place
+ms	161	こちら	ini	ini	Ent;Prox	pronoun	high	'this (one/person)'
+ms	161	こちら	sini	sini	Plc;Prox	pronoun	high	
+ms	528	こっち	sini	sini	Plc;Prox	pronoun	high	
+ms	32	この	ini	ini	Prox	pronoun	high	
+ms	117	これ	ini	ini	Ent;Prox	pronoun	high	
+ms	1659	こんな	seperti ini	seperti ini		not-proform	medium	phrase seperti 'like' + ini 'this'; would be Knd;Prox if phrases admitted
+ms	45	そう	begitu	begitu	Mnr;Dist+Med	pronoun	high	as Indonesian NTUMC
+ms	524	そこ	situ	situ	Plc;Med	pronoun	high	
+ms	1262	そちら	itu	itu	Dist	pronoun	medium	'that'; heading is place
+ms	1262	そちら	itu	itu	Ent;Dist	pronoun	medium	'that'; heading is place
+ms	1262	そちら	sana	sana	Plc;Rem	pronoun	high	'over there' (remote), heading medial
+ms	531	そっち	situ	situ	Plc;Med	pronoun	high	
+ms	515	その	itu	itu	Dist	pronoun	high	
+ms	46	それ	itu	itu	Ent;Dist	pronoun	high	
+ms	1712	だれ	siapa	siapa	Pers;Int	pronoun	high	
+ms	1713	だれか	sesiapa	sesiapa	Pers;Sg;Elec	pronoun	medium	'anyone, whoever' (someone = seseorang)
+ms	291	どう	bagaimana	bagaimana	Mnr;Int	pronoun	high	
+ms	398	どうして	kenapa	kenapa	Rsn;Int	pronoun	high	
+ms	284	どこ	mana	mana	Plc;Int	pronoun	high	where
+ms	284	どこ	mana	mana	Int	pronoun	high	which
+ms	1299	どちら	mana	mana	Plc;Int	pronoun	high	where
+ms	1299	どちら	mana	mana	Int	pronoun	high	which
+ms	1299	どちら	yang mana	yang mana	Ent;Int	pronoun	high	which one
+ms	1741	どっち	yang mana	yang mana	Ent;Int	pronoun	high	which one; not informal
+ms	1358	どなた	siapa	siapa	Pers;Int	pronoun	high	not honorific
+ms	1743	どの	yang mana	yang mana	Ent;Int	pronoun	high	which (one)
+ms	296	どれ	yang mana	yang mana	Ent;Int	pronoun	high	which one
+ms	466	どんな	yang bagaimana	yang bagaimana		not-proform	medium	phrase yang 'REL' + bagaimana 'how' = what kind; would be Knd;Int if phrases admitted
+ms	440	なぜ	mengapa	mengapa	Rsn;Int	pronoun	high	
+ms	1088	みんな	semua	semua	Pers;Univ	pronoun	low	quantifier 'all'; 'everyone' strictly semua orang
+ms	1933	何（なに・なん）	apa	apa	Thng;Int	pronoun	high	
+ms	214	全部	semuanya	semuanya	Thng;Sg;Univ	pronoun	medium	semua 'all' + -nya: 'all of it/them'
+ms	512	皆さん	awak semua	awak semua	2;Pl	pronoun	medium	awak 'you' + semua 'all'; cf. NTUMC ini semua
+ms	13	私（わたくし）	saya	saya	1;Sg;Fml;Pol	pronoun	high	as Indonesian NTUMC; etym. sahaya 'servant'
+ms	172	私（わたし）	saya	saya	1;Sg;Fml;Pol	pronoun	high	as Indonesian NTUMC
+ms	317	自分	saya	saya	1;Sg;Fml;Pol	pronoun	medium	'I'; renders 自分 in its first-person use
+ms	317	自分	sendiri	sendiri	Pers;Refl	pronoun	medium	'self, oneself, alone'; full reflexive diri sendiri
+my	293	あそこ	ဟို	ဟို	Rem	pronoun	high	ho 'that (yonder)'; place needs ဟိုမှာ; ဒီ/အဲဒီ/ဟို three-way
+my	293	あそこ	ဟိုနေရာ	ဟိုနေရာ	Plc;Rem	pronoun	medium	ho 'that' + neya 'place'
+my	1297	あちら	ဟို	ဟို	Rem	pronoun	high	that (yonder)
+my	1297	あちら	ဟိုဘက်	ဟိုဘက်	Plc;Rem	pronoun	medium	ho 'that' + bet 'side': over there
+my	1541	あっち	ဟိုက	ဟိုက	Plc;Rem	pronoun	medium	ho 'that' + -ka: over there / from there
+my	1541	あっち	ဟိုဘက်	ဟိုဘက်	Plc;Rem	pronoun	medium	ho 'that' + bet 'side': over there
+my	734	あなた	ခင်ဗျား	ခင်ဗျား	2;Sg;Pol;Men	pronoun	high	NEW; polite you, male speaker; etym. 'master-lord'
+my	734	あなた	နင်	နင်	2;Sg;Infml	pronoun	medium	familiar/rude you, mostly used by women
+my	734	あなた	မင်း	မင်း	2;Sg;Infml	pronoun	high	familiar you (to equals/inferiors); homophone 'king'
+my	734	あなた	ရှင်	ရှင်	2;Sg;Pol;Wom	pronoun	high	NEW; polite you, female speaker; etym. 'lord'
+my	734	あなた	သင်	သင်	2;Sg;Fml	pronoun	medium	NEW; formal/literary you (writing, speeches)
+my	1543	あの	ဟို	ဟို	Rem	pronoun	high	
+my	1543	あの	အဲဒီ	အဲဒီ	Med	pronoun	high	that (medial/anaphoric)
+my	299	あれ	ဟိုဟာ	ဟိုဟာ	Ent;Sg;Dist+Rem	pronoun	medium	ho 'that' + ha 'thing'
+my	745	いくつ	ဘယ်နှခု	ဘယ်နှခု	Qnt;Int	pronoun	high	how many (things): which+how many+CLF
+my	151	いくら	ဘယ်လောက်	ဘယ်လောက်	Qnt;Int	pronoun	high	how much
+my	459	いつ	ဘယ်တုန်းက	ဘယ်တုန်းက	Tim;Int	pronoun	high	when (past)
+my	459	いつ	ဘယ်တော့	ဘယ်တော့	Tim;Int	pronoun	high	when (future)
+my	459	いつ	ဘယ်အချိန်	ဘယ်အချိန်	Tim;Int	pronoun	medium	which time: what time/when
+my	21	ここ	ဒီ	ဒီ	Prox	pronoun	high	'this'; place needs ဒီမှာ
+my	21	ここ	ဒီနေရာ	ဒီနေရာ	Plc;Prox	pronoun	medium	di 'this' + neya 'place'
+my	161	こちら	ဒီဘက်	ဒီဘက်	Plc;Prox	pronoun	medium	this side
+my	161	こちら	ဒီဘက်က	ဒီဘက်က	Plc;Prox	pronoun	medium	this side + -ka (from/subject)
+my	528	こっち	ဒီ	ဒီ	Prox	pronoun	high	'this'
+my	528	こっち	ဒီဘက်	ဒီဘက်	Plc;Prox	pronoun	medium	this side
+my	32	この	ဒီ	ဒီ	Prox	pronoun	high	
+my	117	これ	ဒါ	ဒါ	Ent;Sg;Prox	pronoun	high	this (one)
+my	117	これ	ဒီဟာ	ဒီဟာ	Ent;Sg;Prox	pronoun	high	di 'this' + ha 'thing'
+my	1659	こんな	ဒီလို	ဒီလို	Mnr;Prox	pronoun	high	like this
+my	1659	こんな	ဒီလို	ဒီလို	Knd;Prox	pronoun	medium	adnominal 'this kind of'
+my	1659	こんな	ဒီလောက်	ဒီလောက်	Qnt;Prox	pronoun	medium	NEW; 'this much, to this extent'
+my	45	そう	ဟုတ်တယ်	ဟုတ်တယ်		not-proform	high	'that's right, yes' (verb 'be so' + particle)
+my	524	そこ	အဲဒီ	အဲဒီ	Med	pronoun	high	'that'
+my	524	そこ	အဲဒီနေရာ	အဲဒီနေရာ	Plc;Med	pronoun	medium	ei-di 'that' + neya 'place'
+my	1262	そちら	အဲဒီ	အဲဒီ	Med	pronoun	high	'that'
+my	1262	そちら	အဲဒီနေရာ	အဲဒီနေရာ	Plc;Med	pronoun	medium	that place
+my	531	そっち	အဲဒီ	အဲဒီ	Med	pronoun	high	'that'
+my	531	そっち	အဲဒီဘက်	အဲဒီဘက်	Plc;Med	pronoun	medium	that side
+my	515	その	အဲဒီ	အဲဒီ	Med	pronoun	high	
+my	46	それ	အဲဒါ	အဲဒါ	Ent;Sg;Med	pronoun	high	
+my	1712	だれ	ဘယ်သူ	ဘယ်သူ	Pers;Int	pronoun	high	
+my	1713	だれか	တစ်ယောက်ယောက်	တစ်ယောက်ယောက်	Pers;Sg;Asrt	pronoun	high	someone (one-CLF reduplicated)
+my	1713	だれか	ဘယ်သူ	ဘယ်သူ	Pers;Int	pronoun	medium	'who'; 'someone' only with particle
+my	291	どう	ဘယ်လို	ဘယ်လို	Mnr;Int	pronoun	high	
+my	398	どうして	ဘယ်လိုလုပ်	ဘယ်လိုလုပ်	Rsn;Int	pronoun	medium	lit. 'doing how': how come
+my	398	どうして	ဘာကြောင့်	ဘာကြောင့်	Rsn;Int	pronoun	high	lit. 'because of what'
+my	398	どうして	ဘာဖြစ်လို့	ဘာဖြစ်လို့	Rsn;Int	pronoun	high	lit. 'what happening': why
+my	398	どうして	ဘာအတွက်	ဘာအတွက်	Rsn;Int	pronoun	medium	lit. 'for what' (purpose)
+my	284	どこ	ဘယ်	ဘယ်	Plc;Int	pronoun	medium	'where' (ဘယ်မှာ, ဘယ်သွား)
+my	284	どこ	ဘယ်	ဘယ်	Int	pronoun	high	'which'
+my	284	どこ	ဘယ်နေရာ	ဘယ်နေရာ	Plc;Int	pronoun	medium	which place
+my	1299	どちら	ဘယ်	ဘယ်	Plc;Int	pronoun	medium	'where'
+my	1299	どちら	ဘယ်	ဘယ်	Int	pronoun	high	'which'
+my	1299	どちら	ဘယ်ဘက်	ဘယ်ဘက်	Plc;Int	pronoun	medium	which side/direction
+my	1299	どちら	ဘယ်ဟာ	ဘယ်ဟာ	Ent;Int	pronoun	high	which one (which + thing)
+my	1299	どちら	ဘာ	ဘာ	Thng;Int	pronoun	high	'what'; heading mismatch
+my	1741	どっち	ဘယ်	ဘယ်	Int	pronoun	high	'which'
+my	1741	どっち	ဘယ်တစ်ခု	ဘယ်တစ်ခု	Ent;Int	pronoun	high	which one (which one-CLF)
+my	1358	どなた	ဘယ်ပုဂ္ဂိုလ်	ဘယ်ပုဂ္ဂိုလ်	Pers;Int;Pol	pronoun	medium	which + puggo 'person, personage' (formal)
+my	1358	どなた	ဘယ်သူ	ဘယ်သူ	Pers;Int	pronoun	high	not honorific
+my	1743	どの	ဘယ်	ဘယ်	Int	pronoun	high	
+my	1743	どの	ဘယ်လို	ဘယ်လို	Knd;Int	pronoun	medium	'what kind of' (adnominal); basic meaning 'how'
+my	1743	どの	ဘယ်လို	ဘယ်လို	Mnr;Int	pronoun	high	how
+my	296	どれ	ဘယ်ဟာ	ဘယ်ဟာ	Ent;Int	pronoun	high	which one
+my	296	どれ	ဘာ	ဘာ	Thng;Int	pronoun	high	'what'
+my	466	どんな	ဘယ်လို	ဘယ်လို	Knd;Int	pronoun	medium	'what kind of' (adnominal); basic meaning 'how'
+my	466	どんな	ဘယ်လို	ဘယ်လို	Mnr;Int	pronoun	high	how
+my	466	どんな	ဘယ်လိုမျိုး	ဘယ်လိုမျိုး	Knd;Int	pronoun	high	how + myo 'kind'
+my	440	なぜ	ဘယ်လိုလုပ်	ဘယ်လိုလုပ်	Rsn;Int	pronoun	medium	lit. 'doing how': how come
+my	440	なぜ	ဘာကြောင့်	ဘာကြောင့်	Rsn;Int	pronoun	high	lit. 'because of what'
+my	440	なぜ	ဘာဖြစ်လို့	ဘာဖြစ်လို့	Rsn;Int	pronoun	high	lit. 'what happening': why
+my	440	なぜ	ဘာအတွက်	ဘာအတွက်	Rsn;Int	pronoun	medium	lit. 'for what' (purpose)
+my	1088	みんな	အားလုံး	အားလုံး	Pers;Univ	pronoun	low	quantifier 'all'
+my	1933	何（なに・なん）	ဘယ်ဟာ	ဘယ်ဟာ	Ent;Int	pronoun	medium	'which one'; heading mismatch
+my	1933	何（なに・なん）	ဘာ	ဘာ	Thng;Int	pronoun	high	
+my	214	全部	စုစုပေါင်း	စုစုပေါင်း		not-proform	medium	'in total, altogether'
+my	214	全部	အားလုံး	အားလုံး	Thng;Sg;Univ	pronoun	medium	quantifier 'all'
+my	214	全部	အားလုံးပေါင်း	အားလုံးပေါင်း		not-proform	medium	'all together, in total'
+my	512	皆さん	မင်းတို့	မင်းတို့	2;Pl	pronoun	high	min 'you' + plural toh; familiar, not polite
+my	512	皆さん	အားလုံး	အားလုံး	Pers;Univ	pronoun	low	quantifier 'all'
+my	13	私（わたくし）	ကျွန်တော်	ကျွန်တော်	1;Sg;M;Pol;Men	pronoun	high	NEW; I, male speaker; etym. 'royal servant'
+my	13	私（わたくし）	ကျွန်မ	ကျွန်မ	1;Sg;F;Pol;Wom	pronoun	high	NEW; I, female speaker; etym. 'servant-female'
+my	172	私（わたし）	ကျွန်တော်	ကျွန်တော်	1;Sg;M;Pol;Men	pronoun	high	NEW; I, male speaker; etym. 'royal servant'
+my	172	私（わたし）	ကျွန်မ	ကျွန်မ	1;Sg;F;Pol;Wom	pronoun	high	NEW; I, female speaker; etym. 'servant-female'
+my	172	私（わたし）	ကျွန်ုပ်	ကျွန်ုပ်	1;Sg;Fml	pronoun	high	formal/literary I, either sex
+my	317	自分	ကိုယ်	ကိုယ်	Pers;Refl	pronoun	high	self (lit. 'body')
+my	317	自分	ကိုယ်	ကိုယ်	1;Sg	substitute	medium	noun 'body/self' used as familiar 'I'
+my	317	自分	ကိုယ်တိုင်	ကိုယ်တိုင်	Pers;Refl	pronoun	high	oneself, personally (emphatic)
+my	317	自分	ကိုယ်ဟာကိုယ်	ကိုယ်ဟာကိုယ်	Pers;Refl	pronoun	high	oneself by oneself
+tl	809	あっち	doon	doon	Plc;Rem	pronoun	high	dito/diyan/doon three-way
+tl	955	あなた	ikaw	ikaw	2;Sg	pronoun	high	polite singular is kayo/po
+tl	958	あの	niyan	niyan	Med	pronoun	medium	genitive of iyan 'that (near hearer)'; heading Rem mismatch
+tl	765	いくつ	ilan	ilan	Qnt;Int	pronoun	high	how many
+tl	766	いくら	magkano	magkano	Qnt;Int	pronoun	high	how much (price)
+tl	1140	いつ	kailan	kailan	Tim;Int	pronoun	high	
+tl	807	こちら	dito	dito	Plc;Prox	pronoun	high	
+tl	957	この	nito	nito	Prox	pronoun	medium	genitive of ito 'this'
+tl	962	こんな	ganito	ganito	Mnr;Prox	pronoun	high	like this
+tl	962	こんな	ganito	ganito	Knd;Prox	pronoun	medium	adnominal ganitong 'this kind of'
+tl	964	そう	ganiyan	ganiyan	Mnr;Med	pronoun	high	like that (near hearer)
+tl	808	そちら	diyan	diyan	Plc;Med	pronoun	high	there (near hearer)
+tl	952	だれ	sino	sino	Pers;Int	pronoun	high	
+tl	952	だれか	sino	sino	Pers;Int	pronoun	medium	'who'; someone = sinuman/isang tao
+tl	810	どちら	saan	saan	Plc;Int	pronoun	high	
+tl	952	どなた	sino	sino	Pers;Int	pronoun	high	not honorific
+tl	960	どの	alin	alin	Ent;Int	pronoun	high	which (one)
+tl	961	どんな	ano	ano	Thng;Int	pronoun	high	'what'; what kind = anong klase
+tl	1197	みんな	lahat	lahat	Pers;Univ	pronoun	low	quantifier 'all'
+tl	955	君（きみ）	ikaw	ikaw	2;Sg	pronoun	high	
+tl	949	彼女	sila	sila	3;Pl	pronoun	high	they; also honorific 2/3 sg
+tl	948	彼女	siya	siya	3;Sg	pronoun	high	gender-neutral he/she
+tl	951	私たち	kami	kami	1e;Pl	pronoun	high	exclusive we (inclusive tayo)
+tl	950	私（わたし）	ako	ako	1;Sg	pronoun	high	
+tl	963	自分	sarili	sarili	Pers;Refl	pronoun	high	self (noun, sa sarili)
+vi	260	あっち	kia	kia	Plc;Rem	pronoun	medium	'that/over there (yonder)'; này/đó/kia three-way
+vi	424	あなた	anh	anh	2;Sg	substitute	high	kin term: elder brother
+vi	424	あなた	anh	anh	1;Sg	substitute	medium	kin term: elder brother (self-reference)
+vi	427	あなた	bà	bà	2;Sg	substitute	high	kin term: grandmother; madam
+vi	427	あなた	bà	bà	1;Sg	substitute	medium	kin term: grandmother (self-reference)
+vi	275	あなた	bạn	bạn	2;Sg	substitute	high	noun: friend
+vi	431	あなた	cháu	cháu	2;Sg	substitute	high	kin term: grandchild, niece/nephew
+vi	431	あなた	cháu	cháu	1;Sg	substitute	medium	kin term: grandchild, niece/nephew (self-reference)
+vi	429	あなた	chú	chú	2;Sg	substitute	high	kin term: uncle (father's younger brother)
+vi	429	あなた	chú	chú	1;Sg	substitute	medium	kin term: uncle (self-reference)
+vi	425	あなた	chị	chị	2;Sg	substitute	high	kin term: elder sister
+vi	425	あなた	chị	chị	1;Sg	substitute	medium	kin term: elder sister (self-reference)
+vi	428	あなた	cô	cô	2;Sg	substitute	high	kin term: aunt (father's sister); Miss; teacher
+vi	428	あなた	cô	cô	1;Sg	substitute	medium	kin term: aunt; teacher (self-reference)
+vi	430	あなた	em	em	2;Sg	substitute	high	kin term: younger sibling
+vi	430	あなた	em	em	1;Sg	substitute	medium	kin term: younger sibling (self-reference)
+vi	426	あなた	ông	ông	2;Sg	substitute	high	kin term: grandfather; Mr, sir
+vi	426	あなた	ông	ông	1;Sg	substitute	medium	kin term: grandfather (self-reference)
+vi	260	あの	kia	kia	Rem	pronoun	high	that (yonder)
+vi	434	あの	kia	kia	Rem	pronoun	high	that (yonder)
+vi	433	あの	ấy	ấy	Med	pronoun	medium	that (aforementioned/anaphoric)
+vi	214	いくつ	bao nhiêu	bao nhiêu	Qnt;Int	pronoun	high	how many/much
+vi	213	いくつ	mấy	mấy	Qnt;Int	pronoun	high	how many (small numbers)
+vi	215	いくら	bao nhiêu tiền	bao nhiêu tiền		not-proform	medium	phrase 'how much money' (bao nhiêu + tiền 'money')
+vi	631	いつ	khi nào	khi nào	Tim;Int	pronoun	high	lit. 'time which'
+vi	258	こちら	đây	đây	Plc;Prox	pronoun	high	here
+vi	258	こちら	đây	đây	Ent;Prox	pronoun	medium	this (one/person), as in đây là
+vi	432	この	này	này	Prox	pronoun	high	
+vi	439	こんな	thế này	thế này	Mnr;Prox	pronoun	high	like this
+vi	439	こんな	thế này	thế này	Knd;Prox	pronoun	medium	adnominal 'this kind of'
+vi	441	そう	thế	thế	Mnr;Med	pronoun	medium	so, thus, like that
+vi	721	そちら	đó	đó	Plc;Med	pronoun	medium	there
+vi	721	そちら	đó	đó	Med	pronoun	medium	that
+vi	259	そちら	đấy	đấy	Plc;Med	pronoun	medium	there (colloquial đó)
+vi	259	そちら	đấy	đấy	Med	pronoun	medium	that (colloquial đó)
+vi	421	だれ	ai	ai	Pers;Int	pronoun	high	
+vi	420	だれか	một người nào đó	một người nào đó		not-proform	medium	phrase 'some person'; would be Pers;Sg;Asrt if phrases admitted
+vi	261	どちら	đâu	đâu	Plc;Int	pronoun	high	
+vi	421	どなた	ai	ai	Pers;Int	pronoun	high	not honorific
+vi	422	どなた	ai	ai	Pers;Int	pronoun	high	not honorific
+vi	436	どの	gì	gì	Thng;Int	pronoun	high	'what'; heading mismatch
+vi	437	どの	nào	nào	Int	pronoun	high	which
+vi	438	どんな	thế nào	thế nào	Mnr;Int	pronoun	high	how
+vi	438	どんな	thế nào	thế nào	Knd;Int	pronoun	medium	adnominal 'what kind of'
+vi	690	みんな	mọi người	mọi người	Pers;Univ	pronoun	medium	lit. 'every person'
+vi	423	君（きみ）	cậu	cậu	2;Sg;Infml	substitute	high	kin term: maternal uncle; familiar you among peers
+vi	407	彼女	anh ấy	anh ấy	3;Sg;M	substitute	high	kin term 'elder brother' + ấy 'that'
+vi	411	彼女	bà ấy	bà ấy	3;Sg;F	substitute	high	kin term 'grandmother/madam' + ấy
+vi	409	彼女	chị ấy	chị ấy	3;Sg;F	substitute	high	kin term 'elder sister' + ấy
+vi	412	彼女	các anh ấy	các anh ấy	3;Pl;M	substitute	high	plural các + anh 'elder brother' + ấy
+vi	416	彼女	các bà ấy	các bà ấy	3;Pl;F	substitute	high	plural các + bà 'grandmother' + ấy
+vi	414	彼女	các chị ấy	các chị ấy	3;Pl;F	substitute	high	plural các + chị 'elder sister' + ấy
+vi	415	彼女	các cô ấy	các cô ấy	3;Pl;F	substitute	high	plural các + cô 'aunt/Miss' + ấy
+vi	413	彼女	các ông ấy	các ông ấy	3;Pl;M	substitute	high	plural các + ông 'grandfather/Mr' + ấy
+vi	410	彼女	cô ấy	cô ấy	3;Sg;F	substitute	high	kin term 'aunt/Miss' + ấy
+vi	408	彼女	ông ấy	ông ấy	3;Sg;M	substitute	high	kin term 'grandfather/Mr' + ấy
+vi	418	私たち	chúng ta	chúng ta	1i;Pl	pronoun	high	inclusive we
+vi	419	私たち	chúng tôi	chúng tôi	1e;Pl	pronoun	high	exclusive we
+vi	417	私（わたし）	tôi	tôi	1;Sg	pronoun	high	neutral polite I; etym. 'servant'
+vi	440	自分	mình	mình	Pers;Refl	pronoun	high	self (lit. 'body')
+vi	440	自分	mình	mình	1;Sg	substitute	medium	noun 'body/self' used as intimate 'I' (also inclusive 'we')
