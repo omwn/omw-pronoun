@@ -18,8 +18,9 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	akpes	akpe1248	ibe	Akpes	Atlantic-Congo	Africa	618	free	ɛ́		1
 	alamblak	alam1246	amp	Alamblak	Sepik	Papunesia	246	free	rër	p:rërho	1
 	alamblak	alam1246	amp	Alamblak	Sepik	Papunesia	246	free	rët	p:rëtho	1
-	alawa	alaw1244	alh	Alawa	Mangarrayi-Maran	Australia	869	free	yiřula	p:yiřuŋaña	4
+	alawa	alaw1244	alh	Alawa	Mangarrayi-Maran	Australia	869	free	yiřula	p:yiřuŋaña	2
 	alekano	alek1238	gah	Alekano	Nuclear Trans New Guinea	Papunesia	373	free	le-za	o:le-liʔ; p:le-liʔ	3
+	ambai	amba1265	amk	Ambai	Austronesian	Papunesia	882	free	∅		6
 	amharic	amha1245	amh	Amharic	Afro-Asiatic	Africa	404	free	ɨssu	o:ɨssun; p:jəssu	1
 	amharic	amha1245	amh	Amharic	Afro-Asiatic	Africa	404	free	ɨsswa	o:ɨsswan; p:jəsswa	1
 	angolar	ango1258	aoa	Angolar	Indo-European	Africa	289	free	e		1
@@ -34,7 +35,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	attie	atti1239	ati	Attié	Atlantic-Congo	Africa	570	free	yɛ˩	o:ye˥; p:ye˥	1
 	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	rey	o:reye; p:reyke	1
 	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	tey	o:teye; p:teyke	1
-	aymara	ayma1253		Aymara	Aymaran		857	free	jupaw	o:juparu; p:jupan	8
+	aymara	ayma1253		Aymara	Aymaran		857	free	jupaw	o:juparu; p:jupan	4
 	bakwe	bakw1243	bjw	Bakwé	Kru	Africa	580	free	ɔ˥		1
 	bakwe	bakw1243	bjw	Bakwé	Kru	Africa	580	free	ɛ˥		1
 	balantakentohe	bala1301	ble	Balanta-Kentohe	Atlantic-Congo	Africa	538	free	baan	o:ma; p:ma	1
@@ -57,12 +58,12 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	cabiyari	cabi1241	cbb	Cabiyarí	Arawakan	South America	526	free	wa	p:u-	1
 	chadarabic	chad1249	shu	Chadian Spoken Arabic 	Afro-Asiatic	Africa	284	free	hi	o:-ha; p:-ha	1
 	chadarabic	chad1249	shu	Chadian Spoken Arabic 	Afro-Asiatic	Africa	284	free	hu	o:-a; p:-a	1
-	chimariko	chim1301	cid	Chimariko 	Chimariko	North America	903	free	pʰaʔmot	p:-ita	7
+	chimariko	chim1301	cid	Chimariko 	Chimariko	North America	903	free	pʰaʔmot	p:-ita	3
 	chimariko	chim1301	cid	Chimariko 	Chimariko	North America	903	free	pʰɑʔmot	a:pʰaʔmot; p:-ita	1
 	choctaw	choc1276	cho	Choctaw	Muskogean	North America	366	free	yammak	p:ímmiʔ	1
-	choctaw	choc1276	cho	Choctaw	Muskogean	North America	366	free	yammak	p:ímmiʔ	7
+	choctaw	choc1276	cho	Choctaw	Muskogean	North America	366	free	yammak	p:ímmiʔ	3
 	ckhmer	cent1989	khm	Khmer	Austroasiatic	Eurasia	331	free	knjom		5
-	ckhmer	cent1989	khm	Khmer	Austroasiatic	Eurasia	331	free	koat		8
+	ckhmer	cent1989	khm	Khmer	Austroasiatic	Eurasia	331	free	koat		4
 	cora_icrtcc	elna1235	crn	Cora	Uto-Aztecan	North America	660	free	amɨh	a:amɨ	1
 	cora_icrtcc	elna1235	crn	Cora	Uto-Aztecan	North America	660	free	aɨh	a:aɨ	1
 	crow	crow1244	cro	Crow	Siouan	North America	342	free	i:	s:∅-; a:∅-; o:∅-; p:is-	1
@@ -73,7 +74,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	cubeo_morseandmaxwell	cube1242	cub	Cubeo	Tucanoan	South America	429	free	ɨ̃	o:ɨ̃re; p:ɨ̃-hi	1
 	curripaco	curr1243	kpc	Curripaco	Arawakan	South America	492	free	hiȴiɑ	p:-i; p:li-	1
 	curripaco	curr1243	kpc	Curripaco	Arawakan	South America	492	free	srúɑ	p:i-; p:rru	1
-	daasanach	daas1238	dsh	Daasanach	Afro-Asiatic	Africa	457	free	ʰé	o:ʰí; p:=lé	8
+	daasanach	daas1238	dsh	Daasanach	Afro-Asiatic	Africa	457	free	ʰé	o:ʰí; p:=lé	4
 	dagaare	sout2789	dga	Dagaare	Atlantic-Congo	Africa	614	free	ʊnɔ	o:ʊ; p:a=	1
 	dagaare	sout2789	dga	Dagaare	Atlantic-Congo	Africa	614	free	ʊnɔ	o:ʊ; p:ʊ=	1
 	daloabete	dalo1238	bev	Daloa Bété	Kru	Africa	561	free	a˦		1
@@ -81,7 +82,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	daloabete	dalo1238	bev	Daloa Bété	Kru	Africa	561	free	ɔ˦		1
 	denya	deny1238	anv	Denya	Atlantic-Congo	Africa	627	free		p:àwǔ	1
 	denya	deny1238	anv	Denya	Atlantic-Congo	Africa	627	free	jì	p:àwǔ	1
-	dhofariarabic	dhof1235	adf	Dhofari Arabic	Afro-Asiatic	Eurasia	862	free	hum	o:-hum; p:-hum	5
+	dhofariarabic	dhof1235	adf	Dhofari Arabic	Afro-Asiatic	Eurasia	862	free	hum	o:-hum; p:-hum	2
 	diyari	dier1241	dif	Diyari	Pama-Nyungan	Australia	378	free	n̪ani	a:n̪andu; o:n̪an̪a; p:n̪aŋkaɲi	1
 	diyari	dier1241	dif	Diyari	Pama-Nyungan	Australia	378	free	n̪awu	a:n̪ulu; o:n̪in̪a; p:n̪uŋkaɲi	1
 	dogonjamsay	jams1239	djm	Dogon, Jamsay	Dogon	Africa	593	free	ko	o:kó; p:kó	1
@@ -109,19 +110,21 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	farsi_tehrani	west2369	pes	Persian (Farsi)	Indo-European	Eurasia	290	free	u		1
 	fulfuldemaasina	maas1239	ffm	Fulfulde, Maasina	Atlantic-Congo	Africa	599	free	mɔ		1
 	fulfuldemaasina	maas1239	ffm	Fulfulde, Maasina	Atlantic-Congo	Africa	599	free	ŋgel		1
+	futunaaniwa	futu1245	fut	Futuna-Aniwa	Austronesian	Papunesia	830	free	∅		7
 	ga	gaaa1244	gaa	Ga	Atlantic-Congo	Africa	572	free	e˩	o:lɛ˩	1
 	ga	gaaa1244	gaa	Ga	Atlantic-Congo	Africa	572	free	e˩	o:Ø	1
 	gangam	ngan1299	gng	Gangam	Atlantic-Congo	Africa	602	free	li˩	o:lɛ˩; p:li˧	1
 	gangam	ngan1299	gng	Gangam	Atlantic-Congo	Africa	602	free	u˩	o:wɔ˧; p:u˧	1
 	gbayambodomo	gbay1281	gmm	Gbaya-Mbodomo	Atlantic-Congo	Africa	582	free	e˥	p:wã˩	1
 	gbayambodomo	gbay1281	gmm	Gbaya-Mbodomo	Atlantic-Congo	Africa	582	free	wɛnɛ˩	o:nɛ˩; p:wã˩	1
+	german	stan1295	deu	German	Indo-European	Eurasia	24	free	siː	p:iːr	7
 	gourmanchema	gour1243	gux	Gourmanchéma	Atlantic-Congo	Africa	601	free	o˩	o:yu˩; p:o	1
 	gourmanchema	gour1243	gux	Gourmanchéma	Atlantic-Congo	Africa	601	free	o˩	p:o	1
 	greek	mode1248	ell	Greek	Indo-European	Eurasia	431	free	afˈti	o:tin; p:tis	1
 	greek	mode1248	ell	Greek	Indo-European	Eurasia	431	free	afˈtos	o:ton; p:tu	1
 	guahibo	guah1255	guh	Guahibo	Guahiboan	South America	521	free	ponɯ	p:piha-	1
 	guahibo	guah1255	guh	Guahibo	Guahiboan	South America	521	free	powa	p:piha-	1
-	guayabero	guay1257	guo	Guayabero	Guahiboan	South America	522	free	piha	p:pa-	8
+	guayabero	guay1257	guo	Guayabero	Guahiboan	South America	522	free	piha	p:pa-	4
 	gulfarabic	gulf1241	afb	Gulf Arabic	Afro-Asiatic	Eurasia	307	free	hija	o:-ha; p:maːlha	1
 	gulfarabic	gulf1241	afb	Gulf Arabic	Afro-Asiatic	Eurasia	307	free	huwa	o:-ah; p:maːlah	1
 	hausa	haus1257	hau	Hausa	Afro-Asiatic	Africa	323	free	ta	p:-ntà	1
@@ -129,8 +132,9 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	vah	o:us; p:iska	1
 	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	yah	a:yah~; o:is; p:iska	1
 	hungarian	hung1274	hun	Hungarian	Uralic	Eurasia	337	free	mi	o:bɛnnüket; o:minket; p:-unk	3
-	imonda	imon1245	imn	Imonda	Border	Papunesia	866	free	ehe	p:ehena	8
-	inanwatan	suab1238	szp	Inanwatan	South Bird's Head	Papunesia	66	free	ítiga	o:-wá; p:tiga; p:tigáe	4
+	imonda	imon1245	imn	Imonda	Border	Papunesia	866	free	ehe	p:ehena	4
+	inanwatan	suab1238	szp	Inanwatan	South Bird's Head	Papunesia	66	free	ítiga	o:-wá; p:tiga	2
+	inanwatan	suab1238	szp	Inanwatan	South Bird's Head	Papunesia	66	free	ítiga	o:-wá; p:tigáe	4
 	iraqiarabic	meso1252	acm	Iraqi Arabic	Afro-Asiatic	Eurasia	400	free	hijja	o:-ha; p:-ha	1
 	iraqiarabic	meso1252	acm	Iraqi Arabic	Afro-Asiatic	Eurasia	400	free	huwwa	o:-a; p:-a	1
 	isaka	kris1246	ksi	I'saka	Sko	Papunesia	222	free	kepu	o:kie; p:kikã	1
@@ -138,9 +142,10 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	izere_fobur	izer1241	izr	Izere	Atlantic-Congo	Africa	626	free	wú	o:tú; p:-wu	1
 	izere_fobur	izer1241	izr	Izere	Atlantic-Congo	Africa	626	free	à-		1
 	jamaicancreole	jama1262	jam	Jamaican Creole English	Indo-European	North America	415	free	wi	p:fiwi	3
-	jamiltepecmixtec	jami1235	mxt	Jamiltepec Mixtec	Otomanguean	North America	874	free	ra		7
-	jaqaru	jaqa1244	jqr	Jaqaru	Aymaran	South America	878	free	upa	o:upja; p:.-p"a	8
-	javanese	java1254	jav	Javanese	Austronesian	Papunesia	145	free	dheweke	s:panjenenganipun; s:piyambakipun; a:panjenenganipun; a:piyambakipun; o:panjenenganipun; o:piyambakipun; p:-e; p:-ipun; p:-ne; p:-nipun	8
+	jamiltepecmixtec	jami1235	mxt	Jamiltepec Mixtec	Otomanguean	North America	874	free	ra		3
+	jaqaru	jaqa1244	jqr	Jaqaru	Aymaran	South America	878	free	upa	o:upja; p:.-p"a	4
+	jaru	jaru1254	ddj	Jaru	Pama-Nyungan	Australia	45	free	ñandu	a:ñandugu; p:ñandugu	4
+	javanese	java1254	jav	Javanese	Austronesian	Papunesia	145	free	dheweke	p:-e; p:-ne	7
 	jingulu	djin1251	jig	Jingulu	Mirndi	Australia	62	free	jama	o:ŋarnu; p:niyi-	1
 	jingulu	djin1251	jig	Jingulu	Mirndi	Australia	62	free	jimi	o:ŋayi; p:niyi-	1
 	kafoa	kafo1240	kpu	Kafoa	Timor-Alor-Pantar	Papunesia	683	free	da	s:deed; s:do; s:ge; a:deed; a:do; a:ge; o:da-; o:do-; p:d(a)-; p:di-	1
@@ -151,7 +156,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	kairiru_b	kair1263	kxa	Kairiru	Austronesian	Papunesia	387	bound	a-	o:-i; p:-ñ	1
 	kakua	cacu1241	cbv	Kakua	Kakua-Nukak	South America	508	free	kan	s:kàán; s:áà-; a:kàán; a:áà-; o:kàán; o:áà-; p:kàán; p:áà-	1
 	kakua	cacu1241	cbv	Kakua	Kakua-Nukak	South America	508	free	kà̀ánʔ	s:míì-; a:míì-; o:míì-; p:míì-	1
-	kamasau	kama1367	kms	Kamasau	Nuclear Torricelli	Papunesia	229	free	ni		8
+	kamasau	kama1367	kms	Kamasau	Nuclear Torricelli	Papunesia	229	free	ni		4
 	kamoro	kamo1255	kgq	Kamoro	Nuclear Trans New Guinea	Papunesia	149	free	are	s:aruwĕ; s:arù; a:aruwĕ; a:arù; o:a; p:àratja	4
 	kapriman	kapr1245	dju	Kapriman	Sepik	Papunesia	245	free	rɨ	p:rɨxu	1
 	kapriman	kapr1245	dju	Kapriman	Sepik	Papunesia	245	free	sɨ	p:sɨxu	1
@@ -164,7 +169,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	ket	kett1243	ket	Ket	Yeniseian	Eurasia	412	free	bū	p:búdi	1
 	kimaghima	kima1246	kig	Kimaghima	Kolopom	Papunesia	354	free	ni	o:nirɛ	3
 	kiowa	kiow1266	kio	Kiowa	Kiowa-Tanoan	North America	401	free	nɔ́ɔ́		5
-	koasati	koas1236	cku	Koasati	Muskogean	North America	297	free	ibisnók	o:ibisnón; p:im-	8
+	koasati	koas1236	cku	Koasati	Muskogean	North America	297	free	ibisnók	o:ibisnón; p:im-	4
 	kokoda	koko1265	xod	Kokoda	South Bird's Head	Papunesia	253	free	nigéra	p:níge-	1
 	kokoda	koko1265	xod	Kokoda	South Bird's Head	Papunesia	253	free	nigómo	p:nígo-	1
 	kokota_b	koko1269	kkk	Kokota	Austronesian	Papunesia	398	bound	0		1
@@ -183,7 +188,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	kurukh	kuru1302		Kurukh	Dravidian	Eurasia	319	free	aːs	o:aːsin; p:aːs gahi	1
 	kwanja_njanga	kwan1276	knp	Kwanja	Atlantic-Congo	Africa	621	free	mɨ˧	o:wu˧; p:ye˧	1
 	kwanja_njanga	kwan1276	knp	Kwanja	Atlantic-Congo	Africa	621	free	wu˧	p:ye˧	1
-	kwaza	kwaz1243	xwa	Kwaza	Kwaza	South America	316	free	ĩ	p:ĩdɨ-	8
+	kwaza	kwaz1243	xwa	Kwaza	Kwaza	South America	316	free	ĩ	p:ĩdɨ-	4
 	kwoma	kwom1262	kmo	Kwoma	Sepik	Papunesia	243	free	riita	o:riitana; p:riiti	1
 	kwoma	kwom1262	kmo	Kwoma	Sepik	Papunesia	243	free	siita	o:siitana; p:siiti	1
 	lelemi	lele1264	lef	Lelemi	Atlantic-Congo	Africa	574	free	àni	o:nì; p:aɲa	1
@@ -194,11 +199,11 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	lemetingbelait	bela1260	beg	Lemeting (Belait)	Austronesian	Papunesia	844	free	tijjih	a:dih; a:din; o:dih; o:din; p:dih; p:din	1
 	logba_alakpeti	logb1245	lgq	Logba	Atlantic-Congo	Africa	575	free	iyɛ́	o:-lɛ́; o:-nɛ́	1
 	logba_alakpeti	logb1245	lgq	Logba	Atlantic-Congo	Africa	575	free	ɔlɛ́	o:-lɛ́; o:-nɛ́	1
-	macaguan	maca1259	mbn	Macaguán	Guahiboan	South America	489	free	ponɯ	p:pe-	8
+	macaguan	maca1259	mbn	Macaguán	Guahiboan	South America	489	free	ponɯ	p:pe-	4
 	maco	maco1239	wpc	Maco	Saliban	South America	530	free	ihu	p:h(V)-	1
 	maco	maco1239	wpc	Maco	Saliban	South America	530	free	ite	p:(V)-	1
 	madurese	nucl1460	mad	Madurese	Austronesian	Papunesia	147	free	səŋkoʔ kabbi		3
-	makassarese	maka1311	mak	Makassarese	Austronesian	Papunesia	146	free	=i	s:ia; a:ia; a:na=; o:ia; p:-na	8
+	makassarese	maka1311	mak	Makassarese	Austronesian	Papunesia	146	free	ia	p:-na	7
 	makwe	makw1236	ymk	Makwe	Atlantic-Congo	Africa	598	free	náame	p:-ke	1
 	makwe	makw1236	ymk	Makwe	Atlantic-Congo	Africa	598	free	unáamo	p:-ke	1
 	malay_ambon	ambo1250	abs	Malay	Austronesian	Papunesia	676	free	akang	s:antua; a:antua; o:antua; p:antua	1
@@ -213,9 +218,11 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	mandahuaca	mand1448	mht	Mandahuaca	Arawakan	South America	527	free	péjha	p:pa-	1
 	mangarayi	mang1381	mpc	Mangarayi	Mangarrayi-Maran	Australia	442	free	ŋaɭiwa	o:ŋangiwa; p:-ŋajawu	1
 	mangarayi	mang1381	mpc	Mangarayi	Mangarrayi-Maran	Australia	442	free	ɳaɾiwa	o:ɲiŋgiwa; p:-ɳawu	1
+	marind	nucl1622	mrz	Marind	Anim	Papunesia	880	free	epe	p:epe en	4
 	marind	nucl1622	mrz	Marind	Anim	Papunesia	880	free	nok	p:nok en	5
 	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	ngunhu	o:ngurnu; p:ngurnuwu	1
 	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	nhiyu	o:yirna; p:yirnawu	1
+	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	wi	o:wia; p:w-; p:wiar; p:wiena	3
 	mayogo	mayo1261	mdm	Mayogo	Atlantic-Congo	Africa	584	free	anɨ	p:naaanɨ́	1
 	mayogo	mayo1261	mdm	Mayogo	Atlantic-Congo	Africa	584	free	anɨ	p:naaanɩ	1
 	mbato	mbat1247	gwa	Mbato	Atlantic-Congo	Africa	573	free	e˥	o:hẽ˧; p:e˩˧	1
@@ -279,7 +286,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	ntairora	nort2920	tbg	Tairora, North	Nuclear Trans New Guinea	Papunesia	371	free	te	o:ti-; p:h-	5
 	nukakmaku	nuka1242	mbr	Nukak Makú	Kakua-Nukak	South America	509	free	kaan		1
 	nukakmaku	nuka1242	mbr	Nukak Makú	Kakua-Nukak	South America	509	free	kaanʔ		1
-	paraguayanguarani	para1311	gug	Paraguayan Guaraní	Tupian	South America	416	free	haʔé	o:∅-; p:iy-	8
+	paraguayanguarani	para1311	gug	Paraguayan Guaraní	Tupian	South America	416	free	haʔé	o:∅-; p:iy-	4
 	piapoco	piap1246	pio	Piapoco	Arawakan	South America	493	free	jáa'i	p:i-; p:li-	1
 	piapoco	piap1246	pio	Piapoco	Arawakan	South America	493	free	tsáa'i	p:i; p:ru-	1
 	piaroa	piar1243	pid	Piaroa	Saliban	South America	494	free	hʷãũ	p:u-; p:ĩ-	1
@@ -309,7 +316,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	sepikiwam	sepi1255	iws	Sepik Iwam	Sepik	Papunesia	241	free	siya	o:sir; p:sir	1
 	shona	shon1251	sna	Shona	Atlantic-Congo	Africa	535	free	iwo	p:-wo	1
 	shona	shon1251	sna	Shona	Atlantic-Congo	Africa	535	free	iye	p:-ke	1
-	siona	sion1247	snn	Siona	Tucanoan	South America	483	free	'ba	s:'ge; s:hã'ʔa; s:ʔɨ̃; a:'ge; a:hã'ʔa; a:ʔɨ̃; o:'ge; o:hã'ʔa; o:ʔɨ̃; p:'ge; p:hã'ʔa; p:ʔɨ̃	8
+	siona	sion1247	snn	Siona	Tucanoan	South America	483	free	'ba	s:'ge; s:hã'ʔa; s:ʔɨ̃; a:'ge; a:hã'ʔa; a:ʔɨ̃; o:'ge; o:hã'ʔa; o:ʔɨ̃; p:'ge; p:hã'ʔa; p:ʔɨ̃	4
 	siriano	siri1274	sri	Siriano	Tucanoan	South America	486	free	igó	p:igóʝa	1
 	siriano	siri1274	sri	Siriano	Tucanoan	South America	486	free	ĩgɨ̃́	p:ĩgɨ̃́ʝa	1
 	skou	nucl1634	skv	Skou	Sko	Papunesia	223	free	ke	p:ké	1
@@ -357,9 +364,10 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	vanimo	vani1248	vam	Vanimo	Sko	Papunesia	225	free	hé	p:hè	1
 	viemo	viem1243	vig	Viemo	Atlantic-Congo	Africa	605	free	be	s:bə; a:bə; o:bə; p:bə	1
 	viemo	viem1243	vig	Viemo	Atlantic-Congo	Africa	605	free	yi	o:wɔ	1
+	wangkajunga	mart1256	mpj	Wangkajunga	Pama-Nyungan	Australia	55	free	paluɲa	a:paluɲalu; p:paluɲakurnulu	4
 	warapu	wara1302	bpe	Warapu	Sko	Papunesia	224	free	bó		1
 	warapu	wara1302	bpe	Warapu	Sko	Papunesia	224	free	yá		1
-	waris	wari1266	wrs	Waris	Border	Papunesia	881	free	he	s:hem; o:hem; p:hena	8
+	waris	wari1266	wrs	Waris	Border	Papunesia	881	free	he	s:hem; o:hem; p:hena	4
 	wayuu	wayu1243	guc	Wayuu	Arawakan	South America	497	free	nia	p:nɨ-	1
 	wayuu	wayu1243	guc	Wayuu	Arawakan	South America	497	free	ʃia	p:sɨ-	1
 	welsh_icrkq	wels1247	cym	Welsh	Indo-European	Eurasia	657	free	e	s:o; a:o; o:fe; o:fo; p:ei-	1
@@ -370,13 +378,13 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	welsh_icrrh	wels1247	cym	Welsh	Indo-European	Eurasia	666	free	hi	p:i; p:u	1
 	westcentrallimba	west2450	lia	West-Central Limba	Atlantic-Congo	Africa	540	free	nde	o:niŋ; p:nama	1
 	westcentrallimba	west2450	lia	West-Central Limba	Atlantic-Congo	Africa	540	free	wo		1
-	wolio	woli1241	wlo	Wolio	Austronesian	Papunesia	851	free	in̅čia	p:-na	8
+	wolio	woli1241	wlo	Wolio	Austronesian	Papunesia	851	free	in̅čia	p:-na	4
 	yanomama	yano1262	wca	Yanomama	Yanomamic	South America	430	free	kama	a:kamanɨ	1
 	yanomama	yano1262	wca	Yanomama	Yanomamic	South America	430	free	thə	a:thənɨ	1
-	yei	yeii1239	jei	Yei	Yam	Papunesia	698	free	ɛd	o:ɛdɛ; p:ɛdɛni	8
+	yei	yeii1239	jei	Yei	Yam	Papunesia	698	free	ɛd	o:ɛdɛ; p:ɛdɛni	4
 	yessanmayo	yess1239	yss	Yessan-Mayo	Sepik	Papunesia	248	free	ri	p:riri	1
 	yessanmayo	yess1239	yss	Yessan-Mayo	Sepik	Papunesia	248	free	ti	p:tiri	1
-	yidiny	yidi1250	yii	Yidiny	Pama-Nyungan	Australia	697	free	yiɲu	a:yiɲd̻uːŋ; o:yiɲd̻uːɲ; p:yiɲd̻uːn	8
+	yidiny	yidi1250	yii	Yidiny	Pama-Nyungan	Australia	697	free	yiɲu	a:yiɲd̻uːŋ; o:yiɲd̻uːɲ; p:yiɲd̻uːn	4
 	yom	pali1273	pli	Yom	Indo-European	Eurasia	612	free	a	o:wə	1
 	yom	pali1273	pli	Yom	Indo-European	Eurasia	612	free	bə		2
 	yucuna	yucu1253	ycn	Yucuna	Arawakan	South America	510	free	riká	p:ri-	1
@@ -1598,7 +1606,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e	imonda	imon1245	imn	Imonda	Border	Papunesia	866	free	ka	p:kana	3
 1e	jaqaru	jaqa1244	jqr	Jaqaru	Aymaran	South America	878	free	na	o:naja; p:.-nha	3
 1e	waris	wari1266	wrs	Waris	Border	Papunesia	881	free	ka	s:kam; o:kam; p:kana	3
-1e+3;Du	antakarinya	anta1253	ant	Antakarinya	Pama-Nyungan	Australia	811	free	∅		4
+1e+3;Du	antakarinya	anta1253	ant	Antakarinya	Pama-Nyungan	Australia	811	free	∅		2
 1e;Du	ajie	ajie1238	aji	Ajie	Austronesian	Papunesia	809	free	gɔ-vu	o:-vu; p:-vu	1
 1e;Du	alawa	alaw1244	alh	Alawa	Mangarrayi-Maran	Australia	869	free	ŋařu	p:ŋařuŋaña	1
 1e;Du	alekano	alek1238	gah	Alekano	Nuclear Trans New Guinea	Papunesia	373	free	le-za	o:le-liʔ; p:le-̩liʔ	1
@@ -2579,19 +2587,19 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 2	malay	mala1479	zlm	Malay	Austronesian	Eurasia	432	free	anda		3
 2	saltyui	salt1242	sll	Salt-Yui	Nuclear Trans New Guinea	Papunesia	109	free	ni		3
 2	waris	wari1266	wrs	Waris	Border	Papunesia	881	free	ye	s:yem; o:yem; p:yena	3
-2+3;Du	abau	abau1245	aau	Abau	Sepik	Papunesia	240	free	hoh	o:hohe; p:hoho	4
+2+3;Du	abau	abau1245	aau	Abau	Sepik	Papunesia	240	free	hoh	o:hohe; p:hoho	2
 2+3;Du	amele	amel1241	aey	Amele	Nuclear Trans New Guinea	Papunesia	128	free	ale	p:na ale	4
-2+3;Du	lemetingbelait	bela1260	beg	Lemeting (Belait)	Austronesian	Papunesia	844	free	beh	s:beh-debbeh; a:beh-debbeh; o:sebbeh; p:beh-debbeh	4
-2+3;Du	mansim	hata1243	had	Mansim	Hatam-Mansim	Papunesia	254	free	šenu	p:kun	4
+2+3;Du	lemetingbelait	bela1260	beg	Lemeting (Belait)	Austronesian	Papunesia	844	free	beh	s:beh-debbeh; a:beh-debbeh; o:sebbeh; p:beh-debbeh	2
+2+3;Du	mansim	hata1243	had	Mansim	Hatam-Mansim	Papunesia	254	free	šenu	p:kun	2
 2+3;Du	menya	meny1245	mcr	Menya	Angan	Papunesia	195	free	qe	p:qeqä	4
-2+3;Du	meyah	meya1236	mej	Meyah	East Bird's Head	Papunesia	219	free	goga	p:gegan	4
+2+3;Du	meyah	meya1236	mej	Meyah	East Bird's Head	Papunesia	219	free	goga	p:gegan	2
 2+3;Du	selepet	sele1250	spl	Selepet	Nuclear Trans New Guinea	Papunesia	98	free	yetŋe	a:yet; o:yet; p:yetkât	4
-2+3;Gpl	abau	abau1245	aau	Abau	Sepik	Papunesia	240	free	hom	o:hme; p:hmo	4
+2+3;Gpl	abau	abau1245	aau	Abau	Sepik	Papunesia	240	free	hom	o:hme; p:hmo	2
 2+3;Gpl	amele	amel1241	aey	Amele	Nuclear Trans New Guinea	Papunesia	128	free	aɡe	p:na aɡe	4
-2+3;Gpl	mansim	hata1243	had	Mansim	Hatam-Mansim	Papunesia	254	free	šenu	p:sun	4
+2+3;Gpl	mansim	hata1243	had	Mansim	Hatam-Mansim	Papunesia	254	free	šenu	p:sun	2
 2+3;Gpl	selepet	sele1250	spl	Selepet	Nuclear Trans New Guinea	Papunesia	98	free	yeŋe	a:yen; o:yen; p:yegât	4
-2+3;Pl	malay_ambon	ambo1250	abs	Malay	Austronesian	Papunesia	676	free	dorang		8
-2+3;Pl	seselwacreolefrench	sese1246	crs	Seselwa Creole French	Indo-European	Africa	422	free	zot		8
+2+3;Pl	malay_ambon	ambo1250	abs	Malay	Austronesian	Papunesia	676	free	dorang		4
+2+3;Pl	seselwacreolefrench	sese1246	crs	Seselwa Creole French	Indo-European	Africa	422	free	zot		4
 2;Du	achangxiandao	xian1249	xia	Achang-Xiandao	Sino-Tibetan	Eurasia	800	free	na⁵ dz͡ɔm³	o:na⁵ dz͡ɔm³ li³1; p:na⁵ dz͡ɔm³ da³	1
 2;Du	adioukrou	adio1239	adj	Adioukrou	Atlantic-Congo	Africa	569	free	ɔɲ˩	o:-ɔɲ	1
 2;Du	ajie	ajie1238	aji	Ajie	Austronesian	Papunesia	809	free	gɔ-u	o:-u; p:-u	1
@@ -4238,950 +4246,956 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3	balinese	bali1278	ban	Balinese	Austronesian	Papunesia	154	free	hiya	p:-ne; p:-nne	9
 3	bugis	bugi1244	bug	Bugis	Austronesian	Papunesia	167	free	iyya	p:-na	9
 3	puyuma	puyu1239	pyu	Puyuma	Austronesian	Papunesia	82	free	nantu	a:kantaw; o:kantaw	9
+3	salako	kend1254	knx	Salako	Austronesian	Papunesia	60	free	ià	p:-e	9
 3	sentani	nucl1632	set	Sentani	Sentanic	Papunesia	218	free	n-	s:na; s:nəjɛ; a:na; a:nəjɛ; o:na; p:na; p:nə; p:nɛj	9
-3;Du	acatepecmephaa	acat1240		Acatepec Mephaa	Otomanguean	North America	858	free	ikᶖ	p:kwɛ́ntᶙ̀	3
-3;Du	achangxiandao	xian1249	xia	Achang-Xiandao	Sino-Tibetan	Eurasia	800	free	nja⁵ dz͡ɔm³	o:nja⁵ dz͡ɔm³ li³1; p:nja⁵ dz͡ɔm³ da³	3
-3;Du	aimol	aimo1244	aim	Aimol	Sino-Tibetan	Eurasia	806	free	əmani	a:ənmani; o:ənmani; p:əŋ-	3
-3;Du	ajie	ajie1238	aji	Ajie	Austronesian	Papunesia	809	free	cu-ru	o:-ru; p:-ru	3
-3;Du	alamblak	alam1246	amp	Alamblak	Sepik	Papunesia	246	free	rëf	p:rëfho	3
-3;Du	alyawarre	alya1239	aly	Alyawarre	Pama-Nyungan	Australia	810	free	rathirra	o:rinhathirra; p:ikurathirrinha	3
+3;Du	acatepecmephaa	acat1240		Acatepec Mephaa	Otomanguean	North America	858	free	ikᶖ	p:kwɛ́ntᶙ̀	1
+3;Du	achangxiandao	xian1249	xia	Achang-Xiandao	Sino-Tibetan	Eurasia	800	free	nja⁵ dz͡ɔm³	o:nja⁵ dz͡ɔm³ li³1; p:nja⁵ dz͡ɔm³ da³	1
+3;Du	aimol	aimo1244	aim	Aimol	Sino-Tibetan	Eurasia	806	free	əmani	a:ənmani; o:ənmani; p:əŋ-	1
+3;Du	ajie	ajie1238	aji	Ajie	Austronesian	Papunesia	809	free	cu-ru	o:-ru; p:-ru	1
+3;Du	alamblak	alam1246	amp	Alamblak	Sepik	Papunesia	246	free	rëf	p:rëfho	1
+3;Du	alyawarre	alya1239	aly	Alyawarre	Pama-Nyungan	Australia	810	free	rathirra	o:rinhathirra; p:ikurathirrinha	1
 3;Du	aneityum	anei1239	aty	Aneityum	Austronesian	Papunesia	206	free	aarau	o:rau; p:-rau	3
-3;Du	anii	anii1246	hnh	Anii	Khoe-Kwadi	Africa	860	free	-tsà		3
-3;Du	anindilyakwa	anin1240	aoi	Anindilyakwa	Gunwinyguan	Australia	349	free	abənuwa	s:abərəŋuwa; a:abərəŋuwa; o:abərəŋuwa; p:abənul̪aŋwa	3
-3;Du	anong	nung1282	nun	Anong	Sino-Tibetan	Eurasia	332	free	ŋ˧˩ɳɯŋ˥si˧˩		3
-3;Du	aonaga_mongsen	aona1235	njo	Ao Naga	Sino-Tibetan	Eurasia	318	free	panət	s:tuŋnət; s:tuŋət; a:tuŋnət; a:tuŋət; o:tuŋnət; o:tuŋət; p:tuŋnət; p:tuŋət	3
+3;Du	anii	anii1246	hnh	Anii	Khoe-Kwadi	Africa	860	free	-tsà		1
+3;Du	anindilyakwa	anin1240	aoi	Anindilyakwa	Gunwinyguan	Australia	349	free	abənuwa	s:abərəŋuwa; a:abərəŋuwa; o:abərəŋuwa; p:abənul̪aŋwa	1
+3;Du	anong	nung1282	nun	Anong	Sino-Tibetan	Eurasia	332	free	ŋ˧˩ɳɯŋ˥si˧˩		1
+3;Du	aonaga_mongsen	aona1235	njo	Ao Naga	Sino-Tibetan	Eurasia	318	free	panət	s:tuŋnət; s:tuŋət; a:tuŋnət; a:tuŋət; o:tuŋnət; o:tuŋət; p:tuŋnət; p:tuŋət	1
 3;Du	arabana	arab1267	ard	Arabana	Pama-Nyungan	Australia	122	free	pula	a:pularu; o:pulaṋa; p:pulakuṋa	3
-3;Du	aroplokep	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	389	free	yaru	p:-di	3
-3;Du	asuri	asur1254	asr	Asuri	Austroasiatic	Eurasia	813	free	hikiŋ	s:hukiŋ; a:hukiŋ; o:hukiŋ; p:hikiŋrenī; p:hikiŋrā; p:hikiŋā; p:hukiŋrenī; p:hukiŋrā; p:hukiŋā	3
-3;Du	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free	hɨrakɨt	p:-ɨrakɨt	3
-3;Du	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	neɲ kondamin	o:kondaminɟay; p:neɲ kondamin amgoy	3
-3;Du	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	ræw	o:ræwe; p:ræwke	3
-3;Du	ayiwo	ayiw1239	nfl	Ayiwo	Austronesian	Papunesia	814	free	li- -le	s:lu- -le; a:-ile; o:-ile; o:ijiile; p:-ile	3
+3;Du	aroplokep	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	389	free	yaru	p:-di	1
+3;Du	asuri	asur1254	asr	Asuri	Austroasiatic	Eurasia	813	free	hikiŋ	s:hukiŋ; a:hukiŋ; o:hukiŋ; p:hikiŋrenī; p:hikiŋrā; p:hikiŋā; p:hukiŋrenī; p:hukiŋrā; p:hukiŋā	1
+3;Du	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free	hɨrakɨt	p:-ɨrakɨt	1
+3;Du	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	neɲ kondamin	o:kondaminɟay; p:neɲ kondamin amgoy	1
+3;Du	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	ræw	o:ræwe; p:ræwke	1
+3;Du	ayiwo	ayiw1239	nfl	Ayiwo	Austronesian	Papunesia	814	free	li- -le	s:lu- -le; a:-ile; o:-ile; o:ijiile; p:-ile	1
 3;Du	bayali	baya1257	bjy	Bayali	Pama-Nyungan	Australia	131	free	bula	p:bulaganuṋ	3
 3;Du	biak	biak1248	bhw	Biak	Austronesian	Papunesia	172	free	su	p:suve=	3
-3;Du	biangai	bian1252	big	Biangai	Kunimaipan	Papunesia	259	free	piyau	p:piyaugi	3
-3;Du	bilinarapilinara	ngar1235	nbj	Ngarinman	Pama-Nyungan	Australia	347	free	ɲanbula	p:ɲanbulaɲ	3
+3;Du	biangai	bian1252	big	Biangai	Kunimaipan	Papunesia	259	free	piyau	p:piyaugi	1
+3;Du	bilinarapilinara	ngar1235	nbj	Ngarinman	Pama-Nyungan	Australia	347	free	ɲanbula	p:ɲanbulaɲ	1
 3;Du	bininjgunwok	gunw1252	gup	Bininj Kunwok	Gunwinyguan	Australia	13	free	bedda	p:berewoneŋ	3
 3;Du	bislama	bisl1239	bis	Bislama	Indo-European	Papunesia	114	free	tufala	p:bloŋ tufala	3
-3;Du	bonan	bona1250	peh	Bonan	Mongolic-Khitan	Eurasia	817	free	atɕaŋʁala	o:atɕaŋʁalanə; p:atɕaŋʁalanə	3
-3;Du	bora	bora1263	boa	Bora	Boran	South America	478	free	tìː-tʲʰɛ́tsʰì	p:i	3
+3;Du	bonan	bona1250	peh	Bonan	Mongolic-Khitan	Eurasia	817	free	atɕaŋʁala	o:atɕaŋʁalanə; p:atɕaŋʁalanə	1
+3;Du	bora	bora1263	boa	Bora	Boran	South America	478	free	tìː-tʲʰɛ́tsʰì	p:i	1
 3;Du	bouma	fiji1243	fij	Boumaa Fijian	Austronesian	Papunesia	27	free	erau	o:rau; p:oodrau	3
-3;Du	bukawa	buga1250	buk	Bukawa	Austronesian	Papunesia	686	free	iŋlu	p:iŋlu si	3
-3;Du	bukiyip	buki1249	ape	Bukiyip	Nuclear Torricelli	Papunesia	226	free	omom bwiom	a:omom bwióm; p:omom bwiomi-	3
+3;Du	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free	iromaraira	s:romaraira; s:romarea; a:romaraira; a:romarea; o:-ra; p:-dia	1
+3;Du	bukawa	buga1250	buk	Bukawa	Austronesian	Papunesia	686	free	iŋlu	p:iŋlu si	1
+3;Du	bukiyip	buki1249	ape	Bukiyip	Nuclear Torricelli	Papunesia	226	free	omom bwiom	a:omom bwióm; p:omom bwiomi-	1
 3;Du	bunaq	buna1278	bfn	Bunaq	Timor-Alor-Pantar	Papunesia	135	free	halali	p:gie	3
-3;Du	bunganditj	bung1264	xbg	Bunganditj	Pama-Nyungan	Australia	188	free	ñuŋgal	s:ñuŋgul; a:ñuŋgala; o:∅; p:ñuŋgalat	3
+3;Du	bunganditj	bung1264	xbg	Bunganditj	Pama-Nyungan	Australia	188	free	ñuŋgal	a:ñuŋgala; p:ñuŋgalat	3
 3;Du	bunuba	buna1275	bck	Bunuba	Bunaban	Australia	117	free	biyiri	a:biyiriiŋga; p:biyiranθa	3
-3;Du	burarra_icrlb	bura1267	bvr	Burarra	Maningrida	Australia	692	free	bitipa	p:gun=bitipa	3
-3;Du	burarra_icrne	bura1267	bvr	Burarra	Maningrida	Australia	664	free	bitipa	p:gunbitipa	3
-3;Du	burarra_icrrh	bura1267	bvr	Burarra	Maningrida	Australia	667	free	bitipa	p:gunbitipa	3
-3;Du	buru	buru1303	mhs	Buru	Austronesian	Papunesia	821	free	siro	p:nini	3
-3;Du	camsa	cams1241	kbh	Camsá	Camsá	South America	524	free	cáta	p:-be	3
-3;Du	centralnicobarese	cent1990	ncb	Central Nicobarese	Austroasiatic	Eurasia	822	free	unāṅ		3
-3;Du	chimila	chim1309	cbg	Chimila	Chibchan	South America	523	free	aaʔrigwe	s:náːnu-ra; s:nóuve; a:náːnu-ra; a:nóuve; o:náːnu-ra; o:nóuve; p:ni-	3
-3;Du	dagaare	sout2789	dga	Dagaare	Atlantic-Congo	Africa	614	free	ana	s:bana; a:bana; o:a; o:ba; p:a=; p:ba=	3
+3;Du	burarra_icrlb	bura1267	bvr	Burarra	Maningrida	Australia	692	free	bitipa	p:gun=bitipa	1
+3;Du	burarra_icrne	bura1267	bvr	Burarra	Maningrida	Australia	664	free	bitipa	p:gunbitipa	1
+3;Du	burarra_icrrh	bura1267	bvr	Burarra	Maningrida	Australia	667	free	bitipa	p:gunbitipa	1
+3;Du	buru	buru1303	mhs	Buru	Austronesian	Papunesia	821	free	siro	p:nini	1
+3;Du	camsa	cams1241	kbh	Camsá	Camsá	South America	524	free	cáta	p:-be	1
+3;Du	centralnicobarese	cent1990	ncb	Central Nicobarese	Austroasiatic	Eurasia	822	free	unāṅ		1
+3;Du	chimila	chim1309	cbg	Chimila	Chibchan	South America	523	free	aaʔrigwe	s:náːnu-ra; s:nóuve; a:náːnu-ra; a:nóuve; o:náːnu-ra; o:nóuve; p:ni-	1
+3;Du	dagaare	sout2789	dga	Dagaare	Atlantic-Congo	Africa	614	free	ana	s:bana; a:bana; o:a; o:ba; p:a=; p:ba=	1
 3;Du	dalabon	ngal1292	ngk	Dalabon	Gunwinyguan	Australia	7	free	bunu	a:bunuyiʔ; p:-burŋ	3
 3;Du	dehu	dehu1237	dhv	Dehu	Austronesian	Papunesia	174	free	ñiɖo	p:i ñiɖo	3
-3;Du	diyari	dier1241	dif	Diyari	Pama-Nyungan	Australia	378	free	pula	a:pulali; o:pulan̪a; p:pulaɲi	3
+3;Du	diyari	dier1241	dif	Diyari	Pama-Nyungan	Australia	378	free	pula	a:pulali; o:pulan̪a; p:pulaɲi	1
 3;Du	djapu	dhuw1249	duj	Djapu	Pama-Nyungan	Australia	18	free	maɳɖa	o:maɳɖaṋa; p:maɳɖaŋgu	3
-3;Du	djinang	djin1253	dji	Djinang	Pama-Nyungan	Australia	104	free	biliŋi	o:biliŋiñi; p:biliŋaŋi	3
-3;Du	dyirbal	dyir1250	dbl	Dyirbal	Pama-Nyungan	Australia	828	free	balagara	a:balagaragu; a:baŋgugara; a:baŋgugaragu; p:balagaraŋu; p:baŋugara; p:baŋugaraŋu	3
-3;Du	eastyugur	east2337	yuy	East Yugur	Mongolic-Khitan	Eurasia	829	free	enes	p:-ini; p:-ni	3
+3;Du	djinang	djin1253	dji	Djinang	Pama-Nyungan	Australia	104	free	biliŋi	o:biliŋiñi	3
+3;Du	dyirbal	dyir1250	dbl	Dyirbal	Pama-Nyungan	Australia	828	free	balagara	a:balagaragu; a:baŋgugara; a:baŋgugaragu; p:balagaraŋu; p:baŋugara; p:baŋugaraŋu	1
+3;Du	eastyugur	east2337	yuy	East Yugur	Mongolic-Khitan	Eurasia	829	free	enes	p:-ini; p:-ni	1
 3;Du	eipo	eipo1242	eip	Eipo	Nuclear Trans New Guinea	Papunesia	144	free	el	s:sik betiɲe; a:sik betiɲe; o:sik betiɲe; p:sik betiɲe	3
 3;Du	fasu	fasu1242	faa	Fasu	Fasu	Papunesia	211	free	tetā	a:tetapō; p:tetapō	3
-3;Du	futunaaniwa	futu1245	fut	Futuna-Aniwa	Austronesian	Papunesia	830	free	akiraua	s:∅; a:∅; o:∅; p:-raua; p:∅	3
-3;Du	fuyug	fuyu1242	fuy	Fuyug	Fuyug	Papunesia	258	free	tu	p:tul	3
-3;Du	gaagudju	gaga1251	gbu	Gaagudju	Gaagudju	Australia	198	free	nowōmba	s:nowōñja; a:nowōñja; o:nowōñja; p:nowōñja	3
+3;Du	fuyug	fuyu1242	fuy	Fuyug	Fuyug	Papunesia	258	free	tu	p:tul	1
 3;Du	gambera	gamb1251	gma	Gambera	Worrorran	Australia	50	free	biranimija	p:biraninaŋgamija	3
-3;Du	gamilaraay	gami1243	kld	Gamilaraay	Pama-Nyungan	Australia	673	free	nhamagaalay	a:ngurugaalay; o:nhamagaalaynya; p:ngurugaalayngundi	3
-3;Du	gapapaiwa_b	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	394	bound	-i	o:-na; p:-na	3
+3;Du	gamilaraay	gami1243	kld	Gamilaraay	Pama-Nyungan	Australia	673	free	nhamagaalay	a:ngurugaalay; o:nhamagaalaynya; p:ngurugaalayngundi	1
+3;Du	gapapaiwa_b	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	394	bound	-i	o:-na; p:-na	1
 3;Du	garlali	kala1380	gll	Garlali	Pama-Nyungan	Australia	41	free	ḓanaŋu	a:bula; o:bulaṋa; p:bula	3
 3;Du	garrwa	gara1269	wrk	Garrwa	Garrwan	Australia	197	free	bula		3
-3;Du	giramay	girr1240		Giramay	Pama-Nyungan	Australia	831	free	bulay	a:bulayᶁu; p:bulayŋu	3
+3;Du	giramay	girr1240		Giramay	Pama-Nyungan	Australia	831	free	bulay	a:bulayᶁu; p:bulayŋu	1
 3;Du	gooniyandi	goon1238	gni	Gooniyandi	Bunaban	Australia	99	free	bidiyooddoo	p:biddaŋiyooddoo	3
-3;Du	guahibo	guah1255	guh	Guahibo	Guahiboan	South America	521	free	ponɯnɯ	p:piha-...-behe	3
+3;Du	guahibo	guah1255	guh	Guahibo	Guahiboan	South America	521	free	ponɯnɯ	p:piha-...-behe	1
 3;Du	gurindji	guri1247	gue	Gurindji	Pama-Nyungan	Australia	193	free	ñanpula	p:ñanpulañ	3
-3;Du	guuguyimidhirrcoastal	gugu1255	kky	Guugu Yimidhirr coastal gugu1255	Pama-Nyungan	Australia	900	free	bula	o:bulaan(in); o:bulangan; p:bulaan; p:bulangan	3
-3;Du	guuguyimidhirrinland	gugu1255	kky	Guugu Yimidhirr inland gugu1255	Pama-Nyungan	Australia	911	free	bula	o:bulaan(in); o:bulangan; p:bulaan; p:bulangan	3
-3;Du	hawaiian	hawa1245	haw	Hawaiian	Austronesian	Papunesia	833	free	lāua	p:kālāua; p:kōlāua	3
-3;Du	hewa	hewa1241	ham	Hewa	Sepik	Papunesia	247	free	'lafay		3
-3;Du	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	vah	o:us; p:uska	3
-3;Du	hoava	hoav1238	hoa	Hoava	Austronesian	Papunesia	834	free	eri	s:ria; a:ria; o:ria; p:dia	3
-3;Du	isaka	kris1246	ksi	I'saka	Sko	Papunesia	222	free	esapu	o:esang; o:kie; o:wi; p:sisa	3
-3;Du	jaminjung	djam1255	djd	Jaminjung	Mirndi	Australia	377	free	buriɳi	p:buriɳaɟgina	3
+3;Du	guuguyimidhirrcoastal	gugu1255	kky	Guugu Yimidhirr coastal gugu1255	Pama-Nyungan	Australia	900	free	bula	o:bulaan(in); o:bulangan; p:bulaan; p:bulangan	1
+3;Du	guuguyimidhirrinland	gugu1255	kky	Guugu Yimidhirr inland gugu1255	Pama-Nyungan	Australia	911	free	bula	o:bulaan(in); o:bulangan; p:bulaan; p:bulangan	1
+3;Du	hawaiian	hawa1245	haw	Hawaiian	Austronesian	Papunesia	833	free	lāua	p:kālāua; p:kōlāua	1
+3;Du	hewa	hewa1241	ham	Hewa	Sepik	Papunesia	247	free	'lafay		1
+3;Du	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	vah	o:us; p:uska	1
+3;Du	hoava	hoav1238	hoa	Hoava	Austronesian	Papunesia	834	free	eri	s:ria; a:ria; o:ria; p:dia	1
+3;Du	isaka	kris1246	ksi	I'saka	Sko	Papunesia	222	free	esapu	o:esang; o:kie; o:wi; p:sisa	1
+3;Du	jaminjung	djam1255	djd	Jaminjung	Mirndi	Australia	377	free	buriɳi	p:buriɳaɟgina	1
 3;Du	jaru	jaru1254	ddj	Jaru	Pama-Nyungan	Australia	45	free	ñanbula	a:ñanbulalu; p:ñanbulalu	3
-3;Du	jingulu	djin1251	jig	Jingulu	Mirndi	Australia	62	free	waɲikila	a:jamabaji; o:wuɲaku; p:wuɲak-	3
-3;Du	jinhgpaw	nort3288		Jinhgpaw	Sino-Tibetan	Eurasia	841	free	khan⁵⁵		3
-3;Du	kafoa	kafo1240	kpu	Kafoa	Timor-Alor-Pantar	Papunesia	683	free	del	o:del ga-; o:del gam-; o:del gang-; o:del ge-; o:del go-; p:del g(a)-; p:del gi-	3
-3;Du	kairiru	kair1263	kxa	Kairiru	Austronesian	Papunesia	386	free	ru	p:raqaru	3
-3;Du	kairiru_b	kair1263	kxa	Kairiru	Austronesian	Papunesia	387	bound	ru-	o:-ru; p:-ru	3
+3;Du	jingulu	djin1251	jig	Jingulu	Mirndi	Australia	62	free	waɲikila		3
+3;Du	jinhgpaw	nort3288		Jinhgpaw	Sino-Tibetan	Eurasia	841	free	khan⁵⁵		1
+3;Du	kafoa	kafo1240	kpu	Kafoa	Timor-Alor-Pantar	Papunesia	683	free	del	o:del ga-; o:del gam-; o:del gang-; o:del ge-; o:del go-; p:del g(a)-; p:del gi-	1
+3;Du	kairiru	kair1263	kxa	Kairiru	Austronesian	Papunesia	386	free	ru	p:raqaru	1
+3;Du	kairiru_b	kair1263	kxa	Kairiru	Austronesian	Papunesia	387	bound	ru-	o:-ru; p:-ru	1
 3;Du	kalakawawya	kala1378		Kala Kawaw Ya	Pama-Nyungan	Australia	161	free	palai	p:palamun	3
 3;Du	kalalagawya	kala1377	mwp	Kala Lagaw Ya kala1377	Pama-Nyungan	Australia	902	free	palai	p:palamun	3
-3;Du	kalam	kala1397	kmh	Kalam	Nuclear Trans New Guinea	Papunesia	268	free	kikmay	o:kuypmay; p:kuypmay	3
+3;Du	kalam	kala1397	kmh	Kalam	Nuclear Trans New Guinea	Papunesia	268	free	kikmay	o:kuypmay; p:kuypmay	1
 3;Du	kalkutungu	kalk1246	ktg	Kalkutungu	Pama-Nyungan	Australia	38	free	puju	a:pujuju; p:pujuu	3
 3;Du	kamoro	kamo1255	kgq	Kamoro	Nuclear Trans New Guinea	Papunesia	149	free	kàoka-mané	s:kìmané; a:kìmané; o:kìmané; p:kaoka-mànatja; p:kìmanatja	3
-3;Du	kapriman	kapr1245	dju	Kapriman	Sepik	Papunesia	245	free	ɸɨ	p:ɸɨxu	3
+3;Du	kapriman	kapr1245	dju	Kapriman	Sepik	Papunesia	245	free	ɸɨ	p:ɸɨxu	1
 3;Du	kayardild	kaya1319	gyd	Kayardild	Tangkic	Australia	4	free	bira	o:birwanji; p:birwanda	3
-3;Du	kele	kele1258	sbc	Kele	Austronesian	Papunesia	379	free	heru	p:-heru	3
-3;Du	kele_b	kele1258	sbc	Kele	Austronesian	Papunesia	380	bound	her-	p:-heru	3
-3;Du	klon	kelo1247	kyo	Klon	Timor-Alor-Pantar	Papunesia	209	free	ele	s:ele g-; s:ele ge-; s:ele gin=; s:ele go-; s:gəle; a:gəle; a:ini gəle; o:ele g-; o:ele ge-; o:ele gin=; o:ele go-; p:ele ge	3
-3;Du	kombio	komb1272	xbi	Kombio	Nuclear Torricelli	Papunesia	228	free	tuwie	p:tuwieel	3
-3;Du	koromira	koro1313	kqj	Koromira	South Bougainville	Papunesia	233	free		p:bɛɛ-	3
+3;Du	kele	kele1258	sbc	Kele	Austronesian	Papunesia	379	free	heru	p:-heru	1
+3;Du	kele_b	kele1258	sbc	Kele	Austronesian	Papunesia	380	bound	her-	p:-heru	1
+3;Du	klon	kelo1247	kyo	Klon	Timor-Alor-Pantar	Papunesia	209	free	ele g-	p:ele ge	3
+3;Du	kombio	komb1272	xbi	Kombio	Nuclear Torricelli	Papunesia	228	free	tuwie	p:tuwieel	1
+3;Du	koromira	koro1313	kqj	Koromira	South Bougainville	Papunesia	233	free		p:bɛɛ-	1
 3;Du	kriol_barunga	krio1252	rop	Kriol	Indo-European	Australia	853	free	dubala		3
 3;Du	kukuyalanji	kuku1273	gvn	Kuku Yalanji	Pama-Nyungan	Australia	97	free	bula	o:bulaŋan; p:bulaŋa	3
-3;Du	kunimaipa	kuni1267	kup	Kunimaipa	Kunimaipan	Papunesia	260	free	parupi	p:parupima	3
-3;Du	kusaghe	kusa1251	ksg	Kusaghe kusa1251	Austronesian	Papunesia	898	free	ria karu	p:dia	3
-3;Du	kuukthaayorre	thay1249	thd	Kuuk Thaayorre	Pama-Nyungan	Australia	694	free	pul	o:pulnan; p:pulnan	3
-3;Du	kwamera	kwam1252	tnk	Kwamera	Austronesian	Papunesia	440	free	iɾau	p:-nɾau	3
-3;Du	kwoma	kwom1262	kmo	Kwoma	Sepik	Papunesia	243	free	piiriita	o:piiriitana; p:piiriiti	3
+3;Du	kunimaipa	kuni1267	kup	Kunimaipa	Kunimaipan	Papunesia	260	free	parupi	p:parupima	1
+3;Du	kusaghe	kusa1251	ksg	Kusaghe kusa1251	Austronesian	Papunesia	898	free	ria karu	p:dia	1
+3;Du	kuukthaayorre	thay1249	thd	Kuuk Thaayorre	Pama-Nyungan	Australia	694	free	pul	o:pulnan; p:pulnan	1
+3;Du	kwamera	kwam1252	tnk	Kwamera	Austronesian	Papunesia	440	free	iɾau	p:-nɾau	1
+3;Du	kwoma	kwom1262	kmo	Kwoma	Sepik	Papunesia	243	free	piiriita	o:piiriitana; p:piiriiti	1
 3;Du	lardil	lard1243	lbz	Lardil	Tangkic	Australia	6	free	birri	o:birrween; p:birrwen	3
-3;Du	lelepa	lele1267	lpa	Lelepa	Austronesian	Papunesia	277	free	ar-	o:naara; p:naara	3
-3;Du	lelepa_b	lele1267	lpa	Lelepa	Austronesian	Papunesia	278	bound	ar-	o:∅; p:naara	3
-3;Du	lepcha	lepc1244	lep	Lepcha	Sino-Tibetan	Eurasia	306	free	hɯnji	o:hɯnjim; p:hɯnjisə	3
-3;Du	letyilejti	ladj1234	llj	Letyi-Lejti	Pama-Nyungan	Australia	690	free	bulang		3
-3;Du	longgu	long1395	lgu	Longgu	Austronesian	Papunesia	177	free	ararua	s:arua; s:girarua; s:girua; a:arua; a:girarua; a:girua; o:girarua; o:girua; p:-darua; p:girarua; p:girua	3
+3;Du	lelepa	lele1267	lpa	Lelepa	Austronesian	Papunesia	277	free	ar-	o:naara; p:naara	1
+3;Du	lelepa_b	lele1267	lpa	Lelepa	Austronesian	Papunesia	278	bound	ar-	o:∅; p:naara	1
+3;Du	lepcha	lepc1244	lep	Lepcha	Sino-Tibetan	Eurasia	306	free	hɯnji	o:hɯnjim; p:hɯnjisə	1
+3;Du	letyilejti	ladj1234	llj	Letyi-Lejti	Pama-Nyungan	Australia	690	free	bulang		1
+3;Du	longgu	long1395	lgu	Longgu	Austronesian	Papunesia	177	free	ararua	s:arua; s:girarua; s:girua; a:arua; a:girarua; a:girua; o:girarua; o:girua; p:-darua	3
 3;Du	loniu	loni1238	los	Loniu	Austronesian	Papunesia	173	free	suʔu		3
 3;Du	lovono	vano1237	vnk	Lovono	Austronesian	Papunesia	178	free	dea		3
-3;Du	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	wonej	o:jej; o:jeju; p:jeju	3
 3;Du	mafea	mafe1237	mkv	Mafea	Austronesian	Papunesia	399	free	rarua	s:raruo; a:raruo; o:raruo; p:raruo	3
-3;Du	mamu	mamu1253		Mamu	Pama-Nyungan	Australia	879	free	balagara	a:balagaragu; a:baŋgugara; a:baŋgugaragu; p:balagaraŋu; p:baŋugara; p:baŋugaraŋu	3
-3;Du	mangarayi	mang1381	mpc	Mangarayi	Mangarrayi-Maran	Australia	442	free	gaɾanwa	o:gaɾaŋan; p:-wuɾa	3
-3;Du	manikion	mani1235	mnx	Manikion	East Bird's Head	Papunesia	220	free	lan	p:mar-	3
-3;Du	maoribaueretal	maor1246	mri	Maori [Bauer et al] maor1246	Austronesian	Papunesia	912	free	raaua	p:taa raaua; p:too raaua	3
-3;Du	maoriharlow	maor1246	mri	Maori [Harlow] maor1246	Austronesian	Papunesia	908	free	ɾaaua		3
+3;Du	mamu	mamu1253		Mamu	Pama-Nyungan	Australia	879	free	balagara	a:balagaragu; a:baŋgugara; a:baŋgugaragu; p:balagaraŋu; p:baŋugara; p:baŋugaraŋu	1
+3;Du	mangarayi	mang1381	mpc	Mangarayi	Mangarrayi-Maran	Australia	442	free	gaɾanwa	o:gaɾaŋan; p:-wuɾa	1
+3;Du	manikion	mani1235	mnx	Manikion	East Bird's Head	Papunesia	220	free	lan	p:mar-	1
+3;Du	maoribaueretal	maor1246	mri	Maori [Bauer et al] maor1246	Austronesian	Papunesia	912	free	raaua	p:taa raaua; p:too raaua	1
+3;Du	maoriharlow	maor1246	mri	Maori [Harlow] maor1246	Austronesian	Papunesia	908	free	ɾaaua		1
 3;Du	mara	mara1385	mec	Mara	Mangarrayi-Maran	Australia	47	free	wuruyi	p:biriwu	3
-3;Du	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	witamata	s:wiʈamata; a:wiʈamata; o:-wiñamata; p:wiñamata	3
-3;Du	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	pularna	p:pularnawu	3
-3;Du	mende	mend1268	sim	Mende	Sepik	Papunesia	242	free	frir	o:fririn; p:frihi	3
-3;Du	morisyen	mori1278	mfe	Morisyen	Indo-European	Africa	339	free	bania	p:zot	3
+3;Du	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	wiʈamata	o:-wiñamata; p:wiñamata	3
+3;Du	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	pularna	p:pularnawu	1
+3;Du	mende	mend1268	sim	Mende	Sepik	Papunesia	242	free	frir	o:fririn; p:frihi	1
+3;Du	morisyen	mori1278	mfe	Morisyen	Indo-European	Africa	339	free	bania	p:zot	1
 3;Du	moskona	mosk1236	mtj	Moskona	East Bird's Head	Papunesia	190	free	ergog	p:ergen	3
-3;Du	motu	motu1246	meu	Motu	Austronesian	Papunesia	845	free	idia raruoti	p:idia edia	3
-3;Du	mpakwithi	angu1242	awg	Mpakwithi	Pama-Nyungan	Australia	670	free	lwan̪a	a:lwepi; p:lwamɽa	3
-3;Du	mpur	mpur1239	akc	Mpur	Mpur	Papunesia	687	free	dor	p:do-	3
-3;Du	mufian	mufi1238	aoj	Mufian	Nuclear Torricelli	Papunesia	227	free	émom biem	p:émom biemi-	3
-3;Du	muinane	muin1242	bmr	Muinane	Boran	South America	485	free	díítɨsi		3
-3;Du	mundari_icrkq	mund1320	unr	Mundari	Austroasiatic	Eurasia	658	free	akiŋ	p:akiŋaʔ	3
-3;Du	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	akiŋ	p:akiŋaʔ	3
-3;Du	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	akiŋ	p:akiŋaʔ	3
-3;Du	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	daɨmaiaɨ	p:daɨmaiaɨ ei	3
-3;Du	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	pula	s:purral; a:purral; o:pulana; p:puraka; p:ṋuraka	3
-3;Du	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	lalu	p:-irarua	3
-3;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=lalua; p:-irarua	3
-3;Du	naasioi	naas1242	nas	Naasioi	South Bougainville	Papunesia	232	free		p:bee-	3
+3;Du	motu	motu1246	meu	Motu	Austronesian	Papunesia	845	free	idia raruoti	p:idia edia	1
+3;Du	mpakwithi	angu1242	awg	Mpakwithi	Pama-Nyungan	Australia	670	free	lwan̪a	a:lwepi; p:lwamɽa	1
+3;Du	mpur	mpur1239	akc	Mpur	Mpur	Papunesia	687	free	dor	p:do-	1
+3;Du	mufian	mufi1238	aoj	Mufian	Nuclear Torricelli	Papunesia	227	free	émom biem	p:émom biemi-	1
+3;Du	muinane	muin1242	bmr	Muinane	Boran	South America	485	free	díítɨsi		1
+3;Du	mundari_icrkq	mund1320	unr	Mundari	Austroasiatic	Eurasia	658	free	akiŋ	p:akiŋaʔ	1
+3;Du	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	akiŋ	p:akiŋaʔ	1
+3;Du	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	akiŋ	p:akiŋaʔ	1
+3;Du	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	daɨmaiaɨ	p:daɨmaiaɨ ei	1
+3;Du	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	pula	o:pulana; p:ṋuraka	3
+3;Du	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	lalu	p:-irarua	1
+3;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=lalua; p:-irarua	1
+3;Du	naasioi	naas1242	nas	Naasioi	South Bougainville	Papunesia	232	free		p:bee-	1
 3;Du	nabak	naba1256	naf	Nabak	Nuclear Trans New Guinea	Papunesia	133	free	eget	p:egegalen	3
-3;Du	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	egirua	p:tegirua	3
-3;Du	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	lapli	p:laplika	3
-3;Du	nbadimaya	badi1246	bia	Badimaya	Pama-Nyungan	Australia	374	free	buliɟa	o:buliɟan̪a; p:buliɟuŋ	3
-3;Du	nekiwai	nort2930	kiw	Kiwai, Northeast	Kiwaian	Papunesia	892	free	niti		3
-3;Du	neveei	vinm1237	vnm	Neve'ei	Austronesian	Papunesia	685	free	ardru		3
+3;Du	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	egirua	p:tegirua	1
+3;Du	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	lapli	p:laplika	1
+3;Du	nbadimaya	badi1246	bia	Badimaya	Pama-Nyungan	Australia	374	free	buliɟa	o:buliɟan̪a; p:buliɟuŋ	1
+3;Du	nekiwai	nort2930	kiw	Kiwai, Northeast	Kiwaian	Papunesia	892	free	niti		1
+3;Du	neveei	vinm1237	vnm	Neve'ei	Austronesian	Papunesia	685	free	ardru		1
 3;Du	ngalakan	ngal1293	nig	Ngalakan	Gunwinyguan	Australia	14	free	burkaʔbiraʔ	a:burkaɳiʔbiraʔyiʔ; p:-bore	3
-3;Du	ngandi	ngan1295	nid	Ngandi	Gunwinyguan	Australia	196	free	bowoṇi	a:bowoṇit̪u; p:-ʔburayi; p:-ʔŋut̪ayi	3
 3;Du	ngankikurungkurr	nang1259	nam	Ngankikurungkurr	Southern Daly	Australia	103	free	wirrike	a:wirrikeniŋki	3
 3;Du	ngiyambaa	wang1291	wyb	Ngiyambaa	Pama-Nyungan	Australia	17	free	=nambulaa	s:=nimbulaa; a:=lubulaa; a:=yubulaa; o:=nimbulaa; p:=lugumbulaa	3
-3;Du	ngunnawal	ngun1277	xul	Ngunnawal	Pama-Nyungan	Australia	859	free	dhanudjula	p:dhanudjulangu	3
-3;Du	nhanda	nhan1238	nha	Nhanda	Pama-Nyungan	Australia	376	free	alat̪ada	a:alat̪adalu; p:alat̪adawu	3
-3;Du	nmarquesan	nort2845	mrq	North Marquesan	Austronesian	Papunesia	410	free	ʔɑuɑ		3
-3;Du	noone	noon1243	nhu	Noone	Atlantic-Congo	Africa	629	free	bɔ˥wvu˩	p:bɔ˩˥; p:wu˩bɔ˩˥	3
-3;Du	northeasternmaidu	nort2952	nmu	Northeastern Maidu	Maiduan	North America	875	free	máyc'om	o:máyc'o; p:máyc'ok'i	3
-3;Du	northernpumi	nort2723	pmi	Northern Pumi	Sino-Tibetan	Eurasia	350	free	ni˥dzɑ̃˩		3
+3;Du	ngunnawal	ngun1277	xul	Ngunnawal	Pama-Nyungan	Australia	859	free	dhanudjula	p:dhanudjulangu	1
+3;Du	nhanda	nhan1238	nha	Nhanda	Pama-Nyungan	Australia	376	free	alat̪ada	a:alat̪adalu; p:alat̪adawu	1
+3;Du	nmarquesan	nort2845	mrq	North Marquesan	Austronesian	Papunesia	410	free	ʔɑuɑ		1
+3;Du	noone	noon1243	nhu	Noone	Atlantic-Congo	Africa	629	free	bɔ˥wvu˩	p:bɔ˩˥; p:wu˩bɔ˩˥	1
+3;Du	northeasternmaidu	nort2952	nmu	Northeastern Maidu	Maiduan	North America	875	free	máyc'om	o:máyc'o; p:máyc'ok'i	1
+3;Du	northernpumi	nort2723	pmi	Northern Pumi	Sino-Tibetan	Eurasia	350	free	ni˥dzɑ̃˩		1
 3;Du	nyawaygi	nyaw1247	nyt	Nyawaygi	Pama-Nyungan	Australia	108	free	bula	a:bulaŋgu; o:bulaña; p:bulaŋu	3
-3;Du	nyulnyul	nyul1247	nyv	Nyulnyul	Nyulnyulan	Australia	57	free	ir	s:kiɲiŋk; a:kiɲiŋk; o:kiɲiŋk; p:jin; p:jir	3
-3;Du	ocaina	ocai1244	oca	Ocaina	Huitotoan	South America	484	free	umáha		3
+3;Du	ocaina	ocai1244	oca	Ocaina	Huitotoan	South America	484	free	umáha		1
 3;Du	oksapmin	oksa1245	opm	Oksapmin	Nuclear Trans New Guinea	Papunesia	202	free	ixit	s:ixtalxe; a:ixtalxe; o:ixtalxe; p:ixte	3
-3;Du	orokolo	orok1267	oro	Orokolo	Eleman	Papunesia	257	free	ari	s:ereari; s:erearila; s:erevari; s:erevarila; a:ereari; a:erearila; a:erevari; a:erevarila; o:erearilara; p:erearilave	3
-3;Du	paakantyi	darl1243	drl	Paakantyi	Pama-Nyungan	Australia	42	free	wad̲ulu	o:giŋga; o:wad̲ūluna; p:giŋga; p:wad̲ūluna	3
+3;Du	orokolo	orok1267	oro	Orokolo	Eleman	Papunesia	257	free	ari	s:ereari; s:erearila; s:erevari; s:erevarila; a:ereari; a:erearila; a:erevari; a:erevarila; o:erearilara; p:erearilave	1
+3;Du	paakantyi	darl1243	drl	Paakantyi	Pama-Nyungan	Australia	42	free	wad̲ulu	o:giŋga; p:giŋga	3
 3;Du	paamese	paam1238	pma	Paamese	Austronesian	Papunesia	20	free	kailue	p:-lalue	3
-3;Du	pittapitta	pitt1247	pit	Pitta Pitta	Pama-Nyungan	Australia	867	free	pulakalu	a:pulaka; o:pulakan̪a; p:pulakaŋa	3
-3;Du	raga	hano1246	lml	Raga	Austronesian	Papunesia	463	free	kera	s:kera γairua; a:kera γairua; o:-ra; p:-ra	3
-3;Du	rapoisi	rapo1238	kyx	Rapoisi	North Bougainville	Papunesia	238	free	siga	p:-ara	3
+3;Du	pittapitta	pitt1247	pit	Pitta Pitta	Pama-Nyungan	Australia	867	free	pulakalu	a:pulaka; o:pulakan̪a; p:pulakaŋa	1
+3;Du	raga	hano1246	lml	Raga	Austronesian	Papunesia	463	free	kera	s:kera γairua; a:kera γairua; o:-ra; p:-ra	1
+3;Du	rapoisi	rapo1238	kyx	Rapoisi	North Bougainville	Papunesia	238	free	siga	p:-ara	1
 3;Du	rembarrnga	remb1249	rmb	Rembarrnga	Gunwinyguan	Australia	16	free	bundapparaʔ	p:-barpparaʔ	3
 3;Du	ritharrngu	rita1239	rit	Ritharrngu	Pama-Nyungan	Australia	39	free	maṇḍa	o:maṇḍaṋa; p:maṇḍaŋu	3
-3;Du	rotokas	roto1249	roo	Rotokas	North Bougainville	Papunesia	239	free	vaiterei	p:oaere; p:oaesi	3
-3;Du	samoan	samo1305	smo	Samoan	Austronesian	Papunesia	21	free	ilaua	s:lāua; s:lāʔua; s:ʔilaʔua; a:lāua; a:lāʔua; a:ʔilaʔua; o:lāua; o:lāʔua; o:ʔilaʔua; p:a lāʔua; p:la lāua; p:lo lāua	3
-3;Du	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	tau	s:te; a:te; o:te; p:tayoḥ	3
-3;Du	savosavo	savo1255	svs	Savosavo	Savosavo	Papunesia	310	free	tona	o:to; p:toβa	3
-3;Du	sepikiwam	sepi1255	iws	Sepik Iwam	Sepik	Papunesia	241	free	soa	o:soir; p:soir	3
-3;Du	sibe	sibe1248	nco	Sibe	South Bougainville	Papunesia	236	free		p:wee-	3
-3;Du	skiwai	sout2949	kjd	Kiwai, Southern	Kiwaian	Papunesia	264	free	neito		3
-3;Du	skou	nucl1634	skv	Skou	Sko	Papunesia	223	free	tenake	p:tè	3
-3;Du	southefate_b	sout2856	erk	South Efate	Austronesian	Papunesia	397	bound	ra=	o:-r; p:-r	3
-3;Du	standardarabic	stan1318	arb	Standard Arabic stan1318	Afro-Asiatic	Eurasia	901	free	hum	s:huma:; a:huma:; o:-huma:; p:-huma:	3
-3;Du	sunwar_saipu	sunw1242	suz	Sunwar	Sino-Tibetan	Eurasia	303	free	mekoniʃi	a:mekoniʃimiː; o:ãskali; p:ãske	3
-3;Du	surumwerani	apma1240	app	Abma	Austronesian	Papunesia	464	free	ra	o:nuuru; p:-ru	3
-3;Du	takale	west2420	kjl	Kham (Western Parbate)	Sino-Tibetan	Eurasia	411	free	no:ni	p:ni-	3
-3;Du	takia_b	taki1248	tbc	Takia	Austronesian	Papunesia	388	bound	di-	o:-ai; p:-di	3
+3;Du	rotokas	roto1249	roo	Rotokas	North Bougainville	Papunesia	239	free	vaiterei	p:oaere; p:oaesi	1
+3;Du	samoan	samo1305	smo	Samoan	Austronesian	Papunesia	21	free	lāʔua	s:ʔilaʔua; a:ʔilaʔua; o:ʔilaʔua; p:a lāʔua	3
+3;Du	savosavo	savo1255	svs	Savosavo	Savosavo	Papunesia	310	free	tona	o:to; p:toβa	1
+3;Du	sepikiwam	sepi1255	iws	Sepik Iwam	Sepik	Papunesia	241	free	soa	o:soir; p:soir	1
+3;Du	sibe	sibe1248	nco	Sibe	South Bougainville	Papunesia	236	free		p:wee-	1
+3;Du	skiwai	sout2949	kjd	Kiwai, Southern	Kiwaian	Papunesia	264	free	neito		1
+3;Du	skou	nucl1634	skv	Skou	Sko	Papunesia	223	free	tenake	p:tè	1
+3;Du	southefate_b	sout2856	erk	South Efate	Austronesian	Papunesia	397	bound	ra=	o:-r; p:-r	1
+3;Du	standardarabic	stan1318	arb	Standard Arabic stan1318	Afro-Asiatic	Eurasia	901	free	hum	s:huma:; a:huma:; o:-huma:; p:-huma:	1
+3;Du	sunwar_saipu	sunw1242	suz	Sunwar	Sino-Tibetan	Eurasia	303	free	mekoniʃi	a:mekoniʃimiː; o:ãskali; p:ãske	1
+3;Du	surumwerani	apma1240	app	Abma	Austronesian	Papunesia	464	free	ra	o:nuuru; p:-ru	1
+3;Du	takale	west2420	kjl	Kham (Western Parbate)	Sino-Tibetan	Eurasia	411	free	no:ni	p:ni-	1
+3;Du	takia_b	taki1248	tbc	Takia	Austronesian	Papunesia	388	bound	di-	o:-ai; p:-di	1
 3;Du	tanema	tane1237	tnx	Tanema	Austronesian	Papunesia	179	free	delalu		3
 3;Du	teanu	tean1237	tkw	Teanu	Austronesian	Papunesia	180	free	da		3
-3;Du	teanu_tryon	tean1237	tkw	Teanu	Austronesian	Papunesia	861	free	da	p:ada; p:iada	3
-3;Du	teiwa	teiw1235	twe	Teiwa	Timor-Alor-Pantar	Papunesia	210	free	a	s:i; s:i'in; s:iman; s:in; s:iraxau; a:i; a:i'in; a:iman; a:in; a:iraxau; o:g(i)-; o:ga-; o:gi'in; o:iman; o:in; p:a-; p:g(i)-; p:ga-; p:iman	3
-3;Du	toaripi	toar1246	tqo	Toaripi	Eleman	Papunesia	256	free	ereuka	o:ereukaro; p:ereukave	3
+3;Du	teanu_tryon	tean1237	tkw	Teanu	Austronesian	Papunesia	861	free	da	p:ada; p:iada	1
+3;Du	toaripi	toar1246	tqo	Toaripi	Eleman	Papunesia	256	free	ereuka	o:ereukaro; p:ereukave	1
 3;Du	tokpisin	tokp1240	tpi	Tok Pisin	Indo-European	Papunesia	115	free	tupela	p:biloŋ tupela	3
 3;Du	toqabaqita	toab1237	mlu	Toqabaqita	Austronesian	Papunesia	25	free	keeroqa	p:-daroqa	3
 3;Du	torresstrait	torr1261	tcs	Torres Strait Creole	Indo-European	Australia	130	free	demtu		3
-3;Du	tshangla	tsha1245	tsj	Tshangla	Sino-Tibetan	Eurasia	305	free	roktsʰiŋ	a:roktsʰiki; p:ɾoktsʰika	3
-3;Du	tuvaluan	tuva1244	tvl	Tuvaluan	Austronesian	Papunesia	309	free	laaua	p:-laa	3
+3;Du	tshangla	tsha1245	tsj	Tshangla	Sino-Tibetan	Eurasia	305	free	roktsʰiŋ	a:roktsʰiki; p:ɾoktsʰika	1
+3;Du	tuvaluan	tuva1244	tvl	Tuvaluan	Austronesian	Papunesia	309	free	laaua	p:-laa	1
 3;Du	tyeraity	tyar1236	woa	Tyeraity	Northern Daly	Australia	46	free	wuruntunkunuŋ	o:-wörökunuŋ	3
-3;Du	urama	uram1241		Kiwai, Northeast	Kiwaian	Papunesia	263	free	niti		3
-3;Du	urim	urim1252	uri	Urim	Nuclear Torricelli	Papunesia	231	free	tuwekŋ		3
-3;Du	usorbian	uppe1395	hsb	Upper Sorbian	Indo-European	Eurasia	74	free	wonaj	s:wonej; a:wonej; o:jej; o:jeju	3
-3;Du	vaeakautaumako	pile1238	piv	Vaeakau-Taumako	Austronesian	Papunesia	443	free	lhaua	p:laua	3
-3;Du	vanimo	vani1248	vam	Vanimo	Sko	Papunesia	225	free	déhé	p:dè	3
-3;Du	wahgi	nucl1620	wgi	Wahgi	Nuclear Trans New Guinea	Papunesia	111	free	elip elip	p:-njiɫ	3
-3;Du	wambaya	wamb1258	wmb	Wambaya	Mirndi	Australia	106	free	wu ḷuwani	s:wurluwani; a:wurluwani; o:wu ḷa; o:wurla; p:wu ḷuganji; p:wurluganji	3
+3;Du	urama	uram1241		Kiwai, Northeast	Kiwaian	Papunesia	263	free	niti		1
+3;Du	urim	urim1252	uri	Urim	Nuclear Torricelli	Papunesia	231	free	tuwekŋ		1
+3;Du	vaeakautaumako	pile1238	piv	Vaeakau-Taumako	Austronesian	Papunesia	443	free	lhaua	p:laua	1
+3;Du	vanimo	vani1248	vam	Vanimo	Sko	Papunesia	225	free	déhé	p:dè	1
+3;Du	wahgi	nucl1620	wgi	Wahgi	Nuclear Trans New Guinea	Papunesia	111	free	elip elip		3
+3;Du	wambaya	wamb1258	wmb	Wambaya	Mirndi	Australia	106	free	wu ḷuwani	o:wu ḷa; p:wu ḷuganji	3
 3;Du	wandarang	wand1263	wnd	Wandarang	Mangarrayi-Maran	Australia	43	free	yirayi	p:argi	3
-3;Du	wangkajunga	mart1256	mpj	Wangkajunga	Pama-Nyungan	Australia	55	free	palunya	s:paluɲa; a:palunyalu; a:paluɲalu; o:paluɲa; p:palunyakurnu; p:paluɲakurnulu	3
-3;Du	wargamay	warr1255	wgy	Wargamay	Pama-Nyungan	Australia	63	free	bula	a:bulaŋgu; o:bulaña; o:bulaɲa; p:bulaŋu	3
-3;Du	warrnambool	gund1249	wkr	Warrnambool	Pama-Nyungan	Australia	189	free	tilakal	a:tilakala; p:-tjin	3
-3;Du	warungu	waru1264	wrg	Warungu	Pama-Nyungan	Australia	353	free	bola	o:bolaɲa; p:bolaŋo	3
+3;Du	wargamay	warr1255	wgy	Wargamay	Pama-Nyungan	Australia	63	free	bula	a:bulaŋgu; o:bulaña; p:bulaŋu	3
+3;Du	warrnambool	gund1249	wkr	Warrnambool	Pama-Nyungan	Australia	189	free	tilakal	a:tilakala	3
+3;Du	warungu	waru1264	wrg	Warungu	Pama-Nyungan	Australia	353	free	bola	o:bolaɲa; p:bolaŋo	1
 3;Du	watjarri	waja1257	wbv	Watjarri	Pama-Nyungan	Australia	64	free	pula	o:pulaña; p:pulaŋu	3
 3;Du	wilawila	wila1240	wil	Wilawila	Worrorran	Australia	49	free	bindari		3
-3;Du	windesi	wind1244		Windesi	Austronesian	Papunesia	849	free	sanu	p:senne	3
+3;Du	windesi	wind1244		Windesi	Austronesian	Papunesia	849	free	sanu	p:senne	1
 3;Du	wunambal	wuna1249	wub	Wunambal	Worrorran	Australia	107	free	biranimiya	p:biraniniŋgemiya	3
 3;Du	yagaria	yaga1260	ygr	Yagaria	Nuclear Trans New Guinea	Papunesia	138	free	tagaea		3
-3;Du	yagua	yagu1244	yad	Yagua	Peba-Yagua	South America	476	free	naanᵈa		3
+3;Du	yagua	yagu1244	yad	Yagua	Peba-Yagua	South America	476	free	naanᵈa		1
 3;Du	yalarnnga	yala1262	ylr	Yalarnnga	Pama-Nyungan	Australia	58	free	pula	a:pulalu; p:pulaluŋu	3
-3;Du	yanomama	yano1262	wca	Yanomama	Yanomamic	South America	430	free	kama kə kɨbɨ	a:kama kə kɨbɨnɨ	3
+3;Du	yanomama	yano1262	wca	Yanomama	Yanomamic	South America	430	free	kama kə kɨbɨ	a:kama kə kɨbɨnɨ	1
 3;Du	yawijibaya	yawi1239	jbw	Yawijibaya	Worrorran	Australia	51	free		p:yanaŋgedi	3
-3;Du	yessanmayo	yess1239	yss	Yessan-Mayo	Sepik	Papunesia	248	free	rip	p:ripri	3
-3;Du	yimas	yima1243	yee	Yimas	Lower Sepik	Papunesia	367	free	impan	p:mpi-	3
+3;Du	yessanmayo	yess1239	yss	Yessan-Mayo	Sepik	Papunesia	248	free	rip	p:ripri	1
+3;Du	yimas	yima1243	yee	Yimas	Lower Sepik	Papunesia	367	free	impan	p:mpi-	1
 3;Du	yindjibarndi	yind1247	yij	Yindjibarndi	Pama-Nyungan	Australia	52	free	walākuyha		3
-3;Du	yiryoront	yiry1245	yiy	Yir-Yoront	Pama-Nyungan	Australia	693	free	pula	o:puluwən; p:puluwən	3
+3;Du	yiryoront	yiry1245	yiy	Yir-Yoront	Pama-Nyungan	Australia	693	free	pula	o:puluwən; p:puluwən	1
 3;Du	yortayorta	yort1237	xyy	Yorta Yorta	Pama-Nyungan	Australia	121	free	damulu	a:damuluk; o:damnanan; p:damaliña	3
-3;Du	yukulta	gang1267	gcd	Yukulta	Tangkic	Australia	424	free	pira	o:pirwanci; p:pirwanta	3
+3;Du	yukulta	gang1267	gcd	Yukulta	Tangkic	Australia	424	free	pira	o:pirwanci; p:pirwanta	1
 3;Du	yulparija	mart1256	mpj	Yulparija	Pama-Nyungan	Australia	192	free	ŋākujarra	a:ŋākujarralu; p:ŋākujarrakuraŋu	3
 3;Du	yuwaalaraay	gami1243	kld	Yuwaalaraay	Pama-Nyungan	Australia	44	free	gālana	p:gāliŋu	3
-3;Du;F	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free	iroiira	s:roiira; a:roiira; o:-ra; p:-dia	1
-3;Du;F	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	barayábbanja	s:birrikébba; a:birrikébba; o:birrikébba; p:-baddana; p:-baddayúnja	1
-3;Du;F	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	ónadva	s:ónidve; a:ónidve; o:njîju; p:njūn; p:njẹ́n	1
-3;Du;F	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	epɨya	s:oya; a:oya; o:oya; p:winkɨ	1
-3;Du;F	ungarinyin	ngar1284	ung	Ungarinyin	Worrorran	Australia	35	free	bundañiri	p:anaŋgari; p:manaŋgari; p:ñanaŋgari	1
-3;Du;F	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	awandu	p:mānaŋgāṇduma; p:ñaŋganaŋgāṇdiña; p:ānaŋgāṇdu	1
+3;Du;F	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	barayábbanja	p:-baddayúnja	1
+3;Du;F	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	ónidve	o:njîju; p:njūn	1
+3;Du;F	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	epɨya	p:winkɨ	1
+3;Du;F	ungarinyin	ngar1284	ung	Ungarinyin	Worrorran	Australia	35	free	bundañiri	p:ñanaŋgari	1
+3;Du;F	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	awandu	p:ñaŋganaŋgāṇdiña	1
 3;Du;F+M	duna	duna1248	duc	Duna	Duna	Papunesia	191	free	kheno		2
-3;Du;F+M	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	wi	o:wia; p:w-; p:wiar; p:wiena	2
-3;Du;F+N	ambai	amba1265	amk	Ambai	Austronesian	Papunesia	882	free	ur-	s:∅; a:∅; o:suru; o:uru; o:∅; p:u- -mi; p:∅	2
-3;Du;M	ambai	amba1265	amk	Ambai	Austronesian	Papunesia	882	free	ur-	s:∅; a:∅; o:suru; o:uru; o:∅; p:u- -mi	1
-3;Du;M	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free	iromaraira	s:romaraira; s:romarea; a:romaraira; a:romarea; o:-ra; p:-dia	1
-3;Du;M+N	inanwatan	suab1238	szp	Inanwatan	South Bird's Head	Papunesia	66	free	ítiga	o:-wá; p:tigáe	2
+3;Du;F+M	teiwa	teiw1235	twe	Teiwa	Timor-Alor-Pantar	Papunesia	210	free	a	s:i; s:i'in; s:iman; s:iraxau; a:i; a:i'in; a:iman; a:iraxau; o:g(i)-; o:ga-; o:gi'in; o:iman; p:a-; p:g(i)-; p:ga-; p:iman	2
+3;Du;F+N	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	wonej	o:jej	2
+3;Du;F+N	ngandi	ngan1295	nid	Ngandi	Gunwinyguan	Australia	196	free	bowoṇi	a:bowoṇit̪u; p:-ʔŋut̪ayi	2
+3;Du;F+N	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	te	p:tayoḥ	2
+3;Du;F+N	usorbian	uppe1395	hsb	Upper Sorbian	Indo-European	Eurasia	74	free	wonej	o:jej	2
+3;Du;M	ambai	amba1265	amk	Ambai	Austronesian	Papunesia	882	free	∅		1
+3;Du;M	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	wonej	o:jeju	1
+3;Du;M	ngandi	ngan1295	nid	Ngandi	Gunwinyguan	Australia	196	free	bowoṇi	a:bowoṇit̪u; p:-ʔburayi	1
+3;Du;M	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	tau	p:tayoḥ	1
+3;Du;M	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	ónadva	o:njîju; p:njẹ́n	1
+3;Du;M	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	oya	p:winkɨ	1
+3;Du;M	ungarinyin	ngar1284	ung	Ungarinyin	Worrorran	Australia	35	free	bundañiri	p:anaŋgari	1
+3;Du;M	usorbian	uppe1395	hsb	Upper Sorbian	Indo-European	Eurasia	74	free	wonaj	o:jeju	1
+3;Du;M	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	awandu	p:ānaŋgāṇdu	1
 3;Du;M+N	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	birrikébba	p:-baddana	2
-3;Du;M+N	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	ónadva	s:ónidve; a:ónidve; o:njîju; p:njẹ́n	2
-3;Du;M+N	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	oya	p:winkɨ	2
-3;Du;M+N	ungarinyin	ngar1284	ung	Ungarinyin	Worrorran	Australia	35	free	bundañiri	p:anaŋgari; p:manaŋgari	2
-3;Du;M+N	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	awandu	p:mānaŋgāṇduma; p:ānaŋgāṇdu	2
-3;Du;N	duna	duna1248	duc	Duna	Duna	Papunesia	191	free	kheno	s:∅; a:∅; o:∅; p:∅	1
-3;Du;N	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	wi	s:∅; a:∅; o:wia; o:∅; p:w-; p:wiar; p:wiena; p:∅	1
-3;Gpl	acatepecmephaa	acat1240		Acatepec Mephaa	Otomanguean	North America	858	free	ikᶖ̀	p:kwɛ́ntᶙ̀	3
-3;Gpl	achangxiandao	xian1249	xia	Achang-Xiandao	Sino-Tibetan	Eurasia	800	free	njam³mɔ⁵	o:njam³mɔ⁵li³1; p:njam³mɔ⁵ da³	3
-3;Gpl	aimol	aimo1244	aim	Aimol	Sino-Tibetan	Eurasia	806	free	ənmani	p:əŋ-	3
-3;Gpl	ajie	ajie1238	aji	Ajie	Austronesian	Papunesia	809	free	ce-re	o:-re; p:-re	3
-3;Gpl	alamblak	alam1246	amp	Alamblak	Sepik	Papunesia	246	free	rëm	p:rëmho	3
-3;Gpl	alawa	alaw1244	alh	Alawa	Mangarrayi-Maran	Australia	869	free	yilula	p:yiluŋaña	3
-3;Gpl	alyawarre	alya1239	aly	Alyawarre	Pama-Nyungan	Australia	810	free	aytniyngkirra	o:aytninhiyngkirra; p:aytnikiyngkirra	3
-3;Gpl	ambai	amba1265	amk	Ambai	Austronesian	Papunesia	882	free	er-	s:∅; a:∅; o:ea; o:sa; o:∅; p:e- -mi; p:∅	3
+3;Du;N	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	ónidve	o:njîju; p:njẹ́n	1
+3;Du;N	teiwa	teiw1235	twe	Teiwa	Timor-Alor-Pantar	Papunesia	210	free	a	s:i; s:i'in; s:iman; s:in; s:iraxau; a:i; a:i'in; a:iman; a:in; a:iraxau; o:g(i)-; o:ga-; o:gi'in; o:iman; o:in; p:a-; p:g(i)-; p:ga-; p:iman	1
+3;Du;N	ungarinyin	ngar1284	ung	Ungarinyin	Worrorran	Australia	35	free	bundañiri	p:manaŋgari	1
+3;Du;N	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	awandu	p:mānaŋgāṇduma	1
+3;Gpl	acatepecmephaa	acat1240		Acatepec Mephaa	Otomanguean	North America	858	free	ikᶖ̀	p:kwɛ́ntᶙ̀	1
+3;Gpl	achangxiandao	xian1249	xia	Achang-Xiandao	Sino-Tibetan	Eurasia	800	free	njam³mɔ⁵	o:njam³mɔ⁵li³1; p:njam³mɔ⁵ da³	1
+3;Gpl	aimol	aimo1244	aim	Aimol	Sino-Tibetan	Eurasia	806	free	ənmani	p:əŋ-	1
+3;Gpl	ajie	ajie1238	aji	Ajie	Austronesian	Papunesia	809	free	ce-re	o:-re; p:-re	1
+3;Gpl	alamblak	alam1246	amp	Alamblak	Sepik	Papunesia	246	free	rëm	p:rëmho	1
+3;Gpl	alawa	alaw1244	alh	Alawa	Mangarrayi-Maran	Australia	869	free	yilula	p:yiluŋaña	1
+3;Gpl	alyawarre	alya1239	aly	Alyawarre	Pama-Nyungan	Australia	810	free	aytniyngkirra	o:aytninhiyngkirra; p:aytnikiyngkirra	1
 3;Gpl	aneityum	anei1239	aty	Aneityum	Austronesian	Papunesia	206	free	aara	o:ra; p:-ra	3
-3;Gpl	anii	anii1246	hnh	Anii	Khoe-Kwadi	Africa	860	free	-ǁà	p:-ǁù	3
-3;Gpl	anindilyakwa	anin1240	aoi	Anindilyakwa	Gunwinyguan	Australia	349	free	abəruwa	p:abərul̪aŋwa	3
-3;Gpl	anong	nung1282	nun	Anong	Sino-Tibetan	Eurasia	332	free	ŋ˧˩ɳɯŋ˥		3
-3;Gpl	antakarinya	anta1253	ant	Antakarinya	Pama-Nyungan	Australia	811	free	dana	p:dananba	3
-3;Gpl	aonaga_mongsen	aona1235	njo	Ao Naga	Sino-Tibetan	Eurasia	318	free	túŋkhəla	s:túŋla; s:túŋəla; a:túŋla; a:túŋəla; o:túŋla; o:túŋəla; p:páɹ	3
+3;Gpl	anii	anii1246	hnh	Anii	Khoe-Kwadi	Africa	860	free	-ǁà	p:-ǁù	1
+3;Gpl	anindilyakwa	anin1240	aoi	Anindilyakwa	Gunwinyguan	Australia	349	free	abəruwa	p:abərul̪aŋwa	1
+3;Gpl	anong	nung1282	nun	Anong	Sino-Tibetan	Eurasia	332	free	ŋ˧˩ɳɯŋ˥		1
+3;Gpl	antakarinya	anta1253	ant	Antakarinya	Pama-Nyungan	Australia	811	free	dana	p:dananba	1
+3;Gpl	aonaga_mongsen	aona1235	njo	Ao Naga	Sino-Tibetan	Eurasia	318	free	túŋkhəla	s:túŋla; s:túŋəla; a:túŋla; a:túŋəla; o:túŋla; o:túŋəla; p:páɹ	1
 3;Gpl	arabana	arab1267	ard	Arabana	Pama-Nyungan	Australia	122	free	kari	o:kariṋa; p:karikuṋa	3
-3;Gpl	aroplokep	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	389	free	di	p:-di	3
-3;Gpl	asuri	asur1254	asr	Asuri	Austroasiatic	Eurasia	813	free	hikū	s:hukū; a:hukū; o:hukū; p:hikūrā; p:hikūrēnī; p:hikūǎ; p:hukūrā; p:hukūrēnī; p:hukūǎ	3
-3;Gpl	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free	hɨr	p:-ɨr	3
-3;Gpl	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	non	o:komgay; p:komgamgoy	3
-3;Gpl	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	rom	o:romo; p:romke	3
-3;Gpl	ayiwo	ayiw1239	nfl	Ayiwo	Austronesian	Papunesia	814	free	li-	s:lu-; a:-i; o:-i; o:ijii; p:-i	3
+3;Gpl	aroplokep	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	389	free	di	p:-di	1
+3;Gpl	asuri	asur1254	asr	Asuri	Austroasiatic	Eurasia	813	free	hikū	s:hukū; a:hukū; o:hukū; p:hikūrā; p:hikūrēnī; p:hikūǎ; p:hukūrā; p:hukūrēnī; p:hukūǎ	1
+3;Gpl	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free	hɨr	p:-ɨr	1
+3;Gpl	awiakay	zyud1238		Awiakay	Uralic	Eurasia	273	free	non	o:komgay; p:komgamgoy	1
+3;Gpl	awtuw	awtu1239	kmn	Awtuw	Sepik	Papunesia	244	free	rom	o:romo; p:romke	1
+3;Gpl	ayiwo	ayiw1239	nfl	Ayiwo	Austronesian	Papunesia	814	free	li-	s:lu-; a:-i; o:-i; o:ijii; p:-i	1
 3;Gpl	bayali	baya1257	bjy	Bayali	Pama-Nyungan	Australia	131	free	dhaṋa	o:dhaṋaguna; p:dhaṋaganuṋ	3
-3;Gpl	biak	biak1248	bhw	Biak	Austronesian	Papunesia	172	free	na	s:si; a:si; o:si; p:nbe=; p:se=	3
-3;Gpl	biangai	bian1252	big	Biangai	Kunimaipan	Papunesia	259	free	puwili	p:puwiligi	3
-3;Gpl	bilinarapilinara	ngar1235	nbj	Ngarinman	Pama-Nyungan	Australia	347	free	ɲarulu	p:ɲaruluɲ	3
+3;Gpl	biangai	bian1252	big	Biangai	Kunimaipan	Papunesia	259	free	puwili	p:puwiligi	1
+3;Gpl	bilinarapilinara	ngar1235	nbj	Ngarinman	Pama-Nyungan	Australia	347	free	ɲarulu	p:ɲaruluɲ	1
 3;Gpl	bininjgunwok	gunw1252	gup	Bininj Kunwok	Gunwinyguan	Australia	13	free	bedda	p:bedbere	3
 3;Gpl	bislama	bisl1239	bis	Bislama	Indo-European	Papunesia	114	free	olgeta	p:bloŋ olgeta	3
-3;Gpl	bonan	bona1250	peh	Bonan	Mongolic-Khitan	Eurasia	817	free	atɕaŋla	o:atɕaŋlanə; p:atɕaŋlanə	3
-3;Gpl	bora	bora1263	boa	Bora	Boran	South America	478	free	tìː-tʲʰɛ̀	p:i	3
+3;Gpl	bonan	bona1250	peh	Bonan	Mongolic-Khitan	Eurasia	817	free	atɕaŋla	o:atɕaŋlanə; p:atɕaŋlanə	1
+3;Gpl	bora	bora1263	boa	Bora	Boran	South America	478	free	tìː-tʲʰɛ̀	p:i	1
 3;Gpl	bouma	fiji1243	fij	Boumaa Fijian	Austronesian	Papunesia	27	free	era	o:ira; p:odra	3
-3;Gpl	bukawa	buga1250	buk	Bukawa	Austronesian	Papunesia	686	free	ŋaʔ	p:ŋaʔ si	3
-3;Gpl	bukiyip	buki1249	ape	Bukiyip	Nuclear Torricelli	Papunesia	226	free	mami	s:omom; a:omom; o:omom; p:omomi-	3
+3;Gpl	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free	imaraira	s:imarea; s:maraira; s:marea; s:maria; s:timara; s:timarea; a:imarea; a:maraira; a:marea; a:maria; a:timara; a:timarea; o:-ra; p:-dia	1
+3;Gpl	bukawa	buga1250	buk	Bukawa	Austronesian	Papunesia	686	free	ŋaʔ	p:ŋaʔ si	1
+3;Gpl	bukiyip	buki1249	ape	Bukiyip	Nuclear Torricelli	Papunesia	226	free	mami	s:omom; a:omom; o:omom; p:omomi-	1
 3;Gpl	bunaq	buna1278	bfn	Bunaq	Timor-Alor-Pantar	Papunesia	135	free	halaqi	p:gie	3
-3;Gpl	bunganditj	bung1264	xbg	Bunganditj	Pama-Nyungan	Australia	188	free	ñuŋpa	s:ñuŋpaga; s:ñuŋpala; a:ñuŋpaa; o:∅; p:ñuŋpala-at; p:ñuŋpalaat	3
 3;Gpl	bunuba	buna1275	bck	Bunuba	Bunaban	Australia	117	free	biyiri	a:biyiriiŋga; p:biyiraŋi	3
-3;Gpl	burarra_icrlb	bura1267	bvr	Burarra	Maningrida	Australia	692	free	birripa	p:gun=birripa	3
-3;Gpl	burarra_icrne	bura1267	bvr	Burarra	Maningrida	Australia	664	free	biripa	p:gunbiripa	3
-3;Gpl	burarra_icrrh	bura1267	bvr	Burarra	Maningrida	Australia	667	free	birripa	p:gunbirripa	3
-3;Gpl	buru	buru1303	mhs	Buru	Austronesian	Papunesia	821	free	sira	p:nini	3
-3;Gpl	centralnicobarese	cent1990	ncb	Central Nicobarese	Austroasiatic	Eurasia	822	free	ufë		3
-3;Gpl	chimila	chim1309	cbg	Chimila	Chibchan	South America	523	free	noggweʔra	s:náːnu-ra; s:nóuve; a:náːnu-ra; a:nóuve; o:náːnu-ra; o:nóuve; p:niʰne-	3
-3;Gpl	dagaare	sout2789	dga	Dagaare	Atlantic-Congo	Africa	614	free	bana	o:a; o:ba; p:a=; p:ba=	3
+3;Gpl	burarra_icrlb	bura1267	bvr	Burarra	Maningrida	Australia	692	free	birripa	p:gun=birripa	1
+3;Gpl	burarra_icrne	bura1267	bvr	Burarra	Maningrida	Australia	664	free	biripa	p:gunbiripa	1
+3;Gpl	burarra_icrrh	bura1267	bvr	Burarra	Maningrida	Australia	667	free	birripa	p:gunbirripa	1
+3;Gpl	buru	buru1303	mhs	Buru	Austronesian	Papunesia	821	free	sira	p:nini	1
+3;Gpl	centralnicobarese	cent1990	ncb	Central Nicobarese	Austroasiatic	Eurasia	822	free	ufë		1
+3;Gpl	chimila	chim1309	cbg	Chimila	Chibchan	South America	523	free	noggweʔra	s:náːnu-ra; s:nóuve; a:náːnu-ra; a:nóuve; o:náːnu-ra; o:nóuve; p:niʰne-	1
+3;Gpl	dagaare	sout2789	dga	Dagaare	Atlantic-Congo	Africa	614	free	bana	o:a; o:ba; p:a=; p:ba=	1
 3;Gpl	dalabon	ngal1292	ngk	Dalabon	Gunwinyguan	Australia	7	free	bulu	a:buluyiʔ; p:-bulŋ	3
-3;Gpl	dehu	dehu1237	dhv	Dehu	Austronesian	Papunesia	174	free	aŋat	s:ñuden; a:ñuden; p:i aŋat	3
-3;Gpl	diyari	dier1241	dif	Diyari	Pama-Nyungan	Australia	378	free	t̪ana	a:t̪anali; o:t̪anan̪a; p:t̪anaɲi	3
+3;Gpl	dehu	dehu1237	dhv	Dehu	Austronesian	Papunesia	174	free	aŋat	p:i aŋat	3
+3;Gpl	diyari	dier1241	dif	Diyari	Pama-Nyungan	Australia	378	free	t̪ana	a:t̪anali; o:t̪anan̪a; p:t̪anaɲi	1
 3;Gpl	djapu	dhuw1249	duj	Djapu	Pama-Nyungan	Australia	18	free	walal	o:walalaṋa; p:walalaŋgu	3
-3;Gpl	djinang	djin1253	dji	Djinang	Pama-Nyungan	Australia	104	free	jani	o:janiñi; p:janŋaŋi	3
-3;Gpl	dyirbal	dyir1250	dbl	Dyirbal	Pama-Nyungan	Australia	828	free	balamaŋgan	a:balamaŋgandu; p:balamaŋganu	3
-3;Gpl	eastyugur	east2337	yuy	East Yugur	Mongolic-Khitan	Eurasia	829	free	teres	p:-ini; p:-ni	3
+3;Gpl	djinang	djin1253	dji	Djinang	Pama-Nyungan	Australia	104	free	jani	o:janiñi	3
+3;Gpl	dyirbal	dyir1250	dbl	Dyirbal	Pama-Nyungan	Australia	828	free	balamaŋgan	a:balamaŋgandu; p:balamaŋganu	1
+3;Gpl	eastyugur	east2337	yuy	East Yugur	Mongolic-Khitan	Eurasia	829	free	teres	p:-ini; p:-ni	1
 3;Gpl	eipo	eipo1242	eip	Eipo	Nuclear Trans New Guinea	Papunesia	144	free	sik		3
 3;Gpl	fasu	fasu1242	faa	Fasu	Fasu	Papunesia	211	free	i	a:ipu; p:ipu	3
-3;Gpl	futunaaniwa	futu1245	fut	Futuna-Aniwa	Austronesian	Papunesia	830	free	akirea	s:∅; a:∅; o:∅; p:-rea; p:∅	3
-3;Gpl	fuyug	fuyu1242	fuy	Fuyug	Fuyug	Papunesia	258	free	mu	p:mul	3
-3;Gpl	gaagudju	gaga1251	gbu	Gaagudju	Gaagudju	Australia	198	free	nowōmba		3
+3;Gpl	fuyug	fuyu1242	fuy	Fuyug	Fuyug	Papunesia	258	free	mu	p:mul	1
 3;Gpl	gambera	gamb1251	gma	Gambera	Worrorran	Australia	50	free	birani	p:biraninaŋga	3
-3;Gpl	gamilaraay	gami1243	kld	Gamilaraay	Pama-Nyungan	Australia	673	free	ganunga	a:ganugu; p:ganungundi	3
-3;Gpl	gapapaiwa_b	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	394	bound	-i	o:-si; p:-si	3
+3;Gpl	gamilaraay	gami1243	kld	Gamilaraay	Pama-Nyungan	Australia	673	free	ganunga	a:ganugu; p:ganungundi	1
+3;Gpl	gapapaiwa_b	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	394	bound	-i	o:-si; p:-si	1
 3;Gpl	garlali	kala1380	gll	Garlali	Pama-Nyungan	Australia	41	free	ḓanaŋu	a:ḓana; o:ḓanaṋa; p:ḓana	3
 3;Gpl	garrwa	gara1269	wrk	Garrwa	Garrwan	Australia	197	free	yalu		3
-3;Gpl	giramay	girr1240		Giramay	Pama-Nyungan	Australia	831	free	ᶁana	a:ᶁanaŋgu; p:ᶁanaŋu	3
+3;Gpl	giramay	girr1240		Giramay	Pama-Nyungan	Australia	831	free	ᶁana	a:ᶁanaŋgu; p:ᶁanaŋu	1
 3;Gpl	gooniyandi	goon1238	gni	Gooniyandi	Bunaban	Australia	99	free	bidi	p:biddaŋi	3
-3;Gpl	guahibo	guah1255	guh	Guahibo	Guahiboan	South America	521	free	poxanɯ	p:papiha	3
+3;Gpl	guahibo	guah1255	guh	Guahibo	Guahiboan	South America	521	free	poxanɯ	p:papiha	1
 3;Gpl	gurindji	guri1247	gue	Gurindji	Pama-Nyungan	Australia	193	free	ñarulu	p:ñaruluñ	3
-3;Gpl	guuguyimidhirrcoastal	gugu1255	kky	Guugu Yimidhirr coastal gugu1255	Pama-Nyungan	Australia	900	free	dhana	o:dhanaan; o:dhanangan; p:dhanaan; p:dhanangan	3
-3;Gpl	guuguyimidhirrinland	gugu1255	kky	Guugu Yimidhirr inland gugu1255	Pama-Nyungan	Australia	911	free	dhana	o:dhanaan; o:dhanangan; p:dhanaan; p:dhanangan	3
-3;Gpl	hawaiian	hawa1245	haw	Hawaiian	Austronesian	Papunesia	833	free	lākou	p:kālākou; p:kōlākou	3
-3;Gpl	hewa	hewa1241	ham	Hewa	Sepik	Papunesia	247	free	'lafu		3
-3;Gpl	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	ye	o:in; p:inka	3
-3;Gpl	hoava	hoav1238	hoa	Hoava	Austronesian	Papunesia	834	free	ria	p:dia	3
-3;Gpl	isaka	kris1246	ksi	I'saka	Sko	Papunesia	222	free	epu	o:ie; o:wi; p:omokai	3
-3;Gpl	jaminjung	djam1255	djd	Jaminjung	Mirndi	Australia	377	free	buri	p:buraɟgina	3
-3;Gpl	jaru	jaru1254	ddj	Jaru	Pama-Nyungan	Australia	45	free	ñandu	a:ñandugu; o:ñanuŋa; p:ñandugu	3
-3;Gpl	jingulu	djin1251	jig	Jingulu	Mirndi	Australia	62	free	jamabaji	o:wurraku; o:ɲurraku; p:wurrak-; p:ɲurrak-	3
-3;Gpl	jinhgpaw	nort3288		Jinhgpaw	Sino-Tibetan	Eurasia	841	free	khan⁵⁵the³³		3
-3;Gpl	kafoa	kafo1240	kpu	Kafoa	Timor-Alor-Pantar	Papunesia	683	free	ama	s:yeed; a:yeed; o:ga-; o:gam-; o:gang-; o:ge-; o:go-; p:iy(a)-; p:yi-	3
-3;Gpl	kairiru	kair1263	kxa	Kairiru	Austronesian	Papunesia	386	free	ri	p:raqari	3
-3;Gpl	kairiru_b	kair1263	kxa	Kairiru	Austronesian	Papunesia	387	bound	ra-	o:-ri; p:-ri	3
+3;Gpl	guuguyimidhirrcoastal	gugu1255	kky	Guugu Yimidhirr coastal gugu1255	Pama-Nyungan	Australia	900	free	dhana	o:dhanaan; o:dhanangan; p:dhanaan; p:dhanangan	1
+3;Gpl	guuguyimidhirrinland	gugu1255	kky	Guugu Yimidhirr inland gugu1255	Pama-Nyungan	Australia	911	free	dhana	o:dhanaan; o:dhanangan; p:dhanaan; p:dhanangan	1
+3;Gpl	hawaiian	hawa1245	haw	Hawaiian	Austronesian	Papunesia	833	free	lākou	p:kālākou; p:kōlākou	1
+3;Gpl	hewa	hewa1241	ham	Hewa	Sepik	Papunesia	247	free	'lafu		1
+3;Gpl	hindi	hind1269	hin	Hindi	Indo-European	Eurasia	274	free	ye	o:in; p:inka	1
+3;Gpl	hoava	hoav1238	hoa	Hoava	Austronesian	Papunesia	834	free	ria	p:dia	1
+3;Gpl	isaka	kris1246	ksi	I'saka	Sko	Papunesia	222	free	epu	o:ie; o:wi; p:omokai	1
+3;Gpl	jaminjung	djam1255	djd	Jaminjung	Mirndi	Australia	377	free	buri	p:buraɟgina	1
+3;Gpl	jingulu	djin1251	jig	Jingulu	Mirndi	Australia	62	free	jamabaji	o:wurraku; o:ɲurraku; p:wurrak-; p:ɲurrak-	1
+3;Gpl	jinhgpaw	nort3288		Jinhgpaw	Sino-Tibetan	Eurasia	841	free	khan⁵⁵the³³		1
+3;Gpl	kafoa	kafo1240	kpu	Kafoa	Timor-Alor-Pantar	Papunesia	683	free	ama	s:yeed; a:yeed; o:ga-; o:gam-; o:gang-; o:ge-; o:go-; p:iy(a)-; p:yi-	1
+3;Gpl	kairiru	kair1263	kxa	Kairiru	Austronesian	Papunesia	386	free	ri	p:raqari	1
+3;Gpl	kairiru_b	kair1263	kxa	Kairiru	Austronesian	Papunesia	387	bound	ra-	o:-ri; p:-ri	1
 3;Gpl	kalakawawya	kala1378		Kala Kawaw Ya	Pama-Nyungan	Australia	161	free	ṱana	p:ṱanamun	3
 3;Gpl	kalalagawya	kala1377	mwp	Kala Lagaw Ya kala1377	Pama-Nyungan	Australia	902	free	ṱana	p:ṱanamun	3
-3;Gpl	kalam	kala1397	kmh	Kalam	Nuclear Trans New Guinea	Papunesia	268	free	kik	o:kuyp; p:kuyp	3
+3;Gpl	kalam	kala1397	kmh	Kalam	Nuclear Trans New Guinea	Papunesia	268	free	kik	o:kuyp; p:kuyp	1
 3;Gpl	kalkutungu	kalk1246	ktg	Kalkutungu	Pama-Nyungan	Australia	38	free	ṱina	a:ṱinaji; p:ṱinaa	3
-3;Gpl	kapriman	kapr1245	dju	Kapriman	Sepik	Papunesia	245	free	rom	p:roxu	3
+3;Gpl	kapriman	kapr1245	dju	Kapriman	Sepik	Papunesia	245	free	rom	p:roxu	1
 3;Gpl	kayardild	kaya1319	gyd	Kayardild	Tangkic	Australia	4	free	bilda	o:bilwanji; p:bilwanda	3
-3;Gpl	kele	kele1258	sbc	Kele	Austronesian	Papunesia	379	free	su	p:-su	3
-3;Gpl	kele_b	kele1258	sbc	Kele	Austronesian	Papunesia	380	bound	he-	p:-su	3
-3;Gpl	klon	kelo1247	kyo	Klon	Timor-Alor-Pantar	Papunesia	209	free	go-	s:ini; s:ini g-; s:ini ge-; s:ini gin=; s:ini go-; a:ini; o:ini g-; o:ini ge-; o:ini gin=; o:ini go-; p:ini ge	3
-3;Gpl	kombio	komb1272	xbi	Kombio	Nuclear Torricelli	Papunesia	228	free	ti	p:antuel	3
-3;Gpl	koromira	koro1313	kqj	Koromira	South Bougainville	Papunesia	233	free		p:bɛ-	3
+3;Gpl	kele	kele1258	sbc	Kele	Austronesian	Papunesia	379	free	su	p:-su	1
+3;Gpl	kele_b	kele1258	sbc	Kele	Austronesian	Papunesia	380	bound	he-	p:-su	1
+3;Gpl	klon	kelo1247	kyo	Klon	Timor-Alor-Pantar	Papunesia	209	free	ini	s:ini g-; o:ini g-; p:ini ge	3
+3;Gpl	kombio	komb1272	xbi	Kombio	Nuclear Torricelli	Papunesia	228	free	ti	p:antuel	1
+3;Gpl	koromira	koro1313	kqj	Koromira	South Bougainville	Papunesia	233	free		p:bɛ-	1
 3;Gpl	kriol_barunga	krio1252	rop	Kriol	Indo-European	Australia	853	free	olabat		3
 3;Gpl	kukuyalanji	kuku1273	gvn	Kuku Yalanji	Pama-Nyungan	Australia	97	free	jana	o:janaŋan; p:janaŋa	3
-3;Gpl	kunimaipa	kuni1267	kup	Kunimaipa	Kunimaipan	Papunesia	260	free	paru	p:paruma	3
-3;Gpl	kusaghe	kusa1251	ksg	Kusaghe kusa1251	Austronesian	Papunesia	898	free	ria	p:dia	3
-3;Gpl	kuukthaayorre	thay1249	thd	Kuuk Thaayorre	Pama-Nyungan	Australia	694	free	peln	o:pelnan; p:pelnan	3
-3;Gpl	kuukuyaukm	kuuk1238	kuy	Kuuku Ya'u KM kuuk1238	Pama-Nyungan	Australia	896	free	pula	o:pulaana; p:pulaaŋku	3
-3;Gpl	kwamera	kwam1252	tnk	Kwamera	Austronesian	Papunesia	440	free	iɾaha	p:-nɾaha	3
-3;Gpl	kwoma	kwom1262	kmo	Kwoma	Sepik	Papunesia	243	free	yeča	o:yečana; p:yeči	3
+3;Gpl	kunimaipa	kuni1267	kup	Kunimaipa	Kunimaipan	Papunesia	260	free	paru	p:paruma	1
+3;Gpl	kusaghe	kusa1251	ksg	Kusaghe kusa1251	Austronesian	Papunesia	898	free	ria	p:dia	1
+3;Gpl	kuukthaayorre	thay1249	thd	Kuuk Thaayorre	Pama-Nyungan	Australia	694	free	peln	o:pelnan; p:pelnan	1
+3;Gpl	kuukuyaukm	kuuk1238	kuy	Kuuku Ya'u KM kuuk1238	Pama-Nyungan	Australia	896	free	pula	o:pulaana; p:pulaaŋku	1
+3;Gpl	kwamera	kwam1252	tnk	Kwamera	Austronesian	Papunesia	440	free	iɾaha	p:-nɾaha	1
+3;Gpl	kwoma	kwom1262	kmo	Kwoma	Sepik	Papunesia	243	free	yeča	o:yečana; p:yeči	1
 3;Gpl	lardil	lard1243	lbz	Lardil	Tangkic	Australia	6	free	bili	o:bilween; p:bilwen	3
-3;Gpl	lelepa	lele1267	lpa	Lelepa	Austronesian	Papunesia	277	free	naara		3
-3;Gpl	lelepa_b	lele1267	lpa	Lelepa	Austronesian	Papunesia	278	bound	naara	o:-ra	3
-3;Gpl	lemetingbelait	bela1260	beg	Lemeting (Belait)	Austronesian	Papunesia	844	free	lew	s:liaw; a:liaw; o:saliaw'; p:liaw	3
-3;Gpl	lepcha	lepc1244	lep	Lepcha	Sino-Tibetan	Eurasia	306	free	hɯju	o:hɯjum; p:hɯjusə	3
-3;Gpl	letyilejti	ladj1234	llj	Letyi-Lejti	Pama-Nyungan	Australia	690	free	wuthu		3
-3;Gpl	longgu	long1395	lgu	Longgu	Austronesian	Papunesia	177	free	ara	s:gira; a:gira; o:gira; p:-da; p:gira	3
+3;Gpl	lelepa	lele1267	lpa	Lelepa	Austronesian	Papunesia	277	free	naara		1
+3;Gpl	lelepa_b	lele1267	lpa	Lelepa	Austronesian	Papunesia	278	bound	naara	o:-ra	1
+3;Gpl	lemetingbelait	bela1260	beg	Lemeting (Belait)	Austronesian	Papunesia	844	free	lew	s:liaw; a:liaw; o:saliaw'; p:liaw	1
+3;Gpl	lepcha	lepc1244	lep	Lepcha	Sino-Tibetan	Eurasia	306	free	hɯju	o:hɯjum; p:hɯjusə	1
+3;Gpl	letyilejti	ladj1234	llj	Letyi-Lejti	Pama-Nyungan	Australia	690	free	wuthu		1
+3;Gpl	longgu	long1395	lgu	Longgu	Austronesian	Papunesia	177	free	ara	s:gira; a:gira; o:gira; p:-da	3
 3;Gpl	loniu	loni1238	los	Loniu	Austronesian	Papunesia	173	free	sɛh		3
 3;Gpl	lovono	vano1237	vnk	Lovono	Austronesian	Papunesia	178	free	detu		3
-3;Gpl	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	woni	o:je; o:jich; p:jich	3
-3;Gpl	mafea	mafe1237	mkv	Mafea	Austronesian	Papunesia	399	free	nira	o:-(i)ra; o:=ira; p:-(i)ra; p:-ira; p:-ra	3
-3;Gpl	mamu	mamu1253		Mamu	Pama-Nyungan	Australia	879	free	balamaŋgan	p:balamaŋganu	3
-3;Gpl	mangarayi	mang1381	mpc	Mangarayi	Mangarrayi-Maran	Australia	442	free	gaɭaɾiwa	o:gajanŋan; p:-wuɳja	3
-3;Gpl	manikion	mani1235	mnx	Manikion	East Bird's Head	Papunesia	220	free	len	p:mer-	3
-3;Gpl	maoribaueretal	maor1246	mri	Maori [Bauer et al] maor1246	Austronesian	Papunesia	912	free	raatou	p:taa raatou; p:too raatou	3
-3;Gpl	maoriharlow	maor1246	mri	Maori [Harlow] maor1246	Austronesian	Papunesia	908	free	ɾaatou		3
+3;Gpl	mafea	mafe1237	mkv	Mafea	Austronesian	Papunesia	399	free	nira	p:-ira; p:-ra	3
+3;Gpl	mamu	mamu1253		Mamu	Pama-Nyungan	Australia	879	free	balamaŋgan	p:balamaŋganu	1
+3;Gpl	mangarayi	mang1381	mpc	Mangarayi	Mangarrayi-Maran	Australia	442	free	gaɭaɾiwa	o:gajanŋan; p:-wuɳja	1
+3;Gpl	manikion	mani1235	mnx	Manikion	East Bird's Head	Papunesia	220	free	len	p:mer-	1
+3;Gpl	maoribaueretal	maor1246	mri	Maori [Bauer et al] maor1246	Austronesian	Papunesia	912	free	raatou	p:taa raatou; p:too raatou	1
+3;Gpl	maoriharlow	maor1246	mri	Maori [Harlow] maor1246	Austronesian	Papunesia	908	free	ɾaatou		1
 3;Gpl	mara	mara1385	mec	Mara	Mangarrayi-Maran	Australia	47	free	wuluyi	p:biliwu	3
-3;Gpl	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	wica	s:wiʈa; a:wiʈa; o:-wiña; p:wiña	3
-3;Gpl	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	pularna	s:pulaṇa; a:pulaṇa; p:pularnawu	3
-3;Gpl	mende	mend1268	sim	Mende	Sepik	Papunesia	242	free	lir	o:lirin; p:lihi	3
+3;Gpl	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	wiʈa	o:-wiña; p:wiña	3
+3;Gpl	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	pulaṇa		3
+3;Gpl	mende	mend1268	sim	Mende	Sepik	Papunesia	242	free	lir	o:lirin; p:lihi	1
 3;Gpl	menya	meny1245	mcr	Menya	Angan	Papunesia	195	free	qu	p:quwqä	3
-3;Gpl	meyah	meya1236	mej	Meyah	East Bird's Head	Papunesia	219	free	rua	p:rerin	3
-3;Gpl	morisyen	mori1278	mfe	Morisyen	Indo-European	Africa	339	free	banla	p:zot	3
+3;Gpl	meyah	meya1236	mej	Meyah	East Bird's Head	Papunesia	219	free	rua	p:rerin	1
+3;Gpl	morisyen	mori1278	mfe	Morisyen	Indo-European	Africa	339	free	banla	p:zot	1
 3;Gpl	moskona	mosk1236	mtj	Moskona	East Bird's Head	Papunesia	190	free	eri	p:erin	3
-3;Gpl	motu	motu1246	meu	Motu	Austronesian	Papunesia	845	free	idia	p:idia edia	3
-3;Gpl	mpakwithi	angu1242	awg	Mpakwithi	Pama-Nyungan	Australia	670	free	lwan̪a	a:amɽa; p:lwamɽa	3
-3;Gpl	mpur	mpur1239	akc	Mpur	Mpur	Papunesia	687	free	der	p:de-	3
-3;Gpl	mufian	mufi1238	aoj	Mufian	Nuclear Torricelli	Papunesia	227	free	émom	p:émomi-	3
-3;Gpl	muinane	muin1242	bmr	Muinane	Boran	South America	485	free	diito		3
-3;Gpl	mundari_icrkq	mund1320	unr	Mundari	Austroasiatic	Eurasia	658	free	ako	p:akoaʔ	3
-3;Gpl	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	ako	p:akoaʔ	3
-3;Gpl	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	ako	p:akoa?	3
-3;Gpl	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	naimakɨ		3
+3;Gpl	motu	motu1246	meu	Motu	Austronesian	Papunesia	845	free	idia	p:idia edia	1
+3;Gpl	mpakwithi	angu1242	awg	Mpakwithi	Pama-Nyungan	Australia	670	free	lwan̪a	a:amɽa; p:lwamɽa	1
+3;Gpl	mpur	mpur1239	akc	Mpur	Mpur	Papunesia	687	free	der	p:de-	1
+3;Gpl	mufian	mufi1238	aoj	Mufian	Nuclear Torricelli	Papunesia	227	free	émom	p:émomi-	1
+3;Gpl	muinane	muin1242	bmr	Muinane	Boran	South America	485	free	diito		1
+3;Gpl	mundari_icrkq	mund1320	unr	Mundari	Austroasiatic	Eurasia	658	free	ako	p:akoaʔ	1
+3;Gpl	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	ako	p:akoaʔ	1
+3;Gpl	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	ako	p:akoa?	1
+3;Gpl	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	naimakɨ		1
 3;Gpl	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	thana	o:tharrana; p:tharraka	3
-3;Gpl	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	ila	p:-ira	3
-3;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	la=	o:=la; p:-ira	3
-3;Gpl	naasioi	naas1242	nas	Naasioi	South Bougainville	Papunesia	232	free		p:bii-	3
+3;Gpl	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	ila	p:-ira	1
+3;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	la=	o:=la; p:-ira	1
+3;Gpl	naasioi	naas1242	nas	Naasioi	South Bougainville	Papunesia	232	free		p:bii-	1
 3;Gpl	nabak	naba1256	naf	Nabak	Nuclear Trans New Guinea	Papunesia	133	free	ekŋen	p:ekŋeŋalen	3
-3;Gpl	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	egiteu	p:tegiteu	3
-3;Gpl	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	lomko	p:lomkoka	3
-3;Gpl	nbadimaya	badi1246	bia	Badimaya	Pama-Nyungan	Australia	374	free	d̪an̪a	o:d̪an̪an̪a; p:d̪an̪aŋ	3
+3;Gpl	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	egiteu	p:tegiteu	1
+3;Gpl	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	lomko	p:lomkoka	1
+3;Gpl	nbadimaya	badi1246	bia	Badimaya	Pama-Nyungan	Australia	374	free	d̪an̪a	o:d̪an̪an̪a; p:d̪an̪aŋ	1
 3;Gpl	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	barayabba	p:-baddabira	3
-3;Gpl	nekiwai	nort2930	kiw	Kiwai, Northeast	Kiwaian	Papunesia	892	free	ni		3
-3;Gpl	neveei	vinm1237	vnm	Neve'ei	Austronesian	Papunesia	685	free	ar		3
+3;Gpl	nekiwai	nort2930	kiw	Kiwai, Northeast	Kiwaian	Papunesia	892	free	ni		1
+3;Gpl	neveei	vinm1237	vnm	Neve'ei	Austronesian	Papunesia	685	free	ar		1
 3;Gpl	ngalakan	ngal1293	nig	Ngalakan	Gunwinyguan	Australia	14	free	burkaʔ	a:burkaɳiʔyiʔ; p:-bore	3
-3;Gpl	ngandi	ngan1295	nid	Ngandi	Gunwinyguan	Australia	196	free	bawan	a:bawant̪u; p:-ʔburayi; p:-ʔŋut̪ayi	3
 3;Gpl	ngankikurungkurr	nang1259	nam	Ngankikurungkurr	Southern Daly	Australia	103	free	wirrim	a:wirrimniŋki	3
 3;Gpl	ngiyambaa	wang1291	wyb	Ngiyambaa	Pama-Nyungan	Australia	17	free	=naŋgal	s:=niŋgal; a:=lugal; a:=yugal; o:=niŋgal; p:=luguŋgal	3
-3;Gpl	ngunnawal	ngun1277	xul	Ngunnawal	Pama-Nyungan	Australia	859	free	dhanudjimalin	p:dhanudjumulinggu	3
-3;Gpl	nhanda	nhan1238	nha	Nhanda	Pama-Nyungan	Australia	376	free	alinu	a:aluundu; p:alinuu	3
-3;Gpl	nmarquesan	nort2845	mrq	North Marquesan	Austronesian	Papunesia	410	free	ʔɑtou		3
-3;Gpl	noone	noon1243	nhu	Noone	Atlantic-Congo	Africa	629	free	bɔ˥bɔ˩˥	p:bɔ˩˥; p:wu˩bɔ˩˥	3
-3;Gpl	northernpumi	nort2723	pmi	Northern Pumi	Sino-Tibetan	Eurasia	350	free	ni˥ɹə˩	p:ni˥ɹɑ˩	3
+3;Gpl	ngunnawal	ngun1277	xul	Ngunnawal	Pama-Nyungan	Australia	859	free	dhanudjimalin	p:dhanudjumulinggu	1
+3;Gpl	nhanda	nhan1238	nha	Nhanda	Pama-Nyungan	Australia	376	free	alinu	a:aluundu; p:alinuu	1
+3;Gpl	nmarquesan	nort2845	mrq	North Marquesan	Austronesian	Papunesia	410	free	ʔɑtou		1
+3;Gpl	noone	noon1243	nhu	Noone	Atlantic-Congo	Africa	629	free	bɔ˥bɔ˩˥	p:bɔ˩˥; p:wu˩bɔ˩˥	1
+3;Gpl	northeasternmaidu	nort2952	nmu	Northeastern Maidu	Maiduan	North America	875	free	mïsém	o:mïsé; p:mïsék'i	1
+3;Gpl	northernpumi	nort2723	pmi	Northern Pumi	Sino-Tibetan	Eurasia	350	free	ni˥ɹə˩	p:ni˥ɹɑ˩	1
 3;Gpl	nyawaygi	nyaw1247	nyt	Nyawaygi	Pama-Nyungan	Australia	108	free	ɠana	a:ɠanaŋgu; o:ɠanaña; p:ɠanaŋu	3
 3;Gpl	nyulnyul	nyul1247	nyv	Nyulnyul	Nyulnyulan	Australia	57	free	ir	p:jir	3
-3;Gpl	ocaina	ocai1244	oca	Ocaina	Huitotoan	South America	484	free	usa		3
+3;Gpl	ocaina	ocai1244	oca	Ocaina	Huitotoan	South America	484	free	usa		1
 3;Gpl	oksapmin	oksa1245	opm	Oksapmin	Nuclear Trans New Guinea	Papunesia	202	free	ixil	s:ixlalxe; a:ixlalxe; o:ixlalxe; p:ixle	3
-3;Gpl	orokolo	orok1267	oro	Orokolo	Eleman	Papunesia	257	free	ere	o:erero; p:ereve	3
-3;Gpl	paakantyi	darl1243	drl	Paakantyi	Pama-Nyungan	Australia	42	free	ŋadi	o:ŋadina; p:ŋadina	3
+3;Gpl	orokolo	orok1267	oro	Orokolo	Eleman	Papunesia	257	free	ere	o:erero; p:ereve	1
+3;Gpl	paakantyi	darl1243	drl	Paakantyi	Pama-Nyungan	Australia	42	free	ŋadi		3
 3;Gpl	paamese	paam1238	pma	Paamese	Austronesian	Papunesia	20	free	kaile	p:-le	3
-3;Gpl	pittapitta	pitt1247	pit	Pitta Pitta	Pama-Nyungan	Australia	867	free	tanakalu	a:t̪anaka; o:tanakan̪a; p:tanakaŋa	3
-3;Gpl	raga	hano1246	lml	Raga	Austronesian	Papunesia	463	free	kera	o:-ra; p:-ra	3
-3;Gpl	rapoisi	rapo1238	kyx	Rapoisi	North Bougainville	Papunesia	238	free	pirio	p:-ara	3
+3;Gpl	pittapitta	pitt1247	pit	Pitta Pitta	Pama-Nyungan	Australia	867	free	tanakalu	a:t̪anaka; o:tanakan̪a; p:tanakaŋa	1
+3;Gpl	raga	hano1246	lml	Raga	Austronesian	Papunesia	463	free	kera	o:-ra; p:-ra	1
+3;Gpl	rapoisi	rapo1238	kyx	Rapoisi	North Bougainville	Papunesia	238	free	pirio	p:-ara	1
 3;Gpl	rembarrnga	remb1249	rmb	Rembarrnga	Gunwinyguan	Australia	16	free	bunda	p:-barə	3
 3;Gpl	ritharrngu	rita1239	rit	Ritharrngu	Pama-Nyungan	Australia	39	free	ḓali	o:ḓaliña; p:ḓaliŋu	3
-3;Gpl	rotokas	roto1249	roo	Rotokas	North Bougainville	Papunesia	239	free	voea	p:oae; p:oaive	3
-3;Gpl	samoan	samo1305	smo	Samoan	Austronesian	Papunesia	21	free	ilatou	s:lātou; s:ʔilatou; a:lātou; a:ʔilatou; o:lātou; o:ʔilatou; p:a lāʔua; p:la tatou; p:lo tatou	3
-3;Gpl	savosavo	savo1255	svs	Savosavo	Savosavo	Papunesia	310	free	ze	o:zepo; p:zeβa	3
-3;Gpl	sepikiwam	sepi1255	iws	Sepik Iwam	Sepik	Papunesia	241	free	sɨma	o:sɨmir; p:sɨmir	3
-3;Gpl	sibe	sibe1248	nco	Sibe	South Bougainville	Papunesia	236	free		p:ni-	3
-3;Gpl	skiwai	sout2949	kjd	Kiwai, Southern	Kiwaian	Papunesia	264	free	nei		3
-3;Gpl	skou	nucl1634	skv	Skou	Sko	Papunesia	223	free	te	p:tè	3
-3;Gpl	southefate_b	sout2856	erk	South Efate	Austronesian	Papunesia	397	bound	ru=	o:-r; p:-r	3
-3;Gpl	standardarabic	stan1318	arb	Standard Arabic stan1318	Afro-Asiatic	Eurasia	901	free	hum	o:-hum; p:-hum	3
-3;Gpl	sunwar_saipu	sunw1242	suz	Sunwar	Sino-Tibetan	Eurasia	303	free	mekoniʃi	a:mekoniʃimiː; o:ãnkali; p:ãnke	3
-3;Gpl	surumwerani	apma1240	app	Abma	Austronesian	Papunesia	464	free	ra	o:nii; p:[lengthening of stem-final vowel]	3
-3;Gpl	takale	west2420	kjl	Kham (Western Parbate)	Sino-Tibetan	Eurasia	411	free	no:rə	p:ya-	3
-3;Gpl	takia_b	taki1248	tbc	Takia	Austronesian	Papunesia	388	bound	di-	o:-ai; p:di	3
+3;Gpl	rotokas	roto1249	roo	Rotokas	North Bougainville	Papunesia	239	free	voea	p:oae; p:oaive	1
+3;Gpl	samoan	samo1305	smo	Samoan	Austronesian	Papunesia	21	free	lātou	s:ʔilatou; a:ʔilatou; o:ʔilatou; p:a lāʔua	3
+3;Gpl	savosavo	savo1255	svs	Savosavo	Savosavo	Papunesia	310	free	ze	o:zepo; p:zeβa	1
+3;Gpl	sepikiwam	sepi1255	iws	Sepik Iwam	Sepik	Papunesia	241	free	sɨma	o:sɨmir; p:sɨmir	1
+3;Gpl	sibe	sibe1248	nco	Sibe	South Bougainville	Papunesia	236	free		p:ni-	1
+3;Gpl	skiwai	sout2949	kjd	Kiwai, Southern	Kiwaian	Papunesia	264	free	nei		1
+3;Gpl	skou	nucl1634	skv	Skou	Sko	Papunesia	223	free	te	p:tè	1
+3;Gpl	southefate_b	sout2856	erk	South Efate	Austronesian	Papunesia	397	bound	ru=	o:-r; p:-r	1
+3;Gpl	standardarabic	stan1318	arb	Standard Arabic stan1318	Afro-Asiatic	Eurasia	901	free	hum	o:-hum; p:-hum	1
+3;Gpl	sunwar_saipu	sunw1242	suz	Sunwar	Sino-Tibetan	Eurasia	303	free	mekoniʃi	a:mekoniʃimiː; o:ãnkali; p:ãnke	1
+3;Gpl	surumwerani	apma1240	app	Abma	Austronesian	Papunesia	464	free	ra	o:nii; p:[lengthening of stem-final vowel]	1
+3;Gpl	takale	west2420	kjl	Kham (Western Parbate)	Sino-Tibetan	Eurasia	411	free	no:rə	p:ya-	1
+3;Gpl	takia_b	taki1248	tbc	Takia	Austronesian	Papunesia	388	bound	di-	o:-ai; p:di	1
 3;Gpl	tanema	tane1237	tnx	Tanema	Austronesian	Papunesia	179	free	dato		3
 3;Gpl	teanu	tean1237	tkw	Teanu	Austronesian	Papunesia	180	free	dapa		3
-3;Gpl	teanu_tryon	tean1237	tkw	Teanu	Austronesian	Papunesia	861	free	dapa	p:adapa; p:iadapa	3
-3;Gpl	teiwa	teiw1235	twe	Teiwa	Timor-Alor-Pantar	Papunesia	210	free	a	s:i; s:i'in; s:iman; s:in; a:i; a:i'in; a:iman; a:in; o:g(i)-; o:ga-; o:gi'in; o:iman; o:in; p:a-; p:g(i)-; p:ga-; p:iman	3
-3;Gpl	toaripi	toar1246	tqo	Toaripi	Eleman	Papunesia	256	free	ere	o:erero; p:ereve	3
+3;Gpl	teanu_tryon	tean1237	tkw	Teanu	Austronesian	Papunesia	861	free	dapa	p:adapa; p:iadapa	1
+3;Gpl	toaripi	toar1246	tqo	Toaripi	Eleman	Papunesia	256	free	ere	o:erero; p:ereve	1
 3;Gpl	tokpisin	tokp1240	tpi	Tok Pisin	Indo-European	Papunesia	115	free	ol	p:biloŋ ol	3
 3;Gpl	toqabaqita	toab1237	mlu	Toqabaqita	Austronesian	Papunesia	25	free	kera	s:kiiluqa; a:kiiluqa; o:kiiluqa; p:-da; p:-daluqa	3
 3;Gpl	torresstrait	torr1261	tcs	Torres Strait Creole	Indo-European	Australia	130	free	dempla		3
-3;Gpl	tshangla	tsha1245	tsj	Tshangla	Sino-Tibetan	Eurasia	305	free	rokte	a:ɾokteki; p:ɾokteka	3
-3;Gpl	tuvaluan	tuva1244	tvl	Tuvaluan	Austronesian	Papunesia	309	free	laatou	p:-lotou	3
+3;Gpl	tshangla	tsha1245	tsj	Tshangla	Sino-Tibetan	Eurasia	305	free	rokte	a:ɾokteki; p:ɾokteka	1
+3;Gpl	tuvaluan	tuva1244	tvl	Tuvaluan	Austronesian	Papunesia	309	free	laatou	p:-lotou	1
 3;Gpl	tyeraity	tyar1236	woa	Tyeraity	Northern Daly	Australia	46	free	wuruntun	o:-wörö	3
-3;Gpl	umpila	umpi1239	ump	Umpila umpi1239	Pama-Nyungan	Australia	895	free	pula	o:pulaana; p:pulaaŋku	3
+3;Gpl	umpila	umpi1239	ump	Umpila umpi1239	Pama-Nyungan	Australia	895	free	pula	o:pulaana; p:pulaaŋku	1
 3;Gpl	ungarinyin	ngar1284	ung	Ungarinyin	Worrorran	Australia	35	free	bunda	p:budnaŋga	3
-3;Gpl	urama	uram1241		Kiwai, Northeast	Kiwaian	Papunesia	263	free	ni		3
-3;Gpl	urim	urim1252	uri	Urim	Nuclear Torricelli	Papunesia	231	free	tu		3
-3;Gpl	usorbian	uppe1395	hsb	Upper Sorbian	Indo-European	Eurasia	74	free	wone	s:woni; a:woni; o:je; o:jich	3
-3;Gpl	vaeakautaumako	pile1238	piv	Vaeakau-Taumako	Austronesian	Papunesia	443	free	lhātou	p:lātou	3
-3;Gpl	vanimo	vani1248	vam	Vanimo	Sko	Papunesia	225	free	débé	p:dè	3
-3;Gpl	wahgi	nucl1620	wgi	Wahgi	Nuclear Trans New Guinea	Papunesia	111	free	enim enim	p:-njip	3
-3;Gpl	wambaya	wamb1258	wmb	Wambaya	Mirndi	Australia	106	free	iriyani	s:irriyani; a:irriyani; o:ira; o:irra; p:iriganji; p:irriganji	3
+3;Gpl	urama	uram1241		Kiwai, Northeast	Kiwaian	Papunesia	263	free	ni		1
+3;Gpl	urim	urim1252	uri	Urim	Nuclear Torricelli	Papunesia	231	free	tu		1
+3;Gpl	vaeakautaumako	pile1238	piv	Vaeakau-Taumako	Austronesian	Papunesia	443	free	lhātou	p:lātou	1
+3;Gpl	vanimo	vani1248	vam	Vanimo	Sko	Papunesia	225	free	débé	p:dè	1
+3;Gpl	wahgi	nucl1620	wgi	Wahgi	Nuclear Trans New Guinea	Papunesia	111	free	enim enim		3
+3;Gpl	wambaya	wamb1258	wmb	Wambaya	Mirndi	Australia	106	free	iriyani	o:ira; p:iriganji	3
 3;Gpl	wandarang	wand1263	wnd	Wandarang	Mangarrayi-Maran	Australia	43	free	wulayi	p:alagi	3
-3;Gpl	wangkajunga	mart1256	mpj	Wangkajunga	Pama-Nyungan	Australia	55	free	palunyarti	s:paluɲarti; a:palunyartilu; a:paluɲartilu; o:paluɲarti; p:palunyartikurnu; p:paluɲartikurnulu	3
-3;Gpl	wargamay	warr1255	wgy	Wargamay	Pama-Nyungan	Australia	63	free	ɠana	a:ɠanaŋgu; o:ɠanaña; o:ḍanaña; p:ɠanaŋu	3
-3;Gpl	warrnambool	gund1249	wkr	Warrnambool	Pama-Nyungan	Australia	189	free	dilakanda	a:dilakandaa; p:-tjin	3
-3;Gpl	warungu	waru1264	wrg	Warungu	Pama-Nyungan	Australia	353	free	ɟana	o:ɟanaɲa; p:ɟanaŋo	3
+3;Gpl	wangkajunga	mart1256	mpj	Wangkajunga	Pama-Nyungan	Australia	55	free	paluɲarti	a:paluɲartilu; p:paluɲartikurnulu	3
+3;Gpl	wargamay	warr1255	wgy	Wargamay	Pama-Nyungan	Australia	63	free	ɠana	a:ɠanaŋgu; o:ḍanaña; p:ɠanaŋu	3
+3;Gpl	warrnambool	gund1249	wkr	Warrnambool	Pama-Nyungan	Australia	189	free	dilakanda	a:dilakandaa	3
+3;Gpl	warungu	waru1264	wrg	Warungu	Pama-Nyungan	Australia	353	free	ɟana	o:ɟanaɲa; p:ɟanaŋo	1
 3;Gpl	watjarri	waja1257	wbv	Watjarri	Pama-Nyungan	Australia	64	free	ʈana	o:ʈanaña; p:ʈanaŋu	3
 3;Gpl	wilawila	wila1240	wil	Wilawila	Worrorran	Australia	49	free	bɨnda		3
-3;Gpl	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	arge	p:arganaŋgori; p:arganaŋgoriñ	3
+3;Gpl	windesi	wind1244		Windesi	Austronesian	Papunesia	849	free	si		1
 3;Gpl	wunambal	wuna1249	wub	Wunambal	Worrorran	Australia	107	free	birani	p:biraniniŋge	3
 3;Gpl	yagaria	yaga1260	ygr	Yagaria	Nuclear Trans New Guinea	Papunesia	138	free	pagaea	p:tagaea	3
-3;Gpl	yagua	yagu1244	yad	Yagua	Peba-Yagua	South America	476	free	riy		3
+3;Gpl	yagua	yagu1244	yad	Yagua	Peba-Yagua	South America	476	free	riy		1
 3;Gpl	yalarnnga	yala1262	ylr	Yalarnnga	Pama-Nyungan	Australia	58	free	thana	a:thanalu; p:thanaluŋu	3
-3;Gpl	yanomama	yano1262	wca	Yanomama	Yanomamic	South America	430	free	kama pə	a:kama pə nɨ	3
+3;Gpl	yanomama	yano1262	wca	Yanomama	Yanomamic	South America	430	free	kama pə	a:kama pə nɨ	1
 3;Gpl	yawijibaya	yawi1239	jbw	Yawijibaya	Worrorran	Australia	51	free		p:yamaŋge	3
-3;Gpl	yessanmayo	yess1239	yss	Yessan-Mayo	Sepik	Papunesia	248	free	rim	p:rimri	3
-3;Gpl	yimas	yima1243	yee	Yimas	Lower Sepik	Papunesia	367	free	mum	p:mpu-	3
+3;Gpl	yessanmayo	yess1239	yss	Yessan-Mayo	Sepik	Papunesia	248	free	rim	p:rimri	1
+3;Gpl	yimas	yima1243	yee	Yimas	Lower Sepik	Papunesia	367	free	mum	p:mpu-	1
 3;Gpl	yindjibarndi	yind1247	yij	Yindjibarndi	Pama-Nyungan	Australia	52	free	walāŋkāʈirri		3
-3;Gpl	yiryoront	yiry1245	yiy	Yir-Yoront	Pama-Nyungan	Australia	693	free	pilin	o:pilən̪; o:pilən̪ən; p:pilən̪; p:pilən̪ən	3
+3;Gpl	yiryoront	yiry1245	yiy	Yir-Yoront	Pama-Nyungan	Australia	693	free	pilin	o:pilən̪; o:pilən̪ən; p:pilən̪; p:pilən̪ən	1
 3;Gpl	yortayorta	yort1237	xyy	Yorta Yorta	Pama-Nyungan	Australia	121	free	damna	a:damnak; o:damnanan; p:damnan	3
-3;Gpl	yukulta	gang1267	gcd	Yukulta	Tangkic	Australia	424	free	pilta	o:pilwanci; p:pilwanta	3
+3;Gpl	yukulta	gang1267	gcd	Yukulta	Tangkic	Australia	424	free	pilta	o:pilwanci; p:pilwanta	1
 3;Gpl	yulparija	mart1256	mpj	Yulparija	Pama-Nyungan	Australia	192	free	ŋāʈi	a:ŋāʈilu; p:ŋāʈikuraŋu	3
 3;Gpl	yuwaalaraay	gami1243	kld	Yuwaalaraay	Pama-Nyungan	Australia	44	free	ganuŋa	a:ganugu; p:ganuŋu	3
-3;Gpl;F	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free	iira	o:-ra; p:-dia	1
-3;Gpl;F	dhofariarabic	dhof1235	adf	Dhofari Arabic	Afro-Asiatic	Eurasia	862	free	hum	s:hēn; a:hēn; o:-hum; o:-hēn; p:-hum; p:-hēn	1
-3;Gpl;F	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	wi	a:w; o:wia; p:w-; p:wiar; p:wiena	1
-3;Gpl;F	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	te	s:tāni; s:tāḥ; a:tāni; a:tāḥ; o:tān; o:tāni; o:tāḥ; p:teṣām; p:tāsām	1
-3;Gpl;F	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	óna	s:óne; s:óni; a:óne; a:óni; o:njȉh; p:njīhov	1
-3;Gpl;F	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	aiva	s:aɨwa; a:aɨwa; o:aɨwa; p:winkɨ	1
+3;Gpl;F	dhofariarabic	dhof1235	adf	Dhofari Arabic	Afro-Asiatic	Eurasia	862	free	hēn	o:-hēn; p:-hēn	1
+3;Gpl;F	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	tāḥ	p:tāsām	1
+3;Gpl;F	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	óna	o:njȉh; p:njīhov	1
+3;Gpl;F	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	aiva	p:winkɨ	1
+3;Gpl;F+M	biak	biak1248	bhw	Biak	Austronesian	Papunesia	172	free	si	p:se=	2
+3;Gpl;F+M	bunganditj	bung1264	xbg	Bunganditj	Pama-Nyungan	Australia	188	free	ñuŋpa	a:ñuŋpaa; p:ñuŋpalaat	2
 3;Gpl;F+M	duna	duna1248	duc	Duna	Duna	Papunesia	191	free	khunu		2
-3;Gpl;F+M	northeasternmaidu	nort2952	nmu	Northeastern Maidu	Maiduan	North America	875	free	máysem	o:máyse; p:máysek'i	2
-3;Gpl;F+M	windesi	wind1244		Windesi	Austronesian	Papunesia	849	free	sia	p:senne	2
-3;Gpl;M	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free	imaraira	s:imarea; s:maraira; s:marea; s:maria; s:timara; s:timarea; a:imarea; a:maraira; a:marea; a:maria; a:timara; a:timarea; o:-ra; p:-dia	1
+3;Gpl;F+M	teiwa	teiw1235	twe	Teiwa	Timor-Alor-Pantar	Papunesia	210	free	a	s:i; s:i'in; s:iman; a:i; a:i'in; a:iman; o:g(i)-; o:ga-; o:gi'in; o:iman; p:a-; p:g(i)-; p:ga-; p:iman	2
+3;Gpl;F+M	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	arge	p:arganaŋgori	2
+3;Gpl;F+N	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	woni	o:je	2
+3;Gpl;F+N	ngandi	ngan1295	nid	Ngandi	Gunwinyguan	Australia	196	free	bawan	a:bawant̪u; p:-ʔŋut̪ayi	2
+3;Gpl;F+N	usorbian	uppe1395	hsb	Upper Sorbian	Indo-European	Eurasia	74	free	wone	o:je	2
+3;Gpl;M	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	woni	o:jich	1
 3;Gpl;M	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	wi	a:w; o:wia; p:w-; p:wiar; p:wiena	1
-3;Gpl;M+N	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	te	s:tāni; a:tāni; o:tān; o:tāni; p:teṣām	2
-3;Gpl;M+N	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	óne	s:óni; a:óni; o:njȉh; p:njīhov	2
-3;Gpl;M+N	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	aɨwa	p:winkɨ	2
-3;Gpl;N	duna	duna1248	duc	Duna	Duna	Papunesia	191	free	khunu	s:∅; a:∅; o:∅; p:∅	1
-3;Gpl;N	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	wi	s:∅; a:w; a:∅; o:wia; o:∅; p:w-; p:wiar; p:wiena; p:∅	1
-3;Gpl;N	northeasternmaidu	nort2952	nmu	Northeastern Maidu	Maiduan	North America	875	free	máysem	s:mïsém; a:mïsém; o:máyse; o:mïsé; p:máysek'i; p:mïsék'i	1
-3;Gpl;N	windesi	wind1244		Windesi	Austronesian	Papunesia	849	free	si	s:sia; a:sia; o:sia; p:senne	1
-3;Pl	abkhaz	abkh1244	abk	Abkhaz	Abkhaz-Adyge	Eurasia	302	free	darà	p:rtʷʼə	6
-3;Pl	abure	abur1243	abu	Abure	Atlantic-Congo	Africa	579	free	a˧˩mĩ˧˥		6
-3;Pl	achagua	acha1250	aca	Achagua	Arawakan	South America	491	free	naʝa	p:sina-	6
-3;Pl	achterhoeks	acht1238	act	Achterhoeks	Indo-European	Eurasia	801	free	zee	o:zə; p:ir	6
-3;Pl	acoli	acol1236	ach	Acoli	Nilotic	Africa	802	free	gïïn	p:-gï	6
-3;Pl	adamawafulani	adam1253	fub	Adamawa Fulani 	Atlantic-Congo	Africa	909	free	kámɓe	p:máɓɓe	6
+3;Gpl;M	ngandi	ngan1295	nid	Ngandi	Gunwinyguan	Australia	196	free	bawan	a:bawant̪u; p:-ʔburayi	1
+3;Gpl;M	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	te	o:tān; p:teṣām	1
+3;Gpl;M	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	óni	o:njȉh; p:njīhov	1
+3;Gpl;M	tainae	tain1253	ago	Tainae	Angan	Papunesia	171	free	aɨwa	p:winkɨ	1
+3;Gpl;M	usorbian	uppe1395	hsb	Upper Sorbian	Indo-European	Eurasia	74	free	woni	o:jich	1
+3;Gpl;N	biak	biak1248	bhw	Biak	Austronesian	Papunesia	172	free	na	p:nbe=	1
+3;Gpl;N	bunganditj	bung1264	xbg	Bunganditj	Pama-Nyungan	Australia	188	free	ñuŋpa	p:ñuŋpalaat	1
+3;Gpl;N	sanskrit	sans1269	san	Sanskrit	Indo-European	Eurasia	199	free	tāni	p:teṣām	1
+3;Gpl;N	slovene	slov1268	slv	Slovene	Indo-European	Eurasia	71	free	óne	o:njȉh; p:njīhov	1
+3;Gpl;N	teiwa	teiw1235	twe	Teiwa	Timor-Alor-Pantar	Papunesia	210	free	a	s:i; s:i'in; s:iman; s:in; a:i; a:i'in; a:iman; a:in; o:g(i)-; o:ga-; o:gi'in; o:iman; o:in; p:a-; p:g(i)-; p:ga-; p:iman	1
+3;Gpl;N	worrorra	worr1237	wro	Worrorra	Worrorran	Australia	48	free	arge	p:arganaŋgoriñ	1
+3;Pl	abkhaz	abkh1244	abk	Abkhaz	Abkhaz-Adyge	Eurasia	302	free	darà	p:rtʷʼə	2
+3;Pl	abure	abur1243	abu	Abure	Atlantic-Congo	Africa	579	free	a˧˩mĩ˧˥		2
+3;Pl	achagua	acha1250	aca	Achagua	Arawakan	South America	491	free	naʝa	p:sina-	2
+3;Pl	achterhoeks	acht1238	act	Achterhoeks	Indo-European	Eurasia	801	free	zee	o:zə; p:ir	2
+3;Pl	acoli	acol1236	ach	Acoli	Nilotic	Africa	802	free	gïïn	p:-gï	2
+3;Pl	adamawafulani	adam1253	fub	Adamawa Fulani 	Atlantic-Congo	Africa	909	free	kámɓe	p:máɓɓe	2
 3;Pl	adang	adan1251	adn	Adang	Timor-Alor-Pantar	Papunesia	208	free	supi	o:sa-; o:sari; o:supi (aʔri); o:ʔa-; p:sa-; p:se; p:supi ʔe; p:supi ʔɔ; p:sɔ; p:ʔa-	6
-3;Pl	adioukrou	adio1239	adj	Adioukrou	Atlantic-Congo	Africa	569	free	ɛl˩	o:-ɛl	6
+3;Pl	adioukrou	adio1239	adj	Adioukrou	Atlantic-Congo	Africa	569	free	ɛl˩	o:-ɛl	2
 3;Pl	adzera	adze1240	adz	Adzera	Austronesian	Papunesia	803	free	rib aga	s:rib idzun; s:rib igi; a:rib idzun; a:rib igi; o:rib idzun; o:rib igi; p:gan	6
-3;Pl	afrikaans	afri1274	afr	Afrikaans	Indo-European	Africa	877	free	hulle	p:hul; p:hulle s'n	6
-3;Pl	aghu	aghu1255	ahh	Aghu	Nuclear Trans New Guinea	Papunesia	360	free	yoxo		6
-3;Pl	aguaruna	agua1253	agr	Aguaruna	Chicham	South America	804	free	dita	o:ditana; p:ditana	6
-3;Pl	ahom	ahom1240	aho	Ahom	Tai-Kadai	Eurasia	805	free	khao		6
-3;Pl	ainu	sakh1245		Ainu	Ainu	Eurasia	807	free	ular		6
-3;Pl	aiton	aito1238	aio	Aiton	Tai-Kadai	Eurasia	808	free	khau¹		6
-3;Pl	aja	ajab1235	ajg	Aja	Atlantic-Congo	Africa	565	free	wé	p:òwó	6
-3;Pl	akabea	akab1249	abj	Aka Bea	Great Andamanese	Eurasia	889	free	oloi-chik	p:etat	6
-3;Pl	akakol	akak1253	aky	Aka Kol	Great Andamanese	Eurasia	856	free	la-ng'uwe'l	p:k'-; p:niyiche	6
-3;Pl	akan	akan1250	aka	Akan	Atlantic-Congo	Africa	576	free	wɔ́ŋ	o:wɔ̀ŋ	6
-3;Pl	akebu	akeb1238	keu	Akebu	Atlantic-Congo	Africa	567	free	plə	o:bə	6
-3;Pl	aklanon	akla1240	akl	Aklanon	Austronesian	Papunesia	873	free	Ɂanda		6
-3;Pl	akpes	akpe1248	ibe	Akpes	Atlantic-Congo	Africa	618	free	bàá	s:bèé; s:bòó; a:bèé; a:bòó; o:bā; o:bō; p:èjóbō	6
-3;Pl	albanian	alba1267	sqi	Albanian	Indo-European	Eurasia	884	free	ata	p:i tyre	6
-3;Pl	alekano	alek1238	gah	Alekano	Nuclear Trans New Guinea	Papunesia	373	free	ke-za	o:ke-iʔ; p:ke-iʔ	6
-3;Pl	alladian	alla1248	ald	Alladian	Atlantic-Congo	Africa	571	free	je˧	o:jɔ˩; p:jo˧	6
-3;Pl	amarasi	amar1273	aaz	Amarasi	Austronesian	Papunesia	93	free	sin	o:=sin	6
-3;Pl	amharic	amha1245	amh	Amharic	Afro-Asiatic	Africa	404	free	ɨnnɨssu	o:ɨnnɨssun; p:jənnɨssu	6
+3;Pl	afrikaans	afri1274	afr	Afrikaans	Indo-European	Africa	877	free	hulle	p:hul; p:hulle s'n	2
+3;Pl	aghu	aghu1255	ahh	Aghu	Nuclear Trans New Guinea	Papunesia	360	free	yoxo		2
+3;Pl	aguaruna	agua1253	agr	Aguaruna	Chicham	South America	804	free	dita	o:ditana; p:ditana	2
+3;Pl	ahom	ahom1240	aho	Ahom	Tai-Kadai	Eurasia	805	free	khao		2
+3;Pl	ainu	sakh1245		Ainu	Ainu	Eurasia	807	free	ular		2
+3;Pl	aiton	aito1238	aio	Aiton	Tai-Kadai	Eurasia	808	free	khau¹		2
+3;Pl	aja	ajab1235	ajg	Aja	Atlantic-Congo	Africa	565	free	wé	p:òwó	2
+3;Pl	akabea	akab1249	abj	Aka Bea	Great Andamanese	Eurasia	889	free	oloi-chik	p:etat	2
+3;Pl	akakol	akak1253	aky	Aka Kol	Great Andamanese	Eurasia	856	free	la-ng'uwe'l	p:k'-; p:niyiche	2
+3;Pl	akan	akan1250	aka	Akan	Atlantic-Congo	Africa	576	free	wɔ́ŋ	o:wɔ̀ŋ	2
+3;Pl	akebu	akeb1238	keu	Akebu	Atlantic-Congo	Africa	567	free	plə	o:bə	2
+3;Pl	aklanon	akla1240	akl	Aklanon	Austronesian	Papunesia	873	free	Ɂanda		2
+3;Pl	akpes	akpe1248	ibe	Akpes	Atlantic-Congo	Africa	618	free	bàá	s:bèé; s:bòó; a:bèé; a:bòó; o:bā; o:bō; p:èjóbō	2
+3;Pl	albanian	alba1267	sqi	Albanian	Indo-European	Eurasia	884	free	ata	p:i tyre	2
+3;Pl	alekano	alek1238	gah	Alekano	Nuclear Trans New Guinea	Papunesia	373	free	ke-za	o:ke-iʔ; p:ke-iʔ	2
+3;Pl	alladian	alla1248	ald	Alladian	Atlantic-Congo	Africa	571	free	je˧	o:jɔ˩; p:jo˧	2
+3;Pl	amarasi	amar1273	aaz	Amarasi	Austronesian	Papunesia	93	free	sin		6
+3;Pl	amharic	amha1245	amh	Amharic	Afro-Asiatic	Africa	404	free	ɨnnɨssu	o:ɨnnɨssun; p:jənnɨssu	2
 3;Pl	amis	amis1246	ami	Amis	Austronesian	Papunesia	164	free	caŋra	a:naŋra; o:caŋraan; p:naŋra	6
-3;Pl	angkamuthi	angg1238	avm	Angkamuthi	Pama-Nyungan	Australia	120	free	ula	s:ulaβa; a:ulaβa; o:ulaːn̪a; o:ulān̪a; p:ulaːmu; p:ulāmu	6
-3;Pl	angolar	ango1258	aoa	Angolar	Indo-European	Africa	289	free	anɛ	s:enɛ; a:enɛ; o:enɛ	6
-3;Pl	arammba_setavi	aram1253	stk	Arammba	Yam	Papunesia	641	free	bi	a:bɛnɛ; p:naβani	6
-3;Pl	arbore	arbo1245	arv	Arbore	Afro-Asiatic	Africa	321	free	ʔóso	o:ʔosó; p:-áso	6
-3;Pl	arhuaco	arhu1242	arh	Arhuaco	Chibchan	South America	472	free	iknəʔ		6
-3;Pl	aroplokep_b	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	390	bound	ti-	p:-di	6
-3;Pl	assamese	assa1263	asm	Assamese	Indo-European	Eurasia	812	free	iɦɒ̃t		6
-3;Pl	asueawyu	asue1235	psa	Asue Awyu	Nuclear Trans New Guinea	Papunesia	361	free	yoxo	p:yoxona-	6
-3;Pl	atampaya	atam1239	amz	Atampaya	Pama-Nyungan	Australia	119	free	ula	s:ulaβa; a:ulaβa; o:ulan̪a; o:ulaŋan̪a; p:ulaŋamu	6
+3;Pl	angkamuthi	angg1238	avm	Angkamuthi	Pama-Nyungan	Australia	120	free	ula	o:ulān̪a; p:ulāmu	6
+3;Pl	angolar	ango1258	aoa	Angolar	Indo-European	Africa	289	free	anɛ	s:enɛ; a:enɛ; o:enɛ	2
+3;Pl	arammba_setavi	aram1253	stk	Arammba	Yam	Papunesia	641	free	bi	a:bɛnɛ; p:naβani	2
+3;Pl	arbore	arbo1245	arv	Arbore	Afro-Asiatic	Africa	321	free	ʔóso	o:ʔosó; p:-áso	2
+3;Pl	arhuaco	arhu1242	arh	Arhuaco	Chibchan	South America	472	free	iknəʔ		2
+3;Pl	aroplokep_b	arop1243	apr	Arop-Lokep	Austronesian	Papunesia	390	bound	ti-	p:-di	2
+3;Pl	assamese	assa1263	asm	Assamese	Indo-European	Eurasia	812	free	iɦɒ̃t		2
+3;Pl	asueawyu	asue1235	psa	Asue Awyu	Nuclear Trans New Guinea	Papunesia	361	free	yoxo	p:yoxona-	2
+3;Pl	atampaya	atam1239	amz	Atampaya	Pama-Nyungan	Australia	119	free	ula	o:ulan̪a; p:ulaŋamu	6
 3;Pl	atayal	atay1247	tay	Atayal	Austronesian	Papunesia	159	free	hgaʔ	s:lhgaʔ; a:lhgaʔ; o:hgan; p:ṋaʔ	6
-3;Pl	attie	atti1239	ati	Attié	Atlantic-Congo	Africa	570	free	ba˩	o:ba˥; p:ba˥	6
-3;Pl	awa	awap1236	awb	Awa	Nuclear Trans New Guinea	Papunesia	368	free	se	o:i-; p:si-	6
-3;Pl	awacuaiquer	awac1239	kwi	Awa-Cuaiquer	Barbacoan	South America	482	free	uspa	p:usparuza	6
-3;Pl	bagasitemu	baga1272	bsp	Baga Sitemu	Atlantic-Congo	Africa	542	free	ŋa		6
-3;Pl	bakwe	bakw1243	bjw	Bakwé	Kru	Africa	580	free	ü˥		6
-3;Pl	balantakentohe	bala1301	ble	Balanta-Kentohe	Atlantic-Congo	Africa	538	free	báa	o:baʔ; p:baan	6
-3;Pl	balawaandamanese	akar1243	acl	Balawa Andamanese	Great Andamanese	Eurasia	865	free	olo'chit	p:atat; p:k'-	6
-3;Pl	bandandele	band1345	bfl	Banda-Ndélé	Atlantic-Congo	Africa	581	free	ə˩nje˧		6
-3;Pl	banhum	bain1259	bab	Banhum	Atlantic-Congo	Africa	550	free	imerəŋ	s:neentəŋ; a:neentəŋ; o:eenəŋ; p:heentəŋ	6
-3;Pl	bannoni	bann1247	bcm	Bannoni	Austronesian	Papunesia	427	free	nari	o:-ria; p:-ri	6
-3;Pl	bantawa	bant1281	bap	Bantawa	Sino-Tibetan	Eurasia	293	free	kʰoci	p:ɨcuʔo	6
-3;Pl	bare	bare1276	bae	Baré	Arawakan	South America	498	free	kuhuni	s:meni; a:meni; o:meni; p:me-	6
-3;Pl	bari	bari1297	mot	Bari	Chibchan	South America	519	free	obãyji		6
-3;Pl	bariba	baat1238	bba	Bariba	Atlantic-Congo	Africa	610	free	yi˦	o:yi˩; p:yi˥	6
-3;Pl	basque	basq1248	eus	Basque	Basque	Eurasia	304	free	hauek	p:beren	6
-3;Pl	bekwarra	bekw1241	bkv	Bekwarra	Atlantic-Congo	Africa	630	free	abe	s:àhe; a:àhe; p:íbere	6
+3;Pl	attie	atti1239	ati	Attié	Atlantic-Congo	Africa	570	free	ba˩	o:ba˥; p:ba˥	2
+3;Pl	awa	awap1236	awb	Awa	Nuclear Trans New Guinea	Papunesia	368	free	se	o:i-; p:si-	2
+3;Pl	awacuaiquer	awac1239	kwi	Awa-Cuaiquer	Barbacoan	South America	482	free	uspa	p:usparuza	2
+3;Pl	bagasitemu	baga1272	bsp	Baga Sitemu	Atlantic-Congo	Africa	542	free	ŋa		2
+3;Pl	bakwe	bakw1243	bjw	Bakwé	Kru	Africa	580	free	ü˥		2
+3;Pl	balantakentohe	bala1301	ble	Balanta-Kentohe	Atlantic-Congo	Africa	538	free	báa	o:baʔ; p:baan	2
+3;Pl	balawaandamanese	akar1243	acl	Balawa Andamanese	Great Andamanese	Eurasia	865	free	olo'chit	p:atat; p:k'-	2
+3;Pl	bandandele	band1345	bfl	Banda-Ndélé	Atlantic-Congo	Africa	581	free	ə˩nje˧		2
+3;Pl	banhum	bain1259	bab	Banhum	Atlantic-Congo	Africa	550	free	imerəŋ	s:neentəŋ; a:neentəŋ; o:eenəŋ; p:heentəŋ	2
+3;Pl	bannoni	bann1247	bcm	Bannoni	Austronesian	Papunesia	427	free	nari	o:-ria; p:-ri	2
+3;Pl	bantawa	bant1281	bap	Bantawa	Sino-Tibetan	Eurasia	293	free	kʰoci	p:ɨcuʔo	2
+3;Pl	bare	bare1276	bae	Baré	Arawakan	South America	498	free	kuhuni	s:meni; a:meni; o:meni; p:me-	2
+3;Pl	bari	bari1297	mot	Bari	Chibchan	South America	519	free	obãyji		2
+3;Pl	bariba	baat1238	bba	Bariba	Atlantic-Congo	Africa	610	free	yi˦	o:yi˩; p:yi˥	2
+3;Pl	basque	basq1248	eus	Basque	Basque	Eurasia	304	free	hauek	p:beren	2
+3;Pl	bekwarra	bekw1241	bkv	Bekwarra	Atlantic-Congo	Africa	630	free	abe	s:àhe; a:àhe; p:íbere	2
 3;Pl	belorussian	bela1254	bel	Belorussian	Indo-European	Eurasia	78	free	jaɲ̍	o:ix; p:ix	6
-3;Pl	berbicedutchcreole	berb1259	brc	Berbice Dutch Creole	Indo-European	South America	418	free	eni		6
-3;Pl	betebendi	bete1262	btt	Bete-Bendi	Atlantic-Congo	Africa	631	free	bèfə́l	o:ábə́h; p:kíbə̀l	6
-3;Pl	biafada	biaf1240	bif	Biafada	Atlantic-Congo	Africa	551	free	nimmæ	p:-eemmæ; p:-ənmæ	6
-3;Pl	biga	biga1238	bhc	Biga	Austronesian	Papunesia	868	free	abana	p:-un(-o)	6
-3;Pl	bignambas	bign1238	nmb	Big Nambas	Austronesian	Papunesia	435	free	ɣir	o:-r; p:-r	6
-3;Pl	bijago	bidy1244	bjg	Bijago	Atlantic-Congo	Africa	539	free	yag	p:-yag	6
-3;Pl	bikol	biko1240		Bikol	Austronesian		816	free	sinda	o:saqinda; p:ninda	6
-3;Pl	bojigyabandamese	akab1249	abj	Bojigyab Andamese	Great Andamanese	Eurasia	886	free	n'u-le	p:n'-; p:niyeda	6
-3;Pl	boruca	boru1252	brn	Boruca	Chibchan	North America	473	free	iʔ roh		6
-3;Pl	brahui	brah1256	brh	Brahui	Dravidian	Eurasia	320	free	daːfk	o:daːfte; p:daːftaː	6
-3;Pl	bribri	brib1243	bzd	Bribri	Chibchan	North America	470	free	ieʔpa	a:ieʔpa=rʊ; a:irirdak	6
-3;Pl	buamu	buam1238	box	Buamu	Atlantic-Congo	Africa	594	free	ye˩	o:nɛ̃˥; o:nɛ̃˩; p:nɛ̃˩ ta˥; p:ye˩ ta˥	6
+3;Pl	berbicedutchcreole	berb1259	brc	Berbice Dutch Creole	Indo-European	South America	418	free	eni		2
+3;Pl	betebendi	bete1262	btt	Bete-Bendi	Atlantic-Congo	Africa	631	free	bèfə́l	o:ábə́h; p:kíbə̀l	2
+3;Pl	biafada	biaf1240	bif	Biafada	Atlantic-Congo	Africa	551	free	nimmæ	p:-eemmæ; p:-ənmæ	2
+3;Pl	biga	biga1238	bhc	Biga	Austronesian	Papunesia	868	free	abana	p:-un(-o)	2
+3;Pl	bignambas	bign1238	nmb	Big Nambas	Austronesian	Papunesia	435	free	ɣir	o:-r; p:-r	2
+3;Pl	bijago	bidy1244	bjg	Bijago	Atlantic-Congo	Africa	539	free	yag	p:-yag	2
+3;Pl	bikol	biko1240		Bikol	Austronesian		816	free	sinda	o:saqinda; p:ninda	2
+3;Pl	bojigyabandamese	akab1249	abj	Bojigyab Andamese	Great Andamanese	Eurasia	886	free	n'u-le	p:n'-; p:niyeda	2
+3;Pl	boruca	boru1252	brn	Boruca	Chibchan	North America	473	free	iʔ roh		2
+3;Pl	brahui	brah1256	brh	Brahui	Dravidian	Eurasia	320	free	daːfk	o:daːfte; p:daːftaː	2
+3;Pl	bribri	brib1243	bzd	Bribri	Chibchan	North America	470	free	ieʔpa	a:ieʔpa=rʊ; a:irirdak	2
+3;Pl	buamu	buam1238	box	Buamu	Atlantic-Congo	Africa	594	free	ye˩	o:nɛ̃˥; o:nɛ̃˩; p:nɛ̃˩ ta˥; p:ye˩ ta˥	2
 3;Pl	bulgarian	bulg1262	bul	Bulgarian	Indo-European	Eurasia	68	free	te	o:tjax; p:texen	6
-3;Pl	buli	buli1256		Buli	Austronesian	Papunesia	819	free	si	s:sil; s:sile; a:sil; a:sile; o:sili; p:si- -mam; p:sile- -mam	6
-3;Pl	bullomso	bull1247	buy	Bullom So 	Atlantic-Congo	Africa	906	free	ŋà		6
+3;Pl	buli	buli1256		Buli	Austronesian	Papunesia	819	free	si	s:sil; s:sile; a:sil; a:sile; o:sili; p:si- -mam; p:sile- -mam	2
+3;Pl	bullomso	bull1247	buy	Bullom So 	Atlantic-Congo	Africa	906	free	ŋà		2
 3;Pl	bunun	bunu1267	bnn	Bunun	Austronesian	Papunesia	160	free	inti		6
-3;Pl	burmeso	burm1264	bzu	Burmeso	Burmeso	Papunesia	221	free		p:te	6
-3;Pl	bwaidoga	bwai1243		Bwaidoga	Austronesian	Papunesia	883	free	badiavo	p:yadi	6
-3;Pl	cabecar	cabe1245	cjp	Cabecar	Chibchan	North America	471	free	hiéwá	a:hiéwá=tɪ	6
-3;Pl	cabiyari	cabi1241	cbb	Cabiyarí	Arawakan	South America	526	free	nʰé	p:na-	6
-3;Pl	cantonese	yuec1235	yue	Cantonese	Sino-Tibetan	Eurasia	638	free	kéuihdeih	s:kɵi˩˧dei˧; a:kɵi˩˧dei˧; o:kɵi˩˧dei˧; p:kɵi˩˧dei˧	6
-3;Pl	carijona	cari1279	cbd	Carijona	Cariban	South America	481	free	məkamoro	p:i-; p:tɨ-	6
-3;Pl	cassanga	kasa1248	ccj	Cassanga	Atlantic-Congo	Africa	548	free	naana	o:naa; p:daamee	6
-3;Pl	cassubian	kash1274	csb	Cassubian	Indo-European	Eurasia	77	free	oni	s:onë; a:onë; o:je; o:jich; p:jich	6
-3;Pl	cebuano	cebu1242	ceb	Cebuano	Austronesian	Papunesia	182	free	sila	a:niila; o:niila; p:niila; p:ʔiila	6
+3;Pl	burmeso	burm1264	bzu	Burmeso	Burmeso	Papunesia	221	free		p:te	2
+3;Pl	bwaidoga	bwai1243		Bwaidoga	Austronesian	Papunesia	883	free	badiavo	p:yadi	2
+3;Pl	cabecar	cabe1245	cjp	Cabecar	Chibchan	North America	471	free	hiéwá	a:hiéwá=tɪ	2
+3;Pl	cabiyari	cabi1241	cbb	Cabiyarí	Arawakan	South America	526	free	nʰé	p:na-	2
+3;Pl	cantonese	yuec1235	yue	Cantonese	Sino-Tibetan	Eurasia	638	free	kéuihdeih	s:kɵi˩˧dei˧; a:kɵi˩˧dei˧; o:kɵi˩˧dei˧; p:kɵi˩˧dei˧	2
+3;Pl	carijona	cari1279	cbd	Carijona	Cariban	South America	481	free	məkamoro	p:i-; p:tɨ-	2
+3;Pl	cassanga	kasa1248	ccj	Cassanga	Atlantic-Congo	Africa	548	free	naana	o:naa; p:daamee	2
+3;Pl	cebuano	cebu1242	ceb	Cebuano	Austronesian	Papunesia	182	free	sila	a:niila; o:niila; p:niila	6
 3;Pl	centralsierramiwok	cent2140	csm	Central Sierra Miwok	Miwok-Costanoan	North America	823	free	ʔís·ak-ko·	o:ʔís·ak-ko·-y; p:ʔís·ak-ko·-ŋ	6
-3;Pl	chachi	chac1249	cbi	Chachi	Barbacoan	South America	517	free	yaila	p:yailaʔ	6
-3;Pl	chadarabic	chad1249	shu	Chadian Spoken Arabic 	Afro-Asiatic	Africa	284	free	humma	o:-hum; p:-hum	6
+3;Pl	chachi	chac1249	cbi	Chachi	Barbacoan	South America	517	free	yaila	p:yailaʔ	2
+3;Pl	chadarabic	chad1249	shu	Chadian Spoken Arabic 	Afro-Asiatic	Africa	284	free	humma	o:-hum; p:-hum	2
 3;Pl	chamorro	cham1312	cha	Chamorro	Austronesian	Papunesia	113	free	siha	a:ma; p:-ñiha	6
-3;Pl	chichewa	nyan1308	nya	Chichewa	Atlantic-Congo	Africa	447	free	iwo		6
-3;Pl	chrau	chra1242	crw	Chrau	Austroasiatic	Eurasia	824	free	khaněh		6
-3;Pl	classicalarmenian	clas1249	xcl	Classical Armenian	Indo-European	Eurasia	863	free	nokca	o:z-nosa; p:nocca	6
-3;Pl	cobiana	kobi1241	kcj	Cobiana	Atlantic-Congo	Africa	549	free	naan	o:naa	6
-3;Pl	cogui	cogu1240	kog	Cogui	Chibchan	South America	495	free	kauiʒi	p:ka'uihi	6
-3;Pl	colljakartan	indo1316	ind	Indonesian	Austronesian	Papunesia	396	free	mereka		6
-3;Pl	cora_icrkq	elna1235	crn	Cora	Uto-Aztecan	North America	659	free	mamɨhna		6
-3;Pl	cora_icrlb	elna1235	crn	Cora	Uto-Aztecan	North America	691	free	mamɨhna	o:amɨme(h); p:amɨme(h)	6
-3;Pl	cora_icrne	elna1235	crn	Cora	Uto-Aztecan	North America	669	free	mamɨhna		6
-3;Pl	cora_icrtcc	elna1235	crn	Cora	Uto-Aztecan	North America	660	free	aɨmeh	a:aɨ	6
-3;Pl	cora_icrwb	elna1235	crn	Cora	Uto-Aztecan	North America	655	free	maihna	s:mamɨhna; s:maɨhna; s:mu; s:mu'u; a:mamɨhna; a:maɨhna; a:mu; a:mu'u; o:aime(h); o:amɨme(h); o:aɨme(h); o:mamɨhna; o:maɨhna; p:aime(h); p:amɨme(h); p:aɨme(h); p:mamɨhna; p:maɨhna	6
-3;Pl	crow	crow1244	cro	Crow	Siouan	North America	342	free	íilu	s:∅-; a:∅-; o:∅-; p:is-	6
-3;Pl	cubeo_chacon	cube1242	cub	Cubeo	Tucanoan	South America	477	free	dã	p:dẽ	6
-3;Pl	cubeo_morseandmaxwell	cube1242	cub	Cubeo	Tucanoan	South America	429	free	dã	o:dãre; p:dẽ	6
-3;Pl	cupeno_icromn	cupe1243	cup	Cupeño	Uto-Aztecan	North America	338	free	pəm		6
-3;Pl	cupeno_icrrh	cupe1243	cup	Cupeño	Uto-Aztecan	North America	462	free	pəm		6
-3;Pl	curripaco	curr1243	kpc	Curripaco	Arawakan	South America	492	free	nɑ́ɑ	p:i-; p:nɑ-; p:pɑ-	6
-3;Pl	cypriotarabic	cypr1248	acy	Cypriot Arabic	Afro-Asiatic	Eurasia	885	free	innen	o:-on; o:-xon; p:-on; p:-xon	6
+3;Pl	chichewa	nyan1308	nya	Chichewa	Atlantic-Congo	Africa	447	free	iwo		2
+3;Pl	chrau	chra1242	crw	Chrau	Austroasiatic	Eurasia	824	free	khaněh		2
+3;Pl	classicalarmenian	clas1249	xcl	Classical Armenian	Indo-European	Eurasia	863	free	nokca	o:z-nosa; p:nocca	2
+3;Pl	cobiana	kobi1241	kcj	Cobiana	Atlantic-Congo	Africa	549	free	naan	o:naa	2
+3;Pl	cogui	cogu1240	kog	Cogui	Chibchan	South America	495	free	kauiʒi	p:ka'uihi	2
+3;Pl	colljakartan	indo1316	ind	Indonesian	Austronesian	Papunesia	396	free	mereka		2
+3;Pl	cora_icrkq	elna1235	crn	Cora	Uto-Aztecan	North America	659	free	mamɨhna		2
+3;Pl	cora_icrlb	elna1235	crn	Cora	Uto-Aztecan	North America	691	free	mamɨhna	o:amɨme(h); p:amɨme(h)	2
+3;Pl	cora_icrne	elna1235	crn	Cora	Uto-Aztecan	North America	669	free	mamɨhna		2
+3;Pl	cora_icrtcc	elna1235	crn	Cora	Uto-Aztecan	North America	660	free	aɨmeh	a:aɨ	2
+3;Pl	cora_icrwb	elna1235	crn	Cora	Uto-Aztecan	North America	655	free	maihna	s:mamɨhna; s:maɨhna; s:mu; s:mu'u; a:mamɨhna; a:maɨhna; a:mu; a:mu'u; o:aime(h); o:amɨme(h); o:aɨme(h); o:mamɨhna; o:maɨhna; p:aime(h); p:amɨme(h); p:aɨme(h); p:mamɨhna; p:maɨhna	2
+3;Pl	crow	crow1244	cro	Crow	Siouan	North America	342	free	íilu	s:∅-; a:∅-; o:∅-; p:is-	2
+3;Pl	cubeo_chacon	cube1242	cub	Cubeo	Tucanoan	South America	477	free	dã	p:dẽ	2
+3;Pl	cubeo_morseandmaxwell	cube1242	cub	Cubeo	Tucanoan	South America	429	free	dã	o:dãre; p:dẽ	2
+3;Pl	cupeno_icromn	cupe1243	cup	Cupeño	Uto-Aztecan	North America	338	free	pəm		2
+3;Pl	cupeno_icrrh	cupe1243	cup	Cupeño	Uto-Aztecan	North America	462	free	pəm		2
+3;Pl	curripaco	curr1243	kpc	Curripaco	Arawakan	South America	492	free	nɑ́ɑ	p:i-; p:nɑ-; p:pɑ-	2
+3;Pl	cypriotarabic	cypr1248	acy	Cypriot Arabic	Afro-Asiatic	Eurasia	885	free	innen	o:-on; o:-xon; p:-on; p:-xon	2
 3;Pl	czech	czec1258	ces	Czech	Indo-European	Eurasia	72	free	oni	o:je; p:jejich	6
 3;Pl	dagur	daur1238	dta	Dagur	Mongolic-Khitan	Eurasia	825	free	ʔís·ak-ko·	o:ʔís·ak-ko·-y; p:ʔís·ak-ko·-ŋ	6
-3;Pl	daloabete	dalo1238	bev	Daloa Bété	Kru	Africa	561	free	wa˦		6
+3;Pl	daloabete	dalo1238	bev	Daloa Bété	Kru	Africa	561	free	wa˦		2
 3;Pl	danish	dani1285	dan	Danish	Indo-European	Eurasia	95	free	de	o:dem; p:deres	6
-3;Pl	dargwa_icari	darg1241	dar	Dargwa	Nakh-Daghestanian	Eurasia	287	free	it̄i	a:it̄alli; p:it̄alla	6
-3;Pl	darkhat	dark1243	drh	Darkhat	Mongolic-Khitan	Eurasia	826	free	edĕ	s:edĕ nĕr; a:edĕ nĕr; o:ednīg; o:edĕ nĕrīg; p:-(ńĭ)	6
-3;Pl	daw	daww1239	kwa	Dâw	Naduhup	South America	505	free	hid		6
-3;Pl	denya	deny1238	anv	Denya	Atlantic-Congo	Africa	627	free	ɛ̀bwɔ́	p:bwɔ́; p:àwùbwɔ́	6
-3;Pl	dii_mambe	diii1241	dur	Dii	Atlantic-Congo	Africa	588	free	vʊ	p:vòò	6
-3;Pl	dogonjamsay	jams1239	djm	Dogon, Jamsay	Dogon	Africa	593	free	bè	o:bé; p:bé	6
-3;Pl	dogontommoso	tomm1242	dto	Dogon, Tommo So	Dogon	Africa	450	free	bé	o:béɲ̀; p:bémɛ	6
-3;Pl	dongxiang	dong1285	sce	Dongxiang	Mongolic-Khitan	Eurasia	827	free	həlɑ	s:tərəsilɑ; a:tərəsilɑ; o:həlɑni; p:=həlɑni	6
-3;Pl	dre	dree1234		Dre	Yam	Papunesia	646	free	be	a:yǝbem; p:yǝbene	6
+3;Pl	dargwa_icari	darg1241	dar	Dargwa	Nakh-Daghestanian	Eurasia	287	free	it̄i	a:it̄alli; p:it̄alla	2
+3;Pl	darkhat	dark1243	drh	Darkhat	Mongolic-Khitan	Eurasia	826	free	edĕ	s:edĕ nĕr; a:edĕ nĕr; o:ednīg; o:edĕ nĕrīg; p:-(ńĭ)	2
+3;Pl	daw	daww1239	kwa	Dâw	Naduhup	South America	505	free	hid		2
+3;Pl	denya	deny1238	anv	Denya	Atlantic-Congo	Africa	627	free	ɛ̀bwɔ́	p:bwɔ́; p:àwùbwɔ́	2
+3;Pl	dii_mambe	diii1241	dur	Dii	Atlantic-Congo	Africa	588	free	vʊ	p:vòò	2
+3;Pl	dogonjamsay	jams1239	djm	Dogon, Jamsay	Dogon	Africa	593	free	bè	o:bé; p:bé	2
+3;Pl	dogontommoso	tomm1242	dto	Dogon, Tommo So	Dogon	Africa	450	free	bé	o:béɲ̀; p:bémɛ	2
+3;Pl	dongxiang	dong1285	sce	Dongxiang	Mongolic-Khitan	Eurasia	827	free	həlɑ	s:tərəsilɑ; a:tərəsilɑ; o:həlɑni; p:=həlɑni	2
+3;Pl	dre	dree1234		Dre	Yam	Papunesia	646	free	be	a:yǝbem; p:yǝbene	2
 3;Pl	dutch	dutc1256	nld	Dutch	Indo-European	Eurasia	34	free	zij	o:hun; p:hun	6
-3;Pl	dzongkha	dzon1239	dzo	Dzongkha	Sino-Tibetan	Eurasia	275	free	khong	a:khonggi; p:khonggi	3
-3;Pl	ederaawyu	eder1237	awy	Edera Awyu	Nuclear Trans New Guinea	Papunesia	362	free	yoxo	p:yaxa-	6
-3;Pl	ega	egaa1242	ega	Ega	Atlantic-Congo	Africa	563	free	mu˧	o:me˥; p:m˥-	6
-3;Pl	egyptianspokenarabic	egyp1253	arz	Egyptian Spoken Arabic	Afro-Asiatic	Africa	296	free	humːa	p:bituːʕhum	6
-3;Pl	ejagham	ejag1239	etu	Ejagham	Atlantic-Congo	Africa	625	free	a˥bɔ˧˩		6
-3;Pl	ekegusii	gusi1247	guz	Ekegusii 	Atlantic-Congo	Africa	905	free	βaraβuo	p:oβɔ	6
-3;Pl	emberabaudo	embe1259	bdc	Emberá-Baudó	Chocoan	South America	500	free	ãči		6
-3;Pl	emberacatio	embe1260	cto	Embera-Catío	Chocoan	South America	502	free	ãǰi		6
-3;Pl	emberachami	embe1262	cmi	Embera-Chamí	Chocoan	South America	501	free	ãči		6
-3;Pl	ende	ende1235		Ende	Pahoturi	Papunesia	286	free	ubi	o:ubim; p:oba	6
-3;Pl	engenni	enge1239	enn	Engenni	Atlantic-Congo	Africa	559	free	èguà	s:ì; a:ì	6
+3;Pl	dzongkha	dzon1239	dzo	Dzongkha	Sino-Tibetan	Eurasia	275	free	khong	a:khonggi; p:khonggi	1
+3;Pl	ederaawyu	eder1237	awy	Edera Awyu	Nuclear Trans New Guinea	Papunesia	362	free	yoxo	p:yaxa-	2
+3;Pl	ega	egaa1242	ega	Ega	Atlantic-Congo	Africa	563	free	mu˧	o:me˥; p:m˥-	2
+3;Pl	egyptianspokenarabic	egyp1253	arz	Egyptian Spoken Arabic	Afro-Asiatic	Africa	296	free	humːa	p:bituːʕhum	2
+3;Pl	ejagham	ejag1239	etu	Ejagham	Atlantic-Congo	Africa	625	free	a˥bɔ˧˩		2
+3;Pl	ekegusii	gusi1247	guz	Ekegusii 	Atlantic-Congo	Africa	905	free	βaraβuo	p:oβɔ	2
+3;Pl	emberabaudo	embe1259	bdc	Emberá-Baudó	Chocoan	South America	500	free	ãči		2
+3;Pl	emberacatio	embe1260	cto	Embera-Catío	Chocoan	South America	502	free	ãǰi		2
+3;Pl	emberachami	embe1262	cmi	Embera-Chamí	Chocoan	South America	501	free	ãči		2
+3;Pl	ende	ende1235		Ende	Pahoturi	Papunesia	286	free	ubi	o:ubim; p:oba	2
+3;Pl	engenni	enge1239	enn	Engenni	Atlantic-Congo	Africa	559	free	èguà	s:ì; a:ì	2
 3;Pl	enggano	engg1245	eno	Enggano	Austronesian	Papunesia	81	free	ki	p:-dia	6
-3;Pl	english	stan1293	eng	English	Indo-European	Eurasia	237	free	ðɛj	o:ðɛm; p:ðɛ:	6
-3;Pl	epena	epen1239	sja	Epena	Chocoan	South America	499	free	ãči		6
-3;Pl	esan	esan1238	ish	Esan	Atlantic-Congo	Africa	619	free	e˩	o:-le; p:-le	6
-3;Pl	ewe	ewee1241	ewe	Ewe	Atlantic-Congo	Africa	564	free	wó	p:woá; p:woáwó	6
-3;Pl	fali	sout2782	fal	Fali	Atlantic-Congo	Africa	591	free	aw	o:-aw; p:waw	6
-3;Pl	farefare	fare1241	gur	Farefare	Atlantic-Congo	Africa	613	free	ba		6
-3;Pl	farsi_tehrani	west2369	pes	Persian (Farsi)	Indo-European	Eurasia	290	free	una		6
-3;Pl	finnish	finn1318	fin	Finnish	Uralic	Eurasia	327	free	ne	o:neidæt; p:hænet	6
-3;Pl	fulfuldemaasina	maas1239	ffm	Fulfulde, Maasina	Atlantic-Congo	Africa	599	free	ɓɛ		6
-3;Pl	ga	gaaa1244	gaa	Ga	Atlantic-Congo	Africa	572	free	amɛ̃˩		6
-3;Pl	gadsup	gads1258	gaj	Gadsup	Nuclear Trans New Guinea	Papunesia	370	free	mayau	s:ye; a:ye; o:yi-; p:yi-	6
-3;Pl	gana	gana1274	gnk	Gana	Khoe-Kwadi	Africa	888	free	hia	s:hisi; s:ia; a:hi; a:si; a:siǃka; o:hisi; o:ia; p:si	6
-3;Pl	gangam	ngan1299	gng	Gangam	Atlantic-Congo	Africa	602	free	bi˩	o:bɛ˩; p:bi˧	6
-3;Pl	gapapaiwa	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	393	free	ti	p:-si	6
-3;Pl	gbayambodomo	gbay1281	gmm	Gbaya-Mbodomo	Atlantic-Congo	Africa	582	free	wa˧˥	p:mua˩	6
-3;Pl	gende	gend1249	gaf	Gende	Nuclear Trans New Guinea	Papunesia	372	free	ya	o:tiniŋ-; p:in-	6
-3;Pl	german	stan1295	deu	German	Indo-European	Eurasia	24	free	siː	s:zi:; a:zi:; o:zi:; p:iːr	6
-3;Pl	gorumparenga	pare1266	pcj	Gorum-Parenga	Austroasiatic	Eurasia	832	free	nongi	o:e-nongi; p:nongi-nu	6
-3;Pl	gourmanchema	gour1243	gux	Gourmanchéma	Atlantic-Congo	Africa	601	free	bi˩	p:bi	6
-3;Pl	greatandanamese	grea1241		Great Andanamese	Great Andamanese		876	free	ɖuna	p:ɖun	6
-3;Pl	greek	mode1248	ell	Greek	Indo-European	Eurasia	431	free	afˈti	o:tus; p:tus	6
-3;Pl	guambiano	guam1248	gum	Guambiano	Barbacoan	South America	528	free	nəm	o:nəmui; p:nəmui	6
-3;Pl	gulfarabic	gulf1241	afb	Gulf Arabic	Afro-Asiatic	Eurasia	307	free	hum	o:-hum; p:maːlhum	6
-3;Pl	gunasanblas	sanb1242	cuk	Guna San Blas	Chibchan	South America	466	free	emala	p:e=	6
-3;Pl	hatam	hata1243	had	Hatam	Hatam-Mansim	Papunesia	255	free	yok	p:ide	6
-3;Pl	hausa	haus1257	hau	Hausa	Afro-Asiatic	Africa	323	free	su	p:-nsù	6
-3;Pl	hieroglyphicluwian	hier1240	hlu	Hieroglyphic Luwian	Indo-European	Eurasia	872	free	abantsi	p:aba-	6
-3;Pl	hixkaryana	hixk1239	hix	Hixkaryána	Cariban	South America	348	free	nyamoro	p:ɨ-	6
-3;Pl	huallagahuanucoquechua	hual1241	qub	Huallaga Huánuco Quechua	Quechuan	South America	438	free	pajkuna	p:-nin	6
-3;Pl	hungarian	hung1274	hun	Hungarian	Uralic	Eurasia	337	free	ők	o:őket; p:-juk	6
-3;Pl	hupde	hupd1244	jup	Hupdë	Naduhup	South America	507	free	hɨ᷆d		6
+3;Pl	english	stan1293	eng	English	Indo-European	Eurasia	237	free	ðɛj	o:ðɛm; p:ðɛ:	2
+3;Pl	epena	epen1239	sja	Epena	Chocoan	South America	499	free	ãči		2
+3;Pl	esan	esan1238	ish	Esan	Atlantic-Congo	Africa	619	free	e˩	o:-le; p:-le	2
+3;Pl	ewe	ewee1241	ewe	Ewe	Atlantic-Congo	Africa	564	free	wó	p:woá; p:woáwó	2
+3;Pl	fali	sout2782	fal	Fali	Atlantic-Congo	Africa	591	free	aw	o:-aw; p:waw	2
+3;Pl	farefare	fare1241	gur	Farefare	Atlantic-Congo	Africa	613	free	ba		2
+3;Pl	farsi_tehrani	west2369	pes	Persian (Farsi)	Indo-European	Eurasia	290	free	una		2
+3;Pl	finnish	finn1318	fin	Finnish	Uralic	Eurasia	327	free	ne	o:neidæt; p:hænet	2
+3;Pl	fulfuldemaasina	maas1239	ffm	Fulfulde, Maasina	Atlantic-Congo	Africa	599	free	ɓɛ		2
+3;Pl	ga	gaaa1244	gaa	Ga	Atlantic-Congo	Africa	572	free	amɛ̃˩		2
+3;Pl	gaagudju	gaga1251	gbu	Gaagudju	Gaagudju	Australia	198	free	nowōmba		6
+3;Pl	gadsup	gads1258	gaj	Gadsup	Nuclear Trans New Guinea	Papunesia	370	free	mayau	s:ye; a:ye; o:yi-; p:yi-	2
+3;Pl	gana	gana1274	gnk	Gana	Khoe-Kwadi	Africa	888	free	hia	s:hisi; s:ia; a:hi; a:si; a:siǃka; o:hisi; o:ia; p:si	2
+3;Pl	gangam	ngan1299	gng	Gangam	Atlantic-Congo	Africa	602	free	bi˩	o:bɛ˩; p:bi˧	2
+3;Pl	gapapaiwa	gapa1238	pwg	Gapapaiwa	Austronesian	Papunesia	393	free	ti	p:-si	2
+3;Pl	gbayambodomo	gbay1281	gmm	Gbaya-Mbodomo	Atlantic-Congo	Africa	582	free	wa˧˥	p:mua˩	2
+3;Pl	gende	gend1249	gaf	Gende	Nuclear Trans New Guinea	Papunesia	372	free	ya	o:tiniŋ-; p:in-	2
+3;Pl	gorumparenga	pare1266	pcj	Gorum-Parenga	Austroasiatic	Eurasia	832	free	nongi	o:e-nongi; p:nongi-nu	2
+3;Pl	gourmanchema	gour1243	gux	Gourmanchéma	Atlantic-Congo	Africa	601	free	bi˩	p:bi	2
+3;Pl	greatandanamese	grea1241		Great Andanamese	Great Andamanese		876	free	ɖuna	p:ɖun	2
+3;Pl	greek	mode1248	ell	Greek	Indo-European	Eurasia	431	free	afˈti	o:tus; p:tus	2
+3;Pl	guambiano	guam1248	gum	Guambiano	Barbacoan	South America	528	free	nəm	o:nəmui; p:nəmui	2
+3;Pl	gulfarabic	gulf1241	afb	Gulf Arabic	Afro-Asiatic	Eurasia	307	free	hum	o:-hum; p:maːlhum	2
+3;Pl	gunasanblas	sanb1242	cuk	Guna San Blas	Chibchan	South America	466	free	emala	p:e=	2
+3;Pl	hatam	hata1243	had	Hatam	Hatam-Mansim	Papunesia	255	free	yok	p:ide	2
+3;Pl	hausa	haus1257	hau	Hausa	Afro-Asiatic	Africa	323	free	su	p:-nsù	2
+3;Pl	hieroglyphicluwian	hier1240	hlu	Hieroglyphic Luwian	Indo-European	Eurasia	872	free	abantsi	p:aba-	2
+3;Pl	hixkaryana	hixk1239	hix	Hixkaryána	Cariban	South America	348	free	nyamoro	p:ɨ-	2
+3;Pl	huallagahuanucoquechua	hual1241	qub	Huallaga Huánuco Quechua	Quechuan	South America	438	free	pajkuna	p:-nin	2
+3;Pl	hungarian	hung1274	hun	Hungarian	Uralic	Eurasia	337	free	ők	o:őket; p:-juk	2
+3;Pl	hupde	hupd1244	jup	Hupdë	Naduhup	South America	507	free	hɨ᷆d		2
 3;Pl	hupdownriver	hupd1244	jup	Hup downriver	Naduhup	South America	835	free	hɨ́d	o:hɨ́d-ǎn; p:hɨdnɨ̌h	6
 3;Pl	hupumarinorte	hupd1244	jup	Hup umari norte	Naduhup	South America	836	free	hɨ́d	o:hɨ́d-ǎn; p:hɨd-nɨ̌h	6
 3;Pl	idaan	idaa1241	dbj	Ida'an	Austronesian	Papunesia	157	free	iro	s:miro; a:miro; o:miro; p:miro	6
 3;Pl	idi	nucl1597		Idi	Pahoturi	Papunesia	8	free	bo	o:ubim; p:oba	6
-3;Pl	igbo	nucl1417	ibo	Igbo	Atlantic-Congo	Africa	536	free	ha		6
-3;Pl	iloko	ilok1237	ilo	Iloko	Austronesian	Papunesia	837	free	kaniáda	a:isúda; p:kukuda	6
-3;Pl	indonesian_standard	indo1316	ind	Indonesian	Austronesian	Papunesia	649	free	mereka		6
-3;Pl	inga	inga1252	inb	Inga	Quechuan	South America	480	free	pajkuna	p:pajpa	6
-3;Pl	ingush	ingu1240	inh	Ingush	Nakh-Daghestanian	Eurasia	281	free	yzh	a:caar; a:caara; p:caar; p:caara	6
-3;Pl	inuktitut	kala1399	kal	Inuktitut	Eskimo-Aleut	North America	343	free	ukua	a:uku; o:uku; p:-at	6
-3;Pl	iraqiarabic	meso1252	acm	Iraqi Arabic	Afro-Asiatic	Eurasia	400	free	humma	o:-hum; p:-hum	6
-3;Pl	iraqw	iraq1241	irk	Iraqw	Afro-Asiatic	Africa	325	free	inooín	p:-ín	6
-3;Pl	italian	ital1282	ita	Italian	Indo-European	Eurasia	26	free	loro	o:le; o:li	6
-3;Pl	itza	itza1241	itz	Itza'	Mayan	North America	365	free	laʔajtiʔooʔ	p:utiʔaʔalooʔ	6
-3;Pl	iwaidja_iwaidja	iwai1244	ibd	Iwaidja	Iwaidjan Proper	Australia	423	free	anat		6
-3;Pl	izere_fobur	izer1241	izr	Izere	Atlantic-Congo	Africa	626	free	bá	o:tá…ba	6
-3;Pl	jad	jadd1243	jda	Jad	Sino-Tibetan	Eurasia	838	free	di-gun-la	s:di-yag-la; a:di-yag-so; a:digun-so; o:di-yag-la; p:di-gun-se; p:di-yag-se	6
-3;Pl	jadgali	jadg1238	jdg	Jadgali	Indo-European	Eurasia	839	free	uhe	s:unhán; a:unhán; o:unhánún; o:unkon; o:wánkon; p:uhándá; p:uhíndá; p:unadá; p:unhadá; p:unhándá; p:uwándá; p:wándá	6
-3;Pl	jamaicancreole	jama1262	jam	Jamaican Creole English	Indo-European	North America	415	free	dɛm	p:fidɛm	6
-3;Pl	jamamadi_jarawara	jama1261	jaa	Jamamadí	Arawan	South America	341	free	mee	o:mera; p:mee kaa	6
-3;Pl	jarai	jara1266	jra	Jarai	Austronesian	Eurasia	456	free	gəɲu		6
-3;Pl	jaunsari	jaun1243	jns	Jaunsari	Indo-European	Eurasia	840	free	soje	o:tiwⁿ; p:tiwⁿka	6
-3;Pl	jolakasa_husuy	jola1262	csk	Jola-Kasa	Atlantic-Congo	Africa	546	free	bukɔ	p:-iil	6
-3;Pl	kaingang	kain1272	kgp	Kaingang	Nuclear-Macro-Je	South America	345	free	ʔɑg		6
-3;Pl	kakiae	kaki1249	tbd	Kaki Ae	Kaki Ae	Papunesia	261	free	erahe	a:erahoro; p:erahevere	6
-3;Pl	kakua	cacu1241	cbv	Kakua	Kakua-Nukak	South America	508	free	-ĩ	s:kèét; a:kèét; o:kèét; p:kèét	6
-3;Pl	kamula	kamu1260	xla	Kamula	Kamula-Elevala	Papunesia	262	free	yi	s:yie; a:yie; o:yie; p:yie	6
-3;Pl	kancha	kunj1246	pep	Kánchá	Yam	Papunesia	643	free	ɸi	a:ʧaɸ; p:ʧaβanme	6
-3;Pl	kannada	nucl1305	kan	Kannada	Dravidian	Eurasia	12	free	avaru	s:avu; a:avu; o:avannu; o:avarannu; p:avara; p:avugaɭa	6
-3;Pl	kaonde	kaon1241	kqn	Kaonde	Atlantic-Congo	Africa	402	free	ba-	o:iba-; p:bo-	6
-3;Pl	karaboroeastern	east2398	xrb	Karaboro, Eastern	Atlantic-Congo	Africa	603	free	pe˧		6
-3;Pl	karon	karo1294	krx	Karon	Atlantic-Congo	Africa	555	free	pakɔ	p:-ee	6
-3;Pl	katcha	katc1250		Katcha	Kadugli-Krongo	Africa	890	free	eːke	p:ené	6
-3;Pl	kawaiisu	kawa1283	xaw	Kawaiisu	Uto-Aztecan	North America	406	free	siʔimɨ	o:siʔimɨa; p:=amɨ	6
-3;Pl	keiga	keig1242	kec	Keiga	Kadugli-Krongo	Africa	891	free	àgì	s:àyì; a:àyì; o:àyì; p:mɛ́	6
-3;Pl	kemedzung	keme1240	dmo	Kemedzung	Atlantic-Congo	Africa	624	free	bɔ˧	p:-u˥bɔ˧	6
-3;Pl	keo_udiworowatu	keoo1238	xxk	Keo	Austronesian	Papunesia	650	free	ʔimukoʔo		6
-3;Pl	ket	kett1243	ket	Ket	Yeniseian	Eurasia	412	free	būŋ	p:búŋna	6
-3;Pl	kilivila	kili1267	kij	Kilivila	Austronesian	Papunesia	842	free	minasina	s:mtosina; a:mtosina; o:-si; p:asi; p:si	6
-3;Pl	kimaghima	kima1246	kig	Kimaghima	Kolopom	Papunesia	354	free	ii	o:ande; p:dii	6
-3;Pl	kiowa	kiow1266	kio	Kiowa	Kiowa-Tanoan	North America	401	free	óídegɔ		6
+3;Pl	igbo	nucl1417	ibo	Igbo	Atlantic-Congo	Africa	536	free	ha		2
+3;Pl	iloko	ilok1237	ilo	Iloko	Austronesian	Papunesia	837	free	kaniáda	a:isúda; p:kukuda	2
+3;Pl	indonesian_standard	indo1316	ind	Indonesian	Austronesian	Papunesia	649	free	mereka		2
+3;Pl	inga	inga1252	inb	Inga	Quechuan	South America	480	free	pajkuna	p:pajpa	2
+3;Pl	ingush	ingu1240	inh	Ingush	Nakh-Daghestanian	Eurasia	281	free	yzh	a:caar; a:caara; p:caar; p:caara	2
+3;Pl	inuktitut	kala1399	kal	Inuktitut	Eskimo-Aleut	North America	343	free	ukua	a:uku; o:uku; p:-at	2
+3;Pl	iraqiarabic	meso1252	acm	Iraqi Arabic	Afro-Asiatic	Eurasia	400	free	humma	o:-hum; p:-hum	2
+3;Pl	iraqw	iraq1241	irk	Iraqw	Afro-Asiatic	Africa	325	free	inooín	p:-ín	2
+3;Pl	itza	itza1241	itz	Itza'	Mayan	North America	365	free	laʔajtiʔooʔ	p:utiʔaʔalooʔ	2
+3;Pl	iwaidja_iwaidja	iwai1244	ibd	Iwaidja	Iwaidjan Proper	Australia	423	free	anat		2
+3;Pl	izere_fobur	izer1241	izr	Izere	Atlantic-Congo	Africa	626	free	bá	o:tá…ba	2
+3;Pl	jad	jadd1243	jda	Jad	Sino-Tibetan	Eurasia	838	free	di-gun-la	s:di-yag-la; a:di-yag-so; a:digun-so; o:di-yag-la; p:di-gun-se; p:di-yag-se	2
+3;Pl	jadgali	jadg1238	jdg	Jadgali	Indo-European	Eurasia	839	free	uhe	s:unhán; a:unhán; o:unhánún; o:unkon; o:wánkon; p:uhándá; p:uhíndá; p:unadá; p:unhadá; p:unhándá; p:uwándá; p:wándá	2
+3;Pl	jamaicancreole	jama1262	jam	Jamaican Creole English	Indo-European	North America	415	free	dɛm	p:fidɛm	2
+3;Pl	jamamadi_jarawara	jama1261	jaa	Jamamadí	Arawan	South America	341	free	mee	o:mera; p:mee kaa	2
+3;Pl	jarai	jara1266	jra	Jarai	Austronesian	Eurasia	456	free	gəɲu		2
+3;Pl	jaunsari	jaun1243	jns	Jaunsari	Indo-European	Eurasia	840	free	soje	o:tiwⁿ; p:tiwⁿka	2
+3;Pl	jolakasa_husuy	jola1262	csk	Jola-Kasa	Atlantic-Congo	Africa	546	free	bukɔ	p:-iil	2
+3;Pl	kaingang	kain1272	kgp	Kaingang	Nuclear-Macro-Je	South America	345	free	ʔɑg		2
+3;Pl	kakiae	kaki1249	tbd	Kaki Ae	Kaki Ae	Papunesia	261	free	erahe	a:erahoro; p:erahevere	2
+3;Pl	kakua	cacu1241	cbv	Kakua	Kakua-Nukak	South America	508	free	-ĩ	s:kèét; a:kèét; o:kèét; p:kèét	2
+3;Pl	kamula	kamu1260	xla	Kamula	Kamula-Elevala	Papunesia	262	free	yi	s:yie; a:yie; o:yie; p:yie	2
+3;Pl	kancha	kunj1246	pep	Kánchá	Yam	Papunesia	643	free	ɸi	a:ʧaɸ; p:ʧaβanme	2
+3;Pl	kaonde	kaon1241	kqn	Kaonde	Atlantic-Congo	Africa	402	free	ba-	o:iba-; p:bo-	2
+3;Pl	karaboroeastern	east2398	xrb	Karaboro, Eastern	Atlantic-Congo	Africa	603	free	pe˧		2
+3;Pl	karon	karo1294	krx	Karon	Atlantic-Congo	Africa	555	free	pakɔ	p:-ee	2
+3;Pl	katcha	katc1250		Katcha	Kadugli-Krongo	Africa	890	free	eːke	p:ené	2
+3;Pl	kawaiisu	kawa1283	xaw	Kawaiisu	Uto-Aztecan	North America	406	free	siʔimɨ	o:siʔimɨa; p:=amɨ	2
+3;Pl	keiga	keig1242	kec	Keiga	Kadugli-Krongo	Africa	891	free	àgì	s:àyì; a:àyì; o:àyì; p:mɛ́	2
+3;Pl	kemedzung	keme1240	dmo	Kemedzung	Atlantic-Congo	Africa	624	free	bɔ˧	p:-u˥bɔ˧	2
+3;Pl	keo_udiworowatu	keoo1238	xxk	Keo	Austronesian	Papunesia	650	free	ʔimukoʔo		2
+3;Pl	ket	kett1243	ket	Ket	Yeniseian	Eurasia	412	free	būŋ	p:búŋna	2
+3;Pl	kilivila	kili1267	kij	Kilivila	Austronesian	Papunesia	842	free	minasina	s:mtosina; a:mtosina; o:-si; p:asi; p:si	2
+3;Pl	kimaghima	kima1246	kig	Kimaghima	Kolopom	Papunesia	354	free	ii	o:ande; p:dii	2
+3;Pl	kiowa	kiow1266	kio	Kiowa	Kiowa-Tanoan	North America	401	free	óídegɔ		2
 3;Pl	kobon	kobo1249	kpw	Kobon	Nuclear Trans New Guinea	Papunesia	212	free	kale	s:kalɨpe; s:köl; a:kalɨpe; a:köl; o:kalɨp; o:kalɨpe; o:köl; p:kalɨpe; p:köl	6
 3;Pl	kodeoha	kode1237	vko	Kodeoha	Austronesian	Papunesia	186	free	ihiro	p:-ro	6
-3;Pl	koitabu	koit1244	kqi	Koitabu	Koiarian	Papunesia	265	free	yauka	o:yau; p:yau	6
-3;Pl	kokoda	koko1265	xod	Kokoda	South Bird's Head	Papunesia	253	free	nigáumo		6
-3;Pl	kokota_b	koko1269	kkk	Kokota	Austronesian	Papunesia	398	bound	e	o:=di; p:-di	6
-3;Pl	kolbila	kolb1240	klc	Kolbila	Atlantic-Congo	Africa	590	free	Ø	o:-bò; p:-vāg	6
+3;Pl	koitabu	koit1244	kqi	Koitabu	Koiarian	Papunesia	265	free	yauka	o:yau; p:yau	2
+3;Pl	kokoda	koko1265	xod	Kokoda	South Bird's Head	Papunesia	253	free	nigáumo		2
+3;Pl	kokota_b	koko1269	kkk	Kokota	Austronesian	Papunesia	398	bound	e	o:=di; p:-di	2
+3;Pl	kolbila	kolb1240	klc	Kolbila	Atlantic-Congo	Africa	590	free	Ø	o:-bò; p:-vāg	2
 3;Pl	kombai	komb1274	tyn	Kombai	Nuclear Trans New Guinea	Papunesia	148	free	ya	p:yano-	6
-3;Pl	komnzo	komn1238		Komnzo	Yam	Papunesia	29	free	ɸi	a:nɐɸɐ; p:nɐɸɐne; p:nɐɸɐnme	6
-3;Pl	konni	konn1242	kma	Konni	Atlantic-Congo	Africa	600	free	ba		6
-3;Pl	konyagi	wame1240	cou	Konyagi	Atlantic-Congo	Africa	553	free	vəɾ̃i	p:-ɾ̃i	6
-3;Pl	koromfe	koro1298	kfz	Koromfe	Atlantic-Congo	Africa	461	free	bakɔ		6
+3;Pl	komnzo	komn1238		Komnzo	Yam	Papunesia	29	free	ɸi	a:nɐɸɐ; p:nɐɸɐne	6
+3;Pl	konni	konn1242	kma	Konni	Atlantic-Congo	Africa	600	free	ba		2
+3;Pl	konyagi	wame1240	cou	Konyagi	Atlantic-Congo	Africa	553	free	vəɾ̃i	p:-ɾ̃i	2
+3;Pl	koromfe	koro1298	kfz	Koromfe	Atlantic-Congo	Africa	461	free	bakɔ		2
 3;Pl	korowai	koro1312	khe	Korowai	Nuclear Trans New Guinea	Papunesia	213	free	yekhené	s:yekhenép; a:yekhenép; o:yekhenékhata; o:yekhenép; p:yekhenékha; p:yekhnené-	6
-3;Pl	kotiria	guan1269	gvc	Kotiria	Tucanoan	South America	513	free	tidã́	p:tí	6
-3;Pl	koya	koya1251	kff	Koya	Dravidian	Eurasia	322	free	oːru	o:oːrinni; p:oːri	6
+3;Pl	kotiria	guan1269	gvc	Kotiria	Tucanoan	South America	513	free	tidã́	p:tí	2
+3;Pl	koya	koya1251	kff	Koya	Dravidian	Eurasia	322	free	oːru	o:oːrinni; p:oːri	2
 3;Pl	kristang	mala1533	mcm	Kristang	Indo-European	Eurasia	116	free	olotu	o:ku olotu; p:olotu sa	6
-3;Pl	krobu	krob1245	kxb	Krobu	Atlantic-Congo	Africa	578	free	a˥		6
-3;Pl	krongo	kron1241	kgo	Krongo kron1241	Kadugli-Krongo	Africa	893	free	àay	p:kànáày	6
-3;Pl	kufo	kufa1238		Kufo kufa1238	Kadugli-Krongo	Africa	894	free	é	s:égíx; a:égíx; o:égíx; p:mané	6
-3;Pl	kulangobouna	boun1243	nku	Kulango, Bouna	Atlantic-Congo	Africa	609	free	bɔ˩	o:-bɛ; p:bɔ̃=	6
+3;Pl	krobu	krob1245	kxb	Krobu	Atlantic-Congo	Africa	578	free	a˥		2
+3;Pl	krongo	kron1241	kgo	Krongo kron1241	Kadugli-Krongo	Africa	893	free	àay	p:kànáày	2
+3;Pl	kufo	kufa1238		Kufo kufa1238	Kadugli-Krongo	Africa	894	free	é	s:égíx; a:égíx; o:égíx; p:mané	2
+3;Pl	kulangobouna	boun1243	nku	Kulango, Bouna	Atlantic-Congo	Africa	609	free	bɔ˩	o:-bɛ; p:bɔ̃=	2
 3;Pl	kunja	kunj1246	pep	Kunja / Bondobol	Yam	Papunesia	31	free	ɸɪ	a:tʃɐɸ; p:tʃɐβɐnme	6
-3;Pl	kupangmalay	kupa1239	mkn	Kupang Malay	Austronesian	Papunesia	556	free	doŋ		6
-3;Pl	kurtop	kurt1248	xkz	Kurtöp	Sino-Tibetan	Eurasia	276	free	bot	a:boi; p:boci	3
-3;Pl	kurukh	kuru1302		Kurukh	Dravidian	Eurasia	319	free	aːr	o:aːrin; p:aːrgahi	6
-3;Pl	kuukuyau	kuuk1238	kuy	Kuuku Ya'u	Pama-Nyungan	Australia	696	free	pula	o:pulaana; p:pulaangku	6
-3;Pl	kuwaataay_diembering	kuwa1246	cwt	Kuwaataay	Atlantic-Congo	Africa	547	free	bɔkɔ	p:-en	6
-3;Pl	kwanja_njanga	kwan1276	knp	Kwanja	Atlantic-Congo	Africa	621	free	bɨ˧		6
+3;Pl	kupangmalay	kupa1239	mkn	Kupang Malay	Austronesian	Papunesia	556	free	doŋ		2
+3;Pl	kurtop	kurt1248	xkz	Kurtöp	Sino-Tibetan	Eurasia	276	free	bot	a:boi; p:boci	1
+3;Pl	kurukh	kuru1302		Kurukh	Dravidian	Eurasia	319	free	aːr	o:aːrin; p:aːrgahi	2
+3;Pl	kuukuyau	kuuk1238	kuy	Kuuku Ya'u	Pama-Nyungan	Australia	696	free	pula	o:pulaana; p:pulaangku	2
+3;Pl	kuwaataay_diembering	kuwa1246	cwt	Kuwaataay	Atlantic-Congo	Africa	547	free	bɔkɔ	p:-en	2
+3;Pl	kwanja_njanga	kwan1276	knp	Kwanja	Atlantic-Congo	Africa	621	free	bɨ˧		2
 3;Pl	kwini	kwin1241	gww	Kwini	Worrorran	Australia	80	free	bɨrreni	p:bɨrreninaŋga	6
-3;Pl	lampung	lamp1243	ljp	Lampung	Austronesian	Papunesia	153	free	beliaw(an)	s:tian; a:tian; o:tian; p:-ni (tian)	6
-3;Pl	lelemi	lele1264	lef	Lelemi	Atlantic-Congo	Africa	574	free	àma	o:mà; p:bana; p:mana	6
-3;Pl	limilngan	nucl1327	lmc	Limilngan	Limilngan-Wulna	Australia	187	free	wiyinijani	p:=mbiwirri; p:diwirri	6
-3;Pl	lingala	ling1263	lin	Lingala	Atlantic-Congo	Africa	446	free	bangó		6
-3;Pl	lobi	lobi1245	lob	Lobi	Atlantic-Congo	Africa	611	free	wʊ	p:ʔyɛ	6
-3;Pl	logba_alakpeti	logb1245	lgq	Logba	Atlantic-Congo	Africa	575	free	alɛ́	o:-á	6
-3;Pl	macedonian	mace1250	mkd	Macedonian	Indo-European	Eurasia	69	free	tie	o:=gi; o:niv; p:nivni	6
-3;Pl	maco	maco1239	wpc	Maco	Saliban	South America	530	free	idɨ	p:tʰ-	6
+3;Pl	lampung	lamp1243	ljp	Lampung	Austronesian	Papunesia	153	free	tian	p:-ni (tian)	6
+3;Pl	lelemi	lele1264	lef	Lelemi	Atlantic-Congo	Africa	574	free	àma	o:mà; p:bana; p:mana	2
+3;Pl	limilngan	nucl1327	lmc	Limilngan	Limilngan-Wulna	Australia	187	free	wiyinijani	p:=mbiwirri	6
+3;Pl	lingala	ling1263	lin	Lingala	Atlantic-Congo	Africa	446	free	bangó		2
+3;Pl	lobi	lobi1245	lob	Lobi	Atlantic-Congo	Africa	611	free	wʊ	p:ʔyɛ	2
+3;Pl	logba_alakpeti	logb1245	lgq	Logba	Atlantic-Congo	Africa	575	free	alɛ́	o:-á	2
+3;Pl	macedonian	mace1250	mkd	Macedonian	Indo-European	Eurasia	69	free	tie	o:niv; p:nivni	6
+3;Pl	maco	maco1239	wpc	Maco	Saliban	South America	530	free	idɨ	p:tʰ-	2
 3;Pl	madurese	nucl1460	mad	Madurese	Austronesian	Papunesia	147	free	abaʔna kabbi		6
-3;Pl	mairasi	nucl1594	zrs	Mairasi	Mairasic	Papunesia	887	free	na'en	p:ne-	6
-3;Pl	maithili	mait1250	mai	Maithili 	Indo-European	Eurasia	899	free	i səb	o:hinka səb kẽ; p:hinka səbhək	6
-3;Pl	maklew	makl1246	mgf	Maklew	Bulaka River	Papunesia	203	free	imél	o:imlél; p:imlaŋ	6
-3;Pl	makwe	makw1236	ymk	Makwe	Atlantic-Congo	Africa	598	free	unáamo	p:-o	6
+3;Pl	mairasi	nucl1594	zrs	Mairasi	Mairasic	Papunesia	887	free	na'en	p:ne-	2
+3;Pl	maithili	mait1250	mai	Maithili 	Indo-European	Eurasia	899	free	i səb	o:hinka səb kẽ; p:hinka səbhək	2
+3;Pl	maklew	makl1246	mgf	Maklew	Bulaka River	Papunesia	203	free	imél	o:imlél; p:imlaŋ	4
+3;Pl	makwe	makw1236	ymk	Makwe	Atlantic-Congo	Africa	598	free	unáamo	p:-o	2
 3;Pl	malagasyplateau	plat1254	plt	Malagasy, Plateau	Austronesian	Africa	156	free	izareo	s:izi; a:izi; o:anjareo; o:azi; p:anjareo; p:azi	6
 3;Pl	malakmalak	mull1237	mpb	Malak-Malak	Northern Daly	Australia	37	free	wöřöntön	o:wöřö	6
-3;Pl	malay	mala1479	zlm	Malay	Austronesian	Eurasia	432	free	mereka		6
-3;Pl	malay_alor	alor1252		Malay	Austronesian	Papunesia	674	free	dong	s:dorang; a:dorang; o:dorang; p:dorang	6
-3;Pl	malay_banda	band1353	bpq	Malay	Austronesian	Papunesia	680	free	dorang		6
-3;Pl	malay_kupang	kupa1239	mkn	Malay	Austronesian	Papunesia	675	free	dong		6
-3;Pl	malay_larantuka	lara1260	lrt	Malay	Austronesian	Papunesia	681	free	doraŋ		6
-3;Pl	malay_manado	mala1481	xmm	Malay	Austronesian	Papunesia	679	free	dorang		6
-3;Pl	malay_northmoluccan	nort2828	max	Malay	Austronesian	Papunesia	677	free	dia	s:dorang; a:dorang; o:dorang; p:dorang	6
-3;Pl	malay_papua	papu1250	pmy	Malay	Austronesian	Papunesia	682	free	doraŋ		6
-3;Pl	malayalam	mala1464	mal	Malayalam	Dravidian	Eurasia	451	free	aʋaɾ	o:aʋaɾe; p:aʋaɾuʈe	6
-3;Pl	malecu	male1297	gut	Malecu	Chibchan	North America	465	free	niti	a:niti maráma; p:ni maráma i=	3
-3;Pl	mambay	mamb1294	mcs	Mambay	Atlantic-Congo	Africa	586	free	du˩gzi˥	o:du˩gu˥; p:du˩gu˥	6
-3;Pl	mampruli	mamp1244	maw	Mampruli	Atlantic-Congo	Africa	615	free	ba		6
-3;Pl	manchu	manc1252	mnc	Manchu	Tungusic	Eurasia	314	free	ce	o:cembe; p:ceni	6
-3;Pl	mandahuaca	mand1448	mht	Mandahuaca	Arawakan	South America	527	free	néjhanawi	p:na-	6
-3;Pl	mandarin	mand1415	cmn	Mandarin	Sino-Tibetan	Eurasia	272	free	tāmen		3
-3;Pl	mandobo	mand1444	aax	Mandobo	Nuclear Trans New Guinea	Papunesia	359	free	yeŋɡip	p:yeŋɡi-ne-	6
+3;Pl	malay	mala1479	zlm	Malay	Austronesian	Eurasia	432	free	mereka		2
+3;Pl	malay_alor	alor1252		Malay	Austronesian	Papunesia	674	free	dong	s:dorang; a:dorang; o:dorang; p:dorang	2
+3;Pl	malay_banda	band1353	bpq	Malay	Austronesian	Papunesia	680	free	dorang		2
+3;Pl	malay_kupang	kupa1239	mkn	Malay	Austronesian	Papunesia	675	free	dong		2
+3;Pl	malay_larantuka	lara1260	lrt	Malay	Austronesian	Papunesia	681	free	doraŋ		2
+3;Pl	malay_manado	mala1481	xmm	Malay	Austronesian	Papunesia	679	free	dorang		2
+3;Pl	malay_northmoluccan	nort2828	max	Malay	Austronesian	Papunesia	677	free	dia	s:dorang; a:dorang; o:dorang; p:dorang	2
+3;Pl	malay_papua	papu1250	pmy	Malay	Austronesian	Papunesia	682	free	doraŋ		2
+3;Pl	malayalam	mala1464	mal	Malayalam	Dravidian	Eurasia	451	free	aʋaɾ	o:aʋaɾe; p:aʋaɾuʈe	2
+3;Pl	malecu	male1297	gut	Malecu	Chibchan	North America	465	free	niti	a:niti maráma; p:ni maráma i=	1
+3;Pl	mambay	mamb1294	mcs	Mambay	Atlantic-Congo	Africa	586	free	du˩gzi˥	o:du˩gu˥; p:du˩gu˥	2
+3;Pl	mampruli	mamp1244	maw	Mampruli	Atlantic-Congo	Africa	615	free	ba		2
+3;Pl	manchu	manc1252	mnc	Manchu	Tungusic	Eurasia	314	free	ce	o:cembe; p:ceni	2
+3;Pl	mandahuaca	mand1448	mht	Mandahuaca	Arawakan	South America	527	free	néjhanawi	p:na-	2
+3;Pl	mandarin	mand1415	cmn	Mandarin	Sino-Tibetan	Eurasia	272	free	tāmen		1
+3;Pl	mandobo	mand1444	aax	Mandobo	Nuclear Trans New Guinea	Papunesia	359	free	yeŋɡip	p:yeŋɡi-ne-	2
 3;Pl	mathimathi	madh1244	dmd	Mathi-Mathi	Pama-Nyungan	Australia	689	free	θana	o:θanin; p:θanaθu	6
-3;Pl	mayogo	mayo1261	mdm	Mayogo	Atlantic-Congo	Africa	584	free	uo	p:naauo	6
-3;Pl	mbato	mbat1247	gwa	Mbato	Atlantic-Congo	Africa	573	free	ɓɔ˥	o:ɓɔ˧; p:ɓɔ˩˧	6
-3;Pl	mbelimbe	mbel1240	mql	Mbelimbe	Atlantic-Congo	Africa	617	free	bɛ˩		6
+3;Pl	mayogo	mayo1261	mdm	Mayogo	Atlantic-Congo	Africa	584	free	uo	p:naauo	2
+3;Pl	mbato	mbat1247	gwa	Mbato	Atlantic-Congo	Africa	573	free	ɓɔ˥	o:ɓɔ˧; p:ɓɔ˩˧	2
+3;Pl	mbelimbe	mbel1240	mql	Mbelimbe	Atlantic-Congo	Africa	617	free	bɛ˩		2
 3;Pl	mblafe	mbla1238		Mblafe	Yam	Papunesia	30	free	ɸɪ	a:nɐmbe; p:nɐmbɐn	6
-3;Pl	mbugu_inner	mbug1240	mhd	Mbugu	Atlantic-Congo	Africa	300	free	hú	s:ú; a:ú; o:ú; p:kíni	6
-3;Pl	mbugu_normal	mbug1240	mhd	Mbugu	Atlantic-Congo	Africa	301	free	válá	p:-avó	6
-3;Pl	mehek	mehe1243	nux	Mehek	Sepik	Papunesia	249	free	mura		6
-3;Pl	mekens_icrlb	saki1248	skf	Mekens	Tupian	South America	653	free	teyat-	a:teyat	6
-3;Pl	mekens_icrrh	saki1248	skf	Mekens	Tupian	South America	668	free	seteyat	s:teyat; a:teyat; o:se-; o:teyat-; p:se-; p:seteyat-; p:teyat-	6
-3;Pl	mekens_icrtcc	saki1248	skf	Mekens	Tupian	South America	661	free	teyat		6
-3;Pl	mekens_icrwb	saki1248	skf	Mekens	Tupian	South America	656	free	teyat		6
-3;Pl	meriam	meri1244	ulk	Meriam	Eastern Trans-Fly	Papunesia	267	free	wi	o:wiyabi; p:wiyaba	6
-3;Pl	mewati	mewa1250	wtm	Mewati	Indo-European	Eurasia	445	free	je	p:in	6
-3;Pl	mian	mian1256	mpt	Mian	Nuclear Trans New Guinea	Papunesia	216	free	í	s:í-; s:íli-; s:ó; s:ó-; a:í-; a:íli-; a:ó; a:ó-; o:í-; o:íli-; o:ó; o:ó-; p:ó	6
-3;Pl	modernhebrew	hebr1245	heb	Modern Hebrew	Afro-Asiatic	Eurasia	298	free	hɛm	o:-am; p:-am	6
+3;Pl	mbugu_inner	mbug1240	mhd	Mbugu	Atlantic-Congo	Africa	300	free	hú	s:ú; a:ú; o:ú; p:kíni	2
+3;Pl	mbugu_normal	mbug1240	mhd	Mbugu	Atlantic-Congo	Africa	301	free	válá	p:-avó	2
+3;Pl	mehek	mehe1243	nux	Mehek	Sepik	Papunesia	249	free	mura		2
+3;Pl	mekens_icrlb	saki1248	skf	Mekens	Tupian	South America	653	free	teyat-	a:teyat	2
+3;Pl	mekens_icrrh	saki1248	skf	Mekens	Tupian	South America	668	free	seteyat	s:teyat; a:teyat; o:se-; o:teyat-; p:se-; p:seteyat-; p:teyat-	2
+3;Pl	mekens_icrtcc	saki1248	skf	Mekens	Tupian	South America	661	free	teyat		2
+3;Pl	mekens_icrwb	saki1248	skf	Mekens	Tupian	South America	656	free	teyat		2
+3;Pl	meriam	meri1244	ulk	Meriam	Eastern Trans-Fly	Papunesia	267	free	wi	o:wiyabi; p:wiyaba	2
+3;Pl	mewati	mewa1250	wtm	Mewati	Indo-European	Eurasia	445	free	je	p:in	2
+3;Pl	modernhebrew	hebr1245	heb	Modern Hebrew	Afro-Asiatic	Eurasia	298	free	hɛm	o:-am; p:-am	2
 3;Pl	moken	moke1242	mwt	Moken	Austronesian	Eurasia	142	free	ʔolaaŋ		6
-3;Pl	mombum	nucl1452	mso	Mombum	Mombum-Koneraw	Papunesia	358	free	anɛ	o:anɛmrɛi; p:anɛmrɛ	6
-3;Pl	mongolian_halh	halh1238	khk	Mongolian	Mongolic-Khitan	Eurasia	403	free	tɛd	o:tɛdniig; p:tɛdnii	6
-3;Pl	mono	mono1273	mte	Mono	Austronesian	Papunesia	428	free	∅	p:-iri	6
-3;Pl	moroccanarabic	moro1292	ary	Moroccan Arabic	Afro-Asiatic	Africa	292	free	huma	o:-hom; p:-hom	6
-3;Pl	mumuye_zing	nucl1240	mzm	Mumuye	Atlantic-Congo	Africa	587	free	yi		6
+3;Pl	mombum	nucl1452	mso	Mombum	Mombum-Koneraw	Papunesia	358	free	anɛ	o:anɛmrɛi; p:anɛmrɛ	2
+3;Pl	mongolian_halh	halh1238	khk	Mongolian	Mongolic-Khitan	Eurasia	403	free	tɛd	o:tɛdniig; p:tɛdnii	2
+3;Pl	mono	mono1273	mte	Mono	Austronesian	Papunesia	428	free	∅	p:-iri	2
+3;Pl	moroccanarabic	moro1292	ary	Moroccan Arabic	Afro-Asiatic	Africa	292	free	huma	o:-hom; p:-hom	2
+3;Pl	mumuye_zing	nucl1240	mzm	Mumuye	Atlantic-Congo	Africa	587	free	yi		2
 3;Pl	muna	muna1247	mnb	Muna	Austronesian	Papunesia	184	free	andoa	p:-ndo	6
-3;Pl	mungbam_abar	abar1238	mij	Mungbam	Atlantic-Congo	Africa	634	free	bwe˦	o:bwe˥; p:bwen˥; p:bwen˧	6
-3;Pl	mungbam_biya	abar1238	mij	Mungbam	Atlantic-Congo	Africa	635	free	bu˥	o:bwɩ˥; p:bɥə˥; p:bɥə˧	6
-3;Pl	mungbam_missong	abar1238	mij	Mungbam	Atlantic-Congo	Africa	854	free	bu˦	p:bu˥	6
-3;Pl	mungbam_munken	abar1238	mij	Mungbam	Atlantic-Congo	Africa	633	free	bɛ˦	o:be˥; p:be˥; p:be˧	6
-3;Pl	mungbam_ngun	abar1238	mij	Mungbam	Atlantic-Congo	Africa	637	free	bu˥	o:bwe˧; p:bwɩn˥; p:bwɩn˧	6
-3;Pl	nadeb	nade1244	mbj	Nadëb	Naduhup	South America	504	free	la-	s:sa-; a:sa-; o:sa-; p:sa-	6
-3;Pl	nalu	nalu1240	naj	Nalu	Atlantic-Congo	Africa	544	free	bɛmɛ	o:bɛm; p:mbɛm	6
-3;Pl	nama	nama1266	nmx	Nama	Yam	Papunesia	645	free	ɸæ	a:yəmoɸem; p:yəɸene	6
+3;Pl	mungbam_abar	abar1238	mij	Mungbam	Atlantic-Congo	Africa	634	free	bwe˦	o:bwe˥; p:bwen˥; p:bwen˧	2
+3;Pl	mungbam_biya	abar1238	mij	Mungbam	Atlantic-Congo	Africa	635	free	bu˥	o:bwɩ˥; p:bɥə˥; p:bɥə˧	2
+3;Pl	mungbam_missong	abar1238	mij	Mungbam	Atlantic-Congo	Africa	854	free	bu˦	p:bu˥	2
+3;Pl	mungbam_munken	abar1238	mij	Mungbam	Atlantic-Congo	Africa	633	free	bɛ˦	o:be˥; p:be˥; p:be˧	2
+3;Pl	mungbam_ngun	abar1238	mij	Mungbam	Atlantic-Congo	Africa	637	free	bu˥	o:bwe˧; p:bwɩn˥; p:bwɩn˧	2
+3;Pl	nadeb	nade1244	mbj	Nadëb	Naduhup	South America	504	free	la-	s:sa-; a:sa-; o:sa-; p:sa-	2
+3;Pl	nalu	nalu1240	naj	Nalu	Atlantic-Congo	Africa	544	free	bɛmɛ	o:bɛm; p:mbɛm	2
+3;Pl	nama	nama1266	nmx	Nama	Yam	Papunesia	645	free	ɸæ	a:yəmoɸem; p:yəɸene	2
 3;Pl	nambu	namb1293	ncm	Nambu	Yam	Papunesia	5	free	bä	a:ymovem; p:ybene	6
-3;Pl	namo_tais	namo1246	mxw	Namo	Yam	Papunesia	647	free	fæ	a:yəmovem; p:yəbene	6
-3;Pl	nateni	nate1242	ntm	Nateni	Atlantic-Congo	Africa	616	free	pa˩	p:pa˧	6
-3;Pl	nawuri	nawu1242	naw	Nawuri	Atlantic-Congo	Africa	577	free	ì	s:ɡ͡bà; a:ɡ͡bà; o:ɡ͡bàmó; p:ɡ͡bàmó	6
-3;Pl	ndoe	ndoe1238	nbb	Ndoe	Atlantic-Congo	Africa	632	free	bɔ	p:eyina	6
-3;Pl	ndom	ndom1245	nqm	Ndom	Kolopom	Papunesia	356	free	ɛnt	o:ɛntɛfɛ; p:ɛntɛ	6
-3;Pl	ndut	ndut1239	ndv	Ndut	Atlantic-Congo	Africa	557	free	wa	p:-wa	6
-3;Pl	ndyuka	ndyu1242	djk	Ndyuka	Indo-European	South America	295	free	den		6
+3;Pl	namo_tais	namo1246	mxw	Namo	Yam	Papunesia	647	free	fæ	a:yəmovem; p:yəbene	2
+3;Pl	nateni	nate1242	ntm	Nateni	Atlantic-Congo	Africa	616	free	pa˩	p:pa˧	2
+3;Pl	nawuri	nawu1242	naw	Nawuri	Atlantic-Congo	Africa	577	free	ì	s:ɡ͡bà; a:ɡ͡bà; o:ɡ͡bàmó; p:ɡ͡bàmó	2
+3;Pl	ndoe	ndoe1238	nbb	Ndoe	Atlantic-Congo	Africa	632	free	bɔ	p:eyina	2
+3;Pl	ndom	ndom1245	nqm	Ndom	Kolopom	Papunesia	356	free	ɛnt	o:ɛntɛfɛ; p:ɛntɛ	2
+3;Pl	ndut	ndut1239	ndv	Ndut	Atlantic-Congo	Africa	557	free	wa	p:-wa	2
+3;Pl	ndyuka	ndyu1242	djk	Ndyuka	Indo-European	South America	295	free	den		2
 3;Pl	neme	neme1244	nex	Neme	Yam	Papunesia	65	free	bæ	a:yəmoβem; p:yəbene	6
 3;Pl	nen	nenn1238	nqn	Nen	Yam	Papunesia	3	free	bä	a:ymabem; p:ybende	6
-3;Pl	neverver	ling1265	lgk	Neverver	Austronesian	Papunesia	351	free	an͡dr	p:titn͡dr	6
-3;Pl	ngbandi	nort2774	ngb	Ngbandi	Atlantic-Congo	Africa	583	free	a˥la˩		6
-3;Pl	ngiti_icrlb	ngit1239	niy	Ngiti	Central Sudanic	Africa	651	free	abádhí	p:abádhí tɔ́	6
-3;Pl	ngiti_icrtcc	ngit1239	niy	Ngiti	Central Sudanic	Africa	665	free	abádhí	p:fɨ̀kɨ́	6
-3;Pl	ngiti_icrwb	ngit1239	niy	Ngiti	Central Sudanic	Africa	654	free	abádhí	p:abàdhí	6
+3;Pl	neverver	ling1265	lgk	Neverver	Austronesian	Papunesia	351	free	an͡dr	p:titn͡dr	2
+3;Pl	ngbandi	nort2774	ngb	Ngbandi	Atlantic-Congo	Africa	583	free	a˥la˩		2
+3;Pl	ngiti_icrlb	ngit1239	niy	Ngiti	Central Sudanic	Africa	651	free	abádhí	p:abádhí tɔ́	2
+3;Pl	ngiti_icrtcc	ngit1239	niy	Ngiti	Central Sudanic	Africa	665	free	abádhí	p:fɨ̀kɨ́	2
+3;Pl	ngiti_icrwb	ngit1239	niy	Ngiti	Central Sudanic	Africa	654	free	abádhí	p:abàdhí	2
 3;Pl	ngkolmpu	ngka1235	kcd	Ngkolmpu	Yam	Papunesia	10	free	pi	a:pinta; p:pen	6
-3;Pl	nigerianpidgin	nige1257	pcm	Nigerian Pidgin	Indo-European	Africa	291	free	dɛm	p:dɛ̀m	6
-3;Pl	nizaa	suga1248	sgi	Nizaa	Atlantic-Congo	Africa	622	free	ɓu˧		6
-3;Pl	noon	noon1242	snf	Noon	Atlantic-Congo	Africa	454	free	ɓi	o:-ɓa; p:-gaɓa	6
-3;Pl	northantiguan	anti1245	aig	Antigua and Barbuda Creole English	Indo-European	North America	420	free	dem	p:fudem	6
-3;Pl	northernembera_mortensen	nort2972	emp	Northern Embera	Chocoan	South America	467	free	ãtʃira	a:ãtʃia; p:ãtʃi	6
-3;Pl	northernembera_pardoandaguirre	nort2972	emp	Northern Embera	Chocoan	South America	503	free	ãǰi		6
-3;Pl	northlevantinearabic	nort3139	apc	North Levantine Arabic	Afro-Asiatic	Eurasia	299	free	hənːe	o:-hon; p:-hon	6
-3;Pl	nothernsotho	pedi1238	nso	Nothern Sotho	Atlantic-Congo	Africa	444	free	βɔna	p:ɣabɔ	6
-3;Pl	npashto	nort2646	pbu	Pashto	Indo-European	Eurasia	346	free	duy		6
-3;Pl	ntairora	nort2920	tbg	Tairora, North	Nuclear Trans New Guinea	Papunesia	371	free	bi	o:ti-; p:n-	6
-3;Pl	nukakmaku	nuka1242	mbr	Nukak Makú	Kakua-Nukak	South America	509	free	kɛɛt		6
-3;Pl	numanggang	numa1254	nop	Numanggang	Nuclear Trans New Guinea	Papunesia	688	free	adi	p:-hik	6
-3;Pl	okojuwoiandamese	okoj1239	okj	Okojuwoi Andamese	Great Andamanese	Eurasia	871	free	n'e-kile	p:n'-; p:niye	6
-3;Pl	oldhittite	hitt1242	hit	Old Hittite	Indo-European	Eurasia	313	free	apē	p:apenzan	6
-3;Pl	paez	paez1247	pbb	Páez	Páez	South America	533	free	tʲã:weʔsʲ		6
+3;Pl	nigerianpidgin	nige1257	pcm	Nigerian Pidgin	Indo-European	Africa	291	free	dɛm	p:dɛ̀m	2
+3;Pl	nizaa	suga1248	sgi	Nizaa	Atlantic-Congo	Africa	622	free	ɓu˧		2
+3;Pl	noon	noon1242	snf	Noon	Atlantic-Congo	Africa	454	free	ɓi	o:-ɓa; p:-gaɓa	2
+3;Pl	northantiguan	anti1245	aig	Antigua and Barbuda Creole English	Indo-European	North America	420	free	dem	p:fudem	2
+3;Pl	northernembera_mortensen	nort2972	emp	Northern Embera	Chocoan	South America	467	free	ãtʃira	a:ãtʃia; p:ãtʃi	2
+3;Pl	northernembera_pardoandaguirre	nort2972	emp	Northern Embera	Chocoan	South America	503	free	ãǰi		2
+3;Pl	northlevantinearabic	nort3139	apc	North Levantine Arabic	Afro-Asiatic	Eurasia	299	free	hənːe	o:-hon; p:-hon	2
+3;Pl	nothernsotho	pedi1238	nso	Nothern Sotho	Atlantic-Congo	Africa	444	free	βɔna	p:ɣabɔ	2
+3;Pl	npashto	nort2646	pbu	Pashto	Indo-European	Eurasia	346	free	duy		2
+3;Pl	ntairora	nort2920	tbg	Tairora, North	Nuclear Trans New Guinea	Papunesia	371	free	bi	o:ti-; p:n-	2
+3;Pl	nukakmaku	nuka1242	mbr	Nukak Makú	Kakua-Nukak	South America	509	free	kɛɛt		2
+3;Pl	numanggang	numa1254	nop	Numanggang	Nuclear Trans New Guinea	Papunesia	688	free	adi	p:-hik	2
+3;Pl	okojuwoiandamese	okoj1239	okj	Okojuwoi Andamese	Great Andamanese	Eurasia	871	free	n'e-kile	p:n'-; p:niye	2
+3;Pl	oldhittite	hitt1242	hit	Old Hittite	Indo-European	Eurasia	313	free	apē	p:apenzan	2
+3;Pl	paez	paez1247	pbb	Páez	Páez	South America	533	free	tʲã:weʔsʲ		2
 3;Pl	paiwan	paiw1248	pwn	Paiwan	Austronesian	Papunesia	163	free	tiamaju	a:cayamaju; o:cayamaju; p:niamaju	6
-3;Pl	pajade	bady1239	pbp	Pajade	Atlantic-Congo	Africa	552	free	bəŋee		6
+3;Pl	pajade	bady1239	pbp	Pajade	Atlantic-Congo	Africa	552	free	bəŋee		2
 3;Pl	palauan	pala1344	pau	Palauan	Austronesian	Papunesia	83	free	tə	p:-ir	6
-3;Pl	panare	enap1235	pbh	Panare	Cariban	South America	413	free	məht͡ʃanton		6
-3;Pl	phake	phak1238	phk	Phake	Tai-Kadai	Eurasia	846	free	khau6		6
-3;Pl	piapoco	piap1246	pio	Piapoco	Arawakan	South America	493	free	náa'i	p:i-; p:na-	6
-3;Pl	piaroa	piar1243	pid	Piaroa	Saliban	South America	494	free	hʷætɨ	p:tʰu-; p:tʰĩ-	6
-3;Pl	pipil	pipi1250	ppl	Pipil	Uto-Aztecan	North America	344	free	yehemet	p:in-	6
+3;Pl	panare	enap1235	pbh	Panare	Cariban	South America	413	free	məht͡ʃanton		2
+3;Pl	phake	phak1238	phk	Phake	Tai-Kadai	Eurasia	846	free	khau6		2
+3;Pl	piapoco	piap1246	pio	Piapoco	Arawakan	South America	493	free	náa'i	p:i-; p:na-	2
+3;Pl	piaroa	piar1243	pid	Piaroa	Saliban	South America	494	free	hʷætɨ	p:tʰu-; p:tʰĩ-	2
+3;Pl	pipil	pipi1250	ppl	Pipil	Uto-Aztecan	North America	344	free	yehemet	p:in-	2
 3;Pl	portuguese	port1283	por	Portuguese	Indo-European	Eurasia	91	free	eles	o:os; p:seu	6
-3;Pl	puragi	pura1253	pru	Puragi	South Bird's Head	Papunesia	252	free	nidáo		6
-3;Pl	ranmo	blaf1238	bfh	Ránmo	Yam	Papunesia	644	free	ɸi	a:naβa; p:naβənane	6
-3;Pl	rapanui	rapa1244	rap	Rapa Nui	Austronesian	Papunesia	433	free	ɾaua	p:teɾaua	6
-3;Pl	ratahan	rata1244	rth	Ratahan	Austronesian	Papunesia	439	free	imangaˈse		6
-3;Pl	resigaro	resi1247	rgr	Resígaro	Arawakan	South America	525	free	naʔá	p:naʔá-...-né	6
-3;Pl	riantana	rian1263	ran	Riantana	Kolopom	Papunesia	355	free	yakwo	o:yakwota; p:yakwœtœ	6
-3;Pl	rongga	rong1269	ror	Rongga	Austronesian	Papunesia	684	free	siɹa		6
+3;Pl	puragi	pura1253	pru	Puragi	South Bird's Head	Papunesia	252	free	nidáo		2
+3;Pl	ranmo	blaf1238	bfh	Ránmo	Yam	Papunesia	644	free	ɸi	a:naβa; p:naβənane	2
+3;Pl	rapanui	rapa1244	rap	Rapa Nui	Austronesian	Papunesia	433	free	ɾaua	p:teɾaua	2
+3;Pl	ratahan	rata1244	rth	Ratahan	Austronesian	Papunesia	439	free	imangaˈse		2
+3;Pl	resigaro	resi1247	rgr	Resígaro	Arawakan	South America	525	free	naʔá	p:naʔá-...-né	2
+3;Pl	riantana	rian1263	ran	Riantana	Kolopom	Papunesia	355	free	yakwo	o:yakwota; p:yakwœtœ	2
+3;Pl	rongga	rong1269	ror	Rongga	Austronesian	Papunesia	684	free	siɹa		2
 3;Pl	rukai	ruka1240	dru	Rukai	Austronesian	Papunesia	158	free	kulini	o:linia; p:-lini	6
 3;Pl	russian	russ1263	rus	Russian	Indo-European	Eurasia	23	free	oní	o:ix; p:ix	6
-3;Pl	saintluciancreole	sain1246	acf	Saint Lucian Creole French	Indo-European	North America	460	free	jo	p:sa jo	6
-3;Pl	salako	kend1254	knx	Salako	Austronesian	Papunesia	60	free	ià	s:neʔ idàʔ; s:urákŋ; a:neʔ idàʔ; a:urákŋ; o:neʔ idàʔ; o:urákŋ; p:-e	6
-3;Pl	saliba	sali1298	slc	Sáliba	Saliban	South America	529	free	hitu	p:h-	6
-3;Pl	sambadaka	samb1311	ccg	Samba Daka	Atlantic-Congo	Africa	620	free	bú	s:gɔ́ɔn bu; s:vú; a:gɔ́ɔn bu; a:vú; p:bèè	6
-3;Pl	samue	wara1292	wbf	Samue	Atlantic-Congo	Africa	608	free	pi	o:peye	6
-3;Pl	saotomense	saot1239	cri	Sãotomense 	Indo-European	Africa	907	free	iˈnẽ		6
-3;Pl	sarcee	sars1236	srs	Sarcee	Athabaskan-Eyak-Tlingit	North America	330	free	īgídíní		6
+3;Pl	saintluciancreole	sain1246	acf	Saint Lucian Creole French	Indo-European	North America	460	free	jo	p:sa jo	2
+3;Pl	saliba	sali1298	slc	Sáliba	Saliban	South America	529	free	hitu	p:h-	2
+3;Pl	sambadaka	samb1311	ccg	Samba Daka	Atlantic-Congo	Africa	620	free	bú	s:gɔ́ɔn bu; s:vú; a:gɔ́ɔn bu; a:vú; p:bèè	2
+3;Pl	samue	wara1292	wbf	Samue	Atlantic-Congo	Africa	608	free	pi	o:peye	2
+3;Pl	saotomense	saot1239	cri	Sãotomense 	Indo-European	Africa	907	free	iˈnẽ		2
+3;Pl	sarcee	sars1236	srs	Sarcee	Athabaskan-Eyak-Tlingit	North America	330	free	īgídíní		2
 3;Pl	satawalese	sata1237	stw	Satawalese	Austronesian	Papunesia	175	free	iir	p:-Vr; p:-r	6
-3;Pl	sbadimaya	badi1246	bia	Badimaya	Pama-Nyungan	Australia	375	free	d̪an̪a	o:d̪an̪an̪a; p:d̪an̪uŋ	6
-3;Pl	senoufosupyire	supy1237	spp	Sénoufo, Supyire	Atlantic-Congo	Africa	604	free	pi		6
-3;Pl	shinekhanburyat	chin1476	bxu	Shinekhan Buryat	Mongolic-Khitan	Eurasia	847	free	tedeen	o:tede; p:=in(i)	6
-3;Pl	shona	shon1251	sna	Shona	Atlantic-Congo	Africa	535	free	iʋo	p:-ʋo	6
-3;Pl	sinaugoro	sina1266	snc	Sinaugoro	Austronesian	Papunesia	434	free	ɣia	p:ɣeri	6
+3;Pl	sbadimaya	badi1246	bia	Badimaya	Pama-Nyungan	Australia	375	free	d̪an̪a	o:d̪an̪an̪a; p:d̪an̪uŋ	2
+3;Pl	senoufosupyire	supy1237	spp	Sénoufo, Supyire	Atlantic-Congo	Africa	604	free	pi		2
+3;Pl	shinekhanburyat	chin1476	bxu	Shinekhan Buryat	Mongolic-Khitan	Eurasia	847	free	tedeen	o:tede; p:=in(i)	2
+3;Pl	shona	shon1251	sna	Shona	Atlantic-Congo	Africa	535	free	iʋo	p:-ʋo	2
+3;Pl	sinaugoro	sina1266	snc	Sinaugoro	Austronesian	Papunesia	434	free	ɣia	p:ɣeri	2
 3;Pl	siraya	sira1267	fos	Siraya	Austronesian	Papunesia	162	free	neini	p:nein	6
-3;Pl	siriano	siri1274	sri	Siriano	Tucanoan	South America	486	free	ĩgɨ̃́-sã	p:ĩgɨ̃́-sãʝa	6
-3;Pl	siwai	siwa1245	siw	Siwai	South Bougainville	Papunesia	235	free		p:pee-	6
-3;Pl	slavey	slav1253	den	Slavey	Athabaskan-Eyak-Tlingit	North America	326	free	ʔegedĩ	p:go-	6
+3;Pl	siriano	siri1274	sri	Siriano	Tucanoan	South America	486	free	ĩgɨ̃́-sã	p:ĩgɨ̃́-sãʝa	2
+3;Pl	siwai	siwa1245	siw	Siwai	South Bougainville	Papunesia	235	free		p:pee-	2
+3;Pl	slavey	slav1253	den	Slavey	Athabaskan-Eyak-Tlingit	North America	326	free	ʔegedĩ	p:go-	2
 3;Pl	slovak	slov1269	slk	Slovak	Indo-European	Eurasia	73	free	oni	o:ich; p:ich	6
-3;Pl	sobei	sobe1238	sob	Sobei	Austronesian	Papunesia	383	free	ri	o:-i; p:-ri	6
-3;Pl	sobei_b	sobe1238	sob	Sobei	Austronesian	Papunesia	384	bound	ri=	o:-i; p:-ri	6
-3;Pl	somali	soma1255	som	Somali	Afro-Asiatic	Africa	308	free	iyágu	p:-kòoda	6
-3;Pl	southantiguan	anti1245	aig	Antigua and Barbuda Creole English	Indo-European	North America	421	free	dem	p:fudem	6
-3;Pl	southawyu	sout2941	aws	South Awyu	Nuclear Trans New Guinea	Papunesia	363	free	yoxo	p:yaxa-	6
-3;Pl	southefate	sout2856	erk	South Efate	Austronesian	Papunesia	700	free	gar	p:negar	6
-3;Pl	southerngrebo	sout2826	grj	Southern Grebo	Kru	Africa	562	free	o˦	o:no˩; p:o˥	6
-3;Pl	southernkisi	sout2778	kss	Southern Kisi sout2778	Atlantic-Congo	Africa	914	free	à	o:ndá; p:ndà	6
-3;Pl	sranan	sran1240	srn	Sranan	Indo-European	South America	455	free	deŋ		6
-3;Pl	stthomas	stan1290	fra	French	Indo-European	Eurasia	437	free	óel	o:léz; p:loèr	6
-3;Pl	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free	ukan	o:wa; p:wɔ	6
-3;Pl	sudest	sude1239	tgo	Sudest	Austronesian	Papunesia	395	free	thiye	p:-nji	6
+3;Pl	sobei	sobe1238	sob	Sobei	Austronesian	Papunesia	383	free	ri	o:-i; p:-ri	2
+3;Pl	sobei_b	sobe1238	sob	Sobei	Austronesian	Papunesia	384	bound	ri=	o:-i; p:-ri	2
+3;Pl	somali	soma1255	som	Somali	Afro-Asiatic	Africa	308	free	iyágu	p:-kòoda	2
+3;Pl	southantiguan	anti1245	aig	Antigua and Barbuda Creole English	Indo-European	North America	421	free	dem	p:fudem	2
+3;Pl	southawyu	sout2941	aws	South Awyu	Nuclear Trans New Guinea	Papunesia	363	free	yoxo	p:yaxa-	2
+3;Pl	southefate	sout2856	erk	South Efate	Austronesian	Papunesia	700	free	gar	p:negar	2
+3;Pl	southerngrebo	sout2826	grj	Southern Grebo	Kru	Africa	562	free	o˦	o:no˩; p:o˥	2
+3;Pl	southernkisi	sout2778	kss	Southern Kisi sout2778	Atlantic-Congo	Africa	914	free	à	o:ndá; p:ndà	2
+3;Pl	sranan	sran1240	srn	Sranan	Indo-European	South America	455	free	deŋ		2
+3;Pl	stthomas	stan1290	fra	French	Indo-European	Eurasia	437	free	óel	o:léz; p:loèr	2
+3;Pl	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free	ukan	o:wa; p:wɔ	2
+3;Pl	sudest	sude1239	tgo	Sudest	Austronesian	Papunesia	395	free	thiye	p:-nji	2
 3;Pl	suki	suki1245	sui	Suki	Suki-Gogodala	Papunesia	15	free	i	o:imderk; p:imderete	6
 3;Pl	sunda	sund1252	sun	Sunda	Austronesian	Papunesia	143	free	maranehnaʔ		6
-3;Pl	swahili	swah1253	swh	Swahili swah1253	Atlantic-Congo	Africa	913	free	wao	p:-ao	6
-3;Pl	swedish	swed1254	swe	Swedish	Indo-European	Eurasia	336	free	dɛm	p:déːràs	6
+3;Pl	swahili	swah1253	swh	Swahili swah1253	Atlantic-Congo	Africa	913	free	wao	p:-ao	2
+3;Pl	swedish	swed1254	swe	Swedish	Indo-European	Eurasia	336	free	dɛm	p:déːràs	2
 3;Pl	taeme	tame1238		Taeme	Pahoturi	Papunesia	9	free	bo	s:wəbi; a:wəbi; o:wəbim; p:oba; p:woba	6
-3;Pl	tafi	tafi1243	tcd	Tafi	Atlantic-Congo	Africa	566	free	bàlɩ́	o:àlɩ́	6
+3;Pl	tafi	tafi1243	tcd	Tafi	Atlantic-Congo	Africa	566	free	bàlɩ́	o:àlɩ́	2
 3;Pl	tagalog	taga1270	tgl	Tagalog	Austronesian	Papunesia	155	free	sila	a:nila; o:nila; p:nila	6
-3;Pl	takia	taki1248	tbc	Takia	Austronesian	Papunesia	269	free	iŋ	p:iŋ sad; p:iŋ sadi	6
-3;Pl	tamil	tami1289	tam	Tamil	Dravidian	Eurasia	11	free	avaikaɭ	s:avar; a:avar; o:avaikaɭai; o:avarai; p:avar	6
-3;Pl	tanda	bedi1235	tnr	Tanda	Atlantic-Congo	Africa	554	free	bəjɔ	s:bən; a:bən; o:bən; p:bən	6
-3;Pl	tariana_icromn	tari1256	tae	Tariana	Arawakan	South America	414	free	nɑhɑ	o:nɑhɑnɑ	6
-3;Pl	tariana_icrtcc	tari1256	tae	Tariana	Arawakan	South America	534	free	naha	p:na-	6
+3;Pl	takia	taki1248	tbc	Takia	Austronesian	Papunesia	269	free	iŋ	p:iŋ sad; p:iŋ sadi	2
+3;Pl	tanda	bedi1235	tnr	Tanda	Atlantic-Congo	Africa	554	free	bəjɔ	s:bən; a:bən; o:bən; p:bən	2
+3;Pl	tariana_icromn	tari1256	tae	Tariana	Arawakan	South America	414	free	nɑhɑ	o:nɑhɑnɑ	2
+3;Pl	tariana_icrtcc	tari1256	tae	Tariana	Arawakan	South America	534	free	naha	p:na-	2
 3;Pl	taroko	taro1264	trv	Taroko	Austronesian	Papunesia	165	free	ka dehiya	a:dehiya; o:dehiyaan; p:=deha	6
-3;Pl	tauya	tauy1241	tya	Tauya	Nuclear Trans New Guinea	Papunesia	409	free	nen	a:nenni; o:nen=; p:nenpi	6
-3;Pl	tauya_b	tauy1241	tya	Tauya	Nuclear Trans New Guinea	Papunesia	701	bound	nen	a:nenni; o:nen-; p:nen-	6
-3;Pl	teop	teop1238	tio	Teop	Austronesian	Papunesia	426	free	ori	p:ri-ori	6
-3;Pl	terei	tere1278	buo	Terei	South Bougainville	Papunesia	234	free		p:pai	6
-3;Pl	teribe	trin1276	trf	Teribe	Indo-European	South America	474	free	ebga	o:ba; p:baĩya lok	6
+3;Pl	tauya	tauy1241	tya	Tauya	Nuclear Trans New Guinea	Papunesia	409	free	nen	a:nenni; o:nen=; p:nenpi	2
+3;Pl	tauya_b	tauy1241	tya	Tauya	Nuclear Trans New Guinea	Papunesia	701	bound	nen	a:nenni; o:nen-; p:nen-	2
+3;Pl	teop	teop1238	tio	Teop	Austronesian	Papunesia	426	free	ori	p:ri-ori	2
+3;Pl	terei	tere1278	buo	Terei	South Bougainville	Papunesia	234	free		p:pai	2
+3;Pl	teribe	trin1276	trf	Teribe	Indo-European	South America	474	free	ebga	o:ba; p:baĩya lok	2
 3;Pl	tetundili	tetu1246	tdt	Tetun Dili	Austronesian	Papunesia	129	free	sira	p:sira nia	6
 3;Pl	thao	thao1240	ssf	Thao	Austronesian	Papunesia	166	free	caycuy		6
-3;Pl	themne	timn1235	tem	Themne	Atlantic-Congo	Africa	541	free	ŋa		6
-3;Pl	tiefo	tief1242	tiq	Tiéfo	Atlantic-Congo	Africa	607	free	ʔo˩		6
-3;Pl	tikar	tika1246	tik	Tikar	Atlantic-Congo	Africa	623	free	ɓɛ˧	o:ɓon˧; p:ɲan˧	6
+3;Pl	themne	timn1235	tem	Themne	Atlantic-Congo	Africa	541	free	ŋa		2
+3;Pl	tiefo	tief1242	tiq	Tiéfo	Atlantic-Congo	Africa	607	free	ʔo˩		2
+3;Pl	tikar	tika1246	tik	Tikar	Atlantic-Congo	Africa	623	free	ɓɛ˧	o:ɓon˧; p:ɲan˧	2
 3;Pl	timugonmurut	timu1262	tih	Timugon Murut	Austronesian	Papunesia	61	free	ilo	o:nilo; p:nilo	6
-3;Pl	tinigua	tini1245	tit	Tinigua	Tinigua	South America	514	free	hiʔ'tʃaːgiha		6
+3;Pl	tinigua	tini1245	tit	Tinigua	Tinigua	South America	514	free	hiʔ'tʃaːgiha		2
 3;Pl	tobati	toba1266	tti	Tobati	Austronesian	Papunesia	181	free	ntric	s:ntrica; a:ntrica; o:ntrica	6
-3;Pl	tobati_b	toba1266	tti	Tobati	Austronesian	Papunesia	385	bound	ry-	o:-ric	6
+3;Pl	tobati_b	toba1266	tti	Tobati	Austronesian	Papunesia	385	bound	ry-	o:-ric	2
 3;Pl	tolaki	tola1247	lbw	Tolaki	Austronesian	Papunesia	56	free	ihiro	p:-ro	6
-3;Pl	torau	tora1259	ttu	Torau	Austronesian	Papunesia	425	free	0	p:-dia	6
-3;Pl	totonac_misantla	yecu1235	tlc	Totonac	Totonacan	North America	315	free	utun	p:iʃla̰ʔka̰n	6
-3;Pl	toussiannorthern	nort2787	tsp	Toussian, Northern	Atlantic-Congo	Africa	606	free	pe˩	p:pe˥	6
-3;Pl	tsafiki	colo1256	cof	Tsafiki	Barbacoan	South America	516	free	inla	s:jaala; s:junla; s:yala; a:jaala; a:junla; a:yala; o:inlaka; o:jaalaka; o:junlaka; o:yalaka; p:inlachi; p:jaalachi; p:junlachi; p:yalachi	6
-3;Pl	tswana	tswa1253	tsn	Tswana	Atlantic-Congo	Africa	407	free	bone	p:-bone	6
-3;Pl	tucano	tuca1252	tuo	Tucano	Tucanoan	South America	532	free	naâ		6
+3;Pl	torau	tora1259	ttu	Torau	Austronesian	Papunesia	425	free	0	p:-dia	2
+3;Pl	totonac_misantla	yecu1235	tlc	Totonac	Totonacan	North America	315	free	utun	p:iʃla̰ʔka̰n	2
+3;Pl	toussiannorthern	nort2787	tsp	Toussian, Northern	Atlantic-Congo	Africa	606	free	pe˩	p:pe˥	2
+3;Pl	tsafiki	colo1256	cof	Tsafiki	Barbacoan	South America	516	free	inla	s:jaala; s:junla; s:yala; a:jaala; a:junla; a:yala; o:inlaka; o:jaalaka; o:junlaka; o:yalaka; p:inlachi; p:jaalachi; p:junlachi; p:yalachi	2
+3;Pl	tswana	tswa1253	tsn	Tswana	Atlantic-Congo	Africa	407	free	bone	p:-bone	2
+3;Pl	tucano	tuca1252	tuo	Tucano	Tucanoan	South America	532	free	naâ		2
 3;Pl	tukangbesi	tuka1248	khc	Tukang Besi	Austronesian	Papunesia	185	free	amai	p:-no	6
-3;Pl	tula	tula1252	tul	Tula	Atlantic-Congo	Africa	592	free	jin	o:ji; p:-ji	6
-3;Pl	tunebocentral	cent2150	tuf	Tunebo Central	Chibchan	South America	520	free	uiyina	p:uiyinay	6
-3;Pl	turkish	nucl1301	tur	Turkish	Turkic	Eurasia	288	free	on̪laɾ	o:on̪laɾı; p:on̪laɾın̪	6
-3;Pl	turkmen	turk1304	tuk	Turkmen	Turkic	Eurasia	405	free	olar	o:olarɪ; p:olarɪŋ	6
-3;Pl	tuwuli	tuwu1238	bov	Tuwuli	Atlantic-Congo	Africa	568	free	be		6
-3;Pl	tuyuca	tuyu1244	tue	Tuyuca	Tucanoan	South America	487	free	kɨ̃ã	p:-je	6
-3;Pl	ura	urav1235	uur	Ura	Austronesian	Papunesia	436	free	leil	p:ahleil	6
-3;Pl	urdu	urdu1245	urd	Urdu	Indo-European	Eurasia	417	free	vo	o:unko; p:unkaa	6
-3;Pl	usarufa	usar1243	usa	Usarufa	Nuclear Trans New Guinea	Papunesia	369	free	ye	o:ti-; p:yi-	6
-3;Pl	utespaiute	utes1238	ute	Ute-Southern Paiute	Uto-Aztecan	North America	364	free	ˈmamɯ̥	o:mamɯ; p:mamɯas	6
-3;Pl	viemo	viem1243	vig	Viemo	Atlantic-Congo	Africa	605	free	ve	s:və; a:və; o:və; p:və	6
-3;Pl	waikyon	east2440	mky	East Makian	Austronesian	Papunesia	458	free	si	p:nidi	6
+3;Pl	tula	tula1252	tul	Tula	Atlantic-Congo	Africa	592	free	jin	o:ji; p:-ji	2
+3;Pl	tunebocentral	cent2150	tuf	Tunebo Central	Chibchan	South America	520	free	uiyina	p:uiyinay	2
+3;Pl	turkish	nucl1301	tur	Turkish	Turkic	Eurasia	288	free	on̪laɾ	o:on̪laɾı; p:on̪laɾın̪	2
+3;Pl	turkmen	turk1304	tuk	Turkmen	Turkic	Eurasia	405	free	olar	o:olarɪ; p:olarɪŋ	2
+3;Pl	tuwuli	tuwu1238	bov	Tuwuli	Atlantic-Congo	Africa	568	free	be		2
+3;Pl	tuyuca	tuyu1244	tue	Tuyuca	Tucanoan	South America	487	free	kɨ̃ã	p:-je	2
+3;Pl	ura	urav1235	uur	Ura	Austronesian	Papunesia	436	free	leil	p:ahleil	2
+3;Pl	urdu	urdu1245	urd	Urdu	Indo-European	Eurasia	417	free	vo	o:unko; p:unkaa	2
+3;Pl	usarufa	usar1243	usa	Usarufa	Nuclear Trans New Guinea	Papunesia	369	free	ye	o:ti-; p:yi-	2
+3;Pl	utespaiute	utes1238	ute	Ute-Southern Paiute	Uto-Aztecan	North America	364	free	ˈmamɯ̥	o:mamɯ; p:mamɯas	2
+3;Pl	viemo	viem1243	vig	Viemo	Atlantic-Congo	Africa	605	free	ve	s:və; a:və; o:və; p:və	2
+3;Pl	waikyon	east2440	mky	East Makian	Austronesian	Papunesia	458	free	si	p:nidi	2
 3;Pl	wambon	wamb1259	wms	Wambon	Nuclear Trans New Guinea	Papunesia	150	free	jakhop	p:jakho-	6
-3;Pl	wappo	wapp1239	wao	Wappo	Yuki-Wappo	North America	317	free	cekoːti	o:cekoːto; p:cekoːtomeʔ	6
-3;Pl	wara	wara1294	tci	Wára	Yam	Papunesia	642	free	ɸi	a:naβai; p:naβəne	6
-3;Pl	warao	wara1303	wba	Warao	Warao	South America	340	free	tatuma	p:∅	6
-3;Pl	warapu	wara1302	bpe	Warapu	Sko	Papunesia	224	free	yéi		6
+3;Pl	wappo	wapp1239	wao	Wappo	Yuki-Wappo	North America	317	free	cekoːti	o:cekoːto; p:cekoːtomeʔ	2
+3;Pl	wara	wara1294	tci	Wára	Yam	Papunesia	642	free	ɸi	a:naβai; p:naβəne	2
+3;Pl	warao	wara1303	wba	Warao	Warao	South America	340	free	tatuma	p:∅	2
+3;Pl	warapu	wara1302	bpe	Warapu	Sko	Papunesia	224	free	yéi		2
 3;Pl	wartathundai	gunt1241	gnt	Warta Thundai	Yam	Papunesia	19	free	pi	a:pambaŋk; p:benani	6
-3;Pl	waskia	wask1241	wsk	Waskia	Nuclear Trans New Guinea	Papunesia	270	free	nuna	o:ø; p:nuŋa	6
-3;Pl	watiwati	wadi1260	xwd	Wati-Wati	Pama-Nyungan	Australia	141	free	thana	s:θana; a:θana; o:thanin; o:θanin; p:thanathu; p:θanaθu	6
-3;Pl	wayuu	wayu1243	guc	Wayuu	Arawakan	South America	497	free	naja	p:na-	6
-3;Pl	welsh_icrkq	wels1247	cym	Welsh	Indo-European	Eurasia	657	free	nhw	p:eu	6
-3;Pl	welsh_icrne	wels1247	cym	Welsh	Indo-European	Eurasia	663	free	nhw	p:eu	6
-3;Pl	welsh_icrrh	wels1247	cym	Welsh	Indo-European	Eurasia	666	free	nhu	s:nu; a:nu; o:nu; p:i; p:u	6
-3;Pl	westcentrallimba	west2450	lia	West-Central Limba	Atlantic-Congo	Africa	540	free	biŋde	o:biŋ; p:namɛŋ	6
-3;Pl	westernbukidnonmanabo	west2555	mbb	Western Bukidnon Manabo	Austronesian	Papunesia	848	free	dan		6
+3;Pl	waskia	wask1241	wsk	Waskia	Nuclear Trans New Guinea	Papunesia	270	free	nuna	o:ø; p:nuŋa	2
+3;Pl	watiwati	wadi1260	xwd	Wati-Wati	Pama-Nyungan	Australia	141	free	θana	o:θanin; p:θanaθu	6
+3;Pl	wayuu	wayu1243	guc	Wayuu	Arawakan	South America	497	free	naja	p:na-	2
+3;Pl	welsh_icrkq	wels1247	cym	Welsh	Indo-European	Eurasia	657	free	nhw	p:eu	2
+3;Pl	welsh_icrne	wels1247	cym	Welsh	Indo-European	Eurasia	663	free	nhw	p:eu	2
+3;Pl	welsh_icrrh	wels1247	cym	Welsh	Indo-European	Eurasia	666	free	nhu	s:nu; a:nu; o:nu; p:i; p:u	2
+3;Pl	westcentrallimba	west2450	lia	West-Central Limba	Atlantic-Congo	Africa	540	free	biŋde	o:biŋ; p:namɛŋ	2
+3;Pl	westernbukidnonmanabo	west2555	mbb	Western Bukidnon Manabo	Austronesian	Papunesia	848	free	dan		2
 3;Pl	westerndani	west2594	dnw	Western Dani	Nuclear Trans New Guinea	Papunesia	134	free	it	p:in-; p:ina-; p:ine-; p:ino-	6
-3;Pl	wfrisian	west2354	fry	Frisian, Western	Indo-European	Eurasia	96	free	se	s:sy; a:sy; o:har; o:harren; p:har; p:harres	6
-3;Pl	wipim	wipi1242	gdr	Wipim	Eastern Trans-Fly	Papunesia	266	free	ton	o:ten; p:tuaina	6
-3;Pl	woleaian	wole1240	woe	Woleaian	Austronesian	Papunesia	850	free	iir	o:-r; p:-r	6
-3;Pl	wolof	nucl1347	wol	Wolof	Atlantic-Congo	Africa	558	free	ɲoom	o:leen; p:seen	6
-3;Pl	wounmeu	woun1238	noa	Woun Meu	Chocoan	South America	479	free	ãm	a:ãmaɕdeu; p:ãmaɕdeu	6
-3;Pl	yabem	yabe1254	jae	Yabem	Austronesian	Papunesia	391	free	ense-àʔ	p:neŋ	6
-3;Pl	yabem_b	yabe1254	jae	Yabem	Austronesian	Papunesia	392	bound	se-	p:[FRONT]+-ŋ	6
-3;Pl	yadhaykenu	yadh1237		Yadhaykenu	Pama-Nyungan	Australia	671	free	ula(ßa)	o:ula:n̪a; p:ula:mu	6
-3;Pl	yahadian	yaha1248	ner	Yahadian	Konda-Yahadian	Papunesia	251	free	míginaigi	p:mígina	6
-3;Pl	yelmek	yelm1242	jel	Yelmek	Bulaka River	Papunesia	204	free	ém	o:émi; p:émauk	6
-3;Pl	yeyi	yeyi1239	yey	Yeyi	Atlantic-Congo	Africa	448	free	wòwó	p:-wo	6
-3;Pl	yom	pali1273	pli	Yom	Indo-European	Eurasia	612	free	a		6
-3;Pl	yoruba	yoru1245	yor	Yoruba	Atlantic-Congo	Africa	408	free	wɔ́̃	o:wɔ̃; p:wɔ̃	6
-3;Pl	yucuna	yucu1253	ycn	Yucuna	Arawakan	South America	510	free	neká	p:ne-	6
-3;Pl	yuhup	yuhu1238	yab	Yuhup	Naduhup	South America	506	free	hɯ̃d	p:nəh	6
-3;Pl	yukpa	yukp1241	yup	Yukpa	Cariban	South America	518	free	oka	p:-rshi; p:-rɨ	6
+3;Pl	wfrisian	west2354	fry	Frisian, Western	Indo-European	Eurasia	96	free	sy	o:harren; p:har	6
+3;Pl	wipim	wipi1242	gdr	Wipim	Eastern Trans-Fly	Papunesia	266	free	ton	o:ten; p:tuaina	2
+3;Pl	woleaian	wole1240	woe	Woleaian	Austronesian	Papunesia	850	free	iir	o:-r; p:-r	2
+3;Pl	wolof	nucl1347	wol	Wolof	Atlantic-Congo	Africa	558	free	ɲoom	o:leen; p:seen	2
+3;Pl	wounmeu	woun1238	noa	Woun Meu	Chocoan	South America	479	free	ãm	a:ãmaɕdeu; p:ãmaɕdeu	2
+3;Pl	yabem	yabe1254	jae	Yabem	Austronesian	Papunesia	391	free	ense-àʔ	p:neŋ	2
+3;Pl	yabem_b	yabe1254	jae	Yabem	Austronesian	Papunesia	392	bound	se-	p:[FRONT]+-ŋ	2
+3;Pl	yadhaykenu	yadh1237		Yadhaykenu	Pama-Nyungan	Australia	671	free	ula(ßa)	o:ula:n̪a; p:ula:mu	2
+3;Pl	yahadian	yaha1248	ner	Yahadian	Konda-Yahadian	Papunesia	251	free	míginaigi	p:mígina	2
+3;Pl	yelmek	yelm1242	jel	Yelmek	Bulaka River	Papunesia	204	free	ém	o:émi; p:émauk	4
+3;Pl	yeyi	yeyi1239	yey	Yeyi	Atlantic-Congo	Africa	448	free	wòwó	p:-wo	2
+3;Pl	yom	pali1273	pli	Yom	Indo-European	Eurasia	612	free	a		2
+3;Pl	yoruba	yoru1245	yor	Yoruba	Atlantic-Congo	Africa	408	free	wɔ́̃	o:wɔ̃; p:wɔ̃	2
+3;Pl	yucuna	yucu1253	ycn	Yucuna	Arawakan	South America	510	free	neká	p:ne-	2
+3;Pl	yuhup	yuhu1238	yab	Yuhup	Naduhup	South America	506	free	hɯ̃d	p:nəh	2
+3;Pl	yukpa	yukp1241	yup	Yukpa	Cariban	South America	518	free	oka	p:-rshi; p:-rɨ	2
 3;Pl	yuracare	yura1255	yuz	Yuracare	Yuracaré	South America	852	free	anaw	s:atiw; s:naw; a:atiw; a:naw; o:atiw; o:naw; p:atiw; p:naw	6
-3;Pl	yuruti	yuru1263	yui	Yurutí	Tucanoan	South America	488	free	kɨ̃́̃́hã	p:-ka	6
-3;Pl	yuwana	yuwa1244	yau	Yuwana	Hoti	South America	531	free	bidɨ	p:tʰ-	6
-3;Pl	zande	zand1248	zne	Zande	Atlantic-Congo	Africa	585	free	i	o:yo; p:gayo	6
-3;Pl	zaysezergulla	zays1235	zay	Zayse Zergulla	Ta-Ne-Omotic	Africa	855	free	ʔúsini	o:ʔúsuna; p:ʔú	6
-3;Pl	zoogochozapotec	zoog1239		Zoogocho Zapotec	Otomanguean	North America	870	free	lhegake'	o:=(gak=)e'; p:=(gak=)e'	6
-3;Pl	zulu	zulu1248	zul	Zulu	Atlantic-Congo	Africa	537	free	bona	p:-bo	6
-3;Pl;F	catalan	stan1289	cat	Catalan	Indo-European	Eurasia	90	free	elles	s:ells; a:ells; o:-los; p:seu	2
-3;Pl;F	french	stan1290	fra	French	Indo-European	Eurasia	89	free	elles	s:ils; s:óel; a:ils; a:óel; o:les; o:léz; p:leur; p:loèr	2
-3;Pl;F	gothic	goth1244	got	Gothic	Indo-European	Eurasia	92	free	eis	s:ija; s:ijōs; a:ija; a:ijōs; o:ija; o:ijōs; o:ins; o:izō; p:izē; p:izō	2
-3;Pl;F	latin	lati1261	lat	Latin	Indo-European	Eurasia	33	free	ea	s:eae; s:eî; a:eae; a:eî; o:eâs; o:eôs; p:suus	2
-3;Pl;F	occitan	occi1239	oci	Occitan	Indo-European	Eurasia	88	free	elas	s:els; a:els; o:-las; o:-los; p:son	2
-3;Pl;F	rumanian	roma1327	ron	Rumanian	Indo-European	Eurasia	87	free	ei	s:ele; a:ele; o:-le; o:-îl; p:lor	2
-3;Pl;F	sardinian	camp1261	sro	Sardinian	Indo-European	Eurasia	86	free	issas	s:issos; a:issos; o:issos; p:issoro	2
-3;Pl;F	serbiancroatian	sout1528	hbs	Serbian/Croatian	Indo-European	Eurasia	70	free	òna	s:òne; s:òni; a:òne; a:òni; o:njîh; p:njȉhov	2
-3;Pl;F	spanish	stan1288	spa	Spanish	Indo-European	Eurasia	84	free	ellas	s:ellos; a:ellos; o:las; o:les; o:los; p:su	2
+3;Pl	yuruti	yuru1263	yui	Yurutí	Tucanoan	South America	488	free	kɨ̃́̃́hã	p:-ka	2
+3;Pl	yuwana	yuwa1244	yau	Yuwana	Hoti	South America	531	free	bidɨ	p:tʰ-	2
+3;Pl	zande	zand1248	zne	Zande	Atlantic-Congo	Africa	585	free	i	o:yo; p:gayo	2
+3;Pl	zaysezergulla	zays1235	zay	Zayse Zergulla	Ta-Ne-Omotic	Africa	855	free	ʔúsini	o:ʔúsuna; p:ʔú	2
+3;Pl	zoogochozapotec	zoog1239		Zoogocho Zapotec	Otomanguean	North America	870	free	lhegake'	o:=(gak=)e'; p:=(gak=)e'	2
+3;Pl	zulu	zulu1248	zul	Zulu	Atlantic-Congo	Africa	537	free	bona	p:-bo	2
+3;Pl;F	catalan	stan1289	cat	Catalan	Indo-European	Eurasia	90	free	elles	o:-los; p:seu	2
+3;Pl;F	french	stan1290	fra	French	Indo-European	Eurasia	89	free	elles	o:les; p:leur	2
+3;Pl;F	gothic	goth1244	got	Gothic	Indo-European	Eurasia	92	free	ijōs	p:izō	2
+3;Pl;F	italian	ital1282	ita	Italian	Indo-European	Eurasia	26	free	loro	o:le	2
+3;Pl;F	latin	lati1261	lat	Latin	Indo-European	Eurasia	33	free	eae	o:eâs; p:suus	2
+3;Pl;F	occitan	occi1239	oci	Occitan	Indo-European	Eurasia	88	free	elas	o:-las; p:son	2
+3;Pl;F	rumanian	roma1327	ron	Rumanian	Indo-European	Eurasia	87	free	ele	o:-le; p:lor	2
+3;Pl;F	sardinian	camp1261	sro	Sardinian	Indo-European	Eurasia	86	free	issas	p:issoro	2
+3;Pl;F	serbiancroatian	sout1528	hbs	Serbian/Croatian	Indo-European	Eurasia	70	free	òne	o:njîh; p:njȉhov	2
+3;Pl;F	spanish	stan1288	spa	Spanish	Indo-European	Eurasia	84	free	ellas	o:las; p:su	2
+3;Pl;F+M	kannada	nucl1305	kan	Kannada	Dravidian	Eurasia	12	free	avaru	o:avarannu; p:avara	4
 3;Pl;F+M	makalero	maka1316	mkz	Makalero	Timor-Alor-Pantar	Papunesia	170	free	irakulaa	s:kilooraa; s:uera(laa); a:kilooraa; a:uera(laa); o:kilooraa; o:uera(laa); p:ki-	4
 3;Pl;F+M	marind	nucl1622	mrz	Marind	Anim	Papunesia	880	free	ipe	p:ipe en	4
-3;Pl;F+M	usan	usan1239	wnu	Usan	Nuclear Trans New Guinea	Papunesia	217	free	wuri	o:(w)oro-; o:wuri-; o:wuru-; p:wonou (?); p:wurinou	4
-3;Pl;F+N	polish	poli1260	pol	Polish	Indo-European	Eurasia	76	free	one	s:oni; a:oni; o:ich; o:je; p:ich; p:te	4
-3;Pl;M	polish	poli1260	pol	Polish	Indo-European	Eurasia	76	free	one	s:oni; a:oni; o:ich; o:je; p:ci; p:ich	2
+3;Pl;F+M	mian	mian1256	mpt	Mian	Nuclear Trans New Guinea	Papunesia	216	free	í	s:í-; s:íli-; a:í-; a:íli-; o:í-; o:íli-	4
+3;Pl;F+M	tamil	tami1289	tam	Tamil	Dravidian	Eurasia	11	free	avar	o:avarai	4
+3;Pl;F+M	usan	usan1239	wnu	Usan	Nuclear Trans New Guinea	Papunesia	217	free	wuri	o:(w)oro-; o:wuri-; o:wuru-; p:wurinou	4
+3;Pl;F+N	cassubian	kash1274	csb	Cassubian	Indo-European	Eurasia	77	free	onë	o:je	4
+3;Pl;F+N	polish	poli1260	pol	Polish	Indo-European	Eurasia	76	free	one	o:je; p:te	4
+3;Pl;M	cassubian	kash1274	csb	Cassubian	Indo-European	Eurasia	77	free	oni	o:jich	2
+3;Pl;M	gothic	goth1244	got	Gothic	Indo-European	Eurasia	92	free	eis	o:ins; p:izē	2
+3;Pl;M	latin	lati1261	lat	Latin	Indo-European	Eurasia	33	free	eî	o:eôs; p:suus	2
+3;Pl;M	polish	poli1260	pol	Polish	Indo-European	Eurasia	76	free	oni	o:ich; p:ci	2
+3;Pl;M	serbiancroatian	sout1528	hbs	Serbian/Croatian	Indo-European	Eurasia	70	free	òni	o:njîh; p:njȉhov	2
+3;Pl;M	spanish	stan1288	spa	Spanish	Indo-European	Eurasia	84	free	ellos	o:los; p:su	2
 3;Pl;M+N	catalan	stan1289	cat	Catalan	Indo-European	Eurasia	90	free	ells	o:-los; p:seu	4
-3;Pl;M+N	french	stan1290	fra	French	Indo-European	Eurasia	89	free	ils	s:óel; a:óel; o:les; o:léz; p:leur; p:loèr	4
-3;Pl;M+N	gothic	goth1244	got	Gothic	Indo-European	Eurasia	92	free	eis	s:ija; s:ijōs; a:ija; a:ijōs; o:ija; o:ins; o:izō; p:izē; p:izō	4
-3;Pl;M+N	latin	lati1261	lat	Latin	Indo-European	Eurasia	33	free	ea	s:eî; a:eî; o:eôs; p:suus	4
+3;Pl;M+N	french	stan1290	fra	French	Indo-European	Eurasia	89	free	ils	o:les; p:leur	4
+3;Pl;M+N	italian	ital1282	ita	Italian	Indo-European	Eurasia	26	free	loro	o:li	4
 3;Pl;M+N	occitan	occi1239	oci	Occitan	Indo-European	Eurasia	88	free	els	o:-los; p:son	4
 3;Pl;M+N	rumanian	roma1327	ron	Rumanian	Indo-European	Eurasia	87	free	ei	o:-îl; p:lor	4
 3;Pl;M+N	sardinian	camp1261	sro	Sardinian	Indo-European	Eurasia	86	free	issos	p:issoro	4
-3;Pl;M+N	serbiancroatian	sout1528	hbs	Serbian/Croatian	Indo-European	Eurasia	70	free	òna	s:òni; a:òni; o:njîh; p:njȉhov	4
-3;Pl;M+N	spanish	stan1288	spa	Spanish	Indo-European	Eurasia	84	free	ellos	o:les; o:los; p:su	4
-3;Pl;N	bugotu	bugh1239	bgt	Bugotu	Austronesian	Papunesia	818	free		o:-ra; p:-dia	2
-3;Pl;N	makalero	maka1316	mkz	Makalero	Timor-Alor-Pantar	Papunesia	170	free	irakulaa	s:kilooraa; s:uera(laa); s:∅; a:kilooraa; a:uera(laa); a:∅; o:kilooraa; o:uera(laa); o:∅; p:ki-; p:∅	2
-3;Pl;N	marind	nucl1622	mrz	Marind	Anim	Papunesia	880	free	epe	s:ipe; a:ipe; o:ipe; p:epe en; p:ipe en	2
-3;Pl;N	usan	usan1239	wnu	Usan	Nuclear Trans New Guinea	Papunesia	217	free	wuri	o:(w)oro-; o:wuri-; o:wuru-; o:∅; p:wonou (?); p:wurinou	2
+3;Pl;N	duna	duna1248	duc	Duna	Duna	Papunesia	191	free	∅		2
+3;Pl;N	gothic	goth1244	got	Gothic	Indo-European	Eurasia	92	free	ija	p:izē	2
+3;Pl;N	kannada	nucl1305	kan	Kannada	Dravidian	Eurasia	12	free	avu	o:avannu; p:avugaɭa	2
+3;Pl;N	latin	lati1261	lat	Latin	Indo-European	Eurasia	33	free	ea	p:suus	2
+3;Pl;N	makalero	maka1316	mkz	Makalero	Timor-Alor-Pantar	Papunesia	170	free	∅		2
+3;Pl;N	mauwake	mauw1238	mhl	Mauwake	Nuclear Trans New Guinea	Papunesia	214	free	∅		2
+3;Pl;N	mian	mian1256	mpt	Mian	Nuclear Trans New Guinea	Papunesia	216	free	ó	s:ó-; a:ó-; o:ó-	2
+3;Pl;N	serbiancroatian	sout1528	hbs	Serbian/Croatian	Indo-European	Eurasia	70	free	òna	o:njîh; p:njȉhov	2
+3;Pl;N	spanish	stan1288	spa	Spanish	Indo-European	Eurasia	84	free	ellos	o:les; p:su	2
+3;Pl;N	tamil	tami1289	tam	Tamil	Dravidian	Eurasia	11	free	avaikaɭ	o:avaikaɭai	2
+3;Pl;N	usan	usan1239	wnu	Usan	Nuclear Trans New Guinea	Papunesia	217	free	wuri	o:∅; p:wonou (?)	2
 3;Sg	abure	abur1243	abu	Abure	Atlantic-Congo	Africa	579	free	yi˥		2
 3;Sg	achangxiandao	xian1249	xia	Achang-Xiandao	Sino-Tibetan	Eurasia	800	free	njaŋ³	o:njaŋ³ li³1; p:nja(ŋ)³ da³; p:nja⁵	2
 3;Sg	acoli	acol1236	ach	Acoli	Nilotic	Africa	802	free	ɛɛn	p:-nɛ᷆; p:-ɛ᷆	2
@@ -5475,7 +5489,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg	nothernsotho	pedi1238	nso	Nothern Sotho	Atlantic-Congo	Africa	444	free	lɔna	p:ɣaɣwɛ	2
 3;Sg	ntairora	nort2920	tbg	Tairora, North	Nuclear Trans New Guinea	Papunesia	371	free	bi	o:a-; p:a-	2
 3;Sg	numanggang	numa1254	nop	Numanggang	Nuclear Trans New Guinea	Papunesia	688	free	adi	p:-ŋiŋ	2
-3;Sg	nyulnyul	nyul1247	nyv	Nyulnyul	Nyulnyulan	Australia	57	free	kiɲiŋk	p:jin	3
 3;Sg	ocaina	ocai1244	oca	Ocaina	Huitotoan	South America	484	free	i̙ha̙		2
 3;Sg	okojuwoiandamese	okoj1239	okj	Okojuwoi Andamese	Great Andamanese	Eurasia	871	free	a'kile	p:eyeakile	2
 3;Sg	oldhittite	hitt1242	hit	Old Hittite	Indo-European	Eurasia	313	free	apāš	o:apān; p:apēl	2
@@ -5498,7 +5511,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg	rongga	rong1269	ror	Rongga	Austronesian	Papunesia	684	free	kaɹi		2
 3;Sg	rukai	ruka1240	dru	Rukai	Austronesian	Papunesia	158	free	kuani	o:inia; p:-ini	3
 3;Sg	saintluciancreole	sain1246	acf	Saint Lucian Creole French	Indo-European	North America	460	free	li	p:sa li	2
-3;Sg	salako	kend1254	knx	Salako	Austronesian	Papunesia	60	free	ià	p:-e	3
 3;Sg	saotomense	saot1239	cri	Sãotomense 	Indo-European	Africa	907	free	e	o:-e; p:-e	2
 3;Sg	sarcee	sars1236	srs	Sarcee	Athabaskan-Eyak-Tlingit	North America	330	free	ídíní		2
 3;Sg	satawalese	sata1237	stw	Satawalese	Austronesian	Papunesia	175	free	iy	p:-n	3
@@ -5603,6 +5615,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg	yulparija	mart1256	mpj	Yulparija	Pama-Nyungan	Australia	192	free	ŋā	a:ŋālu; p:ŋākuraŋu	3
 3;Sg	yuracare	yura1255	yuz	Yuracare	Yuracaré	South America	852	free	ana	s:ati; s:naa; a:ati; a:naa; o:ati; o:naa; p:ati; p:naa	3
 3;Sg	yuwaalaraay	gami1243	kld	Yuwaalaraay	Pama-Nyungan	Australia	44	free	ŋū	p:ŋūŋu	3
+3;Sg+Du	nyulnyul	nyul1247	nyv	Nyulnyul	Nyulnyulan	Australia	57	free	kiɲiŋk	p:jin	6
 3;Sg;F	acatepecmephaa	acat1240		Acatepec Mephaa	Otomanguean	North America	858	free	ìkà	p:kwentɔ̀	1
 3;Sg;F	achterhoeks	acht1238	act	Achterhoeks	Indo-European	Eurasia	801	free	zee	o:zə; p:zien	1
 3;Sg;F	afrikaans	afri1274	afr	Afrikaans	Indo-European	Africa	877	free	sy	o:haar; p:haar; p:hare	1
@@ -5635,14 +5648,11 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg;F	eastyugur	east2337	yuy	East Yugur	Mongolic-Khitan	Eurasia	829	free	tere	p:-ini; p:-ni	1
 3;Sg;F	french	stan1290	fra	French	Indo-European	Eurasia	89	free	elle	o:la; p:son	1
 3;Sg;F	gaagudju	gaga1251	gbu	Gaagudju	Gaagudju	Australia	198	free	ŋāyu		1
-3;Sg;F	german	stan1295	deu	German	Indo-European	Eurasia	24	free	siː	p:iːr	1
 3;Sg;F	gothic	goth1244	got	Gothic	Indo-European	Eurasia	92	free	si	o:ija; p:izōs	1
 3;Sg;F	inanwatan	suab1238	szp	Inanwatan	South Bird's Head	Papunesia	66	free	ítigo	o:-wai; p:tigáe	1
 3;Sg;F	italian	ital1282	ita	Italian	Indo-European	Eurasia	26	free	lei	o:la; p:suo	1
 3;Sg;F	jamiltepecmixtec	jami1235	mxt	Jamiltepec Mixtec	Otomanguean	North America	874	free	n̄ā		1
-3;Sg;F	jaru	jaru1254	ddj	Jaru	Pama-Nyungan	Australia	45	free	ñandu	a:ñandugu; p:ñandugu	1
 3;Sg;F	jaunsari	jaun1243	jns	Jaunsari	Indo-European	Eurasia	840	free	sojI	o:tyāⁿ; p:tyāⁿkā	1
-3;Sg;F	javanese	java1254	jav	Javanese	Austronesian	Papunesia	145	free	dheweke	p:-e; p:-ne	1
 3;Sg;F	kannada	nucl1305	kan	Kannada	Dravidian	Eurasia	12	free	avaɭu	o:avaɭannu; p:avaɭa	1
 3;Sg;F	kashaya	kash1280	kju	Kashaya	Pomoan	North America	864	free	ma:dal	s:manʔ; a:manʔ; p:ma:daʔkhe	1
 3;Sg;F	katcha	katc1250		Katcha	Kadugli-Krongo	Africa	890	free	ɔːkɔ	p:ɔnɔ́	1
@@ -5658,7 +5668,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg;F	lsorbian	lowe1385	dsb	Lower Sorbian	Indo-European	Eurasia	75	free	wona	o:ju	1
 3;Sg;F	macedonian	mace1250	mkd	Macedonian	Indo-European	Eurasia	69	free	taa	o:nea; p:nejzin	1
 3;Sg;F	mafea	mafe1237	mkv	Mafea	Austronesian	Papunesia	399	free	nna	p:-n; p:-na	1
-3;Sg;F	makassarese	maka1311	mak	Makassarese	Austronesian	Papunesia	146	free	ia	p:-na	1
 3;Sg;F	malakmalak	mull1237	mpb	Malak-Malak	Northern Daly	Australia	37	free	nöntön	o:ŋayi	1
 3;Sg;F	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	ŋaŋuñ	o:-ŋa	1
 3;Sg;F	marind	nucl1622	mrz	Marind	Anim	Papunesia	880	free	upe	p:upe en	1
@@ -5693,7 +5702,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg;F	wahgi	nucl1620	wgi	Wahgi	Nuclear Trans New Guinea	Papunesia	111	free	el	p:elim	1
 3;Sg;F	wambaya	wamb1258	wmb	Wambaya	Mirndi	Australia	106	free	nana	p:ŋayanji	1
 3;Sg;F	wandarang	wand1263	wnd	Wandarang	Mangarrayi-Maran	Australia	43	free	ŋiwa	p:agi	1
-3;Sg;F	wangkajunga	mart1256	mpj	Wangkajunga	Pama-Nyungan	Australia	55	free	paluɲa	a:paluɲalu; p:paluɲakurnulu	1
 3;Sg;F	wargamay	warr1255	wgy	Wargamay	Pama-Nyungan	Australia	63	free	ñuŋa	a:ñulaŋga; p:ñuŋaŋu	1
 3;Sg;F	warrnambool	gund1249	wkr	Warrnambool	Pama-Nyungan	Australia	189	free	ñuŋ	a:ñuŋa; p:ñuŋat	1
 3;Sg;F	watiwati	wadi1260	xwd	Wati-Wati	Pama-Nyungan	Australia	141	free	ŋunði	p:ŋukayu	1
@@ -5801,10 +5809,11 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg;M+N	bininjgunwok	gunw1252	gup	Bininj Kunwok	Gunwinyguan	Australia	13	free	nuŋka	p:nuye	2
 3;Sg;M+N	bunganditj	bung1264	xbg	Bunganditj	Pama-Nyungan	Australia	188	free	ñuwaŋ	a:ñuwaŋa; o:=ñuŋ; p:ñuwaŋat; p:ñuŋereŋat; p:ŋaŋatpi	2
 3;Sg;M+N	djinang	djin1253	dji	Djinang	Pama-Nyungan	Australia	104	free	ñani	o:ñaniñi; p:ñanŋaŋi	2
+3;Sg;M+N	javanese	java1254	jav	Javanese	Austronesian	Papunesia	145	free	dheweke	s:panjenenganipun; s:piyambakipun; a:panjenenganipun; a:piyambakipun; o:panjenenganipun; o:piyambakipun; p:-e; p:-ipun; p:-ne; p:-nipun	2
 3;Sg;M+N	kristang	mala1533	mcm	Kristang	Indo-European	Eurasia	116	free	e	s:el; s:eli; a:el; a:eli; o:ku e; p:el; p:eli	2
 3;Sg;M+N	lampung	lamp1243	ljp	Lampung	Austronesian	Papunesia	153	free	beliaw(an)	s:ia; a:ia; o:ia; p:-ni	2
 3;Sg;M+N	longgu	long1395	lgu	Longgu	Austronesian	Papunesia	177	free	ŋaia	p:-na	2
-3;Sg;M+N	marind	nucl1622	mrz	Marind	Anim	Papunesia	880	free	epe	p:epe en	2
+3;Sg;M+N	makassarese	maka1311	mak	Makassarese	Austronesian	Papunesia	146	free	=i	s:ia; a:ia; a:na=; o:ia; p:-na	2
 3;Sg;M+N	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	nhampu	s:nhumpa; a:nhumpa; o:punha; p:puka	2
 3;Sg;M+N	portuguese	port1283	por	Portuguese	Indo-European	Eurasia	91	free	ele	p:seu	2
 3;Sg;M+N	rembarrnga	remb1249	rmb	Rembarrnga	Gunwinyguan	Australia	16	free	niʔdanda	p:-nawə	2
@@ -5821,7 +5830,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg;M+N	watiwati	wadi1260	xwd	Wati-Wati	Pama-Nyungan	Australia	141	free	ngundhi	p:ngukayu	2
 3;Sg;M+N	westerndani	west2594	dnw	Western Dani	Nuclear Trans New Guinea	Papunesia	134	free	at	p:a-; p:e-; p:o-; p:∅-	2
 3;Sg;N	afrikaans	afri1274	afr	Afrikaans	Indo-European	Africa	877	free	dit	p:sy; p:syne	1
-3;Sg;N	ambai	amba1265	amk	Ambai	Austronesian	Papunesia	882	free	∅		1
 3;Sg;N	au	auuu1241	avt	Au	Nuclear Torricelli	Papunesia	230	free		p:-ɨre	1
 3;Sg;N	belorussian	bela1254	bel	Belorussian	Indo-European	Eurasia	78	free	jaho̍	p:jae̍	1
 3;Sg;N	bulgarian	bulg1262	bul	Bulgarian	Indo-European	Eurasia	68	free	to	o:nego; p:negov	1
@@ -5833,7 +5841,6 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg;N	danish	dani1285	dan	Danish	Indo-European	Eurasia	95	free	det	p:dets	1
 3;Sg;N	dutch	dutc1256	nld	Dutch	Indo-European	Eurasia	34	free	het	p:zijn	1
 3;Sg;N	french	stan1290	fra	French	Indo-European	Eurasia	89	free	al	s:ce; a:ce; o:la; o:le; p:son; p:sôn	1
-3;Sg;N	futunaaniwa	futu1245	fut	Futuna-Aniwa	Austronesian	Papunesia	830	free	∅		1
 3;Sg;N	gaagudju	gaga1251	gbu	Gaagudju	Gaagudju	Australia	198	free	ŋāyu		1
 3;Sg;N	gambera	gamb1251	gma	Gambera	Worrorran	Australia	50	free	wini	p:wininaŋga	1
 3;Sg;N	german	stan1295	deu	German	Indo-European	Eurasia	24	free	zi:	p:i:r	1

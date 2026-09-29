@@ -40,26 +40,26 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 2;Sg;Pol;Wom	n	second person singular polite women's speech pronoun	a pronoun referring to the addressee, one in all (polite, women's speech)	TUFS curation		0	0	0
 2;Sg;Refl	n	second person singular reflexive pronoun	a pronoun referring to the addressee, one in all (reflexive)	NTUMC	77000025-n	0	0	0
 2;Sg;Refl;Infml;NHon	n	second person singular reflexive informal non-honorific pronoun	a pronoun referring to the addressee, one in all (reflexive, informal, non-honorific)	NTUMC	77000026-n	0	0	0
-3;Du	n	third person dual pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all	Parabank		210	48	6
-3;Du;F	n	third person dual feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all (feminine)	Parabank		6	5	3
-3;Du;M+N	n	third person dual masculine or neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all (masculine, neuter)	Parabank		6	5	3
-3;Gpl	n	third person greater plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all	Parabank		216	47	6
+3;Du	n	third person dual pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all	Parabank		202	46	6
+3;Du;M	n	third person dual masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all (masculine)	Parabank		9	5	3
+3;Gpl	n	third person greater plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all	Parabank		208	47	6
+3;Gpl;N	n	third person greater plural neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all (neuter)	Parabank		6	5	3
 3;Oth	n	third person other pronoun	a pronoun referring to someone or something other than speaker and addressee (other)	NTUMC	77000032-n	0	0	0
-3;Pl	n	third person plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all	NTUMC	77000031-n 77000039-a 77000111-n	453	79	7
-3;Pl;F	n	third person plural feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (feminine)	NTUMC	77000035-n	9	1	1
-3;Pl;M	n	third person plural masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)	NTUMC	77000029-n	1	1	1
-3;Pl;N	n	third person plural neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (neuter)	NTUMC	77000037-n	4	4	1
+3;Pl	n	third person plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all	NTUMC	77000031-n 77000039-a 77000111-n	447	80	7
+3;Pl;F	n	third person plural feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (feminine)	NTUMC	77000035-n	10	1	1
+3;Pl;M	n	third person plural masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)	NTUMC	77000029-n	6	1	1
+3;Pl;N	n	third person plural neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (neuter)	NTUMC	77000037-n	11	5	2
 3;Pl;Recp	n	third person plural reciprocal pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (reciprocal)	NTUMC	77000033-n	0	0	0
 3;Pl;Refl	n	third person plural reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (reflexive)	NTUMC	77000034-n	0	0	0
-3;Sg	n	third person singular pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all	Parabank		421	82	7
-3;Sg;F	n	third person singular feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)	NTUMC	77000041-n 77000043-a 77000044-n	101	25	5
+3;Sg	n	third person singular pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all	Parabank		419	81	7
+3;Sg;F	n	third person singular feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)	NTUMC	77000041-n 77000043-a 77000044-n	96	25	5
 3;Sg;F;Refl	n	third person singular feminine reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (feminine, reflexive)	NTUMC	77000045-n	0	0	0
 3;Sg;Infml;NHon	n	third person singular informal non-honorific pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (informal, non-honorific)	NTUMC	77000038-n	0	0	0
 3;Sg;M	n	third person singular masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)	NTUMC	77000046-n 77000050-a 77000050-n	76	26	5
-3;Sg;M+N	n	third person singular masculine or neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)	Parabank		27	8	3
+3;Sg;M+N	n	third person singular masculine or neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)	Parabank		28	7	3
 3;Sg;M;Infml;Dist+Rem;Men	n	third person singular masculine informal distal or remote men's speech pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, informal, distal, remote, men's speech)	NTUMC	77000048-n	0	0	0
 3;Sg;M;Refl	n	third person singular masculine reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, reflexive)	NTUMC	77000052-n	0	0	0
-3;Sg;N	n	third person singular neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)	NTUMC	77000053-n 77000054-a 77000054-n	59	16	4
+3;Sg;N	n	third person singular neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)	NTUMC	77000053-n 77000054-a 77000054-n	57	16	4
 3;Sg;N;Refl	n	third person singular neuter reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter, reflexive)	NTUMC	77000056-n	0	0	0
 3;Sg;Oth	n	third person singular other pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (other)	NTUMC	77000040-n	0	0	0
 3;Sg;Pol	n	third person singular polite pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (polite)	TUFS curation		0	0	0

@@ -84,6 +84,10 @@ def read(root: Path) -> tuple[dict, dict]:
     with (cldf / "languages.csv").open(encoding="utf8") as handle:
         languages = {row["ID"]: row for row in csv.DictReader(handle)}
     paradigms: dict = defaultdict(lambda: defaultdict(lambda: defaultdict(set)))
+    # a genderless 3rd dual/plural cell (``3p-s``) fills only the genders the
+    # paradigm does not give explicitly: Spanish has 3pl_f ellas and also 3p-s
+    # ellos, which must not make ellos feminine
+    genderless: dict = defaultdict(lambda: defaultdict(lambda: defaultdict(set)))
     with (cldf / "forms.csv").open(encoding="utf8") as handle:
         for row in csv.DictReader(handle):
             if not row["Form"]:
@@ -92,10 +96,19 @@ def read(root: Path) -> tuple[dict, dict]:
             if not parsed:
                 continue
             atoms, case = parsed
+            target = (
+                genderless if UNGENDERED.fullmatch(row["Parameter_ID"]) else paradigms
+            )
             for atom in atoms:
-                paradigms[row["Language_ID"], row["Paradigm_ID"]][atom][case].add(
+                target[row["Language_ID"], row["Paradigm_ID"]][atom][case].add(
                     row["Form"]
                 )
+    for key, cells in genderless.items():
+        explicit = paradigms[key]
+        for (person, number, gender), cases in cells.items():
+            if not any(p == person and n == number and g for p, n, g in explicit):
+                for case, forms in cases.items():
+                    explicit[person, number, gender][case] |= forms
     return languages, paradigms
 
 

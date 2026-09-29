@@ -104,3 +104,11 @@ def test_series_definition_lists_its_functions() -> None:
         "an indefinite pronoun series used for: specific known, specific unknown"
         " (Haspelmath's functions)"
     )
+
+
+def test_genderless_cells_do_not_override_explicit_gender() -> None:
+    # Parabank Spanish has 3pl_f ellas and also a genderless 3p-s ellos
+    _, paradigms = parabank_words.read(parabank_words.DEFAULT)
+    cells = next(c for (lang, _), c in paradigms.items() if lang == "spanish")
+    assert cells[("3", "pl", "f")]["s"] == {"ellas"}
+    assert cells[("3", "pl", "m")]["s"] == {"ellos"}

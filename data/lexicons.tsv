@@ -23,7 +23,7 @@ omw-pronoun-ae	Avestan aves1237	7	7	7
 omw-pronoun-aey	Amele	5	5	5
 omw-pronoun-af	Afrikaans	8	8	8
 omw-pronoun-afb	Gulf Arabic	5	5	5
-omw-pronoun-ago	Tainae	11	11	11
+omw-pronoun-ago	Tainae	10	10	10
 omw-pronoun-agr	Aguaruna	6	6	6
 omw-pronoun-ahh	Aghu	6	6	6
 omw-pronoun-aho	Ahom	6	6	6
@@ -41,7 +41,7 @@ omw-pronoun-alh	Alawa	10	10	10
 omw-pronoun-aly	Alyawarre	11	11	11
 omw-pronoun-am	Amharic	5	5	5
 omw-pronoun-ami	Amis	7	8	8
-omw-pronoun-amk	Ambai	9	10	10
+omw-pronoun-amk	Ambai	8	9	9
 omw-pronoun-amp	Alamblak	8	8	8
 omw-pronoun-amz	Atampaya	9	9	9
 omw-pronoun-ant	Antakarinya	8	8	8
@@ -156,15 +156,15 @@ omw-pronoun-da	Danish	8	8	8
 omw-pronoun-dar	Dargwa	4	4	4
 omw-pronoun-dbj	Ida'an	7	7	7
 omw-pronoun-dbl	Dyirbal	8	8	8
-omw-pronoun-ddj	Jaru	10	13	13
-omw-pronoun-de	German	29	33	29
+omw-pronoun-ddj	Jaru	10	11	11
+omw-pronoun-de	German	28	31	29
 omw-pronoun-den	Slavey	4	4	4
 omw-pronoun-dga	Dagaare	6	6	6
 omw-pronoun-dhv	Dehu	11	11	11
 omw-pronoun-dif	Diyari	10	10	10
 omw-pronoun-djd	Jaminjung	11	11	11
 omw-pronoun-dji	Djinang	11	12	12
-omw-pronoun-djj	Ndjébbana	12	12	12
+omw-pronoun-djj	Ndjébbana	10	10	10
 omw-pronoun-djk	Ndyuka	6	6	6
 omw-pronoun-djm	Dogon, Jamsay	5	5	5
 omw-pronoun-dju	Kapriman	8	8	8
@@ -173,11 +173,11 @@ omw-pronoun-dmo	Kemedzung	5	5	5
 omw-pronoun-dnw	Western Dani	6	7	7
 omw-pronoun-drl	Paakantyi	9	9	9
 omw-pronoun-dru	Rukai	7	7	7
-omw-pronoun-dsb	Lower Sorbian	11	11	11
+omw-pronoun-dsb	Lower Sorbian	10	10	10
 omw-pronoun-dsh	Daasanach	5	5	5
 omw-pronoun-dta	Dagur	9	9	9
 omw-pronoun-dto	Dogon, Tommo So	6	6	6
-omw-pronoun-duc	Duna	5	5	5
+omw-pronoun-duc	Duna	6	6	6
 omw-pronoun-dur	Dii	8	8	8
 omw-pronoun-dwu	Djapu	10	10	10
 omw-pronoun-dz	Dzongkha	5	5	5
@@ -191,7 +191,7 @@ omw-pronoun-en	English	60	61	49
 omw-pronoun-enn	Engenni	6	6	6
 omw-pronoun-eno	Enggano	8	8	8
 omw-pronoun-erk	South Efate	12	15	15
-omw-pronoun-es	Spanish	28	30	28
+omw-pronoun-es	Spanish	28	31	29
 omw-pronoun-etu	Ejagham	5	5	5
 omw-pronoun-eu	Basque	6	6	6
 omw-pronoun-fa	Persian (Farsi)	5	5	5
@@ -203,14 +203,14 @@ omw-pronoun-fj	Boumaa Fijian	11	11	11
 omw-pronoun-fos	Siraya	7	7	7
 omw-pronoun-fr	French	37	39	34
 omw-pronoun-fub	Adamawa Fulani 	6	6	6
-omw-pronoun-fut	Futuna-Aniwa	11	11	11
+omw-pronoun-fut	Futuna-Aniwa	8	8	8
 omw-pronoun-fuy	Fuyug	9	9	9
-omw-pronoun-fy	Frisian, Western	8	8	8
+omw-pronoun-fy	Frisian, Western	7	8	8
 omw-pronoun-gaa	Ga	5	5	5
 omw-pronoun-gaf	Gende	4	6	6
 omw-pronoun-gah	Alekano	6	6	6
 omw-pronoun-gaj	Gadsup	5	6	6
-omw-pronoun-gbu	Gaagudju	11	13	13
+omw-pronoun-gbu	Gaagudju	11	12	12
 omw-pronoun-gcd	Yukulta	11	11	11
 omw-pronoun-gdr	Wipim	6	7	7
 omw-pronoun-gld	Nanay	2	2	2
@@ -221,7 +221,7 @@ omw-pronoun-gng	Gangam	5	5	5
 omw-pronoun-gni	Gooniyandi	9	9	9
 omw-pronoun-gnk	Gana	5	6	6
 omw-pronoun-gnt	Warta Thundai	4	6	6
-omw-pronoun-got	Gothic	10	10	10
+omw-pronoun-got	Gothic	12	12	12
 omw-pronoun-grj	Southern Grebo	5	5	5
 omw-pronoun-guc	Wayuu	5	5	5
 omw-pronoun-gue	Gurindji	11	11	11
@@ -250,7 +250,7 @@ omw-pronoun-hix	Hixkaryána	7	7	7
 omw-pronoun-hlu	Hieroglyphic Luwian	6	6	6
 omw-pronoun-hnh	Anii	10	10	10
 omw-pronoun-hoa	Hoava	8	8	8
-omw-pronoun-hsb	Upper Sorbian	11	11	11
+omw-pronoun-hsb	Upper Sorbian	10	10	10
 omw-pronoun-hu	Hungarian	8	8	8
 omw-pronoun-huu	Murui Huitoto	8	10	10
 omw-pronoun-ibd	Iwaidja	7	7	7
@@ -319,7 +319,7 @@ omw-pronoun-kmo	Kwoma	8	8	8
 omw-pronoun-kms	Kamasau	4	4	4
 omw-pronoun-kn	Kannada	8	8	8
 omw-pronoun-knp	Kwanja	5	5	5
-omw-pronoun-knx	Salako	6	7	7
+omw-pronoun-knx	Salako	5	5	5
 omw-pronoun-ko	Korean	28	28	23
 omw-pronoun-kog	Cogui	6	7	7
 omw-pronoun-kpc	Curripaco	5	5	5
@@ -341,7 +341,7 @@ omw-pronoun-kxa	Kairiru	13	13	13
 omw-pronoun-kxb	Krobu	6	6	6
 omw-pronoun-kyo	Klon	11	11	11
 omw-pronoun-kyx	Rapoisi	9	9	9
-omw-pronoun-la	Latin	10	11	10
+omw-pronoun-la	Latin	12	13	12
 omw-pronoun-lbw	Tolaki	7	7	7
 omw-pronoun-lbz	Lardil	11	11	11
 omw-pronoun-lef	Lelemi	5	5	5
@@ -350,7 +350,7 @@ omw-pronoun-lgk	Neverver	7	7	7
 omw-pronoun-lgq	Logba	5	5	5
 omw-pronoun-lgu	Longgu	12	12	12
 omw-pronoun-lia	West-Central Limba	5	5	5
-omw-pronoun-ljp	Lampung	7	8	8
+omw-pronoun-ljp	Lampung	8	8	8
 omw-pronoun-llj	Letyi-Lejti	8	8	8
 omw-pronoun-lmc	Limilngan	9	10	10
 omw-pronoun-lml	Raga	10	11	11
@@ -381,7 +381,7 @@ omw-pronoun-meu	Motu	11	11	11
 omw-pronoun-mfe	Morisyen	8	8	8
 omw-pronoun-mgf	Maklew	6	6	6
 omw-pronoun-mhd	Mbugu	11	12	6
-omw-pronoun-mhl	Mauwake	5	5	5
+omw-pronoun-mhl	Mauwake	6	6	6
 omw-pronoun-mhs	Buru	8	8	8
 omw-pronoun-mht	Mandahuaca	5	5	5
 omw-pronoun-mi	Maori [Bauer et al] maor1246	14	14	11
@@ -400,11 +400,11 @@ omw-pronoun-mnx	Manikion	11	11	11
 omw-pronoun-mot	Bari	6	6	6
 omw-pronoun-mpb	Malak-Malak	9	10	10
 omw-pronoun-mpc	Mangarayi	10	10	10
-omw-pronoun-mpj	Wangkajunga	18	20	12
-omw-pronoun-mpt	Mian	8	9	9
+omw-pronoun-mpj	Wangkajunga	17	18	11
+omw-pronoun-mpt	Mian	7	9	9
 omw-pronoun-mql	Mbelimbe	5	5	5
 omw-pronoun-mrq	North Marquesan	11	11	11
-omw-pronoun-mrz	Marind	4	5	5
+omw-pronoun-mrz	Marind	3	3	3
 omw-pronoun-mso	Mombum	6	6	6
 omw-pronoun-msw	Sua	5	5	5
 omw-pronoun-mte	Mono	6	7	7
@@ -434,14 +434,14 @@ omw-pronoun-ngb	Ngbandi	6	6	6
 omw-pronoun-ngk	Dalabon	11	11	11
 omw-pronoun-nha	Nhanda	9	9	9
 omw-pronoun-nhu	Noone	10	10	10
-omw-pronoun-nid	Ngandi	11	11	11
+omw-pronoun-nid	Ngandi	10	10	10
 omw-pronoun-nig	Ngalakan	12	13	13
 omw-pronoun-niy	Ngiti	13	16	7
 omw-pronoun-njo	Ao Naga	11	11	11
 omw-pronoun-nku	Kulango, Bouna	5	5	5
 omw-pronoun-nl	Dutch	9	10	10
 omw-pronoun-nmb	Big Nambas	7	7	7
-omw-pronoun-nmu	Northeastern Maidu	8	8	8
+omw-pronoun-nmu	Northeastern Maidu	9	9	9
 omw-pronoun-nmx	Nama	3	6	6
 omw-pronoun-nnm	Namia	10	10	10
 omw-pronoun-noa	Woun Meu	6	6	6
@@ -454,7 +454,7 @@ omw-pronoun-nun	Anong	10	10	10
 omw-pronoun-nux	Mehek	5	6	6
 omw-pronoun-ny	Chichewa	6	6	6
 omw-pronoun-nyt	Nyawaygi	11	11	11
-omw-pronoun-nyv	Nyulnyul	8	9	9
+omw-pronoun-nyv	Nyulnyul	7	7	7
 omw-pronoun-oc	Occitan	8	8	8
 omw-pronoun-oca	Ocaina	9	9	9
 omw-pronoun-okj	Okojuwoi Andamese	6	6	6
@@ -499,13 +499,13 @@ omw-pronoun-rop	Kriol	11	11	11
 omw-pronoun-ror	Rongga	7	7	7
 omw-pronoun-rth	Ratahan	7	7	7
 omw-pronoun-ru	Russian	34	36	29
-omw-pronoun-sa	Sanskrit	10	11	11
+omw-pronoun-sa	Sanskrit	11	12	12
 omw-pronoun-sah	Yakut	2	2	2
 omw-pronoun-sbc	Kele	11	11	11
 omw-pronoun-sce	Dongxiang	7	7	7
 omw-pronoun-set	Sentani	5	5	5
 omw-pronoun-sgi	Nizaa	6	6	6
-omw-pronoun-sh	Serbian/Croatian	8	9	9
+omw-pronoun-sh	Serbian/Croatian	10	11	11
 omw-pronoun-shu	Chadian Spoken Arabic 	5	5	5
 omw-pronoun-sim	Mende	6	6	6
 omw-pronoun-siw	Siwai	6	7	7
@@ -513,7 +513,7 @@ omw-pronoun-sja	Epena	6	6	6
 omw-pronoun-sk	Slovak	8	8	8
 omw-pronoun-skf	Mekens	18	19	8
 omw-pronoun-skv	Skou	9	9	9
-omw-pronoun-sl	Slovene	10	11	11
+omw-pronoun-sl	Slovene	11	11	11
 omw-pronoun-slc	Sáliba	5	5	5
 omw-pronoun-sll	Salt-Yui	1	1	1
 omw-pronoun-sm	Samoan	11	13	13
@@ -539,7 +539,7 @@ omw-pronoun-suz	Sunwar	8	11	11
 omw-pronoun-sv	Swedish	6	6	6
 omw-pronoun-svs	Savosavo	9	9	9
 omw-pronoun-sw	Swahili swah1253	6	6	6
-omw-pronoun-szp	Inanwatan	9	10	10
+omw-pronoun-szp	Inanwatan	8	9	9
 omw-pronoun-ta	Tamil	9	9	9
 omw-pronoun-tae	Tariana	10	10	5
 omw-pronoun-tay	Atayal	7	7	7
@@ -581,13 +581,13 @@ omw-pronoun-tuf	Tunebo Central	6	6	6
 omw-pronoun-tul	Tula	7	7	7
 omw-pronoun-tuo	Tucano	6	6	6
 omw-pronoun-tvl	Tuvaluan	11	11	11
-omw-pronoun-twe	Teiwa	6	13	13
+omw-pronoun-twe	Teiwa	6	12	12
 omw-pronoun-tya	Tauya	6	6	6
 omw-pronoun-tyn	Kombai	6	6	6
 omw-pronoun-uk	Ukrainian	6	6	6
 omw-pronoun-ulk	Meriam	7	7	7
 omw-pronoun-ump	Umpila umpi1239	8	8	8
-omw-pronoun-ung	Ungarinyin	13	14	14
+omw-pronoun-ung	Ungarinyin	13	13	13
 omw-pronoun-unr	Mundari	11	15	11
 omw-pronoun-ur	Urdu	32	41	28
 omw-pronoun-uri	Urim	10	10	10
@@ -598,7 +598,7 @@ omw-pronoun-vam	Vanimo	9	9	9
 omw-pronoun-vi	Vietnamese	26	27	23
 omw-pronoun-vig	Viemo	5	5	5
 omw-pronoun-vko	Kodeoha	7	7	7
-omw-pronoun-vma	Martuthunira	9	10	10
+omw-pronoun-vma	Martuthunira	10	10	10
 omw-pronoun-vnk	Lovono	11	11	11
 omw-pronoun-vnm	Neve'ei	11	11	11
 omw-pronoun-wao	Wappo	6	6	6
@@ -621,7 +621,7 @@ omw-pronoun-woe	Woleaian	7	8	8
 omw-pronoun-wpc	Maco	4	5	5
 omw-pronoun-wrg	Warungu	9	9	9
 omw-pronoun-wrk	Garrwa	11	11	11
-omw-pronoun-wro	Worrorra	13	14	14
+omw-pronoun-wro	Worrorra	13	13	13
 omw-pronoun-wrs	Waris	2	2	2
 omw-pronoun-wsk	Waskia	6	6	6
 omw-pronoun-wtm	Mewati	5	5	5
