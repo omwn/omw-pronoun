@@ -1,0 +1,307 @@
+# Cantonese pro-forms for the OMW pronoun wordnet.
+# NOT from TUFS (TUFS has no Cantonese): written by Claude Opus 5.5 from its own knowledge,
+# for a speaker to check. Romanization is Jyutping. One table per concept; edit `comment`.
+# Parabank's Cantonese (Yale/IPA only) agrees on the six personal pronouns.
+
+["1;Sg"]
+lemmas = ["我"]
+jyutping = ["ngo5"]
+english = ["I"]
+confidence = ["high"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+comment = ""
+
+["1;Pl"]
+lemmas = ["我哋"]
+jyutping = ["ngo5 dei6"]
+english = ["we"]
+confidence = ["high"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+note = "not marked for clusivity"
+comment = ""
+
+["2;Sg"]
+lemmas = ["你"]
+jyutping = ["nei5"]
+english = ["you"]
+english_via = "2"
+confidence = ["high"]
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+comment = ""
+
+["2;Pl"]
+lemmas = ["你哋"]
+jyutping = ["nei5 dei6"]
+english = ["you"]
+english_via = "2"
+confidence = ["high"]
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+comment = ""
+
+["2;Sg;Fml;Pol"]
+lemmas = ["閣下"]
+jyutping = ["gok3 haa6"]
+english = ["you"]
+english_via = "2"
+confidence = ["medium"]
+label = "second person singular formal polite pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal, polite)"
+note = "very formal, mostly written; Mandarin 您 is rare in spoken Cantonese"
+comment = ""
+
+["3;Sg"]
+lemmas = ["佢"]
+jyutping = ["keoi5"]
+confidence = ["high"]
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+note = "no gender in speech; 他/她/它 are written-Chinese forms"
+comment = ""
+
+["3;Pl"]
+lemmas = ["佢哋"]
+jyutping = ["keoi5 dei6"]
+english = ["they"]
+confidence = ["high"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["自己"]
+jyutping = ["zi6 gei2"]
+english = ["oneself"]
+confidence = ["high"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["大家"]
+jyutping = ["daai6 gaa1"]
+english = ["everybody", "everyone"]
+confidence = ["high"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+comment = ""
+
+["Pers;Int"]
+lemmas = ["邊個"]
+jyutping = ["bin1 go3"]
+english = ["who", "whom"]
+confidence = ["high"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+note = "also 'which one' (Ent;Int)"
+comment = ""
+
+["Ent;Int"]
+lemmas = ["邊個"]
+jyutping = ["bin1 go3"]
+english = ["which"]
+confidence = ["high"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+note = "'which one'"
+comment = ""
+
+["Int"]
+lemmas = ["邊"]
+jyutping = ["bin1"]
+english = ["what", "which", "whose"]
+confidence = ["high"]
+label = "interrogative pronoun"
+definition = "an interrogative pronoun"
+note = "determiner 'which', before a classifier: 邊本書"
+comment = ""
+
+["Thng;Int"]
+lemmas = ["乜嘢", "咩", "乜"]
+jyutping = ["mat1 je5", "me1", "mat1"]
+english = ["what", "which"]
+confidence = ["high", "high", "medium"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+note = "咩 colloquial contraction of 乜嘢"
+comment = ""
+
+["Plc;Int"]
+lemmas = ["邊度", "邊處"]
+jyutping = ["bin1 dou6", "bin1 syu3"]
+english = ["where"]
+confidence = ["high", "medium"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+comment = ""
+
+["Tim;Int"]
+lemmas = ["幾時"]
+jyutping = ["gei2 si4"]
+english = ["when"]
+confidence = ["high"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+comment = ""
+
+["Rsn;Int"]
+lemmas = ["點解", "做乜"]
+jyutping = ["dim2 gaai2", "zou6 mat1"]
+english = ["why"]
+confidence = ["high", "medium"]
+label = "reason interrogative pronoun"
+definition = "a reason interrogative pronoun"
+comment = ""
+
+["Mnr;Int"]
+lemmas = ["點", "點樣"]
+jyutping = ["dim2", "dim2 joeng2"]
+english = ["how"]
+confidence = ["high", "high"]
+label = "manner interrogative pronoun"
+definition = "a manner interrogative pronoun"
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["幾多"]
+jyutping = ["gei2 do1"]
+english = ["how many", "how much"]
+confidence = ["high"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+comment = ""
+
+["Prox"]
+lemmas = ["呢"]
+jyutping = ["ni1"]
+confidence = ["high"]
+label = "proximal pronoun"
+definition = "a proximal pronoun"
+note = "determiner, before a classifier: 呢本書"
+comment = ""
+
+["Dist"]
+lemmas = ["嗰"]
+jyutping = ["go2"]
+confidence = ["high"]
+label = "distal pronoun"
+definition = "a distal pronoun"
+note = "determiner, before a classifier: 嗰本書"
+comment = ""
+
+["Ent;Sg;Prox"]
+lemmas = ["呢個"]
+jyutping = ["ni1 go3"]
+english = ["this"]
+confidence = ["high"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+note = "demonstrative + general classifier"
+comment = ""
+
+["Ent;Sg;Dist"]
+lemmas = ["嗰個"]
+jyutping = ["go2 go3"]
+english = ["that"]
+confidence = ["high"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+comment = ""
+
+["Ent;Pl;Prox"]
+lemmas = ["呢啲"]
+jyutping = ["ni1 di1"]
+english = ["these"]
+confidence = ["high"]
+label = "entity plural proximal pronoun"
+definition = "an entity plural proximal pronoun"
+comment = ""
+
+["Ent;Pl;Dist"]
+lemmas = ["嗰啲"]
+jyutping = ["go2 di1"]
+english = ["those"]
+confidence = ["high"]
+label = "entity plural distal pronoun"
+definition = "an entity plural distal pronoun"
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["呢度", "呢處"]
+jyutping = ["ni1 dou6", "ni1 syu3"]
+english = ["here"]
+confidence = ["high", "medium"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+comment = ""
+
+["Plc;Dist"]
+lemmas = ["嗰度", "嗰處"]
+jyutping = ["go2 dou6", "go2 syu3"]
+english = ["there"]
+confidence = ["high", "medium"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = ["噉"]
+jyutping = ["gam2"]
+english = ["so"]
+confidence = ["medium"]
+label = "manner proximal or distal pronoun"
+definition = "a manner proximal or distal pronoun"
+note = "'like this/that, in this way'; distance-neutral"
+comment = ""
+
+["Knd;Prox+Dist"]
+lemmas = ["噉樣"]
+jyutping = ["gam2 joeng2"]
+english = ["such"]
+confidence = ["medium"]
+label = "kind proximal or distal pronoun"
+definition = "a kind proximal or distal pronoun"
+note = "'like this, this kind of'; check whether it is manner rather than kind"
+comment = ""
+
+["Thng;Sg;Asrt"]
+lemmas = ["啲嘢"]
+jyutping = ["di1 je5"]
+english = ["something"]
+confidence = ["medium"]
+label = "thing singular assertive existential pronoun"
+definition = "a thing singular assertive existential pronoun"
+note = "'something'; check: also just 'stuff'"
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = ["有人"]
+jyutping = ["jau5 jan4"]
+english = ["someone"]
+confidence = ["medium"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+note = "'someone'; arguably a phrase (have + person)"
+comment = ""
+
+["Pers;Sg;Neg"]
+lemmas = ["冇人"]
+jyutping = ["mou5 jan4"]
+english = ["no one", "no-one", "nobody", "noone"]
+confidence = ["medium"]
+label = "person singular negative pronoun"
+definition = "a person singular negative pronoun"
+note = "'nobody'; arguably a phrase (not.have + person)"
+comment = ""
+
+["Thng;Sg;Univ"]
+lemmas = ["全部"]
+jyutping = ["cyun4 bou6"]
+confidence = ["medium"]
+label = "thing singular universal pronoun"
+definition = "a thing singular universal pronoun"
+note = "'all, everything'"
+comment = ""

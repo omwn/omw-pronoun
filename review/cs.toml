@@ -1,0 +1,261 @@
+# Pronouns for Czech, from the built OMW pronoun lexicon omw-pronoun-cs.
+# One table per concept. Edit `comment`; leave the rest as generated.
+
+["1;Pl"]
+lemmas = ["my"]
+english = ["we"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+forms = ["my: nás (o)"]
+sources = ["my <- NTUMC, Parabank"]
+comment = ""
+
+["1;Pl;Poss"]
+lemmas = ["náš"]
+english = ["our", "ours"]
+label = "first person plural possessive pronoun"
+definition = "a possessive: of or belonging to the speaker, more than one possessor"
+sources = ["náš <- NTUMC, Parabank"]
+comment = ""
+
+["1;Sg"]
+lemmas = ["já"]
+english = ["I"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+forms = ["já: mne (o)"]
+sources = ["já <- NTUMC, Parabank"]
+comment = ""
+
+["1;Sg;Poss"]
+lemmas = ["můj"]
+english = ["mine", "my"]
+label = "first person singular possessive pronoun"
+definition = "a possessive: of or belonging to the speaker, one possessor"
+sources = ["můj <- NTUMC, Parabank"]
+comment = ""
+
+["2;Pl"]
+lemmas = ["vy"]
+english = ["you"]
+english_via = "2"
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+forms = ["vy: vás (o)"]
+sources = ["vy <- NTUMC, Parabank"]
+comment = ""
+
+["2;Pl;Poss"]
+lemmas = ["váš"]
+english = ["your", "yours"]
+english_via = "2;Poss"
+label = "second person plural possessive pronoun"
+definition = "a possessive: of or belonging to the addressee, more than one possessor"
+sources = ["váš <- Parabank"]
+comment = ""
+
+["2;Sg"]
+lemmas = ["ty"]
+english = ["you"]
+english_via = "2"
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+forms = ["ty: tebe (o)"]
+sources = ["ty <- NTUMC, Parabank"]
+comment = ""
+
+["2;Sg;Poss"]
+lemmas = ["tvůj"]
+english = ["your", "yours"]
+english_via = "2;Poss"
+label = "second person singular possessive pronoun"
+definition = "a possessive: of or belonging to the addressee, one possessor"
+sources = ["tvůj <- NTUMC, Parabank"]
+comment = ""
+
+["3;Pl"]
+lemmas = ["ona", "oni", "ony"]
+english = ["they"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+forms = ["ona: je (o)", "oni: je (o)"]
+sources = ["ona <- NTUMC", "oni <- NTUMC, Parabank", "ony <- NTUMC"]
+comment = ""
+
+["3;Pl;Poss"]
+lemmas = ["jejich"]
+english = ["their", "theirs"]
+label = "third person plural possessive pronoun"
+definition = "a possessive: of or belonging to someone or something other than speaker and addressee, more than one possessor"
+sources = ["jejich <- NTUMC, Parabank"]
+comment = ""
+
+["3;Sg;F"]
+lemmas = ["ona"]
+english = ["she"]
+label = "third person singular feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
+forms = ["ona: je (o)"]
+sources = ["ona <- NTUMC, Parabank"]
+comment = ""
+
+["3;Sg;F;Poss"]
+lemmas = ["její"]
+english = ["her", "hers"]
+label = "third person singular feminine possessive pronoun"
+definition = "a possessive: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+sources = ["její <- Parabank"]
+comment = ""
+
+["3;Sg;M"]
+lemmas = ["on"]
+english = ["he"]
+label = "third person singular masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
+forms = ["on: jeho (o)"]
+sources = ["on <- NTUMC, Parabank"]
+comment = ""
+
+["3;Sg;M+N;Poss"]
+lemmas = ["jeho"]
+label = "third person singular masculine or neuter possessive pronoun"
+definition = "a possessive: of or belonging to someone or something other than speaker and addressee, one possessor (masculine, neuter)"
+sources = ["jeho <- Parabank"]
+comment = ""
+
+["3;Sg;M;Poss"]
+lemmas = ["jeho"]
+english = ["his"]
+label = "third person singular masculine possessive pronoun"
+definition = "a possessive: of or belonging to someone or something other than speaker and addressee, one possessor (masculine)"
+sources = ["jeho <- NTUMC"]
+comment = ""
+
+["3;Sg;N"]
+lemmas = ["ono", "to"]
+english = ["it"]
+label = "third person singular neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)"
+forms = ["ono: jej (o)"]
+sources = ["ono <- NTUMC, Parabank", "to <- NTUMC"]
+comment = ""
+
+["Du;Univ"]
+lemmas = ["oba"]
+english = ["both", "either"]
+label = "dual universal pronoun"
+definition = "a dual universal pronoun"
+sources = ["oba <- NTUMC"]
+comment = ""
+
+["Ent;Du;Univ"]
+lemmas = ["oba"]
+english = ["both"]
+label = "entity dual universal pronoun"
+definition = "an entity dual universal pronoun"
+sources = ["oba <- NTUMC"]
+comment = ""
+
+["Ent;Sg;Dist"]
+lemmas = ["ta", "ten", "to"]
+english = ["that"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+sources = ["ta <- NTUMC", "ten <- NTUMC", "to <- NTUMC"]
+comment = ""
+
+["Ent;Sg;Prox"]
+lemmas = ["tahle", "tato", "tenhle", "tento", "tohle", "toto"]
+english = ["this"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+sources = ["tahle <- NTUMC", "tato <- NTUMC", "tenhle <- NTUMC", "tento <- NTUMC", "tohle <- NTUMC", "toto <- NTUMC"]
+comment = ""
+
+["Int"]
+lemmas = ["co", "jaký", "jenž", "který"]
+english = ["what", "which"]
+label = "interrogative pronoun"
+definition = "an interrogative pronoun"
+sources = ["co <- NTUMC", "jaký <- NTUMC", "jenž <- NTUMC", "který <- NTUMC"]
+comment = ""
+
+["Pers;Int"]
+lemmas = ["kdo"]
+english = ["who", "whom"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+sources = ["kdo <- NTUMC"]
+comment = ""
+
+["Pers;Sg;Neg"]
+lemmas = ["nikdo"]
+english = ["no one", "no-one", "nobody", "noone"]
+label = "person singular negative pronoun"
+definition = "a person singular negative pronoun"
+sources = ["nikdo <- NTUMC"]
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["každý"]
+english = ["everybody", "everyone"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+sources = ["každý <- NTUMC"]
+comment = ""
+
+["Plc;Int"]
+lemmas = ["kam", "kde"]
+english = ["where"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+sources = ["kam <- NTUMC", "kde <- NTUMC"]
+comment = ""
+
+["Rsn;Int"]
+lemmas = ["proč"]
+english = ["why"]
+label = "reason interrogative pronoun"
+definition = "a reason interrogative pronoun"
+sources = ["proč <- NTUMC"]
+comment = ""
+
+["Sg;Dist"]
+lemmas = ["ta", "ten", "to"]
+english = ["that"]
+label = "singular distal pronoun"
+definition = "a singular distal pronoun"
+sources = ["ta <- NTUMC", "ten <- NTUMC", "to <- NTUMC"]
+comment = ""
+
+["Sg;Prox"]
+lemmas = ["tahle", "tato", "tenhle", "tento", "tohle", "tot"]
+english = ["this"]
+label = "singular proximal pronoun"
+definition = "a singular proximal pronoun"
+sources = ["tahle <- NTUMC", "tato <- NTUMC", "tenhle <- NTUMC", "tento <- NTUMC", "tohle <- NTUMC", "tot <- NTUMC"]
+comment = ""
+
+["Thng;Int"]
+lemmas = ["co"]
+english = ["what", "which"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+sources = ["co <- NTUMC"]
+comment = ""
+
+["Thng;Sg;Asrt"]
+lemmas = ["cosi"]
+english = ["something"]
+label = "thing singular assertive existential pronoun"
+definition = "a thing singular assertive existential pronoun"
+sources = ["cosi <- NTUMC"]
+comment = ""
+
+["Tim;Int"]
+lemmas = ["kdy"]
+english = ["when"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+sources = ["kdy <- NTUMC"]
+comment = ""

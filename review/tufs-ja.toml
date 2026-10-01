@@ -1,0 +1,379 @@
+# TUFS pro-forms for Japanese, as curated for the OMW pronoun wordnet.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
+
+["1;Sg;Fml;Hon+Pol"]
+lemmas = ["私"]
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular formal honorific or polite pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal, honorific, polite)"
+tufs = ["私 <- 私（わたくし） (medium)"]
+curator_notes = ["TUFS reads it わたくし, which NTUMC codes Hon+Pol"]
+status = "built"
+comment = ""
+
+["1;Sg;Fml;Pol"]
+lemmas = ["私", "わたし"]
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular formal polite pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal, polite)"
+tufs = ["私 <- 私（わたくし） (high)", "わたし <- 私（わたし） (high)"]
+curator_notes = ["NTUMC 私", "NTUMC"]
+status = "built"
+comment = ""
+
+["2;Sg;Infml"]
+lemmas = ["あなた"]
+english = ["you"]
+english_via = "2"
+label = "second person singular informal pronoun"
+definition = "a pronoun referring to the addressee, one in all (informal)"
+tufs = ["あなた <- あなた (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Du;Fml;Dist+Rem"]
+lemmas = ["あちら"]
+label = "entity dual formal distal or remote pronoun"
+definition = "an entity dual formal distal or remote pronoun"
+tufs = ["あちら <- あちら (high)"]
+curator_notes = ["NTUMC; TUFS heading sense is place/direction \"over there\""]
+status = "built"
+comment = ""
+
+["Ent;Du;Fml;Med"]
+lemmas = ["そちら"]
+label = "entity dual formal medial pronoun"
+definition = "an entity dual formal medial pronoun"
+tufs = ["そちら <- そちら (high)"]
+curator_notes = ["NTUMC; TUFS heading sense is place/direction"]
+status = "built"
+comment = ""
+
+["Ent;Du;Fml;Prox"]
+lemmas = ["こちら"]
+english = ["these"]
+english_via = "Ent;Pl;Prox"
+label = "entity dual formal proximal pronoun"
+definition = "an entity dual formal proximal pronoun"
+tufs = ["こちら <- こちら (high)"]
+curator_notes = ["NTUMC; TUFS heading sense is place/direction"]
+status = "built"
+comment = ""
+
+["Ent;Du;Infml;Prox"]
+lemmas = ["こっち"]
+english = ["these"]
+english_via = "Ent;Pl;Prox"
+label = "entity dual informal proximal pronoun"
+definition = "an entity dual informal proximal pronoun"
+tufs = ["こっち <- こっち (high)"]
+curator_notes = ["NTUMC (note: そっち/あっち are Ent;Infml;Med/Rem, without Du)"]
+status = "built"
+comment = ""
+
+["Ent;Infml;Med"]
+lemmas = ["そっち"]
+label = "entity informal medial pronoun"
+definition = "an entity informal medial pronoun"
+tufs = ["そっち <- そっち (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Infml;Rem"]
+lemmas = ["あっち"]
+label = "entity informal remote pronoun"
+definition = "an entity informal remote pronoun"
+tufs = ["あっち <- あっち (high)"]
+curator_notes = ["NTUMC; TUFS heading sense is place/direction"]
+status = "built"
+comment = ""
+
+["Ent;Int"]
+lemmas = ["どれ"]
+english = ["which"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+tufs = ["どれ <- どれ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Int;Fml"]
+lemmas = ["どちら"]
+english = ["which"]
+english_via = "Ent;Int"
+label = "entity interrogative formal pronoun"
+definition = "an entity interrogative formal pronoun"
+tufs = ["どちら <- どちら (high)"]
+curator_notes = ["NTUMC; TUFS heading sense is place \"where\""]
+status = "built"
+comment = ""
+
+["Ent;Int;Infml"]
+lemmas = ["どっち"]
+english = ["which"]
+english_via = "Ent;Int"
+label = "entity interrogative informal pronoun"
+definition = "an entity interrogative informal pronoun"
+tufs = ["どっち <- どっち (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Prox"]
+lemmas = ["これ"]
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+tufs = ["これ <- これ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Sg;Dist+Rem"]
+lemmas = ["あれ"]
+label = "entity singular distal or remote pronoun"
+definition = "an entity singular distal or remote pronoun"
+tufs = ["あれ <- あれ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Sg;Med"]
+lemmas = ["それ"]
+label = "entity singular medial pronoun"
+definition = "an entity singular medial pronoun"
+tufs = ["それ <- それ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Sg;Prox"]
+lemmas = ["これ"]
+english = ["this"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+tufs = ["これ <- これ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Int"]
+lemmas = ["どの", "何"]
+english = ["what", "which"]
+label = "interrogative pronoun"
+definition = "an interrogative pronoun"
+tufs = ["どの <- どの (high)", "何 <- 何（なに・なん） (high)"]
+curator_notes = ["extra-lemmas; determiner", "NTUMC; determiner use (何色)"]
+status = "built"
+comment = ""
+
+["Knd;Prox"]
+lemmas = ["こんな"]
+english = ["such"]
+english_via = "Knd;Prox+Dist"
+label = "kind proximal pronoun"
+definition = "a kind proximal pronoun"
+tufs = ["こんな <- こんな (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Med"]
+lemmas = ["その"]
+label = "medial pronoun"
+definition = "a medial pronoun"
+tufs = ["その <- その (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Mnr;Int"]
+lemmas = ["どう", "どんな"]
+english = ["how"]
+label = "manner interrogative pronoun"
+definition = "a manner interrogative pronoun"
+tufs = ["どう <- どう (high)", "どんな <- どんな (medium)"]
+curator_notes = ["extra-lemmas", "NTUMC code; arguably Knd;Int (cf. extra-lemmas どのような Knd;Int)"]
+status = "built"
+comment = ""
+
+["Mnr;Med"]
+lemmas = ["そう"]
+label = "manner medial pronoun"
+definition = "a manner medial pronoun"
+tufs = ["そう <- そう (high)"]
+curator_notes = ["extra-lemmas"]
+status = "built"
+comment = ""
+
+["Pers;Int"]
+lemmas = ["だれ"]
+english = ["who", "whom"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+tufs = ["だれ <- だれ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Pers;Int;Pol"]
+lemmas = ["どなた"]
+english = ["who", "whom"]
+english_via = "Pers;Int"
+label = "person interrogative polite pronoun"
+definition = "a person interrogative polite pronoun"
+tufs = ["どなた <- どなた (high)"]
+curator_notes = ["extra-lemmas"]
+status = "built"
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["自分"]
+english = ["oneself"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+tufs = ["自分 <- 自分 (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = ["だれか"]
+english = ["someone"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+tufs = ["だれか <- だれか (high)"]
+curator_notes = ["extra-lemmas"]
+status = "built"
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["みんな"]
+english = ["everybody", "everyone"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+tufs = ["みんな <- みんな (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Pers;Univ;Pol"]
+lemmas = ["皆さん"]
+english = ["everybody", "everyone"]
+english_via = "Pers;Univ"
+label = "person universal polite pronoun"
+definition = "a person universal polite pronoun"
+tufs = ["皆さん <- 皆さん (high)"]
+curator_notes = ["extra-lemmas"]
+status = "built"
+comment = ""
+
+["Plc;Int"]
+lemmas = ["どこ"]
+english = ["where"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+tufs = ["どこ <- どこ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Plc;Med"]
+lemmas = ["そこ"]
+label = "place medial pronoun"
+definition = "a place medial pronoun"
+tufs = ["そこ <- そこ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["ここ"]
+english = ["here"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+tufs = ["ここ <- ここ (high)"]
+curator_notes = ["extra-lemmas"]
+status = "built"
+comment = ""
+
+["Plc;Rem"]
+lemmas = ["あそこ"]
+label = "place remote pronoun"
+definition = "a place remote pronoun"
+tufs = ["あそこ <- あそこ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Prox"]
+lemmas = ["この"]
+label = "proximal pronoun"
+definition = "a proximal pronoun"
+tufs = ["この <- この (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["いくつ", "いくら"]
+english = ["how many", "how much"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+tufs = ["いくつ <- いくつ (high)", "いくら <- いくら (high)"]
+curator_notes = ["not in NTUMC; \"how many\"", "not in NTUMC; \"how much\""]
+status = "built"
+comment = ""
+
+["Rem"]
+lemmas = ["あの"]
+label = "remote pronoun"
+definition = "a remote pronoun"
+tufs = ["あの <- あの (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Rsn;Int"]
+lemmas = ["どうして", "なぜ"]
+english = ["why"]
+label = "reason interrogative pronoun"
+definition = "a reason interrogative pronoun"
+tufs = ["どうして <- どうして (high)", "なぜ <- なぜ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Thng;Int"]
+lemmas = ["何"]
+english = ["what", "which"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+tufs = ["何 <- 何（なに・なん） (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Thng;Sg;Univ"]
+lemmas = ["全部"]
+label = "thing singular universal pronoun"
+definition = "a thing singular universal pronoun"
+tufs = ["全部 <- 全部 (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Tim;Int"]
+lemmas = ["いつ"]
+english = ["when"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+tufs = ["いつ <- いつ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
