@@ -39,31 +39,37 @@ alternatives joined by `+`:
 - **Unmarked values** stand for their marked ones: `1` is inclusive or exclusive,
   and `Pl` is *non-singular*, as in the paper (English *we* is `1;Pl`). Where a
   dual or trial contrasts, the plural alone is `Gpl`, greater plural.
-- **Case is inflection, not meaning.** The paper's case slot is not part of a
-  concept: *I*, *me*, *my* and *mine* are one entry for `1;Sg`, with the case forms
-  as `<Form>` variants tagged `case` (`s`, `a`, `o`, `p`, or NTUMC's `obj`,
-  `poss`).
+- **Case is inflection, not meaning.** Subjective and objective are not part of
+  a concept: *I* and *me* are one entry for `1;Sg`, with the case forms as
+  `<Form>` variants tagged `case` (`s`, `a`, `o`, or NTUMC's `obj`).
+- **The possessive is meaning.** *My* adds a relation to *I*, and Czech *můj*
+  "my" inflects for case itself, so possessives are words of their own, of
+  concepts coded `Poss` in the case slot (`1;Sg;Poss`: *my*, *mine*, *můj*). A
+  possessive is not a kind of its pronoun; the shared lexicon links the two
+  by `other` relations typed `possessor` and `possessive`.
 - **Bound forms** (affixes) are variants of the free pronoun when their cells are
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
-The inventory (`data/concepts.tsv`, 124 concepts) comes from:
+The inventory (`data/concepts.tsv`, 175 concepts, 27 of them possessive) comes
+from:
 
 - **NTUMC**: its pronoun synsets (`770000xx`), from the current database, with
-  case removed. The feature analysis is read from the wordnet itself: the head is
+  subjective and objective case removed. The feature analysis is read from the wordnet itself: the head is
   the hypernym, features are `dmnu` links to feature synsets, and *kind*/*manner*
   are `attr` links.
 - **Parabank**: combinations NTUMC lacks (dual, greater plural, clusivity in the
-  dual, number-neutral *you*), admitted by the KinDiv rule: >= 5 language
+  dual, number-neutral *you*, and their possessives), admitted by the KinDiv rule: >= 5 language
   families in >= 3 macroareas.
 - **`data/extra-concepts.tsv`**: curated additions, so far seven from TUFS Japanese
   (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい).
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
-25 feature values keep their Princeton ILI, 14 are proposed (NTUMC's own and new
-ones such as *greater plural*), and 2 point at doubtful Princeton senses (`check`).
+Of the 51 feature values in use, 26 keep their Princeton ILI (*possessive* is
+i69651), 23 are proposed (NTUMC's own and new ones such as *greater plural* and
+Haspelmath's functions), and 2 point at doubtful Princeton senses (`check`).
 Each records its Universal Dependencies value (`dc:relation="UD:Number=Grpl"`);
-28 of 43 have one.
+36 of 51 have one.
 
 **Part of speech and lexicographer file.** Pro-forms cut across parts of speech, as
 in UD (PRON/DET/ADV): pronouns are `n` (`noun.pronoun`), determiners `a`
@@ -114,3 +120,5 @@ generalizations (`1e;Du` is under `1;Du` and `1e;Pl`).
 Every lemma and form records its script (ISO 15924, e.g. `Hani`, `Hira`, `Jpan`).
 
 `docs/pronoun-databases.md` surveys the cross-linguistic pronoun databases.
+`docs/open-questions.md` lists design points still to be decided (e.g. whether
+to split possessive determiners from possessive pronouns).

@@ -224,6 +224,7 @@ CATEGORIES = {
         "COMP",
         "FC",
     },
+    "case": {"Poss"},
     "formality": {"Fml", "Infml"},
     "politeness": {"Pol", "Hon", "NHon"},
     "proximity": {"Prox", "Med", "Dist", "Rem"},
@@ -246,8 +247,17 @@ def expand(values: frozenset[str]) -> set[str]:
 
 
 def subsumes(general: str, specific: str) -> bool:
-    """True if every feature of `general` is implied by `specific`."""
+    """True if every feature of `general` is implied by `specific`.
+
+    A possessive is not a kind of its pronoun (*my* is not a kind of *I*), so
+    possessives and non-possessives never subsume each other.
+
+    >>> subsumes("1;Sg", "1;Sg;Poss"), subsumes("1;Poss", "1;Sg;Poss")
+    (False, True)
+    """
     g, s = features(general), features(specific)
+    if ("case" in g) != ("case" in s):
+        return False
     return all(
         slot in s and expand(vals) >= expand(s[slot]) for slot, vals in g.items()
     )
@@ -326,7 +336,8 @@ def add_ntumc(languages: dict[str, Language], codes: set[str]) -> None:
         for s in synsets
     }
     # English case form -> (lemma, case); keyed by form alone, since NTUMC may
-    # file a form under a narrower concept (your: 2;Sg) than its lemma
+    # file a form under a narrower concept than its lemma. Possessives are words
+    # of their own: *her* the possessive is not a form of *she*
     with (DATA / "eng-paradigms.tsv").open(encoding="utf8") as handle:
         paradigms = {
             row["form"]: (row["lemma"], row["case"])
@@ -343,7 +354,7 @@ def add_ntumc(languages: dict[str, Language], codes: set[str]) -> None:
                 language = languages.setdefault(tag, Language(tag, name))
                 for lemma in filter(None, (x.strip() for x in row[column].split(";"))):
                     source = f"NTUMC {row['synset']}"
-                    if tag == "en" and lemma in paradigms:
+                    if tag == "en" and lemma in paradigms and "Poss" not in code:
                         head, case = paradigms[lemma]
                         entry = language.entry(head, code)
                         entry.forms.setdefault(lemma, []).append(("case", case))
@@ -594,10 +605,40 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
             lines.append(
                 f'      <SynsetRelation relType="{rel}" target="{feature_id(abbr)}"/>'
             )
+        for rel, other in possessive_links(code, set(codes)):
+            lines.append(
+                f'      <SynsetRelation relType="other" dc:type="{rel}"'
+                f' target="{BASE}-{slug(other)}"/>'
+            )
         lines.append("    </Synset>")
     lines += feature_synsets
     lines.append("  </Lexicon>")
     return lines
+
+
+def possessive_links(code: str, codes: set[str]) -> list[tuple[str, str]]:
+    """Link a possessive to its pronoun and back (``1;Sg;Poss`` and ``1;Sg``).
+
+    WN-LMF has no synset relation for this, so it is ``other`` with a
+    ``dc:type``: ``possessor`` from the possessive, ``possessive`` from the pronoun.
+
+    >>> possessive_links("1;Sg;Poss", {"1;Sg", "1;Sg;Poss"})
+    [('possessor', '1;Sg')]
+    """
+    parts = code.split(";")
+    if parts[0] not in SLOTS["person"]:
+        return []  # whose (Poss;Int) is not the possessive of which (Int)
+    if "Poss" in parts:
+        pronoun = ";".join(p for p in parts if p != "Poss")
+        return [("possessor", pronoun)] if pronoun in codes else []
+    owned = [c for c in codes if c.split(";") == insert_poss(parts)]
+    return [("possessive", c) for c in owned]
+
+
+def insert_poss(parts: list[str]) -> list[str]:
+    """A code's parts with ``Poss`` in the case slot (after person, number, gender)."""
+    personal = [p for p in parts if set(p.split("+")) <= set().union(*SLOTS.values())]
+    return personal + ["Poss"] + parts[len(personal) :]
 
 
 def feature_id(abbr: str) -> str:

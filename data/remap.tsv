@@ -1,3 +1,7 @@
 lang	lemma	from_code	to_code	note
 en	you	2;Sg	2	English you does not mark number; NTUMC splits it into 2;Sg and 2;Pl
 en	you	2;Pl	2	
+en	your	2;Sg;Poss	2;Poss	as for you: English your does not mark number
+en	your	2;Pl;Poss	2;Poss	
+en	yours	2;Sg;Poss	2;Poss	
+en	yours	2;Pl;Poss	2;Poss	

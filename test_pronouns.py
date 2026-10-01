@@ -24,9 +24,36 @@ def test_code_follows_the_papers_order() -> None:
     assert ntumc_pronouns.code(features) == "1;Sg;Fml;Pol"
 
 
-def test_case_is_not_part_of_a_concept() -> None:
-    assert concepts.caseless("1;Sg;Poss") == "1;Sg"
-    assert concepts.caseless("3;Sg;F;Poss+Subj") == "3;Sg;F"
+def test_case_is_not_part_of_a_concept_but_the_possessive_is() -> None:
+    assert concepts.caseless("1;Sg;Obj") == "1;Sg"
+    assert concepts.caseless("1;Sg;Poss") == "1;Sg;Poss"
+    assert concepts.caseless("3;Sg;F;Poss+Subj") == "3;Sg;F;Poss"
+
+
+def test_possessive_cells_are_lexemes_of_their_own() -> None:
+    # Czech: on/jeho (3sg m) and ono/jej (3sg n) differ, but share possessive jeho
+    cells = {
+        ("3", "sg", "m"): {"s": {"on"}, "o": {"jeho"}, "p": {"jeho"}},
+        ("3", "sg", "n"): {"s": {"ono"}, "o": {"jej"}, "p": {"jeho"}},
+    }
+    core = parabank_words.lexemes(cells)
+    possessive = parabank_words.lexemes(cells, parabank_words.POSSESSIVE)
+    assert len(core) == 2
+    assert all("p" not in forms for _, forms in core)
+    assert possessive == [(frozenset(cells), {"p": {"jeho"}})]
+
+
+def test_a_possessive_is_not_a_kind_of_its_pronoun() -> None:
+    assert not build.subsumes("1;Sg", "1;Sg;Poss")
+    assert not build.subsumes("1;Sg;Poss", "1;Sg")
+    assert build.subsumes("3;Sg;Poss", "3;Sg;F;Poss")
+
+
+def test_possessives_link_to_their_pronouns() -> None:
+    codes = {"1;Sg", "1;Sg;Poss", "Int", "Poss;Int"}
+    assert build.possessive_links("1;Sg;Poss", codes) == [("possessor", "1;Sg")]
+    assert build.possessive_links("1;Sg", codes) == [("possessive", "1;Sg;Poss")]
+    assert build.possessive_links("Poss;Int", codes) == []
 
 
 @pytest.mark.parametrize(

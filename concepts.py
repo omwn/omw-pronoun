@@ -9,9 +9,10 @@ Concepts come from two places:
 
 - **NTUMC**: every pronoun synset still in the current NTUMC database (synsets
   dropped from it since the April 2026 XML export are ignored). Case is
-  inflection, not meaning, so the case slot is removed from the code and
-  synsets that differ only in case fold together: *I*, *me*, *my* and *mine* are
-  all ``1;Sg``.
+  inflection, not meaning, so subjective and objective are removed from the
+  code and synsets that differ only in them fold together: *I* and *me* are
+  both ``1;Sg``. The possessive stays: *my* and *mine* are ``1;Sg;Poss``, a
+  concept of its own.
 - **Parabank**: codes of Parabank lexemes that NTUMC lacks (dual, greater plural,
   clusivity in the dual, ...), admitted by the rule used for KinDiv: attested in
   at least ``MIN_FAMILIES`` families in ``MIN_AREAS`` macroareas.
@@ -39,7 +40,8 @@ MIN_AREAS = 3
 MIN_FAMILIES_SERIES = 5
 FUNCTIONS = {"SK", "SU", "IRR", "Q", "COND", "INEG", "DNEG", "COMP", "FC"}
 
-CASES = {"Subj", "Obj", "Poss"}
+#: cases that are inflection; the possessive (``Poss``) is part of the meaning
+CASES = {"Subj", "Obj"}
 
 PERSON = {
     "1": "first person",
@@ -78,6 +80,7 @@ WORDS = {
     "Refl": "reflexive",
     "Recp": "reciprocal",
     "Oth": "other",
+    "Poss": "possessive",
     "SK": "specific known",
     "SU": "specific unknown",
     "IRR": "irrealis non-specific",
@@ -118,8 +121,17 @@ NUMBERS = {
 
 
 def caseless(code: str) -> str:
-    """Drop the case slot from a code: ``3;Sg;F;Poss+Subj`` -> ``3;Sg;F``."""
-    return ";".join(p for p in code.split(";") if not set(p.split("+")) <= CASES)
+    """Drop the inflectional cases from a code, keeping the possessive.
+
+    >>> caseless("3;Sg;F;Subj+Obj")
+    '3;Sg;F'
+    >>> caseless("3;Sg;F;Poss+Subj")
+    '3;Sg;F;Poss'
+    """
+    parts = (
+        "+".join(v for v in p.split("+") if v not in CASES) for p in code.split(";")
+    )
+    return ";".join(p for p in parts if p)
 
 
 def label(code: str) -> str:
@@ -143,11 +155,15 @@ def define(code: str) -> str:
         uses = ", ".join(WORDS[f] for f in code.split("+"))
         return f"an indefinite pronoun series used for: {uses} (Haspelmath's functions)"
     if parts and parts[0] in REFERENTS:
+        possessive = "Poss" in parts
+        parts = [p for p in parts if p != "Poss"]
         text = f"a pronoun referring to {REFERENTS[parts[0]]}"
+        if possessive:
+            text = f"a possessive: of or belonging to {REFERENTS[parts[0]]}"
         rest = parts[1:]
         if rest and rest[0] in NUMBERS:
             count = NUMBERS[rest[0]]
-            text += f", {count} in all"
+            text += f", {count} {'possessor' if possessive else 'in all'}"
             rest = rest[1:]
         if rest:
             text += (

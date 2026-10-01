@@ -12,6 +12,7 @@ Gpl	number	greater plural			new	Number=Grpl	a grammatical number category referr
 M	gender	masculine	i8148		pwn	Gender=Masc	male (of grammatical gender)
 F	gender	feminine	i8149		pwn	Gender=Fem	female (of grammatical gender)
 N	gender	neuter	i8150		pwn	Gender=Neut	neither male nor female (of grammatical gender)
+Poss	case	possessive	i69651		pwn	Poss=Yes	the case expressing ownership
 Pers	head	person	i35562		pwn		a human being
 Thng	head	thing	i60191		check		PWN's thing is "an artifact": find the right sense
 Ent	head	entity	i35545		pwn		that which is perceived or known or inferred to have its own distinct existence (living or nonliving)

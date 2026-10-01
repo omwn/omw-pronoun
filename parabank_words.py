@@ -11,9 +11,12 @@ in each cell of a person x number x gender x case grid: ``1sg_s``, ``12du_a``,
 ``3sg_f_o``. ``1`` is the exclusive first person and ``12`` the inclusive.
 
 Case is inflection, not meaning, so a **lexeme** is a set of cells that share one
-row of case forms (A, S, O, P): English *I/me/my* is one lexeme for 1sg, and
-*we/us/our* one lexeme for 1du, 1pl, 12du and 12pl. The lemma is the S form (else
-A); the other case forms are variants.
+row of case forms (A, S, O): English *I/me* is one lexeme for 1sg, and *we/us*
+one lexeme for 1du, 1pl, 12du and 12pl. The lemma is the S form (else A); the
+other case forms are variants. The possessive (P) is not a case form: *my* adds
+a relation to *I*, and Czech *můj* "my" inflects for case itself. Each P form is
+a lexeme of its own, with the cells that share it, and its code ends in ``Poss``
+(``1;Sg;Poss``).
 
 The lexeme's cells give its **concept code**, in the order of Seah & Bond (2014):
 person, number, gender.
@@ -51,7 +54,10 @@ DEFAULT = Path.home() / "git" / "parabank-pronouns"
 CELL = re.compile(r"(12|1|2|3)(sg|du|tr|pl)(?:_([mfn]))?_([asop])")
 UNGENDERED = re.compile(r"3([dp])-([asop])(?:_([mf]))?")
 PERSONS = {"1": "1e", "12": "1i", "2": "2", "3": "3"}
-CASES = "saop"  # citation order: S first, then A
+CORE = "sao"  # citation order: S first, then A
+#: the possessive is a word of its own (Czech *můj* "my" inflects for case
+#: itself), so the ``p`` cells make separate lexemes, of possessive concepts
+POSSESSIVE = "p"
 
 #: an atom is (person, number, gender); gender only for the 3rd person
 Atom = tuple[str, str, str]
@@ -112,12 +118,18 @@ def read(root: Path) -> tuple[dict, dict]:
     return languages, paradigms
 
 
-def lexemes(cells: dict) -> list[tuple[frozenset, dict[str, set[str]]]]:
-    """Group a paradigm's atoms by identical case rows."""
+def lexemes(
+    cells: dict, cases: str = CORE
+) -> list[tuple[frozenset, dict[str, set[str]]]]:
+    """Group a paradigm's atoms by identical rows of the given cases.
+
+    Atoms with no form in any of the cases are left out.
+    """
     by_row: dict = defaultdict(set)
-    for atom, cases in cells.items():
-        row = tuple((case, frozenset(cases.get(case, ()))) for case in CASES)
-        by_row[row].add(atom)
+    for atom, forms in cells.items():
+        row = tuple((case, frozenset(forms.get(case, ()))) for case in cases)
+        if any(f for _, f in row):
+            by_row[row].add(atom)
     return [
         (frozenset(atoms), {case: set(forms) for case, forms in row if forms})
         for row, atoms in by_row.items()
@@ -222,30 +234,34 @@ def main() -> None:
             dropped.add(language_id)
         elicited = set(cells)
         language = languages[language_id]
+        common = (
+            language_id,
+            language["Glottocode"],
+            language["ISO639P3code"],
+            language["Name"],
+            language["Family"],
+            language["Macroarea"],
+            paradigm,
+            language["Analect"].lower(),
+        )
         for atoms, cases in lexemes(cells):
             citation = next(iter(sorted(cases.get("s") or cases.get("a") or [""])))
             variants = "; ".join(
                 f"{case}:{form}"
-                for case in CASES
+                for case in CORE
                 for form in sorted(cases.get(case, ()))
                 if form != citation
             )
-            rows.append(
-                (
-                    code(atoms, elicited, gender_trusted),
-                    language_id,
-                    language["Glottocode"],
-                    language["ISO639P3code"],
-                    language["Name"],
-                    language["Family"],
-                    language["Macroarea"],
-                    paradigm,
-                    language["Analect"].lower(),
-                    citation,
-                    variants,
-                    str(len(atoms)),
-                )
-            )
+            concept = code(atoms, elicited, gender_trusted)
+            rows.append((concept, *common, citation, variants, str(len(atoms))))
+        # possessives: one lexeme per form (English *my* and *mine*), coded over
+        # the cells that have a possessive
+        owned = {atom for atom, forms in cells.items() if forms.get(POSSESSIVE)}
+        for atoms, cases in lexemes(cells, POSSESSIVE):
+            concept = code(atoms, owned, gender_trusted)
+            concept = f"{concept};Poss" if concept else ""
+            for form in sorted(cases[POSSESSIVE]):
+                rows.append((concept, *common, form, "", str(len(atoms))))
     columns = [
         "code",
         "language_id",
