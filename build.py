@@ -623,7 +623,7 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
                 lines.append(
                     f'      <SynsetRelation relType="{rel}" target="{BASE}-{slug(t)}"/>'
                 )
-        for rel, abbr in feature_links(code, feature_table):
+        for rel, abbr in feature_links(code, feature_table, c["pos"]):
             lines.append(
                 f'      <SynsetRelation relType="{rel}" target="{feature_id(abbr)}"/>'
             )
@@ -677,20 +677,36 @@ def read_features() -> dict[str, dict[str, str]]:
         return {row["abbr"]: row for row in csv.DictReader(handle, delimiter="\t")}
 
 
-def feature_links(code: str, table: dict[str, dict[str, str]]) -> list[tuple[str, str]]:
+#: the inverse of each concept-to-feature relation, for the feature synsets
+INVERSE = {
+    "hypernym": "hyponym",
+    "attribute": "attribute",
+    "exemplifies": "is_exemplified_by",
+}
+
+
+def feature_links(
+    code: str, table: dict[str, dict[str, str]], pos: str = "n"
+) -> list[tuple[str, str]]:
     """Relations from a concept to its feature synsets.
 
-    The head is the concept's hypernym, as in NTUMC (*who* is a kind of person);
-    every other feature is linked by ``exemplifies``, NTUMC's usage-domain link.
+    The head of a pronoun is its hypernym, as in NTUMC (*who* is a kind of
+    person). A determiner or pro-adverb is not a kind of the noun that heads it
+    (*such* is not a kind of kind), so its head is linked by ``attribute``, as
+    NTUMC links kind and manner. Every other feature is linked by
+    ``exemplifies``, NTUMC's usage-domain link.
 
     >>> feature_links("Pers;Int;Pol", read_features())
     [('hypernym', 'Pers'), ('exemplifies', 'Int'), ('exemplifies', 'Pol')]
+    >>> feature_links("Mnr;Prox", read_features(), "r")
+    [('attribute', 'Mnr'), ('exemplifies', 'Prox')]
     """
+    head = "hypernym" if pos == "n" else "attribute"
     links = []
     for slot, values in features(code).items():
         for value in sorted(values):
             if value in table:
-                links.append(("hypernym" if slot == "head" else "exemplifies", value))
+                links.append((head if slot == "head" else "exemplifies", value))
     return links
 
 
@@ -705,8 +721,8 @@ def write_features(
     """
     back: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for c in concepts:
-        for rel, abbr in feature_links(c["code"], table):
-            inverse = "hyponym" if rel == "hypernym" else "is_exemplified_by"
+        for rel, abbr in feature_links(c["code"], table, c["pos"]):
+            inverse = INVERSE[rel]
             back[abbr].append((inverse, c["code"]))
     used = [a for a in table if a in back]
     entries: list[str] = []

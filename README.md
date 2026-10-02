@@ -95,6 +95,22 @@ so series concepts are admitted on >= 5 families alone (4 concepts); their marke
 The hierarchy is computed from the features: a concept's hypernyms are its closest
 generalizations (`1e;Du` is under `1;Du` and `1e;Pl`).
 
+The hierarchy and the feature links live in the shared lexicon `omw-pronoun`; the
+language lexicons have none. Join a language synset to its concept on
+`dc:identifier`:
+
+```python
+base = wn.Wordnet("omw-pronoun")
+concept = {s.metadata()["identifier"]: s for s in base.synsets()}
+en = wn.Wordnet("omw-pronoun-en")
+we = en.synsets("we")[0]
+concept[we.metadata()["identifier"]].hypernyms()  # pronoun:1+2;Pl
+```
+
+Wn's `expand="omw-pronoun"` does **not** work yet: it matches synsets by ILI,
+and every pronoun concept is a proposal (`ili="in"`), which has no ILI until
+CILI assigns one.
+
 ## Words
 
 - **NTUMC** (English, Mandarin, Japanese, Indonesian, Czech, ...). English case

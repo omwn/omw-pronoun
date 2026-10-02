@@ -107,8 +107,8 @@ def hierarchy(concepts: dict[str, dict]) -> dict[str, set[str]]:
     """Code -> its direct hypernyms in the shared (mul) lexicon.
 
     As in the build, these are the closest broader concepts of the same part of
-    speech, plus the head's feature synset (*who* is a kind of person), written
-    ``feature:Pers``.
+    speech, plus, for a pronoun, the head's feature synset (*who* is a kind of
+    person), written ``feature:Pers``.
     """
     pos = {code: row["pos"] for code, row in concepts.items()}
     parents = hypernyms(list(concepts), pos)
@@ -116,7 +116,7 @@ def hierarchy(concepts: dict[str, dict]) -> dict[str, set[str]]:
     for code in concepts:
         parents[code] |= {
             f"feature:{abbr}"
-            for rel, abbr in feature_links(code, table)
+            for rel, abbr in feature_links(code, table, pos[code])
             if rel == "hypernym"
         }
     return parents
