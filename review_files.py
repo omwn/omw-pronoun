@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["langcodes", "language_data"]  # via build.py
+# dependencies = ["langcodes", "language_data", "wn>=1.1"]  # build.py, cygnet_wordnets.py
 # ///
 """Write the curated TUFS pro-forms of some languages as TOML for human review.
 
@@ -23,6 +23,7 @@ from collections import defaultdict
 from pathlib import Path
 from xml.etree import ElementTree
 
+import cygnet_wordnets
 from build import (
     NTUMC_LANGUAGES,
     feature_links,
@@ -37,7 +38,12 @@ HERE = Path(__file__).resolve().parent
 HIERARCHY_NOTE = (
     "# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of"
     " them, nearest first.\n# Nodes with no word here are included where the"
-    " hierarchy needs them (status `unlexicalized`)."
+    " hierarchy needs them (status `unlexicalized`).\n# existing_by_ili,"
+    " existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl,"
+    " ...), as\n#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition"
+    " taken from the ILI.\n#   Lemma matches keep only senses that could be"
+    " pro-forms (no ILI, adjective, adverb,\n#   or a noun in noun.Tops/person/"
+    "location/time by OEWN); existing_hidden counts the rest."
 )
 NAMES = {
     "en": "English",
@@ -145,6 +151,49 @@ def hierarchy_only(codes: set[str], parents: dict[str, set[str]]) -> set[str]:
     return {a for c in codes for a in ancestors(c, parents)} - codes
 
 
+#: lexicographer files of existing synsets worth comparing with a pro-form; the
+#: rest are homographs (iodine *I*, the excavation *mine*, Polish *ta* tantalum)
+PROFORM_LEXFILES = {"noun.Tops", "noun.person", "noun.location", "noun.time"}
+
+
+def proform_like(synset: cygnet_wordnets.wn.Synset) -> bool:
+    """Whether an existing synset could be a pro-form sense.
+
+    Kept: adjectives and adverbs, nouns for persons, places, times and the top
+    concepts (*someone* is under person), and synsets with neither ILI nor
+    lexicographer file (NTUMC's pronoun synsets, as in TUFS). Lexicographer files
+    come from the synset, else from OEWN by ILI.
+    """
+    if synset.pos in "asr":
+        return True
+    found = cygnet_wordnets.lexfile(synset)
+    return found in PROFORM_LEXFILES if found or synset.ili else True
+
+
+def existing_lines(lang: str, ili: str, lemmas: list[str]) -> list[str]:
+    """What the language's Cygnet wordnets already have, to check against.
+
+    ``existing_by_ili``: their synsets for the node's ILI (feature synsets and
+    the few concepts that have one). ``existing_by_lemma``: their synsets for
+    each of our lemmas that could be pro-form senses (`proform_like`);
+    ``existing_hidden`` counts the others.
+    """
+    lines = []
+    found = cygnet_wordnets.by_ili(lang, ili)
+    if found:
+        lines.append(f"existing_by_ili = [{', '.join(toml_string(f) for f in found)}]")
+    hits, hidden = [], 0
+    for lemma in lemmas:
+        kept, dropped = cygnet_wordnets.by_lemma(lang, lemma, keep=proform_like)
+        hits += [f"{lemma} -> {synset}" for synset in kept]
+        hidden += dropped
+    if hits:
+        lines.append(f"existing_by_lemma = [{', '.join(toml_string(h) for h in hits)}]")
+    if hidden:
+        lines.append(f"existing_hidden = {hidden}  # other senses of these lemmas")
+    return lines
+
+
 def unlexicalized_table(code: str, lang: str, context: dict) -> list[str]:
     """A table for a node the hierarchy needs but the language has no word for.
 
@@ -158,6 +207,7 @@ def unlexicalized_table(code: str, lang: str, context: dict) -> list[str]:
         )
         lines.append(f"label = {toml_string(row['label'])}")
         lines.append(f"definition = {toml_string(row['definition'])}")
+        lines += existing_lines(lang, row["ili"], [])
     else:
         concept = context["concepts"][code]
         lines.append(
@@ -281,6 +331,9 @@ def write(
                 lines += english_lines(code, english)
             lines.append(f"label = {toml_string(concept.get('label', ''))}")
             lines += definition_lines(concept, defs.get(code, []))
+            lines += existing_lines(
+                lang, "", [item.split(" <- ")[0] for item in ntumc[code]]
+            )
             lines += hierarchy_lines(code, parents)
             lines.append('status = "built (NTUMC only)"')
             lines.append('comment = ""')
@@ -297,6 +350,7 @@ def write(
             lines += english_lines(code, english)
         lines.append(f"label = {toml_string(concept.get('label', ''))}")
         lines += definition_lines(concept, defs.get(code, []))
+        lines += existing_lines(lang, "", list(headings))
         if code != "(none)":
             lines += hierarchy_lines(code, parents)
         lines.append(
@@ -382,6 +436,7 @@ def write_lexicon(
         lines += english_lines(code, english)
         lines.append(f"label = {toml_string(concept.get('label', ''))}")
         lines += definition_lines(concept, defs.get(code, []))
+        lines += existing_lines(tag, "", list(lemmas))
         lines += hierarchy_lines(code, parents)
         forms = [f"{w}: {'; '.join(fs)}" for w, (fs, _) in lemmas.items() if fs]
         if forms:
