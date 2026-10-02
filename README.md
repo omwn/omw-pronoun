@@ -44,13 +44,17 @@ alternatives joined by `+`:
   `<Form>` variants tagged `case` (`s`, `a`, `o`, or NTUMC's `obj`).
 - **The possessive is meaning.** *My* adds a relation to *I*, and Czech *můj*
   "my" inflects for case itself, so possessives are words of their own, of
-  concepts coded `Poss` in the case slot (`1;Sg;Poss`: *my*, *mine*, *můj*). A
-  possessive is not a kind of its pronoun; the shared lexicon links the two
+  concepts coded `Poss` in the case slot. The determiner and the pronoun are
+  separate concepts, as the demonstratives are: *my* is `1;Sg;Poss` (POS `a`),
+  *mine* has the head `Ent` (person or thing), `Ent;1;Sg;Poss` (POS `n`), just
+  as *this* the determiner is `Sg;Prox` and *this* the pronoun `Ent;Sg;Prox`.
+  A possessive is not a kind of its pronoun; the shared lexicon links the two
   by `other` relations typed `possessor` and `possessive`.
 - **Bound forms** (affixes) are variants of the free pronoun when their cells are
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
-The inventory (`data/concepts.tsv`, 175 concepts, 27 of them possessive) comes
+The inventory (`data/concepts.tsv`, 183 concepts; 27 possessive determiners and
+9 possessive pronouns) comes
 from:
 
 - **NTUMC**: its pronoun synsets (`770000xx`), from the current database, with
@@ -75,7 +79,9 @@ Each records its Universal Dependencies value (`dc:relation="UD:Number=Grpl"`);
 in UD (PRON/DET/ADV): pronouns are `n` (`noun.pronoun`), determiners `a`
 (`adj.pronoun`: *this*, *which*, Japanese *kono*) and pro-adverbs `r`
 (`adv.pronoun`: *kō* "in this way"). An entry has one part of speech, so *this* the
-determiner and *this* the pronoun are separate entries.
+determiner and *this* the pronoun are separate entries. Hypernymy stays within a
+part of speech: the pronoun *this* is not a kind of the determiner *this*, nor
+*mine* of *my*.
 
 **Indefinites** (`haspelmath_series.py`): Haspelmath's (1997) indefinite-pronoun
 series (CLDF `cldf-datasets/haspelmathindefpro`, CC BY 4.0, 40 languages) are
@@ -121,4 +127,4 @@ Every lemma and form records its script (ISO 15924, e.g. `Hani`, `Hira`, `Jpan`)
 
 `docs/pronoun-databases.md` surveys the cross-linguistic pronoun databases.
 `docs/open-questions.md` lists design points still to be decided (e.g. whether
-to split possessive determiners from possessive pronouns).
+how bare Mandarin 我 used as a possessive should be treated).

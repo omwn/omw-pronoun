@@ -50,10 +50,30 @@ def test_a_possessive_is_not_a_kind_of_its_pronoun() -> None:
 
 
 def test_possessives_link_to_their_pronouns() -> None:
-    codes = {"1;Sg", "1;Sg;Poss", "Int", "Poss;Int"}
+    codes = {"1;Sg", "1;Sg;Poss", "Ent;1;Sg;Poss", "Int", "Poss;Int"}
     assert build.possessive_links("1;Sg;Poss", codes) == [("possessor", "1;Sg")]
-    assert build.possessive_links("1;Sg", codes) == [("possessive", "1;Sg;Poss")]
+    assert build.possessive_links("Ent;1;Sg;Poss", codes) == [("possessor", "1;Sg")]
+    assert build.possessive_links("1;Sg", codes) == [
+        ("possessive", "1;Sg;Poss"),
+        ("possessive", "Ent;1;Sg;Poss"),
+    ]
     assert build.possessive_links("Poss;Int", codes) == []
+
+
+def test_possessive_determiner_and_pronoun_are_separate_concepts() -> None:
+    my = {"code": "1;Sg;Poss", "synset": "77000107-a"}
+    mine = {"code": "1;Sg;Poss", "synset": "77000107-n"}
+    assert concepts.concept_code(my) == "1;Sg;Poss"
+    assert concepts.concept_code(mine) == "Ent;1;Sg;Poss"
+    assert concepts.label("1;Sg;Poss").endswith("determiner")
+    assert concepts.label("Ent;1;Sg;Poss") == "first person singular possessive pronoun"
+
+
+def test_hypernymy_stays_within_a_part_of_speech() -> None:
+    pos = {"Sg;Prox": "a", "Ent;Sg;Prox": "n", "1;Sg;Poss": "a", "Ent;1;Sg;Poss": "n"}
+    parents = build.hypernyms(list(pos), pos)
+    assert parents["Ent;Sg;Prox"] == set()
+    assert parents["Ent;1;Sg;Poss"] == set()
 
 
 @pytest.mark.parametrize(

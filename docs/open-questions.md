@@ -2,7 +2,7 @@
 
 Design points that are not settled. Each says what the build does now.
 
-## 1. Possessives: determiner and pronoun, one concept or two?
+## 1. Possessives
 
 **Decided (October 2026).** Possessives are concepts of their own, not case forms:
 *my* adds a relation to *I*, and Czech *můj* inflects for case itself, so it
@@ -13,13 +13,24 @@ shared lexicon links each possessive to its pronoun with `other` relations
 typed `possessor` and `possessive`, and a possessive is never a hyponym of its
 pronoun.
 
+The determiner and the independent possessive are separate concepts, since
+they differ in meaning and syntax: *my* is `1;Sg;Poss` (POS `a`), *mine* is
+`Ent;1;Sg;Poss` (POS `n`, head `Ent`: it stands for a person or thing), as the
+demonstrative determiner *this* (`Sg;Prox`) and pronoun (`Ent;Sg;Prox`) are.
+Parabank does not tell them apart; its possessives go to the determiners.
+
+Where one word does both jobs (Czech *můj* "my" and "mine"), it is a
+determiner only. Standing alone it is the determiner without its noun, by the
+general rule that lets adjectives stand for nouns (a pumping rule), not a
+second sense. A pronoun concept gets words only where a language has a
+distinct form (English *mine* beside *my*).
+
 **Still open.**
-- NTUMC splits the determiner (*my*, POS `a`) from the independent possessive
-  (*mine*, POS `n`); here they are lemmas of one concept, POS `n`, since most
-  languages use one word for both (Czech *můj*, Mandarin *我的*). Split them
-  (`a` and `n` concepts) or keep one?
+- By that rule, NTUMC's pronoun senses of words that are also its determiners
+  (English *his*, *its*; Mandarin 你的, 他的 under both) are the determiner
+  without a noun. Drop them from the pronoun concepts?
 - NTUMC lists bare Mandarin 我, 你, 他 as possessive determiners (*我妈妈*
-  "my mother"), so they are now lemmas of `1;Sg;Poss` etc. as well as of the
+  "my mother"), so they are lemmas of `1;Sg;Poss` etc. as well as of the
   pronoun. Is that a sense, or the pronoun in a possessive construction?
 - Possessives inflect (Czech *můj*, *mého*, *mému*...), but no source gives their
   paradigms yet, so they have no `<Form>`s.

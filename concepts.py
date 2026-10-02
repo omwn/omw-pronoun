@@ -134,18 +134,44 @@ def caseless(code: str) -> str:
     return ";".join(p for p in parts if p)
 
 
+def concept_code(row: dict[str, str]) -> str:
+    """The concept code of an NTUMC synset row.
+
+    Case is dropped, keeping the possessive. NTUMC gives the possessive determiner
+    (*my*, ``-a``) and the possessive pronoun (*mine*, ``-n``) the same features;
+    the pronoun stands for a person or thing, so it gets the head ``Ent``, as the
+    demonstrative pronoun *this* (``Ent;Sg;Prox``) does beside the determiner
+    (``Sg;Prox``).
+
+    >>> concept_code({"code": "1;Sg;Poss", "synset": "77000107-n"})
+    'Ent;1;Sg;Poss'
+    >>> concept_code({"code": "1;Sg;Poss", "synset": "77000107-a"})
+    '1;Sg;Poss'
+    """
+    code = caseless(row["code"])
+    parts = code.split(";")
+    if "Poss" in parts and parts[0] in PERSON and row["synset"].endswith("-n"):
+        return f"Ent;{code}"
+    return code
+
+
 def label(code: str) -> str:
     """An English label: ``1i;Du`` -> "first person inclusive dual".
 
     Alternatives in a slot read as "or": ``Plc;Prox+Dist`` -> "place proximal or
     distal pronoun".
     """
-    words = []
-    for part in code.split(";"):
-        words.append(
-            " or ".join(PERSON.get(v) or WORDS.get(v, v) for v in part.split("+"))
-        )
-    return " ".join(words) + (" pronoun" if code else "")
+    parts = code.split(";")
+    kind = " pronoun"
+    if "Poss" in parts and parts[0] != "Ent":
+        kind = " determiner"  # my, whose
+    elif "Poss" in parts:
+        parts = parts[1:]  # mine: "first person singular possessive pronoun"
+    words = [
+        " or ".join(PERSON.get(v) or WORDS.get(v, v) for v in part.split("+"))
+        for part in parts
+    ]
+    return " ".join(words) + (kind if code else "")
 
 
 def define(code: str) -> str:
@@ -154,12 +180,18 @@ def define(code: str) -> str:
     if set(code.split("+")) <= FUNCTIONS:
         uses = ", ".join(WORDS[f] for f in code.split("+"))
         return f"an indefinite pronoun series used for: {uses} (Haspelmath's functions)"
+    independent = parts[0] == "Ent" and "Poss" in parts
+    if independent:
+        parts = parts[1:]
     if parts and parts[0] in REFERENTS:
         possessive = "Poss" in parts
         parts = [p for p in parts if p != "Poss"]
-        text = f"a pronoun referring to {REFERENTS[parts[0]]}"
-        if possessive:
-            text = f"a possessive: of or belonging to {REFERENTS[parts[0]]}"
+        whose = REFERENTS[parts[0]]
+        text = f"a pronoun referring to {whose}"
+        if independent:
+            text = f"a possessive pronoun: someone or something belonging to {whose}"
+        elif possessive:
+            text = f"a possessive determiner: of or belonging to {whose}"
         rest = parts[1:]
         if rest and rest[0] in NUMBERS:
             count = NUMBERS[rest[0]]
@@ -187,7 +219,7 @@ def ntumc_concepts(db: Path) -> dict[str, list[str]]:
     by_code: dict[str, list[str]] = defaultdict(list)
     for row in ntumc_pronouns.read(db):
         if row["synset"] in current and row["code"]:
-            by_code[caseless(row["code"])].append(row["synset"])
+            by_code[concept_code(row)].append(row["synset"])
     return by_code
 
 
@@ -208,10 +240,13 @@ def pos_of(code: str, ntumc: dict[str, list[str]], extra_pos: dict[str, str]) ->
     """A concept's part of speech: pronoun ``n``, determiner ``a``, pro-adverb ``r``.
 
     These correspond to Universal Dependencies' PRON, DET and ADV. A concept folded
-    from several NTUMC synsets takes the most nominal (*I* absorbs *my*).
+    from several NTUMC synsets takes the most nominal. A possessive with no head is
+    a determiner (*my*; Parabank's possessives are these).
     """
     found = {synset[-1] for synset in ntumc.get(code, [])}
-    return next((p for p in "nar" if p in found), extra_pos.get(code) or "n")
+    parts = code.split(";")
+    default = "a" if "Poss" in parts and parts[0] != "Ent" else "n"
+    return next((p for p in "nar" if p in found), extra_pos.get(code) or default)
 
 
 def haspelmath_concepts() -> set[str]:
