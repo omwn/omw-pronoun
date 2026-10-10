@@ -1,12 +1,12 @@
 tufs_lang	tufs_wid	heading	tufs_form	form	code	kind	confidence	note
-de	812	あっち	dort	dort	Plc;Dist	pronoun	high	NEW
+de	812	あっち	dort	dort	Plc;Loc;Dist	pronoun	high	NEW; location only, as against goal and source
 de	959	あなた	Sie	Sie	2;Sg;Fml;Pol	pronoun	high	
 de	959	あなた	Sie	Sie	2;Pl;Fml;Pol	pronoun	high	NEW; Sie is also formal plural
 de	961	あの	der	der	Prox+Dist	pronoun	low	NEW; definite article / proximity-neutral demonstrative (no near/far contrast); distal would be jener; heading あの
 de	768	いくつ	wie viel	wie viel	Qnt;Int	pronoun	high	
 de	769	いくら	was	was	Thng;Int	pronoun	high	'what'; heading いくら via was kostet
 de	1143	いつ	wann	wann	Tim;Int	pronoun	high	
-de	810	こちら	hier	hier	Plc;Prox	pronoun	high	
+de	810	こちら	hier	hier	Plc;Loc;Prox	pronoun	high	location only, as against goal and source
 de	960	この	dieser	dieser	Prox	pronoun	high	determiner
 de	960	この	dieser	dieser	Ent;Prox	pronoun	high	pronoun use
 de	965	こんな	solch	solch	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
@@ -14,7 +14,7 @@ de	967	そう	so	so	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrat
 de	811	そちら	da	da	Plc;Prox+Dist	pronoun	medium	NEW; proximity-neutral demonstrative (no near/far contrast); also temporal/causal
 de	956	だれ	wer	wer	Pers;Int	pronoun	high	
 de	955	だれか	jemand	jemand	Pers;Sg;Asrt	pronoun	high	
-de	813	どちら	wo	wo	Plc;Int	pronoun	high	
+de	813	どちら	wo	wo	Plc;Loc;Int	pronoun	high	location only, as against goal and source
 de	957	どなた	wer	wer	Pers;Int	pronoun	high	not polite; heading どなた
 de	963	どの	welch	welch	Int	pronoun	high	welch- 'which' (determiner)
 de	964	どんな	welch	welch	Int	pronoun	medium	welch- 'which'; kind would be was für; heading どんな
@@ -200,7 +200,7 @@ pt	238	彼女	eles, elas	elas	3;Pl;F	pronoun	high
 pt	240	私たち	nós	nós	1;Pl	pronoun	high	
 pt	239	私（わたし）	eu	eu	1;Sg	pronoun	high	
 pt	239	自分	eu	eu	1;Sg	pronoun	high	'I'; heading 自分 (reflexive would be si/próprio)
-ru	695	あっち	там	там	Plc;Dist	pronoun	high	NEW
+ru	695	あっち	там	там	Plc;Loc;Dist	pronoun	high	NEW; location only, as against goal and source
 ru	842	あなた	вы	вы	2;Pl	pronoun	high	
 ru	842	あなた	вы	вы	2;Sg;Fml;Pol	pronoun	high	
 ru	844	あの	тот	тот	Dist	pronoun	high	determiner
@@ -209,15 +209,15 @@ ru	651	いくつ	сколько	сколько	Qnt;Int	pronoun	high
 ru	651	いくら	сколько	сколько	Qnt;Int	pronoun	high	
 ru	652	いくら	сколько	сколько	Qnt;Int	pronoun	high	
 ru	1026	いつ	когда	когда	Tim;Int	pronoun	high	
-ru	693	こちら	здесь	здесь	Plc;Prox	pronoun	high	
+ru	693	こちら	здесь	здесь	Plc;Loc;Prox	pronoun	high	location only, as against goal and source
 ru	843	この	этот	этот	Prox	pronoun	high	determiner
 ru	843	この	этот	этот	Ent;Prox	pronoun	high	pronoun
 ru	848	こんな	такой	такой	Knd;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
 ru	850	そう	так	так	Mnr;Prox+Dist	pronoun	high	NEW; proximity-neutral demonstrative (no near/far contrast)
-ru	695	そちら	там	там	Plc;Dist	pronoun	high	NEW; heading そちら (Med); Russian is two-way
+ru	695	そちら	там	там	Plc;Loc;Dist	pronoun	high	NEW; heading そちら (Med); Russian is two-way; location only, as against goal and source
 ru	839	だれ	кто	кто	Pers;Int	pronoun	high	
 ru	838	だれか	кто-то	кто-то	Pers;Sg;Asrt	pronoun	high	
-ru	696	どちら	где	где	Plc;Int	pronoun	high	
+ru	696	どちら	где	где	Plc;Loc;Int	pronoun	high	location only, as against goal and source
 ru	839	どなた	кто	кто	Pers;Int	pronoun	high	not polite; heading どなた
 ru	847	どの	какой	какой	Knd;Int	pronoun	high	'what kind of'
 ru	847	どの	какой	какой	Int	pronoun	high	'which/what' determiner
@@ -294,7 +294,7 @@ ar	237	これ	هذا	هذا	Ent;Sg;Prox	pronoun	high	hādhā "this" (masc. sg.),
 ar	475	これ	هذه	هذه	Sg;Prox	pronoun	high	hādhihi "this" (fem. sg.), determiner use
 ar	475	これ	هذه	هذه	Ent;Sg;Prox	pronoun	high	hādhihi "this" (fem. sg.), pronoun use
 ar	241	こんな	هٰكَذَا	هٰكَذَا	Mnr;Prox	pronoun	high	hākadhā "thus, like this": manner adverb, not kind
-ar	243	そう	كذلك	كذلك	Mnr;Dist+Med	pronoun	medium	kadhālika "like that, thus; also, likewise"; two-way manner code as for Mandarin 那样 / Indonesian begitu
+ar	243	そう	كذلك	كذلك	Mnr;Dist	pronoun	medium	kadhālika "like that, thus; also, likewise"; two-way, as Mandarin 那样 / Indonesian begitu
 ar	235	だれ	من	من	Pers;Int	pronoun	high	man "who" (unvocalised; also the preposition min "from")
 ar	234	だれか	أَحَدٌ	أَحَدٌ	Pers;Sg;Asrt	pronoun	high	aḥadun "someone, one"
 ar	234	だれか	أَحَدٌ	أَحَدٌ	Pers;Sg;Elec	pronoun	medium	"anyone" in questions/negation
@@ -351,11 +351,11 @@ as	387	私たち	نحنا	نحنا	1;Pl	pronoun	high	niḥna "we"
 as	386	私（わたし）	أنا	أنا	1;Sg	pronoun	high	ʔana "I"
 as	401	自分	نفس	نفس	Pers;Refl	pronoun	medium	nafs "self": noun used as reflexive with possessive suffix
 ja	293	あそこ	あそこ	あそこ	Plc;Rem	pronoun	high	NTUMC
-ja	1297	あちら	あちら	あちら	Ent;Du;Fml;Dist+Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction "over there"
+ja	1297	あちら	あちら	あちら	Ent;Du;Fml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction "over there"
 ja	1541	あっち	あっち	あっち	Ent;Infml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction
 ja	734	あなた	あなた	あなた	2;Sg;Infml	pronoun	high	NTUMC
 ja	1543	あの	あの	あの	Rem	pronoun	high	NTUMC
-ja	299	あれ	あれ	あれ	Ent;Sg;Dist+Rem	pronoun	high	NTUMC
+ja	299	あれ	あれ	あれ	Ent;Sg;Rem	pronoun	high	NTUMC
 ja	745	いくつ	いくつ	いくつ	Qnt;Int	pronoun	high	not in NTUMC; "how many"
 ja	151	いくら	いくら	いくら	Qnt;Int	pronoun	high	not in NTUMC; "how much"
 ja	459	いつ	いつ	いつ	Tim;Int	pronoun	high	NTUMC
@@ -508,7 +508,7 @@ km	101	こちら	កន្លែងនេះ	កន្លែងនេះ	Plc;Pro
 km	237	この	នេះ	នេះ	Prox	pronoun	high	
 km	242	こんな	យ៉ាងនេះ	យ៉ាងនេះ	Knd;Prox	pronoun	medium	
 km	242	こんな	យ៉ាងនេះ	យ៉ាងនេះ	Mnr;Prox	pronoun	medium	"in this way"
-km	244	そう	អញ្ចឹង	អញ្ចឹង	Mnr;Dist+Med	pronoun	medium	colloquial "like that, so"; code reused from Mandarin 那样 rather than a NEW Mnr;Dist
+km	244	そう	អញ្ចឹង	អញ្ចឹង	Mnr;Dist	pronoun	medium	colloquial "like that, so"; two-way, as Mandarin 那样
 km	102	そちら	កន្លែងនោះ	កន្លែងនោះ	Plc;Dist	substitute	medium	NEW code Plc;Dist (Khmer two-way នេះ/នោះ); lit. "that place" (កន្លែង place + នោះ that); proper pro-adverb is ទីនោះ
 km	233	だれ	អ្នកណា	អ្នកណា	Pers;Int	pronoun	high	
 km	232	だれか	អ្នកណាគេ	អ្នកណាគេ	Pers;Sg;Asrt	pronoun	low	អ្នកណា who + គេ "someone/others"; meaning not verified (someone? who else?); needs native check
@@ -659,7 +659,7 @@ id	19	この	ini	ini	Ent;Prox	pronoun	high	NTUMC; pronominal use
 id	661	こんな	begini	begini	Mnr;Prox	pronoun	high	NTUMC; like this
 id	661	こんな	begini	begini	Knd;Prox	pronoun	medium	adnominal use 'this kind of'
 id	866	こんな	seperti ini	seperti ini		not-proform	medium	phrase seperti 'like' + ini 'this'; would be Knd;Prox if phrases admitted
-id	8	そう	begitu	begitu	Mnr;Dist+Med	pronoun	high	NTUMC
+id	8	そう	begitu	begitu	Mnr;Dist	pronoun	high	NTUMC
 id	38	そちら	situ	situ	Plc;Med	pronoun	high	there (medial)
 id	660	だれ	siapa	siapa	Pers;Int	pronoun	high	NTUMC
 id	211	だれか	seseorang	seseorang	Pers;Sg;Asrt	pronoun	high	someone
@@ -700,7 +700,7 @@ ms	528	こっち	sini	sini	Plc;Prox	pronoun	high
 ms	32	この	ini	ini	Prox	pronoun	high	
 ms	117	これ	ini	ini	Ent;Prox	pronoun	high	
 ms	1659	こんな	seperti ini	seperti ini		not-proform	medium	phrase seperti 'like' + ini 'this'; would be Knd;Prox if phrases admitted
-ms	45	そう	begitu	begitu	Mnr;Dist+Med	pronoun	high	as Indonesian NTUMC
+ms	45	そう	begitu	begitu	Mnr;Dist	pronoun	high	as Indonesian NTUMC
 ms	524	そこ	situ	situ	Plc;Med	pronoun	high	
 ms	1262	そちら	itu	itu	Dist	pronoun	medium	'that'; heading is place
 ms	1262	そちら	itu	itu	Ent;Dist	pronoun	medium	'that'; heading is place
@@ -744,7 +744,7 @@ my	734	あなた	ရှင်	ရှင်	2;Sg;Pol;Wom	pronoun	high	NEW; polite
 my	734	あなた	သင်	သင်	2;Sg;Fml	pronoun	medium	NEW; formal/literary you (writing, speeches)
 my	1543	あの	ဟို	ဟို	Rem	pronoun	high	
 my	1543	あの	အဲဒီ	အဲဒီ	Med	pronoun	high	that (medial/anaphoric)
-my	299	あれ	ဟိုဟာ	ဟိုဟာ	Ent;Sg;Dist+Rem	pronoun	medium	ho 'that' + ha 'thing'
+my	299	あれ	ဟိုဟာ	ဟိုဟာ	Ent;Sg;Rem	pronoun	medium	ho 'that' + ha 'thing'
 my	745	いくつ	ဘယ်နှခု	ဘယ်နှခု	Qnt;Int	pronoun	high	how many (things): which+how many+CLF
 my	151	いくら	ဘယ်လောက်	ဘယ်လောက်	Qnt;Int	pronoun	high	how much
 my	459	いつ	ဘယ်တုန်းက	ဘယ်တုန်းက	Tim;Int	pronoun	high	when (past)

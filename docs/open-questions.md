@@ -52,7 +52,17 @@ or leave them and note the mapping?
 ## 4. Doubtful analyses inherited from NTUMC
 
 - Japanese こちら/そちら/あちら are coded dual (`Ent;Du;Fml;Prox` ...); they mean
-  "this way/side/one (polite)" and the dual reading is questionable.
+  "this way/side/one (polite)" and the dual reading is questionable. Direction
+  (§7) may fit them better.
+- NTUMC links あれ, あいつ, あちら (77000059-n, 77000048-n, 77000070-n) to both
+  *distal* and *remote*; the a- series is remote. `data/ntumc-fixes.tsv` corrects
+  them here; the fix belongs upstream in NTUMC, which wnja's
+  `data/wn-ntumc-jpn.xml` is exported from.
+- 77000079-a `Sg;Dist` has Mandarin 哪 "which", presumably for 那 "that".
+- Czech *ten*, *ta*, *to* are three NTUMC lemmas of `Sg;Dist`. Gender on a
+  determiner is agreement, so they are forms of one lemma *ten*, as are
+  *tento*/*tato*/*toto*; and *ten* is the unmarked demonstrative (*tamten* is
+  the distal one).
 - どんな is `Mnr;Int` in NTUMC but arguably `Knd;Int` ("what kind of").
 - Two feature synsets point at wrong Princeton senses (*thing* as an artifact,
   *archaic* as antediluvian); see bond-lab/NTUMC#8.
@@ -67,3 +77,20 @@ concept too, or is that a use rather than a sense?
 
 Haspelmath's sample is almost all Eurasian, so indefinite series are admitted on
 five families alone, without the macroarea test. Revisit with a wider sample.
+
+## 7. Direction
+
+Place pro-forms split by direction where a language has separate words: Czech
+*kde*/*kam*/*odkud*, German *wo*/*wohin*/*woher*, Russian *где*/*куда*/*откуда*
+(`Plc;Loc;Int`, `Plc;Goal;Int`, `Plc;Src;Int`). The nine direction concepts are
+curated, from four Indo-European languages; neither Parabank nor Haspelmath's
+CLDF data records direction.
+
+- Where direction is a semantic case (Turkish *nerede*, *nereye*, *nereden*;
+  Japanese どこへ), is it inflection, like subjective and objective, or meaning,
+  like the possessive? The TUFS Turkish rows are still plain `Plc;Int` and
+  `Plc;Prox`/`Plc;Dist`.
+- Czech and Polish *tam* "there, to there" do not split location from goal, so
+  they stay `Plc;Dist`; Russian *там* and German *dort* are location only.
+- English *whither*, *whence*, *hither*, *thither*, *hence*, *thence* would be
+  archaic (`Arch`) members of the same concepts; not added.

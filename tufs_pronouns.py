@@ -53,7 +53,7 @@ HEADINGS = {
     # things (1.101): Japanese has three degrees of distance
     "これ": "Ent;Sg;Prox",
     "それ": "Ent;Sg;Med",
-    "あれ": "Ent;Sg;Dist+Rem",
+    "あれ": "Ent;Sg;Rem",
     "どれ": "Ent;Int",
     "どっち": "Ent;Int;Infml",
     "何（なに・なん）": "Thng;Int",

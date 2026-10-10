@@ -27,3 +27,12 @@ Plc;Prox+Dist	n	TUFS curation	da, là
 Prox+Dist	a	TUFS curation	ce
 Qnt;Prox	n	TUFS curation	ဒီလောက်
 Ent;2;Poss	n	English yours	number-neutral possessive pronoun, as English you (2) is number-neutral
+Plc;Loc;Int	n	direction	where (at): Czech kde, German wo, Russian где, Polish gdzie
+Plc;Goal;Int	n	direction	where to, whither: Czech kam, German wohin, Russian куда, Polish dokąd
+Plc;Src;Int	n	direction	where from, whence: Czech odkud, German woher, Russian откуда, Polish skąd
+Plc;Loc;Prox	n	direction	here (at): Czech tady, zde, Russian здесь
+Plc;Goal;Prox	n	direction	(to) here, hither: Czech sem, German hierher, Russian сюда
+Plc;Src;Prox	n	direction	from here, hence: Czech odsud, Russian отсюда, Polish stąd
+Plc;Goal;Dist	n	direction	(to) there, thither: German dorthin, Russian туда
+Plc;Src;Dist	n	direction	from there, thence: Czech odtamtud, Russian оттуда, Polish stamtąd
+Plc;Loc;Dist	n	direction	there (at): German dort, Russian там

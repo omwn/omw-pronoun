@@ -22,7 +22,9 @@ Chinese, English and Japanese" (ISA-10). Each is a bundle of features:
 
 In the wordnet the head is the synset's hypernym and most other features are
 ``dmnu`` (domain of usage) links to feature synsets; the rest are only in the
-definition text, so both are read.
+definition text, so both are read. Codes the NTUMC analysis gets wrong are
+corrected from ``data/ntumc-fixes.tsv`` (Japanese *are* is remote, not distal
+and remote); the feature columns keep NTUMC's analysis.
 
 Writes ``data/ntumc-pronouns.tsv``.
 
@@ -31,6 +33,7 @@ Usage: uv run ntumc_pronouns.py [path/to/wn-ntumc.db]
 
 from __future__ import annotations
 
+import csv
 import re
 import sqlite3
 import sys
@@ -189,6 +192,12 @@ def code(features: dict[str, set[str]]) -> str:
     return ";".join(parts)
 
 
+def fixes() -> dict[str, str]:
+    """Corrected codes for NTUMC synsets, from data/ntumc-fixes.tsv."""
+    with (HERE / "data" / "ntumc-fixes.tsv").open(encoding="utf8") as handle:
+        return {r["synset"]: r["code"] for r in csv.DictReader(handle, delimiter="\t")}
+
+
 def read(db: Path) -> list[dict[str, str]]:
     """Return one row per NTUMC pronoun synset, with its features and lemmas."""
     con = sqlite3.connect(db)
@@ -219,6 +228,7 @@ def read(db: Path) -> list[dict[str, str]]:
         # four Japanese words (77000035-n 彼女たち ...) are filed under "jap"
         lemmas[synset]["jpn" if lang == "jap" else lang].append(lemma)
 
+    fixed = fixes()
     rows = []
     for synset in sorted(set(definitions) | set(links)):
         if not synset.startswith("7700"):  # 7701xxxx are the feature synsets
@@ -238,7 +248,11 @@ def read(db: Path) -> list[dict[str, str]]:
             features[feature].add(value)
         if {"1i", "1e"} & features["person"]:
             features["person"].discard("1")
-        row = {"synset": synset, "pos": synset[-1], "code": code(features)}
+        row = {
+            "synset": synset,
+            "pos": synset[-1],
+            "code": fixed.get(synset) or code(features),
+        }
         row |= {f: "+".join(sorted(features[f])) for f in FEATURES}
         row["definition"] = definitions.get(synset, "")
         row |= {lang: "; ".join(dict.fromkeys(lemmas[synset][lang])) for lang in LANGS}

@@ -167,11 +167,14 @@ SLOTS = {
 EXPAND = {
     "1": {"1e", "1i"},
     "Pl": {"Du", "Tr", "Gpl"},
+    # distal is not proximal: English *that* covers Japanese *sore* and *are*
+    "Dist": {"Med", "Rem"},
     # the English-based indefinite types are unions of Haspelmath's functions,
-    # as his English data shows: some-, any- (with ever-), no-
+    # as his English data shows: some-, any- (with ever-). The negative (no-) is
+    # not one: *nobody* is used in direct negation, as *anybody* is, but carries
+    # the negation itself, so it is not a kind of *anybody*
     "Asrt": {"SK", "SU", "IRR", "Q", "COND"},
     "Elec": {"Q", "COND", "INEG", "DNEG", "COMP", "FC"},
-    "Neg": {"DNEG"},
 }
 
 
@@ -229,6 +232,7 @@ CATEGORIES = {
     "formality": {"Fml", "Infml"},
     "politeness": {"Pol", "Hon", "NHon"},
     "proximity": {"Prox", "Med", "Dist", "Rem"},
+    "direction": {"Loc", "Goal", "Src"},
     "register": {"Men", "Wom", "Arch"},
 }
 
@@ -240,7 +244,7 @@ def category_of(values: frozenset[str]) -> str:
 
 
 def expand(values: frozenset[str]) -> set[str]:
-    """Unmarked values stand for their marked ones: 1 = 1e + 1i, Pl = Du + Tr + Gpl."""
+    """Unmarked values stand for their marked ones: 1 = 1e + 1i, Dist = Med + Rem."""
     out = set()
     for v in values:
         out |= EXPAND.get(v, {v})
@@ -255,6 +259,10 @@ def subsumes(general: str, specific: str) -> bool:
 
     >>> subsumes("1;Sg", "1;Sg;Poss"), subsumes("1;Poss", "1;Sg;Poss")
     (False, True)
+    >>> subsumes("Ent;Sg;Dist", "Ent;Sg;Rem"), subsumes("Pers;Sg;Elec", "Pers;Sg;Neg")
+    (True, False)
+    >>> subsumes("Plc;Int", "Plc;Goal;Int"), subsumes("Plc;Loc;Int", "Plc;Goal;Int")
+    (True, False)
     """
     g, s = features(general), features(specific)
     if ("case" in g) != ("case" in s):
@@ -386,12 +394,14 @@ def add_ntumc(languages: dict[str, Language], codes: set[str]) -> None:
 
 
 def add_extra(languages: dict[str, Language], codes: set[str]) -> None:
-    """Add the curated lemmas of data/extra-lemmas.tsv."""
+    """Add the curated lemmas of data/extra-lemmas.tsv, to existing lexicons."""
     tags = {c: t for c, (t, _) in NTUMC_LANGUAGES.items()}
     with (DATA / "extra-lemmas.tsv").open(encoding="utf8") as handle:
         for row in csv.DictReader(handle, delimiter="\t"):
             tag = tags.get(row["lang"], row["lang"])
-            if row["code"] in codes and tag in languages:
+            if tag not in languages:
+                logger.warning("extra lemma %s: no %s lexicon", row["form"], tag)
+            elif row["code"] in codes:
                 entry = languages[tag].entry(row["form"], row["code"])
                 entry.senses[row["code"]].add(row["source"])
 
@@ -710,6 +720,18 @@ def feature_links(
     return links
 
 
+def feature_hierarchy(abbr: str, used: list[str]) -> list[tuple[str, str]]:
+    """Hypernymy among feature values, from the values they stand for.
+
+    >>> feature_hierarchy("Dist", ["Prox", "Med", "Dist", "Rem"])
+    [('hyponym', 'Med'), ('hyponym', 'Rem')]
+    >>> feature_hierarchy("Rem", ["Prox", "Med", "Dist", "Rem"])
+    [('hypernym', 'Dist')]
+    """
+    links = [("hypernym", v) for v in used if abbr in EXPAND.get(v, set())]
+    return links + [("hyponym", v) for v in used if v in EXPAND.get(abbr, set())]
+
+
 def write_features(
     concepts: list[dict[str, str]], attested: set[str], table: dict[str, dict[str, str]]
 ) -> tuple[list[str], list[str]]:
@@ -769,6 +791,10 @@ def write_features(
         for rel, code in sorted(back[abbr]):
             lines.append(
                 f'      <SynsetRelation relType="{rel}" target="{BASE}-{slug(code)}"/>'
+            )
+        for rel, other in feature_hierarchy(abbr, used):
+            lines.append(
+                f'      <SynsetRelation relType="{rel}" target="{feature_id(other)}"/>'
             )
         lines.append("    </Synset>")
     return entries, lines
@@ -847,10 +873,10 @@ def main() -> None:
     POS.update({c["code"]: c["pos"] for c in concepts})
     languages: dict[str, Language] = {}
     add_ntumc(languages, codes)
-    add_extra(languages, codes)
     add_parabank(languages, codes)
     add_haspelmath(languages, codes)
     add_tufs(languages, codes)
+    add_extra(languages, codes)
     remap(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}
     attested = {

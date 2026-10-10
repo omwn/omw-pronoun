@@ -12,3 +12,27 @@ jpn	どの	Int	TUFS	determiner
 jpn	皆さん	Pers;Univ;Pol	TUFS	kanji spelling of NTUMC みなさん
 jpn	こう	Mnr;Prox	TUFS	
 jpn	そう	Mnr;Med	TUFS	
+ces	odkud	Plc;Src;Int	curated	direction
+ces	tady	Plc;Loc;Prox	curated	direction
+ces	zde	Plc;Loc;Prox	curated	direction
+ces	sem	Plc;Goal;Prox	curated	direction
+ces	odsud	Plc;Src;Prox	curated	direction
+ces	odtud	Plc;Src;Prox	curated	direction
+ces	tam	Plc;Dist	curated	direction
+ces	odtamtud	Plc;Src;Dist	curated	direction
+pl	gdzie	Plc;Loc;Int	curated	direction
+pl	dokąd	Plc;Goal;Int	curated	direction
+pl	skąd	Plc;Src;Int	curated	direction
+pl	tam	Plc;Dist	curated	direction
+pl	stąd	Plc;Src;Prox	curated	direction
+pl	stamtąd	Plc;Src;Dist	curated	direction
+de	wohin	Plc;Goal;Int	curated	direction
+de	woher	Plc;Src;Int	curated	direction
+de	hierher	Plc;Goal;Prox	curated	direction
+de	dorthin	Plc;Goal;Dist	curated	direction
+ru	куда	Plc;Goal;Int	curated	direction
+ru	откуда	Plc;Src;Int	curated	direction
+ru	сюда	Plc;Goal;Prox	curated	direction
+ru	отсюда	Plc;Src;Prox	curated	direction
+ru	туда	Plc;Goal;Dist	curated	direction
+ru	оттуда	Plc;Src;Dist	curated	direction

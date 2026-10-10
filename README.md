@@ -34,11 +34,17 @@ alternatives joined by `+`:
 | formality | `Fml` `Infml` |
 | politeness | `Pol` `Hon` `NHon` |
 | proximity | `Prox` `Med` `Dist` `Rem` |
+| direction | `Loc` `Goal` `Src` |
 | register (NTUMC) | `Men` `Wom` `Arch` |
 
 - **Unmarked values** stand for their marked ones: `1` is inclusive or exclusive,
   and `Pl` is *non-singular*, as in the paper (English *we* is `1;Pl`). Where a
-  dual or trial contrasts, the plural alone is `Gpl`, greater plural.
+  dual or trial contrasts, the plural alone is `Gpl`, greater plural. `Dist` is
+  *not proximal*, medial or remote: English *that* is `Dist`, Japanese *sore* is
+  `Med` and *are* `Rem`, both under it.
+- **Direction** splits place pro-forms where a language does: Czech *kde* "where"
+  is `Plc;Loc;Int`, *kam* "where to" `Plc;Goal;Int`, *odkud* "where from"
+  `Plc;Src;Int`. English *where* marks none, so it is `Plc;Int`, above all three.
 - **Case is inflection, not meaning.** Subjective and objective are not part of
   a concept: *I* and *me* are one entry for `1;Sg`, with the case forms as
   `<Form>` variants tagged `case` (`s`, `a`, `o`, or NTUMC's `obj`).
@@ -53,8 +59,8 @@ alternatives joined by `+`:
 - **Bound forms** (affixes) are variants of the free pronoun when their cells are
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
-The inventory (`data/concepts.tsv`, 183 concepts; 27 possessive determiners and
-9 possessive pronouns) comes
+The inventory (`data/concepts.tsv`, 191 concepts; 28 possessive determiners and
+8 possessive pronouns) comes
 from:
 
 - **NTUMC**: its pronoun synsets (`770000xx`), from the current database, with
@@ -65,15 +71,22 @@ from:
   dual, number-neutral *you*, and their possessives), admitted by the KinDiv rule: >= 5 language
   families in >= 3 macroareas.
 - **`data/extra-concepts.tsv`**: curated additions, so far seven from TUFS Japanese
-  (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい).
+  (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい), 20 from the TUFS
+  curation and nine for direction (Czech, Polish, German and Russian; curated
+  lemmas in `data/extra-lemmas.tsv`).
+- **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts:
+  Japanese あれ, あいつ, あちら are remote, not "distal and remote", and Mandarin
+  那样 / Indonesian *begitu* are two-way distal.
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
-Of the 51 feature values in use, 26 keep their Princeton ILI (*possessive* is
+Of the 54 feature values in use, 29 keep their Princeton ILI (*possessive* is
 i69651), 23 are proposed (NTUMC's own and new ones such as *greater plural* and
 Haspelmath's functions), and 2 point at doubtful Princeton senses (`check`).
 Each records its Universal Dependencies value (`dc:relation="UD:Number=Grpl"`);
-36 of 51 have one.
+36 of 54 have one. Feature synsets form a hierarchy of their own, from the
+values that stand for others: *distal* has the hyponyms *medial* and *remote*,
+*first person* has *inclusive* and *exclusive*.
 
 **Part of speech and lexicographer file.** Pro-forms cut across parts of speech, as
 in UD (PRON/DET/ADV): pronouns are `n` (`noun.pronoun`), determiners `a`
@@ -88,7 +101,9 @@ series (CLDF `cldf-datasets/haspelmathindefpro`, CC BY 4.0, 40 languages) are
 function sets over his nine functions (`SK` specific known ... `FC` free choice),
 which are also feature synsets. The English-based types are unions of them, from
 his English data: `Asrt` (some-) = SK+SU+IRR+Q+COND, `Elec` (any-) =
-Q+COND+INEG+DNEG+COMP+FC, `Neg` (no-) = DNEG. His sample is almost all Eurasian,
+Q+COND+INEG+DNEG+COMP+FC. `Neg` (no-) is not a function set: *nobody* is used in
+direct negation, as *anybody* is, but carries the negation itself, so it is not
+a kind of *anybody*. His sample is almost all Eurasian,
 so series concepts are admitted on >= 5 families alone (4 concepts); their markers
 (German *etwas*, *irgend*) are entries tagged `morph=series`.
 

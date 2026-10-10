@@ -38,8 +38,11 @@ Hon	politeness	honorific	i10923		pwn	Polite=Elev	conferring or showing honor or 
 NHon	politeness	non-honorific		77010000-a	ntumc		not conferring or showing honor or respect
 Prox	proximity	proximal		77010002-a	ntumc	PronType=Dem|Deixis=Prox	relating to or characteristic of a word referring to something at a proximal distance
 Med	proximity	medial		77010001-a	ntumc	PronType=Dem|Deixis=Med	relating to or characteristic of a word referring to something at a medium distance
-Dist	proximity	distal		77010003-a	ntumc	PronType=Dem|Deixis=Remt	relating to or characteristic of a word referring to something at a distal distance
+Dist	proximity	distal		77010003-a	ntumc	PronType=Dem|Deixis=Remt	relating to or characteristic of a word referring to something not near the speaker; where a language distinguishes medial and remote, it covers both
 Rem	proximity	remote		77010004-a	ntumc	PronType=Dem|Deixis=Remt	relating to or characteristic of a word referring to something at a distal remote distance
+Loc	direction	locative	i69757		pwn		the semantic role of the noun phrase that designates the place of the state or action denoted by the verb
+Goal	direction	goal	i82007		pwn		the place designated as the end (as of a race or journey)
+Src	direction	source	i81759		pwn		the place where something begins, where it springs into being
 Men	register	men's speech		77010007-n	ntumc		speech used predominately by men
 Wom	register	women's speech		77010008-n	ntumc		speech used predominately by women
 Arch	register	archaic	i8971		check		NTUMC links PWN's antediluvian ("so extremely old..."): find the sense for words no longer in use

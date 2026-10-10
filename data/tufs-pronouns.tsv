@@ -182,16 +182,6 @@ Ent;Int;Infml	ms	zsm	1741	どっち	yang mana	default
 Ent;Int;Infml	my	mya	1741	どっち	ဘယ်	default
 Ent;Int;Infml	my	mya	1741	どっち	ဘယ်တစ်ခု	default
 Ent;Int;Infml	ur	urd	460	どっち	کون سا	default
-Ent;Sg;Dist+Rem	ar	arb	238	あれ	ذلك	default
-Ent;Sg;Dist+Rem	ar	arb	476	あれ	تلك	default
-Ent;Sg;Dist+Rem	as	apc	393	あれ	هداك	default
-Ent;Sg;Dist+Rem	as	apc	394	あれ	هديك	default
-Ent;Sg;Dist+Rem	fr	fra	5	あれ	ça	default
-Ent;Sg;Dist+Rem	fr	fra	901	あれ	cela	default
-Ent;Sg;Dist+Rem	ja	ja	299	あれ	あれ	default
-Ent;Sg;Dist+Rem	ms	zsm	299	あれ	itu	default
-Ent;Sg;Dist+Rem	my	mya	299	あれ	ဟိုဟာ	default
-Ent;Sg;Dist+Rem	ur	urd	21	あれ	وہ	default
 Ent;Sg;Med	fr	fra	5	それ	ça	default
 Ent;Sg;Med	fr	fra	901	それ	cela	default
 Ent;Sg;Med	ja	ja	46	それ	それ	default
@@ -208,6 +198,16 @@ Ent;Sg;Prox	ms	zsm	117	これ	ini	default
 Ent;Sg;Prox	my	mya	117	これ	ဒါ	default
 Ent;Sg;Prox	my	mya	117	これ	ဒီဟာ	default
 Ent;Sg;Prox	ur	urd	26	これ	یہ	default
+Ent;Sg;Rem	ar	arb	238	あれ	ذلك	default
+Ent;Sg;Rem	ar	arb	476	あれ	تلك	default
+Ent;Sg;Rem	as	apc	393	あれ	هداك	default
+Ent;Sg;Rem	as	apc	394	あれ	هديك	default
+Ent;Sg;Rem	fr	fra	5	あれ	ça	default
+Ent;Sg;Rem	fr	fra	901	あれ	cela	default
+Ent;Sg;Rem	ja	ja	299	あれ	あれ	default
+Ent;Sg;Rem	ms	zsm	299	あれ	itu	default
+Ent;Sg;Rem	my	mya	299	あれ	ဟိုဟာ	default
+Ent;Sg;Rem	ur	urd	21	あれ	وہ	default
 Int	ar	arb	240	どの	أَيٌّ	default
 Int	as	apc	398	どの	أنو	default
 Int	as	apc	399	どの	أيّ	default

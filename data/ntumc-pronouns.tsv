@@ -49,7 +49,7 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000044-n	n	3;Sg;F;Poss+Subj	person		3	sg	f	poss+subj						3rd person, singular, feminine, subjective pronoun; possessive pronoun, 3rd person, singular, feminine	hers								
 77000045-n	n	3;Sg;F;Refl	person	personal	3	sg	f		reflexive					3rd person, singular, feminine, reflexive pronoun; personal pronoun, person, 3rd person, singular, feminine, reflexive	herself								
 77000046-n	n	3;Sg;M	person	personal	3	sg	m							personal pronoun, person, 3rd person, singular, masculine	him; he	他	彼; かれ			on			
-77000048-n	n	3;Sg;M;Infml;Dist+Rem;Men	person	demonstrative+demonstrative determiner	3	sg	m			informal		distal+remote	men	3rd person, singular, masculine, informal, distal pronoun; demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, remote			あいつ; 彼奴						
+77000048-n	n	3;Sg;M;Infml;Rem;Men	person	demonstrative+demonstrative determiner	3	sg	m			informal		distal+remote	men	3rd person, singular, masculine, informal, distal pronoun; demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, remote			あいつ; 彼奴						
 77000049-n	n	3;Sg;M;Obj			3	sg	m	obj						3rd person, singular, masculine, objective pronoun									
 77000050-a	a	3;Sg;M;Poss	person		3	sg	m	poss						possessive determiner, 3rd person, singular, masculine	his	他				jeho			
 77000050-n	n	3;Sg;M;Poss	person		3	sg	m	poss						3rd person, singular, masculine, possessive pronoun; possessive pronoun, person, 3rd person, singular, masculine	his	他的							
@@ -64,7 +64,7 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000058-a	a	Pl;Prox		demonstrative determiner		pl						proximal		demonstrative determiner, plural, proximal	these	这些		ini semua					
 77000058-n	n	Ent;Pl;Prox	entity	demonstrative+demonstrative determiner		pl						proximal		demonstratives, plural, proximal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, plural, proximal	these	这些	これら	ini semua					
 77000059-a	a	Rem		demonstrative determiner								remote		demonstrative determiner, remote			あの						
-77000059-n	n	Ent;Sg;Dist+Rem	entity	demonstrative+demonstrative determiner		sg						distal+remote		demonstratives, singular, distal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote			あれ						
+77000059-n	n	Ent;Sg;Rem	entity	demonstrative+demonstrative determiner		sg						distal+remote		demonstratives, singular, distal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote			あれ						
 77000060-a	a	Med		demonstrative determiner								medial		demonstrative determiner, medial			その						
 77000060-n	n	Ent;Sg;Med	entity	demonstrative+demonstrative determiner		sg						medial		demonstratives, singular, medial pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, medial			それ						
 77000061-a	a	Sg;Prox		demonstrative determiner		sg						proximal		demonstrative determiner, singular, proximal	this	本				tenhle; tento; tahle; tato; tohle; tot			
@@ -72,7 +72,7 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000064-n	n	Ent;Int	entity						interrogative					entity, interrogative pronoun	which	什么样	何れ; どれ	yang mana					
 77000065-n	n	Ent;Int;Fml	entity						interrogative	formal				entity, interrogative, formal pronoun; entity, interrogative pronoun, formal			どちら						
 77000066-n	n	Ent;Int;Infml	entity						interrogative	informal				entity, interrogative, informal pronoun; entity, interrogative pronoun, informal			どっち						
-77000070-n	n	Ent;Du;Fml;Dist+Rem	entity	demonstrative+demonstrative determiner		du				formal		distal+remote		entity, dual, formal, distal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, remote			あちら						
+77000070-n	n	Ent;Du;Fml;Rem	entity	demonstrative+demonstrative determiner		du				formal		distal+remote		entity, dual, formal, distal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, remote			あちら						
 77000071-n	n	Ent;Du;Fml;Med	entity	demonstrative+demonstrative determiner		du				formal		medial		entity, dual, formal, medial pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, medial			そちら						
 77000072-n	n	Ent;Du;Fml;Prox	entity	demonstrative+demonstrative determiner		du				formal		proximal		entity, dual, formal, proximal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, proximal			こちら						
 77000073-n	n	Ent;Du;Infml;Prox	entity	demonstrative+demonstrative determiner		du				informal		proximal		entity, dual, informal, proximal pronoun; demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, proximal			こっち						
@@ -95,7 +95,7 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000086-n	n	Univ							universal					location, universal pronoun									
 77000087-n	n													manner pronoun									
 77000088-n	n	Med										medial		manner, medial pronoun									
-77000088-r	r	Mnr;Dist+Med	manner									distal+medial		manner, medial pronoun		那样		begitu; demikian					
+77000088-r	r	Mnr;Dist	manner									distal+medial		manner, medial pronoun		那样		begitu; demikian					
 77000089-a	a	Knd;Prox	kind	demonstrative determiner								proximal		demonstrative determiner, kind, proximal		这样	こういう; このような; こんな						
 77000089-n	n	Prox										proximal		manner, proximal pronoun									
 77000089-r	r	Mnr;Prox	manner									proximal		manner, proximal pronoun		如此; 这样	こんなに	begini					
