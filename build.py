@@ -199,6 +199,8 @@ def features(code: str) -> dict[str, frozenset[str]]:
 
 #: the paper's other slots, by value
 CATEGORIES = {
+    # the size of the set a pro-form chooses from: either, which of the two
+    "domain": {"Two"},
     "head": {
         "Pers",
         "Thng",

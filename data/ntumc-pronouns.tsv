@@ -1,8 +1,8 @@
 synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	proximity	register	definition	eng	cmn	jpn	ind	zsm	ces	ita	mya	qcn
 00025728-r	n	Plc;Univ	place						universal					to or in any or all places; pronoun, location; quantifier: universal	everywhere; all over; everyplace; around; all round	遍布 表面; 四处; 遍; 遍+地; 各+地; 到处; 各; 随处; 遍布表面; 处处; 各地; 各 地; 每处; 东西; 四方; 各方; 各 处; 各处; 诸	普く; 端から端まで; 至る所に; 一面に; あちこち; 隈無く; 彼方此方; 所構わず; 所嫌わず; 遍く; 隈なく; どこでも; ところ嫌わず; 満遍無く; 何処も彼処も; 満遍なく; 此所彼所; 所かまわず; くまなく; あちらこちら; 所きらわず; あっちこっち; 何処もかしこも; べったり; 万遍なく; 万遍無く; ところ構わず; 此処彼処	sebilang; mana-mana	ke merata-rata tempat	všude	ovunque; dovunque; dappertutto		
 00495377-r	n	Plc;Sg;Elec	place			sg			elective					where in the world; location, singular, elective existential pronoun	wherever; wheresoever; anywhere	无论何 事物; 一点 也 . . .; 无论何事物; 在 … 的 地方; 在 任何 … 的 地方; 无论哪; 在…的地方; 一点也...; 何处; 在任何…的地方; 何在		manapun; mana-mana; mana pun	manapun; mana-mana				
-00524607-a	a	Du;Neg				du			negative+other					not either; not one or the other; entity, dual, negative pronoun; quantifier, dual, negative	neither; nor					ani			
-00524607-n	n	Ent;Du;Neg	entity			du			negative					pronoun, entity; quantifier: quantifier, dual, negative	neither								
+00524607-a	a	Sg;Two;Neg				du			negative+other					not either; not one or the other; entity, dual, negative pronoun; quantifier, dual, negative	neither; nor					ani			
+00524607-n	n	Ent;Sg;Two;Neg	entity			du			negative					pronoun, entity; quantifier: quantifier, dual, negative	neither								
 02070188-a	a	Sg;Oth				sg			other					any of various alternatives; some other; quantifier, singular, another	another; some other	其他; 不同; 不同+的; 别; 别+的; 其他+的; 另一; 另; 另一+的	別個; 別			další; jiný; ostatní	altro		
 02070188-n	n	Ent;Sg;Oth	entity			sg								pronoun, entity, quantifier: singular, another	another; other					druhý			
 02267308-a	a	Asrt							assertive					quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential	some; several	一些; 有的; 些; 少许; 有些; 下; 某些; 好几	いくらか	sebagian; beberapa	sebagian; beberapa		qualche; alcuni; certo		
@@ -87,17 +87,17 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000061-a	a	Sg;Prox		demonstrative determiner		sg						proximal		demonstrative determiner, singular, proximal	this	本				tenhle; tento; tahle; tato; tohle; tot			
 77000061-n	n	Ent;Sg;Prox	entity	demonstrative+demonstrative determiner		sg						proximal		demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, proximal	this		これ; こいつ			tenhle; tento; tahle; tato; tohle; toto			
 77000064-n	n	Ent;Int	entity						interrogative					entity, interrogative pronoun	which	什么样	何れ; どれ	yang mana					
-77000065-n	n	Ent;Int;Fml	entity						interrogative	formal				entity, interrogative, formal pronoun; entity, interrogative pronoun, formal			どちら						
-77000066-n	n	Ent;Int;Infml	entity						interrogative	informal				entity, interrogative, informal pronoun; entity, interrogative pronoun, informal			どっち						
-77000070-n	n	Ent;Du;Fml;Rem	entity	demonstrative+demonstrative determiner		du				formal		distal+remote		entity, dual, formal, distal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, remote			あちら						
-77000071-n	n	Ent;Du;Fml;Med	entity	demonstrative+demonstrative determiner		du				formal		medial		entity, dual, formal, medial pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, medial			そちら						
-77000072-n	n	Ent;Du;Fml;Prox	entity	demonstrative+demonstrative determiner		du				formal		proximal		entity, dual, formal, proximal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, proximal			こちら						
-77000073-n	n	Ent;Du;Infml;Prox	entity	demonstrative+demonstrative determiner		du				informal		proximal		entity, dual, informal, proximal pronoun; demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, proximal			こっち						
-77000074-n	n	Ent;Du;Elec	entity			du			elective					entity, dual, elective existential pronoun	either								
+77000065-n	n	Ent;Two;Int;Fml	entity						interrogative	formal				entity, interrogative, formal pronoun; entity, interrogative pronoun, formal			どちら						
+77000066-n	n	Ent;Two;Int;Infml	entity						interrogative	informal				entity, interrogative, informal pronoun; entity, interrogative pronoun, informal			どっち						
+77000070-n	n	Ent;Two;Fml;Rem	entity	demonstrative+demonstrative determiner		du				formal		distal+remote		entity, dual, formal, distal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, remote			あちら						
+77000071-n	n	Ent;Two;Fml;Med	entity	demonstrative+demonstrative determiner		du				formal		medial		entity, dual, formal, medial pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, medial			そちら						
+77000072-n	n	Ent;Two;Fml;Prox	entity	demonstrative+demonstrative determiner		du				formal		proximal		entity, dual, formal, proximal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, proximal			こちら						
+77000073-n	n	Ent;Two;Infml;Prox	entity	demonstrative+demonstrative determiner		du				informal		proximal		entity, dual, informal, proximal pronoun; demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, proximal			こっち						
+77000074-n	n	Ent;Sg;Two;Elec	entity			du			elective					entity, dual, elective existential pronoun	either								
 77000075-a	a	Prox		demonstrative determiner								proximal		demonstrative determiner, proximal		这; 此; 这一	この	ini					
 77000075-n	n	Ent;Prox	entity	demonstrative+demonstrative determiner								proximal		demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal		这; 此; 这个	これ	ini					
-77000076-a	a	Du;Univ				du			universal					quantifier, dual universal	both; either	俩		baik		oba			
-77000076-n	n	Ent;Du;Univ	entity			du			universal					entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal	both		両方; りょうほう; 双方; 両者	kedua-duanya; dua-duanya; keduanya		oba			
+77000076-a	a	Two;Univ				du			universal					quantifier, dual universal	both; either	俩		baik		oba			
+77000076-n	n	Ent;Two;Univ	entity			du			universal					entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal	both		両方; りょうほう; 双方; 両者	kedua-duanya; dua-duanya; keduanya		oba			
 77000077-n	n	Pl;Asrt				pl			assertive					entity, plural, assertive existential pronoun									
 77000078-n	n	Ent;Sg;Univ	entity			sg			universal					entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal	everything	各自	万物; 全ての物	setiap; tiap					
 77000079-a	a	Sg;Dist		demonstrative determiner		sg						distal		demonstrative determiner, distal	that	哪				to; ten; ta			
@@ -141,8 +141,8 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000113-r	r	Mnr;Med	manner									medial		manner, medial pronoun			そんなに						
 77000114-a	a	Knd;Rem	kind	demonstrative determiner								remote		demonstrative determiner, kind, remote			ああいう; あのような; あんな						
 77000114-r	r	Mnr;Rem	manner									remote		manner, remote pronoun			あんなに						
-77000115-n	n	Ent;Infml;Med	entity	demonstrative+demonstrative determiner						informal		medial		demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, medial			そっち						
-77000116-n	n	Ent;Infml;Rem	entity	demonstrative+demonstrative determiner						informal		remote		demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, remote			あっち						
+77000115-n	n	Ent;Two;Infml;Med	entity	demonstrative+demonstrative determiner						informal		medial		demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, medial			そっち						
+77000116-n	n	Ent;Two;Infml;Rem	entity	demonstrative+demonstrative determiner						informal		remote		demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, remote			あっち						
 77000117-n	n	Plc;Med	place	demonstrative+demonstrative determiner								medial		demonstrative pronoun, location; quantifier: demonstrative determiner, medial			そこ; 其処						
 77000120-a	a	Poss;Int						poss	interrogative					interrogative determiner, possessive	whose	谁的							
 77000122-n	n	Pers;Sg;Infml;Prox;Men	person	demonstrative+demonstrative determiner		sg				informal		proximal	men	demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, proximal			こいつ; 此奴						

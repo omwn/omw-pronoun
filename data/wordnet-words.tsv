@@ -1,20 +1,18 @@
 tag	concept	word	source	ili
 abz	Plc;Prox	prodo	abwn:0.1	i81667
 abz	Plc;Prox	do	abwn:0.1	i81667
-af	Du;Univ	beide	inaf:0.1	i12555
 af	Mnr;Prox+Dist	dus	inaf:0.1	i18911
 af	Mnr;Prox+Dist	so	inaf:0.1	i18911
 af	Plc;Dist	daar	inaf:0.1	i81668
 af	Plc;Prox	hier	inaf:0.1	i81667
 af	Tim;Dist	dan	inaf:0.1	i117639
 af	Tim;Prox	Nou	inaf:0.1	i116653
+af	Two;Univ	beide	inaf:0.1	i12555
 ar	Tim;Prox	الأن	omw-arb:2.0	i116653
 bn	Mnr;Prox+Dist	এইজন্য	bangla-wordnet-bn:0.1	i18911
 ca	Plc;Prox	aquí	omw-ca:2.0	i81667
 ca	Tim;Dist	a continuació	omw-ca:2.0	i117639
 ca	Tim;Prox	ara	omw-ca:2.0	i116653
-cmn	Du;Univ	两个+的	omw-cmn:2.0	i12555
-cmn	Du;Univ	两者+的	omw-cmn:2.0	i12555
 cmn	Mnr;Prox+Dist	正 是 那样	NTUMC wordnet 00121135-r	i18911
 cmn	Mnr;Prox+Dist	这样	NTUMC wordnet 00121135-r	i18911
 cmn	Mnr;Prox+Dist	正是那样	NTUMC wordnet 00121135-r	i18911
@@ -47,6 +45,8 @@ cmn	Tim;Prox	当下	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	现时	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	此刻	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	现	NTUMC wordnet 15119919-n	i116653
+cmn	Two;Univ	两个+的	omw-cmn:2.0	i12555
+cmn	Two;Univ	两者+的	omw-cmn:2.0	i12555
 cop	Mnr;Prox+Dist	ⲧⲟⲧⲉ	copwn-cop:1.0	i18911
 cop	Mnr;Prox+Dist	ⲉⲧⲓ	copwn-cop:1.0	i18911
 cop	Mnr;Prox+Dist	ⲁⲩⲱ ⲧⲟⲧⲉ	copwn-cop:1.0	i18911
@@ -197,7 +197,6 @@ cs	Mnr;Prox+Dist	takto	NTUMC wordnet 00121135-r	i18911
 cs	Plc;Prox	tady	NTUMC wordnet 08489497-n	i81667
 de	Tim;Prox	Gegenwart	odenet:1.4	i116653
 de	Tim;Prox	Jetzt	odenet:1.4	i116653
-en	Du;Univ	both	oewn:2025+	i12555
 en	Mnr;Prox+Dist	thus	NTUMC wordnet 00121135-r	i18911
 en	Mnr;Prox+Dist	so	NTUMC wordnet 00121135-r	i18911
 en	Mnr;Prox+Dist	thusly	NTUMC wordnet 00121135-r	i18911
@@ -213,6 +212,7 @@ en	Tim;Dist	then	NTUMC wordnet 15296354-n	i117639
 en	Tim;Dist	then	oewn:2025+	i117639
 en	Tim;Prox	now	NTUMC wordnet 15119919-n	i116653
 en	Tim;Prox	now	oewn:2025+	i116653
+en	Two;Univ	both	oewn:2025+	i12555
 es	Mnr;Prox+Dist	así	omw-es:2.0	i18911
 es	Plc;Prox	acá	omw-es:2.0	i81667
 es	Plc;Prox	aquí	omw-es:2.0	i81667
@@ -220,7 +220,6 @@ es	Tim;Dist	entonces	omw-es:2.0	i117639
 es	Tim;Prox	ahora	omw-es:2.0	i116653
 eu	Tim;Dist	orduan	omw-eu:2.0	i117639
 eu	Tim;Prox	orain	omw-eu:2.0	i116653
-fi	Du;Univ	molemmat	finnish-fi:2.0.1	i12555
 fi	Mnr;Prox+Dist	noin	finnish-fi:2.0.1	i18911
 fi	Mnr;Prox+Dist	niin	finnish-fi:2.0.1	i18911
 fi	Mnr;Prox+Dist	siten	finnish-fi:2.0.1	i18911
@@ -231,8 +230,7 @@ fi	Plc;Prox	tässä	finnish-fi:2.0.1	i81667
 fi	Plc;Prox	täällä	finnish-fi:2.0.1	i81667
 fi	Tim;Dist	silloin	finnish-fi:2.0.1	i117639
 fi	Tim;Prox	nyt	finnish-fi:2.0.1	i116653
-fr	Du;Univ	les deux	omw-fr:2.0	i12555
-fr	Du;Univ	tous les deux	omw-fr:2.0	i12555
+fi	Two;Univ	molemmat	finnish-fi:2.0.1	i12555
 fr	Mnr;Prox+Dist	comme	omw-fr:2.0	i18911
 fr	Mnr;Prox+Dist	ainsi	omw-fr:2.0	i18911
 fr	Mnr;Prox+Dist	tellement	omw-fr:2.0	i18911
@@ -242,6 +240,8 @@ fr	Plc;Prox	ici	omw-fr:2.0	i81667
 fr	Tim;Dist	alors	omw-fr:2.0	i117639
 fr	Tim;Prox	rasibus	omw-fr:2.0	i116653
 fr	Tim;Prox	maintenant	omw-fr:2.0	i116653
+fr	Two;Univ	les deux	omw-fr:2.0	i12555
+fr	Two;Univ	tous les deux	omw-fr:2.0	i12555
 gd	Plc;Dist	an àiteigin	usgw-gd:0.9	i81668
 gd	Plc;Prox	an seo	usgw-gd:0.9	i81667
 gd	Plc;Prox	an sin	usgw-gd:0.9	i81667
@@ -251,7 +251,6 @@ he	Mnr;Prox+Dist	כֹּה	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כָּכָה	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כֵּן	omw-he:2.0	i18911
 hr	Mnr;Prox+Dist	tako	omw-hr:2.0	i18911
-id	Du;Univ	kedua	omw-id:2.0	i12555
 id	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
@@ -276,6 +275,7 @@ id	Tim;Prox	kini	NTUMC wordnet 15119919-n	i116653
 id	Tim;Prox	saat ini	NTUMC wordnet 15119919-n	i116653
 id	Tim;Prox	kini	omw-id:2.0	i116653
 id	Tim;Prox	sekarang	omw-id:2.0	i116653
+id	Two;Univ	kedua	omw-id:2.0	i12555
 it	Mnr;Prox+Dist	così	NTUMC wordnet 00121135-r	i18911
 it	Mnr;Prox+Dist	quindi	NTUMC wordnet 00121135-r	i18911
 it	Mnr;Prox+Dist	così	omw-it:2.0	i18911
@@ -387,7 +387,6 @@ yue	Tim;Dist	嗰陣時	cantown-yue:1.0	i117639
 yue	Tim;Dist	當時	cantown-yue:1.0	i117639
 yue	Tim;Dist	當其時	cantown-yue:1.0	i117639
 yue	Tim;Dist	當初	cantown-yue:1.0	i117639
-zsm	Du;Univ	kedua	omw-zsm:2.0	i12555
 zsm	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
 zsm	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
 zsm	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
@@ -410,3 +409,4 @@ zsm	Tim;Prox	kini	NTUMC wordnet 15119919-n	i116653
 zsm	Tim;Prox	saat ini	NTUMC wordnet 15119919-n	i116653
 zsm	Tim;Prox	kini	omw-zsm:2.0	i116653
 zsm	Tim;Prox	sekarang	omw-zsm:2.0	i116653
+zsm	Two;Univ	kedua	omw-zsm:2.0	i12555

@@ -55,7 +55,7 @@ HEADINGS = {
     "それ": "Ent;Sg;Med",
     "あれ": "Ent;Sg;Rem",
     "どれ": "Ent;Int",
-    "どっち": "Ent;Int;Infml",
+    "どっち": "Ent;Two;Int;Infml",
     "何（なに・なん）": "Thng;Int",
     # places and directions (1.17, 1.173)
     "ここ": "Plc;Prox",

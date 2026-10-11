@@ -8,6 +8,7 @@ Sg	number	singular	i69586		pwn	Number=Sing	the form of a word that is used to de
 Du	number	dual	i12000		pwn	Number=Dual	a grammatical number category referring to two items or units as opposed to one item (singular) or more than two items (plural)
 Tr	number	trial			new	Number=Tri	a grammatical number category referring to three items, where it contrasts with singular, dual and plural
 Pl	number	plural	i69585		pwn	Number=Plur	the form of a word that is used to denote more than one
+Two	domain	one of two			new		chosen from a set of two: either, neither, which of the two
 Gpl	number	greater plural			new	Number=Grpl	a grammatical number category referring to more than two (or three) items, in a language where plural contrasts with dual (or trial)
 M	gender	masculine	i8148		pwn	Gender=Masc	male (of grammatical gender)
 F	gender	feminine	i8149		pwn	Gender=Fem	female (of grammatical gender)

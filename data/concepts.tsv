@@ -94,8 +94,6 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 Asrt	a	assertive existential pronoun	an assertive existential pronoun	NTUMC	02267308-a	0	0	0
 DNEG	n	direct negation pronoun	an indefinite pronoun series used for: direct negation (Haspelmath's functions)	Haspelmath		0	0	0
 Dist	a	distal pronoun	a distal pronoun	NTUMC	77000080-a	0	0	0
-Du;Neg	a	dual negative pronoun	a dual negative pronoun	NTUMC	00524607-a	0	0	0
-Du;Univ	a	dual universal pronoun	a dual universal pronoun	NTUMC	77000076-a	0	0	0
 Dur+Tim;Int	n	duration or time interrogative pronoun	a duration or time interrogative pronoun	NTUMC	77000103-n	0	0	0
 Elec	a	elective existential pronoun	an elective existential pronoun	NTUMC	02267686-a	0	0	0
 Ent;1;Pl;Poss	n	first person plural possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, more than one possessor	NTUMC	77000006-n	0	0	0
@@ -108,19 +106,8 @@ Ent;3;Sg;M;Poss	n	third person singular masculine possessive pronoun	a possessiv
 Ent;3;Sg;N;Poss	n	third person singular neuter possessive pronoun	a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, one possessor (neuter)	NTUMC	77000054-n	0	0	0
 Ent;Asrt	n	entity assertive existential pronoun	an entity assertive existential pronoun	NTUMC	02267308-n	0	0	0
 Ent;Dist	n	entity distal pronoun	an entity distal pronoun	NTUMC	77000080-n	0	0	0
-Ent;Du;Elec	n	entity dual elective existential pronoun	an entity dual elective existential pronoun	NTUMC	77000074-n	0	0	0
-Ent;Du;Fml;Med	n	entity dual formal medial pronoun	an entity dual formal medial pronoun	NTUMC	77000071-n	0	0	0
-Ent;Du;Fml;Prox	n	entity dual formal proximal pronoun	an entity dual formal proximal pronoun	NTUMC	77000072-n	0	0	0
-Ent;Du;Fml;Rem	n	entity dual formal remote pronoun	an entity dual formal remote pronoun	NTUMC	77000070-n	0	0	0
-Ent;Du;Infml;Prox	n	entity dual informal proximal pronoun	an entity dual informal proximal pronoun	NTUMC	77000073-n	0	0	0
-Ent;Du;Neg	n	entity dual negative pronoun	an entity dual negative pronoun	NTUMC	00524607-n	0	0	0
-Ent;Du;Univ	n	entity dual universal pronoun	an entity dual universal pronoun	NTUMC	77000076-n	0	0	0
 Ent;Elec	n	entity elective existential pronoun	an entity elective existential pronoun	NTUMC	02267686-n	0	0	0
-Ent;Infml;Med	n	entity informal medial pronoun	an entity informal medial pronoun	NTUMC	77000115-n	0	0	0
-Ent;Infml;Rem	n	entity informal remote pronoun	an entity informal remote pronoun	NTUMC	77000116-n	0	0	0
 Ent;Int	n	entity interrogative pronoun	an entity interrogative pronoun	NTUMC	77000064-n	0	0	0
-Ent;Int;Fml	n	entity interrogative formal pronoun	an entity interrogative formal pronoun	NTUMC	77000065-n	0	0	0
-Ent;Int;Infml	n	entity interrogative informal pronoun	an entity interrogative informal pronoun	NTUMC	77000066-n	0	0	0
 Ent;Pl;Dist	n	entity plural distal pronoun	an entity plural distal pronoun	NTUMC	77000082-n	0	0	0
 Ent;Pl;Med	n	entity plural medial pronoun	an entity plural medial pronoun	NTUMC	77000057-n	0	0	0
 Ent;Pl;Oth	n	entity plural other pronoun	an entity plural other pronoun	NTUMC	80001631-n	0	0	0
@@ -133,7 +120,18 @@ Ent;Sg;Oth	n	entity singular other pronoun	an entity singular other pronoun	NTUM
 Ent;Sg;Prox	n	entity singular proximal pronoun	an entity singular proximal pronoun	NTUMC	77000061-n	0	0	0
 Ent;Sg;Prox+Dist	n	entity singular proximal or distal pronoun	an entity singular proximal or distal pronoun	TUFS curation		0	0	0
 Ent;Sg;Rem	n	entity singular remote pronoun	an entity singular remote pronoun	NTUMC	77000059-n	0	0	0
+Ent;Sg;Two;Elec	n	entity singular Two elective existential pronoun	an entity singular Two elective existential pronoun	NTUMC	77000074-n	0	0	0
+Ent;Sg;Two;Neg	n	entity singular Two negative pronoun	an entity singular Two negative pronoun	NTUMC	00524607-n	0	0	0
 Ent;Sg;Univ	n	entity singular universal pronoun	an entity singular universal pronoun	NTUMC	02269635-n 77000078-n	0	0	0
+Ent;Two;Fml;Med	n	entity Two formal medial pronoun	an entity Two formal medial pronoun	NTUMC	77000071-n	0	0	0
+Ent;Two;Fml;Prox	n	entity Two formal proximal pronoun	an entity Two formal proximal pronoun	NTUMC	77000072-n	0	0	0
+Ent;Two;Fml;Rem	n	entity Two formal remote pronoun	an entity Two formal remote pronoun	NTUMC	77000070-n	0	0	0
+Ent;Two;Infml;Med	n	entity Two informal medial pronoun	an entity Two informal medial pronoun	NTUMC	77000115-n	0	0	0
+Ent;Two;Infml;Prox	n	entity Two informal proximal pronoun	an entity Two informal proximal pronoun	NTUMC	77000073-n	0	0	0
+Ent;Two;Infml;Rem	n	entity Two informal remote pronoun	an entity Two informal remote pronoun	NTUMC	77000116-n	0	0	0
+Ent;Two;Int;Fml	n	entity Two interrogative formal pronoun	an entity Two interrogative formal pronoun	NTUMC	77000065-n	0	0	0
+Ent;Two;Int;Infml	n	entity Two interrogative informal pronoun	an entity Two interrogative informal pronoun	NTUMC	77000066-n	0	0	0
+Ent;Two;Univ	n	entity Two universal pronoun	an entity Two universal pronoun	NTUMC	77000076-n	0	0	0
 Ent;Univ	n	entity universal pronoun	an entity universal pronoun	NTUMC	02269286-n	0	0	0
 FC	n	free choice pronoun	an indefinite pronoun series used for: free choice (Haspelmath's functions)	Haspelmath		0	0	0
 Int	a	interrogative pronoun	an interrogative pronoun	NTUMC	77000091-a	0	0	0
@@ -198,6 +196,7 @@ SK+SU+IRR+Q+COND+INEG	n	specific known or specific unknown or irrealis non-speci
 Sg;Dist	a	singular distal pronoun	a singular distal pronoun	NTUMC	77000079-a	0	0	0
 Sg;Oth	a	singular other pronoun	a singular other pronoun	NTUMC	02070188-a	0	0	0
 Sg;Prox	a	singular proximal pronoun	a singular proximal pronoun	NTUMC	77000061-a	0	0	0
+Sg;Two;Neg	a	singular Two negative pronoun	a singular Two negative pronoun	NTUMC	00524607-a	0	0	0
 Sg;Univ	a	singular universal pronoun	a singular universal pronoun	NTUMC	02269635-a	0	0	0
 Thng;Int	n	thing interrogative pronoun	a thing interrogative pronoun	NTUMC	77000091-n	0	0	0
 Thng;Sg;Asrt	n	thing singular assertive existential pronoun	a thing singular assertive existential pronoun	NTUMC	77000092-n	0	0	0
@@ -208,4 +207,5 @@ Tim;Int	n	time interrogative pronoun	a time interrogative pronoun	NTUMC	77000104
 Tim;Prox	n	time proximal pronoun	a time proximal pronoun	time deixis		0	0	0
 Tim;Sg;Asrt	n	time singular assertive existential pronoun	a time singular assertive existential pronoun	TUFS ja いつか		0	0	0
 Tim;Sg;Elec	n	time singular elective existential pronoun	a time singular elective existential pronoun	NTUMC	77000106-n	0	0	0
+Two;Univ	a	Two universal pronoun	a Two universal pronoun	NTUMC	77000076-a	0	0	0
 Univ	a	universal pronoun	an universal pronoun	NTUMC	02269286-a	0	0	0

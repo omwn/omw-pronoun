@@ -38,6 +38,7 @@ alternatives joined by `+`:
 |---|---|
 | head (or person) | `Pers` `Thng` `Ent` `Plc` `Tim` `Mnr` `Rsn` `Knd` `Dur` `Qnt`; a personal pronoun has its person instead: `1` `1i` `1e` `2` `3` |
 | number | `Sg` `Du` `Tr` `Pl` `Gpl` |
+| domain | `Two`: chosen from two (*either*, *both*, Japanese どちら "which of two") |
 | gender | `M` `F` `N` |
 | type | `Asrt` `Elec` `Neg` `Univ` `Int` `Refl` `Recp` `Oth` |
 | formality | `Fml` `Infml` |
@@ -97,11 +98,11 @@ from:
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
-Of the 54 feature values in use, 29 keep their Princeton ILI (*possessive* is
-i69651), 23 are proposed (NTUMC's own and new ones such as *greater plural* and
+Of the 55 feature values in use, 29 keep their Princeton ILI (*possessive* is
+i69651), 24 are proposed (NTUMC's own and new ones such as *greater plural*, *one of two* and
 Haspelmath's functions), and 2 point at doubtful Princeton senses (`check`).
 Each records its Universal Dependencies value (`dc:relation="UD:Number=Grpl"`);
-36 of 54 have one. Feature synsets form a hierarchy of their own, from the
+36 of 55 have one. Feature synsets form a hierarchy of their own, from the
 values that stand for others: *distal* has the hyponyms *medial* and *remote*,
 *first person* has *inclusive* and *exclusive*.
 

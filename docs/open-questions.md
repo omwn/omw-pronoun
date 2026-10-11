@@ -51,9 +51,15 @@ or leave them and note the mapping?
 
 ## 4. Doubtful analyses inherited from NTUMC
 
-- Japanese こちら/そちら/あちら are coded dual (`Ent;Du;Fml;Prox` ...); they mean
-  "this way/side/one (polite)" and the dual reading is questionable. Direction
-  (§7) may fit them better.
+- Japanese こちら/そちら/あちら and こっち were coded dual (`Ent;Du;Fml;Prox` ...).
+  They are not: "this one (polite)" is one thing, not two, and そっち/あっち had no
+  dual. `data/ntumc-fixes.tsv` now codes them `Ent;Fml;Prox`, `Ent;Fml;Med`,
+  `Ent;Fml;Rem` and `Ent;Infml;Prox`; the fix belongs upstream too. Still open:
+  their commonest sense is place or direction, polite ("here, this way": TUFS
+  translates them as *here*, *there*, *where* in over 20 languages), which would
+  be `Plc;Prox;Fml` etc. The "one of two" sense is now the domain feature `Two`
+  (`Ent;Two;Fml;Prox`, どちら `Ent;Two;Int;Fml`), as for *either*, *neither*
+  and *both*.
 - NTUMC links あれ, あいつ, あちら (77000059-n, 77000048-n, 77000070-n) to both
   *distal* and *remote*; the a- series is remote. `data/ntumc-fixes.tsv` corrects
   them here; the fix belongs upstream in NTUMC, which wnja's

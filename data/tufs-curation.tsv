@@ -351,8 +351,8 @@ as	387	私たち	نحنا	نحنا	1;Pl	pronoun	high	niḥna "we"
 as	386	私（わたし）	أنا	أنا	1;Sg	pronoun	high	ʔana "I"
 as	401	自分	نفس	نفس	Pers;Refl	pronoun	medium	nafs "self": noun used as reflexive with possessive suffix
 ja	293	あそこ	あそこ	あそこ	Plc;Rem	pronoun	high	NTUMC
-ja	1297	あちら	あちら	あちら	Ent;Du;Fml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction "over there"
-ja	1541	あっち	あっち	あっち	Ent;Infml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction
+ja	1297	あちら	あちら	あちら	Ent;Two;Fml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction "over there"
+ja	1541	あっち	あっち	あっち	Ent;Two;Infml;Rem	pronoun	high	NTUMC; TUFS heading sense is place/direction
 ja	734	あなた	あなた	あなた	2;Sg;Infml	pronoun	high	NTUMC
 ja	1543	あの	あの	あの	Rem	pronoun	high	NTUMC
 ja	299	あれ	あれ	あれ	Ent;Sg;Rem	pronoun	high	NTUMC
@@ -360,16 +360,16 @@ ja	745	いくつ	いくつ	いくつ	Qnt;Int	pronoun	high	not in NTUMC; "how man
 ja	151	いくら	いくら	いくら	Qnt;Int	pronoun	high	not in NTUMC; "how much"
 ja	459	いつ	いつ	いつ	Tim;Int	pronoun	high	NTUMC
 ja	21	ここ	ここ	ここ	Plc;Prox	pronoun	high	extra-lemmas
-ja	161	こちら	こちら	こちら	Ent;Du;Fml;Prox	pronoun	high	NTUMC; TUFS heading sense is place/direction
-ja	528	こっち	こっち	こっち	Ent;Du;Infml;Prox	pronoun	high	NTUMC (note: そっち/あっち are Ent;Infml;Med/Rem, without Du)
+ja	161	こちら	こちら	こちら	Ent;Two;Fml;Prox	pronoun	high	NTUMC; TUFS heading sense is place/direction
+ja	528	こっち	こっち	こっち	Ent;Two;Infml;Prox	pronoun	high	NTUMC, without its dual, as for そっち/あっち
 ja	32	この	この	この	Prox	pronoun	high	NTUMC
 ja	117	これ	これ	これ	Ent;Sg;Prox	pronoun	high	NTUMC
 ja	117	これ	これ	これ	Ent;Prox	pronoun	high	NTUMC
 ja	1659	こんな	こんな	こんな	Knd;Prox	pronoun	high	NTUMC
 ja	45	そう	そう	そう	Mnr;Med	pronoun	high	extra-lemmas
 ja	524	そこ	そこ	そこ	Plc;Med	pronoun	high	NTUMC
-ja	1262	そちら	そちら	そちら	Ent;Du;Fml;Med	pronoun	high	NTUMC; TUFS heading sense is place/direction
-ja	531	そっち	そっち	そっち	Ent;Infml;Med	pronoun	high	NTUMC
+ja	1262	そちら	そちら	そちら	Ent;Two;Fml;Med	pronoun	high	NTUMC; TUFS heading sense is place/direction
+ja	531	そっち	そっち	そっち	Ent;Two;Infml;Med	pronoun	high	NTUMC
 ja	515	その	その	その	Med	pronoun	high	NTUMC
 ja	46	それ	それ	それ	Ent;Sg;Med	pronoun	high	NTUMC
 ja	1712	だれ	だれ	だれ	Pers;Int	pronoun	high	NTUMC
@@ -377,8 +377,8 @@ ja	1713	だれか	だれか	だれか	Pers;Sg;Asrt	pronoun	high	extra-lemmas
 ja	291	どう	どう	どう	Mnr;Int	pronoun	high	extra-lemmas
 ja	398	どうして	どうして	どうして	Rsn;Int	pronoun	high	NTUMC
 ja	284	どこ	どこ	どこ	Plc;Int	pronoun	high	NTUMC
-ja	1299	どちら	どちら	どちら	Ent;Int;Fml	pronoun	high	NTUMC; TUFS heading sense is place "where"
-ja	1741	どっち	どっち	どっち	Ent;Int;Infml	pronoun	high	NTUMC
+ja	1299	どちら	どちら	どちら	Ent;Two;Int;Fml	pronoun	high	NTUMC; TUFS heading sense is place "where"
+ja	1741	どっち	どっち	どっち	Ent;Two;Int;Infml	pronoun	high	NTUMC
 ja	1358	どなた	どなた	どなた	Pers;Int;Pol	pronoun	high	extra-lemmas
 ja	1743	どの	どの	どの	Int	pronoun	high	extra-lemmas; determiner
 ja	296	どれ	どれ	どれ	Ent;Int	pronoun	high	NTUMC

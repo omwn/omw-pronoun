@@ -286,13 +286,13 @@ const ORDER = new Map(Object.keys(CONCEPTS).map((code, i) => [code, i]));
 // ---- features -------------------------------------------------------------
 // eleven slots in eight colour groups: social and deictic slots share a colour
 const GROUP = {
-  head: "head", person: "person", number: "number", gender: "gender",
+  head: "head", person: "person", number: "number", domain: "number", gender: "gender",
   case: "case", type: "type",
   formality: "social", politeness: "social", register: "social",
   proximity: "deixis", direction: "deixis",
 };
 const GROUPS = [
-  ["head", "head", "Pers"], ["person", "person", "1e"], ["number", "number", "Du"],
+  ["head", "head", "Pers"], ["person", "person", "1e"], ["number", "number, of two", "Du"],
   ["gender", "gender", "F"], ["case", "possessive", "Poss"], ["type", "type", "Int"],
   ["social", "formality, politeness, register", "Pol"],
   ["deixis", "proximity, direction", "Prox"],

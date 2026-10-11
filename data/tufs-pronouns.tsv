@@ -176,12 +176,6 @@ Ent;Int	ms	zsm	296	どれ	yang mana	default
 Ent;Int	my	mya	296	どれ	ဘယ်ဟာ	default
 Ent;Int	my	mya	296	どれ	ဘာ	default
 Ent;Int	ur	urd	460	どれ	کون سا	default
-Ent;Int;Infml	fr	fra	95	どっち	où	default
-Ent;Int;Infml	ja	ja	1741	どっち	どっち	default
-Ent;Int;Infml	ms	zsm	1741	どっち	yang mana	default
-Ent;Int;Infml	my	mya	1741	どっち	ဘယ်	default
-Ent;Int;Infml	my	mya	1741	どっち	ဘယ်တစ်ခု	default
-Ent;Int;Infml	ur	urd	460	どっち	کون سا	default
 Ent;Sg;Med	fr	fra	5	それ	ça	default
 Ent;Sg;Med	fr	fra	901	それ	cela	default
 Ent;Sg;Med	ja	ja	46	それ	それ	default
@@ -208,6 +202,12 @@ Ent;Sg;Rem	ja	ja	299	あれ	あれ	default
 Ent;Sg;Rem	ms	zsm	299	あれ	itu	default
 Ent;Sg;Rem	my	mya	299	あれ	ဟိုဟာ	default
 Ent;Sg;Rem	ur	urd	21	あれ	وہ	default
+Ent;Two;Int;Infml	fr	fra	95	どっち	où	default
+Ent;Two;Int;Infml	ja	ja	1741	どっち	どっち	default
+Ent;Two;Int;Infml	ms	zsm	1741	どっち	yang mana	default
+Ent;Two;Int;Infml	my	mya	1741	どっち	ဘယ်	default
+Ent;Two;Int;Infml	my	mya	1741	どっち	ဘယ်တစ်ခု	default
+Ent;Two;Int;Infml	ur	urd	460	どっち	کون سا	default
 Int	ar	arb	240	どの	أَيٌّ	default
 Int	as	apc	398	どの	أنو	default
 Int	as	apc	399	どの	أيّ	default

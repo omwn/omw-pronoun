@@ -22,6 +22,7 @@ A code is a sequence of features separated by `;`. Each feature fills one
 | head | `Pers` `Thng` `Ent` `Plc` `Tim` `Mnr` `Rsn` `Knd` `Dur` `Qnt` |
 | person | `1` `1i` `1e` `2` `3` |
 | number | `Sg` `Du` `Tr` `Pl` `Gpl` |
+| domain | `Two` |
 | gender | `M` `F` `N` |
 | case | `Poss` |
 | type | `Asrt` `Elec` `Neg` `Univ` `Int` `Refl` `Recp` `Oth`, and Haspelmath's functions `SK` `SU` `IRR` `Q` `COND` `INEG` `DNEG` `COMP` `FC` |
@@ -99,10 +100,10 @@ The basic ways to get a broader code follow from the definitions:
 
 Two codes can have common hyponyms. `1e;Du` lies under both `1;Du` (we two) and
 `1e;Pl` (exclusive we), because ⟦1;Du⟧ ∩ ⟦1e;Pl⟧ = ⟦1e;Du⟧. So the hierarchy is a
-graph, not a tree: of 210 concepts, 26 have two hypernyms.
+graph, not a tree: of 210 concepts, 23 have two hypernyms.
 
 The hierarchy has no single root. A concept with no broader concept of its part
-of speech is a top: 51 are, among them `1;Sg`, `2`, `3`, `Ent;Int`,
+of speech is a top: 50 are, among them `1;Sg`, `2`, `3`, `Ent;Int`,
 `Ent;Prox` and `Tim;Prox` *now*. Concepts that share a head are not joined
 unless some concept states only what they share: *now* and *then* are both
 `Tim`, but no concept is `Tim` alone, and `Dur+Tim;Int` (*how long, when*) holds
@@ -162,6 +163,25 @@ The kind of thing a pro-form stands for. Personal pronouns have a person instead
 | `Tr` | trial | `Number=Tri` | Tok Pisin *mitripela* "we three (not you)" | (no concept yet) |
 | `Pl` | plural: any non-singular, `Du`, `Tr` or `Gpl` | `Number=Plur` | English *we* | `1;Pl` |
 | `Gpl` | greater plural: more than a dual or trial | `Number=Grpl` | Tok Pisin *mipela* | `1e;Gpl` |
+
+Number counts the referents. `Du` is *we two*: two people referred to.
+
+### Domain
+
+The size of the set a pro-form chooses from, independent of number and type.
+*either* refers to one thing, chosen from two; *both* is the universal over a
+set of two, so it refers to both of them. Jeretič et al. (2026) treat *dual* as
+a core concept that combines with quantifiers in this way; Indo-European had
+interrogatives for "which of two" (Latin *uter*, Greek *póteros*, Old English
+*hwæþer*).
+
+| value | meaning | example | code |
+|---|---|---|---|
+| `Two` | chosen from a set of two | English *either* | `Ent;Sg;Two;Elec` |
+| | | English *neither* | `Ent;Sg;Two;Neg` |
+| | | English *both* | `Ent;Two;Univ` (pronoun), `Two;Univ` (determiner) |
+| | | Japanese *dochira* どちら "which (of two)" | `Ent;Two;Int;Fml` |
+| | | Japanese *kochira* こちら "this one (of two)" | `Ent;Two;Fml;Prox` |
 
 ### Gender
 
@@ -265,6 +285,10 @@ In ids, `;` becomes `-` and `+` becomes `_`: `1;Sg;Fml;Hon+Pol` is the synset
 (`pronoun:1;Sg;Fml;Hon+Pol`).
 
 ## References
+
+Jeretič, Paloma, Itai Bassi, Aurore Gonzalez, Marie-Christine Meyer, Kazuko
+Yatsushiro and Uli Sauerland (2026). Core concepts and indirect alternatives: on
+the anti-duality of quantifiers. *Journal of Semantics* 43(1): 17–54.
 
 Haspelmath, Martin (1997). *Indefinite Pronouns*. Oxford University Press.
 
