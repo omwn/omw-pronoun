@@ -1,0 +1,610 @@
+# Cantonese pro-forms for the OMW pronoun wordnet.
+# NOT from TUFS (TUFS has no Cantonese): written by Claude Opus 5.5 from its own knowledge,
+# for a speaker to check. Romanization is Jyutping. One table per concept; edit `comment`.
+# Parabank's Cantonese (Yale/IPA only) agrees on the six personal pronouns.
+
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+
+["1;Sg"]
+lemmas = ["我"]
+jyutping = ["ngo5"]
+english = ["I"]
+confidence = ["high"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = ["我哋"]
+jyutping = ["ngo5 dei6"]
+english = ["we"]
+confidence = ["high"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+note = "not marked for clusivity"
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+comment = ""
+
+["2;Sg"]
+lemmas = ["你"]
+jyutping = ["nei5"]
+english = ["you"]
+english_via = "2"
+confidence = ["high"]
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+hypernyms = ["2"]
+ancestors = ["2"]
+comment = ""
+
+["2;Pl"]
+lemmas = ["你哋"]
+jyutping = ["nei5 dei6"]
+english = ["you"]
+english_via = "2"
+confidence = ["high"]
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+comment = ""
+
+["2;Sg;Fml;Pol"]
+lemmas = ["閣下"]
+jyutping = ["gok3 haa6"]
+english = ["you"]
+english_via = "2"
+confidence = ["medium"]
+label = "second person singular formal polite pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal, polite)"
+note = "very formal, mostly written; Mandarin 您 is rare in spoken Cantonese"
+hypernyms = ["2;Sg;Fml"]
+ancestors = ["2;Sg;Fml", "2;Sg", "2"]
+comment = ""
+
+["3;Sg"]
+lemmas = ["佢"]
+jyutping = ["keoi5"]
+confidence = ["high"]
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+note = "no gender in speech; 他/她/它 are written-Chinese forms"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Pl"]
+lemmas = ["佢哋"]
+jyutping = ["keoi5 dei6"]
+english = ["they"]
+confidence = ["high"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["自己"]
+jyutping = ["zi6 gei2"]
+english = ["oneself"]
+confidence = ["high"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+existing_by_lemma = ["自己 -> cantown-yue cantown-yue-09604981-n [i87150] 個人, 個體, 本人, 自我, 自己: (CILI) a person considered as a unique individual"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["大家"]
+jyutping = ["daai6 gaa1"]
+english = ["everybody", "everyone"]
+confidence = ["high"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+comment = ""
+
+["Pers;Int"]
+lemmas = ["邊個"]
+jyutping = ["bin1 go3"]
+english = ["who", "whom"]
+confidence = ["high"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+note = "also 'which one' (Ent;Int)"
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+comment = ""
+
+["Ent;Int"]
+lemmas = ["邊個"]
+jyutping = ["bin1 go3"]
+english = ["which"]
+confidence = ["high"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+note = "'which one'"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Int"]
+lemmas = ["邊"]
+jyutping = ["bin1"]
+english = ["what", "which", "whose"]
+confidence = ["high"]
+label = "interrogative pronoun"
+definition = "an interrogative pronoun"
+note = "determiner 'which', before a classifier: 邊本書"
+existing_hidden = 2  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Thng;Int"]
+lemmas = ["乜嘢", "咩", "乜"]
+jyutping = ["mat1 je5", "me1", "mat1"]
+english = ["what", "which"]
+confidence = ["high", "high", "medium"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+note = "咩 colloquial contraction of 乜嘢"
+hypernyms = ["feature:Thng"]
+ancestors = ["feature:Thng"]
+comment = ""
+
+["Plc;Int"]
+lemmas = ["邊度", "邊處"]
+jyutping = ["bin1 dou6", "bin1 syu3"]
+english = ["where"]
+confidence = ["high", "medium"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Tim;Int"]
+lemmas = ["幾時"]
+jyutping = ["gei2 si4"]
+english = ["when"]
+confidence = ["high"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+hypernyms = ["Dur+Tim;Int", "feature:Tim"]
+ancestors = ["Dur+Tim;Int", "feature:Tim", "feature:Dur"]
+comment = ""
+
+["Rsn;Int"]
+lemmas = ["點解", "做乜"]
+jyutping = ["dim2 gaai2", "zou6 mat1"]
+english = ["why"]
+confidence = ["high", "medium"]
+label = "reason interrogative pronoun"
+definition = "a reason interrogative pronoun"
+hypernyms = ["feature:Rsn"]
+ancestors = ["feature:Rsn"]
+comment = ""
+
+["Mnr;Int"]
+lemmas = ["點", "點樣"]
+jyutping = ["dim2", "dim2 joeng2"]
+english = ["how"]
+confidence = ["high", "high"]
+label = "manner interrogative pronoun"
+definition = "a manner interrogative pronoun"
+existing_hidden = 7  # other senses of these lemmas
+hypernyms = ["feature:Mnr"]
+ancestors = ["feature:Mnr"]
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["幾多"]
+jyutping = ["gei2 do1"]
+english = ["how many", "how much"]
+confidence = ["high"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+comment = ""
+
+["Prox"]
+lemmas = ["呢"]
+jyutping = ["ni1"]
+confidence = ["high"]
+label = "proximal pronoun"
+definition = "a proximal pronoun"
+note = "determiner, before a classifier: 呢本書"
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Dist"]
+lemmas = ["嗰"]
+jyutping = ["go2"]
+confidence = ["high"]
+label = "distal pronoun"
+definition = "a distal pronoun"
+note = "determiner, before a classifier: 嗰本書"
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Ent;Sg;Prox"]
+lemmas = ["呢個"]
+jyutping = ["ni1 go3"]
+english = ["this"]
+confidence = ["high"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+note = "demonstrative + general classifier"
+hypernyms = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+comment = ""
+
+["Ent;Sg;Dist"]
+lemmas = ["嗰個"]
+jyutping = ["go2 go3"]
+english = ["that"]
+confidence = ["high"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+hypernyms = ["Ent;Dist", "Ent;Sg;Dist+Rem", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "Ent;Sg;Dist+Rem", "Ent;Sg;Prox+Dist", "feature:Ent"]
+comment = ""
+
+["Ent;Pl;Prox"]
+lemmas = ["呢啲"]
+jyutping = ["ni1 di1"]
+english = ["these"]
+confidence = ["high"]
+label = "entity plural proximal pronoun"
+definition = "an entity plural proximal pronoun"
+hypernyms = ["Ent;Prox", "feature:Ent"]
+ancestors = ["Ent;Prox", "feature:Ent"]
+comment = ""
+
+["Ent;Pl;Dist"]
+lemmas = ["嗰啲"]
+jyutping = ["go2 di1"]
+english = ["those"]
+confidence = ["high"]
+label = "entity plural distal pronoun"
+definition = "an entity plural distal pronoun"
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["呢度", "呢處"]
+jyutping = ["ni1 dou6", "ni1 syu3"]
+english = ["here"]
+confidence = ["high", "medium"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+existing_by_lemma = ["呢度 -> cantown-yue cantown-yue-00108479-r [i18823] 呢度, 呢處: (CILI) in or at this place; where the speaker or writer is", "呢處 -> cantown-yue cantown-yue-00108479-r [i18823] 呢度, 呢處: (CILI) in or at this place; where the speaker or writer is"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+comment = ""
+
+["Plc;Dist"]
+lemmas = ["嗰度", "嗰處"]
+jyutping = ["go2 dou6", "go2 syu3"]
+english = ["there"]
+confidence = ["high", "medium"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+existing_by_lemma = ["嗰度 -> cantown-yue cantown-yue-00109328-r [i18829] 嗰度: (CILI) to or toward that place; away from the speaker"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = ["噉"]
+jyutping = ["gam2"]
+english = ["so"]
+confidence = ["medium"]
+label = "manner proximal or distal pronoun"
+definition = "a manner proximal or distal pronoun"
+note = "'like this/that, in this way'; distance-neutral"
+existing_by_lemma = ["噉 -> cantown-yue cantown-yue-00146926-r [i19126] 噉樣, 噉: (CILI) in such a condition or manner, especially as expressed or implied"]
+hypernyms = ["feature:Mnr"]
+ancestors = ["feature:Mnr"]
+comment = ""
+
+["Knd;Prox+Dist"]
+lemmas = ["噉樣"]
+jyutping = ["gam2 joeng2"]
+english = ["such"]
+confidence = ["medium"]
+label = "kind proximal or distal pronoun"
+definition = "a kind proximal or distal pronoun"
+note = "'like this, this kind of'; check whether it is manner rather than kind"
+existing_by_lemma = ["噉樣 -> cantown-yue cantown-yue-00007015-r [i18193] 附近, 差唔多, 接近, 大概, 將近, 咁上下, ...: (CILI) (of quantities) imprecise but fairly close to correct", "噉樣 -> cantown-yue cantown-yue-00146926-r [i19126] 噉樣, 噉: (CILI) in such a condition or manner, especially as expressed or implied"]
+hypernyms = ["Prox+Dist", "feature:Knd"]
+ancestors = ["Prox+Dist", "feature:Knd"]
+comment = ""
+
+["Thng;Sg;Asrt"]
+lemmas = ["啲嘢"]
+jyutping = ["di1 je5"]
+english = ["something"]
+confidence = ["medium"]
+label = "thing singular assertive existential pronoun"
+definition = "a thing singular assertive existential pronoun"
+note = "'something'; check: also just 'stuff'"
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = ["有人"]
+jyutping = ["jau5 jan4"]
+english = ["someone"]
+confidence = ["medium"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+note = "'someone'; arguably a phrase (have + person)"
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
+comment = ""
+
+["Pers;Sg;Neg"]
+lemmas = ["冇人"]
+jyutping = ["mou5 jan4"]
+english = ["no one", "no-one", "nobody", "noone"]
+confidence = ["medium"]
+label = "person singular negative pronoun"
+definition = "a person singular negative pronoun"
+note = "'nobody'; arguably a phrase (not.have + person)"
+hypernyms = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
+ancestors = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
+comment = ""
+
+["Thng;Sg;Univ"]
+lemmas = ["全部"]
+jyutping = ["cyun4 bou6"]
+confidence = ["medium"]
+label = "thing singular universal pronoun"
+definition = "a thing singular universal pronoun"
+note = "'all, everything'"
+existing_by_lemma = ["全部 -> cantown-yue cantown-yue-00514884-a [i2893] 全部, 所有, 全部嘅, 所有嘅, 完整, 整體, ...: (CILI) including all components without exception; being one unit or constituting the full amount or extent or duration; complete", "全部 -> cantown-yue cantown-yue-00522885-a [i2933] 充分, 全部, 完整, 整整, 完全, 完滿, ...: (CILI) complete in extent or degree and in every particular"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["feature:Thng"]
+ancestors = ["feature:Thng"]
+comment = ""
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["you"]
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Sg;Fml"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular formal pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal)"
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+comment = ""
+
+["DNEG"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["no"]
+label = "direct negation pronoun"
+definition = "an indefinite pronoun series used for: direct negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Dur+Tim;Int"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["what", "which"]
+english_via = "Int"
+label = "duration or time interrogative pronoun"
+definition = "a duration or time interrogative pronoun"
+ntumc_definitions = ["77000103-n: time pronoun; duration, interrogative pronoun"]
+hypernyms = ["feature:Dur", "feature:Tim"]
+ancestors = ["feature:Dur", "feature:Tim"]
+comment = ""
+
+["Ent;Dist"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "entity distal pronoun"
+definition = "an entity distal pronoun"
+ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Prox"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+ntumc_definitions = ["77000075-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Dist+Rem"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "entity singular distal or remote pronoun"
+definition = "an entity singular distal or remote pronoun"
+ntumc_definitions = ["77000059-n: demonstratives, singular, distal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "entity singular proximal or distal pronoun"
+definition = "an entity singular proximal or distal pronoun"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Pers;Sg;Elec"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+english = ["anybody", "anyone", "whoever"]
+label = "person singular elective existential pronoun"
+definition = "a person singular elective existential pronoun"
+ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+comment = ""
+
+["Plc;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "place proximal or distal pronoun"
+definition = "a place proximal or distal pronoun"
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "proximal or distal pronoun"
+definition = "a proximal or distal pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["SK+SU+IRR+Q+COND+INEG"]
+lemmas = []
+status = "unlexicalized: no yue word; included for the hierarchy"
+label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
+definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Dur"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "duration"
+definition = "the period of time during which something continues"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Ent"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "entity"
+definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+existing_by_ili = ["cantown-yue cantown-yue-00001740-n [i35545] 物體, 物件: (CILI) that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Knd"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "kind"
+definition = "a category of things distinguished by some common characteristic or quality"
+existing_by_ili = ["cantown-yue cantown-yue-05839024-n [i67559] 種類, 類別, 種, 類, 品種: (CILI) a category of things distinguished by some common characteristic or quality"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Mnr"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "manner"
+definition = "how something is done or how it happens"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Pers"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "person"
+definition = "a human being"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Plc"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "place"
+definition = "a point located with respect to surface features of some region"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Qnt"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "quantity"
+definition = "how much there is or how many there are of something that you can quantify"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Rsn"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "reason"
+definition = "a justification for something existing or happening"
+existing_by_ili = ["cantown-yue cantown-yue-06740402-n [i71919] 原因, 動機, 因由, 道理, 情理, 理由, ...: (CILI) a justification for something existing or happening"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Thng"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "thing"
+definition = "PWN's thing is \"an artifact\": find the right sense"
+existing_by_ili = ["cantown-yue cantown-yue-04424218-n [i60191] 物體, 物件, 嘢, 舊嘢: (CILI) an artifact"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Tim"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "time"
+definition = "an indefinite period (usually marked by specific attributes or activities)"
+hypernyms = []
+ancestors = []
+comment = ""

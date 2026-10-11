@@ -1,0 +1,289 @@
+# Pronouns for Polish, from the built OMW pronoun lexicon omw-pronoun-pl.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# definition: generated from the code; ntumc_definitions: NTUMC's own
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1+2;Pl;Poss"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "first person or second person plural possessive determiner"
+definition = "a first person or second person plural possessive determiner"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = ["my"]
+english = ["we"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+ntumc_definitions = ["77000002-n: 1st person, plural pronoun; personal pronoun, person, 1st person, plural"]
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+forms = ["my: nas (o)"]
+sources = ["my <- Parabank"]
+comment = ""
+
+["1;Pl;Poss"]
+lemmas = ["nasz"]
+english = ["our"]
+label = "first person plural possessive determiner"
+definition = "a possessive determiner: of or belonging to the speaker, more than one possessor"
+ntumc_definitions = ["77000006-a: possessive determiner, 1st person, plural"]
+hypernyms = ["1+2;Pl;Poss"]
+ancestors = ["1+2;Pl;Poss"]
+sources = ["nasz <- Parabank"]
+comment = ""
+
+["1;Sg"]
+lemmas = ["ja"]
+english = ["I"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+ntumc_definitions = ["77000015-n: personal pronoun, person, 1st person, singular"]
+existing_hidden = 2  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+forms = ["ja: mnię (o)"]
+sources = ["ja <- Parabank"]
+comment = ""
+
+["1;Sg;Poss"]
+lemmas = ["mój"]
+english = ["my"]
+label = "first person singular possessive determiner"
+definition = "a possessive determiner: of or belonging to the speaker, one possessor"
+ntumc_definitions = ["77000107-a: possessive determiner, 1st person, singular"]
+hypernyms = []
+ancestors = []
+sources = ["mój <- Parabank"]
+comment = ""
+
+["2"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["you"]
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Pl"]
+lemmas = ["wy"]
+english = ["you"]
+english_via = "2"
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+ntumc_definitions = ["77000019-n: personal pronoun, person, 2nd person, plural"]
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+forms = ["wy: was (o)"]
+sources = ["wy <- Parabank"]
+comment = ""
+
+["2;Pl;Poss"]
+lemmas = ["wasz"]
+english = ["your"]
+english_via = "2;Poss"
+label = "second person plural possessive determiner"
+definition = "a possessive determiner: of or belonging to the addressee, more than one possessor"
+hypernyms = ["1+2;Pl;Poss", "2;Poss"]
+ancestors = ["1+2;Pl;Poss", "2;Poss"]
+sources = ["wasz <- Parabank"]
+comment = ""
+
+["2;Poss"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["your"]
+label = "second person possessive determiner"
+definition = "a possessive determiner: of or belonging to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Sg"]
+lemmas = ["ty"]
+english = ["you"]
+english_via = "2"
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+ntumc_definitions = ["77000021-n: personal pronoun, person, 2nd person, singular"]
+hypernyms = ["2"]
+ancestors = ["2"]
+forms = ["ty: ciebie (o)"]
+sources = ["ty <- Parabank"]
+comment = ""
+
+["2;Sg;Poss"]
+lemmas = ["twój"]
+english = ["your"]
+english_via = "2;Poss"
+label = "second person singular possessive determiner"
+definition = "a possessive determiner: of or belonging to the addressee, one possessor"
+ntumc_definitions = ["77000024-a: possessive determiner, 2nd person, singular"]
+hypernyms = ["2;Poss"]
+ancestors = ["2;Poss"]
+sources = ["twój <- Parabank"]
+comment = ""
+
+["3;Pl"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["they"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Pl;M"]
+lemmas = ["oni"]
+english = ["they"]
+english_via = "3;Pl"
+label = "third person plural masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)"
+ntumc_definitions = ["77000029-n: personal pronoun, person, 3rd person, masculine, plural"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl"]
+forms = ["oni: ich (o)"]
+sources = ["oni <- Parabank"]
+comment = ""
+
+["3;Poss"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "third person possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Sg"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Sg;F"]
+lemmas = ["ona"]
+english = ["she"]
+label = "third person singular feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
+ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg"]
+forms = ["ona: ją (o)"]
+sources = ["ona <- Parabank"]
+comment = ""
+
+["3;Sg;F+N;Poss"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "third person singular feminine or neuter possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine, neuter)"
+hypernyms = ["3;Sg;Poss"]
+ancestors = ["3;Sg;Poss", "3;Poss"]
+comment = ""
+
+["3;Sg;F;Poss"]
+lemmas = ["ta"]
+english = ["her"]
+label = "third person singular feminine possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+ntumc_definitions = ["77000043-a: possessive determiner, 3rd person, singular, feminine"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["3;Sg;F+N;Poss"]
+ancestors = ["3;Sg;F+N;Poss", "3;Sg;Poss", "3;Poss"]
+sources = ["ta <- Parabank"]
+comment = ""
+
+["3;Sg;M"]
+lemmas = ["on"]
+english = ["he"]
+label = "third person singular masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
+ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg"]
+forms = ["on: jego (o)"]
+sources = ["on <- Parabank"]
+comment = ""
+
+["3;Sg;M+N"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "third person singular masculine or neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg"]
+comment = ""
+
+["3;Sg;M+N;Poss"]
+lemmas = ["jego"]
+label = "third person singular masculine or neuter possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine, neuter)"
+hypernyms = ["3;Sg;Poss"]
+ancestors = ["3;Sg;Poss", "3;Poss"]
+sources = ["jego <- Parabank"]
+comment = ""
+
+["3;Sg;N"]
+lemmas = ["ono"]
+english = ["it"]
+label = "third person singular neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)"
+ntumc_definitions = ["77000053-n: personal pronoun, entity, 3rd person, singular, neuter"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg"]
+forms = ["ono: nie (o)"]
+sources = ["ono <- Parabank"]
+comment = ""
+
+["3;Sg;Poss"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "third person singular possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor"
+hypernyms = ["3;Poss"]
+ancestors = ["3;Poss"]
+comment = ""
+
+["DNEG"]
+lemmas = ["ni-"]
+english = ["no"]
+label = "direct negation pronoun"
+definition = "an indefinite pronoun series used for: direct negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+sources = ["ni- <- Haspelmath"]
+comment = ""
+
+["SK+SU+IRR+Q+COND+INEG"]
+lemmas = ["-s"]
+label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
+definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+sources = ["-s <- Haspelmath"]
+comment = ""

@@ -1,0 +1,1042 @@
+# TUFS pro-forms for English, as curated for the OMW pronoun wordnet.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
+# ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
+# definition: generated from the code; ntumc_definitions: NTUMC's own
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1+2;Pl;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "first person or second person plural possessive determiner"
+definition = "a first person or second person plural possessive determiner"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = ["we"]
+ntumc = ["we <- 77000002-n", "us <- 77000002-n"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+ntumc_definitions = ["77000002-n: 1st person, plural pronoun; personal pronoun, person, 1st person, plural"]
+existing_by_lemma = ["we -> tufs-en tufs-en-77000002-n [-] we"]
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+tufs = ["we <- 私たち (high)"]
+status = "built"
+comment = ""
+
+["1;Pl;Poss"]
+ntumc = ["our <- 77000006-a"]
+label = "first person plural possessive determiner"
+definition = "a possessive determiner: of or belonging to the speaker, more than one possessor"
+ntumc_definitions = ["77000006-a: possessive determiner, 1st person, plural"]
+hypernyms = ["1+2;Pl;Poss"]
+ancestors = ["1+2;Pl;Poss"]
+status = "built (NTUMC only)"
+comment = ""
+
+["1;Pl;Refl"]
+ntumc = ["ourselves <- 77000008-n"]
+label = "first person plural reflexive pronoun"
+definition = "a pronoun referring to the speaker, more than one in all (reflexive)"
+ntumc_definitions = ["77000008-n: 1st person, plural, reflexive pronoun; personal pronoun, person, 1st person, plural, reflexive"]
+hypernyms = ["1;Pl"]
+ancestors = ["1;Pl", "1+2;Pl"]
+status = "built (NTUMC only)"
+comment = ""
+
+["1;Sg"]
+lemmas = ["I"]
+ntumc = ["I <- 77000015-n", "me <- 77000015-n"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+ntumc_definitions = ["77000015-n: personal pronoun, person, 1st person, singular"]
+existing_by_lemma = ["I -> tufs-en tufs-en-77000012-n [-] I: I", "I -> tufs-en tufs-en-77000015-n [-] I: I"]
+existing_hidden = 3  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+tufs = ["I <- 私（わたし） (high)"]
+status = "built"
+comment = ""
+
+["1;Sg;Poss"]
+ntumc = ["my <- 77000107-a"]
+label = "first person singular possessive determiner"
+definition = "a possessive determiner: of or belonging to the speaker, one possessor"
+ntumc_definitions = ["77000107-a: possessive determiner, 1st person, singular"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["1;Sg;Refl"]
+ntumc = ["myself <- 77000016-n"]
+label = "first person singular reflexive pronoun"
+definition = "a pronoun referring to the speaker, one in all (reflexive)"
+ntumc_definitions = ["77000016-n: 1st person, singular, reflexive pronoun; personal pronoun, person, 1st person, singular, reflexive"]
+hypernyms = ["1;Sg"]
+ancestors = ["1;Sg"]
+status = "built (NTUMC only)"
+comment = ""
+
+["2"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Pl"]
+lemmas = ["you"]
+ntumc = ["you <- 77000019-n"]
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+ntumc_definitions = ["77000019-n: personal pronoun, person, 2nd person, plural"]
+existing_by_lemma = ["you -> tufs-en tufs-en-77000021-n [-] you: you"]
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+tufs = ["you <- あなた (high), 君（きみ） (high)"]
+status = "built"
+comment = ""
+
+["2;Pl;Refl"]
+ntumc = ["yourselves <- 77000020-n"]
+label = "second person plural reflexive pronoun"
+definition = "a pronoun referring to the addressee, more than one in all (reflexive)"
+ntumc_definitions = ["77000020-n: 2nd person, plural, reflexive pronoun; personal pronoun, person, 2nd person, plural, reflexive"]
+hypernyms = ["2;Pl"]
+ancestors = ["2;Pl", "1+2;Pl", "2"]
+status = "built (NTUMC only)"
+comment = ""
+
+["2;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "second person possessive determiner"
+definition = "a possessive determiner: of or belonging to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Sg"]
+lemmas = ["you"]
+ntumc = ["you <- 77000021-n"]
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+ntumc_definitions = ["77000021-n: personal pronoun, person, 2nd person, singular"]
+existing_by_lemma = ["you -> tufs-en tufs-en-77000021-n [-] you: you"]
+hypernyms = ["2"]
+ancestors = ["2"]
+tufs = ["you <- あなた (high), 君（きみ） (high)"]
+curator_notes = ["not specifically informal"]
+status = "built"
+comment = ""
+
+["2;Sg;Poss"]
+ntumc = ["your <- 77000024-a"]
+label = "second person singular possessive determiner"
+definition = "a possessive determiner: of or belonging to the addressee, one possessor"
+ntumc_definitions = ["77000024-a: possessive determiner, 2nd person, singular"]
+hypernyms = ["2;Poss"]
+ancestors = ["2;Poss"]
+status = "built (NTUMC only)"
+comment = ""
+
+["2;Sg;Refl"]
+ntumc = ["yourself <- 77000025-n"]
+label = "second person singular reflexive pronoun"
+definition = "a pronoun referring to the addressee, one in all (reflexive)"
+ntumc_definitions = ["77000025-n: 2nd person, singular, reflexive pronoun; personal pronoun, person, 2nd person, singular, reflexive"]
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Pl"]
+lemmas = ["they"]
+ntumc = ["them <- 77000031-n", "they <- 77000031-n"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural"]
+existing_by_lemma = ["they -> tufs-en tufs-en-77000031-n [-] they"]
+hypernyms = []
+ancestors = []
+tufs = ["they <- 彼女 (high)"]
+status = "built"
+comment = ""
+
+["3;Pl;Poss"]
+ntumc = ["their <- 77000039-a"]
+label = "third person plural possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, more than one possessor"
+ntumc_definitions = ["77000039-a: possessive determiner, 3rd person, plural"]
+hypernyms = ["3;Poss"]
+ancestors = ["3;Poss"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Pl;Refl"]
+ntumc = ["themselves <- 77000034-n"]
+label = "third person plural reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (reflexive)"
+ntumc_definitions = ["77000034-n: 3rd person, plural, reflexive pronoun; personal pronoun, person, 3rd person, plural, reflexive"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "third person possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Sg"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Sg;F"]
+lemmas = ["she"]
+ntumc = ["she <- 77000041-n", "her <- 77000041-n"]
+label = "third person singular feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
+ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
+existing_by_lemma = ["she -> tufs-en tufs-en-15352-n [-] he, she"]
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg"]
+tufs = ["she <- 彼女 (high)"]
+status = "built"
+comment = ""
+
+["3;Sg;F+N;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "third person singular feminine or neuter possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine, neuter)"
+hypernyms = ["3;Sg;Poss"]
+ancestors = ["3;Sg;Poss", "3;Poss"]
+comment = ""
+
+["3;Sg;F;Poss"]
+ntumc = ["her <- 77000043-a"]
+label = "third person singular feminine possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+ntumc_definitions = ["77000043-a: possessive determiner, 3rd person, singular, feminine"]
+hypernyms = ["3;Sg;F+N;Poss"]
+ancestors = ["3;Sg;F+N;Poss", "3;Sg;Poss", "3;Poss"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;F;Refl"]
+ntumc = ["herself <- 77000045-n"]
+label = "third person singular feminine reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine, reflexive)"
+ntumc_definitions = ["77000045-n: 3rd person, singular, feminine, reflexive pronoun; personal pronoun, person, 3rd person, singular, feminine, reflexive"]
+hypernyms = ["3;Sg;F"]
+ancestors = ["3;Sg;F", "3;Sg"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;M"]
+lemmas = ["he"]
+ntumc = ["him <- 77000046-n", "he <- 77000046-n"]
+label = "third person singular masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
+ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
+existing_by_lemma = ["he -> tufs-en tufs-en-15352-n [-] he, she"]
+existing_hidden = 2  # other senses of these lemmas
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg"]
+tufs = ["he <- 彼女 (high)"]
+status = "built"
+comment = ""
+
+["3;Sg;M+N"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "third person singular masculine or neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg"]
+comment = ""
+
+["3;Sg;M+N;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "third person singular masculine or neuter possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine, neuter)"
+hypernyms = ["3;Sg;Poss"]
+ancestors = ["3;Sg;Poss", "3;Poss"]
+comment = ""
+
+["3;Sg;M;Poss"]
+ntumc = ["his <- 77000050-a"]
+label = "third person singular masculine possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine)"
+ntumc_definitions = ["77000050-a: possessive determiner, 3rd person, singular, masculine"]
+hypernyms = ["3;Sg;M+N;Poss"]
+ancestors = ["3;Sg;M+N;Poss", "3;Sg;Poss", "3;Poss"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;M;Refl"]
+ntumc = ["himself <- 77000052-n"]
+label = "third person singular masculine reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, reflexive)"
+ntumc_definitions = ["77000052-n: 3rd person, singular, masculine, reflexive pronoun; personal pronoun, person, 3rd person, singular, masculine, reflexive"]
+hypernyms = ["3;Sg;M"]
+ancestors = ["3;Sg;M", "3;Sg;M+N", "3;Sg"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;N"]
+ntumc = ["it <- 77000053-n"]
+label = "third person singular neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)"
+ntumc_definitions = ["77000053-n: personal pronoun, entity, 3rd person, singular, neuter"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;N;Poss"]
+ntumc = ["its <- 77000054-a"]
+label = "third person singular neuter possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (neuter)"
+ntumc_definitions = ["77000054-a: possessive determiner, 3rd person, singular, neuter"]
+hypernyms = ["3;Sg;F+N;Poss", "3;Sg;M+N;Poss"]
+ancestors = ["3;Sg;F+N;Poss", "3;Sg;M+N;Poss", "3;Sg;Poss", "3;Poss"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;N;Refl"]
+ntumc = ["itself <- 77000056-n"]
+label = "third person singular neuter reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter, reflexive)"
+ntumc_definitions = ["77000056-n: 3rd person, singular, neuter, reflexive pronoun; personal pronoun, person, 3rd person, singular, neuter, reflexive"]
+hypernyms = ["3;Sg;N"]
+ancestors = ["3;Sg;N", "3;Sg;M+N", "3;Sg"]
+status = "built (NTUMC only)"
+comment = ""
+
+["3;Sg;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "third person singular possessive determiner"
+definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor"
+hypernyms = ["3;Poss"]
+ancestors = ["3;Poss"]
+comment = ""
+
+["DNEG"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "direct negation pronoun"
+definition = "an indefinite pronoun series used for: direct negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Dist"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "distal pronoun"
+definition = "a distal pronoun"
+ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Du;Univ"]
+ntumc = ["both <- 77000076-a", "either <- 77000076-a"]
+label = "dual universal pronoun"
+definition = "a dual universal pronoun"
+ntumc_definitions = ["77000076-a: quantifier, dual universal"]
+existing_by_lemma = ["both -> oewn oewn-02275890-s [i12555] both: (used with count nouns) two considered together; the two", "either -> oewn oewn-00025252-r [i18286] either: after a negative statement used as an intensive meaning something like ‘likewise’ or ‘also’"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Dur+Tim;Int"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "duration or time interrogative pronoun"
+definition = "a duration or time interrogative pronoun"
+ntumc_definitions = ["77000103-n: time pronoun; duration, interrogative pronoun"]
+hypernyms = ["feature:Dur", "feature:Tim"]
+ancestors = ["feature:Dur", "feature:Tim"]
+comment = ""
+
+["Ent;1;Pl;Poss"]
+ntumc = ["ours <- 77000006-n"]
+label = "first person plural possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the speaker, more than one possessor"
+ntumc_definitions = ["77000006-n: 1st person, plural, possessive pronoun; possessive pronoun, person, 1st person, plural"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;1;Sg;Poss"]
+ntumc = ["mine <- 77000107-n"]
+label = "first person singular possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the speaker, one possessor"
+ntumc_definitions = ["77000107-n: possessive pronoun, person, 1st person, singular"]
+existing_hidden = 4  # other senses of these lemmas
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;2;Poss"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "second person possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the addressee"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;2;Sg;Poss"]
+ntumc = ["yours <- 77000024-n"]
+label = "second person singular possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the addressee, one possessor"
+ntumc_definitions = ["77000024-n: 2nd person, singular, possessive pronoun; possessive pronoun, person, 2nd person, singular"]
+hypernyms = ["Ent;2;Poss", "feature:Ent"]
+ancestors = ["Ent;2;Poss", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;3;Pl;Poss"]
+ntumc = ["theirs <- 77000111-n"]
+label = "third person plural possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, more than one possessor"
+ntumc_definitions = ["77000111-n: possessive pronoun, person, 3nd person, plural"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;3;Sg;F;Poss"]
+ntumc = ["hers <- 77000044-n"]
+label = "third person singular feminine possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+ntumc_definitions = ["77000044-n: 3rd person, singular, feminine, subjective pronoun; possessive pronoun, 3rd person, singular, feminine"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;3;Sg;M;Poss"]
+ntumc = ["his <- 77000050-n"]
+label = "third person singular masculine possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, one possessor (masculine)"
+ntumc_definitions = ["77000050-n: 3rd person, singular, masculine, possessive pronoun; possessive pronoun, person, 3rd person, singular, masculine"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;3;Sg;N;Poss"]
+ntumc = ["its <- 77000054-n"]
+label = "third person singular neuter possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, one possessor (neuter)"
+ntumc_definitions = ["77000054-n: 3rd person, singular, neuter, possessive pronoun; possessive pronoun, entity, 3rd person, singular, neuter"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Dist"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "entity distal pronoun"
+definition = "an entity distal pronoun"
+ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Du;Elec"]
+ntumc = ["either <- 77000074-n"]
+label = "entity dual elective existential pronoun"
+definition = "an entity dual elective existential pronoun"
+ntumc_definitions = ["77000074-n: entity, dual, elective existential pronoun"]
+existing_by_lemma = ["either -> oewn oewn-00025252-r [i18286] either: after a negative statement used as an intensive meaning something like ‘likewise’ or ‘also’"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Du;Univ"]
+ntumc = ["both <- 77000076-n"]
+label = "entity dual universal pronoun"
+definition = "an entity dual universal pronoun"
+ntumc_definitions = ["77000076-n: entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal"]
+existing_by_lemma = ["both -> oewn oewn-02275890-s [i12555] both: (used with count nouns) two considered together; the two"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Int"]
+lemmas = ["which"]
+ntumc = ["which <- 77000064-n"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+ntumc_definitions = ["77000064-n: entity, interrogative pronoun"]
+existing_by_lemma = ["which -> tufs-en tufs-en-77000064-n [-] which: which ～"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+tufs = ["which <- どの (high)"]
+curator_notes = ["pronoun"]
+status = "built"
+comment = ""
+
+["Ent;Pl;Dist"]
+ntumc = ["those <- 77000082-n"]
+label = "entity plural distal pronoun"
+definition = "an entity plural distal pronoun"
+ntumc_definitions = ["77000082-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, plural, distal"]
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Pl;Prox"]
+ntumc = ["these <- 77000058-n"]
+label = "entity plural proximal pronoun"
+definition = "an entity plural proximal pronoun"
+ntumc_definitions = ["77000058-n: demonstratives, plural, proximal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, plural, proximal"]
+hypernyms = ["Ent;Prox", "feature:Ent"]
+ancestors = ["Ent;Prox", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Prox"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+ntumc_definitions = ["77000075-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Dist"]
+lemmas = ["that"]
+ntumc = ["that <- 77000079-n"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+ntumc_definitions = ["77000079-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, distal"]
+existing_by_lemma = ["that -> tufs-en tufs-en-77000079-a [-] that: that ～"]
+hypernyms = ["Ent;Dist", "Ent;Sg;Dist+Rem", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "Ent;Sg;Dist+Rem", "Ent;Sg;Prox+Dist", "feature:Ent"]
+tufs = ["that <- あの (high)"]
+curator_notes = ["pronoun"]
+status = "built"
+comment = ""
+
+["Ent;Sg;Dist+Rem"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "entity singular distal or remote pronoun"
+definition = "an entity singular distal or remote pronoun"
+ntumc_definitions = ["77000059-n: demonstratives, singular, distal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Prox"]
+lemmas = ["this"]
+ntumc = ["this <- 77000061-n"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+ntumc_definitions = ["77000061-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, proximal"]
+existing_by_lemma = ["this -> tufs-en tufs-en-77000061-a [-] this: this ～", "this -> tufs-en tufs-en-80001619-a [-] this: this ～", "this -> tufs-en tufs-en-77000075-a [-] this: this ～"]
+hypernyms = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+tufs = ["this <- この (high)"]
+curator_notes = ["pronoun"]
+status = "built"
+comment = ""
+
+["Ent;Sg;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "entity singular proximal or distal pronoun"
+definition = "an entity singular proximal or distal pronoun"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Univ"]
+ntumc = ["everything <- 77000078-n"]
+label = "entity singular universal pronoun"
+definition = "an entity singular universal pronoun"
+ntumc_definitions = ["77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Int"]
+lemmas = ["which", "what"]
+ntumc = ["what <- 77000091-a", "which <- 77000091-a"]
+label = "interrogative pronoun"
+definition = "an interrogative pronoun"
+ntumc_definitions = ["77000091-a: interrogative determiner, general"]
+existing_by_lemma = ["which -> tufs-en tufs-en-77000064-n [-] which: which ～", "what -> tufs-en tufs-en-77000091-n [-] what: what kind of ～"]
+hypernyms = []
+ancestors = []
+tufs = ["which <- どの (high)", "what <- どんな (medium)"]
+curator_notes = ["determiner", "determiner 'what (kind of)'; heading どんな"]
+status = "built"
+comment = ""
+
+["Knd;Prox+Dist"]
+lemmas = ["such"]
+label = "kind proximal or distal pronoun"
+definition = "a kind proximal or distal pronoun"
+existing_by_lemma = ["such -> oewn oewn-00148422-r [i19129] such: to so extreme a degree", "such -> oewn oewn-01558587-s [i8532] such: of so extreme a degree or extent; demonstrative, other pronoun; demonstrative determiner, kind", "such -> tufs-en tufs-en-77000089-a [-] such: such"]
+hypernyms = ["Prox+Dist", "feature:Knd"]
+ancestors = ["Prox+Dist", "feature:Knd"]
+tufs = ["such <- こんな (high)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
+status = "built"
+comment = ""
+
+["Mnr;Int"]
+ntumc = ["how <- 77000090-n"]
+label = "manner interrogative pronoun"
+definition = "a manner interrogative pronoun"
+ntumc_definitions = ["77000090-n: manner, interrogative pronoun"]
+existing_by_lemma = ["how -> tufs-en tufs-en-77000090-n [-] how: Would you like ～ ?", "how -> tufs-en tufs-en-80001331-x [-] how: Would you like ～ ?"]
+hypernyms = ["feature:Mnr"]
+ancestors = ["feature:Mnr"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = ["so"]
+label = "manner proximal or distal pronoun"
+definition = "a manner proximal or distal pronoun"
+existing_by_lemma = ["so -> oewn oewn-00147630-r [i19124] so: to a very great extent or degree", "so -> oewn oewn-00119259-r [i18894] so: in a manner that facilitates", "so -> oewn oewn-00147962-r [i19126] so: in such a condition or manner, especially as expressed or implied", "so -> oewn oewn-00148162-r [i19127] so: to a certain unspecified extent or degree", "so -> oewn oewn-00148308-r [i19128] so: in the same way; also", "so -> oewn oewn-00122019-r [i18911] thus, thusly, so: in the way indicated", "so -> oewn oewn-00147799-r [i19125] so: (usually followed by ‘that’) to an extent or degree as expressed", "so -> oewn oewn-00118527-r [i18890] then, so, and so: subsequently or soon afterward (often used as sentence connectors)", "so -> oewn oewn-00043413-r [i18390] therefore, hence, thence, thus, so: (used to introduce a logical conclusion) from that fact or reason or as a result", "so -> oewn oewn-00038035-r [i18359] indeed, so: in truth (often tends to intensify)", "so -> tufs-en tufs-en-00118032-r [i18892] so, then: (CILI) in that case or as a consequence", "so -> tufs-en tufs-en-00121135-r [i18911] so: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["feature:Mnr"]
+ancestors = ["feature:Mnr"]
+tufs = ["so <- そう (high)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
+status = "built"
+comment = ""
+
+["Pers;Int"]
+lemmas = ["who"]
+ntumc = ["whom <- 77000095-n", "who <- 77000095-n"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
+existing_by_lemma = ["who -> tufs-en tufs-en-77000095-n [-] who: who"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+tufs = ["who <- だれ (high), どなた (high)"]
+curator_notes = ["not polite; heading どなた"]
+status = "built"
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["oneself"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+ntumc_definitions = ["77000098-n: personal pronoun, person, reflexive"]
+existing_by_lemma = ["oneself -> tufs-en tufs-en-09604981-n [i87150] oneself: (CILI) a person considered as a unique individual"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+tufs = ["oneself <- 自分 (high)"]
+status = "built"
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = ["someone"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+existing_by_lemma = ["someone -> oewn oewn-00007846-n [i35562] person, individual, someone, somebody, mortal, soul: a human being; person, singular, assertive existential pronoun; pronoun, person, singular; quantifier: assertive existential", "someone -> tufs-en tufs-en-00007846-n [i35562] someone: (CILI) a human being"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
+tufs = ["someone <- だれか (high)"]
+status = "built"
+comment = ""
+
+["Pers;Sg;Elec"]
+ntumc = ["anyone <- 77000097-n", "anybody <- 77000097-n", "whoever <- 77000097-n"]
+label = "person singular elective existential pronoun"
+definition = "a person singular elective existential pronoun"
+ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Pers;Sg;Neg"]
+ntumc = ["no one <- 77000137-n", "noone <- 77000137-n", "nobody <- 77000137-n", "no-one <- 77000137-n"]
+label = "person singular negative pronoun"
+definition = "a person singular negative pronoun"
+ntumc_definitions = ["77000137-n: person, singular, negative pronoun; pronoun, person, singular; quantifier: negative existential"]
+existing_by_lemma = ["nobody -> oewn oewn-09942876-n [i88993] cipher, cypher, nobody, nonentity: a person of no influence"]
+hypernyms = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
+ancestors = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["everyone"]
+ntumc = ["everybody <- 77000099-n", "everyone <- 77000099-n"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
+existing_by_lemma = ["everyone -> tufs-en tufs-en-77000099-n [-] everyone: everyone"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+tufs = ["everyone <- みんな (high)"]
+status = "built"
+comment = ""
+
+["Pl;Dist"]
+ntumc = ["those <- 77000082-a"]
+label = "plural distal pronoun"
+definition = "a plural distal pronoun"
+ntumc_definitions = ["77000082-a: demonstrative determiner, plural, distal"]
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Pl;Prox"]
+ntumc = ["these <- 77000058-a"]
+label = "plural proximal pronoun"
+definition = "a plural proximal pronoun"
+ntumc_definitions = ["77000058-a: demonstrative determiner, plural, proximal"]
+hypernyms = ["Prox"]
+ancestors = ["Prox", "Prox+Dist"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Plc;Dist"]
+lemmas = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+existing_by_lemma = ["there -> oewn oewn-08506637-n [i81668] there: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal", "there -> oewn oewn-00109919-r [i18828] there: in or at that place or location", "there -> oewn oewn-00110206-r [i18830] there: in that matter; in that respect; on that point", "there -> oewn oewn-00110073-r [i18829] there, thither: to or toward that place; away from the speaker", "there -> tufs-en tufs-en-08489627-n [i81668] there: (CILI) a location other than here; that place", "there -> tufs-en tufs-en-00109151-r [i18828] there: (CILI) in or at that place"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+tufs = ["there <- あっち (high), そちら (high)"]
+curator_notes = ["NEW", "NEW; heading そちら (Med); English is two-way"]
+status = "built"
+comment = ""
+
+["Plc;Int"]
+lemmas = ["where"]
+ntumc = ["where <- 77000084-n"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+existing_by_lemma = ["where -> tufs-en tufs-en-77000084-n [-] where: which way"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+tufs = ["where <- どちら (high)"]
+status = "built"
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["here"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+existing_by_lemma = ["here -> oewn oewn-08506507-n [i81667] here: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal", "here -> oewn oewn-00109247-r [i18823] here: in or at this place; where the speaker or writer is", "here -> oewn oewn-00109541-r [i18825] here: in this circumstance or respect or on this point or detail", "here -> oewn oewn-00109415-r [i18824] here, hither: to this place (especially toward the speaker)", "here -> oewn oewn-00109789-r [i18827] here: at this time; now", "here -> oewn oewn-01853170-s [i10149] here: being here now", "here -> tufs-en tufs-en-77000072-n [-] here: this way", "here -> tufs-en tufs-en-08489497-n [i81667] here: (CILI) the present location; this place"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+tufs = ["here <- こちら (high)"]
+status = "built"
+comment = ""
+
+["Plc;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "place proximal or distal pronoun"
+definition = "a place proximal or distal pronoun"
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Poss;Int"]
+ntumc = ["whose <- 77000120-a"]
+label = "possessive interrogative determiner"
+definition = "a possessive interrogative determiner"
+ntumc_definitions = ["77000120-a: interrogative determiner, possessive"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Prox"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "proximal pronoun"
+definition = "a proximal pronoun"
+ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "proximal or distal pronoun"
+definition = "a proximal or distal pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["how many", "how much"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+existing_by_lemma = ["how many -> tufs-en tufs-en-80001077-n [-] How many, How much: how many", "how much -> tufs-en tufs-en-80001077-n [-] How many, How much: how many"]
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+tufs = ["how many <- いくつ (high)", "how much <- いくら (high)"]
+status = "built"
+comment = ""
+
+["Rsn;Int"]
+ntumc = ["why <- 77000112-n"]
+label = "reason interrogative pronoun"
+definition = "a reason interrogative pronoun"
+ntumc_definitions = ["77000112-n: cause, interrogative pronoun"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["feature:Rsn"]
+ancestors = ["feature:Rsn"]
+status = "built (NTUMC only)"
+comment = ""
+
+["SK+SU+IRR+Q+COND+INEG"]
+lemmas = []
+status = "unlexicalized: no en word; included for the hierarchy"
+label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
+definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Sg;Dist"]
+lemmas = ["that"]
+ntumc = ["that <- 77000079-a"]
+label = "singular distal pronoun"
+definition = "a singular distal pronoun"
+ntumc_definitions = ["77000079-a: demonstrative determiner, distal"]
+existing_by_lemma = ["that -> tufs-en tufs-en-77000079-a [-] that: that ～"]
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
+tufs = ["that <- あの (high)"]
+curator_notes = ["determiner"]
+status = "built"
+comment = ""
+
+["Sg;Prox"]
+lemmas = ["this"]
+ntumc = ["this <- 77000061-a"]
+label = "singular proximal pronoun"
+definition = "a singular proximal pronoun"
+ntumc_definitions = ["77000061-a: demonstrative determiner, singular, proximal"]
+existing_by_lemma = ["this -> tufs-en tufs-en-77000061-a [-] this: this ～", "this -> tufs-en tufs-en-80001619-a [-] this: this ～", "this -> tufs-en tufs-en-77000075-a [-] this: this ～"]
+hypernyms = ["Prox"]
+ancestors = ["Prox", "Prox+Dist"]
+tufs = ["this <- この (high)"]
+curator_notes = ["determiner"]
+status = "built"
+comment = ""
+
+["Thng;Int"]
+lemmas = ["what"]
+ntumc = ["what <- 77000091-n", "which <- 77000091-n"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
+existing_by_lemma = ["what -> tufs-en tufs-en-77000091-n [-] what: what kind of ～"]
+hypernyms = ["feature:Thng"]
+ancestors = ["feature:Thng"]
+tufs = ["what <- どんな (high)"]
+curator_notes = ["pronoun"]
+status = "built"
+comment = ""
+
+["Thng;Sg;Asrt"]
+ntumc = ["something <- 77000092-n"]
+label = "thing singular assertive existential pronoun"
+definition = "a thing singular assertive existential pronoun"
+ntumc_definitions = ["77000092-n: thing (object:), singular, assertive existential pronoun; pronoun, thing, singular; quantifier: assertive existential"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Thng;Sg;Elec"]
+ntumc = ["anything <- 77000093-n"]
+label = "thing singular elective existential pronoun"
+definition = "a thing singular elective existential pronoun"
+ntumc_definitions = ["77000093-n: thing (object:), singular, elective existential pronoun; pronoun, thing, singular; quantifier: elective existential; Additional information to the common topic"]
+hypernyms = ["feature:Thng"]
+ancestors = ["feature:Thng"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Tim;Int"]
+lemmas = ["when"]
+ntumc = ["when <- 77000104-n"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
+existing_by_lemma = ["when -> tufs-en tufs-en-77000104-n [-] when: when"]
+hypernyms = ["Dur+Tim;Int", "feature:Tim"]
+ancestors = ["Dur+Tim;Int", "feature:Tim", "feature:Dur"]
+tufs = ["when <- いつ (high)"]
+status = "built"
+comment = ""
+
+["Tim;Sg;Elec"]
+ntumc = ["whenever <- 77000106-n"]
+label = "time singular elective existential pronoun"
+definition = "a time singular elective existential pronoun"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+status = "built (NTUMC only)"
+comment = ""
+
+["feature:Dur"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "duration"
+definition = "the period of time during which something continues"
+existing_by_ili = ["oewn oewn-15158573-n [i116723] duration, continuance: the period of time during which something continues"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Ent"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "entity"
+definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+existing_by_ili = ["oewn oewn-00001740-n [i35545] entity: that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Knd"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "kind"
+definition = "a category of things distinguished by some common characteristic or quality"
+existing_by_ili = ["oewn oewn-05847533-n [i67559] kind, sort, form, variety: a category of things distinguished by some common characteristic or quality"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Mnr"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "manner"
+definition = "how something is done or how it happens"
+existing_by_ili = ["oewn oewn-04936080-n [i62886] manner, mode, style, way, fashion: how something is done or how it happens"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Pers"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "person"
+definition = "a human being"
+existing_by_ili = ["oewn oewn-00007846-n [i35562] person, individual, someone, somebody, mortal, soul: a human being; person, singular, assertive existential pronoun; pronoun, person, singular; quantifier: assertive existential", "tufs-en tufs-en-00007846-n [i35562] someone: (CILI) a human being"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Plc"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "place"
+definition = "a point located with respect to surface features of some region"
+existing_by_ili = ["oewn oewn-08682181-n [i82501] topographic point, place, spot: a point located with respect to surface features of some region"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Qnt"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "quantity"
+definition = "how much there is or how many there are of something that you can quantify"
+existing_by_ili = ["oewn oewn-00033914-n [i35594] measure, quantity, amount: how much there is or how many there are of something that you can quantify"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Rsn"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "reason"
+definition = "a justification for something existing or happening"
+existing_by_ili = ["oewn oewn-06753097-n [i71919] cause, reason, grounds: a justification for something existing or happening"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Thng"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "thing"
+definition = "PWN's thing is \"an artifact\": find the right sense"
+existing_by_ili = ["oewn oewn-04431353-n [i60191] thing: an artifact"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Tim"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "time"
+definition = "an indefinite period (usually marked by specific attributes or activities)"
+existing_by_ili = ["oewn oewn-15147173-n [i116667] time: an indefinite period (usually marked by specific attributes or activities)", "tufs-en tufs-en-15122231-n [i116667] time: (CILI) an indefinite period (usually marked by specific attributes or activities)"]
+hypernyms = []
+ancestors = []
+comment = ""
