@@ -26,6 +26,11 @@ definition text, so both are read. Codes the NTUMC analysis gets wrong are
 corrected from ``data/ntumc-fixes.tsv`` (Japanese *are* is remote, not distal
 and remote); the feature columns keep NTUMC's analysis.
 
+NTUMC also tags some synsets outside its pronoun inventory as pronouns: Princeton
+*here*, *there*, *everywhere*, *all*, *each*, and a few of its own (Indonesian
+*aku*). ``data/ntumc-extra.tsv`` lists each, with its code and part of speech
+checked by hand, or with no code to skip it (*someone* is the synset *person*).
+
 Writes ``data/ntumc-pronouns.tsv``.
 
 Usage: uv run ntumc_pronouns.py [path/to/wn-ntumc.db]
@@ -198,9 +203,25 @@ def fixes() -> dict[str, str]:
         return {r["synset"]: r["code"] for r in csv.DictReader(handle, delimiter="\t")}
 
 
+def extra() -> dict[str, dict[str, str]]:
+    """NTUMC synsets outside 7700xxxx that are pronouns, from data/ntumc-extra.tsv.
+
+    A row with no code records a synset NTUMC tags as a pronoun that is skipped.
+    """
+    with (HERE / "data" / "ntumc-extra.tsv").open(encoding="utf8") as handle:
+        return {r["synset"]: r for r in csv.DictReader(handle, delimiter="\t")}
+
+
+def is_inventory(synset: str) -> bool:
+    """Whether a synset is one of NTUMC's own pronoun synsets, not a Princeton one."""
+    return synset.startswith(("7700", "8000"))
+
+
 def read(db: Path) -> list[dict[str, str]]:
     """Return one row per NTUMC pronoun synset, with its features and lemmas."""
     con = sqlite3.connect(db)
+    added = {s: r for s, r in extra().items() if r["code"]}
+    wanted = "synset LIKE '770%' OR synset IN ({})".format(", ".join("?" * len(added)))
     names: dict[str, list[str]] = defaultdict(list)
     for synset, lemma in con.execute(
         "SELECT s.synset, w.lemma FROM sense s JOIN word w USING (wordid)"
@@ -211,19 +232,23 @@ def read(db: Path) -> list[dict[str, str]]:
     definitions = dict(
         con.execute(
             "SELECT synset, GROUP_CONCAT(def, '; ') FROM synset_def"
-            " WHERE lang = 'eng' AND synset LIKE '770%' GROUP BY synset"
+            f" WHERE lang = 'eng' AND ({wanted}) GROUP BY synset",
+            list(added),
         )
     )
     links = defaultdict(list)
     for source, link, target in con.execute(
-        "SELECT synset1, link, synset2 FROM synlink WHERE synset1 LIKE '770%'"
-        " AND link IN ('hype', 'dmnu', 'attr')"
+        "SELECT synset1, link, synset2 FROM synlink"
+        f" WHERE ({wanted.replace('synset', 'synset1')})"
+        " AND link IN ('hype', 'dmnu', 'attr')",
+        list(added),
     ):
         links[source].append((link, target))
     lemmas: dict[str, dict[str, list[str]]] = defaultdict(lambda: defaultdict(list))
     for synset, lang, lemma in con.execute(
         "SELECT s.synset, w.lang, w.lemma FROM sense s JOIN word w USING (wordid)"
-        " WHERE s.synset LIKE '770%' ORDER BY s.freq DESC"
+        f" WHERE ({wanted.replace('synset', 's.synset')}) ORDER BY s.freq DESC",
+        list(added),
     ):
         # four Japanese words (77000035-n 彼女たち ...) are filed under "jap"
         lemmas[synset]["jpn" if lang == "jap" else lang].append(lemma)
@@ -231,7 +256,8 @@ def read(db: Path) -> list[dict[str, str]]:
     fixed = fixes()
     rows = []
     for synset in sorted(set(definitions) | set(links)):
-        if not synset.startswith("7700"):  # 7701xxxx are the feature synsets
+        # 7701xxxx are the feature synsets
+        if not synset.startswith("7700") and synset not in added:
             continue
         features: dict[str, set[str]] = defaultdict(set)
         for link, target in links[synset]:
@@ -250,8 +276,10 @@ def read(db: Path) -> list[dict[str, str]]:
             features["person"].discard("1")
         row = {
             "synset": synset,
-            "pos": synset[-1],
-            "code": fixed.get(synset) or code(features),
+            "pos": added[synset]["pos"] if synset in added else synset[-1],
+            "code": (added.get(synset) or {}).get("code")
+            or fixed.get(synset)
+            or code(features),
         }
         row |= {f: "+".join(sorted(features[f])) for f in FEATURES}
         row["definition"] = definitions.get(synset, "")

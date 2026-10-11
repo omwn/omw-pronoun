@@ -36,3 +36,24 @@ ru	сюда	Plc;Goal;Prox	curated	direction
 ru	отсюда	Plc;Src;Prox	curated	direction
 ru	туда	Plc;Goal;Dist	curated	direction
 ru	оттуда	Plc;Src;Dist	curated	direction
+jpn	今	Tim;Prox	TUFS	TUFS 8987
+fr	maintenant	Tim;Prox	TUFS	TUFS 8987
+ar	اَلْآنَ	Tim;Prox	TUFS	TUFS 8987
+apc	هلّق	Tim;Prox	TUFS	TUFS 8987
+zsm	sekarang	Tim;Prox	TUFS	TUFS 8987
+mya	အခု	Tim;Prox	TUFS	TUFS 8987
+mya	ခု	Tim;Prox	TUFS	TUFS 8987
+ur	اب	Tim;Prox	TUFS	TUFS 8987
+eng	now	Tim;Prox	curated	time deixis
+ces	teď	Tim;Prox	curated	time deixis
+de	jetzt	Tim;Prox	curated	time deixis
+pl	teraz	Tim;Prox	curated	time deixis
+ru	сейчас	Tim;Prox	curated	time deixis
+cmn	现在	Tim;Prox	curated	time deixis
+ind	sekarang	Tim;Prox	curated	time deixis
+eng	then	Tim;Dist	curated	time deixis
+ces	tehdy	Tim;Dist	curated	time deixis
+de	damals	Tim;Dist	curated	time deixis
+pl	wtedy	Tim;Dist	curated	time deixis
+ru	тогда	Tim;Dist	curated	time deixis
+cmn	那时	Tim;Dist	curated	time deixis

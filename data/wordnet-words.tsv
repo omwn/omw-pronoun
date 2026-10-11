@@ -1,0 +1,412 @@
+tag	concept	word	source	ili
+abz	Plc;Prox	prodo	abwn:0.1	i81667
+abz	Plc;Prox	do	abwn:0.1	i81667
+af	Du;Univ	beide	inaf:0.1	i12555
+af	Mnr;Prox+Dist	dus	inaf:0.1	i18911
+af	Mnr;Prox+Dist	so	inaf:0.1	i18911
+af	Plc;Dist	daar	inaf:0.1	i81668
+af	Plc;Prox	hier	inaf:0.1	i81667
+af	Tim;Dist	dan	inaf:0.1	i117639
+af	Tim;Prox	Nou	inaf:0.1	i116653
+ar	Tim;Prox	الأن	omw-arb:2.0	i116653
+bn	Mnr;Prox+Dist	এইজন্য	bangla-wordnet-bn:0.1	i18911
+ca	Plc;Prox	aquí	omw-ca:2.0	i81667
+ca	Tim;Dist	a continuació	omw-ca:2.0	i117639
+ca	Tim;Prox	ara	omw-ca:2.0	i116653
+cmn	Du;Univ	两个+的	omw-cmn:2.0	i12555
+cmn	Du;Univ	两者+的	omw-cmn:2.0	i12555
+cmn	Mnr;Prox+Dist	正 是 那样	NTUMC wordnet 00121135-r	i18911
+cmn	Mnr;Prox+Dist	这样	NTUMC wordnet 00121135-r	i18911
+cmn	Mnr;Prox+Dist	正是那样	NTUMC wordnet 00121135-r	i18911
+cmn	Mnr;Prox+Dist	如此	NTUMC wordnet 00121135-r	i18911
+cmn	Mnr;Prox+Dist	便是	NTUMC wordnet 00121135-r	i18911
+cmn	Plc;Dist	那里	NTUMC wordnet 08489627-n	i81668
+cmn	Plc;Dist	那个地方	NTUMC wordnet 08489627-n	i81668
+cmn	Plc;Dist	那个 地方	NTUMC wordnet 08489627-n	i81668
+cmn	Plc;Dist	那儿	NTUMC wordnet 08489627-n	i81668
+cmn	Plc;Dist	那边	NTUMC wordnet 08489627-n	i81668
+cmn	Plc;Prox	这里	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	这	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	此地	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	此	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	这边	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	此处	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	这儿	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	本地	NTUMC wordnet 08489497-n	i81667
+cmn	Tim;Dist	其时	NTUMC wordnet 15296354-n	i117639
+cmn	Tim;Dist	那时	NTUMC wordnet 15296354-n	i117639
+cmn	Tim;Dist	当时	NTUMC wordnet 15296354-n	i117639
+cmn	Tim;Dist	当初	NTUMC wordnet 15296354-n	i117639
+cmn	Tim;Dist	到时	NTUMC wordnet 15296354-n	i117639
+cmn	Tim;Dist	其时	omw-cmn:2.0	i117639
+cmn	Tim;Dist	当时	omw-cmn:2.0	i117639
+cmn	Tim;Dist	那时	omw-cmn:2.0	i117639
+cmn	Tim;Prox	现今	NTUMC wordnet 15119919-n	i116653
+cmn	Tim;Prox	现在	NTUMC wordnet 15119919-n	i116653
+cmn	Tim;Prox	当下	NTUMC wordnet 15119919-n	i116653
+cmn	Tim;Prox	现时	NTUMC wordnet 15119919-n	i116653
+cmn	Tim;Prox	此刻	NTUMC wordnet 15119919-n	i116653
+cmn	Tim;Prox	现	NTUMC wordnet 15119919-n	i116653
+cop	Mnr;Prox+Dist	ⲧⲟⲧⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲧⲓ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲁⲩⲱ ⲧⲟⲧⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱⲥ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲁ︤ⲓ︥ⲧⲉⲓ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲁⲓⲧⲉⲓ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲓⲧⲁ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲧⲓ̄	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲟⲩⲧⲟⲥ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩⲧⲱⲥ⳿	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩⲧoⲥ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲥ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲱⲥ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱ̄ⲥ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱⲥ ϫⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱⲥ ⲉϣϫⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱⲥ ϫ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱⲥ ⲉⲥϫⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓⲧⲁ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲁⲗⲗⲁ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲅⲁⲣ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲁⲣⲁ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩⲛ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϭⲉ ⲟⲩⲛ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲙ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩⲛ̇	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩⲛ̄	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩ̇ⲛ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲟⲩⲛ⳿	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲙⲁⲗⲗⲟⲛ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲅ︤ⲁ︦ⲣ︥	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲅⲁⲣ⳿	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲕⲁⲣ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲛⲅⲁⲣ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲛ̄ⲅⲁⲣ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲇ}ⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲇⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲡⲗⲏⲛ̄	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲡⲗⲏⲛ ϫⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓⲇⲏ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲓⲡⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲓⲡⲉⲇⲏ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓⲇⲏ̄	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓ̂ⲇⲏ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓ̈ⲇⲏ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲉⲡⲉⲓⲧⲏ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ϩⲱⲥⲧⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲧⲁⲓⲧⲉ ⲑⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲧⲁⲉⲓ ⲧⲉ ⲑⲉ	copwn-cop:1.0	i18911
+cop	Mnr;Prox+Dist	ⲑⲉ ⲧⲉ ⲧⲁⲉⲓ	copwn-cop:1.0	i18911
+cop	Plc;Dist	ⲙⲁⲩ	copwn-cop:1.0	i81668
+cop	Plc;Dist	ⲙⲉⲩ	copwn-cop:1.0	i81668
+cop	Plc;Dist	ⲙⲟ	copwn-cop:1.0	i81668
+cop	Plc;Dist	ⲙⲱ	copwn-cop:1.0	i81668
+cop	Plc;Dist	ⲙⲉⲟⲩ	copwn-cop:1.0	i81668
+cop	Plc;Dist	ⲙⲁⲟⲩ	copwn-cop:1.0	i81668
+cop	Plc;Prox	ⲧⲁⲓ	copwn-cop:1.0	i81667
+cop	Tim;Dist	ⲧⲟ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲁⲣⲁ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲁⲓⲣⲱ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ϩⲁⲉ ⲛ̄ⲕⲁⲓⲣⲟⲥ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲉⲣⲱ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲁⲓ̄ⲣⲟⲥ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲉⲓⲣⲟⲥ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲉⲣⲟⲥ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲏⲣⲟⲥ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲩⲣⲟⲥ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲅⲁⲣ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲁ︤ⲓ︥ⲧⲉⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲧⲁⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲁⲓⲧⲉⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲧⲟⲩ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲁⲗⲗⲁ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲧⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲛⲧⲟⲟⲩⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲧⲓ̄	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲡⲁⲗⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲡⲁⲗⲓ̈ⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲡⲁⲗⲓ̄ⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲡⲁⲗⲓⲛ ⲟⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲧⲱ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲩⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉϣϫⲡⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲓⳉϫⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⳉϫⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲓⳉⲡⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⳉⲡⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉϣⲡⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲓⲥϫⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲓⲥϫⲉⲕ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲧⲟⲧⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲡⲉⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲙⲁⲗⲗⲟⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲅ︤ⲁ︦ⲣ︥	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲅⲁⲣ⳿	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲕⲁⲣ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲛⲅⲁⲣ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲛ̄ⲅⲁⲣ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲇ}ⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲇⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲡⲗⲏⲛ̄	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲡⲗⲏⲛ ϫⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲓⲧⲁ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲉⲡⲓ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲗⲉⲡⲟⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲗⲟⲓⲡⲟⲩ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲗⲉⲡⲱⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲗⲟⲓⲡⲱⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲩⲕ ⲟⲩⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ϭⲉ ⲟⲩⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲙ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲩⲛ̇	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲩⲛ̄	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲩ̇ⲛ	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲟⲩⲛ⳿	copwn-cop:1.0	i117639
+cop	Tim;Dist	ⲁⲩⲱ ⲧⲟⲧⲉ	copwn-cop:1.0	i117639
+cop	Tim;Prox	ⲙⲧⲟ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ϩⲟⲧ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲅⲁⲣ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲁ︤ⲓ︥ⲧⲉⲓ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲧⲁⲓ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲁⲓⲧⲉⲓ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲧⲉⲛⲟⲩ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲁⲗⲗⲁ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲉⲧⲓ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲛⲧⲟⲟⲩⲛ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲉⲧⲉⲛⲟⲩ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲛⲧⲉⲛⲟⲩ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲉⲧⲓ̄	copwn-cop:1.0	i116653
+cop	Tim;Prox	ϯⲛⲟⲩ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲙⲁⲗⲗⲟⲛ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲅ︤ⲁ︦ⲣ︥	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲅⲁⲣ⳿	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲕⲁⲣ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲛⲅⲁⲣ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲛ̄ⲅⲁⲣ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲇ}ⲉ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲇⲉ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲉⲓⲧⲁ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲗⲉⲡⲟⲛ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲗⲟⲓⲡⲟⲩ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲗⲉⲡⲱⲛ	copwn-cop:1.0	i116653
+cop	Tim;Prox	ⲗⲟⲓⲡⲱⲛ	copwn-cop:1.0	i116653
+cs	Mnr;Prox+Dist	tak	NTUMC wordnet 00121135-r	i18911
+cs	Mnr;Prox+Dist	takhle	NTUMC wordnet 00121135-r	i18911
+cs	Mnr;Prox+Dist	takto	NTUMC wordnet 00121135-r	i18911
+cs	Plc;Prox	tady	NTUMC wordnet 08489497-n	i81667
+de	Tim;Prox	Gegenwart	odenet:1.4	i116653
+de	Tim;Prox	Jetzt	odenet:1.4	i116653
+en	Du;Univ	both	oewn:2025+	i12555
+en	Mnr;Prox+Dist	thus	NTUMC wordnet 00121135-r	i18911
+en	Mnr;Prox+Dist	so	NTUMC wordnet 00121135-r	i18911
+en	Mnr;Prox+Dist	thusly	NTUMC wordnet 00121135-r	i18911
+en	Mnr;Prox+Dist	thus	oewn:2025+	i18911
+en	Mnr;Prox+Dist	thusly	oewn:2025+	i18911
+en	Mnr;Prox+Dist	so	oewn:2025+	i18911
+en	Plc;Dist	there	NTUMC wordnet 08489627-n	i81668
+en	Plc;Dist	there	oewn:2025+	i81668
+en	Plc;Prox	here	NTUMC wordnet 08489497-n	i81667
+en	Plc;Prox	'ere	NTUMC wordnet 08489497-n	i81667
+en	Plc;Prox	here	oewn:2025+	i81667
+en	Tim;Dist	then	NTUMC wordnet 15296354-n	i117639
+en	Tim;Dist	then	oewn:2025+	i117639
+en	Tim;Prox	now	NTUMC wordnet 15119919-n	i116653
+en	Tim;Prox	now	oewn:2025+	i116653
+es	Mnr;Prox+Dist	así	omw-es:2.0	i18911
+es	Plc;Prox	acá	omw-es:2.0	i81667
+es	Plc;Prox	aquí	omw-es:2.0	i81667
+es	Tim;Dist	entonces	omw-es:2.0	i117639
+es	Tim;Prox	ahora	omw-es:2.0	i116653
+eu	Tim;Dist	orduan	omw-eu:2.0	i117639
+eu	Tim;Prox	orain	omw-eu:2.0	i116653
+fi	Du;Univ	molemmat	finnish-fi:2.0.1	i12555
+fi	Mnr;Prox+Dist	noin	finnish-fi:2.0.1	i18911
+fi	Mnr;Prox+Dist	niin	finnish-fi:2.0.1	i18911
+fi	Mnr;Prox+Dist	siten	finnish-fi:2.0.1	i18911
+fi	Mnr;Prox+Dist	niin että	finnish-fi:2.0.1	i18911
+fi	Mnr;Prox+Dist	näin	finnish-fi:2.0.1	i18911
+fi	Plc;Dist	siellä	finnish-fi:2.0.1	i81668
+fi	Plc;Prox	tässä	finnish-fi:2.0.1	i81667
+fi	Plc;Prox	täällä	finnish-fi:2.0.1	i81667
+fi	Tim;Dist	silloin	finnish-fi:2.0.1	i117639
+fi	Tim;Prox	nyt	finnish-fi:2.0.1	i116653
+fr	Du;Univ	les deux	omw-fr:2.0	i12555
+fr	Du;Univ	tous les deux	omw-fr:2.0	i12555
+fr	Mnr;Prox+Dist	comme	omw-fr:2.0	i18911
+fr	Mnr;Prox+Dist	ainsi	omw-fr:2.0	i18911
+fr	Mnr;Prox+Dist	tellement	omw-fr:2.0	i18911
+fr	Plc;Dist	là-bas	omw-fr:2.0	i81668
+fr	Plc;Dist	là	omw-fr:2.0	i81668
+fr	Plc;Prox	ici	omw-fr:2.0	i81667
+fr	Tim;Dist	alors	omw-fr:2.0	i117639
+fr	Tim;Prox	rasibus	omw-fr:2.0	i116653
+fr	Tim;Prox	maintenant	omw-fr:2.0	i116653
+gd	Plc;Dist	an àiteigin	usgw-gd:0.9	i81668
+gd	Plc;Prox	an seo	usgw-gd:0.9	i81667
+gd	Plc;Prox	an sin	usgw-gd:0.9	i81667
+gd	Tim;Prox	an-dràsta fhèin	usgw-gd:0.9	i116653
+he	Mnr;Prox+Dist	כָּךְ	omw-he:2.0	i18911
+he	Mnr;Prox+Dist	כֹּה	omw-he:2.0	i18911
+he	Mnr;Prox+Dist	כָּכָה	omw-he:2.0	i18911
+he	Mnr;Prox+Dist	כֵּן	omw-he:2.0	i18911
+hr	Mnr;Prox+Dist	tako	omw-hr:2.0	i18911
+id	Du;Univ	kedua	omw-id:2.0	i12555
+id	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
+id	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
+id	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
+id	Mnr;Prox+Dist	begitu	NTUMC wordnet 00121135-r	i18911
+id	Mnr;Prox+Dist	begini	omw-id:2.0	i18911
+id	Mnr;Prox+Dist	jadi	omw-id:2.0	i18911
+id	Plc;Dist	sana	NTUMC wordnet 08489627-n	i81668
+id	Plc;Dist	disana	NTUMC wordnet 08489627-n	i81668
+id	Plc;Dist	situ	NTUMC wordnet 08489627-n	i81668
+id	Plc;Dist	sana	omw-id:2.0	i81668
+id	Plc;Prox	sini	NTUMC wordnet 08489497-n	i81667
+id	Plc;Prox	di sini	omw-id:2.0	i81667
+id	Plc;Prox	sini	omw-id:2.0	i81667
+id	Tim;Dist	ketika	NTUMC wordnet 15296354-n	i117639
+id	Tim;Dist	masa	NTUMC wordnet 15296354-n	i117639
+id	Tim;Dist	waktu	NTUMC wordnet 15296354-n	i117639
+id	Tim;Dist	ketika	omw-id:2.0	i117639
+id	Tim;Dist	masa	omw-id:2.0	i117639
+id	Tim;Dist	waktu	omw-id:2.0	i117639
+id	Tim;Prox	sekarang	NTUMC wordnet 15119919-n	i116653
+id	Tim;Prox	kini	NTUMC wordnet 15119919-n	i116653
+id	Tim;Prox	saat ini	NTUMC wordnet 15119919-n	i116653
+id	Tim;Prox	kini	omw-id:2.0	i116653
+id	Tim;Prox	sekarang	omw-id:2.0	i116653
+it	Mnr;Prox+Dist	così	NTUMC wordnet 00121135-r	i18911
+it	Mnr;Prox+Dist	quindi	NTUMC wordnet 00121135-r	i18911
+it	Mnr;Prox+Dist	così	omw-it:2.0	i18911
+it	Mnr;Prox+Dist	quindi	omw-it:2.0	i18911
+it	Plc;Prox	qua	NTUMC wordnet 08489497-n	i81667
+it	Plc;Prox	qui	NTUMC wordnet 08489497-n	i81667
+ja	Mnr;Prox+Dist	かく	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	爾く	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	そう	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	然く	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	爾	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	そない	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	斯く	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	斯う	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	然	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	こうして	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	斯うして	NTUMC wordnet 00121135-r	i18911
+ja	Mnr;Prox+Dist	こうして	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	そない	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	かく	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	そう	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	斯うして	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	斯う	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	斯く	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	然く	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	然	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	爾く	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	爾	omw-ja:2.0	i18911
+ja	Plc;Dist	それ	NTUMC wordnet 08489627-n	i81668
+ja	Plc;Dist	そこ	NTUMC wordnet 08489627-n	i81668
+ja	Plc;Dist	そこ	omw-ja:2.0	i81668
+ja	Plc;Dist	それ	omw-ja:2.0	i81668
+ja	Plc;Prox	ここ	NTUMC wordnet 08489497-n	i81667
+ja	Plc;Prox	こちら	NTUMC wordnet 08489497-n	i81667
+ja	Plc;Prox	此処	NTUMC wordnet 08489497-n	i81667
+ja	Plc;Prox	此所	NTUMC wordnet 08489497-n	i81667
+ja	Plc;Prox	ここ	omw-ja:2.0	i81667
+ja	Tim;Dist	其時	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其節	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其折	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	そのとき	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其の節	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	その節	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	その時	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	その頃	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其頃	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	その折	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其の折	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	当時	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其の頃	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	其の時	NTUMC wordnet 15296354-n	i117639
+ja	Tim;Dist	そのとき	omw-ja:2.0	i117639
+ja	Tim;Dist	其の折	omw-ja:2.0	i117639
+ja	Tim;Dist	其折	omw-ja:2.0	i117639
+ja	Tim;Dist	其の時	omw-ja:2.0	i117639
+ja	Tim;Dist	其時	omw-ja:2.0	i117639
+ja	Tim;Dist	其の節	omw-ja:2.0	i117639
+ja	Tim;Dist	其節	omw-ja:2.0	i117639
+ja	Tim;Dist	其の頃	omw-ja:2.0	i117639
+ja	Tim;Dist	其頃	omw-ja:2.0	i117639
+ja	Tim;Dist	当時	omw-ja:2.0	i117639
+ja	Tim;Dist	その折	omw-ja:2.0	i117639
+ja	Tim;Dist	その時	omw-ja:2.0	i117639
+ja	Tim;Dist	その節	omw-ja:2.0	i117639
+ja	Tim;Dist	その頃	omw-ja:2.0	i117639
+ja	Tim;Prox	ただいま	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	方今	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	目下	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	今	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	刻下	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	即今	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	現時点	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	現下	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	現今	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	現在	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	只今	NTUMC wordnet 15119919-n	i116653
+ja	Tim;Prox	ただいま	omw-ja:2.0	i116653
+ja	Tim;Prox	今	omw-ja:2.0	i116653
+ja	Tim;Prox	刻下	omw-ja:2.0	i116653
+ja	Tim;Prox	即今	omw-ja:2.0	i116653
+ja	Tim;Prox	只今	omw-ja:2.0	i116653
+ja	Tim;Prox	方今	omw-ja:2.0	i116653
+ja	Tim;Prox	現下	omw-ja:2.0	i116653
+ja	Tim;Prox	現今	omw-ja:2.0	i116653
+ja	Tim;Prox	現在	omw-ja:2.0	i116653
+ja	Tim;Prox	現時点	omw-ja:2.0	i116653
+ja	Tim;Prox	目下	omw-ja:2.0	i116653
+my	Tim;Prox	ခု	mow:0.1.3	i116653
+pl	Tim;Prox	teraz	omw-pl:2.0	i116653
+th	Plc;Dist	ที่นั่น	omw-th:2.0	i81668
+th	Plc;Prox	ที่นี่	omw-th:2.0	i81667
+th	Tim;Prox	ตอนนี้	omw-th:2.0	i116653
+th	Tim;Prox	เดี๋ยวนี้	omw-th:2.0	i116653
+tr	Mnr;Prox+Dist	böyle	kenet:1.0	i18911
+tr	Mnr;Prox+Dist	hakeza	kenet:1.0	i18911
+tr	Mnr;Prox+Dist	öyle	kenet:1.0	i18911
+tr	Mnr;Prox+Dist	o yolda	kenet:1.0	i18911
+tr	Mnr;Prox+Dist	öylece	kenet:1.0	i18911
+tr	Mnr;Prox+Dist	şöyle	kenet:1.0	i18911
+tr	Mnr;Prox+Dist	şöylece	kenet:1.0	i18911
+tr	Plc;Prox	bura	kenet:1.0	i81667
+tr	Plc;Prox	burası	kenet:1.0	i81667
+uz	Mnr;Prox+Dist	demak	UzWordnet-uz:1.0	i18911
+uz	Mnr;Prox+Dist	shunday qilib	UzWordnet-uz:1.0	i18911
+uz	Mnr;Prox+Dist	shunday	UzWordnet-uz:1.0	i18911
+uz	Mnr;Prox+Dist	shunaqa	UzWordnet-uz:1.0	i18911
+yue	Tim;Dist	嗰陣	cantown-yue:1.0	i117639
+yue	Tim;Dist	嗰陣時	cantown-yue:1.0	i117639
+yue	Tim;Dist	當時	cantown-yue:1.0	i117639
+yue	Tim;Dist	當其時	cantown-yue:1.0	i117639
+yue	Tim;Dist	當初	cantown-yue:1.0	i117639
+zsm	Du;Univ	kedua	omw-zsm:2.0	i12555
+zsm	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
+zsm	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
+zsm	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
+zsm	Mnr;Prox+Dist	begini	omw-zsm:2.0	i18911
+zsm	Mnr;Prox+Dist	jadi	omw-zsm:2.0	i18911
+zsm	Plc;Dist	sana	NTUMC wordnet 08489627-n	i81668
+zsm	Plc;Dist	disana	NTUMC wordnet 08489627-n	i81668
+zsm	Plc;Dist	sana	omw-zsm:2.0	i81668
+zsm	Plc;Prox	sini	NTUMC wordnet 08489497-n	i81667
+zsm	Plc;Prox	di sini	omw-zsm:2.0	i81667
+zsm	Plc;Prox	sini	omw-zsm:2.0	i81667
+zsm	Tim;Dist	ketika	NTUMC wordnet 15296354-n	i117639
+zsm	Tim;Dist	masa	NTUMC wordnet 15296354-n	i117639
+zsm	Tim;Dist	waktu	NTUMC wordnet 15296354-n	i117639
+zsm	Tim;Dist	ketika	omw-zsm:2.0	i117639
+zsm	Tim;Dist	masa	omw-zsm:2.0	i117639
+zsm	Tim;Dist	waktu	omw-zsm:2.0	i117639
+zsm	Tim;Prox	sekarang	NTUMC wordnet 15119919-n	i116653
+zsm	Tim;Prox	kini	NTUMC wordnet 15119919-n	i116653
+zsm	Tim;Prox	saat ini	NTUMC wordnet 15119919-n	i116653
+zsm	Tim;Prox	kini	omw-zsm:2.0	i116653
+zsm	Tim;Prox	sekarang	omw-zsm:2.0	i116653

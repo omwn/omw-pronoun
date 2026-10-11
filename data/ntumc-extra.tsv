@@ -1,0 +1,36 @@
+synset	pos	code	note
+08489497-n	n	Plc;Prox	here; NTUMC adds singular, but place pronouns have no number
+08489627-n	n	Plc;Dist	there; NTUMC's definition "a location other than here" reads as other, and it links medial
+00025728-r	n	Plc;Univ	everywhere; a place pronoun like here and there, though PWN files it as an adverb
+00495377-r	n	Plc;Sg;Elec	anywhere, wherever; as Pers;Sg;Elec, Thng;Sg;Elec, Tim;Sg;Elec
+00524607-n	n	Ent;Du;Neg	neither, the pronoun; beside Ent;Du;Univ both and Ent;Du;Elec either
+00524607-a	a	Du;Neg	neither, the determiner; NTUMC adds other, from "not one or the other"
+02267308-n	n	Ent;Asrt	some, several, the pronoun
+02267308-a	a	Asrt	some, several, the determiner
+02267686-n	n	Ent;Elec	any, whatever, whichever, the pronoun
+02267686-a	a	Elec	any, whatever, the determiner
+02269286-n	n	Ent;Univ	all, the pronoun
+02269286-a	a	Univ	all, every, the determiner
+02269635-n	n	Ent;Sg;Univ	each, the pronoun
+02269635-a	a	Sg;Univ	each, the determiner
+02269039-n	n	Ent;Sg;Neg	none
+02070188-n	n	Ent;Sg;Oth	another, the pronoun; NTUMC's links omit other
+02070188-a	a	Sg;Oth	another, the determiner
+80001631-n	n	Ent;Pl;Oth	others; Mandarin 其他, 别人
+80001130-n	n	3;Sg	Indonesian dia, ia, -nya
+80001131-n	n	3;Pl	Indonesian mereka
+80001132-n	n	1;Sg;Infml	Indonesian aku, ku-, -ku
+80001133-n	n	1e;Pl	Indonesian kami; NTUMC links both first person and exclusive
+80000003-n	n	3	Mandarin 其, third person of any number
+80000047-n	n	3	Mandarin 之, third person of any number, as an object
+00007846-n			skip: person "a human being", the head feature Pers, not the pronoun someone
+00072649-r			skip: here and there "in or to various places", not a pro-form
+01551633-a			skip: many, a quantity, not a pro-form
+01551633-n			skip: many, a quantity, not a pro-form
+01554230-a			skip: such, of degree ("so extreme"); Knd;Prox+Dist has such already
+01554230-n			skip: such, the pronoun, rare
+03299261-n			skip: etcetera
+02069355-a			skip: other, the determiner; its code Oth is the headless pronoun other already
+13740168-n			skip: nothing shares its synset with zero, cipher and zilch in every language
+80000052-a			skip: a bare quantifier, no English word
+80001619-a			skip: "the continuous time until now", no English word

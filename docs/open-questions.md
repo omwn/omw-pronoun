@@ -86,6 +86,24 @@ Place pro-forms split by direction where a language has separate words: Czech
 curated, from four Indo-European languages; neither Parabank nor Haspelmath's
 CLDF data records direction.
 
+## Time deixis
+
+*now* (`Tim;Prox`) and *then* (`Tim;Dist`) are curated, like direction: no
+source records demonstrative time. *now* has TUFS 今 (concept 8987) in seven
+languages (Arabic, Syrian Arabic, French, Japanese, Malay, Burmese, Urdu) and
+curated words in seven more; *then* has curated words only, in English, Czech,
+German, Polish, Russian and Mandarin. They are pronouns (`n`), like *here* and
+*there* (`Plc;Prox`, `Plc;Dist`), though English and UD treat them as adverbs.
+
+- *then* is taken as "at that time" (Czech *tehdy*, German *damals*). Is
+  sequential *then* (German *dann*, Czech *pak*) the same concept, or not a
+  pro-form at all?
+- German *damals* and Czech *tehdy* are past only, English *then* past or
+  future. Does distal time split by tense, as place splits by direction?
+- Japanese has no single word for *then*: その時, あの時 are phrases. Is that a gap?
+- Nothing covers both, as `Plc;Prox+Dist` covers both places, so *now* and *then*
+  are tops of the hierarchy.
+
 - Where direction is a semantic case (Turkish *nerede*, *nereye*, *nereden*;
   Japanese どこへ), is it inflection, like subjective and objective, or meaning,
   like the possessive? The TUFS Turkish rows are still plain `Plc;Int` and

@@ -1,4 +1,21 @@
 synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	proximity	register	definition	eng	cmn	jpn	ind	zsm	ces	ita	mya	qcn
+00025728-r	n	Plc;Univ	place						universal					to or in any or all places; pronoun, location; quantifier: universal	everywhere; all over; everyplace; around; all round	遍布 表面; 四处; 遍; 遍+地; 各+地; 到处; 各; 随处; 遍布表面; 处处; 各地; 各 地; 每处; 东西; 四方; 各方; 各 处; 各处; 诸	普く; 端から端まで; 至る所に; 一面に; あちこち; 隈無く; 彼方此方; 所構わず; 所嫌わず; 遍く; 隈なく; どこでも; ところ嫌わず; 満遍無く; 何処も彼処も; 満遍なく; 此所彼所; 所かまわず; くまなく; あちらこちら; 所きらわず; あっちこっち; 何処もかしこも; べったり; 万遍なく; 万遍無く; ところ構わず; 此処彼処	sebilang; mana-mana	ke merata-rata tempat	všude	ovunque; dovunque; dappertutto		
+00495377-r	n	Plc;Sg;Elec	place			sg			elective					where in the world; location, singular, elective existential pronoun	wherever; wheresoever; anywhere	无论何 事物; 一点 也 . . .; 无论何事物; 在 … 的 地方; 在 任何 … 的 地方; 无论哪; 在…的地方; 一点也...; 何处; 在任何…的地方; 何在		manapun; mana-mana; mana pun	manapun; mana-mana				
+00524607-a	a	Du;Neg				du			negative+other					not either; not one or the other; entity, dual, negative pronoun; quantifier, dual, negative	neither; nor					ani			
+00524607-n	n	Ent;Du;Neg	entity			du			negative					pronoun, entity; quantifier: quantifier, dual, negative	neither								
+02070188-a	a	Sg;Oth				sg			other					any of various alternatives; some other; quantifier, singular, another	another; some other	其他; 不同; 不同+的; 别; 别+的; 其他+的; 另一; 另; 另一+的	別個; 別			další; jiný; ostatní	altro		
+02070188-n	n	Ent;Sg;Oth	entity			sg								pronoun, entity, quantifier: singular, another	another; other					druhý			
+02267308-a	a	Asrt							assertive					quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential	some; several	一些; 有的; 些; 少许; 有些; 下; 某些; 好几	いくらか	sebagian; beberapa	sebagian; beberapa		qualche; alcuni; certo		
+02267308-n	n	Ent;Asrt	entity						assertive					entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential	several; some	有的; 有	いくつか; いくらか						
+02267686-a	a	Elec							elective					one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential	any; whatever; whatsoever; whichever	无论何事; 不管什么样+的; 不管什么样; 一点 也 . . .; 不管 什么样; 无论什么样+的; 无论什么样; 任何; 无论 何事; 一点也...; 无论 什么样; 任; 什么		manapun; apapun; sebarang; apa saja; apa pun	manapun; sebarang; apapun; apa saja	ledacos; bůhvíco	qualsiasi		
+02267686-n	n	Ent;Elec	entity						elective					pronoun, entity; quantifier: elective existential	whichever; any; whatever			apa pun; apa saja		cokoliv			
+02269039-n	n	Ent;Sg;Neg	entity			sg			negative					pronoun, entity; qantifier: negative existential	none								
+02269286-a	a	Univ							universal					quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal	all; every	都; 所有; 一切; 一切+的; 所有+的; 均; 尽	みんな	semua; segala	semua; segala	všechen; veškerý	ogni; tutto		
+02269286-n	n	Ent;Univ	entity						universal					pronoun, entity; quantifier: universal	all		すべて; 全て; 全部	semua					
+02269635-a	a	Sg;Univ				sg			universal					(used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal	each	每 一 个; 每一个+的; 每; 每一; 每一个; 张张; 幕幕; 个个	それぞれの	masing-masing; tiap; setiap; tiap-tiap	kali		ogni		
+02269635-n	n	Ent;Sg;Univ	entity			sg			universal					entity, singular, universal pronoun	each			masing-masing					
+08489497-n	n	Plc;Prox	00027167-n+place	demonstrative+demonstrative determiner		sg						proximal		the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal	here; 'ere	这里; 这边; 此处; 这儿; 本地; 此地; 此; 这	ここ; 此処; 此所; こちら	sini	sini	tady	qua; qui		
+08489627-n	n	Plc;Dist	00027167-n+place	demonstrative+demonstrative determiner		sg			other			distal+medial		a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal	there	那里; 那个地方; 那个 地方; 那边; 那儿	それ; そこ	sana; disana; situ	sana; disana				
 77000000-n	n	Asrt							assertive					assertive existential pronoun									
 77000001-n	n	Oth							other					other pronoun		以下; 以上							
 77000002-n	n	1;Pl	person	personal	1	pl								1st person, plural pronoun; personal pronoun, person, 1st person, plural	we; us	我们	私たち; 私達; 我ら; 我等			my			
@@ -135,3 +152,10 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000139-a	a	Sg;Univ				sg			universal					entity, singular, universal pronoun									
 77000139-n	n	1i;Pl	person	personal	1i	pl								personal pronoun, person, 1st person, plural, inclusive		咱们		kita					
 77000140-n	n	1e;Pl			1e	pl								1st person, plural, exclusive pronoun									
+80000003-n	n	3	entity	personal	3									personal pronoun, entity, 3rd person		其							
+80000047-n	n	3	entity	personal	3									personal pronoun, entity, 3rd person; it can only be used as an object		之							
+80001130-n	n	3;Sg	person	personal	3	sg								personal pronoun, person, 3rd person, singular				dia; ia; -nya					
+80001131-n	n	3;Pl	person	personal	3	pl								personal pronoun, person, 3rd person, plural				mereka					
+80001132-n	n	1;Sg;Infml	person	personal	1	sg				informal				personal pronoun, person, 1st person, singular, informal				aku; ku-; -ku					
+80001133-n	n	1e;Pl	person	personal	1e	pl								personal pronoun, person, 1st person, plural, exclusive				kami					
+80001631-n	n	Ent;Pl;Oth	entity			pl								pronoun, entity, quantifier: plural, another	others	其他; 其他人; 别人							

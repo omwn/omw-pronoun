@@ -5,6 +5,8 @@ Run with: uv run --with pytest --with langcodes --with language_data pytest
 
 from __future__ import annotations
 
+import csv
+
 import pytest
 
 import build
@@ -171,3 +173,62 @@ def test_first_person_is_exclusive_only_where_an_inclusive_contrasts() -> None:
         parabank_words.code(frozenset({("1e", "pl", "")}), with_inclusive, True)
         == "1e;Pl"
     )
+
+
+def test_subsumes_is_containment_of_feature_assignments() -> None:
+    # FEATURES.md: a code denotes the assignments that agree with its features;
+    # an unfilled slot allows any value or none, except case (non-possessive)
+    with (build.DATA / "concepts.tsv").open(encoding="utf8") as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    codes = [r["code"] for r in rows]
+    slots = {**build.SLOTS, **build.CATEGORIES}
+    domain = {
+        s: set().union(*(build.expand(frozenset({v})) for v in vs))
+        for s, vs in slots.items()
+    }
+
+    def denotation(code: str) -> dict[str, frozenset[str]]:
+        found = build.features(code)
+        unfilled = {"case": frozenset({"non-possessive"})}
+        return {
+            s: frozenset(build.expand(found[s]))
+            if s in found
+            else unfilled.get(s, frozenset(domain[s] | {"none"}))
+            for s in slots
+        }
+
+    meaning = {code: denotation(code) for code in codes}
+    for general in codes:
+        for specific in codes:
+            contained = all(meaning[specific][s] <= meaning[general][s] for s in slots)
+            assert contained == build.subsumes(general, specific), (general, specific)
+
+
+def test_ili_links_name_concepts_and_are_unique() -> None:
+    with (build.DATA / "concepts.tsv").open(encoding="utf8") as handle:
+        codes = {row["code"] for row in csv.DictReader(handle, delimiter="\t")}
+    linked = build.read_concept_ili()
+    assert set(linked) <= codes
+    assert linked["Tim;Prox"] == "i116653"  # now: the momentary present
+    features = {row["ili"] for row in build.read_features().values() if row["ili"]}
+    ilis = list(linked.values())
+    assert len(ilis) == len(set(ilis))
+    assert not set(ilis) & features
+
+
+def test_extra_ntumc_synsets_have_a_valid_code_or_are_skipped() -> None:
+    for synset, row in ntumc_pronouns.extra().items():
+        if row["code"]:
+            assert row["pos"] in ("n", "a", "r"), synset
+            assert not any(s.startswith("?") for s in build.features(row["code"]))
+        else:
+            assert row["note"].startswith("skip:"), synset
+
+
+def test_wordnet_words_are_for_linked_concepts() -> None:
+    linked = build.read_concept_ili()
+    with (build.DATA / "wordnet-words.tsv").open(encoding="utf8") as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    assert rows
+    assert all(linked.get(r["concept"]) == r["ili"] for r in rows)
+    assert not any(r["source"].startswith("tufs-") for r in rows)

@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pronoun Hierarchy</title>
+<meta name="description" content="Browse the OMW pronoun concept hierarchy, with each concept shown as its features and an overlay of one language's words.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --hairline: #e1e0d9;
+  --guide: #d4d3cb;
+  --border: rgba(11, 11, 11, 0.10);
+  --hover: rgba(11, 11, 11, 0.04);
+  --selected: rgba(42, 120, 214, 0.12);
+  --focus: #2a78d6;
+  --g-person: #2a78d6;
+  --g-number: #eb6834;
+  --g-gender: #1baf7a;
+  --g-head: #eda100;
+  --g-type: #e87ba4;
+  --g-case: #008300;
+  --g-social: #6250d6;
+  --g-deixis: #e34948;
+  --word: #0ca30c;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --muted: #898781;
+    --hairline: #2c2c2a;
+    --guide: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --hover: rgba(255, 255, 255, 0.05);
+    --selected: rgba(57, 135, 229, 0.20);
+    --focus: #3987e5;
+    --g-person: #3987e5;
+    --g-number: #d95926;
+    --g-gender: #199e70;
+    --g-head: #c98500;
+    --g-type: #d55181;
+    --g-case: #008300;
+    --g-social: #9085e9;
+    --g-deixis: #e66767;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --ink: #f0efec;
+  --ink-2: #c3c2b7;
+  --muted: #898781;
+  --hairline: #2c2c2a;
+  --guide: #383835;
+  --border: rgba(255, 255, 255, 0.10);
+  --hover: rgba(255, 255, 255, 0.05);
+  --selected: rgba(57, 135, 229, 0.20);
+  --focus: #3987e5;
+  --g-person: #3987e5;
+  --g-number: #d95926;
+  --g-gender: #199e70;
+  --g-head: #c98500;
+  --g-type: #d55181;
+  --g-case: #008300;
+  --g-social: #9085e9;
+  --g-deixis: #e66767;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--focus); }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+
+.wrap { max-width: 1280px; margin: 0 auto; padding: 20px 16px 40px; }
+header h1 { font-size: 20px; margin: 0 0 4px; font-weight: 650; }
+header p { margin: 0; color: var(--ink-2); max-width: 75ch; }
+
+.controls {
+  display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: end;
+  margin: 16px 0 10px;
+}
+.field { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.field label { font-size: 12px; color: var(--ink-2); }
+.field input, .field select {
+  width: 260px; max-width: 100%;
+  padding: 6px 9px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--surface);
+}
+.field select { width: 320px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 6px; }
+.btn {
+  padding: 6px 11px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--surface); cursor: pointer;
+}
+.btn:hover:not(:disabled) { background: var(--hover); }
+.btn:disabled { color: var(--muted); cursor: default; }
+
+.legend {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+  font-size: 12px; color: var(--ink-2); margin-bottom: 12px;
+}
+.legend .item { display: inline-flex; align-items: center; gap: 5px; }
+.legend .sep { width: 1px; height: 16px; background: var(--hairline); }
+.lang-summary { font-size: 13px; color: var(--ink-2); margin: -4px 0 10px; min-height: 1.45em; }
+
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
+.panel, .tree-box {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+}
+.tree-box { padding: 6px 0; overflow-x: auto; }
+.panel { padding: 14px 16px; position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; }
+@media (max-width: 860px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .panel { position: static; max-height: none; order: -1; }
+}
+
+/* feature chips */
+.chips { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 3px; }
+.chip {
+  --c: var(--muted);
+  display: inline-block; padding: 0 5px; border-radius: 4px;
+  border: 1.5px solid var(--c);
+  background: color-mix(in oklab, var(--c) 15%, var(--surface));
+  font: 12px/18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: var(--ink);
+}
+.chip.person { --c: var(--g-person); }
+.chip.number { --c: var(--g-number); }
+.chip.gender { --c: var(--g-gender); }
+.chip.head { --c: var(--g-head); }
+.chip.type { --c: var(--g-type); }
+.chip.case { --c: var(--g-case); }
+.chip.social { --c: var(--g-social); }
+.chip.deixis { --c: var(--g-deixis); }
+.pos-name { font-weight: 600; }
+
+/* tree rows */
+.row {
+  --d: 0;
+  display: flex; align-items: center; gap: 6px;
+  min-height: 30px; padding: 2px 12px 2px calc(8px + var(--d) * 22px);
+  background-image: repeating-linear-gradient(to right,
+    transparent 0 18px, var(--guide) 18px 19px, transparent 19px 22px);
+  background-size: calc(var(--d) * 22px) 100%;
+  background-position: 8px 0;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+}
+.row:hover { background-color: var(--hover); }
+.row.selected { background-color: var(--selected); }
+.row.flash { animation: flash 1.2s ease-out; }
+@keyframes flash { from { background-color: color-mix(in oklab, var(--focus) 35%, transparent); } }
+.twisty {
+  flex: none; width: 22px; height: 22px; border: 0; border-radius: 4px;
+  background: none; cursor: pointer; color: var(--ink-2); padding: 0;
+  display: inline-grid; place-items: center;
+}
+.twisty:hover { background: var(--hover); }
+.twisty svg { transition: transform 120ms ease; }
+.twisty[aria-expanded="true"] svg { transform: rotate(90deg); }
+.twisty.leaf { visibility: hidden; }
+.node {
+  display: inline-flex; align-items: center; gap: 8px; min-width: 0;
+  border: 0; background: none; padding: 2px 4px; border-radius: 4px; cursor: pointer;
+  text-align: left;
+}
+.node .label { color: var(--ink-2); }
+.row .chips { flex-wrap: nowrap; }
+.row .main { display: flex; align-items: center; gap: 6px; min-width: 0; }
+@media (max-width: 600px) {
+  .row { white-space: normal; align-items: flex-start; padding-top: 4px; padding-bottom: 4px; }
+  .row .twisty { margin-top: 2px; }
+  .row .main { flex-direction: column; align-items: flex-start; gap: 1px; }
+  .row .node { flex-wrap: wrap; row-gap: 2px; }
+  .row .overlay { padding-left: 4px; }
+  .row .count { padding-top: 4px; }
+}
+.badge { font-size: 11px; color: var(--muted); }
+.count {
+  margin-left: auto; padding-left: 12px;
+  font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.overlay { font-size: 13px; display: inline-flex; align-items: center; gap: 4px; color: var(--ink); }
+.overlay .dot { color: var(--word); }
+.overlay .group { display: inline-flex; align-items: center; gap: 4px; }
+.overlay .group + .group { margin-left: 6px; }
+.overlay .wn { color: var(--muted); }
+.overlay .unchecked { color: var(--ink-2); text-decoration: underline dotted var(--muted); text-underline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink); cursor: pointer; padding: 6px 0; }
+.toggle input { margin: 0; accent-color: var(--focus); }
+.toggle .muted { color: var(--muted); }
+.note {
+  margin: 0 0 12px; padding: 8px 12px; max-width: 90ch;
+  border-left: 3px solid var(--g-head); background: var(--surface);
+  font-size: 13px; color: var(--ink-2);
+}
+.row.nodata .node { opacity: 0.55; }
+
+/* panel */
+.panel h2 { font-size: 17px; margin: 8px 0 2px; font-weight: 650; }
+.panel .def { color: var(--ink-2); margin: 0 0 10px; }
+.panel dl { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; margin: 0 0 12px; font-size: 13px; }
+.panel dt { color: var(--muted); }
+.panel dd { margin: 0; font-variant-numeric: tabular-nums; }
+.panel h3 { font-size: 12px; font-weight: 600; color: var(--ink-2); margin: 14px 0 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+.panel ul { list-style: none; margin: 0; padding: 0; }
+.panel li { margin: 2px 0; }
+.panel .node { padding: 3px 4px; }
+.panel .node:hover { background: var(--hover); }
+.panel .big .chip { font-size: 15px; line-height: 24px; padding: 0 7px; }
+.panel .lang-words { font-size: 15px; }
+.panel .features li { display: flex; gap: 8px; align-items: baseline; font-size: 13px; }
+.panel .features .ud { color: var(--muted); font-size: 12px; }
+.empty { color: var(--muted); }
+.help { color: var(--ink-2); font-size: 13px; }
+.help p { margin: 0 0 8px; }
+footer { margin-top: 18px; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>OMW pronoun hierarchy</h1>
+    <p>Each concept is shown as its features: <span class="chips"><span class="chip person">1e</span><span class="chip number">Du</span></span> is “we two, not you”. A concept sits below every concept whose features contain its own, within its part of speech, so some concepts appear under two hypernyms. See <a href="https://github.com/fcbond/omw-pronoun/blob/main/FEATURES.md">FEATURES.md</a> for the algebra.</p>
+  </header>
+
+  <div class="controls">
+    <div class="field">
+      <label for="find">Find a concept or word</label>
+      <input id="find" list="concept-list" placeholder="code, label or word, e.g. 1e;Du, we, 我们" autocomplete="off">
+      <datalist id="concept-list"></datalist>
+    </div>
+    <div class="field">
+      <label for="lang">Show a language</label>
+      <select id="lang"><option value="">none</option></select>
+    </div>
+    <div class="buttons">
+      <button class="btn" id="expand-all" type="button">Expand all</button>
+      <button class="btn" id="collapse-all" type="button">Collapse</button>
+      <button class="btn" id="expand-words" type="button" disabled title="Choose a language first">Show this language's words</button>
+    </div>
+    <label class="toggle"><input type="checkbox" id="show-wordnet"> Include words from existing wordnets <span class="muted">(unchecked)</span></label>
+  </div>
+
+  <p class="note" id="wordnet-note" hidden>Words marked <span aria-hidden="true">◇</span> come from existing wordnets and <strong>have not been checked</strong> as pronouns: words of the synsets for the concepts linked to the Interlingual Index (<em>here</em>, <em>there</em>, <em>now</em>, <em>then</em>, <em>both</em>, <em>so</em>), and of the Princeton synsets the NTU wordnet tags as pronouns (<em>all</em>, <em>each</em>, <em>everywhere</em>). A wordnet synset can hold words that are not pro-forms, such as Indonesian <em>waktu</em> “time” for <em>then</em>.</p>
+
+  <div class="legend" id="legend"></div>
+  <div class="lang-summary" id="lang-summary" aria-live="polite"></div>
+
+  <div class="layout">
+    <div class="tree-box"><div id="tree" role="tree" aria-label="Concept hierarchy"></div></div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+
+  <footer id="footer"></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="data.js"></script>
+<script>
+"use strict";
+const DATA = window.PRONOUNS;
+const CONCEPTS = DATA.concepts;
+const FEATURES = DATA.features;
+const POS_NAMES = DATA.pos;
+const ORDER = new Map(Object.keys(CONCEPTS).map((code, i) => [code, i]));
+
+// ---- features -------------------------------------------------------------
+// eleven slots in eight colour groups: social and deictic slots share a colour
+const GROUP = {
+  head: "head", person: "person", number: "number", gender: "gender",
+  case: "case", type: "type",
+  formality: "social", politeness: "social", register: "social",
+  proximity: "deixis", direction: "deixis",
+};
+const GROUPS = [
+  ["head", "head", "Pers"], ["person", "person", "1e"], ["number", "number", "Du"],
+  ["gender", "gender", "F"], ["case", "possessive", "Poss"], ["type", "type", "Int"],
+  ["social", "formality, politeness, register", "Pol"],
+  ["deixis", "proximity, direction", "Prox"],
+];
+
+function chips(code) {
+  const box = document.createElement("span");
+  box.className = "chips";
+  if (code.startsWith("#")) {
+    const name = document.createElement("span");
+    name.className = "pos-name";
+    name.textContent = POS_NAMES[code.slice(1)] + "s";
+    box.append(name);
+    return box;
+  }
+  if (isHead(code)) code = headOf(code);
+  for (const part of code.split(";")) {
+    const values = part.split("+");
+    const slot = FEATURES[values[0]]?.slot || "";
+    const chip = document.createElement("span");
+    chip.className = `chip ${GROUP[slot] || ""}`;
+    chip.textContent = part;
+    chip.title = `${slot}: ` + values.map(v => FEATURES[v]?.label || v).join(" or ");
+    box.append(chip);
+  }
+  return box;
+}
+
+// ---- hierarchy ------------------------------------------------------------
+// Three kinds of node: a concept (its code), a part of speech ("#n"), and a
+// head within a part of speech ("@Tim:n"), the head's feature synset.
+const EXPAND = DATA.expand;
+const isConcept = code => code in CONCEPTS;
+const isHead = code => code.startsWith("@");
+const headOf = code => code.slice(1, code.indexOf(":"));
+const headNode = (head, pos) => `@${head}:${pos}`;
+const FEATURE_ORDER = new Map(Object.keys(FEATURES).map((f, i) => [f, i]));
+
+// The heads a concept names: Dur+Tim;Int has two
+function headsOf(code) {
+  return code.split(";")
+    .filter(part => FEATURES[part.split("+")[0]]?.slot === "head")
+    .flatMap(part => part.split("+"));
+}
+// A head stands for the heads it expands to: Pers and Thng are under Ent
+const headParents = head => Object.keys(EXPAND)
+  .filter(h => FEATURES[h]?.slot === "head" && EXPAND[h].includes(head));
+const within = (x, head) => x === head || (EXPAND[head] || []).includes(x);
+
+// A concept is under its hypernyms, and under its head unless a hypernym
+// already is: Ent;Sg;Prox is reached through Ent;Prox, not put under entity again
+function parentsOf(code) {
+  const concept = CONCEPTS[code];
+  const heads = headsOf(code).filter(
+    h => !concept.parents.some(p => headsOf(p).some(x => within(x, h))));
+  return [...concept.parents, ...heads.map(h => headNode(h, concept.pos))];
+}
+
+const CHILDREN = new Map();
+const addChild = (parent, child) => {
+  if (!CHILDREN.has(parent)) CHILDREN.set(parent, []);
+  if (!CHILDREN.get(parent).includes(child)) CHILDREN.get(parent).push(child);
+};
+// concepts with no broader concept of their part of speech
+const TOPS = { n: [], a: [], r: [] };
+for (const [code, concept] of Object.entries(CONCEPTS)) {
+  if (!concept.parents.length) TOPS[concept.pos].push(code);
+  const parents = parentsOf(code);
+  if (!parents.length) addChild(`#${concept.pos}`, code);
+  for (const parent of parents) addChild(parent, code);
+}
+// head nodes hang from the heads they belong to, or from their part of speech
+const placed = new Set();
+const placeHead = node => {
+  if (placed.has(node)) return;
+  placed.add(node);
+  const [head, pos] = [headOf(node), node.slice(node.indexOf(":") + 1)];
+  const above = headParents(head);
+  if (!above.length) addChild(`#${pos}`, node);
+  for (const h of above) {
+    addChild(headNode(h, pos), node);
+    placeHead(headNode(h, pos));
+  }
+};
+for (const node of [...CHILDREN.keys(), ...[...CHILDREN.values()].flat()]) {
+  if (isHead(node)) placeHead(node);
+}
+// heads first, in the order of features.tsv, then concepts in table order
+const rank = code => isHead(code) ? [0, FEATURE_ORDER.get(headOf(code))] : [1, ORDER.get(code)];
+for (const kids of CHILDREN.values()) {
+  kids.sort((a, b) => { const [x, y] = [rank(a), rank(b)]; return x[0] - y[0] || x[1] - y[1]; });
+}
+
+// A concept with two hypernyms appears under each; a node's id is its path.
+function unfold(code, path) {
+  return { code, id: path, children: (CHILDREN.get(code) || []).map(k => unfold(k, `${path}>${k}`)) };
+}
+const ROOT = "#";
+const POS_GROUPS = Object.keys(TOPS).filter(pos => CHILDREN.has(`#${pos}`));
+const root = d3.hierarchy({
+  code: ROOT, id: ROOT,
+  children: POS_GROUPS.map(pos => unfold(`#${pos}`, `#${pos}`)),
+});
+const byId = new Map();
+root.each(node => byId.set(node.data.id, node));
+const occurrences = d3.group(root.descendants().filter(n => isConcept(n.data.code)), n => n.data.code);
+// the distinct concepts at or below a node
+const conceptsBelow = node => new Set(node.descendants().map(n => n.data.code).filter(isConcept));
+
+const expanded = new Set([ROOT, ...POS_GROUPS.map(pos => `#${pos}`)]);
+let selectedId = null;
+let language = null;
+
+function visibleNodes() {
+  const out = [];
+  (function walk(node) {
+    if (node !== root) out.push(node);
+    if (node.children && expanded.has(node.data.id)) node.children.forEach(walk);
+  })(root);
+  return out;
+}
+
+function expandTo(node) {
+  for (const ancestor of node.ancestors().slice(1)) expanded.add(ancestor.data.id);
+}
+
+// ---- language overlay ----------------------------------------------------
+const LANGUAGES = DATA.languages;
+const byTag = new Map(LANGUAGES.map(l => [l.tag, l]));
+const langOption = l => `${l.name} (${l.tag})`;
+
+// Words from existing wordnets have not been checked, so they are shown only
+// on request.
+let showWordnet = false;
+
+function conceptsWithWords(l) {
+  const codes = new Set(Object.keys(l.words));
+  if (showWordnet) for (const code of Object.keys(l.wordnet)) codes.add(code);
+  return codes;
+}
+
+function overlayFor(code) {
+  if (!language || !isConcept(code)) return null;
+  const checked = language.words[code] || [];
+  const unchecked = (showWordnet && language.wordnet[code]) || [];
+  return checked.length || unchecked.length
+    ? { kind: "word", checked, unchecked }
+    : { kind: "none" };
+}
+
+function overlayElement(info, max = 3) {
+  const span = document.createElement("span");
+  if (!info || info.kind === "none") return span;
+  span.className = "overlay";
+  let room = max;
+  for (const [forms, unchecked] of [[info.checked, false], [info.unchecked, true]]) {
+    if (!forms.length) continue;
+    const group = document.createElement("span");
+    group.className = unchecked ? "group unchecked" : "group";
+    const mark = document.createElement("span");
+    mark.className = unchecked ? "wn" : "dot";
+    mark.textContent = unchecked ? "◇" : "●";
+    mark.setAttribute("aria-hidden", "true");
+    const shown = forms.slice(0, Math.max(room, 0));
+    const hidden = forms.length - shown.length;
+    group.append(mark, document.createTextNode(shown.join(", ") + (hidden ? ` +${hidden}` : "")));
+    if (unchecked) {
+      group.title = "From an existing wordnet: not checked";
+      const note = document.createElement("span");
+      note.className = "sr";
+      note.textContent = " (from an existing wordnet, not checked)";
+      group.append(note);
+    }
+    room -= shown.length;
+    span.append(group);
+  }
+  span.lang = language.tag;
+  return span;
+}
+
+// ---- rendering ------------------------------------------------------------
+const CHEVRON = '<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1.5 6.5 5 3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+
+function nodeButton(code) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "node";
+  button.append(chips(code));
+  if (isConcept(code) || isHead(code)) {
+    const label = document.createElement("span");
+    label.className = "label";
+    label.textContent = isConcept(code) ? CONCEPTS[code].label : FEATURES[headOf(code)].label;
+    button.append(label);
+  }
+  return button;
+}
+
+function fillRow(row, node) {
+  const code = node.data.code;
+  const concept = CONCEPTS[code];
+  row.replaceChildren();
+  row.style.setProperty("--d", node.depth - 1);
+  row.setAttribute("role", "treeitem");
+  row.setAttribute("aria-level", node.depth);
+
+  const twisty = document.createElement("button");
+  twisty.type = "button";
+  twisty.className = "twisty" + (node.children ? "" : " leaf");
+  twisty.innerHTML = CHEVRON;
+  if (node.children) {
+    const open = expanded.has(node.data.id);
+    twisty.setAttribute("aria-expanded", open);
+    twisty.setAttribute("aria-label", `${open ? "Collapse" : "Expand"} ${code}`);
+    row.setAttribute("aria-expanded", open);
+    twisty.onclick = () => toggle(node);
+  } else {
+    twisty.tabIndex = -1;
+  }
+
+  const button = nodeButton(code);
+  button.onclick = () => {
+    // clicking a closed concept opens it as well as selecting it
+    if (node.children) expanded.add(node.data.id);
+    select(node);
+  };
+  if (concept && concept.parents.length > 1) {
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.textContent = `${concept.parents.length} hypernyms`;
+    badge.title = "Also under: " + concept.parents.join(", ");
+    button.append(badge);
+  }
+
+  const info = overlayFor(code);
+  row.classList.toggle("nodata", !!info && info.kind === "none");
+  const count = document.createElement("span");
+  count.className = "count";
+  if (concept) {
+    count.textContent = concept.languages ? `${concept.languages} lang` : "";
+    count.title = `${plural(concept.languages, "language")} have a word`;
+  } else {
+    count.textContent = plural(conceptsBelow(node).size, "concept");
+  }
+  const main = document.createElement("span");
+  main.className = "main";
+  main.append(button, overlayElement(info));
+  row.append(twisty, main, count);
+  row.classList.toggle("selected", node.data.id === selectedId);
+}
+
+function render() {
+  d3.select("#tree")
+    .selectAll("div.row")
+    .data(visibleNodes(), node => node.data.id)
+    .join("div")
+    .attr("class", "row")
+    .each(function (node) { fillRow(this, node); })
+    .order();
+}
+
+function toggle(node) {
+  if (expanded.has(node.data.id)) expanded.delete(node.data.id);
+  else expanded.add(node.data.id);
+  render();
+}
+
+function rowFor(id) {
+  return d3.select("#tree").selectAll("div.row").filter(node => node.data.id === id).node();
+}
+
+function reveal(node) {
+  expandTo(node);
+  selectedId = node.data.id;
+  render();
+  renderPanel();
+  writeHash();
+  const row = rowFor(node.data.id);
+  if (row) {
+    row.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    row.classList.remove("flash");
+    void row.offsetWidth;
+    row.classList.add("flash");
+  }
+}
+
+function select(node) {
+  selectedId = node.data.id;
+  render();
+  renderPanel();
+  writeHash();
+}
+
+function shallowest(code) {
+  return occurrences.get(code).reduce((a, b) => (b.depth < a.depth ? b : a));
+}
+
+// Go to a concept, preferring the occurrence nearest the current selection.
+function goTo(code, near) {
+  const all = occurrences.get(code);
+  if (!all) return;
+  const preferred = near ? [`${near}>${code}`, near.slice(0, near.lastIndexOf(">"))] : [];
+  reveal(all.find(n => preferred.includes(n.data.id)) || shallowest(code));
+}
+
+// Open the tree to every place a concept the language has a word for appears,
+// and close everything else.
+function showWords() {
+  if (!language) return;
+  expanded.clear();
+  expanded.add(ROOT);
+  // keep the part-of-speech groups open, so their tops show even without words
+  for (const pos of POS_GROUPS) expanded.add(`#${pos}`);
+  for (const code of conceptsWithWords(language)) {
+    for (const node of occurrences.get(code) || []) expandTo(node);
+  }
+  render();
+}
+
+function list(title, codes, near) {
+  const frag = document.createDocumentFragment();
+  const h = document.createElement("h3");
+  h.textContent = `${title} (${codes.length})`;
+  frag.append(h);
+  if (!codes.length) {
+    const p = document.createElement("p");
+    p.className = "empty";
+    p.textContent = "none";
+    frag.append(p);
+    return frag;
+  }
+  const ul = document.createElement("ul");
+  for (const code of codes) {
+    const li = document.createElement("li");
+    const button = nodeButton(code);
+    button.onclick = () => goTo(code, near);
+    li.append(button);
+    ul.append(li);
+  }
+  frag.append(ul);
+  return frag;
+}
+
+function featureList(code) {
+  const frag = document.createDocumentFragment();
+  const h = document.createElement("h3");
+  h.textContent = "Features";
+  const ul = document.createElement("ul");
+  ul.className = "features";
+  for (const part of code.split(";")) {
+    for (const value of part.split("+")) {
+      const feature = FEATURES[value];
+      const li = document.createElement("li");
+      const text = document.createElement("span");
+      text.textContent = feature ? `${feature.label} (${feature.slot})` : value;
+      li.append(chips(value), text);
+      if (feature?.ud) {
+        const ud = document.createElement("span");
+        ud.className = "ud";
+        ud.textContent = `UD ${feature.ud}`;
+        li.append(ud);
+      }
+      ul.append(li);
+    }
+  }
+  frag.append(h, ul);
+  return frag;
+}
+
+function renderPanel() {
+  const panel = document.getElementById("panel");
+  panel.replaceChildren();
+  const node = selectedId && byId.get(selectedId);
+  if (!node) {
+    panel.innerHTML = `<div class="help">
+      <p><strong>Select a concept</strong> to see its definition, its features, its hypernyms and hyponyms, and how the chosen language says it.</p>
+      <p>Concepts are grouped by part of speech (pronouns, determiners, pro-adverbs), then by head: <em>now</em>, <em>then</em> and <em>when</em> are all under <em>time</em>, and <em>person</em> and <em>thing</em> are under <em>entity</em>. Concepts without a head, such as the personal pronouns, follow the heads. Click a concept to open it. A concept with two hypernyms appears under each; the badge says so.</p>
+      <p>Choose a language to mark each concept with its words (<span style="color:var(--word)">●</span>). Concepts with no word are dimmed.</p>
+    </div>`;
+    return;
+  }
+  const code = node.data.code;
+  if (code.startsWith("#")) {
+    const pos = code.slice(1);
+    const h2 = document.createElement("h2");
+    h2.textContent = `${POS_NAMES[pos]}s`;
+    const p = document.createElement("p");
+    p.className = "def";
+    const headless = (CHILDREN.get(code) || []).filter(isConcept).length;
+    p.textContent = `${plural(conceptsBelow(node).size, "concept")}. Those with a head `
+      + "(person, place, time, …) are grouped under it"
+      + (headless ? `; the ${headless} without one, such as the personal pronouns, follow.` : ".");
+    panel.append(h2, p);
+    return;
+  }
+  if (isHead(code)) {
+    const head = headOf(code);
+    const feature = FEATURES[head];
+    const wrap = document.createElement("div");
+    wrap.className = "big";
+    wrap.append(chips(code));
+    const h2 = document.createElement("h2");
+    h2.textContent = feature.label;
+    const def = document.createElement("p");
+    def.className = "def";
+    def.textContent = feature.definition;
+    const dl = document.createElement("dl");
+    const parts = (EXPAND[head] || []).map(h => FEATURES[h]?.label || h);
+    for (const [term, value] of [
+      ["feature", `${head} (head)`],
+      ["stands for", parts.join(" or ")],
+      ["concepts", `${conceptsBelow(node).size} ${POS_NAMES[code.slice(code.indexOf(":") + 1)]}s`],
+    ]) {
+      if (!value) continue;
+      const dt = document.createElement("dt");
+      dt.textContent = term;
+      const dd = document.createElement("dd");
+      dd.textContent = value;
+      dl.append(dt, dd);
+    }
+    panel.append(wrap, h2, def, dl);
+    return;
+  }
+  const concept = CONCEPTS[code];
+
+  const wrap = document.createElement("div");
+  wrap.className = "big";
+  wrap.append(chips(code));
+  const h2 = document.createElement("h2");
+  h2.textContent = concept.label;
+  const def = document.createElement("p");
+  def.className = "def";
+  def.textContent = concept.definition;
+
+  const dl = document.createElement("dl");
+  for (const [term, value] of [
+    ["code", code],
+    ["part of speech", POS_NAMES[concept.pos]],
+    ["source", concept.source],
+    ["with a word", plural(concept.languages, "language")],
+  ]) {
+    const dt = document.createElement("dt");
+    dt.textContent = term;
+    const dd = document.createElement("dd");
+    dd.textContent = value;
+    dl.append(dt, dd);
+  }
+  panel.append(wrap, h2, def, dl);
+
+  if (language) {
+    const h = document.createElement("h3");
+    h.textContent = language.name;
+    const p = document.createElement("p");
+    p.className = "lang-words";
+    const info = overlayFor(code);
+    if (info.kind === "none") {
+      p.className = "empty";
+      p.textContent = "no word";
+    } else {
+      p.append(overlayElement(info, Infinity));
+    }
+    panel.append(h, p);
+  }
+  panel.append(featureList(code));
+  panel.append(list("Hypernyms", concept.parents, node.data.id));
+  panel.append(list("Hyponyms", CHILDREN.get(code) || [], node.data.id));
+}
+
+function renderLegend() {
+  const legend = document.getElementById("legend");
+  legend.replaceChildren();
+  for (const [group, name, example] of GROUPS) {
+    const item = document.createElement("span");
+    item.className = "item";
+    const chip = document.createElement("span");
+    chip.className = `chip ${group}`;
+    chip.textContent = example;
+    item.append(chip, document.createTextNode(name));
+    legend.append(item);
+  }
+  if (language) {
+    const sep = document.createElement("span");
+    sep.className = "sep";
+    legend.append(sep);
+    legend.insertAdjacentHTML("beforeend",
+      `<span class="item"><span style="color:var(--word)">●</span> has a word</span>`
+      + (showWordnet
+        ? `<span class="item"><span style="color:var(--muted)">◇</span> <span style="text-decoration:underline dotted var(--muted);text-underline-offset:3px">word from a wordnet, unchecked</span></span>`
+        : "")
+      + `<span class="item" style="opacity:.55">dimmed: no word</span>`);
+  }
+}
+
+function updateSummary() {
+  const summary = document.getElementById("lang-summary");
+  if (!language) {
+    summary.textContent = "";
+    return;
+  }
+  const extra = showWordnet
+    ? Object.keys(language.wordnet).filter(code => !language.words[code]).length
+    : 0;
+  summary.textContent = `${langOption(language)}: ${plural(Object.keys(language.words).length, "concept")} with words`
+    + (extra ? `, ${extra} more from wordnets (unchecked).` : ".");
+}
+
+function setShowWordnet(on) {
+  showWordnet = on;
+  document.getElementById("show-wordnet").checked = on;
+  document.getElementById("wordnet-note").hidden = !on;
+  updateSummary();
+  renderLegend();
+  if (language) showWords();
+  else render();
+  renderPanel();
+  writeHash();
+}
+
+function setLanguage(next) {
+  language = next;
+  const expandWords = document.getElementById("expand-words");
+  expandWords.disabled = !language;
+  expandWords.title = language
+    ? `Open the tree to every concept with a ${language.name} word, and close the rest`
+    : "Choose a language first";
+  updateSummary();
+  renderLegend();
+  if (language) showWords();
+  else render();
+  renderPanel();
+  writeHash();
+}
+
+// ---- state in the URL -----------------------------------------------------
+function writeHash() {
+  const params = new URLSearchParams();
+  const node = selectedId && byId.get(selectedId);
+  if (node && isConcept(node.data.code)) params.set("c", node.data.code);
+  if (language) params.set("lang", language.tag);
+  if (showWordnet) params.set("wn", "1");
+  const hash = params.toString();
+  history.replaceState(null, "", hash ? `#${hash}` : location.pathname + location.search);
+}
+
+function readHash() {
+  const params = new URLSearchParams(location.hash.slice(1));
+  if (params.get("wn") === "1") {
+    showWordnet = true;
+    document.getElementById("show-wordnet").checked = true;
+    document.getElementById("wordnet-note").hidden = false;
+  }
+  const lang = params.get("lang");
+  if (lang && byTag.has(lang)) {
+    document.getElementById("lang").value = lang;
+    setLanguage(byTag.get(lang));
+  }
+  const code = params.get("c");
+  if (code && occurrences.has(code)) goTo(code);
+}
+
+// ---- controls -------------------------------------------------------------
+const conceptOptions = new Map();
+for (const [code, concept] of Object.entries(CONCEPTS)) {
+  conceptOptions.set(`${code} — ${concept.label}`, code);
+}
+document.getElementById("concept-list").append(...[...conceptOptions.keys()].map(text => {
+  const option = document.createElement("option");
+  option.value = text;
+  return option;
+}));
+const collator = new Intl.Collator("en", { sensitivity: "base", ignorePunctuation: true });
+document.getElementById("lang").append(...[...LANGUAGES].sort((x, y) => collator.compare(x.name, y.name)).map(l => {
+  const option = document.createElement("option");
+  option.value = l.tag;
+  const extra = Object.keys(l.wordnet).filter(code => !l.words[code]).length;
+  option.textContent = `${langOption(l)} · ${plural(Object.keys(l.words).length, "concept")}`
+    + (extra ? ` (+${extra} wordnet)` : "");
+  return option;
+}));
+
+function findConcept(text) {
+  const t = text.trim();
+  if (!t) return null;
+  if (conceptOptions.has(t)) return conceptOptions.get(t);
+  if (CONCEPTS[t]) return t;
+  if (language) {
+    // a word in the chosen language: 我们 finds 1;Pl in Mandarin
+    const words = Object.entries(language.words)
+      .concat(showWordnet ? Object.entries(language.wordnet) : []);
+    const hit = words.find(([, forms]) => forms.includes(t))
+      || words.find(([, forms]) => forms.some(f => f.includes(t)));
+    if (hit && occurrences.has(hit[0])) return hit[0];
+  }
+  const lower = t.toLowerCase();
+  const exact = Object.keys(CONCEPTS).find(c => CONCEPTS[c].label.toLowerCase() === lower);
+  if (exact) return exact;
+  return Object.keys(CONCEPTS).find(c => c.toLowerCase().includes(lower)
+    || CONCEPTS[c].label.toLowerCase().includes(lower)) || null;
+}
+
+// Picking a suggestion fires only `input` (`change` waits for the field to lose
+// focus), so act on `input` as soon as the text is an exact match.
+const find = document.getElementById("find");
+function commitFind() {
+  const code = findConcept(find.value);
+  if (code) goTo(code);
+}
+find.addEventListener("input", () => {
+  const t = find.value.trim();
+  const code = conceptOptions.get(t) || (CONCEPTS[t] && t);
+  if (code) goTo(code);
+});
+find.addEventListener("change", commitFind);
+find.addEventListener("keydown", event => { if (event.key === "Enter") commitFind(); });
+
+const langSelect = document.getElementById("lang");
+langSelect.addEventListener("change", () => setLanguage(byTag.get(langSelect.value) || null));
+
+document.getElementById("expand-all").onclick = () => {
+  root.each(node => { if (node.children) expanded.add(node.data.id); });
+  render();
+};
+document.getElementById("collapse-all").onclick = () => {
+  expanded.clear();
+  expanded.add(ROOT);
+  for (const pos of POS_GROUPS) expanded.add(`#${pos}`);
+  render();
+};
+document.getElementById("expand-words").onclick = showWords;
+document.getElementById("show-wordnet").addEventListener("change", event => setShowWordnet(event.target.checked));
+
+{
+  const footer = document.getElementById("footer");
+  const readme = document.createElement("a");
+  readme.href = "https://github.com/fcbond/omw-pronoun#readme";
+  readme.textContent = "More details in the README";
+  footer.append(
+    `${plural(Object.keys(CONCEPTS).length, "concept")}, ${plural(LANGUAGES.length, "language")}, omw-pronoun ${DATA.version}. `
+    + "Built by build.py from the NTU Multilingual Corpus, Parabank, Haspelmath's indefinite pronouns, TUFS, existing wordnets and other sources. ",
+    readme, ".");
+}
+
+renderLegend();
+render();
+renderPanel();
+readHash();
+</script>
+</body>
+</html>

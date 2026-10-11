@@ -33,6 +33,7 @@ Usage: uv run build.py
 from __future__ import annotations
 
 import csv
+import json
 import logging
 import re
 import shutil
@@ -52,6 +53,8 @@ logger = logging.getLogger(__name__)
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
+#: the hierarchy browser, docs/hierarchy/index.html, and the data it shows
+BROWSER = HERE / "docs" / "hierarchy"
 BASE = "omw-pronoun"
 VERSION = "0.1"
 EMAIL = "bond@ieee.org"
@@ -165,6 +168,8 @@ SLOTS = {
     "gender": {"M", "F", "N"},
 }
 EXPAND = {
+    # an entity is a person or a thing: English *which* covers *who* and *what*
+    "Ent": {"Pers", "Thng"},
     "1": {"1e", "1i"},
     "Pl": {"Du", "Tr", "Gpl"},
     # distal is not proximal: English *that* covers Japanese *sore* and *are*
@@ -262,6 +267,8 @@ def subsumes(general: str, specific: str) -> bool:
     >>> subsumes("Ent;Sg;Dist", "Ent;Sg;Rem"), subsumes("Pers;Sg;Elec", "Pers;Sg;Neg")
     (True, False)
     >>> subsumes("Plc;Int", "Plc;Goal;Int"), subsumes("Plc;Loc;Int", "Plc;Goal;Int")
+    (True, False)
+    >>> subsumes("Ent;Int", "Thng;Int"), subsumes("Thng;Int", "Ent;Int")
     (True, False)
     """
     g, s = features(general), features(specific)
@@ -383,7 +390,14 @@ def add_ntumc(languages: dict[str, Language], codes: set[str]) -> None:
     for code, column, lemma, synset in ntumc_lemmas(codes):
         tag = NTUMC_LANGUAGES[column][0]
         language = languages[tag]
-        source = f"NTUMC {synset}"
+        # a Princeton synset NTUMC tags as a pronoun (here, all) carries the
+        # wordnet's words for it, which nobody has checked as pronouns
+        kind = (
+            "NTUMC"
+            if concept_table.ntumc_pronouns.is_inventory(synset)
+            else "NTUMC wordnet"
+        )
+        source = f"{kind} {synset}"
         if tag == "en" and lemma in paradigms and "Poss" not in code:
             head, case = paradigms[lemma]
             entry = language.entry(head, code)
@@ -404,6 +418,31 @@ def add_extra(languages: dict[str, Language], codes: set[str]) -> None:
             elif row["code"] in codes:
                 entry = languages[tag].entry(row["form"], row["code"])
                 entry.senses[row["code"]].add(row["source"])
+
+
+def add_wordnets(languages: dict[str, Language], codes: set[str]) -> None:
+    """Add words for the ILI-linked concepts from existing wordnets.
+
+    `wordnet_words.py` collects them in data/wordnet-words.tsv; nobody has
+    checked them as pronouns, so the browser shows them only on request. Only
+    languages that already have a lexicon get them.
+    """
+    with (DATA / "wordnet-words.tsv").open(encoding="utf8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            if row["tag"] in languages and row["concept"] in codes:
+                entry = languages[row["tag"]].entry(row["word"], row["concept"])
+                entry.senses[row["concept"]].add(row["source"])
+
+
+def unchecked_sources() -> set[str]:
+    """Sources of words nobody has checked as pronouns: existing wordnets."""
+    with (DATA / "wordnet-words.tsv").open(encoding="utf8") as handle:
+        return {row["source"] for row in csv.DictReader(handle, delimiter="\t")}
+
+
+def is_unchecked(source: str, wordnets: set[str]) -> bool:
+    """Whether a word's source is an existing wordnet, not a pronoun analysis."""
+    return source in wordnets or source.startswith("NTUMC wordnet ")
 
 
 def bcp47(iso: str) -> str:
@@ -591,6 +630,7 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
     for code, above in parents.items():
         for parent in above:
             children[parent].add(code)
+    linked = read_concept_ili()
     lines = [lexicon_open(BASE, "OMW pronoun concepts", "mul")]
     for c in concepts:
         eid = f"{BASE}-e-{slug(c['code'])}"
@@ -608,7 +648,8 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
     lines += feature_entries
     for c in concepts:
         code = c["code"]
-        ili = "in" if code in attested else ""
+        # an existing ILI where CILI has the concept, else a proposal
+        ili = linked.get(code) or ("in" if code in attested else "")
         lines.append(
             f'    <Synset id="{BASE}-{slug(code)}" ili="{ili}" partOfSpeech="{c["pos"]}"'
             f' lexicalized="false" lexfile="{LEXFILES[c["pos"]]}"'
@@ -803,6 +844,7 @@ def write_features(
 def write_language(language: Language, definitions: dict[str, str]) -> list[str]:
     """One language's standalone lexicon of words."""
     lid = f"{BASE}-{language.tag}"
+    linked = read_concept_ili()
     lines = [lexicon_open(lid, f"OMW pronouns: {language.name}", language.tag)]
     used = set()
     for index, entry in enumerate(
@@ -835,7 +877,8 @@ def write_language(language: Language, definitions: dict[str, str]) -> list[str]
         lines.append("    </LexicalEntry>")
     for code in sorted(used):
         lines.append(
-            f'    <Synset id="{lid}-{slug(code)}" ili="" partOfSpeech="{POS[code]}"'
+            f'    <Synset id="{lid}-{slug(code)}" ili="{linked.get(code, "")}"'
+            f' partOfSpeech="{POS[code]}"'
             f' lexfile="{LEXFILES[POS[code]]}"'
             + attrs([("dc:identifier", f"pronoun:{code}")])
             + ">"
@@ -864,6 +907,96 @@ def write_package(collection: Path, lexicon_id: str, body: list[str]) -> None:
     )
 
 
+def read_concept_ili() -> dict[str, str]:
+    """Concepts with an exact counterpart in CILI (data/concept-ili.tsv) -> its ILI.
+
+    Only ``exact`` rows link; ``related`` rows record near misses, such as
+    OEWN's *someone*, which is *person* "a human being", not the pronoun.
+    """
+    with (DATA / "concept-ili.tsv").open(encoding="utf8") as handle:
+        return {
+            row["concept"]: row["ili"]
+            for row in csv.DictReader(handle, delimiter="\t")
+            if row["relation"] == "exact"
+        }
+
+
+#: parts of speech, as the browser names them
+POS_NAMES = {"n": "pronoun", "a": "determiner", "r": "pro-adverb"}
+
+
+def write_browser_data(
+    concepts: list[dict[str, str]], languages: dict[str, Language]
+) -> None:
+    """Write the data for the hierarchy browser as a script, `window.PRONOUNS`.
+
+    A script rather than JSON, so the page also works opened from disk. Each
+    concept lists its nearest hypernyms (`hypernyms`); each feature its slot and
+    label; each language its checked words, by concept (`words`), and the words
+    found only in an existing wordnet, which nobody has checked (`wordnet`).
+    """
+    codes = [c["code"] for c in concepts]
+    parents = hypernyms(codes, POS)
+    wordnets = unchecked_sources()
+    words: dict[str, dict[str, list[str]]] = {}
+    unchecked: dict[str, dict[str, list[str]]] = {}
+    for tag, language in languages.items():
+        checked: dict[str, list[str]] = defaultdict(list)
+        others: dict[str, list[str]] = defaultdict(list)
+        for entry in language.entries.values():
+            for code, sources in entry.senses.items():
+                ok = not all(is_unchecked(s, wordnets) for s in sources)
+                target = checked if ok else others
+                if entry.lemma not in target[code]:
+                    target[code].append(entry.lemma)
+        words[tag] = dict(checked)
+        unchecked[tag] = dict(others)
+    speakers: dict[str, int] = defaultdict(int)
+    for by_code in words.values():
+        for code in by_code:
+            speakers[code] += 1
+    order = {code: i for i, code in enumerate(codes)}
+    data = {
+        "version": VERSION,
+        "pos": POS_NAMES,
+        "features": {
+            abbr: {
+                "slot": row["slot"],
+                "label": row["label"],
+                "ud": row["ud"],
+                "definition": row["definition"],
+            }
+            for abbr, row in read_features().items()
+        },
+        # what each unmarked value stands for: the browser groups concepts by
+        # head, and Pers and Thng under Ent
+        "expand": {value: sorted(values) for value, values in EXPAND.items()},
+        "concepts": {
+            c["code"]: {
+                "label": c["label"],
+                "definition": c["definition"],
+                "pos": c["pos"],
+                "source": c["source"],
+                "languages": speakers[c["code"]],
+                "parents": sorted(parents[c["code"]], key=order.__getitem__),
+            }
+            for c in concepts
+        },
+        "languages": [
+            {
+                "name": languages[tag].name,
+                "tag": tag,
+                "words": words[tag],
+                "wordnet": unchecked[tag],
+            }
+            for tag in sorted(languages, key=lambda t: languages[t].name)
+        ],
+    }
+    BROWSER.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+    (BROWSER / "data.js").write_text(f"window.PRONOUNS = {text};\n", encoding="utf8")
+
+
 def main() -> None:
     """Build the collection and data/lexicons.tsv."""
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -877,6 +1010,7 @@ def main() -> None:
     add_haspelmath(languages, codes)
     add_tufs(languages, codes)
     add_extra(languages, codes)
+    add_wordnets(languages, codes)
     remap(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}
     attested = {
@@ -904,6 +1038,7 @@ def main() -> None:
             )
     with tarfile.open(collection.parent / f"{collection.name}.tar.xz", "w:xz") as tar:
         tar.add(collection, arcname=collection.name)
+    write_browser_data(concepts, languages)
     logger.info(
         "%d concepts (%d attested), %d languages",
         len(codes),

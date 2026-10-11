@@ -213,11 +213,11 @@ def define(code: str) -> str:
 
 def ntumc_concepts(db: Path) -> dict[str, list[str]]:
     """Caseless code -> NTUMC synsets, for synsets in the current database."""
+    extra = ntumc_pronouns.extra()
     current = {
         synset
-        for (synset,) in sqlite3.connect(db).execute(
-            "SELECT synset FROM synset WHERE synset LIKE '7700%'"
-        )
+        for (synset,) in sqlite3.connect(db).execute("SELECT synset FROM synset")
+        if synset.startswith("7700") or (extra.get(synset) or {}).get("code")
     }
     by_code: dict[str, list[str]] = defaultdict(list)
     for row in ntumc_pronouns.read(db):
@@ -246,7 +246,12 @@ def pos_of(code: str, ntumc: dict[str, list[str]], extra_pos: dict[str, str]) ->
     from several NTUMC synsets takes the most nominal. A possessive with no head is
     a determiner (*my*; Parabank's possessives are these).
     """
-    found = {synset[-1] for synset in ntumc.get(code, [])}
+    extra = ntumc_pronouns.extra()
+    # a curated synset's part of speech can differ from Princeton's: everywhere
+    found = {
+        (extra.get(synset) or {}).get("pos") or synset[-1]
+        for synset in ntumc.get(code, [])
+    }
     parts = code.split(";")
     default = "a" if "Poss" in parts and parts[0] != "Ent" else "n"
     return next((p for p in "nar" if p in found), extra_pos.get(code) or default)

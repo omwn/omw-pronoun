@@ -10,8 +10,9 @@ uv run ntumc_pronouns.py     # NTUMC pronoun synsets -> data/ntumc-pronouns.tsv
 uv run parabank_words.py     # Parabank paradigms   -> data/parabank-lexemes.tsv
 uv run tufs_pronouns.py      # TUFS pro-forms       -> data/tufs-pronouns.tsv (curated in data/tufs-curation.tsv)
 uv run haspelmath_series.py  # indefinite series    -> data/haspelmath-series.tsv
+uv run wordnet_words.py      # words via the ILI    -> data/wordnet-words.tsv
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
-uv run build.py              # wn collection        -> release/omw-pronoun-0.1(.tar.xz)
+uv run build.py              # wn collection        -> release/omw-pronoun-0.1(.tar.xz), docs/hierarchy/data.js
 uv run --with pytest --with langcodes --with language_data pytest
 ```
 
@@ -19,6 +20,14 @@ Sources are read from sibling clones: `../NTUMC` (built database), `../tufs`, an
 `../parabank-pronouns` (github.com/SimonGreenhill/pronouns, pinned by commit).
 
 ## Concepts and codes
+
+`FEATURES.md` lists every feature and gives the algebra that combines them into
+codes and orders the codes into the hierarchy. `docs/hierarchy/index.html`
+browses the hierarchy, grouped by part of speech and then by head (as in the
+release, where each pronoun is also a hyponym of its head's feature synset),
+drawing each concept as its features, with one language's
+words marked on it; open it from disk, or serve `docs/` with GitHub Pages.
+`build.py` writes the data it reads, `docs/hierarchy/data.js`.
 
 Concepts follow the componential analysis of Seah & Bond (2014), "Annotation of
 Pronouns in a Multilingual Corpus of Mandarin Chinese, English and Japanese"
@@ -41,7 +50,8 @@ alternatives joined by `+`:
   and `Pl` is *non-singular*, as in the paper (English *we* is `1;Pl`). Where a
   dual or trial contrasts, the plural alone is `Gpl`, greater plural. `Dist` is
   *not proximal*, medial or remote: English *that* is `Dist`, Japanese *sore* is
-  `Med` and *are* `Rem`, both under it.
+  `Med` and *are* `Rem`, both under it. `Ent` is a person or a thing, so *who*
+  (`Pers;Int`) and *what* (`Thng;Int`) are under *which* (`Ent;Int`).
 - **Direction** splits place pro-forms where a language does: Czech *kde* "where"
   is `Plc;Loc;Int`, *kam* "where to" `Plc;Goal;Int`, *odkud* "where from"
   `Plc;Src;Int`. English *where* marks none, so it is `Plc;Int`, above all three.
@@ -59,21 +69,28 @@ alternatives joined by `+`:
 - **Bound forms** (affixes) are variants of the free pronoun when their cells are
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
-The inventory (`data/concepts.tsv`, 191 concepts; 28 possessive determiners and
+The inventory (`data/concepts.tsv`, 210 concepts; 28 possessive determiners and
 8 possessive pronouns) comes
 from:
 
 - **NTUMC**: its pronoun synsets (`770000xx`), from the current database, with
   subjective and objective case removed. The feature analysis is read from the wordnet itself: the head is
   the hypernym, features are `dmnu` links to feature synsets, and *kind*/*manner*
-  are `attr` links.
+  are `attr` links. NTUMC also tags 35 synsets outside that inventory as
+  pronouns: Princeton's *here*, *there*, *everywhere*, *all*, *each*, and a few
+  of its own (Indonesian *aku*, *kami*, Mandarin 其). `data/ntumc-extra.tsv`
+  checks each by hand: 24 give concepts, with corrected codes and parts of speech
+  (NTUMC reads *there* "a location other than here" as *other*; *everywhere* is a
+  place pronoun, not an adverb), and 11 are skipped with a reason (*someone* is the
+  synset *person*; *nothing* shares one with *zero*).
 - **Parabank**: combinations NTUMC lacks (dual, greater plural, clusivity in the
   dual, number-neutral *you*, and their possessives), admitted by the KinDiv rule: >= 5 language
   families in >= 3 macroareas.
 - **`data/extra-concepts.tsv`**: curated additions, so far seven from TUFS Japanese
   (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい), 20 from the TUFS
-  curation and nine for direction (Czech, Polish, German and Russian; curated
-  lemmas in `data/extra-lemmas.tsv`).
+  curation, nine for direction (Czech, Polish, German and Russian) and two for
+  time deixis, *now* (`Tim;Prox`, also TUFS 今 in 7 languages) and *then*
+  (`Tim;Dist`), with curated lemmas in `data/extra-lemmas.tsv`.
 - **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts:
   Japanese あれ, あいつ, あちら are remote, not "distal and remote", and Mandarin
   那样 / Indonesian *begitu* are two-way distal.
@@ -122,15 +139,30 @@ we = en.synsets("we")[0]
 concept[we.metadata()["identifier"]].hypernyms()  # pronoun:1+2;Pl
 ```
 
-Wn's `expand="omw-pronoun"` does **not** work yet: it matches synsets by ILI,
-and every pronoun concept is a proposal (`ili="in"`), which has no ILI until
-CILI assigns one.
+**ILI links** (`data/concept-ili.tsv`): six concepts have an exact counterpart in
+CILI and carry its ILI, in the concept lexicon and in every language lexicon:
+*here* `Plc;Prox` (i81667), *there* `Plc;Dist` (i81668), *now* `Tim;Prox`
+(i116653), *then* `Tim;Dist` (i117639), the determiner *both* `Du;Univ` (i12555)
+and *so*, *thus* `Mnr;Prox+Dist` (i18911). Only `exact` rows link; `related`
+rows record near misses, such as OEWN's *someone*, which is *person* "a human
+being" (the head feature `Pers`), not the indefinite pronoun. Princeton WordNet
+has no personal pronouns, so most concepts have nothing to link to.
+
+Wn's `expand="omw-pronoun"` works only for those six: it matches synsets by
+ILI, and every other pronoun concept is a proposal (`ili="in"`), which has no
+ILI until CILI assigns one.
 
 ## Words
 
 - **NTUMC** (English, Mandarin, Japanese, Indonesian, Czech, ...). English case
   forms are paired with their lemma by `data/eng-paradigms.tsv`.
 - **`data/extra-lemmas.tsv`**: curated words (Japanese from TUFS).
+- **Existing wordnets** (`wordnet_words.py`, `data/wordnet-words.tsv`): the
+  words of every Cygnet wordnet, and of the NTU wordnets, for the six concepts
+  linked to the ILI, in 20 languages with a lexicon. Words of the Princeton
+  synsets in `data/ntumc-extra.tsv` count with them. Nobody has checked these as
+  pronouns (Indonesian *waktu* "time" comes in for *then*), so the browser shows
+  them only on request, marked as unchecked.
 - **Parabank Pronoun** (Greenhill et al., CC BY 4.0): one lexeme per set of
   cells sharing a row of case forms. Caveats:
   - Its gender slots are positional (English *she* is in `3sg_n`, Hindi uses them

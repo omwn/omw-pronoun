@@ -1,0 +1,13 @@
+concept	ili	relation	oewn_synset	oewn_lemma	note
+Plc;Prox	i81667	exact	oewn-08506507-n	here	the present location; this place
+Plc;Dist	i81668	exact	oewn-08506637-n	there	a location other than here; that place (distal: not proximal)
+Tim;Prox	i116653	exact	oewn-15144861-n	now	the momentary present
+Tim;Dist	i117639	exact	oewn-15321597-n	then	that time; that moment
+Du;Univ	i12555	exact	oewn-02275890-s	both	(used with count nouns) two considered together; the two; the determiner
+Mnr;Prox+Dist	i18911	exact	oewn-00122019-r	thus, thusly, so	in the way indicated
+Pers;Sg;Asrt	i35562	related	oewn-00007846-n	someone	OEWN's someone is in person "a human being", the head feature Pers, not the indefinite pronoun
+Ent;Du;Univ	i12555	related	oewn-02275890-s	both	the determiner both; the pronoun (both of them) has no synset
+Knd;Prox+Dist	i8532	related	oewn-01558587-s	such	OEWN's such is of degree ("so extreme"), not of kind
+Pers;Sg;Neg	i88993	related	oewn-09942876-n	nobody	a person of no influence, not the negative pronoun
+Ent;Sg;Univ		related	oewn-90004801-n	everything	all things that are of importance to a person (no ILI)
+Rsn;Int	i84881	related	oewn-09202503-n	why	the cause or intention underlying an action, a noun, not the interrogative

@@ -36,3 +36,5 @@ Plc;Src;Prox	n	direction	from here, hence: Czech odsud, Russian отсюда, Po
 Plc;Goal;Dist	n	direction	(to) there, thither: German dorthin, Russian туда
 Plc;Src;Dist	n	direction	from there, thence: Czech odtamtud, Russian оттуда, Polish stamtąd
 Plc;Loc;Dist	n	direction	there (at): German dort, Russian там
+Tim;Prox	n	time deixis	now: TUFS 今 (8987) in 7 languages; English now, Czech teď, German jetzt, Polish teraz, Russian сейчас, Mandarin 现在
+Tim;Dist	n	time deixis	then (at that time): English then, Czech tehdy, German damals, Polish wtedy, Russian тогда, Mandarin 那时
