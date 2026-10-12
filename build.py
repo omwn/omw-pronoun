@@ -59,7 +59,7 @@ BASE = "omw-pronoun"
 VERSION = "0.1"
 EMAIL = "bond@ieee.org"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
-URL = "https://github.com/fcbond/omw-pronoun"
+URL = "https://github.com/omwn/omw-pronoun"
 CITATION = (
     "Yu Jie Seah and Francis Bond (2014) Annotation of Pronouns in a Multilingual "
     "Corpus of Mandarin Chinese, English and Japanese. ISA-10."

@@ -9,6 +9,8 @@
 :root {
   color-scheme: light;
   --page: #f9f9f7;
+  --draft-bg: rgba(237, 161, 0, 0.14);
+  --draft-border: rgba(237, 161, 0, 0.55);
   --surface: #fcfcfb;
   --ink: #0b0b0b;
   --ink-2: #52514e;
@@ -89,6 +91,12 @@ button, input, select { font: inherit; color: inherit; }
 
 .wrap { max-width: 1280px; margin: 0 auto; padding: 20px 16px 40px; }
 header h1 { font-size: 20px; margin: 0 0 4px; font-weight: 650; }
+header p.draft {
+  margin: 0 0 8px; padding: 6px 10px; max-width: 75ch;
+  color: var(--ink); background: var(--draft-bg);
+  border: 1px solid var(--draft-border); border-radius: 6px;
+}
+header p.draft strong { letter-spacing: 0.06em; }
 header p { margin: 0; color: var(--ink-2); max-width: 75ch; }
 
 .controls {
@@ -239,7 +247,8 @@ footer { margin-top: 18px; font-size: 12px; color: var(--muted); }
 <div class="wrap">
   <header>
     <h1>OMW pronoun hierarchy</h1>
-    <p>Each concept is shown as its features: <span class="chips"><span class="chip person">1e</span><span class="chip number">Du</span></span> is “we two, not you”. A concept sits below every concept whose features contain its own, within its part of speech, so some concepts appear under two hypernyms. See <a href="https://github.com/fcbond/omw-pronoun/blob/main/FEATURES.md">FEATURES.md</a> for the algebra.</p>
+    <p class="draft" role="note"><strong>DRAFT</strong> — this hierarchy is still being checked: concepts, codes, links and words may change.</p>
+    <p>Each concept is shown as its features: <span class="chips"><span class="chip person">1e</span><span class="chip number">Du</span></span> is “we two, not you”. A concept sits below every concept whose features contain its own, within its part of speech, so some concepts appear under two hypernyms. See <a href="https://github.com/omwn/omw-pronoun/blob/main/FEATURES.md">FEATURES.md</a> for the algebra.</p>
   </header>
 
   <div class="controls">
@@ -927,7 +936,7 @@ document.getElementById("show-wordnet").addEventListener("change", event => setS
 {
   const footer = document.getElementById("footer");
   const readme = document.createElement("a");
-  readme.href = "https://github.com/fcbond/omw-pronoun#readme";
+  readme.href = "https://github.com/omwn/omw-pronoun#readme";
   readme.textContent = "More details in the README";
   footer.append(
     `${plural(Object.keys(CONCEPTS).length, "concept")}, ${plural(LANGUAGES.length, "language")}, omw-pronoun ${DATA.version}. `

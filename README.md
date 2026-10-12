@@ -1,7 +1,7 @@
 # OMW pronouns
 
 A multilingual wordnet of pronouns, built the same way as the
-[KinDiv kinship wordnet](https://github.com/fcbond/KinDiv): every concept is a
+[OMW kinship wordnet](https://github.com/omwn/omw-kinship): every concept is a
 bundle of features with a compositional code, shared by all languages and proposed
 to the Collaborative Interlingual Index.
 
