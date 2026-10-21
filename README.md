@@ -20,6 +20,24 @@ uv run --with pytest --with langcodes --with language_data pytest
 Sources are read from sibling clones: `../NTUMC` (built database), `../tufs`, and
 `../parabank-pronouns` (github.com/SimonGreenhill/pronouns, pinned by commit).
 
+## The Cygnet site
+
+`docs/` is also a [Cygnet](https://github.com/omwn/cygnet) site, browsing the
+collection with OEWN as its English base (configured in `etc/`):
+
+```
+bash cygnet.sh   # release/omw-pronoun-0.1/ -> docs/pronoun-cygnet.db.gz, docs/pronoun-provenance.db.gz
+bash run.sh      # serve docs/ locally
+```
+
+It needs a clone of Cygnet next to this repository. The databases are
+gitignored: attach them to the GitHub release, and the Pages workflow
+(`.github/workflows/pages.yml`) downloads them when it deploys. Each concept has
+a stable link by its synset id, which is what an ILI proposal's `dc:source`
+points to: `https://omwn.org/omw-pronoun/#/search?id=omw-pronoun-1-Pl`.
+The six concepts linked to an existing ILI are merged into the CILI concept, so
+they are reached by searching for the ILI instead (`#/search?q=i81667`).
+
 ## Concepts and codes
 
 `FEATURES.md` lists every feature and gives the algebra that combines them into

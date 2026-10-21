@@ -1,0 +1,38 @@
+{
+  "title": "OMW Pronouns",
+  "name": "omw-pronoun",
+  "tagline": "Pronouns as bundles of features, across languages",
+  "icon": "👥",
+
+  "searchLanguage": "en",
+  "displayLanguage": "en",
+
+  "databases": {
+    "main": {
+      "filename": "pronoun-cygnet.db.gz",
+      "url": "https://github.com/omwn/omw-pronoun/releases/latest/download/pronoun-cygnet.db.gz",
+      "description": "The pronoun concepts and their features, with their hierarchy, definitions and words in every language."
+    },
+    "provenance": {
+      "filename": "pronoun-provenance.db.gz",
+      "url": "https://github.com/omwn/omw-pronoun/releases/latest/download/pronoun-provenance.db.gz",
+      "description": "Provenance records tracing every data point back to its source and original identifier."
+    }
+  },
+
+  "logo": {
+    "src": "",
+    "url": "https://github.com/omwn/omw-pronoun",
+    "alt": ""
+  },
+
+  "about": {
+    "intro": "<p>OMW Pronouns is a multilingual wordnet of pronouns and other pro-forms. Every concept is a bundle of features (person, number, deixis, ...) with a compositional code, shared by all languages and proposed to the Collaborative Interlingual Index.  Words come from NTUMC, the TUFS Basic Vocabulary, Parabank Pronoun and Haspelmath's indefinite-pronoun series.</p><p>Source and data on <a href='https://github.com/omwn/omw-pronoun' style='text-decoration:underline'>GitHub</a>; the hierarchy can also be browsed as feature diagrams in the <a href='hierarchy/' style='text-decoration:underline'>hierarchy browser</a>.</p>",
+    "citation": "If you use OMW Pronouns, please cite Seah and Bond (2014) for the analysis of pronouns.  For the interface, please cite Maudslay and Bond (2026).",
+    "languageData": "Concepts and words come from NTUMC, the TUFS Basic Vocabulary, Parabank Pronoun (Greenhill et al.) and Haspelmath (1997)."
+  },
+
+  "publications": [
+    "Yu Jie Seah and Francis Bond (2014) Annotation of Pronouns in a Multilingual Corpus of Mandarin Chinese, English and Japanese. In <em>Proceedings of the 10th Joint ACL-ISO Workshop on Interoperable Semantic Annotation (ISA-10)</em>."
+  ]
+}
