@@ -261,6 +261,13 @@ Only where a language distinguishes them; English *where* marks none, so it is
 | `Goal` | goal: to a place | Czech *kam* "where to" | `Plc;Int;Goal` |
 | `Src` | source: from a place | Czech *odkud* "where from" | `Plc;Int;Src` |
 
+Direction is meaning whether a language spells it with separate words or with
+case: Turkish *nerede*, *nereye*, *nereden* (locative, dative, ablative of
+*nere*) are `Plc;Int;Loc`, `Plc;Int;Goal`, `Plc;Int;Src`, like Czech *kde*,
+*kam*, *odkud*. Only the grammatical cases, subjective and objective, are
+inflection and are dropped from codes. A postposition is not part of the word:
+Japanese どこへ "to where" is a phrase, not a pro-form.
+
 ### Register
 
 Restrictions on the speaker, from the NTU wordnet. Not to be confused with the

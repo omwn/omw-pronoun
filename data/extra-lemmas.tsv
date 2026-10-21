@@ -58,3 +58,8 @@ pl	wtedy	Tim;Dist	curated	time deixis
 ru	тогда	Tim;Dist	curated	time deixis
 cmn	那时	Tim;Dist	curated	time deixis
 jpn	どっち	Plc;Int;Infml	curated	casual "where, which way"; TUFS 1741 is only "which (of two)"
+tr	nereden	Plc;Int;Src	curated	direction
+tr	buraya	Plc;Prox;Goal	curated	direction
+tr	buradan	Plc;Prox;Src	curated	direction
+tr	oraya	Plc;Dist;Goal	curated	direction
+tr	oradan	Plc;Dist;Src	curated	direction

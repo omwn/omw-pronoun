@@ -109,10 +109,12 @@ German, Polish, Russian and Mandarin. They are pronouns (`n`), like *here* and
 - Nothing covers both, as `Plc;Prox+Dist` covers both places, so *now* and *then*
   are tops of the hierarchy.
 
-- Where direction is a semantic case (Turkish *nerede*, *nereye*, *nereden*;
-  Japanese どこへ), is it inflection, like subjective and objective, or meaning,
-  like the possessive? The TUFS Turkish rows are still plain `Plc;Int` and
-  `Plc;Prox`/`Plc;Dist`.
+- Decided 2026-10-21: direction marked by case is meaning, like the possessive,
+  not inflection like subjective and objective. Turkish *nerede*, *nereye*,
+  *nereden*, *burada* ... are coded `Plc;Int;Loc` ...; Japanese どこへ is a
+  phrase and stays out. Still to check: Mongolian *хаана* "where" against
+  *хаашаа* "where to" and *хаанаас* "from where", and Burmese forms with -က
+  (ဟိုက "over there, from there"), which TUFS leaves plain.
 - Czech and Polish *tam* "there, to there" do not split location from goal, so
   they stay `Plc;Dist`; Russian *там* and German *dort* are location only.
 - English *whither*, *whence*, *hither*, *thither*, *hence*, *thence* would be

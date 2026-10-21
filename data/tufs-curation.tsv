@@ -233,7 +233,7 @@ ru	837	私たち	мы	мы	1;Pl	pronoun	high
 ru	836	私（わたし）	я	я	1;Sg	pronoun	high	
 ru	849	自分	сам	сам	Pers;Refl	pronoun	medium	emphatic/intensifier self; reflexive proper is себя
 tr	1582	あっち	orası,orada	orası	Plc;Dist	pronoun	high	NEW; 'that place'; o-series
-tr	1582	あっち	orası,orada	orada	Plc;Dist	pronoun	high	NEW; locative of ora
+tr	1582	あっち	orası,orada	orada	Plc;Dist;Loc	pronoun	high	NEW; locative of ora: location, as against oraya goal and oradan source
 tr	1730	あなた	siz	siz	2;Pl	pronoun	high	
 tr	1730	あなた	siz	siz	2;Sg;Fml;Pol	pronoun	high	
 tr	1722	あの	o	o	Dist	pronoun	high	determiner
@@ -243,19 +243,19 @@ tr	1539	いくつ	kaç	kaç	Qnt;Int	pronoun	high
 tr	1540	いくら	ne kadar	ne kadar	Qnt;Int	pronoun	high	lexicalized
 tr	1914	いつ	ne zaman	ne zaman	Tim;Int	pronoun	high	lexicalized
 tr	1581	こちら	burası,burada	burası	Plc;Prox	pronoun	high	'this place'
-tr	1581	こちら	burası,burada	burada	Plc;Prox	pronoun	high	locative of bura
+tr	1581	こちら	burası,burada	burada	Plc;Prox;Loc	pronoun	high	locative of bura: location, as against buraya goal and buradan source
 tr	1731	この	bu	bu	Prox	pronoun	high	determiner
 tr	1731	この	bu	bu	Ent;Sg;Prox	pronoun	high	pronoun
 tr	1736	こんな	böyle	böyle	Knd;Prox	pronoun	high	adjectival 'such, like this'
 tr	1736	こんな	böyle	böyle	Mnr;Prox	pronoun	high	adverbial 'like this'
 tr	1738	そう	öyle	öyle	Mnr;Dist	pronoun	high	NEW; 'like that'; o-series
 tr	1582	そちら	orası,orada	orası	Plc;Dist	pronoun	high	NEW; 'that place'; o-series
-tr	1582	そちら	orası,orada	orada	Plc;Dist	pronoun	high	NEW; locative of ora
+tr	1582	そちら	orası,orada	orada	Plc;Dist;Loc	pronoun	high	NEW; locative of ora: location, as against oraya goal and oradan source
 tr	1727	だれ	kim	kim	Pers;Int	pronoun	high	
 tr	1726	だれか	kimse	kimse	Pers;Sg;Neg	pronoun	medium	'nobody' (with negation), 'anyone' in questions; heading だれか (someone = biri)
-tr	387	どこ	nereye	nereye	Plc;Int	pronoun	high	dative 'to where'
+tr	387	どこ	nereye	nereye	Plc;Int;Goal	pronoun	high	dative of nere: goal, 'to where'
 tr	1584	どちら	neresi,nerede	neresi	Plc;Int	pronoun	high	'which place'
-tr	1584	どちら	neresi,nerede	nerede	Plc;Int	pronoun	high	locative
+tr	1584	どちら	neresi,nerede	nerede	Plc;Int;Loc	pronoun	high	locative of nere: location, as against nereye goal and nereden source
 tr	1727	どなた	kim	kim	Pers;Int	pronoun	high	not polite; heading どなた
 tr	1734	どの	hangi	hangi	Int	pronoun	high	
 tr	1733	どんな	nasıl	nasıl	Mnr;Int	pronoun	high	'how'; also 'what kind of' adjectivally; heading どんな
