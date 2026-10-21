@@ -12,6 +12,7 @@ Chinese, English and Japanese" (ISA-10). Each is a bundle of features:
     head        person, thing, entity, place, time, manner, reason, quantifier
     person      1, 2, 3 (1 split into inclusive/exclusive)
     number      singular, dual, plural
+    domain      of two (choice from two: either, which of the two)
     gender      masculine, feminine, neuter
     case        subjective, objective, possessive
     type        assertive, elective, negative, universal, interrogative,
@@ -23,9 +24,8 @@ Chinese, English and Japanese" (ISA-10). Each is a bundle of features:
 In the wordnet the head is the synset's hypernym and most other features are
 ``dmnu`` (domain of usage) links to feature synsets; the rest are only in the
 definition text, so both are read. Codes the NTUMC analysis gets wrong are
-corrected from ``data/ntumc-fixes.tsv`` (Japanese *are* is remote, not distal
-and remote), which can also drop a lemma from a synset (English *either* is not
-*both*); the feature columns keep NTUMC's analysis.
+corrected from ``data/ntumc-fixes.tsv`` (the pronoun *either* is singular), which
+can also drop a lemma from a synset; the feature columns keep NTUMC's analysis.
 
 NTUMC also tags some synsets outside its pronoun inventory as pronouns: Princeton
 *here*, *there*, *everywhere*, *all*, *each*, and a few of its own (Indonesian
@@ -54,6 +54,7 @@ FEATURES = [
     "class",
     "person",
     "number",
+    "domain",
     "gender",
     "case",
     "type",
@@ -77,6 +78,7 @@ VALUES = {
     "singular": ("number", "sg"),
     "plural": ("number", "pl"),
     "dual": ("number", "du"),
+    "of two": ("domain", "two"),
     "masculine": ("gender", "m"),
     "feminine": ("gender", "f"),
     "neuter": ("gender", "n"),
@@ -153,6 +155,7 @@ ABBREVIATIONS = {
     },
     "person": {"1": "1", "1i": "1i", "1e": "1e", "2": "2", "3": "3"},
     "number": {"sg": "Sg", "du": "Du", "pl": "Pl"},
+    "domain": {"two": "Two"},
     "gender": {"m": "M", "f": "F", "n": "N"},
     "case": {"subj": "Subj", "obj": "Obj", "poss": "Poss"},
     "type": {

@@ -120,18 +120,18 @@ Ent;Sg;Oth	n	entity singular other pronoun	an entity singular other pronoun	NTUM
 Ent;Sg;Prox	n	entity singular proximal pronoun	an entity singular proximal pronoun	NTUMC	77000061-n	0	0	0
 Ent;Sg;Prox+Dist	n	entity singular proximal or distal pronoun	an entity singular proximal or distal pronoun	TUFS curation		0	0	0
 Ent;Sg;Rem	n	entity singular remote pronoun	an entity singular remote pronoun	NTUMC	77000059-n	0	0	0
-Ent;Sg;Two;Elec	n	entity singular Two elective existential pronoun	an entity singular Two elective existential pronoun	NTUMC	77000074-n	0	0	0
-Ent;Sg;Two;Neg	n	entity singular Two negative pronoun	an entity singular Two negative pronoun	NTUMC	00524607-n	0	0	0
+Ent;Sg;Two;Elec	n	entity singular elective existential pronoun of two	an entity singular elective existential pronoun of two	NTUMC	77000074-n	0	0	0
+Ent;Sg;Two;Neg	n	entity singular negative pronoun of two	an entity singular negative pronoun of two	NTUMC	00524607-n	0	0	0
 Ent;Sg;Univ	n	entity singular universal pronoun	an entity singular universal pronoun	NTUMC	02269635-n 77000078-n	0	0	0
-Ent;Two;Fml;Med	n	entity Two formal medial pronoun	an entity Two formal medial pronoun	NTUMC	77000071-n	0	0	0
-Ent;Two;Fml;Prox	n	entity Two formal proximal pronoun	an entity Two formal proximal pronoun	NTUMC	77000072-n	0	0	0
-Ent;Two;Fml;Rem	n	entity Two formal remote pronoun	an entity Two formal remote pronoun	NTUMC	77000070-n	0	0	0
-Ent;Two;Infml;Med	n	entity Two informal medial pronoun	an entity Two informal medial pronoun	NTUMC	77000115-n	0	0	0
-Ent;Two;Infml;Prox	n	entity Two informal proximal pronoun	an entity Two informal proximal pronoun	NTUMC	77000073-n	0	0	0
-Ent;Two;Infml;Rem	n	entity Two informal remote pronoun	an entity Two informal remote pronoun	NTUMC	77000116-n	0	0	0
-Ent;Two;Int;Fml	n	entity Two interrogative formal pronoun	an entity Two interrogative formal pronoun	NTUMC	77000065-n	0	0	0
-Ent;Two;Int;Infml	n	entity Two interrogative informal pronoun	an entity Two interrogative informal pronoun	NTUMC	77000066-n	0	0	0
-Ent;Two;Univ	n	entity Two universal pronoun	an entity Two universal pronoun	NTUMC	77000076-n	0	0	0
+Ent;Two;Fml;Med	n	entity formal medial pronoun of two	an entity formal medial pronoun of two	NTUMC	77000071-n	0	0	0
+Ent;Two;Fml;Prox	n	entity formal proximal pronoun of two	an entity formal proximal pronoun of two	NTUMC	77000072-n	0	0	0
+Ent;Two;Fml;Rem	n	entity formal remote pronoun of two	an entity formal remote pronoun of two	NTUMC	77000070-n	0	0	0
+Ent;Two;Infml;Med	n	entity informal medial pronoun of two	an entity informal medial pronoun of two	NTUMC	77000115-n	0	0	0
+Ent;Two;Infml;Prox	n	entity informal proximal pronoun of two	an entity informal proximal pronoun of two	NTUMC	77000073-n	0	0	0
+Ent;Two;Infml;Rem	n	entity informal remote pronoun of two	an entity informal remote pronoun of two	NTUMC	77000116-n	0	0	0
+Ent;Two;Int;Fml	n	entity interrogative formal pronoun of two	an entity interrogative formal pronoun of two	NTUMC	77000065-n	0	0	0
+Ent;Two;Int;Infml	n	entity interrogative informal pronoun of two	an entity interrogative informal pronoun of two	NTUMC	77000066-n	0	0	0
+Ent;Two;Univ	n	entity universal pronoun of two	an entity universal pronoun of two	NTUMC	77000076-n	0	0	0
 Ent;Univ	n	entity universal pronoun	an entity universal pronoun	NTUMC	02269286-n	0	0	0
 FC	n	free choice pronoun	an indefinite pronoun series used for: free choice (Haspelmath's functions)	Haspelmath		0	0	0
 Int	a	interrogative pronoun	an interrogative pronoun	NTUMC	77000091-a	0	0	0
@@ -204,9 +204,9 @@ SK+SU+IRR+Q+COND+INEG	n	specific known or specific unknown or irrealis non-speci
 Sg;Dist	a	singular distal pronoun	a singular distal pronoun	NTUMC	77000079-a	0	0	0
 Sg;Oth	a	singular other pronoun	a singular other pronoun	NTUMC	02070188-a	0	0	0
 Sg;Prox	a	singular proximal pronoun	a singular proximal pronoun	NTUMC	77000061-a	0	0	0
-Sg;Two;Elec	a	singular Two elective existential pronoun	a singular Two elective existential pronoun	English either		0	0	0
-Sg;Two;Neg	a	singular Two negative pronoun	a singular Two negative pronoun	NTUMC	00524607-a	0	0	0
-Sg;Two;Univ	a	singular Two universal pronoun	a singular Two universal pronoun	English either		0	0	0
+Sg;Two;Elec	a	singular elective existential pronoun of two	a singular elective existential pronoun of two	NTUMC	77000142-a	0	0	0
+Sg;Two;Neg	a	singular negative pronoun of two	a singular negative pronoun of two	NTUMC	00524607-a	0	0	0
+Sg;Two;Univ	a	singular universal pronoun of two	a singular universal pronoun of two	NTUMC	77000141-a	0	0	0
 Sg;Univ	a	singular universal pronoun	a singular universal pronoun	NTUMC	02269635-a	0	0	0
 Thng;Int	n	thing interrogative pronoun	a thing interrogative pronoun	NTUMC	77000091-n	0	0	0
 Thng;Sg;Asrt	n	thing singular assertive existential pronoun	a thing singular assertive existential pronoun	NTUMC	77000092-n	0	0	0
@@ -217,5 +217,5 @@ Tim;Int	n	time interrogative pronoun	a time interrogative pronoun	NTUMC	77000104
 Tim;Prox	n	time proximal pronoun	a time proximal pronoun	time deixis		0	0	0
 Tim;Sg;Asrt	n	time singular assertive existential pronoun	a time singular assertive existential pronoun	TUFS ja いつか		0	0	0
 Tim;Sg;Elec	n	time singular elective existential pronoun	a time singular elective existential pronoun	NTUMC	77000106-n	0	0	0
-Two;Univ	a	Two universal pronoun	a Two universal pronoun	NTUMC	77000076-a	0	0	0
-Univ	a	universal pronoun	an universal pronoun	NTUMC	02269286-a	0	0	0
+Two;Univ	a	universal pronoun of two	a universal pronoun of two	NTUMC	77000076-a	0	0	0
+Univ	a	universal pronoun	a universal pronoun	NTUMC	02269286-a	0	0	0

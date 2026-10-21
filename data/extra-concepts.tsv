@@ -38,8 +38,6 @@ Plc;Dist;Src	n	direction	from there, thence: Czech odtamtud, Russian оттуд�
 Plc;Dist;Loc	n	direction	there (at): German dort, Russian там
 Tim;Prox	n	time deixis	now: TUFS 今 (8987) in 7 languages; English now, Czech teď, German jetzt, Polish teraz, Russian сейчас, Mandarin 现在
 Tim;Dist	n	time deixis	then (at that time): English then, Czech tehdy, German damals, Polish wtedy, Russian тогда, Mandarin 那时
-Sg;Two;Elec	a	English either	either, the determiner: one of two, any one ("take either road"); beside Sg;Two;Neg neither
-Sg;Two;Univ	a	English either	either, universal: each of two ("on either side of the fireplace"); Sg;Univ each is to Univ all as this is to Two;Univ both
 Plc;Fml;Prox	n	TUFS ja こちら	polite "here, this way"; ここ is plain, こっち casual
 Plc;Fml;Med	n	TUFS ja そちら	polite "there (by you), that way"
 Plc;Fml;Rem	n	TUFS ja あちら	polite "over there, that way"

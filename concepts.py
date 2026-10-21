@@ -56,6 +56,7 @@ WORDS = {
     "Tr": "trial",
     "Pl": "plural",
     "Gpl": "greater plural",
+    "Two": "of two",
     "M": "masculine",
     "F": "feminine",
     "N": "neuter",
@@ -162,9 +163,12 @@ def label(code: str) -> str:
     """An English label: ``1i;Du`` -> "first person inclusive dual".
 
     Alternatives in a slot read as "or": ``Plc;Prox+Dist`` -> "place proximal or
-    distal pronoun".
+    distal pronoun". Choice from two comes last: ``Sg;Two;Univ`` -> "singular
+    universal pronoun of two".
     """
     parts = code.split(";")
+    two = " of two" if "Two" in parts else ""
+    parts = [p for p in parts if p != "Two"]
     kind = " pronoun"
     if "Poss" in parts and parts[0] != "Ent":
         kind = " determiner"  # my, whose
@@ -174,7 +178,7 @@ def label(code: str) -> str:
         " or ".join(PERSON.get(v) or WORDS.get(v, v) for v in part.split("+"))
         for part in parts
     ]
-    return " ".join(words) + (kind if code else "")
+    return " ".join(words) + (kind if code else "") + two
 
 
 def define(code: str) -> str:
@@ -208,7 +212,8 @@ def define(code: str) -> str:
             )
         return text
     text = label(code)
-    return f"{'an' if text[0] in 'aeiou' else 'a'} {text}"
+    vowel = text[0] in "aeiou" and not text.startswith("uni")
+    return f"{'an' if vowel else 'a'} {text}"
 
 
 def ntumc_concepts(db: Path) -> dict[str, list[str]]:

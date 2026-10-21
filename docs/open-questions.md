@@ -53,8 +53,7 @@ or leave them and note the mapping?
 
 - Japanese こちら/そちら/あちら and こっち were coded dual (`Ent;Du;Fml;Prox` ...).
   They are not: "this one (polite)" is one thing, not two, and そっち/あっち had no
-  dual. `data/ntumc-fixes.tsv` now codes them `Ent;Fml;Prox`, `Ent;Fml;Med`,
-  `Ent;Fml;Rem` and `Ent;Infml;Prox`; the fix belongs upstream too. Their
+  dual. Fixed upstream in NTUMC ff224b3, which marks them "of two" (77010009-n). Their
   commonest sense is place or direction ("here, this way": TUFS translates them
   as *here*, *there*, *where* in over 20 languages), now the concepts
   `Plc;Fml;Prox` ... (polite) and `Plc;Infml;Prox` ... (casual), from the TUFS
@@ -62,10 +61,9 @@ or leave them and note the mapping?
   (`Ent;Two;Fml;Prox`, どちら `Ent;Two;Int;Fml`), as for *either*, *neither*
   and *both*.
 - NTUMC links あれ, あいつ, あちら (77000059-n, 77000048-n, 77000070-n) to both
-  *distal* and *remote*; the a- series is remote. `data/ntumc-fixes.tsv` corrects
-  them here; the fix belongs upstream in NTUMC, which wnja's
-  `data/wn-ntumc-jpn.xml` is exported from.
-- 77000079-a `Sg;Dist` has Mandarin 哪 "which", presumably for 那 "that".
+  *distal* and *remote*; the a- series is remote. Fixed upstream in NTUMC
+  ff224b3; wnja's `data/wn-ntumc-jpn.xml` is still to be re-exported.
+- 77000079-a `Sg;Dist` had Mandarin 哪 "which"; removed in NTUMC ff224b3.
 - Czech *ten*, *ta*, *to* are three NTUMC lemmas of `Sg;Dist`. Gender on a
   determiner is agreement, so they are forms of one lemma *ten*, as are
   *tento*/*tato*/*toto*; and *ten* is the unmarked demonstrative (*tamten* is

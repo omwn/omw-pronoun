@@ -92,16 +92,14 @@ from:
   (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい, and the place
   senses of こちら/そちら/あちら/どちら, polite, and こっち/そっち/あっち, casual:
   `Plc;Fml;Prox`, `Plc;Infml;Prox` ...), casual どっち "where" (`Plc;Int;Infml`,
-  not in TUFS), 20 from the TUFS curation, three from English (*either*, one of
-  two and each of two, and *yours*), nine for direction (Czech, Polish, German
+  not in TUFS), 20 from the TUFS curation, one from English (*yours*), nine for direction (Czech, Polish, German
   and Russian) and two for time deixis, *now* (`Tim;Prox`, also TUFS 今 in 7
   languages) and *then* (`Tim;Dist`), with curated lemmas in
   `data/extra-lemmas.tsv`.
-- **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts:
-  Japanese あれ, あいつ, あちら are remote, not "distal and remote", and Mandarin
-  那样 / Indonesian *begitu* are two-way distal. Its `drop` column removes a
-  lemma from a synset: English *either* is not *both* (77000076-a), so universal
-  *either* is only `Sg;Two;Univ`.
+- **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts.
+  NTUMC ff224b3 fixed the rest upstream, so one remains: the pronoun *either*
+  (77000074-n) is singular, `Ent;Sg;Two;Elec`. Its `drop` column removes a lemma
+  from a synset.
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
