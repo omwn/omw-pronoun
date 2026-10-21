@@ -148,15 +148,25 @@ ancestors = ["2;Poss"]
 sources = ["tvůj <- NTUMC, Parabank"]
 comment = ""
 
+["3"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
 ["3;Pl"]
 lemmas = ["ona", "oni", "ony"]
 ntumc = ["ona <- 77000031-n", "oni <- 77000031-n", "ony <- 77000031-n"]
 english = ["they"]
 label = "third person plural pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
-ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural"]
-hypernyms = []
-ancestors = []
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+hypernyms = ["3"]
+ancestors = ["3"]
 forms = ["ona: je (o)", "oni: je (o)"]
 sources = ["ona <- NTUMC", "oni <- NTUMC, Parabank", "ony <- NTUMC"]
 comment = ""
@@ -187,8 +197,9 @@ lemmas = []
 status = "unlexicalized: no cs word; included for the hierarchy"
 label = "third person singular pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
-hypernyms = []
-ancestors = []
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
 comment = ""
 
 ["3;Sg;F"]
@@ -199,7 +210,7 @@ label = "third person singular feminine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
 ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 forms = ["ona: je (o)"]
 sources = ["ona <- NTUMC, Parabank"]
 comment = ""
@@ -232,7 +243,7 @@ label = "third person singular masculine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
 ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
 hypernyms = ["3;Sg;M+N"]
-ancestors = ["3;Sg;M+N", "3;Sg"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
 forms = ["on: jeho (o)"]
 sources = ["on <- NTUMC, Parabank"]
 comment = ""
@@ -243,7 +254,7 @@ status = "unlexicalized: no cs word; included for the hierarchy"
 label = "third person singular masculine or neuter pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 comment = ""
 
 ["3;Sg;M+N;Poss"]
@@ -275,7 +286,7 @@ label = "third person singular neuter pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)"
 ntumc_definitions = ["77000053-n: personal pronoun, entity, 3rd person, singular, neuter"]
 hypernyms = ["3;Sg;M+N"]
-ancestors = ["3;Sg;M+N", "3;Sg"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
 forms = ["ono: jej (o)"]
 sources = ["ono <- NTUMC, Parabank", "to <- NTUMC"]
 comment = ""
@@ -289,16 +300,6 @@ hypernyms = ["3;Poss"]
 ancestors = ["3;Poss"]
 comment = ""
 
-["DNEG"]
-lemmas = []
-status = "unlexicalized: no cs word; included for the hierarchy"
-english = ["no"]
-label = "direct negation pronoun"
-definition = "an indefinite pronoun series used for: direct negation (Haspelmath's functions)"
-hypernyms = []
-ancestors = []
-comment = ""
-
 ["Dist"]
 lemmas = []
 status = "unlexicalized: no cs word; included for the hierarchy"
@@ -307,18 +308,6 @@ definition = "a distal pronoun"
 ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
 hypernyms = ["Prox+Dist"]
 ancestors = ["Prox+Dist"]
-comment = ""
-
-["Du;Univ"]
-lemmas = ["oba"]
-ntumc = ["oba <- 77000076-a"]
-english = ["both", "either"]
-label = "dual universal pronoun"
-definition = "a dual universal pronoun"
-ntumc_definitions = ["77000076-a: quantifier, dual universal"]
-hypernyms = []
-ancestors = []
-sources = ["oba <- NTUMC"]
 comment = ""
 
 ["Dur+Tim;Int"]
@@ -333,6 +322,29 @@ hypernyms = ["feature:Dur", "feature:Tim"]
 ancestors = ["feature:Dur", "feature:Tim"]
 comment = ""
 
+["Elec"]
+lemmas = ["bůhvíco", "ledacos"]
+ntumc = ["ledacos <- 02267686-a", "bůhvíco <- 02267686-a"]
+english = ["any", "whatever", "whatsoever", "whichever"]
+label = "elective existential pronoun"
+definition = "an elective existential pronoun"
+ntumc_definitions = ["02267686-a: one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential"]
+hypernyms = []
+ancestors = []
+sources = ["bůhvíco <- NTUMC", "ledacos <- NTUMC"]
+comment = ""
+
+["Ent;Asrt"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
+english = ["several", "some"]
+label = "entity assertive existential pronoun"
+definition = "an entity assertive existential pronoun"
+ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+comment = ""
+
 ["Ent;Dist"]
 lemmas = []
 status = "unlexicalized: no cs word; included for the hierarchy"
@@ -343,16 +355,27 @@ hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
 comment = ""
 
-["Ent;Du;Univ"]
-lemmas = ["oba"]
-ntumc = ["oba <- 77000076-n"]
-english = ["both"]
-label = "entity dual universal pronoun"
-definition = "an entity dual universal pronoun"
-ntumc_definitions = ["77000076-n: entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal"]
+["Ent;Elec"]
+lemmas = ["cokoliv"]
+ntumc = ["cokoliv <- 02267686-n"]
+english = ["any", "whatever", "whichever"]
+label = "entity elective existential pronoun"
+definition = "an entity elective existential pronoun"
+ntumc_definitions = ["02267686-n: pronoun, entity; quantifier: elective existential"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
-sources = ["oba <- NTUMC"]
+sources = ["cokoliv <- NTUMC"]
+comment = ""
+
+["Ent;Int"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
+english = ["which"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+ntumc_definitions = ["77000064-n: entity, interrogative pronoun"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
 comment = ""
 
 ["Ent;Prox"]
@@ -372,19 +395,32 @@ english = ["that"]
 label = "entity singular distal pronoun"
 definition = "an entity singular distal pronoun"
 ntumc_definitions = ["77000079-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, distal"]
-hypernyms = ["Ent;Dist", "Ent;Sg;Dist+Rem", "Ent;Sg;Prox+Dist", "feature:Ent"]
-ancestors = ["Ent;Dist", "Ent;Sg;Dist+Rem", "Ent;Sg;Prox+Dist", "feature:Ent"]
+hypernyms = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
 sources = ["ta <- NTUMC", "ten <- NTUMC", "to <- NTUMC"]
 comment = ""
 
-["Ent;Sg;Dist+Rem"]
+["Ent;Sg;Neg"]
 lemmas = []
 status = "unlexicalized: no cs word; included for the hierarchy"
-label = "entity singular distal or remote pronoun"
-definition = "an entity singular distal or remote pronoun"
-ntumc_definitions = ["77000059-n: demonstratives, singular, distal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote"]
+english = ["none"]
+label = "entity singular negative pronoun"
+definition = "an entity singular negative pronoun"
+ntumc_definitions = ["02269039-n: pronoun, entity; qantifier: negative existential"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Oth"]
+lemmas = ["druhý"]
+ntumc = ["druhý <- 02070188-n"]
+english = ["another", "other"]
+label = "entity singular other pronoun"
+definition = "an entity singular other pronoun"
+ntumc_definitions = ["02070188-n: pronoun, entity, quantifier: singular, another"]
+hypernyms = ["Oth", "feature:Ent"]
+ancestors = ["Oth", "feature:Ent"]
+sources = ["druhý <- NTUMC"]
 comment = ""
 
 ["Ent;Sg;Prox"]
@@ -408,6 +444,29 @@ hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
 comment = ""
 
+["Ent;Two;Univ"]
+lemmas = ["oba"]
+ntumc = ["oba <- 77000076-n"]
+english = ["both"]
+label = "entity universal pronoun of two"
+definition = "an entity universal pronoun of two"
+ntumc_definitions = ["77000076-n: entity, of two, universal pronoun; pronoun, entity, of two; quantifier: of two, universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+sources = ["oba <- NTUMC"]
+comment = ""
+
+["Ent;Univ"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
 ["Int"]
 lemmas = ["co", "jaký", "jenž", "který"]
 ntumc = ["co <- 77000091-a", "který <- 77000091-a", "jenž <- 77000091-a", "jaký <- 77000091-a"]
@@ -420,6 +479,26 @@ ancestors = []
 sources = ["co <- NTUMC", "jaký <- NTUMC", "jenž <- NTUMC", "který <- NTUMC"]
 comment = ""
 
+["Mnr;Prox+Dist"]
+lemmas = ["tak", "takhle", "takto"]
+english = ["so", "thus", "thusly"]
+label = "manner proximal or distal pronoun"
+definition = "a manner proximal or distal pronoun"
+hypernyms = []
+ancestors = []
+sources = ["tak <- NTUMC", "takhle <- NTUMC", "takto <- NTUMC"]
+comment = ""
+
+["Oth"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
+label = "other pronoun"
+definition = "an other pronoun"
+ntumc_definitions = ["77000001-n: other pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
 ["Pers;Int"]
 lemmas = ["kdo"]
 ntumc = ["kdo <- 77000095-n"]
@@ -427,20 +506,9 @@ english = ["who", "whom"]
 label = "person interrogative pronoun"
 definition = "a person interrogative pronoun"
 ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
 sources = ["kdo <- NTUMC"]
-comment = ""
-
-["Pers;Sg;Elec"]
-lemmas = []
-status = "unlexicalized: no cs word; included for the hierarchy"
-english = ["anybody", "anyone", "whoever"]
-label = "person singular elective existential pronoun"
-definition = "a person singular elective existential pronoun"
-ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
 comment = ""
 
 ["Pers;Sg;Neg"]
@@ -450,8 +518,8 @@ english = ["no one", "no-one", "nobody", "noone"]
 label = "person singular negative pronoun"
 definition = "a person singular negative pronoun"
 ntumc_definitions = ["77000137-n: person, singular, negative pronoun; pronoun, person, singular; quantifier: negative existential"]
-hypernyms = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
-ancestors = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
+hypernyms = ["Ent;Sg;Neg", "feature:Pers"]
+ancestors = ["Ent;Sg;Neg", "feature:Pers", "feature:Ent"]
 sources = ["nikdo <- NTUMC"]
 comment = ""
 
@@ -462,21 +530,141 @@ english = ["everybody", "everyone"]
 label = "person universal pronoun"
 definition = "a person universal pronoun"
 ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
 sources = ["každý <- NTUMC"]
 comment = ""
 
+["Plc;Dist"]
+lemmas = ["tam"]
+english = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+sources = ["tam <- curated"]
+comment = ""
+
+["Plc;Dist;Src"]
+lemmas = ["odtamtud"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place distal source pronoun"
+definition = "a place distal source pronoun"
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
+sources = ["odtamtud <- curated"]
+comment = ""
+
 ["Plc;Int"]
-lemmas = ["kam", "kde"]
-ntumc = ["kde <- 77000084-n", "kam <- 77000084-n"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
 english = ["where"]
 label = "place interrogative pronoun"
 definition = "a place interrogative pronoun"
 ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
 hypernyms = ["feature:Plc"]
 ancestors = ["feature:Plc"]
-sources = ["kam <- NTUMC", "kde <- NTUMC"]
+comment = ""
+
+["Plc;Int;Goal"]
+lemmas = ["kam"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative goal pronoun"
+definition = "a place interrogative goal pronoun"
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+sources = ["kam <- NTUMC"]
+comment = ""
+
+["Plc;Int;Loc"]
+lemmas = ["kde"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative locative pronoun"
+definition = "a place interrogative locative pronoun"
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+sources = ["kde <- NTUMC"]
+comment = ""
+
+["Plc;Int;Src"]
+lemmas = ["odkud"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative source pronoun"
+definition = "a place interrogative source pronoun"
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+sources = ["odkud <- curated"]
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["tady"]
+ntumc = ["tady <- 08489497-n"]
+english = ["'ere", "here"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+sources = ["tady <- NTUMC"]
+comment = ""
+
+["Plc;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no cs word; included for the hierarchy"
+label = "place proximal or distal pronoun"
+definition = "a place proximal or distal pronoun"
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Plc;Prox;Goal"]
+lemmas = ["sem"]
+english = ["'ere", "here"]
+english_via = "Plc;Prox"
+label = "place proximal goal pronoun"
+definition = "a place proximal goal pronoun"
+hypernyms = ["Plc;Prox", "feature:Plc"]
+ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+sources = ["sem <- curated"]
+comment = ""
+
+["Plc;Prox;Loc"]
+lemmas = ["tady", "zde"]
+english = ["'ere", "here"]
+english_via = "Plc;Prox"
+label = "place proximal locative pronoun"
+definition = "a place proximal locative pronoun"
+hypernyms = ["Plc;Prox", "feature:Plc"]
+ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+sources = ["tady <- curated", "zde <- curated"]
+comment = ""
+
+["Plc;Prox;Src"]
+lemmas = ["odsud", "odtud"]
+english = ["'ere", "here"]
+english_via = "Plc;Prox"
+label = "place proximal source pronoun"
+definition = "a place proximal source pronoun"
+hypernyms = ["Plc;Prox", "feature:Plc"]
+ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+sources = ["odsud <- curated", "odtud <- curated"]
+comment = ""
+
+["Plc;Univ"]
+lemmas = ["všude"]
+ntumc = ["všude <- 00025728-r"]
+english = ["all over", "all round", "around", "everyplace", "everywhere"]
+label = "place universal pronoun"
+definition = "a place universal pronoun"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+sources = ["všude <- NTUMC"]
 comment = ""
 
 ["Prox"]
@@ -531,6 +719,18 @@ ancestors = ["Dist", "Prox+Dist"]
 sources = ["ta <- NTUMC", "ten <- NTUMC", "to <- NTUMC"]
 comment = ""
 
+["Sg;Oth"]
+lemmas = ["další", "jiný", "ostatní"]
+ntumc = ["další <- 02070188-a", "jiný <- 02070188-a", "ostatní <- 02070188-a"]
+english = ["another", "some other"]
+label = "singular other pronoun"
+definition = "a singular other pronoun"
+ntumc_definitions = ["02070188-a: any of various alternatives; some other; quantifier, singular, another"]
+hypernyms = []
+ancestors = []
+sources = ["další <- NTUMC", "jiný <- NTUMC", "ostatní <- NTUMC"]
+comment = ""
+
 ["Sg;Prox"]
 lemmas = ["tahle", "tato", "tenhle", "tento", "tohle", "tot"]
 ntumc = ["tenhle <- 77000061-a", "tento <- 77000061-a", "tahle <- 77000061-a", "tato <- 77000061-a", "tohle <- 77000061-a", "tot <- 77000061-a"]
@@ -543,6 +743,18 @@ ancestors = ["Prox", "Prox+Dist"]
 sources = ["tahle <- NTUMC", "tato <- NTUMC", "tenhle <- NTUMC", "tento <- NTUMC", "tohle <- NTUMC", "tot <- NTUMC"]
 comment = ""
 
+["Sg;Two;Neg"]
+lemmas = ["ani"]
+ntumc = ["ani <- 00524607-a"]
+english = ["neither", "nor"]
+label = "singular negative pronoun of two"
+definition = "a singular negative pronoun of two"
+ntumc_definitions = ["00524607-a: not either; not one or the other; entity, of two, negative pronoun; quantifier, of two, negative"]
+hypernyms = []
+ancestors = []
+sources = ["ani <- NTUMC"]
+comment = ""
+
 ["Thng;Int"]
 lemmas = ["co"]
 ntumc = ["co <- 77000091-n"]
@@ -550,8 +762,8 @@ english = ["what", "which"]
 label = "thing interrogative pronoun"
 definition = "a thing interrogative pronoun"
 ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
-hypernyms = ["feature:Thng"]
-ancestors = ["feature:Thng"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
 sources = ["co <- NTUMC"]
 comment = ""
 
@@ -562,9 +774,19 @@ english = ["something"]
 label = "thing singular assertive existential pronoun"
 definition = "a thing singular assertive existential pronoun"
 ntumc_definitions = ["77000092-n: thing (object:), singular, assertive existential pronoun; pronoun, thing, singular; quantifier: assertive existential"]
-hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
-ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+hypernyms = ["Ent;Asrt", "feature:Thng"]
+ancestors = ["Ent;Asrt", "feature:Thng", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 sources = ["cosi <- NTUMC"]
+comment = ""
+
+["Tim;Dist"]
+lemmas = ["tehdy"]
+english = ["then"]
+label = "time distal pronoun"
+definition = "a time distal pronoun"
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+sources = ["tehdy <- curated"]
 comment = ""
 
 ["Tim;Int"]
@@ -577,6 +799,40 @@ ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
 hypernyms = ["Dur+Tim;Int", "feature:Tim"]
 ancestors = ["Dur+Tim;Int", "feature:Tim", "feature:Dur"]
 sources = ["kdy <- NTUMC"]
+comment = ""
+
+["Tim;Prox"]
+lemmas = ["teď"]
+english = ["now"]
+label = "time proximal pronoun"
+definition = "a time proximal pronoun"
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+sources = ["teď <- curated"]
+comment = ""
+
+["Two;Univ"]
+lemmas = ["oba"]
+ntumc = ["oba <- 77000076-a"]
+english = ["both"]
+label = "universal pronoun of two"
+definition = "a universal pronoun of two"
+ntumc_definitions = ["77000076-a: quantifier, of two, universal"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+sources = ["oba <- NTUMC"]
+comment = ""
+
+["Univ"]
+lemmas = ["veškerý", "všechen"]
+ntumc = ["všechen <- 02269286-a", "veškerý <- 02269286-a"]
+english = ["all", "every"]
+label = "universal pronoun"
+definition = "a universal pronoun"
+ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
+hypernyms = []
+ancestors = []
+sources = ["veškerý <- NTUMC", "všechen <- NTUMC"]
 comment = ""
 
 ["feature:Dur"]

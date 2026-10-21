@@ -142,15 +142,25 @@ ancestors = ["2;Poss"]
 sources = ["twój <- Parabank"]
 comment = ""
 
+["3"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
 ["3;Pl"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
 english = ["they"]
 label = "third person plural pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
-ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural"]
-hypernyms = []
-ancestors = []
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+hypernyms = ["3"]
+ancestors = ["3"]
 comment = ""
 
 ["3;Pl;M"]
@@ -161,7 +171,7 @@ label = "third person plural masculine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)"
 ntumc_definitions = ["77000029-n: personal pronoun, person, 3rd person, masculine, plural"]
 hypernyms = ["3;Pl"]
-ancestors = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
 forms = ["oni: ich (o)"]
 sources = ["oni <- Parabank"]
 comment = ""
@@ -180,8 +190,9 @@ lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
 label = "third person singular pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
-hypernyms = []
-ancestors = []
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
 comment = ""
 
 ["3;Sg;F"]
@@ -191,7 +202,7 @@ label = "third person singular feminine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
 ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 forms = ["ona: ją (o)"]
 sources = ["ona <- Parabank"]
 comment = ""
@@ -224,7 +235,7 @@ label = "third person singular masculine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
 ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
 hypernyms = ["3;Sg;M+N"]
-ancestors = ["3;Sg;M+N", "3;Sg"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
 forms = ["on: jego (o)"]
 sources = ["on <- Parabank"]
 comment = ""
@@ -235,7 +246,7 @@ status = "unlexicalized: no pl word; included for the hierarchy"
 label = "third person singular masculine or neuter pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 comment = ""
 
 ["3;Sg;M+N;Poss"]
@@ -255,7 +266,7 @@ definition = "a pronoun referring to someone or something other than speaker and
 ntumc_definitions = ["77000053-n: personal pronoun, entity, 3rd person, singular, neuter"]
 existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["3;Sg;M+N"]
-ancestors = ["3;Sg;M+N", "3;Sg"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
 forms = ["ono: nie (o)"]
 sources = ["ono <- Parabank"]
 comment = ""
@@ -279,6 +290,103 @@ ancestors = []
 sources = ["ni- <- Haspelmath"]
 comment = ""
 
+["Plc;Dist"]
+lemmas = ["tam"]
+english = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+sources = ["tam <- curated"]
+comment = ""
+
+["Plc;Dist;Src"]
+lemmas = ["stamtąd"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place distal source pronoun"
+definition = "a place distal source pronoun"
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
+sources = ["stamtąd <- curated"]
+comment = ""
+
+["Plc;Int"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["where"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Plc;Int;Goal"]
+lemmas = ["dokąd"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative goal pronoun"
+definition = "a place interrogative goal pronoun"
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+sources = ["dokąd <- curated"]
+comment = ""
+
+["Plc;Int;Loc"]
+lemmas = ["gdzie"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative locative pronoun"
+definition = "a place interrogative locative pronoun"
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+sources = ["gdzie <- curated"]
+comment = ""
+
+["Plc;Int;Src"]
+lemmas = ["skąd"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative source pronoun"
+definition = "a place interrogative source pronoun"
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+sources = ["skąd <- curated"]
+comment = ""
+
+["Plc;Prox"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["'ere", "here"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+comment = ""
+
+["Plc;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "place proximal or distal pronoun"
+definition = "a place proximal or distal pronoun"
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Plc;Prox;Src"]
+lemmas = ["stąd"]
+english = ["'ere", "here"]
+english_via = "Plc;Prox"
+label = "place proximal source pronoun"
+definition = "a place proximal source pronoun"
+hypernyms = ["Plc;Prox", "feature:Plc"]
+ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+sources = ["stąd <- curated"]
+comment = ""
+
 ["SK+SU+IRR+Q+COND+INEG"]
 lemmas = ["-s"]
 label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
@@ -286,4 +394,45 @@ definition = "an indefinite pronoun series used for: specific known, specific un
 hypernyms = []
 ancestors = []
 sources = ["-s <- Haspelmath"]
+comment = ""
+
+["Tim;Dist"]
+lemmas = ["wtedy"]
+english = ["then"]
+label = "time distal pronoun"
+definition = "a time distal pronoun"
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+sources = ["wtedy <- curated"]
+comment = ""
+
+["Tim;Prox"]
+lemmas = ["teraz"]
+english = ["now"]
+label = "time proximal pronoun"
+definition = "a time proximal pronoun"
+existing_by_lemma = ["teraz -> omw-pl omw-pl-15119919-n [i116653] teraz: (CILI) the momentary present"]
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+sources = ["teraz <- curated, omw-pl:2.0"]
+comment = ""
+
+["feature:Plc"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "place"
+definition = "a point located with respect to surface features of some region"
+existing_by_ili = ["omw-pl omw-pl-08664443-n [i82501] miejsce: (CILI) a point located with respect to surface features of some region"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Tim"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "time"
+definition = "an indefinite period (usually marked by specific attributes or activities)"
+existing_by_ili = ["omw-pl omw-pl-15122231-n [i116667] czas: (CILI) an indefinite period (usually marked by specific attributes or activities)"]
+hypernyms = []
+ancestors = []
 comment = ""

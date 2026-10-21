@@ -82,12 +82,27 @@ curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
+["1;Sg;Infml"]
+ntumc = ["aku <- 80001132-n", "ku- <- 80001132-n", "-ku <- 80001132-n"]
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular informal pronoun"
+definition = "a pronoun referring to the speaker, one in all (informal)"
+ntumc_definitions = ["80001132-n: personal pronoun, person, 1st person, singular, informal"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["1;Sg"]
+ancestors = ["1;Sg"]
+status = "built (NTUMC only)"
+comment = ""
+
 ["1e;Pl"]
 lemmas = ["kami"]
+ntumc = ["kami <- 80001133-n"]
 english = ["we"]
 english_via = "1;Pl"
 label = "first person exclusive plural pronoun"
 definition = "a pronoun referring to the speaker and others, not the addressee, more than one in all"
+ntumc_definitions = ["80001133-n: personal pronoun, person, 1st person, plural, exclusive"]
 existing_by_lemma = ["kami -> omw-id omw-id-09535255-n [i86764] KAMI, Kami, Kesatuan Aksi Mahasiswa Indonesia: satu dari dewa-dewa Shinto", "kami -> tufs-id tufs-id-77000002-n [-] kita, kami"]
 hypernyms = ["1;Pl"]
 ancestors = ["1;Pl", "1+2;Pl"]
@@ -190,16 +205,27 @@ curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
+["3"]
+lemmas = []
+status = "unlexicalized: no id word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
 ["3;Pl"]
 lemmas = ["mereka"]
+ntumc = ["mereka <- 80001131-n"]
 english = ["they"]
 label = "third person plural pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
-ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural"]
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
 existing_by_lemma = ["mereka -> tufs-id tufs-id-77000031-n [-] dia, mereka"]
 existing_hidden = 16  # other senses of these lemmas
-hypernyms = []
-ancestors = []
+hypernyms = ["3"]
+ancestors = ["3"]
 tufs = ["mereka <- 彼女 (high)"]
 curator_notes = ["they; heading presumably 彼女ら"]
 status = "built"
@@ -207,25 +233,30 @@ comment = ""
 
 ["3;Sg"]
 lemmas = ["dia", "ia"]
+ntumc = ["dia <- 80001130-n", "ia <- 80001130-n", "-nya <- 80001130-n"]
 label = "third person singular pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
 existing_by_lemma = ["dia -> tufs-id tufs-id-77000031-n [-] dia, mereka"]
 existing_hidden = 3  # other senses of these lemmas
-hypernyms = []
-ancestors = []
+hypernyms = ["3"]
+ancestors = ["3"]
 tufs = ["dia <- 彼女 (high)", "ia <- 彼女 (high)"]
 curator_notes = ["gender-neutral he/she", "gender-neutral he/she/it"]
 status = "built"
 comment = ""
 
-["DNEG"]
-lemmas = []
-status = "unlexicalized: no id word; included for the hierarchy"
-english = ["no"]
-label = "direct negation pronoun"
-definition = "an indefinite pronoun series used for: direct negation (Haspelmath's functions)"
+["Asrt"]
+ntumc = ["sebagian <- 02267308-a", "beberapa <- 02267308-a"]
+english = ["several", "some"]
+label = "assertive existential pronoun"
+definition = "an assertive existential pronoun"
+ntumc_definitions = ["02267308-a: quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential"]
+existing_by_lemma = ["sebagian -> omw-id omw-id-02267308-a [i12553] beberapa, sebagian: (CILI) quantifier; used with either mass nouns or plural count nouns to indicate an unspecified number or quantity", "sebagian -> omw-id omw-id-00007015-r [i18193] beberapa, berkeliling, hampir, keliling, kira-kira, lebih kurang, ...: (CILI) (of quantities) imprecise but fairly close to correct", "beberapa -> omw-id omw-id-01552885-a [i8526] beberapa: (CILI) a quantifier that can be used with count nouns and is often preceded by `a'; a small but indefinite number", "beberapa -> omw-id omw-id-01554063-a [i8531] beberapa: (CILI) relatively much but unspecified in amount or extent", "beberapa -> omw-id omw-id-02267308-a [i12553] beberapa, sebagian: (CILI) quantifier; used with either mass nouns or plural count nouns to indicate an unspecified number or quantity", "beberapa -> omw-id omw-id-00007015-r [i18193] beberapa, berkeliling, hampir, keliling, kira-kira, lebih kurang, ...: (CILI) (of quantities) imprecise but fairly close to correct"]
+existing_hidden = 8  # other senses of these lemmas
 hypernyms = []
 ancestors = []
+status = "built (NTUMC only)"
 comment = ""
 
 ["Dist"]
@@ -242,19 +273,6 @@ curator_notes = ["NTUMC; ini/itu two-way"]
 status = "built"
 comment = ""
 
-["Du;Univ"]
-ntumc = ["baik <- 77000076-a"]
-english = ["both", "either"]
-label = "dual universal pronoun"
-definition = "a dual universal pronoun"
-ntumc_definitions = ["77000076-a: quantifier, dual universal"]
-existing_by_lemma = ["baik -> omw-id omw-id-00775611-a [i4272] baik, sebaik: (CILI) generally admired", "baik -> omw-id omw-id-01068306-a [i5856] bagus, baik, elok: (CILI) not left to spoil", "baik -> omw-id omw-id-01123148-a [i6163] bagus, baik, enak, sedap: (CILI) having desirable or positive qualities especially those suitable for a thing specified", "baik -> omw-id omw-id-01129977-a [i6195] alim, baik, manis: (CILI) morally admirable", "baik -> omw-id omw-id-01166413-a [i6378] berfaedah, bermanfaat, menyegarkan, bagus, baik, berguna, ...: (CILI) tending to promote physical well-being; beneficial to health", "baik -> omw-id omw-id-01333477-a [i7272] baik, berat, serius: (CILI) appealing to the mind", "baik -> omw-id omw-id-01372049-a [i7477] elok, pemurah, pengasih, penyayang, baik, baik hati, ...: (CILI) having or showing a tender and considerate and helpful nature; used especially of persons and their behavior", "baik -> omw-id omw-id-01586342-a [i8695] afdal, alap, bagus, cantik, elok, halus, ...: (CILI) pleasant or pleasing or agreeable in nature or appearance", "baik -> omw-id omw-id-01661289-a [i9111] bagus, baik: (CILI) most suitable or right for a particular purpose", "baik -> omw-id omw-id-01808329-a [i9930] baik, cantik: (CILI) capable of pleasing", "baik -> omw-id omw-id-02036934-a [i11160] alim, manis, mulia, baik, elok, jujur, ...: (CILI) of moral excellence", "baik -> omw-id omw-id-10601451-n [i93009] baik, encik, tuan: (CILI) term of address for a man", "baik -> omw-id omw-id-00011093-r [i18211] baik, baik-baik: (CILI) (often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')", "baik -> omw-id omw-id-00012129-r [i18215] baik: (CILI) without unusual distress or resentment; with good humor", "baik -> omw-id omw-id-00018043-r [i18245] baik, tanggung jawab: (CILI) in spite of; notwithstanding", "baik -> tufs-id tufs-id-01586342-a [i8695] bersih, indah, cantik, baik: (CILI) pleasant or pleasing or agreeable in nature or appearance", "baik -> tufs-id tufs-id-01586866-a [i8697] baik: (CILI) (of persons) having pleasing manners or behavior", "baik -> tufs-id tufs-id-01048762-a [i5741] baik: (CILI) resulting favorably", "baik -> tufs-id tufs-id-00067638-a [i353] baik: (CILI) wise or advantageous and hence advisable", "baik -> tufs-id tufs-id-01993408-a [i10917] baik: (CILI) socially or conventionally correct; refined or virtuous", "baik -> tufs-id tufs-id-01171213-a [i6402] baik: (CILI) in excellent physical condition", "baik -> tufs-id tufs-id-01800349-a [i9892] baik: (CILI) affording pleasure; being in harmony with your taste or likings", "baik -> tufs-id tufs-id-01123148-a [i6163] baik: (CILI) having desirable or positive qualities especially those suitable for a thing specified", "baik -> tufs-id tufs-id-00064787-a [i340] baik: (CILI) promoting or enhancing well-being", "baik -> tufs-id tufs-id-00850183-a [i4669] baik: (CILI) characterized by elegance or refinement or accomplishment", "baik -> tufs-id tufs-id-01129977-a [i6195] baik: (CILI) morally admirable", "baik -> tufs-id tufs-id-01586752-a [i8696] baik: (CILI) agreeable or pleasing"]
-existing_hidden = 1  # other senses of these lemmas
-hypernyms = []
-ancestors = []
-status = "built (NTUMC only)"
-comment = ""
-
 ["Dur+Tim;Int"]
 lemmas = []
 status = "unlexicalized: no id word; included for the hierarchy"
@@ -265,6 +283,29 @@ definition = "a duration or time interrogative pronoun"
 ntumc_definitions = ["77000103-n: time pronoun; duration, interrogative pronoun"]
 hypernyms = ["feature:Dur", "feature:Tim"]
 ancestors = ["feature:Dur", "feature:Tim"]
+comment = ""
+
+["Elec"]
+ntumc = ["manapun <- 02267686-a", "apapun <- 02267686-a", "sebarang <- 02267686-a", "apa saja <- 02267686-a", "apa pun <- 02267686-a"]
+english = ["any", "whatever", "whatsoever", "whichever"]
+label = "elective existential pronoun"
+definition = "an elective existential pronoun"
+ntumc_definitions = ["02267686-a: one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential"]
+existing_by_lemma = ["sebarang -> omw-id omw-id-02267686-a [i12554] apa saja, sebarang: (CILI) one or some or every or all without specification", "sebarang -> omw-id omw-id-00024509-r [i18283] lagi, segala, sebarang: (CILI) to any degree or extent", "apa saja -> omw-id omw-id-02267686-a [i12554] apa saja, sebarang: (CILI) one or some or every or all without specification"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Asrt"]
+lemmas = []
+status = "unlexicalized: no id word; included for the hierarchy"
+english = ["several", "some"]
+label = "entity assertive existential pronoun"
+definition = "an entity assertive existential pronoun"
+ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 comment = ""
 
 ["Ent;Dist"]
@@ -281,12 +322,13 @@ curator_notes = ["NTUMC; pronominal use"]
 status = "built"
 comment = ""
 
-["Ent;Du;Univ"]
-ntumc = ["kedua-duanya <- 77000076-n", "dua-duanya <- 77000076-n", "keduanya <- 77000076-n"]
-english = ["both"]
-label = "entity dual universal pronoun"
-definition = "an entity dual universal pronoun"
-ntumc_definitions = ["77000076-n: entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal"]
+["Ent;Elec"]
+ntumc = ["apa pun <- 02267686-n", "apa saja <- 02267686-n"]
+english = ["any", "whatever", "whichever"]
+label = "entity elective existential pronoun"
+definition = "an entity elective existential pronoun"
+ntumc_definitions = ["02267686-n: pronoun, entity; quantifier: elective existential"]
+existing_by_lemma = ["apa saja -> omw-id omw-id-02267686-a [i12554] apa saja, sebarang: (CILI) one or some or every or all without specification"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
 status = "built (NTUMC only)"
@@ -340,13 +382,47 @@ curator_notes = ["NTUMC; pronominal use"]
 status = "built"
 comment = ""
 
+["Ent;Sg;Neg"]
+lemmas = []
+status = "unlexicalized: no id word; included for the hierarchy"
+english = ["none"]
+label = "entity singular negative pronoun"
+definition = "an entity singular negative pronoun"
+ntumc_definitions = ["02269039-n: pronoun, entity; qantifier: negative existential"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
 ["Ent;Sg;Univ"]
-ntumc = ["setiap <- 77000078-n", "tiap <- 77000078-n"]
-english = ["everything"]
+ntumc = ["masing-masing <- 02269635-n", "setiap <- 77000078-n", "tiap <- 77000078-n"]
+english = ["each", "everything"]
 label = "entity singular universal pronoun"
 definition = "an entity singular universal pronoun"
-ntumc_definitions = ["77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
-existing_by_lemma = ["setiap -> omw-id omw-id-02270186-a [i12565] setiap: (CILI) each and all of a series of entities or intervals as specified", "setiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)", "tiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)"]
+ntumc_definitions = ["02269635-n: entity, singular, universal pronoun", "77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
+existing_by_lemma = ["masing-masing -> omw-id omw-id-00493460-a [i2774] individual, masing-masing, tersendiri: (CILI) being or characteristic of a single thing or person", "masing-masing -> omw-id omw-id-00494409-a [i2778] masing-masing: (CILI) considered individually", "masing-masing -> omw-id omw-id-02068174-a [i11337] masing-masing: (CILI) distinct and individual", "masing-masing -> omw-id omw-id-02153174-a [i11821] khusus, sendiri, individu, masing-masing, satu, tunggal: (CILI) characteristic of or meant for a single person or thing", "masing-masing -> omw-id omw-id-00137915-r [i19056] masing-masing: (CILI) in the order given", "masing-masing -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)", "setiap -> omw-id omw-id-02270186-a [i12565] setiap: (CILI) each and all of a series of entities or intervals as specified", "setiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)", "tiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Univ"]
+ntumc = ["kedua-duanya <- 77000076-n", "dua-duanya <- 77000076-n", "keduanya <- 77000076-n"]
+english = ["both"]
+label = "entity universal pronoun of two"
+definition = "an entity universal pronoun of two"
+ntumc_definitions = ["77000076-n: entity, of two, universal pronoun; pronoun, entity, of two; quantifier: of two, universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Univ"]
+ntumc = ["semua <- 02269286-n"]
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+existing_by_lemma = ["semua -> omw-id omw-id-00514884-a [i2893] penuh, segenap, semua, sepanjang, suntuk, keseluruhan, ...: (CILI) including all components without exception; being one unit or constituting the full amount or extent or duration; complete", "semua -> omw-id omw-id-00515380-a [i2894] benar-benar, betul-betul, genap, jumlah, keseluruhan, langsung, ...: (CILI) constituting the full quantity or extent; complete", "semua -> omw-id omw-id-02269286-a [i12561] segala, semua: (CILI) quantifier; used with either mass or count nouns to indicate the whole number or amount of or every one of a class", "semua -> tufs-id tufs-id-77000099-n [-] semua: everyone"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
 status = "built (NTUMC only)"
@@ -375,8 +451,8 @@ english_via = "Int"
 label = "kind interrogative pronoun"
 definition = "a kind interrogative pronoun"
 existing_by_lemma = ["bagaimana -> omw-id omw-id-00027384-r [i18298] bagaimana, cara, kiranya, macam mana, masih, namun, ...: (CILI) despite anything to the contrary (usually following a concession)", "bagaimana -> omw-id omw-id-00028424-r [i18303] bagaimana: (CILI) in whatever way or manner", "bagaimana -> tufs-id tufs-id-77000090-n [-] bagaimana: Would you like ～ ?", "bagaimana -> tufs-id tufs-id-77000091-n [-] bagaimana, seperti apa: what kind of ～", "bagaimana -> tufs-id tufs-id-80001331-x [-] bagaimana: Would you like ～ ?"]
-hypernyms = ["Int", "feature:Knd"]
-ancestors = ["Int", "feature:Knd"]
+hypernyms = ["Int"]
+ancestors = ["Int"]
 tufs = ["bagaimana <- どんな (medium)"]
 curator_notes = ["'what kind of' use (orang bagaimana)"]
 status = "built"
@@ -390,8 +466,8 @@ label = "kind proximal pronoun"
 definition = "a kind proximal pronoun"
 ntumc_definitions = ["77000089-a: demonstrative determiner, kind, proximal"]
 existing_by_lemma = ["begini -> omw-id omw-id-00037641-r [i18359] begini, begitu, demikian, memang, bahwasanya: (CILI) in truth (often tends to intensify)", "begini -> omw-id omw-id-00043003-r [i18390] begini, jadi, kemudian: (CILI) (used to introduce a logical conclusion) from that fact or reason or as a result", "begini -> omw-id omw-id-00121135-r [i18911] begini, jadi: (CILI) in the way indicated; (`thusly' is a nonstandard variant)", "begini -> tufs-id tufs-id-77000089-a [-] begini, seperti ini: such"]
-hypernyms = ["Knd;Prox+Dist", "Prox", "feature:Knd"]
-ancestors = ["Knd;Prox+Dist", "Prox", "feature:Knd", "Prox+Dist"]
+hypernyms = ["Knd;Prox+Dist", "Prox"]
+ancestors = ["Knd;Prox+Dist", "Prox", "Prox+Dist"]
 tufs = ["begini <- こんな (medium)"]
 curator_notes = ["adnominal use 'this kind of'"]
 status = "built"
@@ -403,19 +479,21 @@ status = "unlexicalized: no id word; included for the hierarchy"
 english = ["such"]
 label = "kind proximal or distal pronoun"
 definition = "a kind proximal or distal pronoun"
-hypernyms = ["Prox+Dist", "feature:Knd"]
-ancestors = ["Prox+Dist", "feature:Knd"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
 comment = ""
 
-["Mnr;Dist+Med"]
+["Mnr;Dist"]
 lemmas = ["begitu"]
 ntumc = ["begitu <- 77000088-r", "demikian <- 77000088-r"]
-label = "manner distal or medial pronoun"
-definition = "a manner distal or medial pronoun"
-ntumc_definitions = ["77000088-r: manner, medial pronoun"]
+english = ["so", "thus", "thusly"]
+english_via = "Mnr;Prox+Dist"
+label = "manner distal pronoun"
+definition = "a manner distal pronoun"
+ntumc_definitions = ["77000088-r: manner, distal pronoun"]
 existing_by_lemma = ["begitu -> omw-id omw-id-00037641-r [i18359] begini, begitu, demikian, memang, bahwasanya: (CILI) in truth (often tends to intensify)", "begitu -> omw-id omw-id-00047392-r [i18417] begitu, juga, terlalu, terlampau, berlebihan: (CILI) to a degree exceeding normal or proper limits", "begitu -> omw-id omw-id-00084223-r [i18654] begitu, istimewa, terlebih, terlebih-lebih, terutama: (CILI) to a distinctly greater extent or degree than is common", "begitu -> omw-id omw-id-00146594-r [i19124] begitu: (CILI) to a very great extent or degree", "begitu -> omw-id omw-id-00147272-r [i19128] begitu, jadi, maka: (CILI) in the same way; also", "begitu -> omw-id omw-id-00422435-r [i21042] begitu, sangat, sekali: (CILI) extremely and sharply", "begitu -> omw-id omw-id-00502710-r [i21657] begitu, istimewa, khusus, terlebih, terlebih-lebih, terutama: (CILI) in a special manner", "begitu -> omw-id omw-id-00507053-r [i21691] begitu, sungguh: (CILI) in an outstanding manner or to an outstanding degree", "begitu -> omw-id omw-id-00510749-r [i21720] amat, banget, begitu, benar, bukan main, metah, ...: (CILI) precisely so", "begitu -> tufs-id tufs-id-00121135-r [i18911] begitu: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
-hypernyms = ["feature:Mnr"]
-ancestors = ["feature:Mnr"]
+hypernyms = ["Mnr;Prox+Dist"]
+ancestors = ["Mnr;Prox+Dist"]
 tufs = ["begitu <- そう (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -439,14 +517,14 @@ comment = ""
 ["Mnr;Prox"]
 lemmas = ["begini"]
 ntumc = ["begini <- 77000089-r"]
-english = ["so"]
+english = ["so", "thus", "thusly"]
 english_via = "Mnr;Prox+Dist"
 label = "manner proximal pronoun"
 definition = "a manner proximal pronoun"
 ntumc_definitions = ["77000089-r: manner, proximal pronoun"]
 existing_by_lemma = ["begini -> omw-id omw-id-00037641-r [i18359] begini, begitu, demikian, memang, bahwasanya: (CILI) in truth (often tends to intensify)", "begini -> omw-id omw-id-00043003-r [i18390] begini, jadi, kemudian: (CILI) (used to introduce a logical conclusion) from that fact or reason or as a result", "begini -> omw-id omw-id-00121135-r [i18911] begini, jadi: (CILI) in the way indicated; (`thusly' is a nonstandard variant)", "begini -> tufs-id tufs-id-77000089-a [-] begini, seperti ini: such"]
-hypernyms = ["Mnr;Prox+Dist", "feature:Mnr"]
-ancestors = ["Mnr;Prox+Dist", "feature:Mnr"]
+hypernyms = ["Mnr;Prox+Dist"]
+ancestors = ["Mnr;Prox+Dist"]
 tufs = ["begini <- こんな (high)"]
 curator_notes = ["NTUMC; like this"]
 status = "built"
@@ -455,11 +533,11 @@ comment = ""
 ["Mnr;Prox+Dist"]
 lemmas = []
 status = "unlexicalized: no id word; included for the hierarchy"
-english = ["so"]
+english = ["so", "thus", "thusly"]
 label = "manner proximal or distal pronoun"
 definition = "a manner proximal or distal pronoun"
-hypernyms = ["feature:Mnr"]
-ancestors = ["feature:Mnr"]
+hypernyms = []
+ancestors = []
 comment = ""
 
 ["Pers;Int"]
@@ -471,8 +549,8 @@ definition = "a person interrogative pronoun"
 ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
 existing_by_lemma = ["siapa -> tufs-id tufs-id-77000095-n [-] siapa: who"]
 existing_hidden = 3  # other senses of these lemmas
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
 tufs = ["siapa <- だれ (high), どなた (high)"]
 curator_notes = ["NTUMC", "NTUMC; not honorific"]
 status = "built"
@@ -500,8 +578,8 @@ english = ["someone"]
 label = "person singular assertive existential pronoun"
 definition = "a person singular assertive existential pronoun"
 existing_by_lemma = ["seseorang -> omw-id omw-id-00007846-n [i35562] individu, insan, manusia, orang, seorang, seseorang, ...: seseorang yang dipandang tinggi", "seseorang -> tufs-id tufs-id-00007846-n [i35562] seseorang, siapa saja: (CILI) a human being"]
-hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
-ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
+hypernyms = ["Ent;Asrt", "feature:Pers"]
+ancestors = ["Ent;Asrt", "feature:Pers", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 tufs = ["seseorang <- だれか (high)"]
 curator_notes = ["someone"]
 status = "built"
@@ -515,8 +593,8 @@ label = "person singular elective existential pronoun"
 definition = "a person singular elective existential pronoun"
 ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
 existing_by_lemma = ["siapa saja -> tufs-id tufs-id-00007846-n [i35562] seseorang, siapa saja: (CILI) a human being"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Elec", "feature:Pers"]
+ancestors = ["Ent;Elec", "feature:Pers", "feature:Ent"]
 tufs = ["siapa saja <- だれか (high)"]
 curator_notes = ["NTUMC; anyone"]
 status = "built"
@@ -528,8 +606,8 @@ english = ["no one", "no-one", "nobody", "noone"]
 label = "person singular negative pronoun"
 definition = "a person singular negative pronoun"
 ntumc_definitions = ["77000137-n: person, singular, negative pronoun; pronoun, person, singular; quantifier: negative existential"]
-hypernyms = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
-ancestors = ["DNEG", "Pers;Sg;Elec", "feature:Pers"]
+hypernyms = ["Ent;Sg;Neg", "feature:Pers"]
+ancestors = ["Ent;Sg;Neg", "feature:Pers", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -540,8 +618,8 @@ label = "person universal pronoun"
 definition = "a person universal pronoun"
 ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
 existing_by_lemma = ["semua -> omw-id omw-id-00514884-a [i2893] penuh, segenap, semua, sepanjang, suntuk, keseluruhan, ...: (CILI) including all components without exception; being one unit or constituting the full amount or extent or duration; complete", "semua -> omw-id omw-id-00515380-a [i2894] benar-benar, betul-betul, genap, jumlah, keseluruhan, langsung, ...: (CILI) constituting the full quantity or extent; complete", "semua -> omw-id omw-id-02269286-a [i12561] segala, semua: (CILI) quantifier; used with either mass or count nouns to indicate the whole number or amount of or every one of a class", "semua -> tufs-id tufs-id-77000099-n [-] semua: everyone"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
 tufs = ["semua <- みんな (low)"]
 curator_notes = ["quantifier 'all'; 'everyone' strictly semua orang"]
 status = "held: low confidence"
@@ -569,6 +647,19 @@ ancestors = ["Prox", "Prox+Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
+["Plc;Dist"]
+ntumc = ["sana <- 08489627-n", "disana <- 08489627-n", "situ <- 08489627-n"]
+english = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+existing_by_lemma = ["sana -> omw-id omw-id-08489627-n [i81668] sana: (CILI) a location other than here; that place", "sana -> tufs-id tufs-id-08489627-n [i81668] sana: (CILI) a location other than here; that place", "situ -> omw-id omw-id-00109151-r [i18828] ada, di sana, di situ, situ: (CILI) in or at that place", "situ -> tufs-id tufs-id-00109151-r [i18828] situ: (CILI) in or at that place"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+status = "built (NTUMC only)"
+comment = ""
+
 ["Plc;Int"]
 lemmas = ["mana"]
 ntumc = ["mana <- 77000084-n"]
@@ -587,12 +678,14 @@ comment = ""
 
 ["Plc;Med"]
 lemmas = ["situ"]
+english = ["there"]
+english_via = "Plc;Dist"
 label = "place medial pronoun"
 definition = "a place medial pronoun"
 ntumc_definitions = ["77000117-n: demonstrative pronoun, location; quantifier: demonstrative determiner, medial"]
 existing_by_lemma = ["situ -> omw-id omw-id-00109151-r [i18828] ada, di sana, di situ, situ: (CILI) in or at that place", "situ -> tufs-id tufs-id-00109151-r [i18828] situ: (CILI) in or at that place"]
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
 tufs = ["situ <- そちら (high)"]
 curator_notes = ["there (medial)"]
 status = "built"
@@ -600,9 +693,11 @@ comment = ""
 
 ["Plc;Prox"]
 lemmas = ["sini"]
-english = ["here"]
+ntumc = ["sini <- 08489497-n"]
+english = ["'ere", "here"]
 label = "place proximal pronoun"
 definition = "a place proximal pronoun"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
 existing_by_lemma = ["sini -> omw-id omw-id-08489497-n [i81667] di sini, sini: (CILI) the present location; this place", "sini -> tufs-id tufs-id-77000072-n [-] sini: this way", "sini -> tufs-id tufs-id-08489497-n [i81667] sini: (CILI) the present location; this place"]
 hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
 ancestors = ["Plc;Prox+Dist", "feature:Plc"]
@@ -623,16 +718,42 @@ comment = ""
 ["Plc;Rem"]
 lemmas = ["sana"]
 ntumc = ["sana <- 77000081-n"]
+english = ["there"]
+english_via = "Plc;Dist"
 label = "place remote pronoun"
 definition = "a place remote pronoun"
 ntumc_definitions = ["77000081-n: demonstrative pronoun, location; quantifier: demonstrative determiner, remote"]
 existing_by_lemma = ["sana -> omw-id omw-id-08489627-n [i81668] sana: (CILI) a location other than here; that place", "sana -> tufs-id tufs-id-08489627-n [i81668] sana: (CILI) a location other than here; that place"]
 existing_hidden = 1  # other senses of these lemmas
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
 tufs = ["sana <- あっち (high)"]
 curator_notes = ["NTUMC; sini/situ/sana three-way"]
 status = "built"
+comment = ""
+
+["Plc;Sg;Elec"]
+ntumc = ["manapun <- 00495377-r", "mana-mana <- 00495377-r", "mana pun <- 00495377-r"]
+english = ["anywhere", "wheresoever", "wherever"]
+label = "place singular elective existential pronoun"
+definition = "a place singular elective existential pronoun"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+existing_by_lemma = ["mana-mana -> omw-id omw-id-00495377-r [i21592] mana-mana: (CILI) where in the world"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Plc;Univ"]
+ntumc = ["sebilang <- 00025728-r", "mana-mana <- 00025728-r"]
+english = ["all over", "all round", "around", "everyplace", "everywhere"]
+label = "place universal pronoun"
+definition = "a place universal pronoun"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+existing_by_lemma = ["sebilang -> omw-id omw-id-00025728-r [i18291] sebilang: di merata-rata tempat", "sebilang -> omw-id omw-id-00157412-r [i19205] sebilang: (CILI) occasionally", "mana-mana -> omw-id omw-id-00495377-r [i21592] mana-mana: (CILI) where in the world"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+status = "built (NTUMC only)"
 comment = ""
 
 ["Prox"]
@@ -692,14 +813,26 @@ hypernyms = []
 ancestors = []
 comment = ""
 
+["Sg;Univ"]
+ntumc = ["masing-masing <- 02269635-a", "tiap <- 02269635-a", "setiap <- 02269635-a", "tiap-tiap <- 02269635-a"]
+english = ["each"]
+label = "singular universal pronoun"
+definition = "a singular universal pronoun"
+ntumc_definitions = ["02269635-a: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
+existing_by_lemma = ["masing-masing -> omw-id omw-id-00493460-a [i2774] individual, masing-masing, tersendiri: (CILI) being or characteristic of a single thing or person", "masing-masing -> omw-id omw-id-00494409-a [i2778] masing-masing: (CILI) considered individually", "masing-masing -> omw-id omw-id-02068174-a [i11337] masing-masing: (CILI) distinct and individual", "masing-masing -> omw-id omw-id-02153174-a [i11821] khusus, sendiri, individu, masing-masing, satu, tunggal: (CILI) characteristic of or meant for a single person or thing", "masing-masing -> omw-id omw-id-00137915-r [i19056] masing-masing: (CILI) in the order given", "masing-masing -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)", "tiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)", "setiap -> omw-id omw-id-02270186-a [i12565] setiap: (CILI) each and all of a series of entities or intervals as specified", "setiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)", "tiap-tiap -> omw-id omw-id-00239908-r [i19793] masing-masing, saban, seorang, setiap, tiap, tiap-tiap: (CILI) to or from every one of two or more (considered individually)"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "built (NTUMC only)"
+comment = ""
+
 ["Thng;Int"]
 ntumc = ["apa <- 77000091-n"]
 english = ["what", "which"]
 label = "thing interrogative pronoun"
 definition = "a thing interrogative pronoun"
 ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
-hypernyms = ["feature:Thng"]
-ancestors = ["feature:Thng"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -711,8 +844,8 @@ definition = "a thing singular assertive existential pronoun"
 ntumc_definitions = ["77000092-n: thing (object:), singular, assertive existential pronoun; pronoun, thing, singular; quantifier: assertive existential"]
 existing_by_lemma = ["sesuatu -> omw-id omw-id-00001740-n [i35545] hakikat, keberadaan, kewujudan, sesuatu, tablet, entitas: (CILI) that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"]
 existing_hidden = 4  # other senses of these lemmas
-hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
-ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+hypernyms = ["Ent;Asrt", "feature:Thng"]
+ancestors = ["Ent;Asrt", "feature:Thng", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -722,8 +855,8 @@ english = ["anything"]
 label = "thing singular elective existential pronoun"
 definition = "a thing singular elective existential pronoun"
 ntumc_definitions = ["77000093-n: thing (object:), singular, elective existential pronoun; pronoun, thing, singular; quantifier: elective existential; Additional information to the common topic"]
-hypernyms = ["feature:Thng"]
-ancestors = ["feature:Thng"]
+hypernyms = ["Ent;Elec", "feature:Thng"]
+ancestors = ["Ent;Elec", "feature:Thng", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -753,6 +886,31 @@ ancestors = ["feature:Tim"]
 status = "built (NTUMC only)"
 comment = ""
 
+["Two;Univ"]
+ntumc = ["baik <- 77000076-a"]
+english = ["both"]
+label = "universal pronoun of two"
+definition = "a universal pronoun of two"
+ntumc_definitions = ["77000076-a: quantifier, of two, universal"]
+existing_by_lemma = ["baik -> omw-id omw-id-00775611-a [i4272] baik, sebaik: (CILI) generally admired", "baik -> omw-id omw-id-01068306-a [i5856] bagus, baik, elok: (CILI) not left to spoil", "baik -> omw-id omw-id-01123148-a [i6163] bagus, baik, enak, sedap: (CILI) having desirable or positive qualities especially those suitable for a thing specified", "baik -> omw-id omw-id-01129977-a [i6195] alim, baik, manis: (CILI) morally admirable", "baik -> omw-id omw-id-01166413-a [i6378] berfaedah, bermanfaat, menyegarkan, bagus, baik, berguna, ...: (CILI) tending to promote physical well-being; beneficial to health", "baik -> omw-id omw-id-01333477-a [i7272] baik, berat, serius: (CILI) appealing to the mind", "baik -> omw-id omw-id-01372049-a [i7477] elok, pemurah, pengasih, penyayang, baik, baik hati, ...: (CILI) having or showing a tender and considerate and helpful nature; used especially of persons and their behavior", "baik -> omw-id omw-id-01586342-a [i8695] afdal, alap, bagus, cantik, elok, halus, ...: (CILI) pleasant or pleasing or agreeable in nature or appearance", "baik -> omw-id omw-id-01661289-a [i9111] bagus, baik: (CILI) most suitable or right for a particular purpose", "baik -> omw-id omw-id-01808329-a [i9930] baik, cantik: (CILI) capable of pleasing", "baik -> omw-id omw-id-02036934-a [i11160] alim, manis, mulia, baik, elok, jujur, ...: (CILI) of moral excellence", "baik -> omw-id omw-id-10601451-n [i93009] baik, encik, tuan: (CILI) term of address for a man", "baik -> omw-id omw-id-00011093-r [i18211] baik, baik-baik: (CILI) (often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')", "baik -> omw-id omw-id-00012129-r [i18215] baik: (CILI) without unusual distress or resentment; with good humor", "baik -> omw-id omw-id-00018043-r [i18245] baik, tanggung jawab: (CILI) in spite of; notwithstanding", "baik -> tufs-id tufs-id-01586342-a [i8695] bersih, indah, cantik, baik: (CILI) pleasant or pleasing or agreeable in nature or appearance", "baik -> tufs-id tufs-id-01586866-a [i8697] baik: (CILI) (of persons) having pleasing manners or behavior", "baik -> tufs-id tufs-id-01048762-a [i5741] baik: (CILI) resulting favorably", "baik -> tufs-id tufs-id-00067638-a [i353] baik: (CILI) wise or advantageous and hence advisable", "baik -> tufs-id tufs-id-01993408-a [i10917] baik: (CILI) socially or conventionally correct; refined or virtuous", "baik -> tufs-id tufs-id-01171213-a [i6402] baik: (CILI) in excellent physical condition", "baik -> tufs-id tufs-id-01800349-a [i9892] baik: (CILI) affording pleasure; being in harmony with your taste or likings", "baik -> tufs-id tufs-id-01123148-a [i6163] baik: (CILI) having desirable or positive qualities especially those suitable for a thing specified", "baik -> tufs-id tufs-id-00064787-a [i340] baik: (CILI) promoting or enhancing well-being", "baik -> tufs-id tufs-id-00850183-a [i4669] baik: (CILI) characterized by elegance or refinement or accomplishment", "baik -> tufs-id tufs-id-01129977-a [i6195] baik: (CILI) morally admirable", "baik -> tufs-id tufs-id-01586752-a [i8696] baik: (CILI) agreeable or pleasing"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Univ"]
+ntumc = ["semua <- 02269286-a", "segala <- 02269286-a"]
+english = ["all", "every"]
+label = "universal pronoun"
+definition = "a universal pronoun"
+ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
+existing_by_lemma = ["semua -> omw-id omw-id-00514884-a [i2893] penuh, segenap, semua, sepanjang, suntuk, keseluruhan, ...: (CILI) including all components without exception; being one unit or constituting the full amount or extent or duration; complete", "semua -> omw-id omw-id-00515380-a [i2894] benar-benar, betul-betul, genap, jumlah, keseluruhan, langsung, ...: (CILI) constituting the full quantity or extent; complete", "semua -> omw-id omw-id-02269286-a [i12561] segala, semua: (CILI) quantifier; used with either mass or count nouns to indicate the whole number or amount of or every one of a class", "semua -> tufs-id tufs-id-77000099-n [-] semua: everyone", "segala -> omw-id omw-id-02269286-a [i12561] segala, semua: (CILI) quantifier; used with either mass or count nouns to indicate the whole number or amount of or every one of a class", "segala -> omw-id omw-id-00024509-r [i18283] lagi, segala, sebarang: (CILI) to any degree or extent"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
 ["feature:Dur"]
 lemmas = []
 status = "unlexicalized: feature synset, no words in any language"
@@ -769,16 +927,6 @@ status = "unlexicalized: feature synset, no words in any language"
 label = "entity"
 definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
 existing_by_ili = ["omw-id omw-id-00001740-n [i35545] hakikat, keberadaan, kewujudan, sesuatu, tablet, entitas: (CILI) that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"]
-hypernyms = []
-ancestors = []
-comment = ""
-
-["feature:Knd"]
-lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "kind"
-definition = "a category of things distinguished by some common characteristic or quality"
-existing_by_ili = ["omw-id omw-id-05839024-n [i67559] bagai, jenis, kelas, keragaman, macam, bentuk, ...: (CILI) a category of things distinguished by some common characteristic or quality"]
 hypernyms = []
 ancestors = []
 comment = ""

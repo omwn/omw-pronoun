@@ -123,6 +123,18 @@ curator_notes = ["NTUMC 私", "NTUMC"]
 status = "built"
 comment = ""
 
+["1;Sg;Infml"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular informal pronoun"
+definition = "a pronoun referring to the speaker, one in all (informal)"
+ntumc_definitions = ["80001132-n: personal pronoun, person, 1st person, singular, informal"]
+hypernyms = ["1;Sg"]
+ancestors = ["1;Sg"]
+comment = ""
+
 ["1;Sg;M;Infml;Hon;Arch+Men"]
 ntumc = ["わし <- 77000018-n"]
 english = ["I"]
@@ -130,8 +142,8 @@ english_via = "1;Sg"
 label = "first person singular masculine informal honorific archaic or men's speech pronoun"
 definition = "a pronoun referring to the speaker, one in all (masculine, informal, honorific, archaic, men's speech)"
 ntumc_definitions = ["77000018-n: 1st person, singular, masculine, informal, archaic honorific pronoun; personal pronoun, person, 1st person, singular, men's speech, informal, archaic honorific"]
-hypernyms = ["1;Sg"]
-ancestors = ["1;Sg"]
+hypernyms = ["1;Sg;Infml"]
+ancestors = ["1;Sg;Infml", "1;Sg"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -143,8 +155,8 @@ label = "first person singular masculine informal men's speech pronoun"
 definition = "a pronoun referring to the speaker, one in all (masculine, informal, men's speech)"
 ntumc_definitions = ["77000017-n: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal"]
 existing_by_lemma = ["僕 -> omw-ja omw-ja-10292192-n [i91210] 下僕, 下男, 下部, 僕, 奴, 家僕: 男性の召使い", "僕 -> omw-ja omw-ja-10308938-n [i91309] 下郎, 下部, 僕, 召使い, 召し使い, 召使, ...: 家庭の使用人"]
-hypernyms = ["1;Sg"]
-ancestors = ["1;Sg"]
+hypernyms = ["1;Sg;Infml"]
+ancestors = ["1;Sg;Infml", "1;Sg"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -268,14 +280,24 @@ ancestors = ["2;Sg;Infml", "2;Sg;Refl", "2;Sg", "2"]
 status = "built (NTUMC only)"
 comment = ""
 
+["3"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
 ["3;Oth"]
 lemmas = []
 status = "unlexicalized: no ja word; included for the hierarchy"
 label = "third person other pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee (other)"
 ntumc_definitions = ["77000032-n: 3rd person, other pronoun; pronoun, person; quantifier: other"]
-hypernyms = ["Oth"]
-ancestors = ["Oth"]
+hypernyms = ["3", "Oth"]
+ancestors = ["3", "Oth"]
 comment = ""
 
 ["3;Pl"]
@@ -284,9 +306,9 @@ status = "unlexicalized: no ja word; included for the hierarchy"
 english = ["they"]
 label = "third person plural pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
-ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural"]
-hypernyms = []
-ancestors = []
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+hypernyms = ["3"]
+ancestors = ["3"]
 comment = ""
 
 ["3;Pl;F"]
@@ -297,7 +319,7 @@ label = "third person plural feminine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (feminine)"
 ntumc_definitions = ["77000035-n: personal pronoun, person, 3rd person, plural, feminine"]
 hypernyms = ["3;Pl"]
-ancestors = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -309,7 +331,7 @@ label = "third person plural masculine pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)"
 ntumc_definitions = ["77000029-n: personal pronoun, person, 3rd person, masculine, plural"]
 hypernyms = ["3;Pl"]
-ancestors = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -318,8 +340,9 @@ lemmas = []
 status = "unlexicalized: no ja word; included for the hierarchy"
 label = "third person singular pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
-hypernyms = []
-ancestors = []
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
 comment = ""
 
 ["3;Sg;F"]
@@ -330,7 +353,7 @@ definition = "a pronoun referring to someone or something other than speaker and
 ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
 existing_by_lemma = ["彼女 -> omw-ja omw-ja-10130686-n [i90209] ガールフレンド, アミ, 女友達, 彼女, 恋びと, 恋人, ...: 男性と恋愛する女の子または若い女性"]
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -342,7 +365,7 @@ ntumc_definitions = ["77000038-n: 3rd person, singular, informal, non-honorific 
 existing_by_lemma = ["やつ -> omw-ja omw-ja-09908025-n [i88912] やつ, ガイ, 兄ちゃん, 兄さん, 和郎, 奴さん, ...: 少年または男"]
 existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -355,7 +378,7 @@ ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular
 existing_by_lemma = ["彼 -> omw-ja omw-ja-09871364-n [i88673] ボーイフレンド, 彼, 彼氏: 少女または若い女性の愛人である男"]
 existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["3;Sg;M+N"]
-ancestors = ["3;Sg;M+N", "3;Sg"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -365,31 +388,55 @@ status = "unlexicalized: no ja word; included for the hierarchy"
 label = "third person singular masculine or neuter pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
 hypernyms = ["3;Sg"]
-ancestors = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
 comment = ""
 
-["3;Sg;M;Infml;Dist+Rem;Men"]
+["3;Sg;M;Infml;Rem;Men"]
 ntumc = ["あいつ <- 77000048-n", "彼奴 <- 77000048-n"]
 english = ["he"]
 english_via = "3;Sg;M"
-label = "third person singular masculine informal distal or remote men's speech pronoun"
-definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, informal, distal, remote, men's speech)"
-ntumc_definitions = ["77000048-n: 3rd person, singular, masculine, informal, distal pronoun; demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, remote"]
+label = "third person singular masculine informal remote men's speech pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, informal, remote, men's speech)"
+ntumc_definitions = ["77000048-n: 3rd person, singular, masculine, informal, remote pronoun; demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, remote"]
 hypernyms = ["3;Sg;M"]
-ancestors = ["3;Sg;M", "3;Sg;M+N", "3;Sg"]
+ancestors = ["3;Sg;M", "3;Sg;M+N", "3;Sg", "3"]
 status = "built (NTUMC only)"
 comment = ""
 
 ["3;Sg;Oth"]
 ntumc = ["相手 <- 77000040-n"]
+english = ["another", "some other"]
+english_via = "Sg;Oth"
 label = "third person singular other pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (other)"
 ntumc_definitions = ["77000040-n: 3rd person, singular, other pronoun; pronoun, person, singular; quantifier: other"]
 existing_by_lemma = ["相手 -> omw-ja omw-ja-09760609-n [i88046] コンパニオン, 交友, 仲間, 伴, 伴侶, お供, ...: 支払いを受けて、他の人と同行する、補助する、または同居する人", "相手 -> omw-ja omw-ja-10379620-n [i91748] 対戦相手, 対手, 対抗馬, 対敵, 対者, 敵, ...: 対抗している競争相手", "相手 -> omw-ja omw-ja-10533013-n [i92599] ライヴァル, ライバル, 対戦相手, 対抗者, 対敵, 敵さん, ...: 打ち負かしたいと願う競争相手"]
 existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["3;Oth", "3;Sg"]
-ancestors = ["3;Oth", "3;Sg", "Oth"]
+ancestors = ["3;Oth", "3;Sg", "3", "Oth"]
 status = "built (NTUMC only)"
+comment = ""
+
+["Asrt"]
+ntumc = ["いくらか <- 02267308-a"]
+english = ["several", "some"]
+label = "assertive existential pronoun"
+definition = "an assertive existential pronoun"
+ntumc_definitions = ["02267308-a: quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential"]
+existing_by_lemma = ["いくらか -> omw-ja omw-ja-01554063-a [i8531] いくらか: 比較的多いが、量や程度は明記されていない", "いくらか -> omw-ja omw-ja-02267308-a [i12553] いくらか, 幾: 数量詞", "いくらか -> omw-ja omw-ja-00024509-r [i18283] いくらか, なんらか, 何らか, 何等か, 少しは: どんな程度または範囲にでも", "いくらか -> omw-ja omw-ja-00036291-r [i18352] こころなし, こころもち, ちょこんと, ちょびっと, いくらか, ちょいと, ...: 小さい程度か範囲に"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Dist"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+label = "distal pronoun"
+definition = "a distal pronoun"
+ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
 comment = ""
 
 ["Dur+Tim;Int"]
@@ -404,103 +451,37 @@ hypernyms = ["feature:Dur", "feature:Tim"]
 ancestors = ["feature:Dur", "feature:Tim"]
 comment = ""
 
-["Ent;Du;Fml;Dist+Rem"]
-lemmas = ["あちら"]
-ntumc = ["あちら <- 77000070-n"]
-label = "entity dual formal distal or remote pronoun"
-definition = "an entity dual formal distal or remote pronoun"
-ntumc_definitions = ["77000070-n: entity, dual, formal, distal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, remote"]
-existing_by_lemma = ["あちら -> tufs-ja tufs-ja-9996-n [-] あちら"]
-hypernyms = ["feature:Ent"]
-ancestors = ["feature:Ent"]
-tufs = ["あちら <- あちら (high)"]
-curator_notes = ["NTUMC; TUFS heading sense is place/direction \"over there\""]
-status = "built"
-comment = ""
-
-["Ent;Du;Fml;Med"]
-lemmas = ["そちら"]
-ntumc = ["そちら <- 77000071-n"]
-label = "entity dual formal medial pronoun"
-definition = "an entity dual formal medial pronoun"
-ntumc_definitions = ["77000071-n: entity, dual, formal, medial pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, medial"]
-existing_by_lemma = ["そちら -> tufs-ja tufs-ja-00109151-r [i18828] そちら: (CILI) in or at that place"]
-hypernyms = ["Ent;Pl;Med", "feature:Ent"]
-ancestors = ["Ent;Pl;Med", "feature:Ent"]
-tufs = ["そちら <- そちら (high)"]
-curator_notes = ["NTUMC; TUFS heading sense is place/direction"]
-status = "built"
-comment = ""
-
-["Ent;Du;Fml;Prox"]
-lemmas = ["こちら"]
-ntumc = ["こちら <- 77000072-n"]
-english = ["these"]
-english_via = "Ent;Pl;Prox"
-label = "entity dual formal proximal pronoun"
-definition = "an entity dual formal proximal pronoun"
-ntumc_definitions = ["77000072-n: entity, dual, formal, proximal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, proximal"]
-existing_by_lemma = ["こちら -> tufs-ja tufs-ja-77000072-n [-] こちら: this way", "こちら -> tufs-ja tufs-ja-08489497-n [i81667] こちら: (CILI) the present location; this place"]
-hypernyms = ["Ent;Pl;Prox", "feature:Ent"]
-ancestors = ["Ent;Pl;Prox", "feature:Ent", "Ent;Prox"]
-tufs = ["こちら <- こちら (high)"]
-curator_notes = ["NTUMC; TUFS heading sense is place/direction"]
-status = "built"
-comment = ""
-
-["Ent;Du;Infml;Prox"]
-lemmas = ["こっち"]
-ntumc = ["こっち <- 77000073-n"]
-english = ["these"]
-english_via = "Ent;Pl;Prox"
-label = "entity dual informal proximal pronoun"
-definition = "an entity dual informal proximal pronoun"
-ntumc_definitions = ["77000073-n: entity, dual, informal, proximal pronoun; demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, proximal"]
-existing_by_lemma = ["こっち -> tufs-ja tufs-ja-10766-n [-] こっち: this way"]
-hypernyms = ["Ent;Pl;Prox", "feature:Ent"]
-ancestors = ["Ent;Pl;Prox", "feature:Ent", "Ent;Prox"]
-tufs = ["こっち <- こっち (high)"]
-curator_notes = ["NTUMC (note: そっち/あっち are Ent;Infml;Med/Rem, without Du)"]
-status = "built"
-comment = ""
-
-["Ent;Du;Univ"]
-ntumc = ["両方 <- 77000076-n", "りょうほう <- 77000076-n", "双方 <- 77000076-n", "両者 <- 77000076-n"]
-english = ["both"]
-label = "entity dual universal pronoun"
-definition = "an entity dual universal pronoun"
-ntumc_definitions = ["77000076-n: entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal"]
-hypernyms = ["feature:Ent"]
-ancestors = ["feature:Ent"]
+["Ent;Asrt"]
+ntumc = ["いくつか <- 02267308-n", "いくらか <- 02267308-n"]
+english = ["several", "some"]
+label = "entity assertive existential pronoun"
+definition = "an entity assertive existential pronoun"
+ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
+existing_by_lemma = ["いくらか -> omw-ja omw-ja-01554063-a [i8531] いくらか: 比較的多いが、量や程度は明記されていない", "いくらか -> omw-ja omw-ja-02267308-a [i12553] いくらか, 幾: 数量詞", "いくらか -> omw-ja omw-ja-00024509-r [i18283] いくらか, なんらか, 何らか, 何等か, 少しは: どんな程度または範囲にでも", "いくらか -> omw-ja omw-ja-00036291-r [i18352] こころなし, こころもち, ちょこんと, ちょびっと, いくらか, ちょいと, ...: 小さい程度か範囲に"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
-["Ent;Infml;Med"]
-lemmas = ["そっち"]
-ntumc = ["そっち <- 77000115-n"]
-label = "entity informal medial pronoun"
-definition = "an entity informal medial pronoun"
-ntumc_definitions = ["77000115-n: demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, medial"]
-existing_by_lemma = ["そっち -> tufs-ja tufs-ja-9987-n [-] そっち: that way"]
+["Ent;Dist"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+label = "entity distal pronoun"
+definition = "an entity distal pronoun"
+ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
-tufs = ["そっち <- そっち (high)"]
-curator_notes = ["NTUMC"]
-status = "built"
 comment = ""
 
-["Ent;Infml;Rem"]
-lemmas = ["あっち"]
-ntumc = ["あっち <- 77000116-n"]
-label = "entity informal remote pronoun"
-definition = "an entity informal remote pronoun"
-ntumc_definitions = ["77000116-n: demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, remote"]
-existing_by_lemma = ["あっち -> tufs-ja tufs-ja-08489627-n [i81668] あっち: (CILI) a location other than here; that place"]
+["Ent;Elec"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+english = ["any", "whatever", "whichever"]
+label = "entity elective existential pronoun"
+definition = "an entity elective existential pronoun"
+ntumc_definitions = ["02267686-n: pronoun, entity; quantifier: elective existential"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
-tufs = ["あっち <- あっち (high)"]
-curator_notes = ["NTUMC; TUFS heading sense is place/direction"]
-status = "built"
 comment = ""
 
 ["Ent;Int"]
@@ -518,45 +499,26 @@ curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
-["Ent;Int;Fml"]
-lemmas = ["どちら"]
-ntumc = ["どちら <- 77000065-n"]
-english = ["which"]
-english_via = "Ent;Int"
-label = "entity interrogative formal pronoun"
-definition = "an entity interrogative formal pronoun"
-ntumc_definitions = ["77000065-n: entity, interrogative, formal pronoun; entity, interrogative pronoun, formal"]
-existing_by_lemma = ["どちら -> tufs-ja tufs-ja-77000084-n [-] どちら: which way"]
-hypernyms = ["Ent;Int", "feature:Ent"]
-ancestors = ["Ent;Int", "feature:Ent"]
-tufs = ["どちら <- どちら (high)"]
-curator_notes = ["NTUMC; TUFS heading sense is place \"where\""]
-status = "built"
-comment = ""
-
-["Ent;Int;Infml"]
-lemmas = ["どっち"]
-ntumc = ["どっち <- 77000066-n"]
-english = ["which"]
-english_via = "Ent;Int"
-label = "entity interrogative informal pronoun"
-definition = "an entity interrogative informal pronoun"
-ntumc_definitions = ["77000066-n: entity, interrogative, informal pronoun; entity, interrogative pronoun, informal"]
-existing_by_lemma = ["どっち -> tufs-ja tufs-ja-164-n [-] どっち: which way"]
-hypernyms = ["Ent;Int", "feature:Ent"]
-ancestors = ["Ent;Int", "feature:Ent"]
-tufs = ["どっち <- どっち (high)"]
-curator_notes = ["NTUMC"]
-status = "built"
+["Ent;Pl;Dist"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+english = ["those"]
+label = "entity plural distal pronoun"
+definition = "an entity plural distal pronoun"
+ntumc_definitions = ["77000082-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, plural, distal"]
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
 comment = ""
 
 ["Ent;Pl;Med"]
 ntumc = ["それら <- 77000057-n"]
+english = ["those"]
+english_via = "Ent;Pl;Dist"
 label = "entity plural medial pronoun"
 definition = "an entity plural medial pronoun"
 ntumc_definitions = ["77000057-n: demonstratives, plural, medial pronoun; demonstrative pronoun, entity, plural; quantifier: demonstrative determiner, medial"]
-hypernyms = ["feature:Ent"]
-ancestors = ["feature:Ent"]
+hypernyms = ["Ent;Pl;Dist", "feature:Ent"]
+ancestors = ["Ent;Pl;Dist", "feature:Ent", "Ent;Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -585,30 +547,28 @@ curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
-["Ent;Sg;Dist+Rem"]
-lemmas = ["あれ"]
-ntumc = ["あれ <- 77000059-n"]
-label = "entity singular distal or remote pronoun"
-definition = "an entity singular distal or remote pronoun"
-ntumc_definitions = ["77000059-n: demonstratives, singular, distal pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote"]
-existing_by_lemma = ["あれ -> tufs-ja tufs-ja-159-n [-] あれ: that"]
-existing_hidden = 2  # other senses of these lemmas
-hypernyms = ["feature:Ent"]
-ancestors = ["feature:Ent"]
-tufs = ["あれ <- あれ (high)"]
-curator_notes = ["NTUMC"]
-status = "built"
+["Ent;Sg;Dist"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+english = ["that"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+ntumc_definitions = ["77000079-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
 comment = ""
 
 ["Ent;Sg;Med"]
 lemmas = ["それ"]
 ntumc = ["それ <- 77000060-n"]
+english = ["that"]
+english_via = "Ent;Sg;Dist"
 label = "entity singular medial pronoun"
 definition = "an entity singular medial pronoun"
 ntumc_definitions = ["77000060-n: demonstratives, singular, medial pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, medial"]
 existing_by_lemma = ["それ -> omw-ja omw-ja-08489627-n [i81668] そこ, それ: ここ以外の場所", "それ -> tufs-ja tufs-ja-153-n [-] それ: that"]
-hypernyms = ["feature:Ent"]
-ancestors = ["feature:Ent"]
+hypernyms = ["Ent;Sg;Dist", "feature:Ent"]
+ancestors = ["Ent;Sg;Dist", "feature:Ent", "Ent;Dist", "Ent;Sg;Prox+Dist"]
 tufs = ["それ <- それ (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -638,13 +598,149 @@ hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
 comment = ""
 
+["Ent;Sg;Rem"]
+lemmas = ["あれ"]
+ntumc = ["あれ <- 77000059-n"]
+english = ["that"]
+english_via = "Ent;Sg;Dist"
+label = "entity singular remote pronoun"
+definition = "an entity singular remote pronoun"
+ntumc_definitions = ["77000059-n: demonstratives, singular, remote pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote"]
+existing_by_lemma = ["あれ -> tufs-ja tufs-ja-159-n [-] あれ: that"]
+existing_hidden = 2  # other senses of these lemmas
+hypernyms = ["Ent;Sg;Dist", "feature:Ent"]
+ancestors = ["Ent;Sg;Dist", "feature:Ent", "Ent;Dist", "Ent;Sg;Prox+Dist"]
+tufs = ["あれ <- あれ (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
 ["Ent;Sg;Univ"]
 ntumc = ["万物 <- 77000078-n", "全ての物 <- 77000078-n"]
-english = ["everything"]
+english = ["each", "everything"]
 label = "entity singular universal pronoun"
 definition = "an entity singular universal pronoun"
-ntumc_definitions = ["77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
+ntumc_definitions = ["02269635-n: entity, singular, universal pronoun", "77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
 existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Fml;Med"]
+ntumc = ["そちら <- 77000071-n"]
+label = "entity formal medial pronoun of two"
+definition = "an entity formal medial pronoun of two"
+ntumc_definitions = ["77000071-n: entity, of two, formal, medial pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, medial"]
+existing_by_lemma = ["そちら -> tufs-ja tufs-ja-00109151-r [i18828] そちら: (CILI) in or at that place"]
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Fml;Prox"]
+ntumc = ["こちら <- 77000072-n"]
+label = "entity formal proximal pronoun of two"
+definition = "an entity formal proximal pronoun of two"
+ntumc_definitions = ["77000072-n: entity, of two, formal, proximal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, proximal"]
+existing_by_lemma = ["こちら -> tufs-ja tufs-ja-77000072-n [-] こちら: this way", "こちら -> tufs-ja tufs-ja-08489497-n [i81667] こちら: (CILI) the present location; this place"]
+hypernyms = ["Ent;Prox", "feature:Ent"]
+ancestors = ["Ent;Prox", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Fml;Rem"]
+ntumc = ["あちら <- 77000070-n"]
+label = "entity formal remote pronoun of two"
+definition = "an entity formal remote pronoun of two"
+ntumc_definitions = ["77000070-n: entity, of two, formal, remote pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, remote"]
+existing_by_lemma = ["あちら -> tufs-ja tufs-ja-9996-n [-] あちら"]
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Infml;Med"]
+ntumc = ["そっち <- 77000115-n"]
+label = "entity informal medial pronoun of two"
+definition = "an entity informal medial pronoun of two"
+ntumc_definitions = ["77000115-n: demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, medial"]
+existing_by_lemma = ["そっち -> tufs-ja tufs-ja-9987-n [-] そっち: that way"]
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Infml;Prox"]
+ntumc = ["こっち <- 77000073-n"]
+label = "entity informal proximal pronoun of two"
+definition = "an entity informal proximal pronoun of two"
+ntumc_definitions = ["77000073-n: entity, of two, informal, proximal pronoun; demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, proximal"]
+existing_by_lemma = ["こっち -> tufs-ja tufs-ja-10766-n [-] こっち: this way"]
+hypernyms = ["Ent;Prox", "feature:Ent"]
+ancestors = ["Ent;Prox", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Infml;Rem"]
+ntumc = ["あっち <- 77000116-n"]
+label = "entity informal remote pronoun of two"
+definition = "an entity informal remote pronoun of two"
+ntumc_definitions = ["77000116-n: demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, remote"]
+existing_by_lemma = ["あっち -> tufs-ja tufs-ja-08489627-n [i81668] あっち: (CILI) a location other than here; that place"]
+hypernyms = ["Ent;Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Int;Fml"]
+ntumc = ["どちら <- 77000065-n"]
+english = ["which"]
+english_via = "Ent;Int"
+label = "entity interrogative formal pronoun of two"
+definition = "an entity interrogative formal pronoun of two"
+ntumc_definitions = ["77000065-n: entity, interrogative, formal pronoun; entity, interrogative pronoun, formal"]
+existing_by_lemma = ["どちら -> tufs-ja tufs-ja-77000084-n [-] どちら: which way"]
+hypernyms = ["Ent;Int", "feature:Ent"]
+ancestors = ["Ent;Int", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Two;Int;Infml"]
+lemmas = ["どっち"]
+ntumc = ["どっち <- 77000066-n"]
+english = ["which"]
+english_via = "Ent;Int"
+label = "entity interrogative informal pronoun of two"
+definition = "an entity interrogative informal pronoun of two"
+ntumc_definitions = ["77000066-n: entity, interrogative, informal pronoun; entity, interrogative pronoun, informal"]
+existing_by_lemma = ["どっち -> tufs-ja tufs-ja-164-n [-] どっち: which way"]
+hypernyms = ["Ent;Int", "feature:Ent"]
+ancestors = ["Ent;Int", "feature:Ent"]
+tufs = ["どっち <- どっち (high)"]
+curator_notes = ["NTUMC"]
+status = "built"
+comment = ""
+
+["Ent;Two;Univ"]
+ntumc = ["両方 <- 77000076-n", "りょうほう <- 77000076-n", "双方 <- 77000076-n", "両者 <- 77000076-n"]
+english = ["both"]
+label = "entity universal pronoun of two"
+definition = "an entity universal pronoun of two"
+ntumc_definitions = ["77000076-n: entity, of two, universal pronoun; pronoun, entity, of two; quantifier: of two, universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Univ"]
+ntumc = ["すべて <- 02269286-n", "全て <- 02269286-n", "全部 <- 02269286-n"]
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+existing_by_lemma = ["すべて -> omw-ja omw-ja-00103087-r [i18785] すべて: 始めから終わりまで", "すべて -> omw-ja omw-ja-00157624-r [i19207] まるきり, すべて, 全く, 全て, 完全: するために完成する", "全て -> omw-ja omw-ja-00157624-r [i19207] まるきり, すべて, 全く, 全て, 完全: するために完成する", "全部 -> tufs-ja tufs-ja-13993-n [-] 全部: all"]
+existing_hidden = 2  # other senses of these lemmas
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
 status = "built (NTUMC only)"
@@ -665,13 +761,26 @@ curator_notes = ["extra-lemmas; determiner", "NTUMC; determiner use (何色)"]
 status = "built"
 comment = ""
 
+["Knd;Dist"]
+lemmas = []
+status = "unlexicalized: no ja word; included for the hierarchy"
+english = ["such"]
+english_via = "Knd;Prox+Dist"
+label = "kind distal pronoun"
+definition = "a kind distal pronoun"
+hypernyms = ["Dist", "Knd;Prox+Dist"]
+ancestors = ["Dist", "Knd;Prox+Dist", "Prox+Dist"]
+comment = ""
+
 ["Knd;Med"]
 ntumc = ["そのような <- 77000113-a", "そんな <- 77000113-a", "そういう <- 77000113-a"]
+english = ["such"]
+english_via = "Knd;Prox+Dist"
 label = "kind medial pronoun"
 definition = "a kind medial pronoun"
 ntumc_definitions = ["77000113-a: demonstrative determiner, kind, medial"]
-hypernyms = ["Med", "feature:Knd"]
-ancestors = ["Med", "feature:Knd"]
+hypernyms = ["Knd;Dist", "Med"]
+ancestors = ["Knd;Dist", "Med", "Dist", "Knd;Prox+Dist", "Prox+Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -684,8 +793,8 @@ label = "kind proximal pronoun"
 definition = "a kind proximal pronoun"
 ntumc_definitions = ["77000089-a: demonstrative determiner, kind, proximal"]
 existing_by_lemma = ["こんな -> tufs-ja tufs-ja-77000089-a [-] こんな: such"]
-hypernyms = ["Knd;Prox+Dist", "Prox", "feature:Knd"]
-ancestors = ["Knd;Prox+Dist", "Prox", "feature:Knd", "Prox+Dist"]
+hypernyms = ["Knd;Prox+Dist", "Prox"]
+ancestors = ["Knd;Prox+Dist", "Prox", "Prox+Dist"]
 tufs = ["こんな <- こんな (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -697,17 +806,19 @@ status = "unlexicalized: no ja word; included for the hierarchy"
 english = ["such"]
 label = "kind proximal or distal pronoun"
 definition = "a kind proximal or distal pronoun"
-hypernyms = ["Prox+Dist", "feature:Knd"]
-ancestors = ["Prox+Dist", "feature:Knd"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
 comment = ""
 
 ["Knd;Rem"]
 ntumc = ["ああいう <- 77000114-a", "あのような <- 77000114-a", "あんな <- 77000114-a"]
+english = ["such"]
+english_via = "Knd;Prox+Dist"
 label = "kind remote pronoun"
 definition = "a kind remote pronoun"
 ntumc_definitions = ["77000114-a: demonstrative determiner, kind, remote"]
-hypernyms = ["Rem", "feature:Knd"]
-ancestors = ["Rem", "feature:Knd"]
+hypernyms = ["Knd;Dist", "Rem"]
+ancestors = ["Knd;Dist", "Rem", "Dist", "Knd;Prox+Dist", "Prox+Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -718,25 +829,29 @@ label = "medial pronoun"
 definition = "a medial pronoun"
 ntumc_definitions = ["77000060-a: demonstrative determiner, medial"]
 existing_by_lemma = ["その -> tufs-ja tufs-ja-90793-a [-] その: that ～"]
-hypernyms = []
-ancestors = []
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
 tufs = ["その <- その (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
-["Mnr;Dist+Med"]
+["Mnr;Dist"]
 lemmas = []
 status = "unlexicalized: no ja word; included for the hierarchy"
-label = "manner distal or medial pronoun"
-definition = "a manner distal or medial pronoun"
-ntumc_definitions = ["77000088-r: manner, medial pronoun"]
-hypernyms = ["feature:Mnr"]
-ancestors = ["feature:Mnr"]
+english = ["so", "thus", "thusly"]
+english_via = "Mnr;Prox+Dist"
+label = "manner distal pronoun"
+definition = "a manner distal pronoun"
+ntumc_definitions = ["77000088-r: manner, distal pronoun"]
+hypernyms = ["Mnr;Prox+Dist"]
+ancestors = ["Mnr;Prox+Dist"]
 comment = ""
 
 ["Mnr;Elec"]
 ntumc = ["何れ <- 77000028-n", "いずれ <- 77000028-n"]
+english = ["any", "whatever", "whatsoever", "whichever"]
+english_via = "Elec"
 label = "manner elective existential pronoun"
 definition = "a manner elective existential pronoun"
 ntumc_definitions = ["77000028-n: pronoun, manner; quantifier: elective existential"]
@@ -764,12 +879,14 @@ comment = ""
 ["Mnr;Med"]
 lemmas = ["そう"]
 ntumc = ["そんなに <- 77000113-r"]
+english = ["so", "thus", "thusly"]
+english_via = "Mnr;Prox+Dist"
 label = "manner medial pronoun"
 definition = "a manner medial pronoun"
 ntumc_definitions = ["77000113-r: manner, medial pronoun"]
 existing_by_lemma = ["そう -> omw-ja omw-ja-00031899-r [i18320] それはそれは, おもいきり, ひじょうに, いかにも, きわめて, すこぶる, ...: 強意語として使われる", "そう -> omw-ja omw-ja-00121135-r [i18911] こうして, そない, かく, そう, 斯うして, 斯う, ...: 示された方法で", "そう -> omw-ja omw-ja-00146926-r [i19126] そういうふうに, そのように, かくも, かほど, そない, かく, ...: 特に明示されるまたは黙示されているような、状態またはさまの", "そう -> tufs-ja tufs-ja-00121135-r [i18911] そう: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
-hypernyms = ["Mnr;Dist+Med", "feature:Mnr"]
-ancestors = ["Mnr;Dist+Med", "feature:Mnr"]
+hypernyms = ["Mnr;Dist"]
+ancestors = ["Mnr;Dist", "Mnr;Prox+Dist"]
 tufs = ["そう <- そう (high)"]
 curator_notes = ["extra-lemmas"]
 status = "built"
@@ -777,33 +894,35 @@ comment = ""
 
 ["Mnr;Prox"]
 ntumc = ["こんなに <- 77000089-r"]
-english = ["so"]
+english = ["so", "thus", "thusly"]
 english_via = "Mnr;Prox+Dist"
 label = "manner proximal pronoun"
 definition = "a manner proximal pronoun"
 ntumc_definitions = ["77000089-r: manner, proximal pronoun"]
-hypernyms = ["Mnr;Prox+Dist", "feature:Mnr"]
-ancestors = ["Mnr;Prox+Dist", "feature:Mnr"]
+hypernyms = ["Mnr;Prox+Dist"]
+ancestors = ["Mnr;Prox+Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
 ["Mnr;Prox+Dist"]
 lemmas = []
 status = "unlexicalized: no ja word; included for the hierarchy"
-english = ["so"]
+english = ["so", "thus", "thusly"]
 label = "manner proximal or distal pronoun"
 definition = "a manner proximal or distal pronoun"
-hypernyms = ["feature:Mnr"]
-ancestors = ["feature:Mnr"]
+hypernyms = []
+ancestors = []
 comment = ""
 
 ["Mnr;Rem"]
 ntumc = ["あんなに <- 77000114-r"]
+english = ["so", "thus", "thusly"]
+english_via = "Mnr;Prox+Dist"
 label = "manner remote pronoun"
 definition = "a manner remote pronoun"
 ntumc_definitions = ["77000114-r: manner, remote pronoun"]
-hypernyms = ["feature:Mnr"]
-ancestors = ["feature:Mnr"]
+hypernyms = ["Mnr;Dist"]
+ancestors = ["Mnr;Dist", "Mnr;Prox+Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -826,8 +945,8 @@ definition = "a person interrogative pronoun"
 ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
 existing_by_lemma = ["だれ -> tufs-ja tufs-ja-77000095-n [-] どなた, だれ: who"]
 existing_hidden = 2  # other senses of these lemmas
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
 tufs = ["だれ <- だれ (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -841,7 +960,7 @@ label = "person interrogative polite pronoun"
 definition = "a person interrogative polite pronoun"
 existing_by_lemma = ["どなた -> tufs-ja tufs-ja-77000095-n [-] どなた, だれ: who"]
 hypernyms = ["Pers;Int", "feature:Pers"]
-ancestors = ["Pers;Int", "feature:Pers"]
+ancestors = ["Pers;Int", "feature:Pers", "Ent;Int", "feature:Ent"]
 tufs = ["どなた <- どなた (high)"]
 curator_notes = ["extra-lemmas"]
 status = "built"
@@ -849,33 +968,37 @@ comment = ""
 
 ["Pers;Pl;Infml;Med;Men"]
 ntumc = ["其奴ら <- 77000110-n", "そいつら <- 77000110-n"]
+english = ["those"]
+english_via = "Ent;Pl;Dist"
 label = "person plural informal medial men's speech pronoun"
 definition = "a person plural informal medial men's speech pronoun"
 ntumc_definitions = ["77000110-n: demonstrative pronoun, person, plural, men's speech, informal; quantifier: demonstrative determiner, medial"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Pl;Med", "feature:Pers"]
+ancestors = ["Ent;Pl;Med", "feature:Pers", "Ent;Pl;Dist", "feature:Ent", "Ent;Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
 ["Pers;Pl;Infml;Prox;Men"]
 ntumc = ["此奴ら <- 77000123-n", "こいつら <- 77000123-n"]
 english = ["these"]
-english_via = "Pl;Prox"
+english_via = "Ent;Pl;Prox"
 label = "person plural informal proximal men's speech pronoun"
 definition = "a person plural informal proximal men's speech pronoun"
 ntumc_definitions = ["77000123-n: demonstrative pronoun, person, plural, men's speech, informal; quantifier: demonstrative determiner, proximal"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Pl;Prox", "feature:Pers"]
+ancestors = ["Ent;Pl;Prox", "feature:Pers", "Ent;Prox", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
 ["Pers;Pl;Infml;Rem;Men"]
 ntumc = ["彼奴ら <- 77000108-n", "あいつら <- 77000108-n"]
+english = ["those"]
+english_via = "Ent;Pl;Dist"
 label = "person plural informal remote men's speech pronoun"
 definition = "a person plural informal remote men's speech pronoun"
 ntumc_definitions = ["77000108-n: demonstrative pronoun, person, plural, men's speech, informal; quantifier: demonstrative determiner, remote"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Pl;Dist", "feature:Pers"]
+ancestors = ["Ent;Pl;Dist", "feature:Pers", "Ent;Dist", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -900,8 +1023,8 @@ english = ["someone"]
 label = "person singular assertive existential pronoun"
 definition = "a person singular assertive existential pronoun"
 existing_by_lemma = ["だれか -> tufs-ja tufs-ja-00007846-n [i35562] だれか: (CILI) a human being"]
-hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
-ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Pers"]
+hypernyms = ["Ent;Asrt", "feature:Pers"]
+ancestors = ["Ent;Asrt", "feature:Pers", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 tufs = ["だれか <- だれか (high)"]
 curator_notes = ["extra-lemmas"]
 status = "built"
@@ -909,23 +1032,25 @@ comment = ""
 
 ["Pers;Sg;Infml;Med;Men"]
 ntumc = ["其奴 <- 77000109-n", "そいつ <- 77000109-n", "そやつ <- 77000109-n"]
+english = ["that"]
+english_via = "Ent;Sg;Dist"
 label = "person singular informal medial men's speech pronoun"
 definition = "a person singular informal medial men's speech pronoun"
 ntumc_definitions = ["77000109-n: demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, medial"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Sg;Med", "feature:Pers"]
+ancestors = ["Ent;Sg;Med", "feature:Pers", "Ent;Sg;Dist", "feature:Ent", "Ent;Dist", "Ent;Sg;Prox+Dist"]
 status = "built (NTUMC only)"
 comment = ""
 
 ["Pers;Sg;Infml;Prox;Men"]
 ntumc = ["こいつ <- 77000122-n", "此奴 <- 77000122-n"]
 english = ["this"]
-english_via = "Sg;Prox"
+english_via = "Ent;Sg;Prox"
 label = "person singular informal proximal men's speech pronoun"
 definition = "a person singular informal proximal men's speech pronoun"
 ntumc_definitions = ["77000122-n: demonstrative pronoun, person, singular, men's speech, informal; quantifier: demonstrative determiner, proximal"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Sg;Prox", "feature:Pers"]
+ancestors = ["Ent;Sg;Prox", "feature:Pers", "Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -937,8 +1062,8 @@ label = "person universal pronoun"
 definition = "a person universal pronoun"
 ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
 existing_by_lemma = ["みんな -> tufs-ja tufs-ja-77000099-n [-] みんな: everyone"]
-hypernyms = ["feature:Pers"]
-ancestors = ["feature:Pers"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
 tufs = ["みんな <- みんな (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -954,9 +1079,105 @@ definition = "a person universal polite pronoun"
 ntumc_definitions = ["77000100-n: person, universal, polite pronoun; pronoun, person, polite; quantifier: universal"]
 existing_by_lemma = ["皆さん -> tufs-ja tufs-ja-14012-n [-] 皆さん: everyone"]
 hypernyms = ["Pers;Univ", "feature:Pers"]
-ancestors = ["Pers;Univ", "feature:Pers"]
+ancestors = ["Pers;Univ", "feature:Pers", "Ent;Univ", "feature:Ent"]
 tufs = ["皆さん <- 皆さん (high)"]
 curator_notes = ["extra-lemmas"]
+status = "built"
+comment = ""
+
+["Plc;Dist"]
+ntumc = ["それ <- 08489627-n", "そこ <- 08489627-n"]
+english = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+existing_by_lemma = ["それ -> omw-ja omw-ja-08489627-n [i81668] そこ, それ: ここ以外の場所", "それ -> tufs-ja tufs-ja-153-n [-] それ: that", "そこ -> omw-ja omw-ja-08489627-n [i81668] そこ, それ: ここ以外の場所", "そこ -> tufs-ja tufs-ja-9980-n [-] そこ: there"]
+hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
+ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Plc;Fml;Med"]
+lemmas = ["そちら"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place formal medial pronoun"
+definition = "a place formal medial pronoun"
+existing_by_lemma = ["そちら -> tufs-ja tufs-ja-00109151-r [i18828] そちら: (CILI) in or at that place"]
+hypernyms = ["Plc;Med", "feature:Plc"]
+ancestors = ["Plc;Med", "feature:Plc", "Plc;Dist", "Plc;Prox+Dist"]
+tufs = ["そちら <- そちら (high)"]
+curator_notes = ["polite \"there (by you), that way\"; the TUFS heading sense. NTUMC has Ent;Two;Fml;Med"]
+status = "built"
+comment = ""
+
+["Plc;Fml;Prox"]
+lemmas = ["こちら"]
+english = ["'ere", "here"]
+english_via = "Plc;Prox"
+label = "place formal proximal pronoun"
+definition = "a place formal proximal pronoun"
+existing_by_lemma = ["こちら -> tufs-ja tufs-ja-77000072-n [-] こちら: this way", "こちら -> tufs-ja tufs-ja-08489497-n [i81667] こちら: (CILI) the present location; this place"]
+hypernyms = ["Plc;Prox", "feature:Plc"]
+ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+tufs = ["こちら <- こちら (high)"]
+curator_notes = ["polite \"here, this way\"; the TUFS heading sense. NTUMC has the one-of-two sense, Ent;Two;Fml;Prox"]
+status = "built"
+comment = ""
+
+["Plc;Fml;Rem"]
+lemmas = ["あちら"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place formal remote pronoun"
+definition = "a place formal remote pronoun"
+existing_by_lemma = ["あちら -> tufs-ja tufs-ja-9996-n [-] あちら"]
+hypernyms = ["Plc;Rem", "feature:Plc"]
+ancestors = ["Plc;Rem", "feature:Plc", "Plc;Dist", "Plc;Prox+Dist"]
+tufs = ["あちら <- あちら (high)"]
+curator_notes = ["polite \"over there, that way\"; the TUFS heading sense. NTUMC has Ent;Two;Fml;Rem"]
+status = "built"
+comment = ""
+
+["Plc;Infml;Med"]
+lemmas = ["そっち"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place informal medial pronoun"
+definition = "a place informal medial pronoun"
+existing_by_lemma = ["そっち -> tufs-ja tufs-ja-9987-n [-] そっち: that way"]
+hypernyms = ["Plc;Med", "feature:Plc"]
+ancestors = ["Plc;Med", "feature:Plc", "Plc;Dist", "Plc;Prox+Dist"]
+tufs = ["そっち <- そっち (high)"]
+curator_notes = ["casual \"there, that way\"; the TUFS heading sense. NTUMC has Ent;Two;Infml;Med"]
+status = "built"
+comment = ""
+
+["Plc;Infml;Prox"]
+lemmas = ["こっち"]
+english = ["'ere", "here"]
+english_via = "Plc;Prox"
+label = "place informal proximal pronoun"
+definition = "a place informal proximal pronoun"
+existing_by_lemma = ["こっち -> tufs-ja tufs-ja-10766-n [-] こっち: this way"]
+hypernyms = ["Plc;Prox", "feature:Plc"]
+ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+tufs = ["こっち <- こっち (high)"]
+curator_notes = ["casual \"here, this way\"; the TUFS heading sense. NTUMC has Ent;Two;Infml;Prox"]
+status = "built"
+comment = ""
+
+["Plc;Infml;Rem"]
+lemmas = ["あっち"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place informal remote pronoun"
+definition = "a place informal remote pronoun"
+existing_by_lemma = ["あっち -> tufs-ja tufs-ja-08489627-n [i81668] あっち: (CILI) a location other than here; that place"]
+hypernyms = ["Plc;Rem", "feature:Plc"]
+ancestors = ["Plc;Rem", "feature:Plc", "Plc;Dist", "Plc;Prox+Dist"]
+tufs = ["あっち <- あっち (high)"]
+curator_notes = ["casual \"over there, that way\"; the TUFS heading sense. NTUMC has Ent;Two;Infml;Rem"]
 status = "built"
 comment = ""
 
@@ -975,15 +1196,31 @@ curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
+["Plc;Int;Fml"]
+lemmas = ["どちら"]
+english = ["where"]
+english_via = "Plc;Int"
+label = "place interrogative formal pronoun"
+definition = "a place interrogative formal pronoun"
+existing_by_lemma = ["どちら -> tufs-ja tufs-ja-77000084-n [-] どちら: which way"]
+hypernyms = ["Plc;Int", "feature:Plc"]
+ancestors = ["Plc;Int", "feature:Plc"]
+tufs = ["どちら <- どちら (high)"]
+curator_notes = ["polite \"where, which way\"; the TUFS heading sense. NTUMC has Ent;Two;Int;Fml"]
+status = "built"
+comment = ""
+
 ["Plc;Med"]
 lemmas = ["そこ"]
 ntumc = ["そこ <- 77000117-n", "其処 <- 77000117-n"]
+english = ["there"]
+english_via = "Plc;Dist"
 label = "place medial pronoun"
 definition = "a place medial pronoun"
 ntumc_definitions = ["77000117-n: demonstrative pronoun, location; quantifier: demonstrative determiner, medial"]
 existing_by_lemma = ["そこ -> omw-ja omw-ja-08489627-n [i81668] そこ, それ: ここ以外の場所", "そこ -> tufs-ja tufs-ja-9980-n [-] そこ: there"]
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
 tufs = ["そこ <- そこ (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -991,9 +1228,11 @@ comment = ""
 
 ["Plc;Prox"]
 lemmas = ["ここ"]
-english = ["here"]
+ntumc = ["ここ <- 08489497-n", "此処 <- 08489497-n", "此所 <- 08489497-n", "こちら <- 08489497-n"]
+english = ["'ere", "here"]
 label = "place proximal pronoun"
 definition = "a place proximal pronoun"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
 existing_by_lemma = ["ここ -> omw-ja omw-ja-08489497-n [i81667] ここ: 現在の位置", "ここ -> tufs-ja tufs-ja-15166191-n [i116914] 午後: (CILI) the part of the day between noon and evening", "ここ -> tufs-ja tufs-ja-9974-n [-] ここ: here"]
 hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
 ancestors = ["Plc;Prox+Dist", "feature:Plc"]
@@ -1014,12 +1253,14 @@ comment = ""
 ["Plc;Rem"]
 lemmas = ["あそこ"]
 ntumc = ["彼処 <- 77000081-n", "あそこ <- 77000081-n"]
+english = ["there"]
+english_via = "Plc;Dist"
 label = "place remote pronoun"
 definition = "a place remote pronoun"
 ntumc_definitions = ["77000081-n: demonstrative pronoun, location; quantifier: demonstrative determiner, remote"]
 existing_by_lemma = ["あそこ -> tufs-ja tufs-ja-9991-n [-] あそこ: there"]
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
 tufs = ["あそこ <- あそこ (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -1027,11 +1268,25 @@ comment = ""
 
 ["Plc;Sg;Oth"]
 ntumc = ["よそ <- 77000085-n"]
+english = ["another", "some other"]
+english_via = "Sg;Oth"
 label = "place singular other pronoun"
 definition = "a place singular other pronoun"
 ntumc_definitions = ["77000085-n: location, other pronoun; pronoun, location; quantifier:  singular, another"]
 hypernyms = ["Oth", "feature:Plc"]
 ancestors = ["Oth", "feature:Plc"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Plc;Univ"]
+ntumc = ["普く <- 00025728-r", "端から端まで <- 00025728-r", "至る所に <- 00025728-r", "一面に <- 00025728-r", "あちこち <- 00025728-r", "隈無く <- 00025728-r", "彼方此方 <- 00025728-r", "所構わず <- 00025728-r", "所嫌わず <- 00025728-r", "遍く <- 00025728-r", "隈なく <- 00025728-r", "どこでも <- 00025728-r", "ところ嫌わず <- 00025728-r", "満遍無く <- 00025728-r", "何処も彼処も <- 00025728-r", "満遍なく <- 00025728-r", "此所彼所 <- 00025728-r", "所かまわず <- 00025728-r", "くまなく <- 00025728-r", "あちらこちら <- 00025728-r", "所きらわず <- 00025728-r", "あっちこっち <- 00025728-r", "何処もかしこも <- 00025728-r", "べったり <- 00025728-r", "万遍なく <- 00025728-r", "万遍無く <- 00025728-r", "ところ構わず <- 00025728-r", "此処彼処 <- 00025728-r"]
+english = ["all over", "all round", "around", "everyplace", "everywhere"]
+label = "place universal pronoun"
+definition = "a place universal pronoun"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+existing_by_lemma = ["普く -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "普く -> omw-ja omw-ja-00036609-r [i18354] 大規模, 広く, 広範, 手広く, 普く, 遍く: 広範囲にわたるさまの", "普く -> omw-ja omw-ja-00195342-r [i19486] 広く, 普く, 普遍的, 遍く: 至る所で", "普く -> omw-ja omw-ja-00221583-r [i19663] ひととおり, おおかた, たいてい, ざっと, なべて, ふつう, ...: 特定の詳細または例外に関係なく", "普く -> omw-ja omw-ja-00495663-r [i21595] 大いに, 広く, 広範, 手広く, 普く, 遍く: 大いに", "端から端まで -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "至る所に -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "一面に -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "一面に -> omw-ja omw-ja-00198039-r [i19506] くまなく, 一面に, 隈なく, 隈無く: 全域にわたって", "あちこち -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "あちこち -> omw-ja omw-ja-00072649-r [i18576] あちらこちら, あっちこっち, あちこち, 彼方此方, 此処彼処, 此所彼所: 様々な場所で、または場所に", "隈無く -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "隈無く -> omw-ja omw-ja-00198039-r [i19506] くまなく, 一面に, 隈なく, 隈無く: 全域にわたって", "彼方此方 -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "彼方此方 -> omw-ja omw-ja-00072649-r [i18576] あちらこちら, あっちこっち, あちこち, 彼方此方, 此処彼処, 此所彼所: 様々な場所で、または場所に", "彼方此方 -> omw-ja omw-ja-00509287-r [i21709] 彼方此方: 1つの場所または状況からもう一方まで", "所構わず -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "所構わず -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "所嫌わず -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "所嫌わず -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "遍く -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "遍く -> omw-ja omw-ja-00036609-r [i18354] 大規模, 広く, 広範, 手広く, 普く, 遍く: 広範囲にわたるさまの", "遍く -> omw-ja omw-ja-00195342-r [i19486] 広く, 普く, 普遍的, 遍く: 至る所で", "遍く -> omw-ja omw-ja-00221583-r [i19663] ひととおり, おおかた, たいてい, ざっと, なべて, ふつう, ...: 特定の詳細または例外に関係なく", "遍く -> omw-ja omw-ja-00495663-r [i21595] 大いに, 広く, 広範, 手広く, 普く, 遍く: 大いに", "隈なく -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "隈なく -> omw-ja omw-ja-00198039-r [i19506] くまなく, 一面に, 隈なく, 隈無く: 全域にわたって", "どこでも -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "ところ嫌わず -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "ところ嫌わず -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "満遍無く -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "満遍無く -> omw-ja omw-ja-00057257-r [i18480] まんべんなく, すっかり, つくづく, つぶさに, とっくり, まったく, ...: 徹底的に", "満遍無く -> omw-ja omw-ja-00250153-r [i19868] まんべんなく, 万遍なく, 万遍無く, 均一に, 均一, 満遍なく, ...: 均一なさまで", "何処も彼処も -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "何処も彼処も -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "満遍なく -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "満遍なく -> omw-ja omw-ja-00057257-r [i18480] まんべんなく, すっかり, つくづく, つぶさに, とっくり, まったく, ...: 徹底的に", "満遍なく -> omw-ja omw-ja-00250153-r [i19868] まんべんなく, 万遍なく, 万遍無く, 均一に, 均一, 満遍なく, ...: 均一なさまで", "此所彼所 -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "此所彼所 -> omw-ja omw-ja-00072649-r [i18576] あちらこちら, あっちこっち, あちこち, 彼方此方, 此処彼処, 此所彼所: 様々な場所で、または場所に", "所かまわず -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "所かまわず -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "くまなく -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "くまなく -> omw-ja omw-ja-00026061-r [i18292] くまなく, あらゆる所を: どこにも", "くまなく -> omw-ja omw-ja-00198039-r [i19506] くまなく, 一面に, 隈なく, 隈無く: 全域にわたって", "あちらこちら -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "あちらこちら -> omw-ja omw-ja-00072649-r [i18576] あちらこちら, あっちこっち, あちこち, 彼方此方, 此処彼処, 此所彼所: 様々な場所で、または場所に", "所きらわず -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "所きらわず -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "あっちこっち -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "あっちこっち -> omw-ja omw-ja-00072649-r [i18576] あちらこちら, あっちこっち, あちこち, 彼方此方, 此処彼処, 此所彼所: 様々な場所で、または場所に", "何処もかしこも -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "何処もかしこも -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "べったり -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "べったり -> omw-ja omw-ja-00466457-r [i21373] べったり: ねばねばとして粘着質に", "べったり -> omw-ja omw-ja-00505226-r [i21675] ぎゅっと, ぴたっと, ぴたりと, ぴちっと, ぴったり, ぴっちり, ...: 注意深い態度で", "万遍なく -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "万遍なく -> omw-ja omw-ja-00057257-r [i18480] まんべんなく, すっかり, つくづく, つぶさに, とっくり, まったく, ...: 徹底的に", "万遍なく -> omw-ja omw-ja-00250153-r [i19868] まんべんなく, 万遍なく, 万遍無く, 均一に, 均一, 満遍なく, ...: 均一なさまで", "万遍無く -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "万遍無く -> omw-ja omw-ja-00057257-r [i18480] まんべんなく, すっかり, つくづく, つぶさに, とっくり, まったく, ...: 徹底的に", "万遍無く -> omw-ja omw-ja-00250153-r [i19868] まんべんなく, 万遍なく, 万遍無く, 均一に, 均一, 満遍なく, ...: 均一なさまで", "ところ構わず -> omw-ja omw-ja-00025290-r [i18288] どこにでも, どこへでも, どこかに, どこにも, どこへも, 何処もかしこも, ...: どこでも、どこにでも、またはどこまでも", "ところ構わず -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "此処彼処 -> omw-ja omw-ja-00025728-r [i18291] あちらこちら, あっちこっち, あちこち, くまなく, どこでも, べったり, ...: 一部のあるいは全ての場所に", "此処彼処 -> omw-ja omw-ja-00072649-r [i18576] あちらこちら, あっちこっち, あちこち, 彼方此方, 此処彼処, 此所彼所: 様々な場所で、または場所に"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -1077,8 +1332,8 @@ ntumc = ["あの <- 77000059-a"]
 label = "remote pronoun"
 definition = "a remote pronoun"
 ntumc_definitions = ["77000059-a: demonstrative determiner, remote"]
-hypernyms = []
-ancestors = []
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
 tufs = ["あの <- あの (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -1108,6 +1363,31 @@ hypernyms = []
 ancestors = []
 comment = ""
 
+["Sg;Oth"]
+ntumc = ["別個 <- 02070188-a", "別 <- 02070188-a"]
+english = ["another", "some other"]
+label = "singular other pronoun"
+definition = "a singular other pronoun"
+ntumc_definitions = ["02070188-a: any of various alternatives; some other; quantifier, singular, another"]
+existing_by_lemma = ["別個 -> omw-ja omw-ja-02070030-a [i11343] 別, 別個: 1番目と明確に離れている", "別個 -> omw-ja omw-ja-02070188-a [i11344] 別, 別個: 様々な選択肢の総称", "別個 -> omw-ja omw-ja-02109678-a [i11562] 別個: 独立したさま", "別 -> omw-ja omw-ja-02064745-a [i11325] 別, 別様: 本質、性質、形体または程度において同様でない", "別 -> omw-ja omw-ja-02067063-a [i11333] 別, 別様, 異なった: 同様でない", "別 -> omw-ja omw-ja-02069355-a [i11342] 他し, 別: 既に述べた、または示したのと同じものではない", "別 -> omw-ja omw-ja-02070030-a [i11343] 別, 別個: 1番目と明確に離れている", "別 -> omw-ja omw-ja-02070188-a [i11344] 別, 別個: 様々な選択肢の総称", "別 -> omw-ja omw-ja-02110778-a [i11566] 別々, 別, 劃然たる, 截然たる, せつ然たる, 画然たる, ...: 別々の実体あるいは部分を構成するさま"]
+existing_hidden = 3  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Sg;Univ"]
+ntumc = ["それぞれの <- 02269635-a"]
+english = ["each"]
+label = "singular universal pronoun"
+definition = "a singular universal pronoun"
+ntumc_definitions = ["02269635-a: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
+existing_by_lemma = ["それぞれの -> omw-ja omw-ja-00494409-a [i2778] それぞれの, 個々の: それぞれ考慮される"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "built (NTUMC only)"
+comment = ""
+
 ["Thng;Int"]
 lemmas = ["何"]
 ntumc = ["何 <- 77000091-n", "なに <- 77000091-n"]
@@ -1116,8 +1396,8 @@ label = "thing interrogative pronoun"
 definition = "a thing interrogative pronoun"
 ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
 existing_by_lemma = ["何 -> tufs-ja tufs-ja-171-n [-] 何: what"]
-hypernyms = ["feature:Thng"]
-ancestors = ["feature:Thng"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
 tufs = ["何 <- 何（なに・なん） (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -1130,8 +1410,8 @@ label = "thing singular assertive existential pronoun"
 definition = "a thing singular assertive existential pronoun"
 ntumc_definitions = ["77000092-n: thing (object:), singular, assertive existential pronoun; pronoun, thing, singular; quantifier: assertive existential"]
 existing_by_lemma = ["何か -> omw-ja omw-ja-00026416-r [i18294] どういうわけか, どうしたものか, なにかしら, なにがなし, なんとなく, なんだか, ...: ある明細化されていない理由で"]
-hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
-ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Thng"]
+hypernyms = ["Ent;Asrt", "feature:Thng"]
+ancestors = ["Ent;Asrt", "feature:Thng", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
@@ -1142,21 +1422,23 @@ label = "thing singular elective existential pronoun"
 definition = "a thing singular elective existential pronoun"
 ntumc_definitions = ["77000093-n: thing (object:), singular, elective existential pronoun; pronoun, thing, singular; quantifier: elective existential; Additional information to the common topic"]
 existing_by_lemma = ["何でも -> omw-ja omw-ja-00056916-r [i18478] なにがなんでも, どうしても, ぜひとも, どうでも, なんでも, どうぞ, ...: 絶対に、または確かに", "なんでも -> omw-ja omw-ja-00056916-r [i18478] なにがなんでも, どうしても, ぜひとも, どうでも, なんでも, どうぞ, ...: 絶対に、または確かに"]
-hypernyms = ["feature:Thng"]
-ancestors = ["feature:Thng"]
+hypernyms = ["Ent;Elec", "feature:Thng"]
+ancestors = ["Ent;Elec", "feature:Thng", "feature:Ent"]
 status = "built (NTUMC only)"
 comment = ""
 
 ["Thng;Sg;Univ"]
 lemmas = ["全部"]
 ntumc = ["ぜんぶ <- 77000094-n", "全部 <- 77000094-n", "万事 <- 77000094-n", "ばんじ <- 77000094-n"]
+english = ["each", "everything"]
+english_via = "Ent;Sg;Univ"
 label = "thing singular universal pronoun"
 definition = "a thing singular universal pronoun"
 ntumc_definitions = ["77000094-n: thing (object:), singular, universal pronoun; pronoun, thing, singular; quantifier: universal"]
 existing_by_lemma = ["全部 -> tufs-ja tufs-ja-13993-n [-] 全部: all"]
 existing_hidden = 1  # other senses of these lemmas
-hypernyms = ["feature:Thng"]
-ancestors = ["feature:Thng"]
+hypernyms = ["Ent;Sg;Univ", "feature:Thng"]
+ancestors = ["Ent;Sg;Univ", "feature:Thng", "Ent;Univ", "feature:Ent"]
 tufs = ["全部 <- 全部 (high)"]
 curator_notes = ["NTUMC"]
 status = "built"
@@ -1177,6 +1459,18 @@ curator_notes = ["NTUMC"]
 status = "built"
 comment = ""
 
+["Univ"]
+ntumc = ["みんな <- 02269286-a"]
+english = ["all", "every"]
+label = "universal pronoun"
+definition = "a universal pronoun"
+ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
+existing_by_lemma = ["みんな -> tufs-ja tufs-ja-77000099-n [-] みんな: everyone"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
 ["feature:Dur"]
 lemmas = []
 status = "unlexicalized: feature synset, no words in any language"
@@ -1193,16 +1487,6 @@ status = "unlexicalized: feature synset, no words in any language"
 label = "entity"
 definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
 existing_by_ili = ["omw-ja omw-ja-00001740-n [i35545] 実体: （生命がある、あるいは生命がないに関わらず）それ自身の明確な存在を持つと感知される、知られている、あるいは推定される何か"]
-hypernyms = []
-ancestors = []
-comment = ""
-
-["feature:Knd"]
-lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "kind"
-definition = "a category of things distinguished by some common characteristic or quality"
-existing_by_ili = ["omw-ja omw-ja-05839024-n [i67559] ジャンル, タイプ, 型, 形態, 様式, 毛色, ...: 共通の特徴や質で区別されるものの範疇"]
 hypernyms = []
 ancestors = []
 comment = ""
