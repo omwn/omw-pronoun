@@ -2,7 +2,7 @@ synset	pos	code	head	class	person	number	domain	gender	case	type	formality	polit
 00025728-r	n	Plc;Univ	place							universal					to or in any or all places; pronoun, location; quantifier: universal	everywhere; all over; everyplace; around; all round	遍布 表面; 四处; 遍; 遍+地; 各+地; 到处; 各; 随处; 遍布表面; 处处; 各地; 各 地; 每处; 东西; 四方; 各方; 各 处; 各处; 诸	普く; 端から端まで; 至る所に; 一面に; あちこち; 隈無く; 彼方此方; 所構わず; 所嫌わず; 遍く; 隈なく; どこでも; ところ嫌わず; 満遍無く; 何処も彼処も; 満遍なく; 此所彼所; 所かまわず; くまなく; あちらこちら; 所きらわず; あっちこっち; 何処もかしこも; べったり; 万遍なく; 万遍無く; ところ構わず; 此処彼処	sebilang; mana-mana	ke merata-rata tempat	všude	ovunque; dovunque; dappertutto		
 00495377-r	n	Plc;Sg;Elec	place			sg				elective					where in the world; location, singular, elective existential pronoun	wherever; wheresoever; anywhere	无论何 事物; 一点 也 . . .; 无论何事物; 在 … 的 地方; 在 任何 … 的 地方; 无论哪; 在…的地方; 一点也...; 何处; 在任何…的地方; 何在		manapun; mana-mana; mana pun	manapun; mana-mana				
 00524607-a	a	Sg;Two;Neg					two			negative+other					not either; not one or the other; entity, of two, negative pronoun; quantifier, of two, negative	neither; nor					ani			
-00524607-n	n	Ent;Sg;Two;Neg	entity				two			negative					pronoun, entity; quantifier: quantifier, of two, negative	neither								
+00524607-n	n	Ent;Sg;Two;Neg	entity			sg	two			negative					pronoun, entity, singular; quantifier: quantifier, of two, negative	neither								
 02070188-a	a	Sg;Oth				sg				other					any of various alternatives; some other; quantifier, singular, another	another; some other	其他; 不同; 不同+的; 别; 别+的; 其他+的; 另一; 另; 另一+的	別個; 別			další; jiný; ostatní	altro		
 02070188-n	n	Ent;Sg;Oth	entity			sg									pronoun, entity, quantifier: singular, another	another; other					druhý			
 02267308-a	a	Asrt								assertive					quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential	some; several	一些; 有的; 些; 少许; 有些; 下; 某些; 好几	いくらか	sebagian; beberapa	sebagian; beberapa		qualche; alcuni; certo		
@@ -93,7 +93,7 @@ synset	pos	code	head	class	person	number	domain	gender	case	type	formality	polit
 77000071-n	n	Ent;Two;Fml;Med	entity	demonstrative+demonstrative determiner			two				formal		medial		entity, of two, formal, medial pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, medial			そちら						
 77000072-n	n	Ent;Two;Fml;Prox	entity	demonstrative+demonstrative determiner			two				formal		proximal		entity, of two, formal, proximal pronoun; demonstrative pronoun, entity, formal; quantifier: demonstrative determiner, proximal			こちら						
 77000073-n	n	Ent;Two;Infml;Prox	entity	demonstrative+demonstrative determiner			two				informal		proximal		entity, of two, informal, proximal pronoun; demonstrative pronoun, entity, informal; quantifier: demonstrative determiner, proximal			こっち						
-77000074-n	n	Ent;Sg;Two;Elec	entity				two			elective					entity, of two, elective existential pronoun	either								
+77000074-n	n	Ent;Sg;Two;Elec	entity			sg	two			elective					entity, singular, of two, elective existential pronoun	either								
 77000075-a	a	Prox		demonstrative determiner									proximal		demonstrative determiner, proximal		这; 此; 这一	この	ini					
 77000075-n	n	Ent;Prox	entity	demonstrative+demonstrative determiner									proximal		demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal		这; 此; 这个	これ	ini					
 77000076-a	a	Two;Univ					two			universal					quantifier, of two, universal	both	俩		baik		oba			

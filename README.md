@@ -97,9 +97,8 @@ from:
   languages) and *then* (`Tim;Dist`), with curated lemmas in
   `data/extra-lemmas.tsv`.
 - **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts.
-  NTUMC ff224b3 fixed the rest upstream, so one remains: the pronoun *either*
-  (77000074-n) is singular, `Ent;Sg;Two;Elec`. Its `drop` column removes a lemma
-  from a synset.
+  NTUMC fixed all of them upstream (ff224b3, 0916c58), so it is empty for now.
+  Its `drop` column removes a lemma from a synset.
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
