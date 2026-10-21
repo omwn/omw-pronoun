@@ -12,30 +12,30 @@ jpn	どの	Int	TUFS	determiner
 jpn	皆さん	Pers;Univ;Pol	TUFS	kanji spelling of NTUMC みなさん
 jpn	こう	Mnr;Prox	TUFS	
 jpn	そう	Mnr;Med	TUFS	
-ces	odkud	Plc;Src;Int	curated	direction
-ces	tady	Plc;Loc;Prox	curated	direction
-ces	zde	Plc;Loc;Prox	curated	direction
-ces	sem	Plc;Goal;Prox	curated	direction
-ces	odsud	Plc;Src;Prox	curated	direction
-ces	odtud	Plc;Src;Prox	curated	direction
+ces	odkud	Plc;Int;Src	curated	direction
+ces	tady	Plc;Prox;Loc	curated	direction
+ces	zde	Plc;Prox;Loc	curated	direction
+ces	sem	Plc;Prox;Goal	curated	direction
+ces	odsud	Plc;Prox;Src	curated	direction
+ces	odtud	Plc;Prox;Src	curated	direction
 ces	tam	Plc;Dist	curated	direction
-ces	odtamtud	Plc;Src;Dist	curated	direction
-pl	gdzie	Plc;Loc;Int	curated	direction
-pl	dokąd	Plc;Goal;Int	curated	direction
-pl	skąd	Plc;Src;Int	curated	direction
+ces	odtamtud	Plc;Dist;Src	curated	direction
+pl	gdzie	Plc;Int;Loc	curated	direction
+pl	dokąd	Plc;Int;Goal	curated	direction
+pl	skąd	Plc;Int;Src	curated	direction
 pl	tam	Plc;Dist	curated	direction
-pl	stąd	Plc;Src;Prox	curated	direction
-pl	stamtąd	Plc;Src;Dist	curated	direction
-de	wohin	Plc;Goal;Int	curated	direction
-de	woher	Plc;Src;Int	curated	direction
-de	hierher	Plc;Goal;Prox	curated	direction
-de	dorthin	Plc;Goal;Dist	curated	direction
-ru	куда	Plc;Goal;Int	curated	direction
-ru	откуда	Plc;Src;Int	curated	direction
-ru	сюда	Plc;Goal;Prox	curated	direction
-ru	отсюда	Plc;Src;Prox	curated	direction
-ru	туда	Plc;Goal;Dist	curated	direction
-ru	оттуда	Plc;Src;Dist	curated	direction
+pl	stąd	Plc;Prox;Src	curated	direction
+pl	stamtąd	Plc;Dist;Src	curated	direction
+de	wohin	Plc;Int;Goal	curated	direction
+de	woher	Plc;Int;Src	curated	direction
+de	hierher	Plc;Prox;Goal	curated	direction
+de	dorthin	Plc;Dist;Goal	curated	direction
+ru	куда	Plc;Int;Goal	curated	direction
+ru	откуда	Plc;Int;Src	curated	direction
+ru	сюда	Plc;Prox;Goal	curated	direction
+ru	отсюда	Plc;Prox;Src	curated	direction
+ru	туда	Plc;Dist;Goal	curated	direction
+ru	оттуда	Plc;Dist;Src	curated	direction
 jpn	今	Tim;Prox	TUFS	TUFS 8987
 fr	maintenant	Tim;Prox	TUFS	TUFS 8987
 ar	اَلْآنَ	Tim;Prox	TUFS	TUFS 8987
@@ -57,3 +57,6 @@ de	damals	Tim;Dist	curated	time deixis
 pl	wtedy	Tim;Dist	curated	time deixis
 ru	тогда	Tim;Dist	curated	time deixis
 cmn	那时	Tim;Dist	curated	time deixis
+eng	either	Sg;Two;Elec	curated	one of two
+eng	either	Sg;Two;Univ	curated	each of two
+jpn	どっち	Plc;Int;Infml	curated	casual "where, which way"; TUFS 1741 is only "which (of two)"

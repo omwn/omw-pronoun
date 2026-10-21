@@ -13,6 +13,7 @@ uv run haspelmath_series.py  # indefinite series    -> data/haspelmath-series.ts
 uv run wordnet_words.py      # words via the ILI    -> data/wordnet-words.tsv
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
 uv run build.py              # wn collection        -> release/omw-pronoun-0.1(.tar.xz), docs/hierarchy/data.js
+uv run facts.py              # the paper's figures  -> data/facts.json
 uv run --with pytest --with langcodes --with language_data pytest
 ```
 
@@ -54,8 +55,8 @@ alternatives joined by `+`:
   `Med` and *are* `Rem`, both under it. `Ent` is a person or a thing, so *who*
   (`Pers;Int`) and *what* (`Thng;Int`) are under *which* (`Ent;Int`).
 - **Direction** splits place pro-forms where a language does: Czech *kde* "where"
-  is `Plc;Loc;Int`, *kam* "where to" `Plc;Goal;Int`, *odkud* "where from"
-  `Plc;Src;Int`. English *where* marks none, so it is `Plc;Int`, above all three.
+  is `Plc;Int;Loc`, *kam* "where to" `Plc;Int;Goal`, *odkud* "where from"
+  `Plc;Int;Src`. English *where* marks none, so it is `Plc;Int`, above all three.
 - **Case is inflection, not meaning.** Subjective and objective are not part of
   a concept: *I* and *me* are one entry for `1;Sg`, with the case forms as
   `<Form>` variants tagged `case` (`s`, `a`, `o`, or NTUMC's `obj`).
@@ -87,14 +88,20 @@ from:
 - **Parabank**: combinations NTUMC lacks (dual, greater plural, clusivity in the
   dual, number-neutral *you*, and their possessives), admitted by the KinDiv rule: >= 5 language
   families in >= 3 macroareas.
-- **`data/extra-concepts.tsv`**: curated additions, so far seven from TUFS Japanese
-  (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい), 20 from the TUFS
-  curation, nine for direction (Czech, Polish, German and Russian) and two for
-  time deixis, *now* (`Tim;Prox`, also TUFS 今 in 7 languages) and *then*
-  (`Tim;Dist`), with curated lemmas in `data/extra-lemmas.tsv`.
+- **`data/extra-concepts.tsv`**: curated additions, so far 14 from TUFS Japanese
+  (どなた, だれか, ここ, どこか, いつか, どのような, どのぐらい, and the place
+  senses of こちら/そちら/あちら/どちら, polite, and こっち/そっち/あっち, casual:
+  `Plc;Fml;Prox`, `Plc;Infml;Prox` ...), casual どっち "where" (`Plc;Int;Infml`,
+  not in TUFS), 20 from the TUFS curation, three from English (*either*, one of
+  two and each of two, and *yours*), nine for direction (Czech, Polish, German
+  and Russian) and two for time deixis, *now* (`Tim;Prox`, also TUFS 今 in 7
+  languages) and *then* (`Tim;Dist`), with curated lemmas in
+  `data/extra-lemmas.tsv`.
 - **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts:
   Japanese あれ, あいつ, あちら are remote, not "distal and remote", and Mandarin
-  那样 / Indonesian *begitu* are two-way distal.
+  那样 / Indonesian *begitu* are two-way distal. Its `drop` column removes a
+  lemma from a synset: English *either* is not *both* (77000076-a), so universal
+  *either* is only `Sg;Two;Univ`.
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).

@@ -24,7 +24,8 @@ In the wordnet the head is the synset's hypernym and most other features are
 ``dmnu`` (domain of usage) links to feature synsets; the rest are only in the
 definition text, so both are read. Codes the NTUMC analysis gets wrong are
 corrected from ``data/ntumc-fixes.tsv`` (Japanese *are* is remote, not distal
-and remote); the feature columns keep NTUMC's analysis.
+and remote), which can also drop a lemma from a synset (English *either* is not
+*both*); the feature columns keep NTUMC's analysis.
 
 NTUMC also tags some synsets outside its pronoun inventory as pronouns: Princeton
 *here*, *there*, *everywhere*, *all*, *each*, and a few of its own (Indonesian
@@ -197,10 +198,28 @@ def code(features: dict[str, set[str]]) -> str:
     return ";".join(parts)
 
 
+def fix_rows() -> list[dict[str, str]]:
+    """The rows of data/ntumc-fixes.tsv."""
+    with (HERE / "data" / "ntumc-fixes.tsv").open(encoding="utf8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
 def fixes() -> dict[str, str]:
     """Corrected codes for NTUMC synsets, from data/ntumc-fixes.tsv."""
-    with (HERE / "data" / "ntumc-fixes.tsv").open(encoding="utf8") as handle:
-        return {r["synset"]: r["code"] for r in csv.DictReader(handle, delimiter="\t")}
+    return {r["synset"]: r["code"] for r in fix_rows()}
+
+
+def drops() -> dict[str, set[tuple[str, str]]]:
+    """Lemmas to remove from NTUMC synsets, synset -> {(language, lemma)}.
+
+    The ``drop`` column of data/ntumc-fixes.tsv lists them as ``lang:lemma``,
+    space-separated: English *either* is not *both* (77000076-a).
+    """
+    return {
+        r["synset"]: {tuple(d.split(":", 1)) for d in r["drop"].split()}
+        for r in fix_rows()
+        if r["drop"]
+    }
 
 
 def extra() -> dict[str, dict[str, str]]:
@@ -254,6 +273,7 @@ def read(db: Path) -> list[dict[str, str]]:
         lemmas[synset]["jpn" if lang == "jap" else lang].append(lemma)
 
     fixed = fixes()
+    dropped = drops()
     rows = []
     for synset in sorted(set(definitions) | set(links)):
         # 7701xxxx are the feature synsets
@@ -283,7 +303,13 @@ def read(db: Path) -> list[dict[str, str]]:
         }
         row |= {f: "+".join(sorted(features[f])) for f in FEATURES}
         row["definition"] = definitions.get(synset, "")
-        row |= {lang: "; ".join(dict.fromkeys(lemmas[synset][lang])) for lang in LANGS}
+        gone = dropped.get(synset, set())
+        row |= {
+            lang: "; ".join(
+                dict.fromkeys(x for x in lemmas[synset][lang] if (lang, x) not in gone)
+            )
+            for lang in LANGS
+        }
         rows.append(row)
     return rows
 

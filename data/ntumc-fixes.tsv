@@ -1,15 +1,15 @@
-synset	code	note
-77000048-n	3;Sg;M;Infml;Rem;Men	あいつ is a- (remote), not distal and remote; NTUMC links both
-77000059-n	Ent;Sg;Rem	あれ is a- (remote), not distal and remote; NTUMC links both
-77000070-n	Ent;Two;Fml;Rem	あちら is a- (remote), not distal and remote; NTUMC links both; and one of two, not dual
-77000071-n	Ent;Two;Fml;Med	そちら "that one (of two)" is one thing chosen from two, not dual
-77000072-n	Ent;Two;Fml;Prox	こちら "this one (of two)" is one thing chosen from two, not dual
-77000073-n	Ent;Two;Infml;Prox	こっち "this one (of two)", casual; one of two, not dual
-77000115-n	Ent;Two;Infml;Med	そっち "that one (of two)", casual
-77000116-n	Ent;Two;Infml;Rem	あっち "that one over there (of two)", casual
-77000065-n	Ent;Two;Int;Fml	どちら "which (of two)", as against どれ "which (of more)"
-77000066-n	Ent;Two;Int;Infml	どっち "which (of two)", casual
-77000074-n	Ent;Sg;Two;Elec	either: one of two, not two (Jeretič et al. 2026: the dual counterpart of any)
-77000076-n	Ent;Two;Univ	both: the universal over a set of two
-77000076-a	Two;Univ	both: the universal over a set of two; NTUMC also lists either here
-77000088-r	Mnr;Dist	那样 and begitu are the non-proximal of two-way systems: distal, which covers medial
+synset	code	drop	note
+77000048-n	3;Sg;M;Infml;Rem;Men		あいつ is a- (remote), not distal and remote; NTUMC links both
+77000059-n	Ent;Sg;Rem		あれ is a- (remote), not distal and remote; NTUMC links both
+77000070-n	Ent;Two;Fml;Rem		あちら is a- (remote), not distal and remote; NTUMC links both; and one of two, not dual
+77000071-n	Ent;Two;Fml;Med		そちら "that one (of two)" is one thing chosen from two, not dual
+77000072-n	Ent;Two;Fml;Prox		こちら "this one (of two)" is one thing chosen from two, not dual
+77000073-n	Ent;Two;Infml;Prox		こっち "this one (of two)", casual; one of two, not dual
+77000115-n	Ent;Two;Infml;Med		そっち "that one (of two)", casual
+77000116-n	Ent;Two;Infml;Rem		あっち "that one over there (of two)", casual
+77000065-n	Ent;Two;Int;Fml		どちら "which (of two)", as against どれ "which (of more)"
+77000066-n	Ent;Two;Int;Infml		どっち "which (of two)", casual
+77000074-n	Ent;Sg;Two;Elec		either: one of two, not two (Jeretič et al. 2026: the dual counterpart of any)
+77000076-n	Ent;Two;Univ		both: the universal over a set of two
+77000076-a	Two;Univ	eng:either	both: the universal over a set of two; NTUMC also lists either here, which is Sg;Two;Univ (data/extra-concepts.tsv)
+77000088-r	Mnr;Dist		那样 and begitu are the non-proximal of two-way systems: distal, which covers medial

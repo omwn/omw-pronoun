@@ -54,10 +54,11 @@ or leave them and note the mapping?
 - Japanese こちら/そちら/あちら and こっち were coded dual (`Ent;Du;Fml;Prox` ...).
   They are not: "this one (polite)" is one thing, not two, and そっち/あっち had no
   dual. `data/ntumc-fixes.tsv` now codes them `Ent;Fml;Prox`, `Ent;Fml;Med`,
-  `Ent;Fml;Rem` and `Ent;Infml;Prox`; the fix belongs upstream too. Still open:
-  their commonest sense is place or direction, polite ("here, this way": TUFS
-  translates them as *here*, *there*, *where* in over 20 languages), which would
-  be `Plc;Prox;Fml` etc. The "one of two" sense is now the domain feature `Two`
+  `Ent;Fml;Rem` and `Ent;Infml;Prox`; the fix belongs upstream too. Their
+  commonest sense is place or direction ("here, this way": TUFS translates them
+  as *here*, *there*, *where* in over 20 languages), now the concepts
+  `Plc;Fml;Prox` ... (polite) and `Plc;Infml;Prox` ... (casual), from the TUFS
+  headwords; NTUMC has no synset for it. The "one of two" sense is now the domain feature `Two`
   (`Ent;Two;Fml;Prox`, どちら `Ent;Two;Int;Fml`), as for *either*, *neither*
   and *both*.
 - NTUMC links あれ, あいつ, あちら (77000059-n, 77000048-n, 77000070-n) to both
@@ -88,7 +89,7 @@ five families alone, without the macroarea test. Revisit with a wider sample.
 
 Place pro-forms split by direction where a language has separate words: Czech
 *kde*/*kam*/*odkud*, German *wo*/*wohin*/*woher*, Russian *где*/*куда*/*откуда*
-(`Plc;Loc;Int`, `Plc;Goal;Int`, `Plc;Src;Int`). The nine direction concepts are
+(`Plc;Int;Loc`, `Plc;Int;Goal`, `Plc;Int;Src`). The nine direction concepts are
 curated, from four Indo-European languages; neither Parabank nor Haspelmath's
 CLDF data records direction.
 

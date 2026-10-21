@@ -268,7 +268,7 @@ def subsumes(general: str, specific: str) -> bool:
     (False, True)
     >>> subsumes("Ent;Sg;Dist", "Ent;Sg;Rem"), subsumes("Pers;Sg;Elec", "Pers;Sg;Neg")
     (True, False)
-    >>> subsumes("Plc;Int", "Plc;Goal;Int"), subsumes("Plc;Loc;Int", "Plc;Goal;Int")
+    >>> subsumes("Plc;Int", "Plc;Int;Goal"), subsumes("Plc;Int;Loc", "Plc;Int;Goal")
     (True, False)
     >>> subsumes("Ent;Int", "Thng;Int"), subsumes("Thng;Int", "Ent;Int")
     (True, False)

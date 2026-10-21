@@ -96,7 +96,7 @@ synset	pos	code	head	class	person	number	gender	case	type	formality	politeness	p
 77000074-n	n	Ent;Sg;Two;Elec	entity			du			elective					entity, dual, elective existential pronoun	either								
 77000075-a	a	Prox		demonstrative determiner								proximal		demonstrative determiner, proximal		这; 此; 这一	この	ini					
 77000075-n	n	Ent;Prox	entity	demonstrative+demonstrative determiner								proximal		demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal		这; 此; 这个	これ	ini					
-77000076-a	a	Two;Univ				du			universal					quantifier, dual universal	both; either	俩		baik		oba			
+77000076-a	a	Two;Univ				du			universal					quantifier, dual universal	both	俩		baik		oba			
 77000076-n	n	Ent;Two;Univ	entity			du			universal					entity, dual, universal pronoun; pronoun, entity, dual; quantifier:  dual universal	both		両方; りょうほう; 双方; 両者	kedua-duanya; dua-duanya; keduanya		oba			
 77000077-n	n	Pl;Asrt				pl			assertive					entity, plural, assertive existential pronoun									
 77000078-n	n	Ent;Sg;Univ	entity			sg			universal					entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal	everything	各自	万物; 全ての物	setiap; tiap					

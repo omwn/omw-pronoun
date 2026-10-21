@@ -27,14 +27,24 @@ Plc;Prox+Dist	n	TUFS curation	da, là
 Prox+Dist	a	TUFS curation	ce
 Qnt;Prox	n	TUFS curation	ဒီလောက်
 Ent;2;Poss	n	English yours	number-neutral possessive pronoun, as English you (2) is number-neutral
-Plc;Loc;Int	n	direction	where (at): Czech kde, German wo, Russian где, Polish gdzie
-Plc;Goal;Int	n	direction	where to, whither: Czech kam, German wohin, Russian куда, Polish dokąd
-Plc;Src;Int	n	direction	where from, whence: Czech odkud, German woher, Russian откуда, Polish skąd
-Plc;Loc;Prox	n	direction	here (at): Czech tady, zde, Russian здесь
-Plc;Goal;Prox	n	direction	(to) here, hither: Czech sem, German hierher, Russian сюда
-Plc;Src;Prox	n	direction	from here, hence: Czech odsud, Russian отсюда, Polish stąd
-Plc;Goal;Dist	n	direction	(to) there, thither: German dorthin, Russian туда
-Plc;Src;Dist	n	direction	from there, thence: Czech odtamtud, Russian оттуда, Polish stamtąd
-Plc;Loc;Dist	n	direction	there (at): German dort, Russian там
+Plc;Int;Loc	n	direction	where (at): Czech kde, German wo, Russian где, Polish gdzie
+Plc;Int;Goal	n	direction	where to, whither: Czech kam, German wohin, Russian куда, Polish dokąd
+Plc;Int;Src	n	direction	where from, whence: Czech odkud, German woher, Russian откуда, Polish skąd
+Plc;Prox;Loc	n	direction	here (at): Czech tady, zde, Russian здесь
+Plc;Prox;Goal	n	direction	(to) here, hither: Czech sem, German hierher, Russian сюда
+Plc;Prox;Src	n	direction	from here, hence: Czech odsud, Russian отсюда, Polish stąd
+Plc;Dist;Goal	n	direction	(to) there, thither: German dorthin, Russian туда
+Plc;Dist;Src	n	direction	from there, thence: Czech odtamtud, Russian оттуда, Polish stamtąd
+Plc;Dist;Loc	n	direction	there (at): German dort, Russian там
 Tim;Prox	n	time deixis	now: TUFS 今 (8987) in 7 languages; English now, Czech teď, German jetzt, Polish teraz, Russian сейчас, Mandarin 现在
 Tim;Dist	n	time deixis	then (at that time): English then, Czech tehdy, German damals, Polish wtedy, Russian тогда, Mandarin 那时
+Sg;Two;Elec	a	English either	either, the determiner: one of two, any one ("take either road"); beside Sg;Two;Neg neither
+Sg;Two;Univ	a	English either	either, universal: each of two ("on either side of the fireplace"); Sg;Univ each is to Univ all as this is to Two;Univ both
+Plc;Fml;Prox	n	TUFS ja こちら	polite "here, this way"; ここ is plain, こっち casual
+Plc;Fml;Med	n	TUFS ja そちら	polite "there (by you), that way"
+Plc;Fml;Rem	n	TUFS ja あちら	polite "over there, that way"
+Plc;Int;Fml	n	TUFS ja どちら	polite "where, which way"; どこ is plain
+Plc;Int;Infml	n	Japanese どっち	casual "where, which way"; not in TUFS, whose どっち (1741) is "which (of two)", Ent;Two;Int;Infml
+Plc;Infml;Prox	n	TUFS ja こっち	casual "here, this way"
+Plc;Infml;Med	n	TUFS ja そっち	casual "there, that way"
+Plc;Infml;Rem	n	TUFS ja あっち	casual "over there, that way"

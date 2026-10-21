@@ -1,0 +1,82 @@
+{
+  "concepts": {
+    "a": 53,
+    "direction": 9,
+    "haspelmath": 4,
+    "n": 162,
+    "r": 5,
+    "time": 2,
+    "total": 220,
+    "two": 15
+  },
+  "direction": {
+    "languages": 4
+  },
+  "features": {
+    "flagged": 2,
+    "haspelmath_functions": 9,
+    "haspelmath_functions_used": 8,
+    "ili": 29,
+    "proposed": 24,
+    "ud": 36,
+    "unused": 2,
+    "used": 55
+  },
+  "haspelmath": {
+    "languages": 40
+  },
+  "hierarchy": {
+    "multiple_hypernyms": 24,
+    "tops": 50
+  },
+  "ili": {
+    "linked": 6,
+    "proposed": 214,
+    "unattested": 0
+  },
+  "languages": 669,
+  "ntumc": {
+    "extra_kept": 24,
+    "extra_new": 21,
+    "extra_new_only": 17,
+    "extra_new_shared": 4,
+    "extra_skipped": 11,
+    "extra_synsets": 35,
+    "inventory_concepts": 116,
+    "synsets": 116
+  },
+  "parabank": {
+    "admitted": 35,
+    "admitted_possessive": 20,
+    "bound": 189,
+    "bound_variant_forms": 91,
+    "bound_variants": 148,
+    "bound_variants_same_spelling": 57,
+    "bound_variants_spelled_differently": 91,
+    "gender_untrusted": 172,
+    "varieties": 733
+  },
+  "time": {
+    "now_curated_languages": 7,
+    "now_tufs_languages": 7,
+    "then_curated_languages": 6
+  },
+  "tufs": {
+    "curated": 907,
+    "forms": 752,
+    "held_back_forms": 56,
+    "held_back_forms_unused": 52,
+    "held_back_rows": 66,
+    "japanese_not_in_ntumc": 12,
+    "languages": 22,
+    "new_concepts": 33,
+    "new_concepts_only": 31,
+    "new_concepts_shared": 2,
+    "senses": 841,
+    "there_forms": 22
+  },
+  "wordnet_words": {
+    "languages": 24,
+    "words": 381
+  }
+}

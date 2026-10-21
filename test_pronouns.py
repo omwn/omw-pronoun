@@ -6,11 +6,13 @@ Run with: uv run --with pytest --with langcodes --with language_data pytest
 from __future__ import annotations
 
 import csv
+import json
 
 import pytest
 
 import build
 import concepts
+import facts
 import ntumc_pronouns
 import parabank_words
 
@@ -232,3 +234,41 @@ def test_wordnet_words_are_for_linked_concepts() -> None:
     assert rows
     assert all(linked.get(r["concept"]) == r["ili"] for r in rows)
     assert not any(r["source"].startswith("tufs-") for r in rows)
+
+
+def test_facts_are_current() -> None:
+    # the gender figure is read from the Parabank clone (../parabank-pronouns);
+    # without it, compute() leaves it out, and so does the comparison
+    committed = json.loads((build.DATA / "facts.json").read_text(encoding="utf8"))
+    found = facts.compute()
+    if "gender_untrusted" not in found["parabank"]:
+        committed["parabank"].pop("gender_untrusted", None)
+    assert found == committed, "data/facts.json is stale: run uv run facts.py"
+
+
+#: the slots in FEATURES.md's order
+SLOT_ORDER = [
+    "head",
+    "person",
+    "number",
+    "domain",
+    "gender",
+    "case",
+    "type",
+    "formality",
+    "politeness",
+    "proximity",
+    "direction",
+    "register",
+]
+
+
+def test_concept_codes_follow_the_slot_order() -> None:
+    with (build.DATA / "concepts.tsv").open(encoding="utf8") as handle:
+        codes = [r["code"] for r in csv.DictReader(handle, delimiter="\t")]
+    disordered = set()
+    for code in codes:
+        slots = [SLOT_ORDER.index(s) for s in build.features(code)]
+        if slots != sorted(slots):
+            disordered.add(code)
+    assert not disordered

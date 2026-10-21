@@ -2,7 +2,7 @@
 
 Every concept is named by a code that lists its features, after the
 componential analysis of Seah & Bond (2014): `1e;Du` is "we two, not you",
-`Ent;Sg;Prox` is the pronoun *this*, and `Plc;Goal;Int` is Czech *kam* "where
+`Ent;Sg;Prox` is the pronoun *this*, and `Plc;Int;Goal` is Czech *kam* "where
 to". This file gives the meaning of the codes as an algebra over feature values,
 then lists every feature.
 
@@ -92,7 +92,7 @@ this order, and no two concepts denote the same set.
 
 The basic ways to get a broader code follow from the definitions:
 
-- **drop a feature**: `3;Sg;M` ⊑ `3;Sg`; `Plc;Goal;Int` ⊑ `Plc;Int`;
+- **drop a feature**: `3;Sg;M` ⊑ `3;Sg`; `Plc;Int;Goal` ⊑ `Plc;Int`;
 - **unmark a value**: `1e;Du` ⊑ `1;Du`, `1e;Du` ⊑ `1e;Pl`, `Ent;Sg;Rem` ⊑
   `Ent;Sg;Dist`; but `Pers;Sg;Neg` (*nobody*) is not ⊑ `Pers;Sg;Elec`
   (*anybody*), since `Neg` is not one of `Elec`'s functions;
@@ -257,9 +257,9 @@ Only where a language distinguishes them; English *where* marks none, so it is
 
 | value | meaning | example | code |
 |---|---|---|---|
-| `Loc` | locative: at a place | Czech *kde* "where (at)" | `Plc;Loc;Int` |
-| `Goal` | goal: to a place | Czech *kam* "where to" | `Plc;Goal;Int` |
-| `Src` | source: from a place | Czech *odkud* "where from" | `Plc;Src;Int` |
+| `Loc` | locative: at a place | Czech *kde* "where (at)" | `Plc;Int;Loc` |
+| `Goal` | goal: to a place | Czech *kam* "where to" | `Plc;Int;Goal` |
+| `Src` | source: from a place | Czech *odkud* "where from" | `Plc;Int;Src` |
 
 ### Register
 

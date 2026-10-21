@@ -251,6 +251,7 @@ he	Mnr;Prox+Dist	כֹּה	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כָּכָה	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כֵּן	omw-he:2.0	i18911
 hr	Mnr;Prox+Dist	tako	omw-hr:2.0	i18911
+hu	Mnr;Prox+Dist	így	hungarian-hu:1.0	i18911
 id	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
@@ -363,8 +364,24 @@ ja	Tim;Prox	現今	omw-ja:2.0	i116653
 ja	Tim;Prox	現在	omw-ja:2.0	i116653
 ja	Tim;Prox	現時点	omw-ja:2.0	i116653
 ja	Tim;Prox	目下	omw-ja:2.0	i116653
+la	Mnr;Prox+Dist	ita	latin-la:2.0	i18911
+la	Mnr;Prox+Dist	sic	latin-la:2.0	i18911
+la	Mnr;Prox+Dist	tam	latin-la:2.0	i18911
+la	Mnr;Prox+Dist	ita	latin-revised-la:2.0	i18911
+la	Mnr;Prox+Dist	tam	latin-revised-la:2.0	i18911
+la	Two;Univ	ambo	latin-la:2.0	i12555
+la	Two;Univ	duo	latin-revised-la:2.0	i12555
+mn	Plc;Dist	тэнд	monwn-mn:1.0	i81668
+mn	Plc;Prox	энд	monwn-mn:1.0	i81667
+mn	Tim;Prox	одоо	monwn-mn:1.0	i116653
 my	Tim;Prox	ခု	mow:0.1.3	i116653
 pl	Tim;Prox	teraz	omw-pl:2.0	i116653
+ro	Mnr;Prox+Dist	așa	romanian-ro:1.1	i18911
+ro	Mnr;Prox+Dist	astfel	romanian-ro:1.1	i18911
+ro	Plc;Dist	acolo	romanian-ro:1.1	i81668
+ro	Plc;Prox	aici	romanian-ro:1.1	i81667
+ro	Tim;Dist	momentul acela	romanian-ro:1.1	i117639
+ro	Tim;Prox	acum	romanian-ro:1.1	i116653
 th	Plc;Dist	ที่นั่น	omw-th:2.0	i81668
 th	Plc;Prox	ที่นี่	omw-th:2.0	i81667
 th	Tim;Prox	ตอนนี้	omw-th:2.0	i116653
