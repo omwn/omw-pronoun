@@ -3,6 +3,8 @@
 # status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
 # ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
 # definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
 # hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
 # Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
 # existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
@@ -446,6 +448,7 @@ comment = ""
 
 ["Knd;Int"]
 lemmas = ["bagaimana"]
+new_senses = ["bagaimana"]
 english = ["what", "which"]
 english_via = "Int"
 label = "kind interrogative pronoun"
@@ -460,6 +463,7 @@ comment = ""
 
 ["Knd;Prox"]
 lemmas = ["begini"]
+new_senses = ["begini"]
 english = ["such"]
 english_via = "Knd;Prox+Dist"
 label = "kind proximal pronoun"
@@ -559,6 +563,7 @@ comment = ""
 ["Pers;Refl"]
 lemmas = ["diri", "diri sendiri"]
 ntumc = ["diri sendiri <- 77000098-n"]
+new_senses = ["diri"]
 english = ["oneself"]
 label = "person reflexive pronoun"
 definition = "a person reflexive pronoun"
@@ -574,6 +579,7 @@ comment = ""
 
 ["Pers;Sg;Asrt"]
 lemmas = ["seseorang"]
+new_senses = ["seseorang"]
 english = ["someone"]
 label = "person singular assertive existential pronoun"
 definition = "a person singular assertive existential pronoun"
@@ -678,6 +684,7 @@ comment = ""
 
 ["Plc;Med"]
 lemmas = ["situ"]
+new_senses = ["situ"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place medial pronoun"
@@ -782,6 +789,7 @@ comment = ""
 
 ["Qnt;Int"]
 lemmas = ["berapa"]
+new_senses = ["berapa"]
 english = ["how many", "how much"]
 label = "quantity interrogative pronoun"
 definition = "a quantity interrogative pronoun"

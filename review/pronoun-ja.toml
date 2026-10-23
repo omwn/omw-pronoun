@@ -3,6 +3,8 @@
 # status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
 # ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
 # definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
 # hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
 # Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
 # existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
@@ -94,6 +96,7 @@ comment = ""
 ["1;Sg;Fml;Hon+Pol"]
 lemmas = ["私"]
 ntumc = ["わたくし <- 77000013-n"]
+new_senses = ["私"]
 english = ["I"]
 english_via = "1;Sg"
 label = "first person singular formal honorific or polite pronoun"
@@ -749,6 +752,7 @@ comment = ""
 ["Int"]
 lemmas = ["どの", "何"]
 ntumc = ["何 <- 77000091-a", "なに <- 77000091-a"]
+new_words = ["どの"]
 english = ["what", "which"]
 label = "interrogative pronoun"
 definition = "an interrogative pronoun"
@@ -864,6 +868,7 @@ comment = ""
 ["Mnr;Int"]
 lemmas = ["どう", "どんな"]
 ntumc = ["どんな <- 77000090-n", "どういう <- 77000090-n"]
+new_senses = ["どう"]
 english = ["how"]
 label = "manner interrogative pronoun"
 definition = "a manner interrogative pronoun"
@@ -879,6 +884,7 @@ comment = ""
 ["Mnr;Med"]
 lemmas = ["そう"]
 ntumc = ["そんなに <- 77000113-r"]
+new_senses = ["そう"]
 english = ["so", "thus", "thusly"]
 english_via = "Mnr;Prox+Dist"
 label = "manner medial pronoun"
@@ -954,6 +960,7 @@ comment = ""
 
 ["Pers;Int;Pol"]
 lemmas = ["どなた"]
+new_words = ["どなた"]
 english = ["who", "whom"]
 english_via = "Pers;Int"
 label = "person interrogative polite pronoun"
@@ -1019,6 +1026,7 @@ comment = ""
 
 ["Pers;Sg;Asrt"]
 lemmas = ["だれか"]
+new_words = ["だれか"]
 english = ["someone"]
 label = "person singular assertive existential pronoun"
 definition = "a person singular assertive existential pronoun"
@@ -1072,6 +1080,7 @@ comment = ""
 ["Pers;Univ;Pol"]
 lemmas = ["皆さん"]
 ntumc = ["みなさん <- 77000100-n"]
+new_words = ["皆さん"]
 english = ["everybody", "everyone"]
 english_via = "Pers;Univ"
 label = "person universal polite pronoun"
@@ -1099,6 +1108,7 @@ comment = ""
 
 ["Plc;Fml;Med"]
 lemmas = ["そちら"]
+new_senses = ["そちら"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place formal medial pronoun"
@@ -1113,6 +1123,7 @@ comment = ""
 
 ["Plc;Fml;Prox"]
 lemmas = ["こちら"]
+new_senses = ["こちら"]
 english = ["'ere", "here"]
 english_via = "Plc;Prox"
 label = "place formal proximal pronoun"
@@ -1127,6 +1138,7 @@ comment = ""
 
 ["Plc;Fml;Rem"]
 lemmas = ["あちら"]
+new_senses = ["あちら"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place formal remote pronoun"
@@ -1141,6 +1153,7 @@ comment = ""
 
 ["Plc;Infml;Med"]
 lemmas = ["そっち"]
+new_senses = ["そっち"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place informal medial pronoun"
@@ -1155,6 +1168,7 @@ comment = ""
 
 ["Plc;Infml;Prox"]
 lemmas = ["こっち"]
+new_senses = ["こっち"]
 english = ["'ere", "here"]
 english_via = "Plc;Prox"
 label = "place informal proximal pronoun"
@@ -1169,6 +1183,7 @@ comment = ""
 
 ["Plc;Infml;Rem"]
 lemmas = ["あっち"]
+new_senses = ["あっち"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place informal remote pronoun"
@@ -1198,6 +1213,7 @@ comment = ""
 
 ["Plc;Int;Fml"]
 lemmas = ["どちら"]
+new_senses = ["どちら"]
 english = ["where"]
 english_via = "Plc;Int"
 label = "place interrogative formal pronoun"
@@ -1315,6 +1331,8 @@ comment = ""
 
 ["Qnt;Int"]
 lemmas = ["いくつ", "いくら"]
+new_senses = ["いくつ"]
+new_words = ["いくら"]
 english = ["how many", "how much"]
 label = "quantity interrogative pronoun"
 definition = "a quantity interrogative pronoun"

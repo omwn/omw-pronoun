@@ -1,6 +1,8 @@
 # Pronouns for Czech, from the built OMW pronoun lexicon omw-pronoun-cs.
 # One table per concept. Edit `comment`; leave the rest as generated.
 # definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
 # hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
 # Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
 # existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
@@ -102,6 +104,7 @@ comment = ""
 
 ["2;Pl;Poss"]
 lemmas = ["váš"]
+new_words = ["váš"]
 english = ["your"]
 english_via = "2;Poss"
 label = "second person plural possessive determiner"
@@ -226,6 +229,7 @@ comment = ""
 
 ["3;Sg;F;Poss"]
 lemmas = ["její"]
+new_words = ["její"]
 english = ["her"]
 label = "third person singular feminine possessive determiner"
 definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
@@ -259,6 +263,7 @@ comment = ""
 
 ["3;Sg;M+N;Poss"]
 lemmas = ["jeho"]
+new_senses = ["jeho"]
 label = "third person singular masculine or neuter possessive determiner"
 definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine, neuter)"
 hypernyms = ["3;Sg;Poss"]
@@ -481,6 +486,7 @@ comment = ""
 
 ["Mnr;Prox+Dist"]
 lemmas = ["tak", "takhle", "takto"]
+new_senses = ["tak", "takhle", "takto"]
 english = ["so", "thus", "thusly"]
 label = "manner proximal or distal pronoun"
 definition = "a manner proximal or distal pronoun"
@@ -537,6 +543,7 @@ comment = ""
 
 ["Plc;Dist"]
 lemmas = ["tam"]
+new_senses = ["tam"]
 english = ["there"]
 label = "place distal pronoun"
 definition = "a place distal pronoun"
@@ -548,6 +555,7 @@ comment = ""
 
 ["Plc;Dist;Src"]
 lemmas = ["odtamtud"]
+new_words = ["odtamtud"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place distal source pronoun"
@@ -570,6 +578,7 @@ comment = ""
 
 ["Plc;Int;Goal"]
 lemmas = ["kam"]
+new_senses = ["kam"]
 english = ["where"]
 english_via = "Plc;Int"
 label = "place interrogative goal pronoun"
@@ -581,6 +590,7 @@ comment = ""
 
 ["Plc;Int;Loc"]
 lemmas = ["kde"]
+new_senses = ["kde"]
 english = ["where"]
 english_via = "Plc;Int"
 label = "place interrogative locative pronoun"
@@ -592,6 +602,7 @@ comment = ""
 
 ["Plc;Int;Src"]
 lemmas = ["odkud"]
+new_words = ["odkud"]
 english = ["where"]
 english_via = "Plc;Int"
 label = "place interrogative source pronoun"
@@ -624,6 +635,7 @@ comment = ""
 
 ["Plc;Prox;Goal"]
 lemmas = ["sem"]
+new_senses = ["sem"]
 english = ["'ere", "here"]
 english_via = "Plc;Prox"
 label = "place proximal goal pronoun"
@@ -635,6 +647,7 @@ comment = ""
 
 ["Plc;Prox;Loc"]
 lemmas = ["tady", "zde"]
+new_senses = ["tady", "zde"]
 english = ["'ere", "here"]
 english_via = "Plc;Prox"
 label = "place proximal locative pronoun"
@@ -646,6 +659,8 @@ comment = ""
 
 ["Plc;Prox;Src"]
 lemmas = ["odsud", "odtud"]
+new_senses = ["odtud"]
+new_words = ["odsud"]
 english = ["'ere", "here"]
 english_via = "Plc;Prox"
 label = "place proximal source pronoun"
@@ -781,6 +796,7 @@ comment = ""
 
 ["Tim;Dist"]
 lemmas = ["tehdy"]
+new_words = ["tehdy"]
 english = ["then"]
 label = "time distal pronoun"
 definition = "a time distal pronoun"
@@ -803,6 +819,7 @@ comment = ""
 
 ["Tim;Prox"]
 lemmas = ["teď"]
+new_senses = ["teď"]
 english = ["now"]
 label = "time proximal pronoun"
 definition = "a time proximal pronoun"

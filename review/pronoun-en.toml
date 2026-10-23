@@ -3,6 +3,8 @@
 # status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
 # ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
 # definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
 # hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
 # Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
 # existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
@@ -706,6 +708,7 @@ comment = ""
 
 ["Knd;Prox+Dist"]
 lemmas = ["such"]
+new_senses = ["such"]
 label = "kind proximal or distal pronoun"
 definition = "a kind proximal or distal pronoun"
 existing_by_lemma = ["such -> oewn oewn-00148422-r [i19129] such: to so extreme a degree", "such -> oewn oewn-01558587-s [i8532] such: of so extreme a degree or extent; demonstrative, other pronoun; demonstrative determiner, kind", "such -> tufs-en tufs-en-77000089-a [-] such: such"]
@@ -729,6 +732,7 @@ comment = ""
 
 ["Mnr;Prox+Dist"]
 lemmas = ["so"]
+new_senses = ["so"]
 label = "manner proximal or distal pronoun"
 definition = "a manner proximal or distal pronoun"
 existing_by_lemma = ["so -> oewn oewn-00147630-r [i19124] so: to a very great extent or degree", "so -> oewn oewn-00119259-r [i18894] so: in a manner that facilitates", "so -> oewn oewn-00147962-r [i19126] so: in such a condition or manner, especially as expressed or implied", "so -> oewn oewn-00148162-r [i19127] so: to a certain unspecified extent or degree", "so -> oewn oewn-00148308-r [i19128] so: in the same way; also", "so -> oewn oewn-00122019-r [i18911] thus, thusly, so: in the way indicated", "so -> oewn oewn-00147799-r [i19125] so: (usually followed by ‘that’) to an extent or degree as expressed", "so -> oewn oewn-00118527-r [i18890] then, so, and so: subsequently or soon afterward (often used as sentence connectors)", "so -> oewn oewn-00043413-r [i18390] therefore, hence, thence, thus, so: (used to introduce a logical conclusion) from that fact or reason or as a result", "so -> oewn oewn-00038035-r [i18359] indeed, so: in truth (often tends to intensify)", "so -> tufs-en tufs-en-00118032-r [i18892] so, then: (CILI) in that case or as a consequence", "so -> tufs-en tufs-en-00121135-r [i18911] so: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
@@ -767,6 +771,7 @@ comment = ""
 
 ["Pers;Refl"]
 lemmas = ["oneself"]
+new_words = ["oneself"]
 label = "person reflexive pronoun"
 definition = "a person reflexive pronoun"
 ntumc_definitions = ["77000098-n: personal pronoun, person, reflexive"]
@@ -779,6 +784,7 @@ comment = ""
 
 ["Pers;Sg;Asrt"]
 lemmas = ["someone"]
+new_senses = ["someone"]
 label = "person singular assertive existential pronoun"
 definition = "a person singular assertive existential pronoun"
 existing_by_lemma = ["someone -> oewn oewn-00007846-n [i35562] person, individual, someone, somebody, mortal, soul: a human being; person, singular, assertive existential pronoun; pronoun, person, singular; quantifier: assertive existential", "someone -> tufs-en tufs-en-00007846-n [i35562] someone: (CILI) a human being"]
@@ -944,6 +950,7 @@ comment = ""
 
 ["Qnt;Int"]
 lemmas = ["how many", "how much"]
+new_senses = ["how many", "how much"]
 label = "quantity interrogative pronoun"
 definition = "a quantity interrogative pronoun"
 existing_by_lemma = ["how many -> tufs-en tufs-en-80001077-n [-] How many, How much: how many", "how much -> tufs-en tufs-en-80001077-n [-] How many, How much: how many"]

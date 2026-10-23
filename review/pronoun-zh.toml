@@ -3,6 +3,8 @@
 # status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
 # ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
 # definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
 # hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
 # Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
 # existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
@@ -526,6 +528,7 @@ comment = ""
 ["Ent;Dist"]
 lemmas = ["那个"]
 ntumc = ["那 <- 77000080-n"]
+new_senses = ["那个"]
 label = "entity distal pronoun"
 definition = "an entity distal pronoun"
 ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
@@ -551,6 +554,7 @@ comment = ""
 ["Ent;Int"]
 lemmas = ["哪个"]
 ntumc = ["什么样 <- 77000064-n"]
+new_words = ["哪个"]
 english = ["which"]
 label = "entity interrogative pronoun"
 definition = "an entity interrogative pronoun"
@@ -635,6 +639,7 @@ comment = ""
 ["Int"]
 lemmas = ["哪个", "什么"]
 ntumc = ["什么 <- 77000091-a", "哪 <- 77000091-a", "哪些 <- 77000091-a"]
+new_words = ["哪个"]
 english = ["what", "which"]
 label = "interrogative pronoun"
 definition = "an interrogative pronoun"
@@ -700,6 +705,7 @@ comment = ""
 ["Mnr;Prox"]
 lemmas = ["这么", "这样"]
 ntumc = ["如此 <- 77000089-r", "这样 <- 77000089-r"]
+new_senses = ["这么"]
 english = ["so", "thus", "thusly"]
 english_via = "Mnr;Prox+Dist"
 label = "manner proximal pronoun"
@@ -750,6 +756,7 @@ comment = ""
 
 ["Pers;Int;Pol"]
 lemmas = ["哪位"]
+new_words = ["哪位"]
 english = ["who", "whom"]
 english_via = "Pers;Int"
 label = "person interrogative polite pronoun"
@@ -919,6 +926,7 @@ comment = ""
 ["Prox"]
 lemmas = ["这个"]
 ntumc = ["这 <- 77000075-a", "此 <- 77000075-a", "这一 <- 77000075-a"]
+new_senses = ["这个"]
 label = "proximal pronoun"
 definition = "a proximal pronoun"
 ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
@@ -941,6 +949,7 @@ comment = ""
 
 ["Qnt;Int"]
 lemmas = ["几", "多少"]
+new_senses = ["几", "多少"]
 english = ["how many", "how much"]
 label = "quantity interrogative pronoun"
 definition = "a quantity interrogative pronoun"

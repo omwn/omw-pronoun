@@ -18,12 +18,16 @@ from __future__ import annotations
 
 import csv
 import json
+import sqlite3
 import sys
+import unicodedata
 from collections import defaultdict
+from functools import cache
 from pathlib import Path
 from xml.etree import ElementTree
 
 import cygnet_wordnets
+import ntumc_pronouns
 from build import (
     NTUMC_LANGUAGES,
     feature_links,
@@ -57,6 +61,56 @@ NAMES = {
 TUFS_NTUMC = {"en": "eng", "zh": "cmn", "ja": "jpn", "id": "ind"}
 #: lexicon tag -> NTUMC language column (``cs`` -> ``ces``)
 TAG_NTUMC = {tag: column for column, (tag, _) in NTUMC_LANGUAGES.items()}
+
+
+#: header lines explaining the new_senses and new_words fields
+NEW_NOTE = (
+    "# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has"
+    " but not\n#   for this concept; new_words, words it does not have at all."
+)
+
+
+def key(lemma: str) -> str:
+    """A lemma as compared with NTUMC's: NFC, case-folded."""
+    return unicodedata.normalize("NFC", lemma).casefold()
+
+
+@cache
+def ntumc_known(column: str) -> frozenset[str]:
+    """Every lemma of one language in the NTUMC wordnet, as ``key`` gives it."""
+    columns = (column, "jap") if column == "jpn" else (column,)
+    with sqlite3.connect(ntumc_pronouns.DEFAULT_DB) as con:
+        return frozenset(
+            key(lemma)
+            for (lemma,) in con.execute(
+                "SELECT lemma FROM word"
+                f" WHERE lang IN ({', '.join('?' * len(columns))})",
+                columns,
+            )
+        )
+
+
+def new_lines(
+    code: str, lemmas: list[str], ntumc: dict[str, list[str]], column: str | None
+) -> list[str]:
+    """Which of a concept's lemmas the NTUMC wordnet lacks, for merging them in.
+
+    ``new_senses``: lemmas it has, but not for this concept; ``new_words``:
+    lemmas it does not have at all.
+    """
+    if not column or not ntumc_pronouns.DEFAULT_DB.exists():
+        return []
+    have = {key(item.split(" <- ")[0]) for item in ntumc.get(code, [])}
+    missing = [w for w in lemmas if key(w) not in have]
+    known = ntumc_known(column)
+    senses = [w for w in missing if key(w) in known]
+    words = [w for w in missing if key(w) not in known]
+    lines = []
+    if senses:
+        lines.append(f"new_senses = [{', '.join(toml_string(w) for w in senses)}]")
+    if words:
+        lines.append(f"new_words = [{', '.join(toml_string(w) for w in words)}]")
+    return lines
 
 
 def ntumc_for(column: str | None, codes: set[str]) -> dict[str, list[str]]:
@@ -315,6 +369,7 @@ def write(
         "# status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)",
         "# ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets",
         "# definition: generated from the code; ntumc_definitions: NTUMC's own",
+        NEW_NOTE,
         HIERARCHY_NOTE,
         "",
     ]
@@ -346,6 +401,10 @@ def write(
             headings[r["form"]][f"{r['heading']} ({r['confidence']})"] = None
         lines.append(f"lemmas = [{', '.join(toml_string(f) for f in headings)}]")
         lines += ntumc_line(code, ntumc)
+        built = [r["form"] for r in group if status(r, set(concepts)) == "built"]
+        lines += new_lines(
+            code, list(dict.fromkeys(built)), ntumc, TUFS_NTUMC.get(lang)
+        )
         if lang != "en":
             lines += english_lines(code, english)
         lines.append(f"label = {toml_string(concept.get('label', ''))}")
@@ -414,6 +473,7 @@ def write_lexicon(
         f"# Pronouns for {name}, from the built OMW pronoun lexicon {lexicon}.",
         "# One table per concept. Edit `comment`; leave the rest as generated.",
         "# definition: generated from the code; ntumc_definitions: NTUMC's own",
+        *([NEW_NOTE] if TAG_NTUMC.get(tag) else []),
         HIERARCHY_NOTE,
         "",
     ]
@@ -433,6 +493,7 @@ def write_lexicon(
         lines.append(f"[{toml_string(code)}]")
         lines.append(f"lemmas = [{', '.join(toml_string(w) for w in lemmas)}]")
         lines += ntumc_line(code, ntumc)
+        lines += new_lines(code, list(lemmas), ntumc, TAG_NTUMC.get(tag))
         lines += english_lines(code, english)
         lines.append(f"label = {toml_string(concept.get('label', ''))}")
         lines += definition_lines(concept, defs.get(code, []))
