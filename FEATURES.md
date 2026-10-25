@@ -89,9 +89,9 @@ itself, so it is not a kind of *anybody*.
    under `Plc;Prox;Dir`.
 
 4. **Part of speech** separates concepts with the same features: the pronoun
-   *this* (`Ent;Sg;Prox`, POS `n`) and the determiner *this* (`Sg;Prox`, POS
+   *this* (`Ent;Sg;Prox`, POS `n`) and the determinative *this* (`Sg;Prox`, POS
    `a`) are different concepts, and neither is a kind of the other. Pronouns are
-   `n`, determiners `a`, pro-adverbs `r` and pro-adpositions `p`. A code with a
+   `n`, determinatives `a`, pro-adverbs `r` and pro-adpositions `p`. A code with a
    direction is a pro-adposition (WN-LMF `p`, lexicographer file
    `adp.pronoun`): Huddleston and Pullum (2002, ch. 7) treat *here*, *there* and
    *where* as intransitive prepositions, and a pro-form with a direction stands
@@ -102,8 +102,11 @@ itself, so it is not a kind of *anybody*.
    language (`data/pro-form-pos.tsv`, `data/word-pos.tsv`): English *here* is
    both, Japanese *koko* only a noun (*koko ni* is a phrase). The shared lexicon
    links the noun to its `Dir` pro-adposition by `other` relations typed `noun`
-   and `pro-adposition`, as possessives are linked; there is no hypernymy across
-   parts of speech.
+   and `pro-adposition`, as possessives are linked, and each determinative to its
+   pronoun (`Sg;Prox` ↔ `Ent;Sg;Prox`) by `other` typed `pronoun` and
+   `determinative`; there is no hypernymy across parts of speech.
+   *Determinative* names the category, after Huddleston and Pullum (2002);
+   *determiner* is the function.
 
 5. **Direction is read by head.** The values of the direction slot mean
    different relations for a place and a time:
@@ -165,7 +168,7 @@ Each feature value is also a synset in the shared lexicon (`data/features.tsv`),
 with its own hierarchy from the unmarked values: *distal* has the hyponyms
 *medial* and *remote*, *first person* has *inclusive* and *exclusive*. A
 pronoun links to its head by hypernymy (*who* is a kind of *person*), a
-determiner, pro-adverb or pro-adposition by `attribute`, and every concept links to its other
+determinative, pro-adverb or pro-adposition by `attribute`, and every concept links to its other
 features by `exemplifies`.
 
 ## Features
@@ -227,7 +230,7 @@ interrogatives for "which of two" (Latin *uter*, Greek *póteros*, Old English
 |---|---|---|---|
 | `Two` | chosen from a set of two | English *either* | `Ent;Sg;Two;Elec` |
 | | | English *neither* | `Ent;Sg;Two;Neg` |
-| | | English *both* | `Ent;Two;Univ` (pronoun), `Two;Univ` (determiner) |
+| | | English *both* | `Ent;Two;Univ` (pronoun), `Two;Univ` (determinative) |
 | | | Japanese *dochira* どちら "which (of two)" | `Ent;Two;Int;Fml` |
 | | | Japanese *kochira* こちら "this one (of two)" | `Ent;Two;Fml;Prox` |
 

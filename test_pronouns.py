@@ -65,12 +65,15 @@ def test_possessives_link_to_their_pronouns() -> None:
     assert build.possessive_links("Poss;Int", codes) == []
 
 
-def test_possessive_determiner_and_pronoun_are_separate_concepts() -> None:
+def test_possessive_determinative_and_pronoun_are_separate_concepts() -> None:
     my = {"code": "1;Sg;Poss", "synset": "77000107-a"}
     mine = {"code": "1;Sg;Poss", "synset": "77000107-n"}
     assert concepts.concept_code(my) == "1;Sg;Poss"
     assert concepts.concept_code(mine) == "Ent;1;Sg;Poss"
-    assert concepts.label("1;Sg;Poss").endswith("determiner")
+    assert concepts.label("1;Sg;Poss").endswith("determinative")
+    assert concepts.label("Sg;Prox", "a") == "singular proximal determinative"
+    pos = {"1;Sg;Poss": "a", "Ent;1;Sg;Poss": "n"}
+    assert build.determinative_links("1;Sg;Poss", pos) == [("pronoun", "Ent;1;Sg;Poss")]
     assert concepts.label("Ent;1;Sg;Poss") == "first person singular possessive pronoun"
 
 

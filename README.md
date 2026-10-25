@@ -87,17 +87,17 @@ alternatives joined by `+`:
   `<Form>` variants tagged `case` (`s`, `a`, `o`, or NTUMC's `obj`).
 - **The possessive is meaning.** *My* adds a relation to *I*, and Czech *můj*
   "my" inflects for case itself, so possessives are words of their own, of
-  concepts coded `Poss` in the case slot. The determiner and the pronoun are
+  concepts coded `Poss` in the case slot. The determinative and the pronoun are
   separate concepts, as the demonstratives are: *my* is `1;Sg;Poss` (POS `a`),
   *mine* has the head `Ent` (person or thing), `Ent;1;Sg;Poss` (POS `n`), just
-  as *this* the determiner is `Sg;Prox` and *this* the pronoun `Ent;Sg;Prox`.
+  as *this* the determinative is `Sg;Prox` and *this* the pronoun `Ent;Sg;Prox`.
   A possessive is not a kind of its pronoun; the shared lexicon links the two
   by `other` relations typed `possessor` and `possessive`.
 - **Bound forms** (affixes) are variants of the free pronoun when their cells are
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
-The inventory (`data/concepts.tsv`, 241 concepts: 144 pronouns, 53 determiners,
-35 pro-adpositions and 9 pro-adverbs; 28 possessive determiners and
+The inventory (`data/concepts.tsv`, 241 concepts: 144 pronouns, 53 determinatives,
+35 pro-adpositions and 9 pro-adverbs; 28 possessive determinatives and
 8 possessive pronouns) comes
 from:
 
@@ -140,17 +140,22 @@ values that stand for others: *distal* has the hyponyms *medial* and *remote*,
 *first person* has *inclusive* and *exclusive*.
 
 **Part of speech and lexicographer file.** Pro-forms cut across parts of speech:
-pronouns are `n` (`noun.pronoun`), determiners `a` (`adj.pronoun`: *this*,
+pronouns are `n` (`noun.pronoun`), determinatives `a` (`adj.pronoun`: *this*,
 *which*, Japanese *kono*), pro-adpositions `p` (`adp.pronoun`: *here*, *hither*,
 *now*, *everywhere*) and pro-adverbs `r` (`adv.pronoun`: *kō* "in this way",
 *how*, *why*, *how long*). A pro-adposition is a place or time pro-form with a
 direction: Huddleston and Pullum (2002, ch. 7) treat *here*, *there* and *where*
 as intransitive prepositions, and such a word stands for a prepositional phrase
 (*here* ≈ *at this place*). Universal Dependencies tags them ADV. An entry has
-one part of speech, so *this* the determiner and *this* the pronoun are separate
+one part of speech, so *this* the determinative and *this* the pronoun are separate
 entries, linked by `derivation` (as are *here* the noun and *here* the
 pro-adposition). Hypernymy stays within a part of speech: the pronoun *this* is
-not a kind of the determiner *this*, nor *mine* of *my*.
+not a kind of the determinative *this*, nor *mine* of *my*. In the shared
+lexicon, the concepts of such a pair are linked instead by `other` relations
+typed `pronoun` and `determinative` (`Sg;Prox` ↔ `Ent;Sg;Prox`), as possessives
+are linked to their pronouns (`possessor`, `possessive`) and nouns to their
+pro-adpositions (`pro-adposition`, `noun`). The category is called
+*determinative* after Huddleston and Pullum (2002); *determiner* is the function.
 
 Place and time pro-forms are nouns or pro-adpositions according to the language
 (`data/pro-form-pos.tsv`). *hither*, *whence*, *everywhere* and *sometime* are
@@ -198,7 +203,7 @@ concept[we.metadata()["identifier"]].hypernyms()  # pronoun:1+2;Pl
 **ILI links** (`data/concept-ili.tsv`): six concepts have an exact counterpart in
 CILI and carry its ILI, in the concept lexicon and in every language lexicon:
 *here* `Plc;Prox` (i81667), *there* `Plc;Dist` (i81668), *now* `Tim;Prox`
-(i116653), *then* `Tim;Dist` (i117639), the determiner *both* `Du;Univ` (i12555)
+(i116653), *then* `Tim;Dist` (i117639), the determinative *both* `Du;Univ` (i12555)
 and *so*, *thus* `Mnr;Prox+Dist` (i18911). Only `exact` rows link; `related`
 rows record near misses, such as OEWN's *someone*, which is *person* "a human
 being" (the head feature `Pers`), not the indefinite pronoun. Princeton WordNet

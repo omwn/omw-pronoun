@@ -13,23 +13,23 @@ shared lexicon links each possessive to its pronoun with `other` relations
 typed `possessor` and `possessive`, and a possessive is never a hyponym of its
 pronoun.
 
-The determiner and the independent possessive are separate concepts, since
+The determinative and the independent possessive are separate concepts, since
 they differ in meaning and syntax: *my* is `1;Sg;Poss` (POS `a`), *mine* is
 `Ent;1;Sg;Poss` (POS `n`, head `Ent`: it stands for a person or thing), as the
-demonstrative determiner *this* (`Sg;Prox`) and pronoun (`Ent;Sg;Prox`) are.
-Parabank does not tell them apart; its possessives go to the determiners.
+demonstrative determinative *this* (`Sg;Prox`) and pronoun (`Ent;Sg;Prox`) are.
+Parabank does not tell them apart; its possessives go to the determinatives.
 
 Where one word does both jobs (Czech *můj* "my" and "mine"), it is a
-determiner only. Standing alone it is the determiner without its noun, by the
+determinative only. Standing alone it is the determinative without its noun, by the
 general rule that lets adjectives stand for nouns (a pumping rule), not a
 second sense. A pronoun concept gets words only where a language has a
 distinct form (English *mine* beside *my*).
 
 **Still open.**
-- By that rule, NTUMC's pronoun senses of words that are also its determiners
-  (English *his*, *its*; Mandarin 你的, 他的 under both) are the determiner
+- By that rule, NTUMC's pronoun senses of words that are also its determinatives
+  (English *his*, *its*; Mandarin 你的, 他的 under both) are the determinative
   without a noun. Drop them from the pronoun concepts?
-- NTUMC lists bare Mandarin 我, 你, 他 as possessive determiners (*我妈妈*
+- NTUMC lists bare Mandarin 我, 你, 他 as possessive determinatives (*我妈妈*
   "my mother"), so they are lemmas of `1;Sg;Poss` etc. as well as of the
   pronoun. Is that a sense, or the pronoun in a possessive construction?
 - Possessives inflect (Czech *můj*, *mého*, *mému*...), but no source gives their
@@ -65,7 +65,7 @@ or leave them and note the mapping?
   ff224b3; wnja's `data/wn-ntumc-jpn.xml` is still to be re-exported.
 - 77000079-a `Sg;Dist` had Mandarin 哪 "which"; removed in NTUMC ff224b3.
 - Czech *ten*, *ta*, *to* are three NTUMC lemmas of `Sg;Dist`. Gender on a
-  determiner is agreement, so they are forms of one lemma *ten*, as are
+  determinative is agreement, so they are forms of one lemma *ten*, as are
   *tento*/*tato*/*toto*; and *ten* is the unmarked demonstrative (*tamten* is
   the distal one).
 - どんな is `Mnr;Int` in NTUMC but arguably `Knd;Int` ("what kind of").

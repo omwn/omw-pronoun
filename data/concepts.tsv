@@ -1,16 +1,16 @@
 code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	parabank_macroareas
 1+2;Pl	n	first person or second person plural pronoun	a first person or second person plural pronoun	Parabank		5	5	4
-1+2;Pl;Poss	a	first person or second person plural possessive determiner	a first person or second person plural possessive determiner	Parabank		5	5	4
+1+2;Pl;Poss	a	first person or second person plural possessive determinative	a first person or second person plural possessive determinative	Parabank		5	5	4
 1;Du	n	first person dual pronoun	a pronoun referring to the speaker, two in all	Parabank		93	33	7
-1;Du;Poss	a	first person dual possessive determiner	a possessive determiner: of or belonging to the speaker, two possessor	Parabank		85	31	7
+1;Du;Poss	a	first person dual possessive determinative	a possessive determinative: of or belonging to the speaker, two possessor	Parabank		85	31	7
 1;Gpl	n	first person plural (beyond the dual) pronoun	a pronoun referring to the speaker, more than two (where a dual contrasts) in all	Parabank		89	28	6
-1;Gpl;Poss	a	first person plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the speaker, more than two (where a dual contrasts) possessor	Parabank		82	25	6
+1;Gpl;Poss	a	first person plural (beyond the dual) possessive determinative	a possessive determinative: of or belonging to the speaker, more than two (where a dual contrasts) possessor	Parabank		82	25	6
 1;Pl	n	first person plural pronoun	a pronoun referring to the speaker, more than one in all	NTUMC	77000002-n	311	59	6
 1;Pl;Fml	n	first person plural formal pronoun	a pronoun referring to the speaker, more than one in all (formal)	NTUMC	77000003-n	0	0	0
 1;Pl;Fml;Pol	n	first person plural formal polite pronoun	a pronoun referring to the speaker, more than one in all (formal, polite)	TUFS curation		0	0	0
 1;Pl;Infml	n	first person plural informal pronoun	a pronoun referring to the speaker, more than one in all (informal)	NTUMC	77000004-n	0	0	0
 1;Pl;M;Infml;Men	n	first person plural masculine informal men's speech pronoun	a pronoun referring to the speaker, more than one in all (masculine, informal, men's speech)	NTUMC	77000009-n	0	0	0
-1;Pl;Poss	a	first person plural possessive determiner	a possessive determiner: of or belonging to the speaker, more than one possessor	NTUMC	77000006-a	311	62	5
+1;Pl;Poss	a	first person plural possessive determinative	a possessive determinative: of or belonging to the speaker, more than one possessor	NTUMC	77000006-a	311	62	5
 1;Pl;Refl	n	first person plural reflexive pronoun	a pronoun referring to the speaker, more than one in all (reflexive)	NTUMC	77000008-n	0	0	0
 1;Sg	n	first person singular pronoun	a pronoun referring to the speaker, one in all	NTUMC	77000015-n	720	114	7
 1;Sg;F;Fml;Pol;Wom	n	first person singular feminine formal polite women's speech pronoun	a pronoun referring to the speaker, one in all (feminine, formal, polite, women's speech)	TUFS curation		0	0	0
@@ -22,31 +22,31 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 1;Sg;M;Infml;Hon;Arch+Men	n	first person singular masculine informal honorific archaic or men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, informal, honorific, archaic or men's speech)	NTUMC	77000018-n	0	0	0
 1;Sg;M;Infml;Men	n	first person singular masculine informal men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, informal, men's speech)	NTUMC	77000017-n	0	0	0
 1;Sg;M;Pol;Men	n	first person singular masculine polite men's speech pronoun	a pronoun referring to the speaker, one in all (masculine, polite, men's speech)	TUFS curation		0	0	0
-1;Sg;Poss	a	first person singular possessive determiner	a possessive determiner: of or belonging to the speaker, one possessor	NTUMC	77000107-a	693	110	7
+1;Sg;Poss	a	first person singular possessive determinative	a possessive determinative: of or belonging to the speaker, one possessor	NTUMC	77000107-a	693	110	7
 1;Sg;Refl	n	first person singular reflexive pronoun	a pronoun referring to the speaker, one in all (reflexive)	NTUMC	77000016-n	0	0	0
 1e;Du	n	first person exclusive dual pronoun	a pronoun referring to the speaker and others, not the addressee, two in all	Parabank		141	33	6
-1e;Du;Poss	a	first person exclusive dual possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, two possessor	Parabank		127	31	6
+1e;Du;Poss	a	first person exclusive dual possessive determinative	a possessive determinative: of or belonging to the speaker and others, not the addressee, two possessor	Parabank		127	31	6
 1e;Gpl	n	first person exclusive plural (beyond the dual) pronoun	a pronoun referring to the speaker and others, not the addressee, more than two (where a dual contrasts) in all	Parabank		149	37	7
-1e;Gpl;Poss	a	first person exclusive plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, more than two (where a dual contrasts) possessor	Parabank		130	34	7
+1e;Gpl;Poss	a	first person exclusive plural (beyond the dual) possessive determinative	a possessive determinative: of or belonging to the speaker and others, not the addressee, more than two (where a dual contrasts) possessor	Parabank		130	34	7
 1e;Pl	n	first person exclusive plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than one in all	NTUMC	80001133-n	155	41	7
-1e;Pl;Poss	a	first person exclusive plural possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, more than one possessor	Parabank		151	40	7
-1e;Poss	a	first person exclusive possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee	Parabank		8	6	4
+1e;Pl;Poss	a	first person exclusive plural possessive determinative	a possessive determinative: of or belonging to the speaker and others, not the addressee, more than one possessor	Parabank		151	40	7
+1e;Poss	a	first person exclusive possessive determinative	a possessive determinative: of or belonging to the speaker and others, not the addressee	Parabank		8	6	4
 1i;Du	n	first person inclusive dual pronoun	a pronoun referring to the speaker and the addressee, two in all	Parabank		155	34	6
-1i;Du;Poss	a	first person inclusive dual possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, two possessor	Parabank		142	32	6
+1i;Du;Poss	a	first person inclusive dual possessive determinative	a possessive determinative: of or belonging to the speaker and the addressee, two possessor	Parabank		142	32	6
 1i;Gpl	n	first person inclusive plural (beyond the dual) pronoun	a pronoun referring to the speaker and the addressee, more than two (where a dual contrasts) in all	Parabank		163	38	7
-1i;Gpl;Poss	a	first person inclusive plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, more than two (where a dual contrasts) possessor	Parabank		145	36	7
+1i;Gpl;Poss	a	first person inclusive plural (beyond the dual) possessive determinative	a possessive determinative: of or belonging to the speaker and the addressee, more than two (where a dual contrasts) possessor	Parabank		145	36	7
 1i;Pl	n	first person inclusive plural pronoun	a pronoun referring to the speaker and the addressee, more than one in all	NTUMC	77000139-n	147	40	7
-1i;Pl;Poss	a	first person inclusive plural possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, more than one possessor	Parabank		145	41	7
+1i;Pl;Poss	a	first person inclusive plural possessive determinative	a possessive determinative: of or belonging to the speaker and the addressee, more than one possessor	Parabank		145	41	7
 2	n	second person pronoun	a pronoun referring to the addressee	Parabank		20	11	7
 2;Du	n	second person dual pronoun	a pronoun referring to the addressee, two in all	Parabank		208	51	7
-2;Du;Poss	a	second person dual possessive determiner	a possessive determiner: of or belonging to the addressee, two possessor	Parabank		181	44	7
+2;Du;Poss	a	second person dual possessive determinative	a possessive determinative: of or belonging to the addressee, two possessor	Parabank		181	44	7
 2;Gpl	n	second person plural (beyond the dual) pronoun	a pronoun referring to the addressee, more than two (where a dual contrasts) in all	Parabank		214	50	7
-2;Gpl;Poss	a	second person plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the addressee, more than two (where a dual contrasts) possessor	Parabank		187	44	7
+2;Gpl;Poss	a	second person plural (beyond the dual) possessive determinative	a possessive determinative: of or belonging to the addressee, more than two (where a dual contrasts) possessor	Parabank		187	44	7
 2;Pl	n	second person plural pronoun	a pronoun referring to the addressee, more than one in all	NTUMC	77000019-n	479	89	7
 2;Pl;Fml;Pol	n	second person plural formal polite pronoun	a pronoun referring to the addressee, more than one in all (formal, polite)	TUFS curation		0	0	0
-2;Pl;Poss	a	second person plural possessive determiner	a possessive determiner: of or belonging to the addressee, more than one possessor	Parabank		465	86	7
+2;Pl;Poss	a	second person plural possessive determinative	a possessive determinative: of or belonging to the addressee, more than one possessor	Parabank		465	86	7
 2;Pl;Refl	n	second person plural reflexive pronoun	a pronoun referring to the addressee, more than one in all (reflexive)	NTUMC	77000020-n	0	0	0
-2;Poss	a	second person possessive determiner	a possessive determiner: of or belonging to the addressee	Parabank		31	20	6
+2;Poss	a	second person possessive determinative	a possessive determinative: of or belonging to the addressee	Parabank		31	20	6
 2;Sg	n	second person singular pronoun	a pronoun referring to the addressee, one in all	NTUMC	77000021-n	707	115	7
 2;Sg;F	n	second person singular feminine pronoun	a pronoun referring to the addressee, one in all (feminine)	TUFS curation		0	0	0
 2;Sg;Fml	n	second person singular formal pronoun	a pronoun referring to the addressee, one in all (formal)	TUFS curation		0	0	0
@@ -56,46 +56,46 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 2;Sg;M;Infml;Men	n	second person singular masculine informal men's speech pronoun	a pronoun referring to the addressee, one in all (masculine, informal, men's speech)	NTUMC	77000027-n	0	0	0
 2;Sg;Pol;Men	n	second person singular polite men's speech pronoun	a pronoun referring to the addressee, one in all (polite, men's speech)	TUFS curation		0	0	0
 2;Sg;Pol;Wom	n	second person singular polite women's speech pronoun	a pronoun referring to the addressee, one in all (polite, women's speech)	TUFS curation		0	0	0
-2;Sg;Poss	a	second person singular possessive determiner	a possessive determiner: of or belonging to the addressee, one possessor	NTUMC	77000024-a	677	110	7
+2;Sg;Poss	a	second person singular possessive determinative	a possessive determinative: of or belonging to the addressee, one possessor	NTUMC	77000024-a	677	110	7
 2;Sg;Refl	n	second person singular reflexive pronoun	a pronoun referring to the addressee, one in all (reflexive)	NTUMC	77000025-n	0	0	0
 2;Sg;Refl;Infml;NHon	n	second person singular reflexive informal non-honorific pronoun	a pronoun referring to the addressee, one in all (reflexive, informal, non-honorific)	NTUMC	77000026-n	0	0	0
 3	n	third person pronoun	a pronoun referring to someone or something other than speaker and addressee	NTUMC	80000003-n 80000047-n	7	4	1
 3;Du	n	third person dual pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all	Parabank		196	45	6
-3;Du;Poss	a	third person dual possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, two possessor	Parabank		166	41	6
+3;Du;Poss	a	third person dual possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, two possessor	Parabank		166	41	6
 3;Gpl	n	third person plural (beyond the dual) pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all	Parabank		203	46	6
-3;Gpl;Poss	a	third person plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, more than two (where a dual contrasts) possessor	Parabank		173	44	6
+3;Gpl;Poss	a	third person plural (beyond the dual) possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, more than two (where a dual contrasts) possessor	Parabank		173	44	6
 3;Oth	n	third person other pronoun	a pronoun referring to someone or something other than speaker and addressee (other)	NTUMC	77000032-n	0	0	0
 3;Pl	n	third person plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all	NTUMC	77000031-n 80001131-n	437	80	7
 3;Pl;F	n	third person plural feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (feminine)	NTUMC	77000035-n	10	1	1
 3;Pl;M	n	third person plural masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)	NTUMC	77000029-n	6	1	1
 3;Pl;N	n	third person plural neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (neuter)	NTUMC	77000037-n	11	5	2
-3;Pl;Poss	a	third person plural possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, more than one possessor	NTUMC	77000039-a	434	74	7
+3;Pl;Poss	a	third person plural possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, more than one possessor	NTUMC	77000039-a	434	74	7
 3;Pl;Recp	n	third person plural reciprocal pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (reciprocal)	NTUMC	77000033-n	0	0	0
 3;Pl;Refl	n	third person plural reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (reflexive)	NTUMC	77000034-n	0	0	0
-3;Poss	a	third person possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee	Parabank		18	7	3
+3;Poss	a	third person possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee	Parabank		18	7	3
 3;Sg	n	third person singular pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all	NTUMC	80001130-n	416	80	7
 3;Sg;F	n	third person singular feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)	NTUMC	77000041-n	86	24	5
-3;Sg;F+N;Poss	a	third person singular feminine or neuter possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine or neuter)	Parabank		5	5	3
-3;Sg;F;Poss	a	third person singular feminine possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)	NTUMC	77000043-a	56	19	5
+3;Sg;F+N;Poss	a	third person singular feminine or neuter possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine or neuter)	Parabank		5	5	3
+3;Sg;F;Poss	a	third person singular feminine possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)	NTUMC	77000043-a	56	19	5
 3;Sg;F;Refl	n	third person singular feminine reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (feminine, reflexive)	NTUMC	77000045-n	0	0	0
 3;Sg;Infml;NHon	n	third person singular informal non-honorific pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (informal, non-honorific)	NTUMC	77000038-n	0	0	0
 3;Sg;M	n	third person singular masculine pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)	NTUMC	77000046-n	70	26	5
 3;Sg;M+N	n	third person singular masculine or neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine or neuter)	Parabank		28	7	3
-3;Sg;M+N;Poss	a	third person singular masculine or neuter possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine or neuter)	Parabank		31	9	4
+3;Sg;M+N;Poss	a	third person singular masculine or neuter possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (masculine or neuter)	Parabank		31	9	4
 3;Sg;M;Infml;Rem;Men	n	third person singular masculine informal remote men's speech pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, informal, remote, men's speech)	NTUMC	77000048-n	0	0	0
-3;Sg;M;Poss	a	third person singular masculine possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine)	NTUMC	77000050-a	35	17	5
+3;Sg;M;Poss	a	third person singular masculine possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (masculine)	NTUMC	77000050-a	35	17	5
 3;Sg;M;Refl	n	third person singular masculine reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, reflexive)	NTUMC	77000052-n	0	0	0
 3;Sg;N	n	third person singular neuter pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)	NTUMC	77000053-n	47	13	4
-3;Sg;N;Poss	a	third person singular neuter possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (neuter)	NTUMC	77000054-a	21	9	3
+3;Sg;N;Poss	a	third person singular neuter possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (neuter)	NTUMC	77000054-a	21	9	3
 3;Sg;N;Refl	n	third person singular neuter reflexive pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (neuter, reflexive)	NTUMC	77000056-n	0	0	0
 3;Sg;Oth	n	third person singular other pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (other)	NTUMC	77000040-n	0	0	0
 3;Sg;Pol	n	third person singular polite pronoun	a pronoun referring to someone or something other than speaker and addressee, one in all (polite)	TUFS curation		0	0	0
-3;Sg;Poss	a	third person singular possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor	Parabank		446	84	7
-Asrt	a	assertive existential pronoun	an assertive existential pronoun	NTUMC	02267308-a	0	0	0
+3;Sg;Poss	a	third person singular possessive determinative	a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor	Parabank		446	84	7
+Asrt	a	assertive existential determinative	an assertive existential determinative	NTUMC	02267308-a	0	0	0
 DNEG	n	direct negation pronoun	an indefinite pronoun series used for: direct negation (Haspelmath's functions)	Haspelmath		0	0	0
-Dist	a	distal pronoun	a distal pronoun	NTUMC	77000080-a	0	0	0
+Dist	a	distal determinative	a distal determinative	NTUMC	77000080-a	0	0	0
 Dur+Tim;Int	r	duration or time interrogative pro-adverb	a duration or time interrogative pro-adverb	NTUMC	77000103-n	0	0	0
-Elec	a	elective existential pronoun	an elective existential pronoun	NTUMC	02267686-a	0	0	0
+Elec	a	elective existential determinative	an elective existential determinative	NTUMC	02267686-a	0	0	0
 Ent;1;Pl;Poss	n	first person plural possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, more than one possessor	NTUMC	77000006-n	0	0	0
 Ent;1;Sg;Poss	n	first person singular possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, one possessor	NTUMC	77000107-n	0	0	0
 Ent;2;Poss	n	second person possessive pronoun	a possessive pronoun: someone or something belonging to the addressee	English yours		0	0	0
@@ -134,14 +134,14 @@ Ent;Two;Int;Infml	n	entity interrogative informal pronoun of two	an entity inter
 Ent;Two;Univ	n	entity universal pronoun of two	an entity universal pronoun of two	NTUMC	77000076-n	0	0	0
 Ent;Univ	n	entity universal pronoun	an entity universal pronoun	NTUMC	02269286-n	0	0	0
 FC	n	free choice pronoun	an indefinite pronoun series used for: free choice (Haspelmath's functions)	Haspelmath		0	0	0
-Int	a	interrogative pronoun	an interrogative pronoun	NTUMC	77000091-a	0	0	0
-Knd;Dist	a	kind distal pronoun	a kind distal pronoun	TUFS curation		0	0	0
-Knd;Int	a	kind interrogative pronoun	a kind interrogative pronoun	TUFS ja どのような		0	0	0
-Knd;Med	a	kind medial pronoun	a kind medial pronoun	NTUMC	77000113-a	0	0	0
-Knd;Prox	a	kind proximal pronoun	a kind proximal pronoun	NTUMC	77000089-a	0	0	0
-Knd;Prox+Dist	a	kind proximal or distal pronoun	a kind proximal or distal pronoun	TUFS curation		0	0	0
-Knd;Rem	a	kind remote pronoun	a kind remote pronoun	NTUMC	77000114-a	0	0	0
-Med	a	medial pronoun	a medial pronoun	NTUMC	77000060-a	0	0	0
+Int	a	interrogative determinative	an interrogative determinative	NTUMC	77000091-a	0	0	0
+Knd;Dist	a	kind distal determinative	a kind distal determinative	TUFS curation		0	0	0
+Knd;Int	a	kind interrogative determinative	a kind interrogative determinative	TUFS ja どのような		0	0	0
+Knd;Med	a	kind medial determinative	a kind medial determinative	NTUMC	77000113-a	0	0	0
+Knd;Prox	a	kind proximal determinative	a kind proximal determinative	NTUMC	77000089-a	0	0	0
+Knd;Prox+Dist	a	kind proximal or distal determinative	a kind proximal or distal determinative	TUFS curation		0	0	0
+Knd;Rem	a	kind remote determinative	a kind remote determinative	NTUMC	77000114-a	0	0	0
+Med	a	medial determinative	a medial determinative	NTUMC	77000060-a	0	0	0
 Mnr;Dist	r	manner distal pro-adverb	a manner distal pro-adverb	NTUMC	77000088-r	0	0	0
 Mnr;Elec	r	manner elective existential pro-adverb	a manner elective existential pro-adverb	NTUMC	77000028-n	0	0	0
 Mnr;Int	r	manner interrogative pro-adverb	a manner interrogative pro-adverb	NTUMC	77000090-n	0	0	0
@@ -163,8 +163,8 @@ Pers;Sg;Infml;Prox;Men	n	person singular informal proximal men's speech pronoun	
 Pers;Sg;Neg	n	person singular negative pronoun	a person singular negative pronoun	NTUMC	77000137-n	0	0	0
 Pers;Univ	n	person universal pronoun	a person universal pronoun	NTUMC	77000099-n	0	0	0
 Pers;Univ;Pol	n	person universal polite pronoun	a person universal polite pronoun	NTUMC	77000100-n	0	0	0
-Pl;Dist	a	plural distal pronoun	a plural distal pronoun	NTUMC	77000082-a	0	0	0
-Pl;Prox	a	plural proximal pronoun	a plural proximal pronoun	NTUMC	77000058-a	0	0	0
+Pl;Dist	a	plural distal determinative	a plural distal determinative	NTUMC	77000082-a	0	0	0
+Pl;Prox	a	plural proximal determinative	a plural proximal determinative	NTUMC	77000058-a	0	0	0
 Plc;Dist	n	place distal pronoun	a place distal pronoun	NTUMC	08489627-n	0	0	0
 Plc;Dist;Dir	p	place distal pro-adposition	a pro-adposition: at, to or from a place (distal)	NTUMC	08489627-n	0	0	0
 Plc;Dist;Loc+Goal	p	place distal pro-adposition (at or to)	a pro-adposition: at or to a place (distal)	NTUMC	08489627-n	0	0	0
@@ -205,22 +205,22 @@ Plc;Sg;Elec;Loc+Goal	p	place singular elective existential pro-adposition (at or
 Plc;Sg;Oth	n	place singular other pronoun	a place singular other pronoun	NTUMC	77000085-n	0	0	0
 Plc;Univ;Dir	p	place universal pro-adposition	a pro-adposition: at, to or from a place (universal)	NTUMC	00025728-r	0	0	0
 Plc;Univ;Loc+Goal	p	place universal pro-adposition (at or to)	a pro-adposition: at or to a place (universal)	NTUMC	00025728-r	0	0	0
-Poss;Int	a	possessive interrogative determiner	a possessive interrogative determiner	NTUMC	77000120-a	0	0	0
-Prox	a	proximal pronoun	a proximal pronoun	NTUMC	77000075-a	0	0	0
-Prox+Dist	a	proximal or distal pronoun	a proximal or distal pronoun	TUFS curation		0	0	0
+Poss;Int	a	possessive interrogative determinative	a possessive interrogative determinative	NTUMC	77000120-a	0	0	0
+Prox	a	proximal determinative	a proximal determinative	NTUMC	77000075-a	0	0	0
+Prox+Dist	a	proximal or distal determinative	a proximal or distal determinative	TUFS curation		0	0	0
 Qnt;Int	n	quantity interrogative pronoun	a quantity interrogative pronoun	TUFS ja どのぐらい, どれぐらい		0	0	0
 Qnt;Prox	n	quantity proximal pronoun	a quantity proximal pronoun	TUFS curation		0	0	0
-Rem	a	remote pronoun	a remote pronoun	NTUMC	77000059-a	0	0	0
+Rem	a	remote determinative	a remote determinative	NTUMC	77000059-a	0	0	0
 Rsn;Int	r	reason interrogative pro-adverb	a reason interrogative pro-adverb	NTUMC	77000112-n	0	0	0
 SK+SU	n	specific known or specific unknown pronoun	an indefinite pronoun series used for: specific known, specific unknown (Haspelmath's functions)	Haspelmath		0	0	0
 SK+SU+IRR+Q+COND+INEG	n	specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun	an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)	Haspelmath		0	0	0
-Sg;Dist	a	singular distal pronoun	a singular distal pronoun	NTUMC	77000079-a	0	0	0
-Sg;Oth	a	singular other pronoun	a singular other pronoun	NTUMC	02070188-a	0	0	0
-Sg;Prox	a	singular proximal pronoun	a singular proximal pronoun	NTUMC	77000061-a	0	0	0
-Sg;Two;Elec	a	singular elective existential pronoun of two	a singular elective existential pronoun of two	NTUMC	77000142-a	0	0	0
-Sg;Two;Neg	a	singular negative pronoun of two	a singular negative pronoun of two	NTUMC	00524607-a	0	0	0
-Sg;Two;Univ	a	singular universal pronoun of two	a singular universal pronoun of two	NTUMC	77000141-a	0	0	0
-Sg;Univ	a	singular universal pronoun	a singular universal pronoun	NTUMC	02269635-a	0	0	0
+Sg;Dist	a	singular distal determinative	a singular distal determinative	NTUMC	77000079-a	0	0	0
+Sg;Oth	a	singular other determinative	a singular other determinative	NTUMC	02070188-a	0	0	0
+Sg;Prox	a	singular proximal determinative	a singular proximal determinative	NTUMC	77000061-a	0	0	0
+Sg;Two;Elec	a	singular elective existential determinative of two	a singular elective existential determinative of two	NTUMC	77000142-a	0	0	0
+Sg;Two;Neg	a	singular negative determinative of two	a singular negative determinative of two	NTUMC	00524607-a	0	0	0
+Sg;Two;Univ	a	singular universal determinative of two	a singular universal determinative of two	NTUMC	77000141-a	0	0	0
+Sg;Univ	a	singular universal determinative	a singular universal determinative	NTUMC	02269635-a	0	0	0
 Thng;Int	n	thing interrogative pronoun	a thing interrogative pronoun	NTUMC	77000091-n	0	0	0
 Thng;Sg;Asrt	n	thing singular assertive existential pronoun	a thing singular assertive existential pronoun	NTUMC	77000092-n	0	0	0
 Thng;Sg;Elec	n	thing singular elective existential pronoun	a thing singular elective existential pronoun	NTUMC	77000093-n	0	0	0
@@ -238,5 +238,5 @@ Tim;Sg;Asrt;Dir	p	time singular assertive existential pro-adposition	a pro-adpos
 Tim;Sg;Asrt;Loc	p	time singular assertive existential pro-adposition (at)	a pro-adposition: at a time (singular, assertive existential)	TUFS ja いつか		0	0	0
 Tim;Sg;Elec;Dir	p	time singular elective existential pro-adposition	a pro-adposition: at, until or since a time (singular, elective existential)	NTUMC	77000106-n	0	0	0
 Tim;Sg;Elec;Loc	p	time singular elective existential pro-adposition (at)	a pro-adposition: at a time (singular, elective existential)	NTUMC	77000106-n	0	0	0
-Two;Univ	a	universal pronoun of two	a universal pronoun of two	NTUMC	77000076-a	0	0	0
-Univ	a	universal pronoun	a universal pronoun	NTUMC	02269286-a	0	0	0
+Two;Univ	a	universal determinative of two	a universal determinative of two	NTUMC	77000076-a	0	0	0
+Univ	a	universal determinative	a universal determinative	NTUMC	02269286-a	0	0	0

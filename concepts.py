@@ -90,7 +90,7 @@ WORDS = {
     "Dur": "duration",
     "Dx": "deictic",
     "Qnt": "quantity",
-    "Det": "determiner",
+    "Det": "determinative",
     "NStd": "non-standard",
     "Asrt": "assertive existential",
     "Elec": "elective existential",
@@ -239,8 +239,10 @@ def label(code: str, pos: str = "n") -> str:
     kind = " pronoun"
     if pos == "r":
         kind = " pro-adverb"
-    elif "Poss" in parts and parts[0] != "Ent":
-        kind = " determiner"  # my, whose
+    elif pos == "a" or ("Poss" in parts and parts[0] != "Ent"):
+        # the category, after Huddleston and Pullum (2002); determiner is the
+        # function: this, which, my
+        kind = " determinative"
     elif "Poss" in parts:
         parts = parts[1:]  # mine: "first person singular possessive pronoun"
     words = [
@@ -287,7 +289,7 @@ def define(code: str, pos: str = "n") -> str:
         if independent:
             text = f"a possessive pronoun: someone or something belonging to {whose}"
         elif possessive:
-            text = f"a possessive determiner: of or belonging to {whose}"
+            text = f"a possessive determinative: of or belonging to {whose}"
         rest = parts[1:]
         if rest and rest[0] in NUMBERS:
             count = NUMBERS[rest[0]]
@@ -336,7 +338,7 @@ def parabank_concepts() -> dict[str, tuple[set[str], set[str], int]]:
 
 
 def pos_of(code: str, ntumc: dict[str, list[str]], extra_pos: dict[str, str]) -> str:
-    """A concept's part of speech: pronoun ``n``, determiner ``a``, pro-adverb
+    """A concept's part of speech: pronoun ``n``, determinative ``a``, pro-adverb
     ``r``, pro-adposition ``p``.
 
     A code with a direction is a pro-adposition. Universal Dependencies tags these

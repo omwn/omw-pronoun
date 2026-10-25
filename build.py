@@ -812,8 +812,10 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
                 f'      <SynsetRelation relType="{rel}" target="{feature_id(abbr)}"/>'
             )
         pos_of = {x["code"]: x["pos"] for x in concepts}
-        for rel, other in possessive_links(code, set(codes)) + direction_links(
-            code, pos_of
+        for rel, other in (
+            possessive_links(code, set(codes))
+            + direction_links(code, pos_of)
+            + determinative_links(code, pos_of)
         ):
             lines.append(
                 f'      <SynsetRelation relType="other" dc:type="{rel}"'
@@ -863,6 +865,29 @@ def direction_links(code: str, pos: dict[str, str]) -> list[tuple[str, str]]:
     target = concept_table.with_direction(code)
     if pos.get(code) == "n" and pos.get(target) == "p":
         return [("pro-adposition", target)]
+    return []
+
+
+def determinative_links(code: str, pos: dict[str, str]) -> list[tuple[str, str]]:
+    """Link a determinative to the pronoun with the same features plus ``Ent``.
+
+    The determinative *this* (``Sg;Prox``) and the pronoun *this*
+    (``Ent;Sg;Prox``), or *my* (``1;Sg;Poss``) and *mine* (``Ent;1;Sg;Poss``),
+    differ in part of speech, so neither is a hypernym of the other. WN-LMF has
+    no synset relation for the pair, so it is ``other`` with a ``dc:type``, as for
+    possessives: ``pronoun`` from the determinative, ``determinative`` back.
+
+    >>> determinative_links("Sg;Prox", {"Sg;Prox": "a", "Ent;Sg;Prox": "n"})
+    [('pronoun', 'Ent;Sg;Prox')]
+    >>> determinative_links("Ent;Sg;Prox", {"Sg;Prox": "a", "Ent;Sg;Prox": "n"})
+    [('determinative', 'Sg;Prox')]
+    """
+    if pos.get(code) == "a" and pos.get(f"Ent;{code}") == "n":
+        return [("pronoun", f"Ent;{code}")]
+    if pos.get(code) == "n" and code.startswith("Ent;"):
+        bare = code.removeprefix("Ent;")
+        if pos.get(bare) == "a":
+            return [("determinative", bare)]
     return []
 
 
@@ -1117,7 +1142,7 @@ def read_concept_ili() -> dict[str, str]:
 #: parts of speech, as the browser names them
 POS_NAMES = {
     "n": "pronoun",
-    "a": "determiner",
+    "a": "determinative",
     "p": "pro-adposition",
     "r": "pro-adverb",
 }
