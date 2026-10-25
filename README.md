@@ -68,7 +68,8 @@ alternatives joined by `+`:
 
 - **Unmarked values** stand for their marked ones: `1` is inclusive or exclusive,
   and `Pl` is *non-singular*, as in the paper (English *we* is `1;Pl`). Where a
-  dual or trial contrasts, the plural alone is `Gpl`, greater plural. `Dist` is
+  dual or trial contrasts, the plural alone is `Gpl`, plural beyond the dual (not
+  the "greater plural" of Corbett and UD, which means "many"). `Dist` is
   *not proximal*, medial or remote: English *that* is `Dist`, Japanese *sore* is
   `Med` and *are* `Rem`, both under it. `Ent` is a person or a thing, so *who*
   (`Pers;Int`) and *what* (`Thng;Int`) are under *which* (`Ent;Int`).
@@ -102,7 +103,7 @@ from:
   checks each by hand: 24 give concepts, with corrected codes and parts of speech
   (NTUMC reads *there* "a location other than here" as *other*), and 11 are skipped with a reason (*someone* is the
   synset *person*; *nothing* shares one with *zero*).
-- **Parabank**: combinations NTUMC lacks (dual, greater plural, clusivity in the
+- **Parabank**: combinations NTUMC lacks (dual, plural beside a dual, clusivity in the
   dual, number-neutral *you*, and their possessives), admitted by the KinDiv rule: >= 5 language
   families in >= 3 macroareas.
 - **`data/extra-concepts.tsv`**: curated additions, so far 14 from TUFS Japanese
@@ -120,9 +121,9 @@ from:
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
 Of the 55 feature values in use, 29 keep their Princeton ILI (*possessive* is
-i69651), 24 are proposed (NTUMC's own and new ones such as *greater plural*, *one of two* and
+i69651), 24 are proposed (NTUMC's own and new ones such as *plural (beyond the dual)*, *one of two* and
 Haspelmath's functions), and 2 point at doubtful Princeton senses (`check`).
-Each records its Universal Dependencies value (`dc:relation="UD:Number=Grpl"`);
+Each records its Universal Dependencies value (`dc:relation="UD:Person=1|Clusivity=In"`);
 36 of 55 have one. Feature synsets form a hierarchy of their own, from the
 values that stand for others: *distal* has the hyponyms *medial* and *remote*,
 *first person* has *inclusive* and *exclusive*.

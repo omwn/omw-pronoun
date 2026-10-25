@@ -3,8 +3,8 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 1+2;Pl;Poss	a	first person or second person plural possessive determiner	a first person or second person plural possessive determiner	Parabank		5	5	4
 1;Du	n	first person dual pronoun	a pronoun referring to the speaker, two in all	Parabank		93	33	7
 1;Du;Poss	a	first person dual possessive determiner	a possessive determiner: of or belonging to the speaker, two possessor	Parabank		85	31	7
-1;Gpl	n	first person greater plural pronoun	a pronoun referring to the speaker, more than two (where a dual contrasts) in all	Parabank		89	28	6
-1;Gpl;Poss	a	first person greater plural possessive determiner	a possessive determiner: of or belonging to the speaker, more than two (where a dual contrasts) possessor	Parabank		82	25	6
+1;Gpl	n	first person plural (beyond the dual) pronoun	a pronoun referring to the speaker, more than two (where a dual contrasts) in all	Parabank		89	28	6
+1;Gpl;Poss	a	first person plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the speaker, more than two (where a dual contrasts) possessor	Parabank		82	25	6
 1;Pl	n	first person plural pronoun	a pronoun referring to the speaker, more than one in all	NTUMC	77000002-n	311	59	6
 1;Pl;Fml	n	first person plural formal pronoun	a pronoun referring to the speaker, more than one in all (formal)	NTUMC	77000003-n	0	0	0
 1;Pl;Fml;Pol	n	first person plural formal polite pronoun	a pronoun referring to the speaker, more than one in all (formal, polite)	TUFS curation		0	0	0
@@ -26,22 +26,22 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 1;Sg;Refl	n	first person singular reflexive pronoun	a pronoun referring to the speaker, one in all (reflexive)	NTUMC	77000016-n	0	0	0
 1e;Du	n	first person exclusive dual pronoun	a pronoun referring to the speaker and others, not the addressee, two in all	Parabank		141	33	6
 1e;Du;Poss	a	first person exclusive dual possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, two possessor	Parabank		127	31	6
-1e;Gpl	n	first person exclusive greater plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than two (where a dual contrasts) in all	Parabank		149	37	7
-1e;Gpl;Poss	a	first person exclusive greater plural possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, more than two (where a dual contrasts) possessor	Parabank		130	34	7
+1e;Gpl	n	first person exclusive plural (beyond the dual) pronoun	a pronoun referring to the speaker and others, not the addressee, more than two (where a dual contrasts) in all	Parabank		149	37	7
+1e;Gpl;Poss	a	first person exclusive plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, more than two (where a dual contrasts) possessor	Parabank		130	34	7
 1e;Pl	n	first person exclusive plural pronoun	a pronoun referring to the speaker and others, not the addressee, more than one in all	NTUMC	80001133-n	155	41	7
 1e;Pl;Poss	a	first person exclusive plural possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee, more than one possessor	Parabank		151	40	7
 1e;Poss	a	first person exclusive possessive determiner	a possessive determiner: of or belonging to the speaker and others, not the addressee	Parabank		8	6	4
 1i;Du	n	first person inclusive dual pronoun	a pronoun referring to the speaker and the addressee, two in all	Parabank		155	34	6
 1i;Du;Poss	a	first person inclusive dual possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, two possessor	Parabank		142	32	6
-1i;Gpl	n	first person inclusive greater plural pronoun	a pronoun referring to the speaker and the addressee, more than two (where a dual contrasts) in all	Parabank		163	38	7
-1i;Gpl;Poss	a	first person inclusive greater plural possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, more than two (where a dual contrasts) possessor	Parabank		145	36	7
+1i;Gpl	n	first person inclusive plural (beyond the dual) pronoun	a pronoun referring to the speaker and the addressee, more than two (where a dual contrasts) in all	Parabank		163	38	7
+1i;Gpl;Poss	a	first person inclusive plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, more than two (where a dual contrasts) possessor	Parabank		145	36	7
 1i;Pl	n	first person inclusive plural pronoun	a pronoun referring to the speaker and the addressee, more than one in all	NTUMC	77000139-n	147	40	7
 1i;Pl;Poss	a	first person inclusive plural possessive determiner	a possessive determiner: of or belonging to the speaker and the addressee, more than one possessor	Parabank		145	41	7
 2	n	second person pronoun	a pronoun referring to the addressee	Parabank		20	11	7
 2;Du	n	second person dual pronoun	a pronoun referring to the addressee, two in all	Parabank		208	51	7
 2;Du;Poss	a	second person dual possessive determiner	a possessive determiner: of or belonging to the addressee, two possessor	Parabank		181	44	7
-2;Gpl	n	second person greater plural pronoun	a pronoun referring to the addressee, more than two (where a dual contrasts) in all	Parabank		214	50	7
-2;Gpl;Poss	a	second person greater plural possessive determiner	a possessive determiner: of or belonging to the addressee, more than two (where a dual contrasts) possessor	Parabank		187	44	7
+2;Gpl	n	second person plural (beyond the dual) pronoun	a pronoun referring to the addressee, more than two (where a dual contrasts) in all	Parabank		214	50	7
+2;Gpl;Poss	a	second person plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to the addressee, more than two (where a dual contrasts) possessor	Parabank		187	44	7
 2;Pl	n	second person plural pronoun	a pronoun referring to the addressee, more than one in all	NTUMC	77000019-n	479	89	7
 2;Pl;Fml;Pol	n	second person plural formal polite pronoun	a pronoun referring to the addressee, more than one in all (formal, polite)	TUFS curation		0	0	0
 2;Pl;Poss	a	second person plural possessive determiner	a possessive determiner: of or belonging to the addressee, more than one possessor	Parabank		465	86	7
@@ -62,8 +62,8 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 3	n	third person pronoun	a pronoun referring to someone or something other than speaker and addressee	NTUMC	80000003-n 80000047-n	7	4	1
 3;Du	n	third person dual pronoun	a pronoun referring to someone or something other than speaker and addressee, two in all	Parabank		196	45	6
 3;Du;Poss	a	third person dual possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, two possessor	Parabank		166	41	6
-3;Gpl	n	third person greater plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all	Parabank		203	46	6
-3;Gpl;Poss	a	third person greater plural possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, more than two (where a dual contrasts) possessor	Parabank		173	44	6
+3;Gpl	n	third person plural (beyond the dual) pronoun	a pronoun referring to someone or something other than speaker and addressee, more than two (where a dual contrasts) in all	Parabank		203	46	6
+3;Gpl;Poss	a	third person plural (beyond the dual) possessive determiner	a possessive determiner: of or belonging to someone or something other than speaker and addressee, more than two (where a dual contrasts) possessor	Parabank		173	44	6
 3;Oth	n	third person other pronoun	a pronoun referring to someone or something other than speaker and addressee (other)	NTUMC	77000032-n	0	0	0
 3;Pl	n	third person plural pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all	NTUMC	77000031-n 80001131-n	437	80	7
 3;Pl;F	n	third person plural feminine pronoun	a pronoun referring to someone or something other than speaker and addressee, more than one in all (feminine)	NTUMC	77000035-n	10	1	1

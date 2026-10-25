@@ -25,7 +25,7 @@ person, number, gender.
   ``1i``; ``2``; ``3``.
 - Number: ``Pl`` is non-singular, as in the paper (English *we* fills the dual
   and plural cells); where a dual (or trial) contrasts, the plural alone is
-  ``Gpl``, greater plural.
+  ``Gpl``, plural beyond the dual.
 - Gender: Parabank's gender slots are positional. With only ``m`` and ``n``
   filled, ``n`` usually holds the feminine (English *she*, Arabic *hiya*) and in
   Hindi the slots hold proximal/distal forms, so gender is trusted only when the
@@ -137,7 +137,7 @@ def lexemes(
 
 
 def render_number(numbers: set[str], elicited: set[str]) -> str:
-    """Name a set of numbers, with Pl as non-singular and Gpl as greater plural.
+    """Name a set of numbers, with Pl as non-singular and Gpl as plural beyond the dual.
 
     >>> render_number({"du", "pl"}, {"sg", "du", "pl"})
     'Pl'

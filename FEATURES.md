@@ -165,7 +165,7 @@ The kind of thing a pro-form stands for. Personal pronouns have a person instead
 | `Du` | dual | `Number=Dual` | Tok Pisin *mitupela* "we two (not you)" | `1e;Du` |
 | `Tr` | trial | `Number=Tri` | Tok Pisin *mitripela* "we three (not you)" | (no concept yet) |
 | `Pl` | plural: any non-singular, `Du`, `Tr` or `Gpl` | `Number=Plur` | English *we* | `1;Pl` |
-| `Gpl` | greater plural: more than a dual or trial | `Number=Grpl` | Tok Pisin *mipela* | `1e;Gpl` |
+| `Gpl` | plural beyond the dual: more than a dual or trial (not Corbett's "greater plural") | `Number=Plur` (UD's `Grpl` is "many, all possible") | Tok Pisin *mipela* | `1e;Gpl` |
 
 Number counts the referents. `Du` is *we two*: two people referred to.
 

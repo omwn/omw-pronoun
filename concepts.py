@@ -13,7 +13,7 @@ Concepts come from two places:
   code and synsets that differ only in them fold together: *I* and *me* are
   both ``1;Sg``. The possessive stays: *my* and *mine* are ``1;Sg;Poss``, a
   concept of its own.
-- **Parabank**: codes of Parabank lexemes that NTUMC lacks (dual, greater plural,
+- **Parabank**: codes of Parabank lexemes that NTUMC lacks (dual, plural beside a dual,
   clusivity in the dual, ...), admitted by the rule used for KinDiv: attested in
   at least ``MIN_FAMILIES`` families in ``MIN_AREAS`` macroareas.
 
@@ -63,7 +63,7 @@ WORDS = {
     "Du": "dual",
     "Tr": "trial",
     "Pl": "plural",
-    "Gpl": "greater plural",
+    "Gpl": "plural (beyond the dual)",
     "Two": "of two",
     "M": "masculine",
     "F": "feminine",
