@@ -588,10 +588,29 @@ def remap(languages: dict[str, Language]) -> None:
     with (DATA / "remap.tsv").open(encoding="utf8") as handle:
         for row in csv.DictReader(handle, delimiter="\t"):
             language = languages.get(row["lang"])
-            for entry in language.entries.values() if language else []:
+            for key, entry in list(language.entries.items()) if language else []:
                 if entry.lemma == row["lemma"] and row["from_code"] in entry.senses:
-                    sources = entry.senses.pop(row["from_code"])
-                    entry.senses[row["to_code"]] |= sources
+                    copy_sense(language, entry, row["from_code"], row["to_code"])
+                    del entry.senses[row["from_code"]]
+                    if not entry.senses:
+                        del language.entries[key]
+
+
+def copy_sense(language: Language, entry: Entry, code: str, to: str) -> None:
+    """Give `entry`'s lemma the sense `to` with the sources of its sense `code`.
+
+    The sense goes to the lemma's entry for the part of speech of `to`, which
+    takes the entry's forms and tags: Czech *kam* moves from the noun ``Plc;Int``
+    to the adverb ``Plc;Int;Goal``.
+    """
+    bound = ("morph", "bound") in entry.tags
+    other = language.entry(entry.lemma, to, bound=bound)
+    if other is not entry:
+        other.tags += [t for t in entry.tags if t not in other.tags]
+        for form, tags in entry.forms.items():
+            other.forms.setdefault(form, []).extend(tags)
+        other.transcribed |= entry.transcribed
+    other.senses[to] |= entry.senses[code]
 
 
 def read_word_pos() -> dict[tuple[str, str], list[str]]:
@@ -621,13 +640,7 @@ def place_adverbs(languages: dict[str, Language]) -> None:
             for code in [c for c in entry.senses if c in both]:
                 pos = rules.get((tag, entry.lemma)) or rules.get((tag, "*")) or ["r"]
                 if "r" in pos:
-                    bound = ("morph", "bound") in entry.tags
-                    other = language.entry(entry.lemma, code + adverb, bound=bound)
-                    other.tags += [t for t in entry.tags if t not in other.tags]
-                    for form, tags in entry.forms.items():
-                        other.forms.setdefault(form, []).extend(tags)
-                    other.transcribed |= entry.transcribed
-                    other.senses[code + adverb] |= entry.senses[code]
+                    copy_sense(language, entry, code, code + adverb)
                 if "n" not in pos:
                     del entry.senses[code]
             if not entry.senses:

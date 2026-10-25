@@ -111,6 +111,18 @@ def test_words_take_their_languages_part_of_speech(
     assert senses("es") == [("r", "Plc;Prox:r")]
 
 
+def test_remapped_sense_moves_to_an_entry_of_its_part_of_speech(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(build, "POS", {"Plc;Int": "n", "Plc;Int;Goal": "r"})
+    czech = build.Language("cs", "Czech")
+    czech.entry("kam", "Plc;Int").senses["Plc;Int"].add("test")
+    build.remap({"cs": czech})
+    assert [(e.lemma, e.pos, set(e.senses)) for e in czech.entries.values()] == [
+        ("kam", "r", {"Plc;Int;Goal"})
+    ]
+
+
 def test_derivation_links_one_lemma_across_parts_of_speech() -> None:
     senses = [
         ("here", "n", "Plc;Prox", "here-n"),
