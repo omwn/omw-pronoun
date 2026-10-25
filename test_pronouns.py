@@ -108,6 +108,9 @@ def test_a_place_code_is_a_noun_and_a_pro_adposition() -> None:
         ("exemplifies", "Prox"),
         ("exemplifies", "Dir"),
     ]
+    used = ["Loc", "Goal", "Src", "Dir", "Tmp", "Role"]
+    assert ("hypernym", "Role") in build.feature_hierarchy("Dir", used)
+    assert ("hypernym", "Dir") in build.feature_hierarchy("Tmp", used)
     assert build.direction_links("Plc;Prox", pos) == [
         ("pro-adposition", "Plc;Prox;Dir")
     ]

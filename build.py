@@ -926,6 +926,12 @@ def feature_links(
     return links
 
 
+#: hypernymy among feature values: the unmarked values, plus the temporal role
+#: under Dir and Dir under Princeton's semantic role, so the proposed Dir has a
+#: place in the hierarchy
+FEATURE_BELOW = {**EXPAND, "Dir": EXPAND["Dir"] | {"Tmp"}, "Role": {"Dir"}}
+
+
 def feature_hierarchy(abbr: str, used: list[str]) -> list[tuple[str, str]]:
     """Hypernymy among feature values, from the values they stand for.
 
@@ -934,7 +940,7 @@ def feature_hierarchy(abbr: str, used: list[str]) -> list[tuple[str, str]]:
     >>> feature_hierarchy("Rem", ["Prox", "Med", "Dist", "Rem"])
     [('hypernym', 'Dist')]
     """
-    below = {**EXPAND, "Dir": EXPAND["Dir"] | {"Tmp"}}
+    below = FEATURE_BELOW
     links = [("hypernym", v) for v in used if abbr in below.get(v, set())]
     return links + [("hyponym", v) for v in used if v in below.get(abbr, set())]
 
@@ -954,6 +960,12 @@ def write_features(
             inverse = INVERSE[rel]
             back[abbr].append((inverse, c["code"]))
     used = [a for a in table if a in back]
+    # a value no concept uses is still written if it is above one that is
+    # (semantic role, above Dir)
+    while extra := [
+        a for a in table if a not in used and FEATURE_BELOW.get(a, set()) & set(used)
+    ]:
+        used += extra
     entries: list[str] = []
     lines: list[str] = []
     for abbr in used:

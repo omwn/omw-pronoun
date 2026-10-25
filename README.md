@@ -132,6 +132,8 @@ i69651), 25 are proposed (NTUMC's own and new ones such as *plural (beyond the
 dual)*, *one of two*, *non-specific locative role* and Haspelmath's functions),
 and 2 point at doubtful Princeton senses (`check`). The locative of a time code
 links to *temporal role* (i69760), of a place code to *locative role* (i69757).
+The proposed *non-specific locative role* (`Dir`) is above both, and is placed
+under Princeton's *semantic role* (i69752), which is included only for that.
 Each records its Universal Dependencies value (`dc:relation="UD:Person=1|Clusivity=In"`)
 where there is one. Feature synsets form a hierarchy of their own, from the
 values that stand for others: *distal* has the hyponyms *medial* and *remote*,
