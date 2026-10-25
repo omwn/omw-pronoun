@@ -132,7 +132,7 @@ omw-pronoun-cid	Chimariko 	8	8	8
 omw-pronoun-cjp	Cabecar	15	15	14
 omw-pronoun-cku	Koasati	8	8	8
 omw-pronoun-cmi	Embera-Chamí	13	13	12
-omw-pronoun-cmn	Mandarin Chinese	205	212	78
+omw-pronoun-cmn	Mandarin Chinese	206	212	78
 omw-pronoun-cmn-Hant	Mandarin Chinese (traditional)	1	1	1
 omw-pronoun-cof	Tsafiki	18	18	12
 omw-pronoun-cou	Konyagi	13	13	12
@@ -187,7 +187,7 @@ omw-pronoun-eip	Eipo	15	21	18
 omw-pronoun-el	Greek	10	10	10
 omw-pronoun-emi	Mussau-Emira	22	22	22
 omw-pronoun-emp	Northern Embera	25	25	16
-omw-pronoun-en	English	112	114	83
+omw-pronoun-en	English	119	121	89
 omw-pronoun-enn	Engenni	12	12	12
 omw-pronoun-eno	Enggano	17	17	16
 omw-pronoun-erk	South Efate	19	22	22
@@ -255,7 +255,7 @@ omw-pronoun-hu	Hungarian	15	15	15
 omw-pronoun-huu	Murui Huitoto	18	18	18
 omw-pronoun-ibd	Iwaidja	14	14	14
 omw-pronoun-ibe	Akpes	11	11	11
-omw-pronoun-id	Indonesian	102	118	68
+omw-pronoun-id	Indonesian	102	118	71
 omw-pronoun-ig	Igbo	13	13	12
 omw-pronoun-ilo	Iloko	16	16	16
 omw-pronoun-imn	Imonda	5	5	5
@@ -268,7 +268,7 @@ omw-pronoun-it	Italian	33	34	23
 omw-pronoun-itz	Itza'	14	14	14
 omw-pronoun-iws	Sepik Iwam	14	14	14
 omw-pronoun-izr	Izere	10	10	10
-omw-pronoun-ja	Japanese	227	245	96
+omw-pronoun-ja	Japanese	228	245	96
 omw-pronoun-jaa	Jamamadí	14	14	14
 omw-pronoun-jae	Yabem	15	15	15
 omw-pronoun-jam	Jamaican Creole English	10	10	10
@@ -320,7 +320,7 @@ omw-pronoun-kms	Kamasau	8	8	8
 omw-pronoun-kn	Kannada	15	15	15
 omw-pronoun-knp	Kwanja	11	11	11
 omw-pronoun-knx	Salako	12	12	12
-omw-pronoun-ko	Korean	28	28	23
+omw-pronoun-ko	Korean	29	29	24
 omw-pronoun-kog	Cogui	13	13	13
 omw-pronoun-kpc	Curripaco	12	12	10
 omw-pronoun-kpu	Kafoa	26	26	18
@@ -413,7 +413,7 @@ omw-pronoun-mwp	Kala Lagaw Ya kala1377	23	23	22
 omw-pronoun-mwt	Moken	15	17	12
 omw-pronoun-mxt	Jamiltepec Mixtec	12	12	12
 omw-pronoun-mxw	Namo	9	12	12
-omw-pronoun-my	Burmese	55	55	35
+omw-pronoun-my	Burmese	55	55	39
 omw-pronoun-mzm	Mumuye	12	12	12
 omw-pronoun-naf	Nabak	18	18	18
 omw-pronoun-naj	Nalu	12	12	12
@@ -666,5 +666,5 @@ omw-pronoun-zmr	Maranunggu	29	30	26
 omw-pronoun-zmu	Muruwari	20	20	18
 omw-pronoun-zne	Zande	10	10	10
 omw-pronoun-zrs	Mairasi	10	10	10
-omw-pronoun-zsm	Malay	48	49	34
+omw-pronoun-zsm	Malay	48	49	37
 omw-pronoun-zu	Zulu	10	10	10

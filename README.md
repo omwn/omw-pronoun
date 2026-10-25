@@ -100,8 +100,7 @@ from:
   pronouns: Princeton's *here*, *there*, *everywhere*, *all*, *each*, and a few
   of its own (Indonesian *aku*, *kami*, Mandarin 其). `data/ntumc-extra.tsv`
   checks each by hand: 24 give concepts, with corrected codes and parts of speech
-  (NTUMC reads *there* "a location other than here" as *other*; *everywhere* is a
-  place pronoun, not an adverb), and 11 are skipped with a reason (*someone* is the
+  (NTUMC reads *there* "a location other than here" as *other*), and 11 are skipped with a reason (*someone* is the
   synset *person*; *nothing* shares one with *zero*).
 - **Parabank**: combinations NTUMC lacks (dual, greater plural, clusivity in the
   dual, number-neutral *you*, and their possessives), admitted by the KinDiv rule: >= 5 language
@@ -131,10 +130,23 @@ values that stand for others: *distal* has the hyponyms *medial* and *remote*,
 **Part of speech and lexicographer file.** Pro-forms cut across parts of speech, as
 in UD (PRON/DET/ADV): pronouns are `n` (`noun.pronoun`), determiners `a`
 (`adj.pronoun`: *this*, *which*, Japanese *kono*) and pro-adverbs `r`
-(`adv.pronoun`: *kō* "in this way"). An entry has one part of speech, so *this* the
-determiner and *this* the pronoun are separate entries. Hypernymy stays within a
-part of speech: the pronoun *this* is not a kind of the determiner *this*, nor
-*mine* of *my*.
+(`adv.pronoun`: *kō* "in this way", *hither*, *why*), as UD tags them ADV. An
+entry has one part of speech, so *this* the determiner and *this* the pronoun
+are separate entries, linked by `derivation` (as are *here* the noun and *here*
+the adverb). Hypernymy stays within a part of speech: the pronoun *this* is not
+a kind of the determiner *this*, nor *mine* of *my*.
+
+Place, time, manner, reason and duration pro-forms are adverbs or nouns
+according to the language (`data/pro-adverbs.tsv`). Goal and source (*hither*,
+*whence*), *everywhere*, *sometime*, *how* and *why* are only adverbs. *here*,
+*there*, *where*, *now*, *then* and *when* are both in English, and OEWN has
+both senses, but Japanese *doko* is only a noun (*doko ni* is adverbial). So
+eight codes have a noun concept, keyed by the code (`Plc;Prox`, with OEWN's
+noun ILI), and an adverb concept with `:r` added (`Plc;Prox:r`, id
+`omw-pronoun-Plc-Prox-r`, with OEWN's adverb ILI where there is one).
+`data/word-pos.tsv` says which a language's word lexicalizes, by lemma or for
+the whole language (Japanese, Korean, Chinese, Turkish, Indonesian, Thai: nouns);
+a language it does not list is taken as adverbial.
 
 **Indefinites** (`haspelmath_series.py`): Haspelmath's (1997) indefinite-pronoun
 series (CLDF `cldf-datasets/haspelmathindefpro`, CC BY 4.0, 40 languages) are

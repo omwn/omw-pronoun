@@ -1,0 +1,27 @@
+code	pos	note
+Plc;Prox	n r	here: a noun in OEWN (i81667) and an adverb (i18823); Japanese ここ is only a noun
+Plc;Med	n r	Spanish ahí, Tagalog diyan are adverbs; Japanese そこ, Korean 거기 are nouns
+Plc;Dist	n r	there: a noun in OEWN (i81668) and an adverb (i18828)
+Plc;Rem	n r	Spanish allí, Tagalog doon are adverbs; Japanese あそこ, Korean 저기 are nouns
+Plc;Prox+Dist	r	German da, French là: only adverbs
+Plc;Int	n r	where: an adverb in English; Japanese どこ is a noun (doko ni/de)
+Tim;Prox	n r	now: a noun in OEWN (i116653) and an adverb (i18426)
+Tim;Dist	n r	then: a noun in OEWN (i117639) and an adverb (i18891)
+Tim;Int	n r	when: an adverb in English; Japanese いつ, Chinese 什么时候 are nouns
+Plc;Prox;Goal	r	hither, Czech sem: only adverbial
+Plc;Dist;Goal	r	thither, Czech tam: only adverbial
+Plc;Int;Goal	r	whither, Czech kam, Turkish nereye: only adverbial
+Plc;Prox;Src	r	hence, Czech odsud: only adverbial
+Plc;Dist;Src	r	thence, Czech odtamtud: only adverbial
+Plc;Int;Src	r	whence, Czech odkud: only adverbial
+Plc;Prox;Loc	r	Czech zde, Turkish burada: only adverbial
+Plc;Dist;Loc	r	Turkish orada: only adverbial
+Plc;Int;Loc	r	Czech kde, Turkish nerede: only adverbial
+Plc;Univ	r	everywhere: Princeton and OEWN have only the adverb (i18291)
+Plc;Sg;Elec	r	anywhere, wherever: only adverbs in OEWN (i18288, i21592)
+Tim;Sg;Asrt	r	sometime (i18265), Japanese いつか
+Tim;Sg;Elec	r	ever (i19122), whenever
+Mnr;Int	r	how: its pronoun use is adverbial
+Mnr;Elec	r	anyhow
+Rsn;Int	r	why: its pronoun use is adverbial; OEWN's noun why (i84881) is the cause, not the interrogative
+Dur+Tim;Int	r	how long: its pronoun use is adverbial

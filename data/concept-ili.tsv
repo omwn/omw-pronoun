@@ -11,3 +11,16 @@ Knd;Prox+Dist	i8532	related	oewn-01558587-s	such	OEWN's such is of degree ("so e
 Pers;Sg;Neg	i88993	related	oewn-09942876-n	nobody	a person of no influence, not the negative pronoun
 Ent;Sg;Univ		related	oewn-90004801-n	everything	all things that are of importance to a person (no ILI)
 Rsn;Int	i84881	related	oewn-09202503-n	why	the cause or intention underlying an action, a noun, not the interrogative
+Plc;Prox:r	i18823	exact	oewn-00109247-r	here	in or at this place; where the speaker or writer is
+Plc;Dist:r	i18828	exact	oewn-00109919-r	there	in or at that place or location
+Tim;Prox:r	i18426	exact	oewn-00049758-r	now	at the present moment
+Tim;Dist:r	i18891	exact	oewn-00118799-r	then	at that time
+Plc;Prox;Goal	i18824	exact	oewn-00109415-r	here, hither	to this place (especially toward the speaker)
+Plc;Dist;Goal	i18829	exact	oewn-00110073-r	there, thither	to or toward that place; away from the speaker
+Plc;Prox;Src	i18393	exact	oewn-00043931-r	hence	from this place
+Plc;Dist;Src	i18394	exact	oewn-00044018-r	thence	from that place or from there
+Plc;Int;Src	i21591	related	oewn-00497507-r	whence	from what place, source, or cause: also source and cause, so broader than the place pro-adverb
+Plc;Univ	i18291	exact	oewn-00026137-r	everywhere	to or in any or all places
+Plc;Sg;Elec	i18288	exact	oewn-00025699-r	anywhere	at or in or to any place; NTUMC's synset is wherever (i21592) "where in the world", which is emphatic, not elective
+Tim;Sg;Asrt	i18265	exact	oewn-00022156-r	sometime	at some indefinite or unstated time
+Tim;Sg;Elec	i19122	exact	oewn-00147423-r	ever	at any time

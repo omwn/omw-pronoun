@@ -1,8 +1,8 @@
 synset	pos	code	note
 08489497-n	n	Plc;Prox	here; NTUMC adds singular, but place pronouns have no number
 08489627-n	n	Plc;Dist	there; NTUMC's definition "a location other than here" reads as other, and it links medial
-00025728-r	n	Plc;Univ	everywhere; a place pronoun like here and there, though PWN files it as an adverb
-00495377-r	n	Plc;Sg;Elec	anywhere, wherever; as Pers;Sg;Elec, Thng;Sg;Elec, Tim;Sg;Elec
+00025728-r	r	Plc;Univ	everywhere; a pro-adverb, as PWN files it (data/pro-adverbs.tsv)
+00495377-r	r	Plc;Sg;Elec	anywhere, wherever; as Pers;Sg;Elec, Thng;Sg;Elec, Tim;Sg;Elec
 00524607-n	n	Ent;Sg;Two;Neg	neither, the pronoun: one of two; beside Ent;Two;Univ both and Ent;Sg;Two;Elec either
 00524607-a	a	Sg;Two;Neg	neither, the determiner; NTUMC adds other, from "not one or the other"
 02267308-n	n	Ent;Asrt	some, several, the pronoun

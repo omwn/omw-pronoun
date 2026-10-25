@@ -100,15 +100,28 @@ def parabank_admitted(lexemes: list[dict[str, str]]) -> set[str]:
 
 
 def concept_facts(inventory: list[dict[str, str]]) -> dict[str, int]:
-    """The concepts, by part of speech, and those with the domain Two."""
+    """The concepts, by part of speech, and those with the domain Two.
+
+    The figures by source count codes: *now* the noun and *now* the adverb are one
+    time concept; ``noun_and_adverb`` counts the codes that are both.
+    """
     by_pos = {pos: sum(1 for c in inventory if c["pos"] == pos) for pos in "nar"}
+
+    def codes(source: str) -> int:
+        return len(
+            {concepts.code_of(c["code"]) for c in inventory if c["source"] == source}
+        )
+
     return {
         "total": len(inventory),
         **by_pos,
+        "noun_and_adverb": sum(
+            1 for c in inventory if c["code"].endswith(concepts.ADVERB)
+        ),
         "two": sum(1 for c in inventory if "Two" in c["code"].split(";")),
-        "haspelmath": sum(1 for c in inventory if c["source"] == "Haspelmath"),
-        "direction": sum(1 for c in inventory if c["source"] == "direction"),
-        "time": sum(1 for c in inventory if c["source"] == "time deixis"),
+        "haspelmath": codes("Haspelmath"),
+        "direction": codes("direction"),
+        "time": codes("time deixis"),
     }
 
 
@@ -164,7 +177,7 @@ def ntumc_facts(inventory: list[dict[str, str]], others: set[str]) -> dict[str, 
     """
     synsets = [s for c in inventory for s in c["ntumc"].split()]
     from_inventory = {
-        c["code"]
+        concepts.code_of(c["code"])
         for c in inventory
         if any(s.startswith(INVENTORY_PREFIX) for s in c["ntumc"].split())
     }

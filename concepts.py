@@ -19,6 +19,11 @@ Concepts come from two places:
 
 Each concept gets an English label and definition composed from its code.
 
+A place, time, manner, reason or duration pro-form can be a noun, an adverb or
+both (``data/pro-adverbs.tsv``): English *here* is both, Japanese *koko* only a
+noun, *hither* only an adverb. A code that is both has two concepts, the noun
+keyed by the code and the adverb by the code with ``ADVERB`` added (``Plc;Prox:r``).
+
 Usage: uv run concepts.py [path/to/wn-ntumc.db]
 """
 
@@ -39,6 +44,9 @@ MIN_AREAS = 3
 #: met; indefinite series are admitted on families alone
 MIN_FAMILIES_SERIES = 5
 FUNCTIONS = {"SK", "SU", "IRR", "Q", "COND", "INEG", "DNEG", "COMP", "FC"}
+
+#: added to a code for the adverb of a code that is both noun and adverb
+ADVERB = ":r"
 
 #: cases that are inflection; the possessive (``Poss``) is part of the meaning
 CASES = {"Subj", "Obj"}
@@ -159,18 +167,26 @@ def concept_code(row: dict[str, str]) -> str:
     return code
 
 
-def label(code: str) -> str:
+def code_of(key: str) -> str:
+    """The code of a concept key: ``Plc;Prox:r`` -> ``Plc;Prox``."""
+    return key.removesuffix(ADVERB)
+
+
+def label(code: str, pos: str = "n") -> str:
     """An English label: ``1i;Du`` -> "first person inclusive dual".
 
     Alternatives in a slot read as "or": ``Plc;Prox+Dist`` -> "place proximal or
     distal pronoun". Choice from two comes last: ``Sg;Two;Univ`` -> "singular
-    universal pronoun of two".
+    universal pronoun of two". An adverb is a pro-adverb: ``Plc;Prox`` with
+    `pos` ``r`` -> "place proximal pro-adverb".
     """
     parts = code.split(";")
     two = " of two" if "Two" in parts else ""
     parts = [p for p in parts if p != "Two"]
     kind = " pronoun"
-    if "Poss" in parts and parts[0] != "Ent":
+    if pos == "r":
+        kind = " pro-adverb"
+    elif "Poss" in parts and parts[0] != "Ent":
         kind = " determiner"  # my, whose
     elif "Poss" in parts:
         parts = parts[1:]  # mine: "first person singular possessive pronoun"
@@ -181,7 +197,7 @@ def label(code: str) -> str:
     return " ".join(words) + (kind if code else "") + two
 
 
-def define(code: str) -> str:
+def define(code: str, pos: str = "n") -> str:
     """A definition; personal pronouns say who they refer to and how many."""
     parts = code.split(";")
     if set(code.split("+")) <= FUNCTIONS:
@@ -211,7 +227,7 @@ def define(code: str) -> str:
                 + ")"
             )
         return text
-    text = label(code)
+    text = label(code, pos)
     vowel = text[0] in "aeiou" and not text.startswith("uni")
     return f"{'an' if vowel else 'a'} {text}"
 
@@ -262,6 +278,15 @@ def pos_of(code: str, ntumc: dict[str, list[str]], extra_pos: dict[str, str]) ->
     return next((p for p in "nar" if p in found), extra_pos.get(code) or default)
 
 
+def pro_adverbs() -> dict[str, list[str]]:
+    """Code -> its parts of speech, noun first, from data/pro-adverbs.tsv."""
+    with (HERE / "data" / "pro-adverbs.tsv").open(encoding="utf8") as handle:
+        return {
+            row["code"]: row["pos"].split()
+            for row in csv.DictReader(handle, delimiter="\t")
+        }
+
+
 def haspelmath_concepts() -> set[str]:
     """Indefinite series lexicalized in at least MIN_FAMILIES_SERIES families."""
     families: dict[str, set[str]] = defaultdict(set)
@@ -287,6 +312,7 @@ def main() -> None:
     extra_pos = {row["code"]: row["pos"] for row in rows}
     from_haspelmath = haspelmath_concepts() - set(ntumc)
     codes = set(ntumc) | from_parabank | from_haspelmath | set(extra)
+    adverbs = pro_adverbs()
     with (HERE / "data" / "concepts.tsv").open("w", encoding="utf8") as out:
         out.write(
             "code\tpos\tlabel\tdefinition\tsource\tntumc\tparabank_languages"
@@ -303,14 +329,17 @@ def main() -> None:
                 if c in from_haspelmath
                 else extra[c]
             )
-            out.write(
-                f"{c}\t{pos_of(c, ntumc, extra_pos)}\t{label(c)}\t{define(c)}\t{source}"
-                f"\t{' '.join(ntumc.get(c, []))}\t{languages}\t{len(families)}"
-                f"\t{len(areas)}\n"
-            )
+            for pos in adverbs.get(c) or [pos_of(c, ntumc, extra_pos)]:
+                key = c + ADVERB if pos == "r" and len(adverbs.get(c, [])) > 1 else c
+                out.write(
+                    f"{key}\t{pos}\t{label(c, pos)}\t{define(c, pos)}\t{source}"
+                    f"\t{' '.join(ntumc.get(c, []))}\t{languages}\t{len(families)}"
+                    f"\t{len(areas)}\n"
+                )
     print(
         f"{len(codes)} concepts: {len(ntumc)} from NTUMC, {len(from_parabank)} from"
-        f" Parabank, {len(set(extra) - set(ntumc))} from extra-concepts.tsv",
+        f" Parabank, {len(set(extra) - set(ntumc))} from extra-concepts.tsv;"
+        f" {sum(len(p) > 1 for p in adverbs.values())} also as adverbs",
         file=sys.stderr,
     )
 

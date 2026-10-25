@@ -94,7 +94,7 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 Asrt	a	assertive existential pronoun	an assertive existential pronoun	NTUMC	02267308-a	0	0	0
 DNEG	n	direct negation pronoun	an indefinite pronoun series used for: direct negation (Haspelmath's functions)	Haspelmath		0	0	0
 Dist	a	distal pronoun	a distal pronoun	NTUMC	77000080-a	0	0	0
-Dur+Tim;Int	n	duration or time interrogative pronoun	a duration or time interrogative pronoun	NTUMC	77000103-n	0	0	0
+Dur+Tim;Int	r	duration or time interrogative pro-adverb	a duration or time interrogative pro-adverb	NTUMC	77000103-n	0	0	0
 Elec	a	elective existential pronoun	an elective existential pronoun	NTUMC	02267686-a	0	0	0
 Ent;1;Pl;Poss	n	first person plural possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, more than one possessor	NTUMC	77000006-n	0	0	0
 Ent;1;Sg;Poss	n	first person singular possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, one possessor	NTUMC	77000107-n	0	0	0
@@ -142,13 +142,13 @@ Knd;Prox	a	kind proximal pronoun	a kind proximal pronoun	NTUMC	77000089-a	0	0	0
 Knd;Prox+Dist	a	kind proximal or distal pronoun	a kind proximal or distal pronoun	TUFS curation		0	0	0
 Knd;Rem	a	kind remote pronoun	a kind remote pronoun	NTUMC	77000114-a	0	0	0
 Med	a	medial pronoun	a medial pronoun	NTUMC	77000060-a	0	0	0
-Mnr;Dist	r	manner distal pronoun	a manner distal pronoun	NTUMC	77000088-r	0	0	0
-Mnr;Elec	n	manner elective existential pronoun	a manner elective existential pronoun	NTUMC	77000028-n	0	0	0
-Mnr;Int	n	manner interrogative pronoun	a manner interrogative pronoun	NTUMC	77000090-n	0	0	0
-Mnr;Med	r	manner medial pronoun	a manner medial pronoun	NTUMC	77000113-r	0	0	0
-Mnr;Prox	r	manner proximal pronoun	a manner proximal pronoun	NTUMC	77000089-r	0	0	0
-Mnr;Prox+Dist	r	manner proximal or distal pronoun	a manner proximal or distal pronoun	TUFS curation		0	0	0
-Mnr;Rem	r	manner remote pronoun	a manner remote pronoun	NTUMC	77000114-r	0	0	0
+Mnr;Dist	r	manner distal pro-adverb	a manner distal pro-adverb	NTUMC	77000088-r	0	0	0
+Mnr;Elec	r	manner elective existential pro-adverb	a manner elective existential pro-adverb	NTUMC	77000028-n	0	0	0
+Mnr;Int	r	manner interrogative pro-adverb	a manner interrogative pro-adverb	NTUMC	77000090-n	0	0	0
+Mnr;Med	r	manner medial pro-adverb	a manner medial pro-adverb	NTUMC	77000113-r	0	0	0
+Mnr;Prox	r	manner proximal pro-adverb	a manner proximal pro-adverb	NTUMC	77000089-r	0	0	0
+Mnr;Prox+Dist	r	manner proximal or distal pro-adverb	a manner proximal or distal pro-adverb	TUFS curation		0	0	0
+Mnr;Rem	r	manner remote pro-adverb	a manner remote pro-adverb	NTUMC	77000114-r	0	0	0
 Oth	n	other pronoun	an other pronoun	NTUMC	77000001-n	0	0	0
 Pers;Int	n	person interrogative pronoun	a person interrogative pronoun	NTUMC	77000095-n	0	0	0
 Pers;Int;Pol	n	person interrogative polite pronoun	a person interrogative polite pronoun	TUFS ja どなた		0	0	0
@@ -166,9 +166,10 @@ Pers;Univ;Pol	n	person universal polite pronoun	a person universal polite pronou
 Pl;Dist	a	plural distal pronoun	a plural distal pronoun	NTUMC	77000082-a	0	0	0
 Pl;Prox	a	plural proximal pronoun	a plural proximal pronoun	NTUMC	77000058-a	0	0	0
 Plc;Dist	n	place distal pronoun	a place distal pronoun	NTUMC	08489627-n	0	0	0
-Plc;Dist;Goal	n	place distal goal pronoun	a place distal goal pronoun	direction		0	0	0
-Plc;Dist;Loc	n	place distal locative pronoun	a place distal locative pronoun	direction		0	0	0
-Plc;Dist;Src	n	place distal source pronoun	a place distal source pronoun	direction		0	0	0
+Plc;Dist:r	r	place distal pro-adverb	a place distal pro-adverb	NTUMC	08489627-n	0	0	0
+Plc;Dist;Goal	r	place distal goal pro-adverb	a place distal goal pro-adverb	direction		0	0	0
+Plc;Dist;Loc	r	place distal locative pro-adverb	a place distal locative pro-adverb	direction		0	0	0
+Plc;Dist;Src	r	place distal source pro-adverb	a place distal source pro-adverb	direction		0	0	0
 Plc;Fml;Med	n	place formal medial pronoun	a place formal medial pronoun	TUFS ja そちら		0	0	0
 Plc;Fml;Prox	n	place formal proximal pronoun	a place formal proximal pronoun	TUFS ja こちら		0	0	0
 Plc;Fml;Rem	n	place formal remote pronoun	a place formal remote pronoun	TUFS ja あちら		0	0	0
@@ -176,29 +177,33 @@ Plc;Infml;Med	n	place informal medial pronoun	a place informal medial pronoun	TU
 Plc;Infml;Prox	n	place informal proximal pronoun	a place informal proximal pronoun	TUFS ja こっち		0	0	0
 Plc;Infml;Rem	n	place informal remote pronoun	a place informal remote pronoun	TUFS ja あっち		0	0	0
 Plc;Int	n	place interrogative pronoun	a place interrogative pronoun	NTUMC	77000084-n	0	0	0
+Plc;Int:r	r	place interrogative pro-adverb	a place interrogative pro-adverb	NTUMC	77000084-n	0	0	0
 Plc;Int;Fml	n	place interrogative formal pronoun	a place interrogative formal pronoun	TUFS ja どちら		0	0	0
-Plc;Int;Goal	n	place interrogative goal pronoun	a place interrogative goal pronoun	direction		0	0	0
+Plc;Int;Goal	r	place interrogative goal pro-adverb	a place interrogative goal pro-adverb	direction		0	0	0
 Plc;Int;Infml	n	place interrogative informal pronoun	a place interrogative informal pronoun	Japanese どっち		0	0	0
-Plc;Int;Loc	n	place interrogative locative pronoun	a place interrogative locative pronoun	direction		0	0	0
-Plc;Int;Src	n	place interrogative source pronoun	a place interrogative source pronoun	direction		0	0	0
+Plc;Int;Loc	r	place interrogative locative pro-adverb	a place interrogative locative pro-adverb	direction		0	0	0
+Plc;Int;Src	r	place interrogative source pro-adverb	a place interrogative source pro-adverb	direction		0	0	0
 Plc;Med	n	place medial pronoun	a place medial pronoun	NTUMC	77000117-n	0	0	0
+Plc;Med:r	r	place medial pro-adverb	a place medial pro-adverb	NTUMC	77000117-n	0	0	0
 Plc;Prox	n	place proximal pronoun	a place proximal pronoun	NTUMC	08489497-n	0	0	0
-Plc;Prox+Dist	n	place proximal or distal pronoun	a place proximal or distal pronoun	TUFS curation		0	0	0
-Plc;Prox;Goal	n	place proximal goal pronoun	a place proximal goal pronoun	direction		0	0	0
-Plc;Prox;Loc	n	place proximal locative pronoun	a place proximal locative pronoun	direction		0	0	0
-Plc;Prox;Src	n	place proximal source pronoun	a place proximal source pronoun	direction		0	0	0
+Plc;Prox:r	r	place proximal pro-adverb	a place proximal pro-adverb	NTUMC	08489497-n	0	0	0
+Plc;Prox+Dist	r	place proximal or distal pro-adverb	a place proximal or distal pro-adverb	TUFS curation		0	0	0
+Plc;Prox;Goal	r	place proximal goal pro-adverb	a place proximal goal pro-adverb	direction		0	0	0
+Plc;Prox;Loc	r	place proximal locative pro-adverb	a place proximal locative pro-adverb	direction		0	0	0
+Plc;Prox;Src	r	place proximal source pro-adverb	a place proximal source pro-adverb	direction		0	0	0
 Plc;Rem	n	place remote pronoun	a place remote pronoun	NTUMC	77000081-n	0	0	0
+Plc;Rem:r	r	place remote pro-adverb	a place remote pro-adverb	NTUMC	77000081-n	0	0	0
 Plc;Sg;Asrt	n	place singular assertive existential pronoun	a place singular assertive existential pronoun	TUFS ja どこか		0	0	0
-Plc;Sg;Elec	n	place singular elective existential pronoun	a place singular elective existential pronoun	NTUMC	00495377-r	0	0	0
+Plc;Sg;Elec	r	place singular elective existential pro-adverb	a place singular elective existential pro-adverb	NTUMC	00495377-r	0	0	0
 Plc;Sg;Oth	n	place singular other pronoun	a place singular other pronoun	NTUMC	77000085-n	0	0	0
-Plc;Univ	n	place universal pronoun	a place universal pronoun	NTUMC	00025728-r	0	0	0
+Plc;Univ	r	place universal pro-adverb	a place universal pro-adverb	NTUMC	00025728-r	0	0	0
 Poss;Int	a	possessive interrogative determiner	a possessive interrogative determiner	NTUMC	77000120-a	0	0	0
 Prox	a	proximal pronoun	a proximal pronoun	NTUMC	77000075-a	0	0	0
 Prox+Dist	a	proximal or distal pronoun	a proximal or distal pronoun	TUFS curation		0	0	0
 Qnt;Int	n	quantity interrogative pronoun	a quantity interrogative pronoun	TUFS ja どのぐらい, どれぐらい		0	0	0
 Qnt;Prox	n	quantity proximal pronoun	a quantity proximal pronoun	TUFS curation		0	0	0
 Rem	a	remote pronoun	a remote pronoun	NTUMC	77000059-a	0	0	0
-Rsn;Int	n	reason interrogative pronoun	a reason interrogative pronoun	NTUMC	77000112-n	0	0	0
+Rsn;Int	r	reason interrogative pro-adverb	a reason interrogative pro-adverb	NTUMC	77000112-n	0	0	0
 SK+SU	n	specific known or specific unknown pronoun	an indefinite pronoun series used for: specific known, specific unknown (Haspelmath's functions)	Haspelmath		0	0	0
 SK+SU+IRR+Q+COND+INEG	n	specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun	an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)	Haspelmath		0	0	0
 Sg;Dist	a	singular distal pronoun	a singular distal pronoun	NTUMC	77000079-a	0	0	0
@@ -213,9 +218,12 @@ Thng;Sg;Asrt	n	thing singular assertive existential pronoun	a thing singular ass
 Thng;Sg;Elec	n	thing singular elective existential pronoun	a thing singular elective existential pronoun	NTUMC	77000093-n	0	0	0
 Thng;Sg;Univ	n	thing singular universal pronoun	a thing singular universal pronoun	NTUMC	77000094-n	0	0	0
 Tim;Dist	n	time distal pronoun	a time distal pronoun	time deixis		0	0	0
+Tim;Dist:r	r	time distal pro-adverb	a time distal pro-adverb	time deixis		0	0	0
 Tim;Int	n	time interrogative pronoun	a time interrogative pronoun	NTUMC	77000104-n	0	0	0
+Tim;Int:r	r	time interrogative pro-adverb	a time interrogative pro-adverb	NTUMC	77000104-n	0	0	0
 Tim;Prox	n	time proximal pronoun	a time proximal pronoun	time deixis		0	0	0
-Tim;Sg;Asrt	n	time singular assertive existential pronoun	a time singular assertive existential pronoun	TUFS ja いつか		0	0	0
-Tim;Sg;Elec	n	time singular elective existential pronoun	a time singular elective existential pronoun	NTUMC	77000106-n	0	0	0
+Tim;Prox:r	r	time proximal pro-adverb	a time proximal pro-adverb	time deixis		0	0	0
+Tim;Sg;Asrt	r	time singular assertive existential pro-adverb	a time singular assertive existential pro-adverb	TUFS ja いつか		0	0	0
+Tim;Sg;Elec	r	time singular elective existential pro-adverb	a time singular elective existential pro-adverb	NTUMC	77000106-n	0	0	0
 Two;Univ	a	universal pronoun of two	a universal pronoun of two	NTUMC	77000076-a	0	0	0
 Univ	a	universal pronoun	a universal pronoun	NTUMC	02269286-a	0	0	0

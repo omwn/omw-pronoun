@@ -12,8 +12,10 @@ The design follows the KinDiv wordnet:
   when some language has a word for it, and the hypernym hierarchy, computed
   from the features (``1e;Du`` is under ``1;Du`` and ``1e;Pl``). Its lemmas are
   the codes, as unlexicalized senses.
-- ``omw-pronoun-<tag>`` holds one language's words and no relations; the
-  hierarchy is reached through the ILI once CILI accepts the proposals.
+- ``omw-pronoun-<tag>`` holds one language's words; the hierarchy is reached
+  through the ILI once CILI accepts the proposals. Its only relations link one
+  lemma's senses across parts of speech by ``derivation``: *here* the noun and
+  *here* the adverb, *this* the pronoun and *this* the determiner.
 
 Case is inflection: case forms are ``<Form>`` variants tagged with their case,
 never separate concepts. Bound forms (affixes) are variants of the free pronoun
@@ -149,12 +151,17 @@ def script_of(form: str) -> str:
 
 
 def slug(code: str) -> str:
-    """An XML-safe id fragment for a code: ``1i;Du`` -> ``1i-Du``."""
-    return code.replace(";", "-").replace("+", "_")
+    """An XML-safe id fragment for a code: ``1i;Du`` -> ``1i-Du``.
+
+    >>> slug("Plc;Prox:r")
+    'Plc-Prox-r'
+    """
+    return code.replace(";", "-").replace("+", "_").replace(":", "-")
 
 
-#: concept code -> part of speech (n pronoun, a determiner, r pro-adverb), filled
-#: from data/concepts.tsv by `main`
+#: concept key -> part of speech (n pronoun, a determiner, r pro-adverb), filled
+#: from data/concepts.tsv by `main`. The key is the code, but for the adverb of a
+#: code that is also a noun (``Plc;Prox:r``, `concept_table.ADVERB`)
 POS: dict[str, str] = {}
 #: lexicographer file per part of speech: pro-forms cut across parts of speech
 LEXFILES = {"n": "noun.pronoun", "a": "adj.pronoun", "r": "adv.pronoun"}
@@ -190,6 +197,7 @@ def features(code: str) -> dict[str, frozenset[str]]:
     True
     """
     found: dict[str, frozenset[str]] = {}
+    code = concept_table.code_of(code)
     for part in code.split(";") if code else []:
         values = frozenset(part.split("+"))
         slot = next((s for s, vs in SLOTS.items() if values <= vs), None)
@@ -586,6 +594,80 @@ def remap(languages: dict[str, Language]) -> None:
                     entry.senses[row["to_code"]] |= sources
 
 
+def read_word_pos() -> dict[tuple[str, str], list[str]]:
+    """(language tag, lemma or ``*``) -> parts of speech, from data/word-pos.tsv."""
+    with (DATA / "word-pos.tsv").open(encoding="utf8") as handle:
+        return {
+            (row["lang"], row["form"]): row["pos"].split()
+            for row in csv.DictReader(handle, delimiter="\t")
+        }
+
+
+def place_adverbs(languages: dict[str, Language]) -> None:
+    """Move each word of a code that is both noun and adverb to its language's reading.
+
+    The sources file *here* under the code alone, which is the noun. Whether a
+    language's word is a noun, an adverb or both is a fact about that language:
+    English *here* is both, Japanese *koko* only a noun (*koko ni* is adverbial).
+    data/word-pos.tsv says so by lemma or for the whole language (``*``); a
+    language it does not list is taken as adverbial, as in English and the
+    European languages.
+    """
+    rules = read_word_pos()
+    adverb = concept_table.ADVERB
+    both = {concept_table.code_of(k) for k in POS if k.endswith(adverb)}
+    for tag, language in languages.items():
+        for key, entry in list(language.entries.items()):
+            for code in [c for c in entry.senses if c in both]:
+                pos = rules.get((tag, entry.lemma)) or rules.get((tag, "*")) or ["r"]
+                if "r" in pos:
+                    bound = ("morph", "bound") in entry.tags
+                    other = language.entry(entry.lemma, code + adverb, bound=bound)
+                    other.tags += [t for t in entry.tags if t not in other.tags]
+                    for form, tags in entry.forms.items():
+                        other.forms.setdefault(form, []).extend(tags)
+                    other.transcribed |= entry.transcribed
+                    other.senses[code + adverb] |= entry.senses[code]
+                if "n" not in pos:
+                    del entry.senses[code]
+            if not entry.senses:
+                del language.entries[key]
+
+
+def counterpart(key: str) -> str:
+    """What a concept shares with the same word's concept in another part of speech.
+
+    *here* the noun and *here* the adverb share the code; *this* the pronoun
+    (``Ent;Sg;Prox``) and *this* the determiner (``Sg;Prox``) differ only in ``Ent``.
+
+    >>> counterpart("Plc;Prox:r"), counterpart("Ent;Sg;Prox")
+    ('Plc;Prox', 'Sg;Prox')
+    """
+    parts = concept_table.code_of(key).split(";")
+    return ";".join(parts[1:] if parts[0] == "Ent" else parts)
+
+
+def derivations(
+    senses: list[tuple[str, str, str, str]],
+) -> dict[str, list[str]]:
+    """Sense id -> the senses it is derivationally related to.
+
+    `senses` are (lemma, part of speech, concept key, sense id). Two senses of one
+    lemma are related when their parts of speech differ and their concepts are
+    counterparts (`counterpart`).
+    """
+    found: dict[str, list[str]] = defaultdict(list)
+    for lemma, pos, key, sense in senses:
+        for lemma2, pos2, key2, sense2 in senses:
+            if (
+                lemma == lemma2
+                and pos != pos2
+                and counterpart(key) == counterpart(key2)
+            ):
+                found[sense].append(sense2)
+    return found
+
+
 # --- writing -----------------------------------------------------------------
 
 
@@ -634,15 +716,30 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
             children[parent].add(code)
     linked = read_concept_ili()
     lines = [lexicon_open(BASE, "OMW pronoun concepts", "mul")]
+    # the noun and adverb of one code are one lemma, so derivationally related
+    related = derivations(
+        [
+            (concept_table.code_of(c["code"]), c["pos"], c["code"], c["code"])
+            for c in concepts
+            if c["pos"] in "nr"
+        ]
+    )
     for c in concepts:
         eid = f"{BASE}-e-{slug(c['code'])}"
+        lemma = concept_table.code_of(c["code"])
+        sense = (
+            f'      <Sense id="{eid}-1" synset="{BASE}-{slug(c["code"])}"'
+            ' lexicalized="false"'
+        )
+        others = [
+            f'        <SenseRelation relType="derivation"'
+            f' target="{BASE}-e-{slug(other)}-1"/>'
+            for other in related.get(c["code"], [])
+        ]
         lines += [
             f'    <LexicalEntry id="{eid}">',
-            f'      <Lemma writtenForm={quoteattr(c["code"])} partOfSpeech="{c["pos"]}"/>',
-            (
-                f'      <Sense id="{eid}-1" synset="{BASE}-{slug(c["code"])}"'
-                ' lexicalized="false"/>'
-            ),
+            f'      <Lemma writtenForm={quoteattr(lemma)} partOfSpeech="{c["pos"]}"/>',
+            *([sense + ">", *others, "      </Sense>"] if others else [sense + "/>"]),
             "    </LexicalEntry>",
         ]
     # WN-LMF wants every entry before any synset
@@ -849,9 +946,15 @@ def write_language(language: Language, definitions: dict[str, str]) -> list[str]
     linked = read_concept_ili()
     lines = [lexicon_open(lid, f"OMW pronouns: {language.name}", language.tag)]
     used = set()
-    for index, entry in enumerate(
-        sorted(language.entries.values(), key=lambda e: (e.lemma, e.tags)), 1
-    ):
+    entries = sorted(language.entries.values(), key=lambda e: (e.lemma, e.tags))
+    related = derivations(
+        [
+            (entry.lemma, entry.pos, code, f"{lid}-e{index:04d}-{slug(code)}")
+            for index, entry in enumerate(entries, 1)
+            for code in entry.senses
+        ]
+    )
+    for index, entry in enumerate(entries, 1):
         eid = f"{lid}-e{index:04d}"
         lines.append(f'    <LexicalEntry id="{eid}">')
         lines += [
@@ -871,11 +974,20 @@ def write_language(language: Language, definitions: dict[str, str]) -> list[str]
                 ]
         for code, sources in sorted(entry.senses.items()):
             used.add(code)
-            lines.append(
+            sense = (
                 f'      <Sense id="{eid}-{slug(code)}" synset="{lid}-{slug(code)}"'
                 + attrs([("dc:source", "; ".join(sorted(sources)))])
-                + "/>"
             )
+            others = related.get(f"{eid}-{slug(code)}", [])
+            if not others:
+                lines.append(sense + "/>")
+                continue
+            lines.append(sense + ">")
+            lines += [
+                f'        <SenseRelation relType="derivation" target="{other}"/>'
+                for other in others
+            ]
+            lines.append("      </Sense>")
         lines.append("    </LexicalEntry>")
     for code in sorted(used):
         lines.append(
@@ -1014,6 +1126,7 @@ def main() -> None:
     add_extra(languages, codes)
     add_wordnets(languages, codes)
     remap(languages)
+    place_adverbs(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}
     attested = {
         code

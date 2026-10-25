@@ -3,10 +3,11 @@
     "a": 53,
     "direction": 9,
     "haspelmath": 4,
-    "n": 162,
-    "r": 5,
+    "n": 144,
+    "noun_and_adverb": 8,
+    "r": 31,
     "time": 2,
-    "total": 220,
+    "total": 228,
     "two": 15
   },
   "direction": {
@@ -27,11 +28,11 @@
   },
   "hierarchy": {
     "multiple_hypernyms": 24,
-    "tops": 50
+    "tops": 57
   },
   "ili": {
-    "linked": 6,
-    "proposed": 214,
+    "linked": 18,
+    "proposed": 210,
     "unattested": 0
   },
   "languages": 669,
@@ -77,6 +78,6 @@
   },
   "wordnet_words": {
     "languages": 24,
-    "words": 381
+    "words": 382
   }
 }

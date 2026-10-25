@@ -80,6 +80,53 @@ def test_hypernymy_stays_within_a_part_of_speech() -> None:
     assert parents["Ent;1;Sg;Poss"] == set()
 
 
+def test_a_code_can_be_noun_and_adverb() -> None:
+    pos = {"Plc;Prox": "n", "Plc;Prox:r": "r", "Plc;Prox;Goal": "r"}
+    parents = build.hypernyms(list(pos), pos)
+    assert parents["Plc;Prox;Goal"] == {"Plc;Prox:r"}
+    assert parents["Plc;Prox"] == parents["Plc;Prox:r"] == set()
+    assert concepts.label("Plc;Prox", "r") == "place proximal pro-adverb"
+    assert build.feature_links("Plc;Prox:r", build.read_features(), "r") == [
+        ("attribute", "Plc"),
+        ("exemplifies", "Prox"),
+    ]
+
+
+def test_words_take_their_languages_part_of_speech(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(build, "POS", {"Plc;Prox": "n", "Plc;Prox:r": "r"})
+    languages = {tag: build.Language(tag, tag) for tag in ("en", "ja", "es")}
+    for tag, lemma in (("en", "here"), ("ja", "ここ"), ("es", "aquí")):
+        languages[tag].entry(lemma, "Plc;Prox").senses["Plc;Prox"].add("test")
+    build.place_adverbs(languages)
+
+    def senses(tag: str) -> list[tuple[str, str]]:
+        return sorted(
+            (e.pos, code) for e in languages[tag].entries.values() for code in e.senses
+        )
+
+    assert senses("en") == [("n", "Plc;Prox"), ("r", "Plc;Prox:r")]
+    assert senses("ja") == [("n", "Plc;Prox")]
+    assert senses("es") == [("r", "Plc;Prox:r")]
+
+
+def test_derivation_links_one_lemma_across_parts_of_speech() -> None:
+    senses = [
+        ("here", "n", "Plc;Prox", "here-n"),
+        ("here", "r", "Plc;Prox:r", "here-r"),
+        ("this", "a", "Sg;Prox", "this-a"),
+        ("this", "n", "Ent;Sg;Prox", "this-n"),
+        ("that", "a", "Sg;Dist", "that-a"),
+    ]
+    assert build.derivations(senses) == {
+        "here-n": ["here-r"],
+        "here-r": ["here-n"],
+        "this-a": ["this-n"],
+        "this-n": ["this-a"],
+    }
+
+
 @pytest.mark.parametrize(
     ("numbers", "elicited", "expected"),
     [

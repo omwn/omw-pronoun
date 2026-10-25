@@ -317,7 +317,7 @@ function chips(code) {
     box.append(name);
     return box;
   }
-  if (isHead(code)) code = headOf(code);
+  code = isHead(code) ? headOf(code) : codeOf(code);
   for (const part of code.split(";")) {
     const values = part.split("+");
     const slot = FEATURES[values[0]]?.slot || "";
@@ -337,12 +337,14 @@ const EXPAND = DATA.expand;
 const isConcept = code => code in CONCEPTS;
 const isHead = code => code.startsWith("@");
 const headOf = code => code.slice(1, code.indexOf(":"));
+// the adverb of a code that is also a noun is keyed Plc;Prox:r
+const codeOf = key => key.replace(/:r$/, "");
 const headNode = (head, pos) => `@${head}:${pos}`;
 const FEATURE_ORDER = new Map(Object.keys(FEATURES).map((f, i) => [f, i]));
 
 // The heads a concept names: Dur+Tim;Int has two
 function headsOf(code) {
-  return code.split(";")
+  return codeOf(code).split(";")
     .filter(part => FEATURES[part.split("+")[0]]?.slot === "head")
     .flatMap(part => part.split("+"));
 }
@@ -651,7 +653,7 @@ function featureList(code) {
   h.textContent = "Features";
   const ul = document.createElement("ul");
   ul.className = "features";
-  for (const part of code.split(";")) {
+  for (const part of codeOf(code).split(";")) {
     for (const value of part.split("+")) {
       const feature = FEATURES[value];
       const li = document.createElement("li");

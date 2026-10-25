@@ -76,7 +76,10 @@ itself, so it is not a kind of *anybody*.
 4. **Part of speech** separates concepts with the same features: the pronoun
    *this* (`Ent;Sg;Prox`, POS `n`) and the determiner *this* (`Sg;Prox`, POS
    `a`) are different concepts, and neither is a kind of the other. Pronouns are
-   `n`, determiners `a` and pro-adverbs `r`.
+   `n`, determiners `a` and pro-adverbs `r`. A place or time code can be both a
+   noun and an adverb: *here* is `Plc;Prox` (`n`) and `Plc;Prox:r` (`r`), and
+   each language's word lexicalizes one or both (`data/pro-adverbs.tsv`,
+   `data/word-pos.tsv`).
 
 ### Order and hypernymy
 
@@ -100,10 +103,10 @@ The basic ways to get a broader code follow from the definitions:
 
 Two codes can have common hyponyms. `1e;Du` lies under both `1;Du` (we two) and
 `1e;Pl` (exclusive we), because ⟦1;Du⟧ ∩ ⟦1e;Pl⟧ = ⟦1e;Du⟧. So the hierarchy is a
-graph, not a tree: of 210 concepts, 23 have two hypernyms.
+graph, not a tree: of 228 concepts, 24 have two hypernyms.
 
 The hierarchy has no single root. A concept with no broader concept of its part
-of speech is a top: 50 are, among them `1;Sg`, `2`, `3`, `Ent;Int`,
+of speech is a top: 57 are, among them `1;Sg`, `2`, `3`, `Ent;Int`,
 `Ent;Prox` and `Tim;Prox` *now*. Concepts that share a head are not joined
 unless some concept states only what they share: *now* and *then* are both
 `Tim`, but no concept is `Tim` alone, and `Dur+Tim;Int` (*how long, when*) holds
