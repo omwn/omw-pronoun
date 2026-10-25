@@ -57,6 +57,18 @@ class Facts(TypedDict):
     wordnet_words: dict[str, int]
 
 
+def generated(code: str) -> bool:
+    """True for a pro-adposition made from a noun or base code by concepts.py.
+
+    ``Plc;Prox;Dir``, and ``Plc;Prox;Loc+Goal`` from data/word-direction.tsv:
+    counts by source count the codes the sources give, not these.
+    """
+    known = {
+        f"{r['code']};{r['direction']}" for r in rows_of(DATA / "word-direction.tsv")
+    }
+    return code.endswith(";" + concepts.DIRECTION) or code in known
+
+
 def rows_of(path: Path) -> list[dict[str, str]]:
     """Read a TSV with a header row."""
     with path.open(encoding="utf8") as handle:
@@ -102,21 +114,33 @@ def parabank_admitted(lexemes: list[dict[str, str]]) -> set[str]:
 def concept_facts(inventory: list[dict[str, str]]) -> dict[str, int]:
     """The concepts, by part of speech, and those with the domain Two.
 
-    The figures by source count codes: *now* the noun and *now* the adverb are one
-    time concept; ``noun_and_adverb`` counts the codes that are both.
+    ``noun_and_adposition`` counts the nouns that also have a pro-adposition
+    (*here*: ``Plc;Prox`` and ``Plc;Prox;Dir``); ``adposition_known`` the
+    pro-adpositions narrower than ``Dir`` that some word is known to cover
+    (English *here*, ``Plc;Prox;Loc+Goal``).
     """
-    by_pos = {pos: sum(1 for c in inventory if c["pos"] == pos) for pos in "nar"}
+    by_pos = {pos: sum(1 for c in inventory if c["pos"] == pos) for pos in "narp"}
+    codes_in = {c["code"]: c["pos"] for c in inventory}
 
     def codes(source: str) -> int:
-        return len(
-            {concepts.code_of(c["code"]) for c in inventory if c["source"] == source}
+        return sum(
+            1 for c in inventory if c["source"] == source and not generated(c["code"])
         )
 
     return {
         "total": len(inventory),
         **by_pos,
-        "noun_and_adverb": sum(
-            1 for c in inventory if c["code"].endswith(concepts.ADVERB)
+        "noun_and_adposition": sum(
+            1
+            for code, pos in codes_in.items()
+            if pos == "n" and codes_in.get(concepts.with_direction(code)) == "p"
+        ),
+        "adposition_known": len(
+            {
+                f"{r['code']};{r['direction']}"
+                for r in rows_of(DATA / "word-direction.tsv")
+            }
+            & set(codes_in)
         ),
         "two": sum(1 for c in inventory if "Two" in c["code"].split(";")),
         "haspelmath": codes("Haspelmath"),
@@ -177,7 +201,7 @@ def ntumc_facts(inventory: list[dict[str, str]], others: set[str]) -> dict[str, 
     """
     synsets = [s for c in inventory for s in c["ntumc"].split()]
     from_inventory = {
-        concepts.code_of(c["code"])
+        concepts.without_direction(c["code"]) if generated(c["code"]) else c["code"]
         for c in inventory
         if any(s.startswith(INVENTORY_PREFIX) for s in c["ntumc"].split())
     }
@@ -400,7 +424,10 @@ def compute(parabank_source: Path = parabank_words.DEFAULT) -> Facts:
     ``parabank_source``, and is left out when the clone is missing.
     """
     inventory = rows_of(DATA / "concepts.tsv")
-    codes = {c["code"] for c in inventory}
+    # build.py also accepts the bare code of a pro-adposition, which it moves
+    codes = {c["code"] for c in inventory} | {
+        concepts.without_direction(c["code"]) for c in inventory if c["pos"] == "p"
+    }
     browser = browser_data()
     used = attested(browser)
     lexemes = rows_of(DATA / "parabank-lexemes.tsv")
@@ -408,7 +435,7 @@ def compute(parabank_source: Path = parabank_words.DEFAULT) -> Facts:
     extra_concepts = rows_of(DATA / "extra-concepts.tsv")
     extra_lemmas = rows_of(DATA / "extra-lemmas.tsv")
     from_inventory = {
-        c["code"]
+        concepts.without_direction(c["code"]) if generated(c["code"]) else c["code"]
         for c in inventory
         if any(s.startswith(INVENTORY_PREFIX) for s in c["ntumc"].split())
     }

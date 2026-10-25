@@ -1,13 +1,15 @@
 {
   "concepts": {
     "a": 53,
+    "adposition_known": 13,
     "direction": 7,
     "haspelmath": 4,
     "n": 144,
-    "noun_and_adverb": 8,
-    "r": 31,
+    "noun_and_adposition": 8,
+    "p": 35,
+    "r": 9,
     "time": 2,
-    "total": 228,
+    "total": 241,
     "two": 15
   },
   "direction": {
@@ -17,22 +19,22 @@
     "flagged": 2,
     "haspelmath_functions": 9,
     "haspelmath_functions_used": 8,
-    "ili": 29,
-    "proposed": 24,
+    "ili": 30,
+    "proposed": 25,
     "ud": 36,
     "unused": 2,
-    "used": 55
+    "used": 57
   },
   "haspelmath": {
     "languages": 40
   },
   "hierarchy": {
-    "multiple_hypernyms": 24,
-    "tops": 57
+    "multiple_hypernyms": 28,
+    "tops": 58
   },
   "ili": {
     "linked": 18,
-    "proposed": 210,
+    "proposed": 223,
     "unattested": 0
   },
   "languages": 669,

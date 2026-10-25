@@ -63,7 +63,7 @@ alternatives joined by `+`:
 | formality | `Fml` `Infml` |
 | politeness | `Pol` `Hon` `NHon` |
 | proximity | `Prox` `Med` `Dist` `Rem` |
-| direction | `Loc` `Goal` `Src` |
+| direction | `Dir` `Loc` `Goal` `Src` |
 | register (NTUMC) | `Men` `Wom` `Arch` |
 
 - **Unmarked values** stand for their marked ones: `1` is inclusive or exclusive,
@@ -73,9 +73,15 @@ alternatives joined by `+`:
   *not proximal*, medial or remote: English *that* is `Dist`, Japanese *sore* is
   `Med` and *are* `Rem`, both under it. `Ent` is a person or a thing, so *who*
   (`Pers;Int`) and *what* (`Thng;Int`) are under *which* (`Ent;Int`).
-- **Direction** splits place pro-forms where a language does: Czech *kde* "where"
-  is `Plc;Int;Loc`, *kam* "where to" `Plc;Int;Goal`, *odkud* "where from"
-  `Plc;Int;Src`. English *where* marks none, so it is `Plc;Int`, above all three.
+- **Direction** is the relation of a pro-adposition to its place or time, read
+  by head: at, to or from a place; at, until or since a time. `Dir` leaves it
+  unspecified (the ERG's `loc_nonsp`), and narrower codes are given only where a
+  word's coverage is known (`data/word-direction.tsv`): Czech *kde* "where" is
+  `Plc;Int;Loc`, *kam* "where to" `Plc;Int;Goal`, *odkud* "where from"
+  `Plc;Int;Src`; English *where* covers at and to, so it is `Plc;Int;Loc+Goal`,
+  above *kde* and *kam* but not *odkud*, and all are under `Plc;Int;Dir`. A code
+  without a direction is a noun, not unspecified for it (FEATURES.md, rules 3
+  and 5).
 - **Case is inflection, not meaning.** Subjective and objective are not part of
   a concept: *I* and *me* are one entry for `1;Sg`, with the case forms as
   `<Form>` variants tagged `case` (`s`, `a`, `o`, or NTUMC's `obj`).
@@ -90,7 +96,8 @@ alternatives joined by `+`:
 - **Bound forms** (affixes) are variants of the free pronoun when their cells are
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
-The inventory (`data/concepts.tsv`, 210 concepts; 28 possessive determiners and
+The inventory (`data/concepts.tsv`, 241 concepts: 144 pronouns, 53 determiners,
+35 pro-adpositions and 9 pro-adverbs; 28 possessive determiners and
 8 possessive pronouns) comes
 from:
 
@@ -120,34 +127,45 @@ from:
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
-Of the 55 feature values in use, 29 keep their Princeton ILI (*possessive* is
-i69651), 24 are proposed (NTUMC's own and new ones such as *plural (beyond the dual)*, *one of two* and
-Haspelmath's functions), and 2 point at doubtful Princeton senses (`check`).
-Each records its Universal Dependencies value (`dc:relation="UD:Person=1|Clusivity=In"`);
-36 of 55 have one. Feature synsets form a hierarchy of their own, from the
+Of the 57 feature values in use, 30 keep their Princeton ILI (*possessive* is
+i69651), 25 are proposed (NTUMC's own and new ones such as *plural (beyond the
+dual)*, *one of two*, *non-specific locative role* and Haspelmath's functions),
+and 2 point at doubtful Princeton senses (`check`). The locative of a time code
+links to *temporal role* (i69760), of a place code to *locative role* (i69757).
+Each records its Universal Dependencies value (`dc:relation="UD:Person=1|Clusivity=In"`)
+where there is one. Feature synsets form a hierarchy of their own, from the
 values that stand for others: *distal* has the hyponyms *medial* and *remote*,
 *first person* has *inclusive* and *exclusive*.
 
-**Part of speech and lexicographer file.** Pro-forms cut across parts of speech, as
-in UD (PRON/DET/ADV): pronouns are `n` (`noun.pronoun`), determiners `a`
-(`adj.pronoun`: *this*, *which*, Japanese *kono*) and pro-adverbs `r`
-(`adv.pronoun`: *kō* "in this way", *hither*, *why*), as UD tags them ADV. An
-entry has one part of speech, so *this* the determiner and *this* the pronoun
-are separate entries, linked by `derivation` (as are *here* the noun and *here*
-the adverb). Hypernymy stays within a part of speech: the pronoun *this* is not
-a kind of the determiner *this*, nor *mine* of *my*.
+**Part of speech and lexicographer file.** Pro-forms cut across parts of speech:
+pronouns are `n` (`noun.pronoun`), determiners `a` (`adj.pronoun`: *this*,
+*which*, Japanese *kono*), pro-adpositions `p` (`adp.pronoun`: *here*, *hither*,
+*now*, *everywhere*) and pro-adverbs `r` (`adv.pronoun`: *kō* "in this way",
+*how*, *why*, *how long*). A pro-adposition is a place or time pro-form with a
+direction: Huddleston and Pullum (2002, ch. 7) treat *here*, *there* and *where*
+as intransitive prepositions, and such a word stands for a prepositional phrase
+(*here* ≈ *at this place*). Universal Dependencies tags them ADV. An entry has
+one part of speech, so *this* the determiner and *this* the pronoun are separate
+entries, linked by `derivation` (as are *here* the noun and *here* the
+pro-adposition). Hypernymy stays within a part of speech: the pronoun *this* is
+not a kind of the determiner *this*, nor *mine* of *my*.
 
-Place, time, manner, reason and duration pro-forms are adverbs or nouns
-according to the language (`data/pro-adverbs.tsv`). Goal and source (*hither*,
-*whence*), *everywhere*, *sometime*, *how* and *why* are only adverbs. *here*,
-*there*, *where*, *now*, *then* and *when* are both in English, and OEWN has
-both senses, but Japanese *doko* is only a noun (*doko ni* is adverbial). So
-eight codes have a noun concept, keyed by the code (`Plc;Prox`, with OEWN's
-noun ILI), and an adverb concept with `:r` added (`Plc;Prox:r`, id
-`omw-pronoun-Plc-Prox-r`, with OEWN's adverb ILI where there is one).
+Place and time pro-forms are nouns or pro-adpositions according to the language
+(`data/pro-form-pos.tsv`). *hither*, *whence*, *everywhere* and *sometime* are
+only pro-adpositions. *here*, *there*, *where*, *now*, *then* and *when* are
+both in English, and OEWN has both senses, but Japanese *doko* is only a noun
+(*doko ni* is a phrase). So eight codes have a noun concept (`Plc;Prox`, with
+OEWN's noun ILI) and a pro-adposition with no direction specified
+(`Plc;Prox;Dir`), linked by `other` relations typed `noun` and
+`pro-adposition`; words whose direction is known get a narrower concept
+(`Plc;Prox;Loc+Goal` for English *here*). OEWN's adverb ILIs link to the
+concept their definition matches: *here* "in or at this place" (i18823) is
+`Plc;Prox;Loc`, *now* "at the present moment" (i18426) is `Tim;Prox;Loc`,
+*everywhere* "to or in any or all places" (i18291) is `Plc;Univ;Loc+Goal`.
 `data/word-pos.tsv` says which a language's word lexicalizes, by lemma or for
 the whole language (Japanese, Korean, Chinese, Turkish, Indonesian, Thai: nouns);
-a language it does not list is taken as adverbial.
+a language it does not list is taken as using a pro-adposition. Manner, reason
+and duration pro-forms have no direction and are adverbs.
 
 **Indefinites** (`haspelmath_series.py`): Haspelmath's (1997) indefinite-pronoun
 series (CLDF `cldf-datasets/haspelmathindefpro`, CC BY 4.0, 40 languages) are
@@ -227,3 +245,14 @@ Every lemma and form records its script (ISO 15924, e.g. `Hani`, `Hira`, `Jpan`)
 `docs/pronoun-databases.md` surveys the cross-linguistic pronoun databases.
 `docs/open-questions.md` lists design points still to be decided (e.g. whether
 how bare Mandarin 我 used as a possessive should be treated).
+
+## References
+
+Flickinger, Dan, Emily M. Bender and Stephan Oepen (2014). Towards an
+Encyclopedia of Compositional Semantics: Documenting the Interface of the English
+Resource Grammar. In *Proceedings of LREC'14*, 875–881. Implicit locatives
+(`loc_nonsp`): https://github.com/delph-in/docs/wiki/ErgSemantics_ImplicitLocatives
+
+Huddleston, Rodney and Geoffrey K. Pullum (2002). *The Cambridge Grammar of the
+English Language*. Cambridge University Press. Chapter 7, Prepositions and
+preposition phrases (Pullum and Huddleston).

@@ -91,14 +91,32 @@ Place pro-forms split by direction where a language has separate words: Czech
 curated, from four Indo-European languages; neither Parabank nor Haspelmath's
 CLDF data records direction.
 
+- Decided 2026-10-25: every place and time pro-form that is not a noun has a
+  direction, and is a pro-adposition (POS `p`). The unmarked direction `Dir`
+  (at, to or from; the ERG's `loc_nonsp`) is for words whose coverage has not
+  been checked; English and French *here/there/where* (*ici/là/où*) and
+  Spanish *aquí/ahí/allí* are `Loc+Goal`, English *now/then/when* `Tim;…;Loc`
+  (FEATURES.md, rules 3 to 5). The `:r` adverb twins are gone.
+- Future work: time pro-forms mark direction too. Czech *dokdy* "until when"
+  (`Tim;Int;Goal`) and *odkdy* "since when" (`Tim;Int;Src`) need feature
+  synsets for the temporal goal and source (until, since) before they can be
+  added.
+- `Goal` links to i82007 "the end (as of a race or journey)" and `Src` to i81759
+  "the place where something begins": senses of place, not semantic roles,
+  unlike `Loc` (locative role, i69757). OEWN has no goal or source role under
+  *semantic role* (i69752). Propose them, as `Dir` is proposed?
+- The other European languages' place words are `Dir` until checked
+  (Portuguese *aqui/aí/ali*, Italian *qui/qua*, German *da*).
+
 ## Time deixis
 
 *now* (`Tim;Prox`) and *then* (`Tim;Dist`) are curated, like direction: no
 source records demonstrative time. *now* has TUFS 今 (concept 8987) in seven
 languages (Arabic, Syrian Arabic, French, Japanese, Malay, Burmese, Urdu) and
 curated words in seven more; *then* has curated words only, in English, Czech,
-German, Polish, Russian and Mandarin. They are pronouns (`n`), like *here* and
-*there* (`Plc;Prox`, `Plc;Dist`), though English and UD treat them as adverbs.
+German, Polish, Russian and Mandarin. Like *here* and *there*, each is a noun
+(`Tim;Prox`, OEWN's *now* "the momentary present") and a pro-adposition
+(`Tim;Prox;Dir`, English *now* `Tim;Prox;Loc`), which UD tags ADV.
 
 - *then* is taken as "at that time" (Czech *tehdy*, German *damals*). Is
   sequential *then* (German *dann*, Czech *pak*) the same concept, or not a
@@ -116,6 +134,7 @@ German, Polish, Russian and Mandarin. They are pronouns (`n`), like *here* and
   *хаашаа* "where to" and *хаанаас* "from where", and Burmese forms with -က
   (ဟိုက "over there, from there"), which TUFS leaves plain.
 - Czech and Polish *tam* "there, to there" do not split location from goal, so
-  they stay `Plc;Dist`; Russian *там* and German *dort* are location only.
+  Czech *tam* is `Plc;Dist;Loc+Goal`; Russian *там* and German *dort* are
+  location only (`Plc;Dist;Loc`).
 - English *whither*, *whence*, *hither*, *thither*, *hence*, *thence* would be
   archaic (`Arch`) members of the same concepts; not added.

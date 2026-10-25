@@ -1,0 +1,18 @@
+code	pos	note
+Plc;Prox	n p	here: a noun in OEWN (i81667) and, as a pro-adposition, Plc;Prox;Dir and narrower; Japanese ここ is only a noun
+Plc;Med	n p	Spanish ahí, Tagalog diyan are pro-adpositions; Japanese そこ, Korean 거기 are nouns
+Plc;Dist	n p	there: a noun in OEWN (i81668) and a pro-adposition
+Plc;Rem	n p	Spanish allí, Tagalog doon are pro-adpositions; Japanese あそこ, Korean 저기 are nouns
+Plc;Prox+Dist	p	German da, French là: only pro-adpositions
+Plc;Int	n p	where: a pro-adposition in English; Japanese どこ is a noun (doko ni/de)
+Tim;Prox	n p	now: a noun in OEWN (i116653) and a pro-adposition
+Tim;Dist	n p	then: a noun in OEWN (i117639) and a pro-adposition
+Tim;Int	n p	when: a pro-adposition in English; Japanese いつ, Chinese 什么时候 are nouns
+Plc;Univ	p	everywhere: Princeton and OEWN have only the adverb (i18291)
+Plc;Sg;Elec	p	anywhere, wherever: only adverbs in OEWN (i18288, i21592)
+Tim;Sg;Asrt	p	sometime (i18265), Japanese いつか
+Tim;Sg;Elec	p	ever (i19122), whenever
+Mnr;Int	r	how: its pronoun use is adverbial
+Mnr;Elec	r	anyhow
+Rsn;Int	r	why: its pronoun use is adverbial; OEWN's noun why (i84881) is the cause, not the interrogative
+Dur+Tim;Int	r	how long: its pronoun use is adverbial

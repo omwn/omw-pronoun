@@ -1,0 +1,29 @@
+lang	form	code	direction	note
+en	here	Plc;Prox	Loc+Goal	at or to this place; from here takes a preposition
+en	'ere	Plc;Prox	Loc+Goal	as here
+en	there	Plc;Dist	Loc+Goal	at or to that place; from there takes a preposition
+en	where	Plc;Int	Loc+Goal	at or to what place; where ... from takes a preposition
+en	everywhere	Plc;Univ	Loc+Goal	OEWN i18291 "to or in any or all places"
+en	everyplace	Plc;Univ	Loc+Goal	as everywhere
+en	all over	Plc;Univ	Loc+Goal	as everywhere
+en	all round	Plc;Univ	Loc+Goal	as everywhere
+en	around	Plc;Univ	Loc+Goal	as everywhere
+en	anywhere	Plc;Sg;Elec	Loc+Goal	OEWN i18288 "at or in or to any place"
+en	wherever	Plc;Sg;Elec	Loc+Goal	as anywhere
+en	wheresoever	Plc;Sg;Elec	Loc+Goal	as anywhere
+en	now	Tim;Prox	Loc	at this time; until/since now take a preposition
+en	then	Tim;Dist	Loc	at that time
+en	when	Tim;Int	Loc	at what time
+en	sometime	Tim;Sg;Asrt	Loc	OEWN i18265 "at some indefinite or unstated time"
+en	ever	Tim;Sg;Elec	Loc	OEWN i19122 "at any time"
+en	whenever	Tim;Sg;Elec	Loc	at any time
+fr	ici	Plc;Prox	Loc+Goal	as English here; d'ici for "from here"
+fr	là	Plc;Dist	Loc+Goal	as English there; de là for "from there"
+fr	là	Plc;Prox+Dist	Loc+Goal	as English there
+fr	là-bas	Plc;Dist	Loc+Goal	je vais là-bas, de là-bas
+fr	où	Plc;Int	Loc+Goal	as English where; d'où for "from where"
+es	aquí	Plc;Prox	Loc+Goal	estoy aquí, ven aquí; de aquí for "from here"
+es	acá	Plc;Prox	Loc+Goal	as aquí
+es	ahí	Plc;Med	Loc+Goal	as aquí
+es	allí	Plc;Rem	Loc+Goal	as aquí
+cs	tam	Plc;Dist	Loc+Goal	jsem tam, jdu tam; odtamtud for "from there"

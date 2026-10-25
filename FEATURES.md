@@ -29,7 +29,7 @@ A code is a sequence of features separated by `;`. Each feature fills one
 | formality | `Fml` `Infml` |
 | politeness | `Pol` `Hon` `NHon` |
 | proximity | `Prox` `Med` `Dist` `Rem` |
-| direction | `Loc` `Goal` `Src` |
+| direction | `Dir` `Loc` `Goal` `Src` |
 | register | `Men` `Wom` `Arch` |
 
 A code fills each slot at most once, and the slot of a value is fixed, so
@@ -47,6 +47,7 @@ Some values stand for others. These **unmarked** values are unions of the
     Dist = Med ∪ Rem                    (not proximal)
     Asrt = SK ∪ SU ∪ IRR ∪ Q ∪ COND      (English some-)
     Elec = Q ∪ COND ∪ INEG ∪ DNEG ∪ COMP ∪ FC   (English any-)
+    Dir  = Loc ∪ Goal ∪ Src             (at, to or from: no direction specified)
 
 Write expand(v) for the atomic values of v: expand(`Pl`) = {`Du`, `Tr`, `Gpl`},
 and expand(`Sg`) = {`Sg`}. `Neg` (no-) is atomic, not a set of functions:
@@ -69,22 +70,64 @@ itself, so it is not a kind of *anybody*.
    allowed. `3;Sg` covers *he*, *she* and *it*, and genderless third person
    singulars.
 
-3. **The possessive is the exception.** A code without `Poss` is
-   non-possessive, not unspecified for case: *my* (`1;Sg;Poss`) adds a relation
-   to *I* (`1;Sg`) and is not a kind of it.
+3. **Possessive and direction are the exceptions.** Each adds a relation, so a
+   code without `Poss` or a direction lacks that relation rather than being
+   unspecified for it. *my* (`1;Sg;Poss`) adds a relation to *I* (`1;Sg`) and is
+   not a kind of it. The pro-adposition *here* (`Plc;Prox;Loc+Goal`) is the noun
+   *here* (`Plc;Prox`, "this place") plus a relation to it, "at or to this
+   place", and neither is a kind of the other. This is the ERG's `loc_nonsp`
+   (implicit locatives, Flickinger et al. 2014): adverbial *here*, *today* and
+   *when* relate an event to a place or time without saying how. `Dir` is that
+   unspecified relation, the unmarked direction: `Plc;Prox;Dir` is "at, to or
+   from this place". It is the concept for words whose direction has not been
+   checked, and for languages that do not contrast it, as plain `1` is for
+   languages without clusivity. A word gets a narrower code only where its
+   coverage is known (`data/word-direction.tsv`): English *here*, *there*,
+   *where* and French *ici*, *là*, *où* are `Loc+Goal`, since "from here" and
+   *d'où* need a preposition; Czech *zde* is `Loc` and *sem* `Goal`, both under
+   `Plc;Prox;Loc+Goal`; *hence* (`Plc;Prox;Src`) is not under it, and all are
+   under `Plc;Prox;Dir`.
 
 4. **Part of speech** separates concepts with the same features: the pronoun
    *this* (`Ent;Sg;Prox`, POS `n`) and the determiner *this* (`Sg;Prox`, POS
    `a`) are different concepts, and neither is a kind of the other. Pronouns are
-   `n`, determiners `a` and pro-adverbs `r`. A place or time code can be both a
-   noun and an adverb: *here* is `Plc;Prox` (`n`) and `Plc;Prox:r` (`r`), and
-   each language's word lexicalizes one or both (`data/pro-adverbs.tsv`,
-   `data/word-pos.tsv`).
+   `n`, determiners `a`, pro-adverbs `r` and pro-adpositions `p`. A code with a
+   direction is a pro-adposition (WN-LMF `p`, lexicographer file
+   `adp.pronoun`): Huddleston and Pullum (2002, ch. 7) treat *here*, *there* and
+   *where* as intransitive prepositions, and a pro-form with a direction stands
+   for a whole prepositional phrase (*here* ≈ *at this place*). Universal
+   Dependencies tags these words `ADV`. Manner, reason and duration pro-forms
+   (*how*, *so*, *why*, *how long*) have no direction and stay adverbs `r`. A
+   place or time code can be a noun, a pro-adposition or both, according to the
+   language (`data/pro-form-pos.tsv`, `data/word-pos.tsv`): English *here* is
+   both, Japanese *koko* only a noun (*koko ni* is a phrase). The shared lexicon
+   links the noun to its `Dir` pro-adposition by `other` relations typed `noun`
+   and `pro-adposition`, as possessives are linked; there is no hypernymy across
+   parts of speech.
+
+5. **Direction is read by head.** The values of the direction slot mean
+   different relations for a place and a time:
+
+   | head | `Dir` | `Loc` | `Goal` | `Src` |
+   |---|---|---|---|---|
+   | `Plc` | at, to or from | at | to | from |
+   | `Tim` | at, until or since | at | until | since |
+
+   Containment never compares a `Plc` code with a `Tim` code, since they differ
+   in the head slot, so the two readings never meet. English *now*, *then*,
+   *when* are `Tim;Prox;Loc`, `Tim;Dist;Loc`, `Tim;Int;Loc`: "until now" and
+   "since when" need a preposition. The feature synset is chosen by head too:
+   `Loc` of a place code links to *locative role* (i69757), of a time code to
+   *temporal role* (i69760, `Tmp` in `data/features.tsv`). The kinship wordnet
+   has the same kind of exception: there `Gr` and the cousin use of `El`/`Yn`
+   depend on the subdomain (omw-kinship `FEATURES.md`, "What the algebra does
+   not cover").
 
 ### Order and hypernymy
 
 Concepts are ordered by containment: c ⊑ d when ⟦c⟧ ⊆ ⟦d⟧, they have the same
-part of speech, and both are possessive or neither is. Slot by slot, c ⊑ d when
+part of speech, both are possessive or neither is, and both have a direction or
+neither has. Slot by slot, c ⊑ d when
 every slot d fills, c fills too, with a subset of its values:
 
     c ⊑ d  ⇔  for every slot s in d:  s is in c  and  expand(c(s)) ⊆ expand(d(s))
@@ -95,18 +138,20 @@ this order, and no two concepts denote the same set.
 
 The basic ways to get a broader code follow from the definitions:
 
-- **drop a feature**: `3;Sg;M` ⊑ `3;Sg`; `Plc;Int;Goal` ⊑ `Plc;Int`;
+- **drop a feature**: `3;Sg;M` ⊑ `3;Sg` (but not the possessive or the
+  direction: `Plc;Int;Goal` is not ⊑ `Plc;Int`);
 - **unmark a value**: `1e;Du` ⊑ `1;Du`, `1e;Du` ⊑ `1e;Pl`, `Ent;Sg;Rem` ⊑
   `Ent;Sg;Dist`; but `Pers;Sg;Neg` (*nobody*) is not ⊑ `Pers;Sg;Elec`
   (*anybody*), since `Neg` is not one of `Elec`'s functions;
-- **add an alternative**: `Ent;Sg;Prox` ⊑ `Ent;Sg;Prox+Dist`.
+- **add an alternative**: `Ent;Sg;Prox` ⊑ `Ent;Sg;Prox+Dist`; `Plc;Int;Goal`
+  ⊑ `Plc;Int;Loc+Goal` ⊑ `Plc;Int;Dir`.
 
 Two codes can have common hyponyms. `1e;Du` lies under both `1;Du` (we two) and
 `1e;Pl` (exclusive we), because ⟦1;Du⟧ ∩ ⟦1e;Pl⟧ = ⟦1e;Du⟧. So the hierarchy is a
-graph, not a tree: of 228 concepts, 24 have two hypernyms.
+graph, not a tree: of 241 concepts, 28 have two hypernyms.
 
 The hierarchy has no single root. A concept with no broader concept of its part
-of speech is a top: 57 are, among them `1;Sg`, `2`, `3`, `Ent;Int`,
+of speech is a top: 58 are, among them `1;Sg`, `2`, `3`, `Ent;Int`,
 `Ent;Prox` and `Tim;Prox` *now*. Concepts that share a head are not joined
 unless some concept states only what they share: *now* and *then* are both
 `Tim`, but no concept is `Tim` alone, and `Dur+Tim;Int` (*how long, when*) holds
@@ -120,7 +165,7 @@ Each feature value is also a synset in the shared lexicon (`data/features.tsv`),
 with its own hierarchy from the unmarked values: *distal* has the hyponyms
 *medial* and *remote*, *first person* has *inclusive* and *exclusive*. A
 pronoun links to its head by hypernymy (*who* is a kind of *person*), a
-determiner or pro-adverb by `attribute`, and every concept links to its other
+determiner, pro-adverb or pro-adposition by `attribute`, and every concept links to its other
 features by `exemplifies`.
 
 ## Features
@@ -139,8 +184,8 @@ The kind of thing a pro-form stands for. Personal pronouns have a person instead
 | `Pers` | person | Czech *kdo* "who" | `Pers;Int` |
 | `Thng` | thing | Czech *co* "what" | `Thng;Int` |
 | `Ent` | entity: `Pers` or `Thng` | English *which* | `Ent;Int` |
-| `Plc` | place | English *where* | `Plc;Int` |
-| `Tim` | time | Czech *kdy* "when" | `Tim;Int` |
+| `Plc` | place | Japanese *doko* "where" | `Plc;Int` |
+| `Tim` | time | Japanese *itsu* "when" | `Tim;Int` |
 | `Mnr` | manner | Indonesian *begini* "like this" | `Mnr;Prox` |
 | `Rsn` | reason | Czech *proč* "why" | `Rsn;Int` |
 | `Qnt` | quantity | French *combien* "how much, how many" | `Qnt;Int` |
@@ -255,12 +300,14 @@ only for specific referents). His test sentences:
 
 ### Direction
 
-Only where a language distinguishes them; English *where* marks none, so it is
-`Plc;Int`, above all three.
+The relation of a pro-adposition to its place or time, read by head (see the
+algebra, rule 5). `Dir` leaves it unspecified; English *where* covers at and to,
+so it is `Plc;Int;Loc+Goal`, above *kde* and *kam* but not *odkud*.
 
 | value | meaning | example | code |
 |---|---|---|---|
-| `Loc` | locative: at a place | Czech *kde* "where (at)" | `Plc;Int;Loc` |
+| `Dir` | non-specific: at, to or from a place; at, until or since a time | Italian *qui* "here" (unchecked) | `Plc;Prox;Dir` |
+| `Loc` | locative: at a place or time | Czech *kde* "where (at)"; English *when* | `Plc;Int;Loc`; `Tim;Int;Loc` |
 | `Goal` | goal: to a place | Czech *kam* "where to" | `Plc;Int;Goal` |
 | `Src` | source: from a place | Czech *odkud* "where from" | `Plc;Int;Src` |
 
@@ -295,6 +342,17 @@ In ids, `;` becomes `-` and `+` becomes `_`: `1;Sg;Fml;Hon+Pol` is the synset
 (`pronoun:1;Sg;Fml;Hon+Pol`).
 
 ## References
+
+Flickinger, Dan, Emily M. Bender and Stephan Oepen (2014). Towards an
+Encyclopedia of Compositional Semantics: Documenting the Interface of the English
+Resource Grammar. In *Proceedings of the Ninth International Conference on
+Language Resources and Evaluation (LREC'14)*, 875–881. See also the DELPH-IN wiki
+page ErgSemantics_ImplicitLocatives,
+https://github.com/delph-in/docs/wiki/ErgSemantics_ImplicitLocatives.
+
+Huddleston, Rodney and Geoffrey K. Pullum (2002). *The Cambridge Grammar of the
+English Language*. Cambridge University Press. Chapter 7, Prepositions and
+preposition phrases (Pullum and Huddleston).
 
 Jeretič, Paloma, Itai Bassi, Aurore Gonzalez, Marie-Christine Meyer, Kazuko
 Yatsushiro and Uli Sauerland (2026). Core concepts and indirect alternatives: on

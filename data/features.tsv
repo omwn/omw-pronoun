@@ -44,6 +44,8 @@ Rem	proximity	remote		77010004-a	ntumc	PronType=Dem|Deixis=Remt	relating to or c
 Loc	direction	locative	i69757		pwn		the semantic role of the noun phrase that designates the place of the state or action denoted by the verb
 Goal	direction	goal	i82007		pwn		the place designated as the end (as of a race or journey)
 Src	direction	source	i81759		pwn		the place where something begins, where it springs into being
+Dir	direction	non-specific locative role			new		the semantic role of a place or time to which a state or event is related, without specifying the relation (at, to or from)
+Tmp	direction	temporal	i69760		pwn		the semantic role of the noun phrase that designates the time of the state or action denoted by the verb
 Men	register	men's speech		77010007-n	ntumc		speech used predominately by men
 Wom	register	women's speech		77010008-n	ntumc		speech used predominately by women
 Arch	register	archaic	i8971		check		NTUMC links PWN's antediluvian ("so extremely old..."): find the sense for words no longer in use

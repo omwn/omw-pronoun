@@ -1,30 +1,30 @@
 lang	form	pos	note
-en	here	n r	OEWN has both: "the present location" (n), "in or at this place" (r)
-en	'ere	n r	as here
-en	there	n r	OEWN has both
-en	where	n r	"the where and the when"; mostly adverbial
-en	now	n r	OEWN has both
-en	then	n r	OEWN has both
-en	when	n r	as where
+en	here	n p	OEWN has both: "the present location" (n), "in or at this place" (r)
+en	'ere	n p	as here
+en	there	n p	OEWN has both
+en	where	n p	"the where and the when"; mostly adverbial
+en	now	n p	OEWN has both
+en	then	n p	OEWN has both
+en	when	n p	as where
 ja	*	n	place and time words are nouns, adverbial with a particle (どこに, どこで)
 ko	*	n	여기, 거기, 저기, 어디 are nouns (대명사), adverbial with a particle (어디에)
-ko	언제	n r	the Standard Korean Dictionary lists 언제 as both pronoun and adverb
+ko	언제	n p	the Standard Korean Dictionary lists 언제 as both pronoun and adverb
 cmn	*	n	这里, 那里, 哪里, 现在, 什么时候 are place and time nouns, adverbial with 在
 yue	*	n	嗰陣, 當時 are time nouns
 tr	*	n	bura, ora, nere take case suffixes (burada, oraya); the cased forms are their own concepts
-tr	ne zaman	r	an adverbial phrase "what time"
+tr	ne zaman	p	an adverbial phrase "what time"
 id	*	n	sini, sana, situ, mana need a preposition (di sini, ke sana)
-id	di sini	r	with the preposition di
-id	disana	r	with the preposition di
-id	kapan	r	an interrogative adverb
-id	kini	r	an adverb
+id	di sini	p	with the preposition di
+id	disana	p	with the preposition di
+id	kapan	p	an interrogative adverb
+id	kini	p	an adverb
 zsm	*	n	as Indonesian
-zsm	di sini	r	with the preposition di
-zsm	disana	r	with the preposition di
-zsm	bila	r	an interrogative adverb
-zsm	kini	r	an adverb
+zsm	di sini	p	with the preposition di
+zsm	disana	p	with the preposition di
+zsm	bila	p	an interrogative adverb
+zsm	kini	p	an adverb
 th	*	n	ที่นี่ "this place", ตอนนี้ "this moment" are noun phrases
-th	เมื่อไร	r	an interrogative adverb
+th	เมื่อไร	p	an interrogative adverb
 vi	*	n	đây, đó, đâu are adverbial with ở (ở đâu); review
 lo	ມື້ໃດ	n	"which day", a noun phrase; the place words include the preposition ຢູ່
 km	ពេលណា	n	"which time", a noun phrase

@@ -317,7 +317,7 @@ function chips(code) {
     box.append(name);
     return box;
   }
-  code = isHead(code) ? headOf(code) : codeOf(code);
+  code = isHead(code) ? headOf(code) : code;
   for (const part of code.split(";")) {
     const values = part.split("+");
     const slot = FEATURES[values[0]]?.slot || "";
@@ -337,14 +337,12 @@ const EXPAND = DATA.expand;
 const isConcept = code => code in CONCEPTS;
 const isHead = code => code.startsWith("@");
 const headOf = code => code.slice(1, code.indexOf(":"));
-// the adverb of a code that is also a noun is keyed Plc;Prox:r
-const codeOf = key => key.replace(/:r$/, "");
 const headNode = (head, pos) => `@${head}:${pos}`;
 const FEATURE_ORDER = new Map(Object.keys(FEATURES).map((f, i) => [f, i]));
 
 // The heads a concept names: Dur+Tim;Int has two
 function headsOf(code) {
-  return codeOf(code).split(";")
+  return code.split(";")
     .filter(part => FEATURES[part.split("+")[0]]?.slot === "head")
     .flatMap(part => part.split("+"));
 }
@@ -368,7 +366,7 @@ const addChild = (parent, child) => {
   if (!CHILDREN.get(parent).includes(child)) CHILDREN.get(parent).push(child);
 };
 // concepts with no broader concept of their part of speech
-const TOPS = { n: [], a: [], r: [] };
+const TOPS = { n: [], a: [], p: [], r: [] };
 for (const [code, concept] of Object.entries(CONCEPTS)) {
   if (!concept.parents.length) TOPS[concept.pos].push(code);
   const parents = parentsOf(code);
@@ -653,7 +651,7 @@ function featureList(code) {
   h.textContent = "Features";
   const ul = document.createElement("ul");
   ul.className = "features";
-  for (const part of codeOf(code).split(";")) {
+  for (const part of code.split(";")) {
     for (const value of part.split("+")) {
       const feature = FEATURES[value];
       const li = document.createElement("li");
@@ -680,7 +678,7 @@ function renderPanel() {
   if (!node) {
     panel.innerHTML = `<div class="help">
       <p><strong>Select a concept</strong> to see its definition, its features, its hypernyms and hyponyms, and how the chosen language says it.</p>
-      <p>Concepts are grouped by part of speech (pronouns, determiners, pro-adverbs), then by head: <em>now</em>, <em>then</em> and <em>when</em> are all under <em>time</em>, and <em>person</em> and <em>thing</em> are under <em>entity</em>. Concepts without a head, such as the personal pronouns, follow the heads. Click a concept to open it. A concept with two hypernyms appears under each; the badge says so.</p>
+      <p>Concepts are grouped by part of speech (pronouns, determiners, pro-adpositions, pro-adverbs), then by head: <em>now</em>, <em>then</em> and <em>when</em> are all under <em>time</em>, and <em>person</em> and <em>thing</em> are under <em>entity</em>. Concepts without a head, such as the personal pronouns, follow the heads. Click a concept to open it. A concept with two hypernyms appears under each; the badge says so.</p>
       <p>Choose a language to mark each concept with its words (<span style="color:var(--word)">●</span>). Concepts with no word are dimmed.</p>
     </div>`;
     return;

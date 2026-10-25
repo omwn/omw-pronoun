@@ -15,7 +15,7 @@ The design follows the KinDiv wordnet:
 - ``omw-pronoun-<tag>`` holds one language's words; the hierarchy is reached
   through the ILI once CILI accepts the proposals. Its only relations link one
   lemma's senses across parts of speech by ``derivation``: *here* the noun and
-  *here* the adverb, *this* the pronoun and *this* the determiner.
+  *here* the pro-adposition, *this* the pronoun and *this* the determiner.
 
 Case is inflection: case forms are ``<Form>`` variants tagged with their case,
 never separate concepts. Bound forms (affixes) are variants of the free pronoun
@@ -153,18 +153,22 @@ def script_of(form: str) -> str:
 def slug(code: str) -> str:
     """An XML-safe id fragment for a code: ``1i;Du`` -> ``1i-Du``.
 
-    >>> slug("Plc;Prox:r")
-    'Plc-Prox-r'
+    >>> slug("Plc;Prox;Loc+Goal")
+    'Plc-Prox-Loc_Goal'
     """
-    return code.replace(";", "-").replace("+", "_").replace(":", "-")
+    return code.replace(";", "-").replace("+", "_")
 
 
-#: concept key -> part of speech (n pronoun, a determiner, r pro-adverb), filled
-#: from data/concepts.tsv by `main`. The key is the code, but for the adverb of a
-#: code that is also a noun (``Plc;Prox:r``, `concept_table.ADVERB`)
+#: concept code -> part of speech (n pronoun, a determiner, r pro-adverb, p
+#: pro-adposition), filled from data/concepts.tsv by `main`
 POS: dict[str, str] = {}
 #: lexicographer file per part of speech: pro-forms cut across parts of speech
-LEXFILES = {"n": "noun.pronoun", "a": "adj.pronoun", "r": "adv.pronoun"}
+LEXFILES = {
+    "n": "noun.pronoun",
+    "a": "adj.pronoun",
+    "r": "adv.pronoun",
+    "p": "adp.pronoun",
+}
 
 
 # --- the concept hierarchy ---------------------------------------------------
@@ -181,6 +185,9 @@ EXPAND = {
     "Pl": {"Du", "Tr", "Gpl"},
     # distal is not proximal: English *that* covers Japanese *sore* and *are*
     "Dist": {"Med", "Rem"},
+    # a pro-adposition with no direction specified: at, to or from (the ERG's
+    # loc_nonsp); English *here* is Loc+Goal, Czech *zde* Loc, *sem* Goal
+    "Dir": {"Loc", "Goal", "Src"},
     # the English-based indefinite types are unions of Haspelmath's functions,
     # as his English data shows: some-, any- (with ever-). The negative (no-) is
     # not one: *nobody* is used in direct negation, as *anybody* is, but carries
@@ -197,7 +204,6 @@ def features(code: str) -> dict[str, frozenset[str]]:
     True
     """
     found: dict[str, frozenset[str]] = {}
-    code = concept_table.code_of(code)
     for part in code.split(";") if code else []:
         values = frozenset(part.split("+"))
         slot = next((s for s, vs in SLOTS.items() if values <= vs), None)
@@ -247,7 +253,7 @@ CATEGORIES = {
     "formality": {"Fml", "Infml"},
     "politeness": {"Pol", "Hon", "NHon"},
     "proximity": {"Prox", "Med", "Dist", "Rem"},
-    "direction": {"Loc", "Goal", "Src"},
+    "direction": {"Loc", "Goal", "Src", "Dir"},
     "register": {"Men", "Wom", "Arch"},
 }
 
@@ -270,19 +276,22 @@ def subsumes(general: str, specific: str) -> bool:
     """True if every feature of `general` is implied by `specific`.
 
     A possessive is not a kind of its pronoun (*my* is not a kind of *I*), so
-    possessives and non-possessives never subsume each other.
+    possessives and non-possessives never subsume each other; likewise a code
+    with a direction (a pro-adposition) and one without (a noun).
 
     >>> subsumes("1;Sg", "1;Sg;Poss"), subsumes("1;Poss", "1;Sg;Poss")
     (False, True)
     >>> subsumes("Ent;Sg;Dist", "Ent;Sg;Rem"), subsumes("Pers;Sg;Elec", "Pers;Sg;Neg")
     (True, False)
-    >>> subsumes("Plc;Int", "Plc;Int;Goal"), subsumes("Plc;Int;Loc", "Plc;Int;Goal")
+    >>> subsumes("Plc;Int;Dir", "Plc;Int;Goal"), subsumes("Plc;Int", "Plc;Int;Goal")
+    (True, False)
+    >>> subsumes("Plc;Int;Loc+Goal", "Plc;Int;Goal"), subsumes("Plc;Int;Loc", "Plc;Int;Goal")
     (True, False)
     >>> subsumes("Ent;Int", "Thng;Int"), subsumes("Thng;Int", "Ent;Int")
     (True, False)
     """
     g, s = features(general), features(specific)
-    if ("case" in g) != ("case" in s):
+    if any((slot in g) != (slot in s) for slot in ("case", "direction")):
         return False
     return all(
         slot in s and expand(vals) >= expand(s[slot]) for slot, vals in g.items()
@@ -622,26 +631,49 @@ def read_word_pos() -> dict[tuple[str, str], list[str]]:
         }
 
 
-def place_adverbs(languages: dict[str, Language]) -> None:
-    """Move each word of a code that is both noun and adverb to its language's reading.
+def read_word_directions() -> dict[tuple[str, str, str], str]:
+    """(language tag, lemma, code) -> the direction a word covers.
+
+    From data/word-direction.tsv: English *here* covers at and to (``Loc+Goal``).
+    """
+    with (DATA / "word-direction.tsv").open(encoding="utf8") as handle:
+        return {
+            (row["lang"], row["form"], row["code"]): row["direction"]
+            for row in csv.DictReader(handle, delimiter="\t")
+        }
+
+
+def place_pro_forms(languages: dict[str, Language]) -> None:
+    """Move each word of a place or time code to its language's reading.
 
     The sources file *here* under the code alone, which is the noun. Whether a
-    language's word is a noun, an adverb or both is a fact about that language:
-    English *here* is both, Japanese *koko* only a noun (*koko ni* is adverbial).
-    data/word-pos.tsv says so by lemma or for the whole language (``*``); a
-    language it does not list is taken as adverbial, as in English and the
-    European languages.
+    language's word is a noun, a pro-adposition or both is a fact about that
+    language: English *here* is both, Japanese *koko* only a noun (*koko ni* is
+    adverbial). data/word-pos.tsv says so by lemma or for the whole language
+    (``*``); a language it does not list is taken as using a pro-adposition, as
+    English and the European languages do. The pro-adposition is the code with
+    the direction the word is known to cover (data/word-direction.tsv), else
+    ``Dir``. Where the code has no noun concept, every word is a pro-adposition.
     """
     rules = read_word_pos()
-    adverb = concept_table.ADVERB
-    both = {concept_table.code_of(k) for k in POS if k.endswith(adverb)}
+    known = read_word_directions()
+    bases = {
+        concept_table.without_direction(c)
+        for c, pos in POS.items()
+        if pos == "p" and c.endswith(";" + concept_table.DIRECTION)
+    }
     for tag, language in languages.items():
         for key, entry in list(language.entries.items()):
-            for code in [c for c in entry.senses if c in both]:
-                pos = rules.get((tag, entry.lemma)) or rules.get((tag, "*")) or ["r"]
-                if "r" in pos:
-                    copy_sense(language, entry, code, code + adverb)
-                if "n" not in pos:
+            for code in [c for c in entry.senses if c in bases]:
+                pos = rules.get((tag, entry.lemma)) or rules.get((tag, "*")) or ["p"]
+                noun = POS.get(code) == "n"
+                if "p" in pos or not noun:
+                    direction = known.get((tag, entry.lemma, code))
+                    target = concept_table.with_direction(
+                        code, direction or concept_table.DIRECTION
+                    )
+                    copy_sense(language, entry, code, target)
+                if "n" not in pos or not noun:
                     del entry.senses[code]
             if not entry.senses:
                 del language.entries[key]
@@ -650,13 +682,14 @@ def place_adverbs(languages: dict[str, Language]) -> None:
 def counterpart(key: str) -> str:
     """What a concept shares with the same word's concept in another part of speech.
 
-    *here* the noun and *here* the adverb share the code; *this* the pronoun
-    (``Ent;Sg;Prox``) and *this* the determiner (``Sg;Prox``) differ only in ``Ent``.
+    *here* the noun (``Plc;Prox``) and *here* the pro-adposition
+    (``Plc;Prox;Loc+Goal``) differ only in the direction; *this* the pronoun
+    (``Ent;Sg;Prox``) and *this* the determiner (``Sg;Prox``) only in ``Ent``.
 
-    >>> counterpart("Plc;Prox:r"), counterpart("Ent;Sg;Prox")
+    >>> counterpart("Plc;Prox;Loc+Goal"), counterpart("Ent;Sg;Prox")
     ('Plc;Prox', 'Sg;Prox')
     """
-    parts = concept_table.code_of(key).split(";")
+    parts = concept_table.without_direction(key).split(";")
     return ";".join(parts[1:] if parts[0] == "Ent" else parts)
 
 
@@ -729,30 +762,18 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
             children[parent].add(code)
     linked = read_concept_ili()
     lines = [lexicon_open(BASE, "OMW pronoun concepts", "mul")]
-    # the noun and adverb of one code are one lemma, so derivationally related
-    related = derivations(
-        [
-            (concept_table.code_of(c["code"]), c["pos"], c["code"], c["code"])
-            for c in concepts
-            if c["pos"] in "nr"
-        ]
-    )
     for c in concepts:
         eid = f"{BASE}-e-{slug(c['code'])}"
-        lemma = concept_table.code_of(c["code"])
-        sense = (
-            f'      <Sense id="{eid}-1" synset="{BASE}-{slug(c["code"])}"'
-            ' lexicalized="false"'
-        )
-        others = [
-            f'        <SenseRelation relType="derivation"'
-            f' target="{BASE}-e-{slug(other)}-1"/>'
-            for other in related.get(c["code"], [])
-        ]
         lines += [
             f'    <LexicalEntry id="{eid}">',
-            f'      <Lemma writtenForm={quoteattr(lemma)} partOfSpeech="{c["pos"]}"/>',
-            *([sense + ">", *others, "      </Sense>"] if others else [sense + "/>"]),
+            (
+                f"      <Lemma writtenForm={quoteattr(c['code'])}"
+                f' partOfSpeech="{c["pos"]}"/>'
+            ),
+            (
+                f'      <Sense id="{eid}-1" synset="{BASE}-{slug(c["code"])}"'
+                ' lexicalized="false"/>'
+            ),
             "    </LexicalEntry>",
         ]
     # WN-LMF wants every entry before any synset
@@ -790,7 +811,10 @@ def write_base(concepts: list[dict[str, str]], attested: set[str]) -> list[str]:
             lines.append(
                 f'      <SynsetRelation relType="{rel}" target="{feature_id(abbr)}"/>'
             )
-        for rel, other in possessive_links(code, set(codes)):
+        pos_of = {x["code"]: x["pos"] for x in concepts}
+        for rel, other in possessive_links(code, set(codes)) + direction_links(
+            code, pos_of
+        ):
             lines.append(
                 f'      <SynsetRelation relType="other" dc:type="{rel}"'
                 f' target="{BASE}-{slug(other)}"/>'
@@ -817,6 +841,29 @@ def possessive_links(code: str, codes: set[str]) -> list[tuple[str, str]]:
         return [("possessor", pronoun)] if pronoun in codes else []
     owned = sorted(c for c in codes if "Poss" in c.split(";") and possessor(c) == code)
     return [("possessive", c) for c in owned]
+
+
+def direction_links(code: str, pos: dict[str, str]) -> list[tuple[str, str]]:
+    """Link a noun to its pro-adposition with no direction specified, and back.
+
+    *here* the noun (``Plc;Prox``) is the place the pro-adposition
+    ``Plc;Prox;Dir`` relates to. WN-LMF has no synset relation for this, so it is
+    ``other`` with a ``dc:type``, as for possessives: ``noun`` from the
+    pro-adposition, ``pro-adposition`` from the noun. Narrower pro-adpositions
+    reach the noun through their hypernym.
+
+    >>> direction_links("Plc;Prox;Dir", {"Plc;Prox": "n", "Plc;Prox;Dir": "p"})
+    [('noun', 'Plc;Prox')]
+    >>> direction_links("Plc;Prox", {"Plc;Prox": "n", "Plc;Prox;Dir": "p"})
+    [('pro-adposition', 'Plc;Prox;Dir')]
+    """
+    if pos.get(code) == "p" and code.endswith(";" + concept_table.DIRECTION):
+        noun = concept_table.without_direction(code)
+        return [("noun", noun)] if pos.get(noun) == "n" else []
+    target = concept_table.with_direction(code)
+    if pos.get(code) == "n" and pos.get(target) == "p":
+        return [("pro-adposition", target)]
+    return []
 
 
 def possessor(code: str) -> str:
@@ -857,17 +904,23 @@ def feature_links(
     person). A determiner or pro-adverb is not a kind of the noun that heads it
     (*such* is not a kind of kind), so its head is linked by ``attribute``, as
     NTUMC links kind and manner. Every other feature is linked by
-    ``exemplifies``, NTUMC's usage-domain link.
+    ``exemplifies``, NTUMC's usage-domain link. Direction is read by head: the
+    locative of a time code is the temporal role (``Tmp``).
 
     >>> feature_links("Pers;Int;Pol", read_features())
     [('hypernym', 'Pers'), ('exemplifies', 'Int'), ('exemplifies', 'Pol')]
     >>> feature_links("Mnr;Prox", read_features(), "r")
     [('attribute', 'Mnr'), ('exemplifies', 'Prox')]
+    >>> feature_links("Tim;Prox;Loc", read_features(), "p")
+    [('attribute', 'Tim'), ('exemplifies', 'Prox'), ('exemplifies', 'Tmp')]
     """
     head = "hypernym" if pos == "n" else "attribute"
     links = []
+    timed = code.split(";")[0] == "Tim"
     for slot, values in features(code).items():
         for value in sorted(values):
+            if timed and value == "Loc":
+                value = "Tmp"
             if value in table:
                 links.append((head if slot == "head" else "exemplifies", value))
     return links
@@ -881,8 +934,9 @@ def feature_hierarchy(abbr: str, used: list[str]) -> list[tuple[str, str]]:
     >>> feature_hierarchy("Rem", ["Prox", "Med", "Dist", "Rem"])
     [('hypernym', 'Dist')]
     """
-    links = [("hypernym", v) for v in used if abbr in EXPAND.get(v, set())]
-    return links + [("hyponym", v) for v in used if v in EXPAND.get(abbr, set())]
+    below = {**EXPAND, "Dir": EXPAND["Dir"] | {"Tmp"}}
+    links = [("hypernym", v) for v in used if abbr in below.get(v, set())]
+    return links + [("hyponym", v) for v in used if v in below.get(abbr, set())]
 
 
 def write_features(
@@ -1049,7 +1103,12 @@ def read_concept_ili() -> dict[str, str]:
 
 
 #: parts of speech, as the browser names them
-POS_NAMES = {"n": "pronoun", "a": "determiner", "r": "pro-adverb"}
+POS_NAMES = {
+    "n": "pronoun",
+    "a": "determiner",
+    "p": "pro-adposition",
+    "r": "pro-adverb",
+}
 
 
 def write_browser_data(
@@ -1129,8 +1188,12 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     with (DATA / "concepts.tsv").open(encoding="utf8") as handle:
         concepts = list(csv.DictReader(handle, delimiter="\t"))
-    codes = {c["code"] for c in concepts}
     POS.update({c["code"]: c["pos"] for c in concepts})
+    # the sources give place and time words under the bare code, the noun, which
+    # place_pro_forms moves to the pro-adposition; some codes have no noun
+    codes = {c["code"] for c in concepts} | {
+        concept_table.without_direction(c) for c, p in POS.items() if p == "p"
+    }
     languages: dict[str, Language] = {}
     add_ntumc(languages, codes)
     add_parabank(languages, codes)
@@ -1139,7 +1202,7 @@ def main() -> None:
     add_extra(languages, codes)
     add_wordnets(languages, codes)
     remap(languages)
-    place_adverbs(languages)
+    place_pro_forms(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}
     attested = {
         code
@@ -1169,7 +1232,7 @@ def main() -> None:
     write_browser_data(concepts, languages)
     logger.info(
         "%d concepts (%d attested), %d languages",
-        len(codes),
+        len(concepts),
         len(attested),
         len(languages),
     )

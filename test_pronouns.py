@@ -81,35 +81,59 @@ def test_hypernymy_stays_within_a_part_of_speech() -> None:
     assert parents["Ent;1;Sg;Poss"] == set()
 
 
-def test_a_code_can_be_noun_and_adverb() -> None:
-    pos = {"Plc;Prox": "n", "Plc;Prox:r": "r", "Plc;Prox;Goal": "r"}
+def test_a_place_code_is_a_noun_and_a_pro_adposition() -> None:
+    pos = {
+        "Plc;Prox": "n",
+        "Plc;Prox;Dir": "p",
+        "Plc;Prox;Loc+Goal": "p",
+        "Plc;Prox;Loc": "p",
+        "Plc;Prox;Goal": "p",
+        "Plc;Prox;Src": "p",
+    }
     parents = build.hypernyms(list(pos), pos)
-    assert parents["Plc;Prox;Goal"] == {"Plc;Prox:r"}
-    assert parents["Plc;Prox"] == parents["Plc;Prox:r"] == set()
-    assert concepts.label("Plc;Prox", "r") == "place proximal pro-adverb"
-    assert build.feature_links("Plc;Prox:r", build.read_features(), "r") == [
+    assert parents["Plc;Prox;Loc+Goal"] == {"Plc;Prox;Dir"}
+    assert parents["Plc;Prox;Loc"] == parents["Plc;Prox;Goal"] == {"Plc;Prox;Loc+Goal"}
+    # hence is not a kind of here: English here does not cover "from"
+    assert parents["Plc;Prox;Src"] == {"Plc;Prox;Dir"}
+    # the noun lacks the relation, so it is not above the pro-adposition
+    assert parents["Plc;Prox"] == parents["Plc;Prox;Dir"] == set()
+    assert concepts.label("Plc;Prox;Loc+Goal", "p") == (
+        "place proximal pro-adposition (at or to)"
+    )
+    assert concepts.define("Tim;Int;Dir", "p") == (
+        "a pro-adposition: at, until or since a time (interrogative)"
+    )
+    assert build.feature_links("Plc;Prox;Dir", build.read_features(), "p") == [
         ("attribute", "Plc"),
         ("exemplifies", "Prox"),
+        ("exemplifies", "Dir"),
+    ]
+    assert build.direction_links("Plc;Prox", pos) == [
+        ("pro-adposition", "Plc;Prox;Dir")
     ]
 
 
-def test_words_take_their_languages_part_of_speech(
+def test_words_take_their_languages_part_of_speech_and_direction(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    monkeypatch.setattr(build, "POS", {"Plc;Prox": "n", "Plc;Prox:r": "r"})
-    languages = {tag: build.Language(tag, tag) for tag in ("en", "ja", "es")}
-    for tag, lemma in (("en", "here"), ("ja", "ここ"), ("es", "aquí")):
+    monkeypatch.setattr(
+        build,
+        "POS",
+        {"Plc;Prox": "n", "Plc;Prox;Dir": "p", "Plc;Prox;Loc+Goal": "p"},
+    )
+    languages = {tag: build.Language(tag, tag) for tag in ("en", "ja", "it")}
+    for tag, lemma in (("en", "here"), ("ja", "ここ"), ("it", "qui")):
         languages[tag].entry(lemma, "Plc;Prox").senses["Plc;Prox"].add("test")
-    build.place_adverbs(languages)
+    build.place_pro_forms(languages)
 
     def senses(tag: str) -> list[tuple[str, str]]:
         return sorted(
             (e.pos, code) for e in languages[tag].entries.values() for code in e.senses
         )
 
-    assert senses("en") == [("n", "Plc;Prox"), ("r", "Plc;Prox:r")]
+    assert senses("en") == [("n", "Plc;Prox"), ("p", "Plc;Prox;Loc+Goal")]
     assert senses("ja") == [("n", "Plc;Prox")]
-    assert senses("es") == [("r", "Plc;Prox:r")]
+    assert senses("it") == [("p", "Plc;Prox;Dir")]
 
 
 def test_remapped_sense_moves_to_an_entry_of_its_part_of_speech(
@@ -120,26 +144,26 @@ def test_remapped_sense_moves_to_an_entry_of_its_part_of_speech(
         encoding="utf8",
     )
     monkeypatch.setattr(build, "DATA", tmp_path)
-    monkeypatch.setattr(build, "POS", {"Plc;Int": "n", "Plc;Int;Goal": "r"})
+    monkeypatch.setattr(build, "POS", {"Plc;Int": "n", "Plc;Int;Goal": "p"})
     czech = build.Language("cs", "Czech")
     czech.entry("kam", "Plc;Int").senses["Plc;Int"].add("test")
     build.remap({"cs": czech})
     assert [(e.lemma, e.pos, set(e.senses)) for e in czech.entries.values()] == [
-        ("kam", "r", {"Plc;Int;Goal"})
+        ("kam", "p", {"Plc;Int;Goal"})
     ]
 
 
 def test_derivation_links_one_lemma_across_parts_of_speech() -> None:
     senses = [
         ("here", "n", "Plc;Prox", "here-n"),
-        ("here", "r", "Plc;Prox:r", "here-r"),
+        ("here", "p", "Plc;Prox;Loc+Goal", "here-p"),
         ("this", "a", "Sg;Prox", "this-a"),
         ("this", "n", "Ent;Sg;Prox", "this-n"),
         ("that", "a", "Sg;Dist", "that-a"),
     ]
     assert build.derivations(senses) == {
-        "here-n": ["here-r"],
-        "here-r": ["here-n"],
+        "here-n": ["here-p"],
+        "here-p": ["here-n"],
         "this-a": ["this-n"],
         "this-n": ["this-a"],
     }
@@ -244,7 +268,8 @@ def test_first_person_is_exclusive_only_where_an_inclusive_contrasts() -> None:
 
 def test_subsumes_is_containment_of_feature_assignments() -> None:
     # FEATURES.md: a code denotes the assignments that agree with its features;
-    # an unfilled slot allows any value or none, except case (non-possessive)
+    # an unfilled slot allows any value or none, except case (non-possessive) and
+    # direction (a noun, not a pro-adposition), which mean the relation is absent
     with (build.DATA / "concepts.tsv").open(encoding="utf8") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     codes = [r["code"] for r in rows]
@@ -256,7 +281,10 @@ def test_subsumes_is_containment_of_feature_assignments() -> None:
 
     def denotation(code: str) -> dict[str, frozenset[str]]:
         found = build.features(code)
-        unfilled = {"case": frozenset({"non-possessive"})}
+        unfilled = {
+            "case": frozenset({"non-possessive"}),
+            "direction": frozenset({"none"}),
+        }
         return {
             s: frozenset(build.expand(found[s]))
             if s in found
