@@ -61,6 +61,7 @@ FEATURES = [
     "formality",
     "politeness",
     "proximity",
+    "direction",
     "register",
 ]
 
@@ -102,6 +103,9 @@ VALUES = {
     "medial": ("proximity", "medial"),
     "distal": ("proximity", "distal"),
     "remote": ("proximity", "remote"),
+    "locative": ("direction", "locative"),
+    "goal": ("direction", "goal"),
+    "source": ("direction", "source"),
     "men's speech": ("register", "men"),
     "women's speech": ("register", "women"),
     "archaic": ("register", "archaic"),
@@ -176,6 +180,7 @@ ABBREVIATIONS = {
         "distal": "Dist",
         "remote": "Rem",
     },
+    "direction": {"locative": "Loc", "goal": "Goal", "source": "Src"},
     "register": {"men": "Men", "women": "Wom", "archaic": "Arch"},
 }
 

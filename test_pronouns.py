@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import csv
 import json
+from pathlib import Path
 
 import pytest
 
@@ -112,8 +113,13 @@ def test_words_take_their_languages_part_of_speech(
 
 
 def test_remapped_sense_moves_to_an_entry_of_its_part_of_speech(
-    monkeypatch: pytest.MonkeyPatch,
+    monkeypatch: pytest.MonkeyPatch, tmp_path: Path
 ) -> None:
+    (tmp_path / "remap.tsv").write_text(
+        "lang\tlemma\tfrom_code\tto_code\tnote\ncs\tkam\tPlc;Int\tPlc;Int;Goal\t\n",
+        encoding="utf8",
+    )
+    monkeypatch.setattr(build, "DATA", tmp_path)
     monkeypatch.setattr(build, "POS", {"Plc;Int": "n", "Plc;Int;Goal": "r"})
     czech = build.Language("cs", "Czech")
     czech.entry("kam", "Plc;Int").senses["Plc;Int"].add("test")

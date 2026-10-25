@@ -179,9 +179,9 @@ Plc;Infml;Rem	n	place informal remote pronoun	a place informal remote pronoun	TU
 Plc;Int	n	place interrogative pronoun	a place interrogative pronoun	NTUMC	77000084-n	0	0	0
 Plc;Int:r	r	place interrogative pro-adverb	a place interrogative pro-adverb	NTUMC	77000084-n	0	0	0
 Plc;Int;Fml	n	place interrogative formal pronoun	a place interrogative formal pronoun	TUFS ja どちら		0	0	0
-Plc;Int;Goal	r	place interrogative goal pro-adverb	a place interrogative goal pro-adverb	direction		0	0	0
+Plc;Int;Goal	r	place interrogative goal pro-adverb	a place interrogative goal pro-adverb	NTUMC	77000144-n	0	0	0
 Plc;Int;Infml	n	place interrogative informal pronoun	a place interrogative informal pronoun	Japanese どっち		0	0	0
-Plc;Int;Loc	r	place interrogative locative pro-adverb	a place interrogative locative pro-adverb	direction		0	0	0
+Plc;Int;Loc	r	place interrogative locative pro-adverb	a place interrogative locative pro-adverb	NTUMC	77000143-n	0	0	0
 Plc;Int;Src	r	place interrogative source pro-adverb	a place interrogative source pro-adverb	direction		0	0	0
 Plc;Med	n	place medial pronoun	a place medial pronoun	NTUMC	77000117-n	0	0	0
 Plc;Med:r	r	place medial pro-adverb	a place medial pro-adverb	NTUMC	77000117-n	0	0	0

@@ -1,7 +1,7 @@
 {
   "concepts": {
     "a": 53,
-    "direction": 9,
+    "direction": 7,
     "haspelmath": 4,
     "n": 144,
     "noun_and_adverb": 8,
@@ -43,8 +43,8 @@
     "extra_new_shared": 4,
     "extra_skipped": 11,
     "extra_synsets": 35,
-    "inventory_concepts": 118,
-    "synsets": 118
+    "inventory_concepts": 120,
+    "synsets": 120
   },
   "parabank": {
     "admitted": 35,
@@ -78,6 +78,6 @@
   },
   "wordnet_words": {
     "languages": 24,
-    "words": 382
+    "words": 383
   }
 }

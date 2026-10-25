@@ -110,7 +110,7 @@ from:
   senses of こちら/そちら/あちら/どちら, polite, and こっち/そっち/あっち, casual:
   `Plc;Fml;Prox`, `Plc;Infml;Prox` ...), casual どっち "where" (`Plc;Int;Infml`,
   not in TUFS), 20 from the TUFS curation, one from English (*yours*), nine for direction (Czech, Polish, German
-  and Russian) and two for time deixis, *now* (`Tim;Prox`, also TUFS 今 in 7
+  and Russian; NTUMC now has Czech *kde* and *kam* too) and two for time deixis, *now* (`Tim;Prox`, also TUFS 今 in 7
   languages) and *then* (`Tim;Dist`), with curated lemmas in
   `data/extra-lemmas.tsv`.
 - **`data/ntumc-fixes.tsv`** corrects NTUMC codes before they become concepts.

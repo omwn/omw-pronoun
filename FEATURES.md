@@ -139,7 +139,7 @@ The kind of thing a pro-form stands for. Personal pronouns have a person instead
 | `Pers` | person | Czech *kdo* "who" | `Pers;Int` |
 | `Thng` | thing | Czech *co* "what" | `Thng;Int` |
 | `Ent` | entity: `Pers` or `Thng` | English *which* | `Ent;Int` |
-| `Plc` | place | Czech *kde* "where" | `Plc;Int` |
+| `Plc` | place | English *where* | `Plc;Int` |
 | `Tim` | time | Czech *kdy* "when" | `Tim;Int` |
 | `Mnr` | manner | Indonesian *begini* "like this" | `Mnr;Prox` |
 | `Rsn` | reason | Czech *proč* "why" | `Rsn;Int` |
