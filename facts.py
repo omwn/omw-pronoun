@@ -58,7 +58,7 @@ class Facts(TypedDict):
 
 
 def generated(code: str) -> bool:
-    """True for a pro-adposition made from a noun or base code by concepts.py.
+    """True for an adposition made from a noun or base code by concepts.py.
 
     ``Plc;Prox;Dir``, and ``Plc;Prox;Loc+Goal`` from data/word-direction.tsv:
     counts by source count the codes the sources give, not these.
@@ -114,9 +114,9 @@ def parabank_admitted(lexemes: list[dict[str, str]]) -> set[str]:
 def concept_facts(inventory: list[dict[str, str]]) -> dict[str, int]:
     """The concepts, by part of speech, and those with the domain Two.
 
-    ``noun_and_adposition`` counts the nouns that also have a pro-adposition
+    ``noun_and_adposition`` counts the nouns that also have an adposition
     (*here*: ``Plc;Prox`` and ``Plc;Prox;Dir``); ``adposition_known`` the
-    pro-adpositions narrower than ``Dir`` that some word is known to cover
+    adpositions narrower than ``Dir`` that some word is known to cover
     (English *here*, ``Plc;Prox;Loc+Goal``).
     """
     by_pos = {pos: sum(1 for c in inventory if c["pos"] == pos) for pos in "narp"}
@@ -424,7 +424,7 @@ def compute(parabank_source: Path = parabank_words.DEFAULT) -> Facts:
     ``parabank_source``, and is left out when the clone is missing.
     """
     inventory = rows_of(DATA / "concepts.tsv")
-    # build.py also accepts the bare code of a pro-adposition, which it moves
+    # build.py also accepts the bare code of an adposition, which it moves
     codes = {c["code"] for c in inventory} | {
         concepts.without_direction(c["code"]) for c in inventory if c["pos"] == "p"
     }

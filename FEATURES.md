@@ -73,7 +73,7 @@ itself, so it is not a kind of *anybody*.
 3. **Possessive and direction are the exceptions.** Each adds a relation, so a
    code without `Poss` or a direction lacks that relation rather than being
    unspecified for it. *my* (`1;Sg;Poss`) adds a relation to *I* (`1;Sg`) and is
-   not a kind of it. The pro-adposition *here* (`Plc;Prox;Loc+Goal`) is the noun
+   not a kind of it. The adposition *here* (`Plc;Prox;Loc+Goal`) is the noun
    *here* (`Plc;Prox`, "this place") plus a relation to it, "at or to this
    place", and neither is a kind of the other. This is the ERG's `loc_nonsp`
    (implicit locatives, Flickinger et al. 2014): adverbial *here*, *today* and
@@ -91,18 +91,18 @@ itself, so it is not a kind of *anybody*.
 4. **Part of speech** separates concepts with the same features: the pronoun
    *this* (`Ent;Sg;Prox`, POS `n`) and the determinative *this* (`Sg;Prox`, POS
    `a`) are different concepts, and neither is a kind of the other. Pronouns are
-   `n`, determinatives `a`, pro-adverbs `r` and pro-adpositions `p`. A code with a
-   direction is a pro-adposition (WN-LMF `p`, lexicographer file
+   `n`, determinatives `a`, adverbs `r` and adpositions `p`. A code with a
+   direction is an adposition (WN-LMF `p`, lexicographer file
    `adp.pronoun`): Huddleston and Pullum (2002, ch. 7) treat *here*, *there* and
    *where* as intransitive prepositions, and a pro-form with a direction stands
    for a whole prepositional phrase (*here* ≈ *at this place*). Universal
    Dependencies tags these words `ADV`. Manner, reason and duration pro-forms
    (*how*, *so*, *why*, *how long*) have no direction and stay adverbs `r`. A
-   place or time code can be a noun, a pro-adposition or both, according to the
+   place or time code can be a noun, an adposition or both, according to the
    language (`data/pro-form-pos.tsv`, `data/word-pos.tsv`): English *here* is
    both, Japanese *koko* only a noun (*koko ni* is a phrase). The shared lexicon
-   links the noun to its `Dir` pro-adposition by `other` relations typed `noun`
-   and `pro-adposition`, as possessives are linked, and each determinative to its
+   links the noun to its `Dir` adposition by `other` relations typed `noun`
+   and `adposition`, as possessives are linked, and each determinative to its
    pronoun (`Sg;Prox` ↔ `Ent;Sg;Prox`) by `other` typed `pronoun` and
    `determinative`; there is no hypernymy across parts of speech.
    *Determinative* names the category, after Huddleston and Pullum (2002);
@@ -168,7 +168,7 @@ Each feature value is also a synset in the shared lexicon (`data/features.tsv`),
 with its own hierarchy from the unmarked values: *distal* has the hyponyms
 *medial* and *remote*, *first person* has *inclusive* and *exclusive*. A
 pronoun links to its head by hypernymy (*who* is a kind of *person*), a
-determinative, pro-adverb or pro-adposition by `attribute`, and every concept links to its other
+determinative, adverb or adposition by `attribute`, and every concept links to its other
 features by `exemplifies`.
 
 ## Features
@@ -302,7 +302,7 @@ only for specific referents). His test sentences:
 
 ### Direction
 
-The relation of a pro-adposition to its place or time, read by head (see the
+The relation of an adposition to its place or time, read by head (see the
 algebra, rule 5). `Dir` leaves it unspecified; English *where* covers at and to,
 so it is `Plc;Int;Loc+Goal`, above *kde* and *kam* but not *odkud*.
 

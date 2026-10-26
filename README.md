@@ -73,7 +73,7 @@ alternatives joined by `+`:
   *not proximal*, medial or remote: English *that* is `Dist`, Japanese *sore* is
   `Med` and *are* `Rem`, both under it. `Ent` is a person or a thing, so *who*
   (`Pers;Int`) and *what* (`Thng;Int`) are under *which* (`Ent;Int`).
-- **Direction** is the relation of a pro-adposition to its place or time, read
+- **Direction** is the relation of an adposition to its place or time, read
   by head: at, to or from a place; at, until or since a time. `Dir` leaves it
   unspecified (the ERG's `loc_nonsp`), and narrower codes are given only where a
   word's coverage is known (`data/word-direction.tsv`): Czech *kde* "where" is
@@ -97,7 +97,7 @@ alternatives joined by `+`:
   the same, tagged `morph=bound`; otherwise they are entries of their own.
 
 The inventory (`data/concepts.tsv`, 241 concepts: 144 pronouns, 53 determinatives,
-35 pro-adpositions and 9 pro-adverbs; 28 possessive determinatives and
+35 adpositions and 9 adverbs; 28 possessive determinatives and
 8 possessive pronouns) comes
 from:
 
@@ -144,37 +144,37 @@ values that stand for others: *distal* has the hyponyms *medial* and *remote*,
 
 **Part of speech and lexicographer file.** Pro-forms cut across parts of speech:
 pronouns are `n` (`noun.pronoun`), determinatives `a` (`adj.pronoun`: *this*,
-*which*, Japanese *kono*), pro-adpositions `p` (`adp.pronoun`: *here*, *hither*,
-*now*, *everywhere*) and pro-adverbs `r` (`adv.pronoun`: *kō* "in this way",
-*how*, *why*, *how long*). A pro-adposition is a place or time pro-form with a
+*which*, Japanese *kono*), adpositions `p` (`adp.pronoun`: *here*, *hither*,
+*now*, *everywhere*) and adverbs `r` (`adv.pronoun`: *kō* "in this way",
+*how*, *why*, *how long*). An adposition is a place or time pro-form with a
 direction: Huddleston and Pullum (2002, ch. 7) treat *here*, *there* and *where*
 as intransitive prepositions, and such a word stands for a prepositional phrase
 (*here* ≈ *at this place*). Universal Dependencies tags them ADV. An entry has
 one part of speech, so *this* the determinative and *this* the pronoun are separate
 entries, linked by `derivation` (as are *here* the noun and *here* the
-pro-adposition). Hypernymy stays within a part of speech: the pronoun *this* is
+adposition). Hypernymy stays within a part of speech: the pronoun *this* is
 not a kind of the determinative *this*, nor *mine* of *my*. In the shared
 lexicon, the concepts of such a pair are linked instead by `other` relations
 typed `pronoun` and `determinative` (`Sg;Prox` ↔ `Ent;Sg;Prox`), as possessives
 are linked to their pronouns (`possessor`, `possessive`) and nouns to their
-pro-adpositions (`pro-adposition`, `noun`). The category is called
+adpositions (`adposition`, `noun`). The category is called
 *determinative* after Huddleston and Pullum (2002); *determiner* is the function.
 
-Place and time pro-forms are nouns or pro-adpositions according to the language
+Place and time pro-forms are nouns or adpositions according to the language
 (`data/pro-form-pos.tsv`). *hither*, *whence*, *everywhere* and *sometime* are
-only pro-adpositions. *here*, *there*, *where*, *now*, *then* and *when* are
+only adpositions. *here*, *there*, *where*, *now*, *then* and *when* are
 both in English, and OEWN has both senses, but Japanese *doko* is only a noun
 (*doko ni* is a phrase). So eight codes have a noun concept (`Plc;Prox`, with
-OEWN's noun ILI) and a pro-adposition with no direction specified
+OEWN's noun ILI) and an adposition with no direction specified
 (`Plc;Prox;Dir`), linked by `other` relations typed `noun` and
-`pro-adposition`; words whose direction is known get a narrower concept
+`adposition`; words whose direction is known get a narrower concept
 (`Plc;Prox;Loc+Goal` for English *here*). OEWN's adverb ILIs link to the
 concept their definition matches: *here* "in or at this place" (i18823) is
 `Plc;Prox;Loc`, *now* "at the present moment" (i18426) is `Tim;Prox;Loc`,
 *everywhere* "to or in any or all places" (i18291) is `Plc;Univ;Loc+Goal`.
 `data/word-pos.tsv` says which a language's word lexicalizes, by lemma or for
 the whole language (Japanese, Korean, Chinese, Turkish, Indonesian, Thai: nouns);
-a language it does not list is taken as using a pro-adposition. Manner, reason
+a language it does not list is taken as using an adposition. Manner, reason
 and duration pro-forms have no direction and are adverbs.
 
 **Indefinites** (`haspelmath_series.py`): Haspelmath's (1997) indefinite-pronoun

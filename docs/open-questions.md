@@ -92,7 +92,7 @@ curated, from four Indo-European languages; neither Parabank nor Haspelmath's
 CLDF data records direction.
 
 - Decided 2026-10-25: every place and time pro-form that is not a noun has a
-  direction, and is a pro-adposition (POS `p`). The unmarked direction `Dir`
+  direction, and is an adposition (POS `p`). The unmarked direction `Dir`
   (at, to or from; the ERG's `loc_nonsp`) is for words whose coverage has not
   been checked; English and French *here/there/where* (*ici/là/où*) and
   Spanish *aquí/ahí/allí* are `Loc+Goal`, English *now/then/when* `Tim;…;Loc`
@@ -115,7 +115,7 @@ source records demonstrative time. *now* has TUFS 今 (concept 8987) in seven
 languages (Arabic, Syrian Arabic, French, Japanese, Malay, Burmese, Urdu) and
 curated words in seven more; *then* has curated words only, in English, Czech,
 German, Polish, Russian and Mandarin. Like *here* and *there*, each is a noun
-(`Tim;Prox`, OEWN's *now* "the momentary present") and a pro-adposition
+(`Tim;Prox`, OEWN's *now* "the momentary present") and an adposition
 (`Tim;Prox;Dir`, English *now* `Tim;Prox;Loc`), which UD tags ADV.
 
 - *then* is taken as "at that time" (Czech *tehdy*, German *damals*). Is

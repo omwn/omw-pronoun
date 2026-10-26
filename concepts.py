@@ -19,12 +19,12 @@ Concepts come from two places:
 
 Each concept gets an English label and definition composed from its code.
 
-A place or time pro-form can be a noun or a pro-adposition, an intransitive
+A place or time pro-form can be a noun or an adposition, an intransitive
 preposition in the sense of Huddleston and Pullum (2002): English *here* is both,
-Japanese *koko* only a noun, *hither* only a pro-adposition
-(``data/pro-form-pos.tsv``). The pro-adposition is the noun plus an unspecified
+Japanese *koko* only a noun, *hither* only an adposition
+(``data/pro-form-pos.tsv``). The adposition is the noun plus an unspecified
 relation to it, the ERG's ``loc_nonsp``: its code adds the direction ``Dir``
-(at, to or from), so *here* the noun is ``Plc;Prox`` and the pro-adposition
+(at, to or from), so *here* the noun is ``Plc;Prox`` and the adposition
 ``Plc;Prox;Dir``. Words whose direction is known get a narrower code
 (``data/word-direction.tsv``): English *here* is ``Plc;Prox;Loc+Goal``, since
 "from here" needs a preposition. Manner, reason and duration pro-forms are
@@ -195,7 +195,7 @@ def directions(code: str) -> list[str]:
 
 
 def without_direction(code: str) -> str:
-    """The code with its direction slot removed: the noun of a pro-adposition.
+    """The code with its direction slot removed: the noun of an adposition.
 
     >>> without_direction("Plc;Prox;Loc+Goal"), without_direction("Ent;Sg;Prox")
     ('Plc;Prox', 'Ent;Sg;Prox')
@@ -212,10 +212,10 @@ def label(code: str, pos: str = "n") -> str:
 
     Alternatives in a slot read as "or": ``Plc;Prox+Dist`` -> "place proximal or
     distal pronoun". Choice from two comes last: ``Sg;Two;Univ`` -> "singular
-    universal pronoun of two". An adverb is a pro-adverb (``Mnr;Int`` with `pos`
-    ``r``: "manner interrogative pro-adverb"), and a pro-adposition says its
+    universal pronoun of two". An adverb (``Mnr;Int`` with `pos` ``r``) is "manner interrogative
+    adverb", and an adposition says its
     relation unless it is unmarked: ``Plc;Prox;Loc+Goal`` -> "place proximal
-    pro-adposition (at or to)".
+    adposition (at or to)".
     """
     if pos == "p":
         head = code.split(";")[0]
@@ -230,7 +230,7 @@ def label(code: str, pos: str = "n") -> str:
         )
         return (
             label(without_direction(code)).removesuffix(" pronoun")
-            + " pro-adposition"
+            + " adposition"
             + rel
         )
     parts = code.split(";")
@@ -238,7 +238,7 @@ def label(code: str, pos: str = "n") -> str:
     parts = [p for p in parts if p != "Two"]
     kind = " pronoun"
     if pos == "r":
-        kind = " pro-adverb"
+        kind = " adverb"
     elif pos == "a" or ("Poss" in parts and parts[0] != "Ent"):
         # the category, after Huddleston and Pullum (2002); determiner is the
         # function: this, which, my
@@ -255,8 +255,8 @@ def label(code: str, pos: str = "n") -> str:
 def define(code: str, pos: str = "n") -> str:
     """A definition; personal pronouns say who they refer to and how many.
 
-    A pro-adposition says its relation to a place or time:
-    ``Plc;Int;Loc+Goal`` -> "a pro-adposition: at or to a place (interrogative)".
+    An adposition says its relation to a place or time:
+    ``Plc;Int;Loc+Goal`` -> "an adposition: at or to a place (interrogative)".
     """
     if pos == "p":
         head, *rest = without_direction(code).split(";")
@@ -264,7 +264,7 @@ def define(code: str, pos: str = "n") -> str:
         rel = ", ".join(relation[d] for d in directions(code))
         rel = " or ".join(rel.rsplit(", ", 1))
         noun = {"Plc": "place", "Tim": "time"}.get(head, WORDS.get(head, head))
-        text = f"a pro-adposition: {rel} a {noun}"
+        text = f"an adposition: {rel} a {noun}"
         if rest:
             text += (
                 " ("
@@ -338,10 +338,10 @@ def parabank_concepts() -> dict[str, tuple[set[str], set[str], int]]:
 
 
 def pos_of(code: str, ntumc: dict[str, list[str]], extra_pos: dict[str, str]) -> str:
-    """A concept's part of speech: pronoun ``n``, determinative ``a``, pro-adverb
-    ``r``, pro-adposition ``p``.
+    """A concept's part of speech: pronoun ``n``, determinative ``a``, adverb
+    ``r``, adposition ``p``.
 
-    A code with a direction is a pro-adposition. Universal Dependencies tags these
+    A code with a direction is an adposition. Universal Dependencies tags these
     words ADV; the others correspond to PRON, DET and ADV. A concept folded from
     several NTUMC synsets takes the most nominal. A possessive with no head is a
     determiner (*my*; Parabank's possessives are these).
@@ -363,8 +363,8 @@ def pro_form_pos() -> dict[str, list[str]]:
     """Place, time, manner, reason and duration code -> its parts of speech.
 
     From data/pro-form-pos.tsv: ``n p`` for a code that is a noun and, with a
-    direction added, a pro-adposition; ``p`` for one that is only a
-    pro-adposition; ``r`` for an adverb.
+    direction added, an adposition; ``p`` for one that is only a
+    adposition; ``r`` for an adverb.
     """
     with (HERE / "data" / "pro-form-pos.tsv").open(encoding="utf8") as handle:
         return {
@@ -383,7 +383,7 @@ def word_directions() -> dict[str, set[str]]:
 
 
 def with_direction(code: str, direction: str = DIRECTION) -> str:
-    """The pro-adposition of a code: ``Plc;Prox`` -> ``Plc;Prox;Dir``."""
+    """The adposition of a code: ``Plc;Prox`` -> ``Plc;Prox;Dir``."""
     return f"{code};{direction}"
 
 
@@ -443,7 +443,7 @@ def main() -> None:
     print(
         f"{len(codes)} concepts: {len(ntumc)} from NTUMC, {len(from_parabank)} from"
         f" Parabank, {len(set(extra) - set(ntumc))} from extra-concepts.tsv;"
-        f" {sum('p' in p for p in forms.values())} as pro-adpositions",
+        f" {sum('p' in p for p in forms.values())} as adpositions",
         file=sys.stderr,
     )
 

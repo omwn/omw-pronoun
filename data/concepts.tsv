@@ -94,7 +94,7 @@ code	pos	label	definition	source	ntumc	parabank_languages	parabank_families	para
 Asrt	a	assertive existential determinative	an assertive existential determinative	NTUMC	02267308-a	0	0	0
 DNEG	n	direct negation pronoun	an indefinite pronoun series used for: direct negation (Haspelmath's functions)	Haspelmath		0	0	0
 Dist	a	distal determinative	a distal determinative	NTUMC	77000080-a	0	0	0
-Dur+Tim;Int	r	duration or time interrogative pro-adverb	a duration or time interrogative pro-adverb	NTUMC	77000103-n	0	0	0
+Dur+Tim;Int	r	duration or time interrogative adverb	a duration or time interrogative adverb	NTUMC	77000103-n	0	0	0
 Elec	a	elective existential determinative	an elective existential determinative	NTUMC	02267686-a	0	0	0
 Ent;1;Pl;Poss	n	first person plural possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, more than one possessor	NTUMC	77000006-n	0	0	0
 Ent;1;Sg;Poss	n	first person singular possessive pronoun	a possessive pronoun: someone or something belonging to the speaker, one possessor	NTUMC	77000107-n	0	0	0
@@ -142,13 +142,13 @@ Knd;Prox	a	kind proximal determinative	a kind proximal determinative	NTUMC	77000
 Knd;Prox+Dist	a	kind proximal or distal determinative	a kind proximal or distal determinative	TUFS curation		0	0	0
 Knd;Rem	a	kind remote determinative	a kind remote determinative	NTUMC	77000114-a	0	0	0
 Med	a	medial determinative	a medial determinative	NTUMC	77000060-a	0	0	0
-Mnr;Dist	r	manner distal pro-adverb	a manner distal pro-adverb	NTUMC	77000088-r	0	0	0
-Mnr;Elec	r	manner elective existential pro-adverb	a manner elective existential pro-adverb	NTUMC	77000028-n	0	0	0
-Mnr;Int	r	manner interrogative pro-adverb	a manner interrogative pro-adverb	NTUMC	77000090-n	0	0	0
-Mnr;Med	r	manner medial pro-adverb	a manner medial pro-adverb	NTUMC	77000113-r	0	0	0
-Mnr;Prox	r	manner proximal pro-adverb	a manner proximal pro-adverb	NTUMC	77000089-r	0	0	0
-Mnr;Prox+Dist	r	manner proximal or distal pro-adverb	a manner proximal or distal pro-adverb	TUFS curation		0	0	0
-Mnr;Rem	r	manner remote pro-adverb	a manner remote pro-adverb	NTUMC	77000114-r	0	0	0
+Mnr;Dist	r	manner distal adverb	a manner distal adverb	NTUMC	77000088-r	0	0	0
+Mnr;Elec	r	manner elective existential adverb	a manner elective existential adverb	NTUMC	77000028-n	0	0	0
+Mnr;Int	r	manner interrogative adverb	a manner interrogative adverb	NTUMC	77000090-n	0	0	0
+Mnr;Med	r	manner medial adverb	a manner medial adverb	NTUMC	77000113-r	0	0	0
+Mnr;Prox	r	manner proximal adverb	a manner proximal adverb	NTUMC	77000089-r	0	0	0
+Mnr;Prox+Dist	r	manner proximal or distal adverb	a manner proximal or distal adverb	TUFS curation		0	0	0
+Mnr;Rem	r	manner remote adverb	a manner remote adverb	NTUMC	77000114-r	0	0	0
 Oth	n	other pronoun	an other pronoun	NTUMC	77000001-n	0	0	0
 Pers;Int	n	person interrogative pronoun	a person interrogative pronoun	NTUMC	77000095-n	0	0	0
 Pers;Int;Pol	n	person interrogative polite pronoun	a person interrogative polite pronoun	TUFS ja どなた		0	0	0
@@ -166,11 +166,11 @@ Pers;Univ;Pol	n	person universal polite pronoun	a person universal polite pronou
 Pl;Dist	a	plural distal determinative	a plural distal determinative	NTUMC	77000082-a	0	0	0
 Pl;Prox	a	plural proximal determinative	a plural proximal determinative	NTUMC	77000058-a	0	0	0
 Plc;Dist	n	place distal pronoun	a place distal pronoun	NTUMC	08489627-n	0	0	0
-Plc;Dist;Dir	p	place distal pro-adposition	a pro-adposition: at, to or from a place (distal)	NTUMC	08489627-n	0	0	0
-Plc;Dist;Loc+Goal	p	place distal pro-adposition (at or to)	a pro-adposition: at or to a place (distal)	NTUMC	08489627-n	0	0	0
-Plc;Dist;Goal	p	place distal pro-adposition (to)	a pro-adposition: to a place (distal)	direction		0	0	0
-Plc;Dist;Loc	p	place distal pro-adposition (at)	a pro-adposition: at a place (distal)	direction		0	0	0
-Plc;Dist;Src	p	place distal pro-adposition (from)	a pro-adposition: from a place (distal)	direction		0	0	0
+Plc;Dist;Dir	p	place distal adposition	an adposition: at, to or from a place (distal)	NTUMC	08489627-n	0	0	0
+Plc;Dist;Loc+Goal	p	place distal adposition (at or to)	an adposition: at or to a place (distal)	NTUMC	08489627-n	0	0	0
+Plc;Dist;Goal	p	place distal adposition (to)	an adposition: to a place (distal)	direction		0	0	0
+Plc;Dist;Loc	p	place distal adposition (at)	an adposition: at a place (distal)	direction		0	0	0
+Plc;Dist;Src	p	place distal adposition (from)	an adposition: from a place (distal)	direction		0	0	0
 Plc;Fml;Med	n	place formal medial pronoun	a place formal medial pronoun	TUFS ja そちら		0	0	0
 Plc;Fml;Prox	n	place formal proximal pronoun	a place formal proximal pronoun	TUFS ja こちら		0	0	0
 Plc;Fml;Rem	n	place formal remote pronoun	a place formal remote pronoun	TUFS ja あちら		0	0	0
@@ -178,40 +178,40 @@ Plc;Infml;Med	n	place informal medial pronoun	a place informal medial pronoun	TU
 Plc;Infml;Prox	n	place informal proximal pronoun	a place informal proximal pronoun	TUFS ja こっち		0	0	0
 Plc;Infml;Rem	n	place informal remote pronoun	a place informal remote pronoun	TUFS ja あっち		0	0	0
 Plc;Int	n	place interrogative pronoun	a place interrogative pronoun	NTUMC	77000084-n	0	0	0
-Plc;Int;Dir	p	place interrogative pro-adposition	a pro-adposition: at, to or from a place (interrogative)	NTUMC	77000084-n	0	0	0
-Plc;Int;Loc+Goal	p	place interrogative pro-adposition (at or to)	a pro-adposition: at or to a place (interrogative)	NTUMC	77000084-n	0	0	0
+Plc;Int;Dir	p	place interrogative adposition	an adposition: at, to or from a place (interrogative)	NTUMC	77000084-n	0	0	0
+Plc;Int;Loc+Goal	p	place interrogative adposition (at or to)	an adposition: at or to a place (interrogative)	NTUMC	77000084-n	0	0	0
 Plc;Int;Fml	n	place interrogative formal pronoun	a place interrogative formal pronoun	TUFS ja どちら		0	0	0
-Plc;Int;Goal	p	place interrogative pro-adposition (to)	a pro-adposition: to a place (interrogative)	NTUMC	77000144-n	0	0	0
+Plc;Int;Goal	p	place interrogative adposition (to)	an adposition: to a place (interrogative)	NTUMC	77000144-n	0	0	0
 Plc;Int;Infml	n	place interrogative informal pronoun	a place interrogative informal pronoun	Japanese どっち		0	0	0
-Plc;Int;Loc	p	place interrogative pro-adposition (at)	a pro-adposition: at a place (interrogative)	NTUMC	77000143-n	0	0	0
-Plc;Int;Src	p	place interrogative pro-adposition (from)	a pro-adposition: from a place (interrogative)	direction		0	0	0
+Plc;Int;Loc	p	place interrogative adposition (at)	an adposition: at a place (interrogative)	NTUMC	77000143-n	0	0	0
+Plc;Int;Src	p	place interrogative adposition (from)	an adposition: from a place (interrogative)	direction		0	0	0
 Plc;Med	n	place medial pronoun	a place medial pronoun	NTUMC	77000117-n	0	0	0
-Plc;Med;Dir	p	place medial pro-adposition	a pro-adposition: at, to or from a place (medial)	NTUMC	77000117-n	0	0	0
-Plc;Med;Loc+Goal	p	place medial pro-adposition (at or to)	a pro-adposition: at or to a place (medial)	NTUMC	77000117-n	0	0	0
+Plc;Med;Dir	p	place medial adposition	an adposition: at, to or from a place (medial)	NTUMC	77000117-n	0	0	0
+Plc;Med;Loc+Goal	p	place medial adposition (at or to)	an adposition: at or to a place (medial)	NTUMC	77000117-n	0	0	0
 Plc;Prox	n	place proximal pronoun	a place proximal pronoun	NTUMC	08489497-n	0	0	0
-Plc;Prox;Dir	p	place proximal pro-adposition	a pro-adposition: at, to or from a place (proximal)	NTUMC	08489497-n	0	0	0
-Plc;Prox;Loc+Goal	p	place proximal pro-adposition (at or to)	a pro-adposition: at or to a place (proximal)	NTUMC	08489497-n	0	0	0
-Plc;Prox+Dist;Dir	p	place proximal or distal pro-adposition	a pro-adposition: at, to or from a place (proximal or distal)	TUFS curation		0	0	0
-Plc;Prox+Dist;Loc+Goal	p	place proximal or distal pro-adposition (at or to)	a pro-adposition: at or to a place (proximal or distal)	TUFS curation		0	0	0
-Plc;Prox;Goal	p	place proximal pro-adposition (to)	a pro-adposition: to a place (proximal)	direction		0	0	0
-Plc;Prox;Loc	p	place proximal pro-adposition (at)	a pro-adposition: at a place (proximal)	direction		0	0	0
-Plc;Prox;Src	p	place proximal pro-adposition (from)	a pro-adposition: from a place (proximal)	direction		0	0	0
+Plc;Prox;Dir	p	place proximal adposition	an adposition: at, to or from a place (proximal)	NTUMC	08489497-n	0	0	0
+Plc;Prox;Loc+Goal	p	place proximal adposition (at or to)	an adposition: at or to a place (proximal)	NTUMC	08489497-n	0	0	0
+Plc;Prox+Dist;Dir	p	place proximal or distal adposition	an adposition: at, to or from a place (proximal or distal)	TUFS curation		0	0	0
+Plc;Prox+Dist;Loc+Goal	p	place proximal or distal adposition (at or to)	an adposition: at or to a place (proximal or distal)	TUFS curation		0	0	0
+Plc;Prox;Goal	p	place proximal adposition (to)	an adposition: to a place (proximal)	direction		0	0	0
+Plc;Prox;Loc	p	place proximal adposition (at)	an adposition: at a place (proximal)	direction		0	0	0
+Plc;Prox;Src	p	place proximal adposition (from)	an adposition: from a place (proximal)	direction		0	0	0
 Plc;Rem	n	place remote pronoun	a place remote pronoun	NTUMC	77000081-n	0	0	0
-Plc;Rem;Dir	p	place remote pro-adposition	a pro-adposition: at, to or from a place (remote)	NTUMC	77000081-n	0	0	0
-Plc;Rem;Loc+Goal	p	place remote pro-adposition (at or to)	a pro-adposition: at or to a place (remote)	NTUMC	77000081-n	0	0	0
+Plc;Rem;Dir	p	place remote adposition	an adposition: at, to or from a place (remote)	NTUMC	77000081-n	0	0	0
+Plc;Rem;Loc+Goal	p	place remote adposition (at or to)	an adposition: at or to a place (remote)	NTUMC	77000081-n	0	0	0
 Plc;Sg;Asrt	n	place singular assertive existential pronoun	a place singular assertive existential pronoun	TUFS ja どこか		0	0	0
-Plc;Sg;Elec;Dir	p	place singular elective existential pro-adposition	a pro-adposition: at, to or from a place (singular, elective existential)	NTUMC	00495377-r	0	0	0
-Plc;Sg;Elec;Loc+Goal	p	place singular elective existential pro-adposition (at or to)	a pro-adposition: at or to a place (singular, elective existential)	NTUMC	00495377-r	0	0	0
+Plc;Sg;Elec;Dir	p	place singular elective existential adposition	an adposition: at, to or from a place (singular, elective existential)	NTUMC	00495377-r	0	0	0
+Plc;Sg;Elec;Loc+Goal	p	place singular elective existential adposition (at or to)	an adposition: at or to a place (singular, elective existential)	NTUMC	00495377-r	0	0	0
 Plc;Sg;Oth	n	place singular other pronoun	a place singular other pronoun	NTUMC	77000085-n	0	0	0
-Plc;Univ;Dir	p	place universal pro-adposition	a pro-adposition: at, to or from a place (universal)	NTUMC	00025728-r	0	0	0
-Plc;Univ;Loc+Goal	p	place universal pro-adposition (at or to)	a pro-adposition: at or to a place (universal)	NTUMC	00025728-r	0	0	0
+Plc;Univ;Dir	p	place universal adposition	an adposition: at, to or from a place (universal)	NTUMC	00025728-r	0	0	0
+Plc;Univ;Loc+Goal	p	place universal adposition (at or to)	an adposition: at or to a place (universal)	NTUMC	00025728-r	0	0	0
 Poss;Int	a	possessive interrogative determinative	a possessive interrogative determinative	NTUMC	77000120-a	0	0	0
 Prox	a	proximal determinative	a proximal determinative	NTUMC	77000075-a	0	0	0
 Prox+Dist	a	proximal or distal determinative	a proximal or distal determinative	TUFS curation		0	0	0
 Qnt;Int	n	quantity interrogative pronoun	a quantity interrogative pronoun	TUFS ja どのぐらい, どれぐらい		0	0	0
 Qnt;Prox	n	quantity proximal pronoun	a quantity proximal pronoun	TUFS curation		0	0	0
 Rem	a	remote determinative	a remote determinative	NTUMC	77000059-a	0	0	0
-Rsn;Int	r	reason interrogative pro-adverb	a reason interrogative pro-adverb	NTUMC	77000112-n	0	0	0
+Rsn;Int	r	reason interrogative adverb	a reason interrogative adverb	NTUMC	77000112-n	0	0	0
 SK+SU	n	specific known or specific unknown pronoun	an indefinite pronoun series used for: specific known, specific unknown (Haspelmath's functions)	Haspelmath		0	0	0
 SK+SU+IRR+Q+COND+INEG	n	specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun	an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)	Haspelmath		0	0	0
 Sg;Dist	a	singular distal determinative	a singular distal determinative	NTUMC	77000079-a	0	0	0
@@ -226,17 +226,17 @@ Thng;Sg;Asrt	n	thing singular assertive existential pronoun	a thing singular ass
 Thng;Sg;Elec	n	thing singular elective existential pronoun	a thing singular elective existential pronoun	NTUMC	77000093-n	0	0	0
 Thng;Sg;Univ	n	thing singular universal pronoun	a thing singular universal pronoun	NTUMC	77000094-n	0	0	0
 Tim;Dist	n	time distal pronoun	a time distal pronoun	time deixis		0	0	0
-Tim;Dist;Dir	p	time distal pro-adposition	a pro-adposition: at, until or since a time (distal)	time deixis		0	0	0
-Tim;Dist;Loc	p	time distal pro-adposition (at)	a pro-adposition: at a time (distal)	time deixis		0	0	0
+Tim;Dist;Dir	p	time distal adposition	an adposition: at, until or since a time (distal)	time deixis		0	0	0
+Tim;Dist;Loc	p	time distal adposition (at)	an adposition: at a time (distal)	time deixis		0	0	0
 Tim;Int	n	time interrogative pronoun	a time interrogative pronoun	NTUMC	77000104-n	0	0	0
-Tim;Int;Dir	p	time interrogative pro-adposition	a pro-adposition: at, until or since a time (interrogative)	NTUMC	77000104-n	0	0	0
-Tim;Int;Loc	p	time interrogative pro-adposition (at)	a pro-adposition: at a time (interrogative)	NTUMC	77000104-n	0	0	0
+Tim;Int;Dir	p	time interrogative adposition	an adposition: at, until or since a time (interrogative)	NTUMC	77000104-n	0	0	0
+Tim;Int;Loc	p	time interrogative adposition (at)	an adposition: at a time (interrogative)	NTUMC	77000104-n	0	0	0
 Tim;Prox	n	time proximal pronoun	a time proximal pronoun	time deixis		0	0	0
-Tim;Prox;Dir	p	time proximal pro-adposition	a pro-adposition: at, until or since a time (proximal)	time deixis		0	0	0
-Tim;Prox;Loc	p	time proximal pro-adposition (at)	a pro-adposition: at a time (proximal)	time deixis		0	0	0
-Tim;Sg;Asrt;Dir	p	time singular assertive existential pro-adposition	a pro-adposition: at, until or since a time (singular, assertive existential)	TUFS ja いつか		0	0	0
-Tim;Sg;Asrt;Loc	p	time singular assertive existential pro-adposition (at)	a pro-adposition: at a time (singular, assertive existential)	TUFS ja いつか		0	0	0
-Tim;Sg;Elec;Dir	p	time singular elective existential pro-adposition	a pro-adposition: at, until or since a time (singular, elective existential)	NTUMC	77000106-n	0	0	0
-Tim;Sg;Elec;Loc	p	time singular elective existential pro-adposition (at)	a pro-adposition: at a time (singular, elective existential)	NTUMC	77000106-n	0	0	0
+Tim;Prox;Dir	p	time proximal adposition	an adposition: at, until or since a time (proximal)	time deixis		0	0	0
+Tim;Prox;Loc	p	time proximal adposition (at)	an adposition: at a time (proximal)	time deixis		0	0	0
+Tim;Sg;Asrt;Dir	p	time singular assertive existential adposition	an adposition: at, until or since a time (singular, assertive existential)	TUFS ja いつか		0	0	0
+Tim;Sg;Asrt;Loc	p	time singular assertive existential adposition (at)	an adposition: at a time (singular, assertive existential)	TUFS ja いつか		0	0	0
+Tim;Sg;Elec;Dir	p	time singular elective existential adposition	an adposition: at, until or since a time (singular, elective existential)	NTUMC	77000106-n	0	0	0
+Tim;Sg;Elec;Loc	p	time singular elective existential adposition (at)	an adposition: at a time (singular, elective existential)	NTUMC	77000106-n	0	0	0
 Two;Univ	a	universal determinative of two	a universal determinative of two	NTUMC	77000076-a	0	0	0
 Univ	a	universal determinative	a universal determinative	NTUMC	02269286-a	0	0	0

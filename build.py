@@ -15,7 +15,7 @@ The design follows the KinDiv wordnet:
 - ``omw-pronoun-<tag>`` holds one language's words; the hierarchy is reached
   through the ILI once CILI accepts the proposals. Its only relations link one
   lemma's senses across parts of speech by ``derivation``: *here* the noun and
-  *here* the pro-adposition, *this* the pronoun and *this* the determiner.
+  *here* the adposition, *this* the pronoun and *this* the determinative.
 
 Case is inflection: case forms are ``<Form>`` variants tagged with their case,
 never separate concepts. Bound forms (affixes) are variants of the free pronoun
@@ -159,8 +159,8 @@ def slug(code: str) -> str:
     return code.replace(";", "-").replace("+", "_")
 
 
-#: concept code -> part of speech (n pronoun, a determiner, r pro-adverb, p
-#: pro-adposition), filled from data/concepts.tsv by `main`
+#: concept code -> part of speech (n pronoun, a determinative, r adverb, p
+#: adposition), filled from data/concepts.tsv by `main`
 POS: dict[str, str] = {}
 #: lexicographer file per part of speech: pro-forms cut across parts of speech
 LEXFILES = {
@@ -185,7 +185,7 @@ EXPAND = {
     "Pl": {"Du", "Tr", "Gpl"},
     # distal is not proximal: English *that* covers Japanese *sore* and *are*
     "Dist": {"Med", "Rem"},
-    # a pro-adposition with no direction specified: at, to or from (the ERG's
+    # an adposition with no direction specified: at, to or from (the ERG's
     # loc_nonsp); English *here* is Loc+Goal, Czech *zde* Loc, *sem* Goal
     "Dir": {"Loc", "Goal", "Src"},
     # the English-based indefinite types are unions of Haspelmath's functions,
@@ -277,7 +277,7 @@ def subsumes(general: str, specific: str) -> bool:
 
     A possessive is not a kind of its pronoun (*my* is not a kind of *I*), so
     possessives and non-possessives never subsume each other; likewise a code
-    with a direction (a pro-adposition) and one without (a noun).
+    with a direction (an adposition) and one without (a noun).
 
     >>> subsumes("1;Sg", "1;Sg;Poss"), subsumes("1;Poss", "1;Sg;Poss")
     (False, True)
@@ -647,13 +647,13 @@ def place_pro_forms(languages: dict[str, Language]) -> None:
     """Move each word of a place or time code to its language's reading.
 
     The sources file *here* under the code alone, which is the noun. Whether a
-    language's word is a noun, a pro-adposition or both is a fact about that
+    language's word is a noun, an adposition or both is a fact about that
     language: English *here* is both, Japanese *koko* only a noun (*koko ni* is
     adverbial). data/word-pos.tsv says so by lemma or for the whole language
-    (``*``); a language it does not list is taken as using a pro-adposition, as
-    English and the European languages do. The pro-adposition is the code with
+    (``*``); a language it does not list is taken as using an adposition, as
+    English and the European languages do. The adposition is the code with
     the direction the word is known to cover (data/word-direction.tsv), else
-    ``Dir``. Where the code has no noun concept, every word is a pro-adposition.
+    ``Dir``. Where the code has no noun concept, every word is an adposition.
     """
     rules = read_word_pos()
     known = read_word_directions()
@@ -682,7 +682,7 @@ def place_pro_forms(languages: dict[str, Language]) -> None:
 def counterpart(key: str) -> str:
     """What a concept shares with the same word's concept in another part of speech.
 
-    *here* the noun (``Plc;Prox``) and *here* the pro-adposition
+    *here* the noun (``Plc;Prox``) and *here* the adposition
     (``Plc;Prox;Loc+Goal``) differ only in the direction; *this* the pronoun
     (``Ent;Sg;Prox``) and *this* the determiner (``Sg;Prox``) only in ``Ent``.
 
@@ -846,25 +846,25 @@ def possessive_links(code: str, codes: set[str]) -> list[tuple[str, str]]:
 
 
 def direction_links(code: str, pos: dict[str, str]) -> list[tuple[str, str]]:
-    """Link a noun to its pro-adposition with no direction specified, and back.
+    """Link a noun to its adposition with no direction specified, and back.
 
-    *here* the noun (``Plc;Prox``) is the place the pro-adposition
+    *here* the noun (``Plc;Prox``) is the place the adposition
     ``Plc;Prox;Dir`` relates to. WN-LMF has no synset relation for this, so it is
     ``other`` with a ``dc:type``, as for possessives: ``noun`` from the
-    pro-adposition, ``pro-adposition`` from the noun. Narrower pro-adpositions
+    adposition, ``adposition`` from the noun. Narrower adpositions
     reach the noun through their hypernym.
 
     >>> direction_links("Plc;Prox;Dir", {"Plc;Prox": "n", "Plc;Prox;Dir": "p"})
     [('noun', 'Plc;Prox')]
     >>> direction_links("Plc;Prox", {"Plc;Prox": "n", "Plc;Prox;Dir": "p"})
-    [('pro-adposition', 'Plc;Prox;Dir')]
+    [('adposition', 'Plc;Prox;Dir')]
     """
     if pos.get(code) == "p" and code.endswith(";" + concept_table.DIRECTION):
         noun = concept_table.without_direction(code)
         return [("noun", noun)] if pos.get(noun) == "n" else []
     target = concept_table.with_direction(code)
     if pos.get(code) == "n" and pos.get(target) == "p":
-        return [("pro-adposition", target)]
+        return [("adposition", target)]
     return []
 
 
@@ -926,7 +926,7 @@ def feature_links(
     """Relations from a concept to its feature synsets.
 
     The head of a pronoun is its hypernym, as in NTUMC (*who* is a kind of
-    person). A determiner or pro-adverb is not a kind of the noun that heads it
+    person). A determinative, adverb or adposition is not a kind of the noun that heads it
     (*such* is not a kind of kind), so its head is linked by ``attribute``, as
     NTUMC links kind and manner. Every other feature is linked by
     ``exemplifies``, NTUMC's usage-domain link. Direction is read by head: the
@@ -1143,8 +1143,8 @@ def read_concept_ili() -> dict[str, str]:
 POS_NAMES = {
     "n": "pronoun",
     "a": "determinative",
-    "p": "pro-adposition",
-    "r": "pro-adverb",
+    "p": "adposition",
+    "r": "adverb",
 }
 
 
@@ -1227,7 +1227,7 @@ def main() -> None:
         concepts = list(csv.DictReader(handle, delimiter="\t"))
     POS.update({c["code"]: c["pos"] for c in concepts})
     # the sources give place and time words under the bare code, the noun, which
-    # place_pro_forms moves to the pro-adposition; some codes have no noun
+    # place_pro_forms moves to the adposition; some codes have no noun
     codes = {c["code"] for c in concepts} | {
         concept_table.without_direction(c) for c, p in POS.items() if p == "p"
     }

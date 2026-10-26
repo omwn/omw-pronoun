@@ -98,13 +98,13 @@ def test_a_place_code_is_a_noun_and_a_pro_adposition() -> None:
     assert parents["Plc;Prox;Loc"] == parents["Plc;Prox;Goal"] == {"Plc;Prox;Loc+Goal"}
     # hence is not a kind of here: English here does not cover "from"
     assert parents["Plc;Prox;Src"] == {"Plc;Prox;Dir"}
-    # the noun lacks the relation, so it is not above the pro-adposition
+    # the noun lacks the relation, so it is not above the adposition
     assert parents["Plc;Prox"] == parents["Plc;Prox;Dir"] == set()
     assert concepts.label("Plc;Prox;Loc+Goal", "p") == (
-        "place proximal pro-adposition (at or to)"
+        "place proximal adposition (at or to)"
     )
     assert concepts.define("Tim;Int;Dir", "p") == (
-        "a pro-adposition: at, until or since a time (interrogative)"
+        "an adposition: at, until or since a time (interrogative)"
     )
     assert build.feature_links("Plc;Prox;Dir", build.read_features(), "p") == [
         ("attribute", "Plc"),
@@ -114,9 +114,7 @@ def test_a_place_code_is_a_noun_and_a_pro_adposition() -> None:
     used = ["Loc", "Goal", "Src", "Dir", "Tmp", "Role"]
     assert ("hypernym", "Role") in build.feature_hierarchy("Dir", used)
     assert ("hypernym", "Dir") in build.feature_hierarchy("Tmp", used)
-    assert build.direction_links("Plc;Prox", pos) == [
-        ("pro-adposition", "Plc;Prox;Dir")
-    ]
+    assert build.direction_links("Plc;Prox", pos) == [("adposition", "Plc;Prox;Dir")]
 
 
 def test_words_take_their_languages_part_of_speech_and_direction(
@@ -275,7 +273,7 @@ def test_first_person_is_exclusive_only_where_an_inclusive_contrasts() -> None:
 def test_subsumes_is_containment_of_feature_assignments() -> None:
     # FEATURES.md: a code denotes the assignments that agree with its features;
     # an unfilled slot allows any value or none, except case (non-possessive) and
-    # direction (a noun, not a pro-adposition), which mean the relation is absent
+    # direction (a noun, not an adposition), which mean the relation is absent
     with (build.DATA / "concepts.tsv").open(encoding="utf8") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     codes = [r["code"] for r in rows]
