@@ -1,0 +1,46 @@
+concept	wikidata	wikidata_label	relation	lexical_category	note
+1;Sg	Q51929218	first-person singular	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+2;Sg	Q51929369	second-person singular	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+3;Sg	Q51929447	third-person singular	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+1;Pl	Q51929290	first-person plural	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+2;Pl	Q51929403	second-person plural	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+3;Pl	Q51929517	third-person plural	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+1;Du	Q116146561	first-person dual	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+2;Du	Q116146572	second-person dual	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+3;Du	Q116146594	third-person dual	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+1e;Pl	Q130451295	exclusive first-person plural	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+1i;Pl	Q130451186	inclusive first-person plural	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+1e;Du	Q130451461	exclusive first-person dual	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+1i;Du	Q130451374	inclusive first-person dual	exact	pronoun	a grammatical-category item (person and number), which Concepticon also links to
+2	Q51929049	second person	exact	pronoun	a grammatical-category item
+3	Q51929074	third person	exact	pronoun	a grammatical-category item
+3;Sg;M	Q52431955	third-person masculine singular	exact	pronoun	a grammatical-category item
+3;Pl;Poss	Q56703584	third-person plural possessive	exact		a grammatical-category item
+1;Sg	Q49404	I	exact	pronoun	
+2	Q1165897	you	exact	pronoun	'personal pronoun to denote the interlocutor', of any number
+3;Sg;M	Q1196074	he	exact	pronoun	described as the English word
+3;Sg;F	Q1270787	she	exact	pronoun	
+3;Sg;N	Q6091500	it	exact	pronoun	
+Pers;Int	Q20656443	who	exact	pronoun	
+Thng;Int	Q12892367	what	exact	pronoun	
+Ent;Int	Q12892337	which	exact	pronoun	
+Int	Q12892337	which	exact	determiner	
+Mnr;Int	Q20656452	how	exact		
+Qnt;Int	Q54311997	how many	exact		
+Plc;Int	Q12919272	where	exact	pronoun	adverbs are left out: the item does not say at, to or from
+Plc;Prox	Q20201429	here	exact	pronoun	adverbs are left out: the item does not say at, to or from
+Tim;Prox	Q18488805	now	exact	pronoun	
+Tim;Prox;Loc	Q18488805	now	exact	adverb	the adverb: at the present time
+Thng;Sg;Asrt	Q120077072	something	exact	pronoun	
+Pers;Sg;Asrt	Q112030709	someone	exact	pronoun	
+Ent;Sg;Univ	Q2165236	everything	exact	pronoun	as English everything in this wordnet
+Pers;Univ	Q115421767	everyone	exact	pronoun	
+Ent;Sg;Neg	Q141099508	none	exact	pronoun	
+Plc;Univ;Loc+Goal	Q31366423	everywhere	exact	adverb	'in or to all locations'
+Ent;Sg;Oth	Q55107540	other	exact	pronoun	
+Sg;Oth	Q55107540	other	exact	determiner	
+Ent;Elec	Q52557710	any	exact	pronoun	
+Elec	Q52557710	any	exact	determiner	
+Sg;Univ	Q12888812	each	exact	determiner	
+Ent;Pl;Dist	Q15614921	those	exact	pronoun	
+Pl;Dist	Q15614921	those	exact	determiner	described as a plural distal demonstrative adjective

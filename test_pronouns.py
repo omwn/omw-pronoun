@@ -369,3 +369,15 @@ def test_concept_codes_follow_the_slot_order() -> None:
         if slots != sorted(slots):
             disordered.add(code)
     assert not disordered
+
+
+def test_wikidata_links_name_our_concepts() -> None:
+    """Each Wikidata link names a concept we have, once per item and category."""
+    with (build.DATA / "concepts.tsv").open(encoding="utf8") as handle:
+        codes = {row["code"] for row in csv.DictReader(handle, delimiter="\t")}
+    with (build.DATA / "concept-wikidata.tsv").open(encoding="utf8") as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    assert {row["concept"] for row in rows} <= codes
+    assert {row["relation"] for row in rows} <= {"exact", "broader", "narrower"}
+    keys = [(row["wikidata"], row["lexical_category"]) for row in rows]
+    assert len(keys) == len(set(keys))

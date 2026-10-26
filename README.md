@@ -11,6 +11,7 @@ uv run parabank_words.py     # Parabank paradigms   -> data/parabank-lexemes.tsv
 uv run tufs_pronouns.py      # TUFS pro-forms       -> data/tufs-pronouns.tsv (curated in data/tufs-curation.tsv)
 uv run haspelmath_series.py  # indefinite series    -> data/haspelmath-series.tsv
 uv run wordnet_words.py      # words via the ILI    -> data/wordnet-words.tsv
+uv run wikidata_words.py     # Wikidata lexemes     -> data/wikidata-words.tsv (not yet built)
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
 uv run build.py              # wn collection        -> release/omw-pronoun-0.2.1(.tar.xz), docs/hierarchy/data.js
 uv run facts.py              # the paper's figures  -> data/facts.json
@@ -227,6 +228,15 @@ ILI until CILI assigns one.
   synsets in `data/ntumc-extra.tsv` count with them. Nobody has checked these as
   pronouns (Indonesian *waktu* "time" comes in for *then*), so the browser shows
   them only on request, marked as unchecked.
+- **Wikidata lexemes** (`wikidata_words.py`, `data/wikidata-words.tsv`, CC0):
+  candidates only, not yet used by the build. `data/concept-wikidata.tsv` links
+  42 concepts to Wikidata items, both grammatical categories (*first-person
+  singular*, Q51929218, which Concepticon's I also links to) and words (*who*,
+  Q20656443), optionally restricted to one lexical category (*now* is
+  `Tim;Prox` as a pronoun and `Tim;Prox;Loc` as an adverb). A lexeme whose
+  sense names a linked item (P5137) is a candidate word: 889 in 136 languages.
+  Many give the spelling where our only form is a Parabank transcription
+  (Swedish *jag* for *jɑːg*, Tamil நான் for *naan*).
 - **Parabank Pronoun** (Greenhill et al., CC BY 4.0): one lexeme per set of
   cells sharing a row of case forms. Caveats:
   - Its gender slots are positional (English *she* is in `3sg_n`, Hindi uses them
