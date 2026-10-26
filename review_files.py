@@ -30,6 +30,7 @@ import cygnet_wordnets
 import ntumc_pronouns
 from build import (
     NTUMC_LANGUAGES,
+    VERSION,
     feature_links,
     hypernyms,
     ntumc_lemmas,
@@ -296,9 +297,9 @@ def english_lemmas() -> dict[str, list[str]]:
     path = (
         HERE
         / "release"
-        / "omw-pronoun-0.1"
+        / f"omw-pronoun-{VERSION}"
         / "omw-pronoun-en"
-        / "omw-pronoun-en-0.1.xml"
+        / f"omw-pronoun-en-{VERSION}.xml"
     )
     root = ElementTree.parse(path).getroot()
     dc = "{https://globalwordnet.github.io/schemas/dc/}identifier"
@@ -447,7 +448,13 @@ def write_lexicon(
     lemma comes from (NTUMC, Parabank, ...).
     """
     lexicon = f"omw-pronoun-{tag}"
-    path = HERE / "release" / "omw-pronoun-0.1" / lexicon / f"{lexicon}-0.1.xml"
+    path = (
+        HERE
+        / "release"
+        / f"omw-pronoun-{VERSION}"
+        / lexicon
+        / f"{lexicon}-{VERSION}.xml"
+    )
     root = ElementTree.parse(path).getroot()
     dc = "{https://globalwordnet.github.io/schemas/dc/}"
     code_of = {
