@@ -58,7 +58,7 @@ DATA = HERE / "data"
 #: the hierarchy browser, docs/hierarchy/index.html, and the data it shows
 BROWSER = HERE / "docs" / "hierarchy"
 BASE = "omw-pronoun"
-VERSION = "0.2"
+VERSION = "0.2.1"
 EMAIL = "bond@ieee.org"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 URL = "https://github.com/omwn/omw-pronoun"

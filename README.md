@@ -12,7 +12,7 @@ uv run tufs_pronouns.py      # TUFS pro-forms       -> data/tufs-pronouns.tsv (c
 uv run haspelmath_series.py  # indefinite series    -> data/haspelmath-series.tsv
 uv run wordnet_words.py      # words via the ILI    -> data/wordnet-words.tsv
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
-uv run build.py              # wn collection        -> release/omw-pronoun-0.2(.tar.xz), docs/hierarchy/data.js
+uv run build.py              # wn collection        -> release/omw-pronoun-0.2.1(.tar.xz), docs/hierarchy/data.js
 uv run facts.py              # the paper's figures  -> data/facts.json
 uv run --with pytest --with langcodes --with language_data pytest
 ```
@@ -26,7 +26,7 @@ Sources are read from sibling clones: `../NTUMC` (built database), `../tufs`, an
 collection with OEWN as its English base (configured in `etc/`):
 
 ```
-bash cygnet.sh   # release/omw-pronoun-0.2/ -> docs/pronoun-cygnet.db.gz, docs/pronoun-provenance.db.gz
+bash cygnet.sh   # release/omw-pronoun-0.2.1/ -> docs/pronoun-cygnet.db.gz, docs/pronoun-provenance.db.gz
 bash run.sh      # serve docs/ locally
 ```
 
