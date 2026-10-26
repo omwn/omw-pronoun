@@ -49,11 +49,11 @@ omw-pronoun-anv	Denya	12	12	11
 omw-pronoun-aoa	Angolar	13	13	11
 omw-pronoun-aoi	Anindilyakwa	20	20	20
 omw-pronoun-aoj	Mufian	20	20	20
-omw-pronoun-apc	North Levantine Arabic	40	42	32
+omw-pronoun-apc	North Levantine Arabic	36	38	32
 omw-pronoun-ape	Bukiyip	15	15	15
 omw-pronoun-app	Abma	18	22	22
 omw-pronoun-apr	Arop-Lokep	24	24	24
-omw-pronoun-ar	Standard Arabic stan1318	52	55	39
+omw-pronoun-ar	Standard Arabic stan1318	50	53	39
 omw-pronoun-ard	Arabana	22	22	22
 omw-pronoun-arh	Arhuaco	14	14	14
 omw-pronoun-arv	Arbore	10	10	10
@@ -132,7 +132,7 @@ omw-pronoun-cid	Chimariko 	8	8	8
 omw-pronoun-cjp	Cabecar	15	15	14
 omw-pronoun-cku	Koasati	8	8	8
 omw-pronoun-cmi	Embera-Chamí	13	13	12
-omw-pronoun-cmn	Mandarin Chinese	268	300	90
+omw-pronoun-cmn	Mandarin Chinese	256	289	86
 omw-pronoun-cmn-Hant	Mandarin Chinese (traditional)	1	1	1
 omw-pronoun-cof	Tsafiki	18	18	12
 omw-pronoun-cou	Konyagi	13	13	12
@@ -157,7 +157,7 @@ omw-pronoun-dar	Dargwa	10	10	10
 omw-pronoun-dbj	Ida'an	15	15	14
 omw-pronoun-dbl	Dyirbal	18	18	16
 omw-pronoun-ddj	Jaru	18	18	18
-omw-pronoun-de	German	42	45	41
+omw-pronoun-de	German	40	43	41
 omw-pronoun-den	Slavey	10	10	10
 omw-pronoun-dga	Dagaare	13	13	12
 omw-pronoun-dhv	Dehu	22	22	22
@@ -168,7 +168,7 @@ omw-pronoun-djj	Ndjébbana	21	21	21
 omw-pronoun-djk	Ndyuka	12	12	12
 omw-pronoun-djm	Dogon, Jamsay	10	10	10
 omw-pronoun-dju	Kapriman	16	16	16
-omw-pronoun-dmd	Mathi-Mathi	17	20	19
+omw-pronoun-dmd	Mathi-Mathi	18	20	19
 omw-pronoun-dmo	Kemedzung	11	11	11
 omw-pronoun-dnw	Western Dani	31	34	13
 omw-pronoun-drl	Paakantyi	19	19	18
@@ -297,7 +297,7 @@ omw-pronoun-kgp	Kaingang	10	10	10
 omw-pronoun-kgq	Kamoro	12	14	14
 omw-pronoun-khc	Tukang Besi	13	13	13
 omw-pronoun-khe	Korowai	18	18	12
-omw-pronoun-khk	Mongolian	35	37	32
+omw-pronoun-khk	Mongolian	30	32	32
 omw-pronoun-kig	Kimaghima	12	12	12
 omw-pronoun-kij	Kilivila	28	28	19
 omw-pronoun-kio	Kiowa	6	6	6
@@ -498,7 +498,7 @@ omw-pronoun-roo	Rotokas	19	20	18
 omw-pronoun-rop	Kriol	22	22	22
 omw-pronoun-ror	Rongga	14	14	14
 omw-pronoun-rth	Ratahan	14	14	14
-omw-pronoun-ru	Russian	49	51	44
+omw-pronoun-ru	Russian	43	45	44
 omw-pronoun-sa	Sanskrit	24	25	19
 omw-pronoun-sah	Yakut	2	2	2
 omw-pronoun-sbc	Kele	22	22	22
@@ -561,7 +561,7 @@ omw-pronoun-tiq	Tiéfo	10	10	10
 omw-pronoun-tit	Tinigua	10	10	10
 omw-pronoun-tk	Turkmen	12	12	12
 omw-pronoun-tkw	Teanu	44	44	22
-omw-pronoun-tl	Tagalog	33	33	31
+omw-pronoun-tl	Tagalog	32	32	31
 omw-pronoun-tlc	Totonac	12	12	12
 omw-pronoun-tn	Tswana	12	12	12
 omw-pronoun-tnk	Kwamera	22	22	22
@@ -569,7 +569,7 @@ omw-pronoun-tnr	Tanda	12	12	12
 omw-pronoun-tnx	Tanema	22	22	22
 omw-pronoun-tpi	Tok Pisin	22	22	22
 omw-pronoun-tqo	Toaripi	20	20	20
-omw-pronoun-tr	Turkish	53	57	44
+omw-pronoun-tr	Turkish	50	55	44
 omw-pronoun-trf	Teribe	14	14	14
 omw-pronoun-trv	Taroko	14	15	15
 omw-pronoun-tsj	Tshangla	18	18	18
@@ -589,7 +589,7 @@ omw-pronoun-ulk	Meriam	14	14	14
 omw-pronoun-ump	Umpila umpi1239	17	17	16
 omw-pronoun-ung	Ungarinyin	23	23	23
 omw-pronoun-unr	Mundari	23	31	22
-omw-pronoun-ur	Urdu	39	48	35
+omw-pronoun-ur	Urdu	36	45	35
 omw-pronoun-uri	Urim	20	20	20
 omw-pronoun-usa	Usarufa	4	4	4
 omw-pronoun-ute	Ute-Southern Paiute	16	16	16

@@ -15,7 +15,7 @@ uv run wikidata_words.py     # Wikidata lexemes     -> data/wikidata-words.tsv (
 uv run concepts.py           # concept inventory    -> data/concepts.tsv
 uv run build.py              # wn collection        -> release/omw-pronoun-0.2.1(.tar.xz), docs/hierarchy/data.js
 uv run facts.py              # the paper's figures  -> data/facts.json
-uv run --with pytest --with langcodes --with language_data pytest
+uv run --with pytest --with langcodes --with language_data --with unidecode pytest
 ```
 
 Sources are read from sibling clones: `../NTUMC` (built database), `../tufs`, and
@@ -229,7 +229,7 @@ ILI until CILI assigns one.
   pronouns (Indonesian *waktu* "time" comes in for *then*), so the browser shows
   them only on request, marked as unchecked.
 - **Wikidata lexemes** (`wikidata_words.py`, `data/wikidata-words.tsv`, CC0):
-  candidates only, not yet used by the build. `data/concept-wikidata.tsv` links
+  candidates; the build uses them only as spellings of Parabank transcriptions. `data/concept-wikidata.tsv` links
   42 concepts to Wikidata items, both grammatical categories (*first-person
   singular*, Q51929218, which Concepticon's I also links to) and words (*who*,
   Q20656443), optionally restricted to one lexical category (*now* is
@@ -247,8 +247,15 @@ ILI until CILI assigns one.
   - A genderless cell (`3p-s`) fills only genders the paradigm leaves empty:
     Spanish has both `3pl_f` *ellas* and `3p-s` *ellos*.
   - Its forms are as transcribed in each source (IPA for English, pinyin for
-    Mandarin). Languages NTUMC covers use NTUMC's spellings instead; transcribed
-    forms carry a `<Pronunciation>`.
+    Mandarin). A transcription (IPA, or Latin letters for a language written in
+    another script) becomes a `<Pronunciation>` of the spelled word it
+    transcribes: a word for the same concept from a checked source, or else a
+    Wikidata lexeme in the language's usual script that matches it letter by
+    letter (Swedish *jag* for *jɑːg*, Abkhaz *сара* for *sarà*). Otherwise it
+    stays a lemma, carrying itself as its pronunciation; languages NTUMC covers
+    keep no such lemmas.
+  - A lexeme with no subject or agent form takes its object form as lemma
+    (Ukrainian *vas*).
 - **TUFS** (`tufs_pronouns.py`, then `data/tufs-curation.tsv`): 46 Japanese
   headwords for personal pronouns, demonstratives (これ/この/ここ...),
   interrogatives (何, どこ, いつ, なぜ...) and universals, translated into 22

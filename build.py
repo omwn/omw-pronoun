@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["langcodes", "language_data"]
+# dependencies = ["langcodes", "language_data", "unidecode"]
 # ///
 """Build the OMW pronoun wordnet as a wn collection of WN-LMF 1.4 packages.
 
@@ -27,7 +27,10 @@ Word sources, in order: NTUMC (orthographic, the synsets still in its current
 database), ``data/extra-lemmas.tsv`` (curated), Parabank Pronoun (languages NTUMC
 lacks, or where Parabank's forms are orthographic), and TUFS, whose forms are
 used only when they confirm a word already found (``data/tufs-candidates.tsv``
-lists the rest for curation).
+lists the rest for curation). A Parabank transcription (IPA, or a romanization
+of a language written in another script) becomes the pronunciation of the
+spelled word it transcribes, taken from another source or from a Wikidata
+lexeme, and stays a lemma only where no spelling is found.
 
 Usage: uv run build.py
 """
@@ -44,10 +47,13 @@ import unicodedata
 from collections import defaultdict
 from collections.abc import Iterator
 from dataclasses import dataclass, field
+from difflib import SequenceMatcher
+from functools import cache
 from pathlib import Path
 from xml.sax.saxutils import escape, quoteattr
 
 import langcodes
+from unidecode import unidecode
 
 import concepts as concept_table
 
@@ -336,6 +342,7 @@ class Entry:
     senses: dict[str, set[str]] = field(default_factory=lambda: defaultdict(set))
     transcribed: bool = False
     pos: str = "n"
+    pronunciations: set[str] = field(default_factory=set)  # transcriptions of the lemma
 
 
 @dataclass
@@ -477,26 +484,79 @@ def bcp47(iso: str) -> str:
     return ours.get(iso) or MACRO.get(iso) or langcodes.standardize_tag(iso)
 
 
+@cache
+def usual_script(tag: str) -> str:
+    """The script a language is usually written in (ISO 15924), or ''."""
+    try:
+        return langcodes.Language.get(tag).maximize().script or ""
+    except (ValueError, LookupError):
+        return ""
+
+
+def romanized(form: str, tag: str) -> bool:
+    """Whether `form` is a Latin-letter form of a language written in another script.
+
+    >>> romanized("wǒmen", "cmn"), romanized("vas", "uk"), romanized("vy", "cs")
+    (True, True, False)
+    """
+    return script_of(form) == "Latn" and usual_script(tag) not in ("", "Latn")
+
+
+def in_usual_script(form: str, tag: str) -> bool:
+    """Whether `form` is in the script its language is usually written in.
+
+    >>> in_usual_script("сара", "ab"), in_usual_script("sara", "ab")
+    (True, False)
+    >>> in_usual_script("我們", "cmn"), in_usual_script("jag", "sv")
+    (True, True)
+    """
+    usual = {"Hans": "Hani", "Hant": "Hani"}.get(usual_script(tag), usual_script(tag))
+    if usual == "Jpan":
+        return script_of(form) in ("Jpan", "Hani", "Hira", "Kana")
+    return not usual or script_of(form) == usual
+
+
+def ipa_languages(rows: list[dict[str, str]]) -> set[str]:
+    """ISO codes of the languages whose Parabank forms are in IPA."""
+    return {
+        r["iso639_3"]
+        for r in rows
+        if IPA.search(r["lemma"] + r["variants"]) or ":" in r["lemma"]
+    }
+
+
+def is_transcription(row: dict[str, str], ipa: set[str]) -> bool:
+    """Whether a Parabank lexeme is transcribed: IPA, or a romanization."""
+    return row["iso639_3"] in ipa or romanized(row["lemma"], bcp47(row["iso639_3"]))
+
+
+def skipped_parabank(row: dict[str, str], ipa: set[str]) -> bool:
+    """Whether the build leaves out a Parabank lexeme.
+
+    A language NTUMC already covers keeps only Parabank's orthographic forms:
+    English ``aj``, ``ðɛj`` are left out. Its romanizations (Mandarin ``wǒmen``)
+    are kept only as pronunciations (`attach_transcriptions`).
+    """
+    ntumc_tags = {t for t, _ in NTUMC_LANGUAGES.values()}
+    return bcp47(row["iso639_3"]) in ntumc_tags and row["iso639_3"] in ipa
+
+
 def add_parabank(languages: dict[str, Language], codes: set[str]) -> None:
     """Add Parabank lexemes: case and bound forms as variants.
 
-    A language NTUMC already covers keeps only Parabank's orthographic forms; one
-    whose Parabank forms are transcriptions (English ``aj``, ``ðɛj``) is skipped.
+    Transcribed lexemes are marked, for `attach_transcriptions`; those of a
+    language NTUMC covers are skipped (`skipped_parabank`).
     """
     with (DATA / "parabank-lexemes.tsv").open(encoding="utf8") as handle:
         rows = [r for r in csv.DictReader(handle, delimiter="\t") if r["iso639_3"]]
-    transcribed = defaultdict(bool)
-    for row in rows:
-        if IPA.search(row["lemma"] + row["variants"]) or ":" in row["lemma"]:
-            transcribed[row["iso639_3"]] = True
-    ntumc_tags = {t for t, _ in NTUMC_LANGUAGES.values()}
+    ipa = ipa_languages(rows)
     free = {(r["language_id"], r["code"]): r for r in rows if r["analect"] == "free"}
     for row in rows:
         code = row["code"]
         if code not in codes:
             continue
         tag = bcp47(row["iso639_3"])
-        if tag in ntumc_tags and transcribed[row["iso639_3"]]:
+        if skipped_parabank(row, ipa):
             continue
         language = languages.setdefault(tag, Language(tag, row["language"]))
         source = f"Parabank {row['language_id']}"
@@ -509,12 +569,117 @@ def add_parabank(languages: dict[str, Language], codes: set[str]) -> None:
             entry.forms.setdefault(row["lemma"], []).append(("morph", "bound"))
         else:
             entry = language.entry(row["lemma"], code, bound=bound)
-        entry.transcribed |= transcribed[row["iso639_3"]]
+        entry.transcribed |= is_transcription(row, ipa)
         entry.senses[code].add(source)
         for variant in filter(None, row["variants"].split("; ")):
             case, form = variant.split(":", 1)
             tags = [("case", case)] + ([("morph", "bound")] if bound else [])
             entry.forms.setdefault(form, []).extend(tags)
+
+
+def read_wikidata_words() -> dict[tuple[str, str], dict[str, str]]:
+    """Wikidata lexemes by (tag, concept): word -> source (``wikidata_words.py``)."""
+    words: dict[tuple[str, str], dict[str, str]] = defaultdict(dict)
+    with (DATA / "wikidata-words.tsv").open(encoding="utf8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            words[row["tag"], row["concept"]].setdefault(row["word"], row["source"])
+    return words
+
+
+def spelled_as(transcription: str, spellings: list[str]) -> list[str]:
+    """The spellings a transcription transcribes, compared letter by letter.
+
+    Both are reduced to ASCII letters (Unidecode). The best spelling must score
+    at least 0.6 and beat the next by 0.1, except that spellings tied at 1.0 are
+    all kept.
+
+    >>> spelled_as("jɑːg", ["jag", "mig"]), spelled_as("wǒ", ["我", "俺"])
+    (['jag'], ['我'])
+    >>> spelled_as("ne", ["he"])
+    []
+    """
+
+    def letters(text: str) -> str:
+        return "".join(ch for ch in unidecode(text).lower() if ch.isalpha())
+
+    scored = sorted(
+        (
+            (SequenceMatcher(None, letters(s), letters(transcription)).ratio(), s)
+            for s in spellings
+        ),
+        reverse=True,
+    )
+    if not scored:
+        return []
+    best = scored[0][0]
+    if best == 1.0:
+        return [s for score, s in scored if score == 1.0]
+    runner_up = scored[1][0] if len(scored) > 1 else 0.0
+    return [scored[0][1]] if best >= 0.6 and best - runner_up >= 0.1 else []
+
+
+def attach_transcriptions(
+    languages: dict[str, Language], wikidata: dict[tuple[str, str], dict[str, str]]
+) -> None:
+    """Make each Parabank transcription the pronunciation of the word it transcribes.
+
+    For each concept of a transcribed free lemma (Swedish *jɑːg*, Mandarin
+    *wǒ*), the spelling is a word of the language for the same concept from a
+    checked source: the one `spelled_as` picks, or else the only one. Failing
+    that, it is a Wikidata lexeme that `spelled_as` picks, which joins the
+    language with both sources; it must be in the language's usual script
+    (Abkhaz *сара*, not Wikidata's transliteration *sara*). The spelled word gets the concept, Parabank's
+    sources, its spelled case forms and the transcription as a pronunciation;
+    the transcribed entry
+    loses the concept, and goes when it has none left (with its transcribed case
+    forms). Where no spelling is found, the transcription stays a lemma, except
+    in a language NTUMC covers, whose words are all spelled. A spelling identical
+    to the transcription (Swedish *du*) only adds its source.
+    """
+    wordnets = unchecked_sources()
+    ntumc_tags = {t for t, _ in NTUMC_LANGUAGES.values()}
+    for tag, language in languages.items():
+        for key, entry in list(language.entries.items()):
+            if not entry.transcribed or key[1] == "bound":
+                continue
+            for code in list(entry.senses):
+                checked = sorted(
+                    {
+                        e.lemma
+                        for e in language.entries.values()
+                        if not e.transcribed
+                        and any(
+                            not is_unchecked(s, wordnets)
+                            for s in e.senses.get(code, ())
+                        )
+                    }
+                )
+                matched = spelled_as(entry.lemma, checked) or (
+                    checked if len(checked) == 1 else []
+                )
+                lexemes = {
+                    word: source
+                    for word, source in wikidata.get((tag, code), {}).items()
+                    if not checked and in_usual_script(word, tag)
+                }
+                if not matched:
+                    matched = spelled_as(entry.lemma, sorted(lexemes))
+                for word in matched:
+                    target = language.entry(word, code)
+                    if word in lexemes:
+                        target.senses[code].add(lexemes[word])
+                    if target is entry:
+                        continue
+                    target.senses[code] |= entry.senses[code]
+                    target.pronunciations.add(entry.lemma)
+                    # case forms with no IPA letters are spelled (Finnish minut)
+                    for form, tags in entry.forms.items():
+                        if not IPA.search(form) and not romanized(form, tag):
+                            target.forms.setdefault(form, []).extend(tags)
+                if matched and entry.lemma not in matched or tag in ntumc_tags:
+                    del entry.senses[code]
+            if not entry.senses:
+                del language.entries[key]
 
 
 def add_haspelmath(languages: dict[str, Language], codes: set[str]) -> None:
@@ -619,6 +784,7 @@ def copy_sense(language: Language, entry: Entry, code: str, to: str) -> None:
         for form, tags in entry.forms.items():
             other.forms.setdefault(form, []).extend(tags)
         other.transcribed |= entry.transcribed
+        other.pronunciations |= entry.pronunciations
     other.senses[to] |= entry.senses[code]
 
 
@@ -732,19 +898,24 @@ def lexicon_open(lexicon_id: str, label: str, tag: str) -> str:
 
 
 def written(
-    element: str, form: str, transcribed: bool, tags: list, extra: str = ""
+    element: str,
+    form: str,
+    transcribed: bool,
+    tags: list,
+    extra: str = "",
+    pronunciations: set[str] | None = None,
 ) -> list[str]:
-    """A Lemma or Form element with script, transcription and tags."""
+    """A Lemma or Form element with script, transcriptions and tags."""
     script = script_of(form)
     head = f"<{element}{extra} writtenForm={quoteattr(form)}" + attrs(
         [("script", script)]
     )
-    inner = []
-    if transcribed:
-        inner.append(
-            f'<Pronunciation notation="source-transcription">{escape(form)}'
-            "</Pronunciation>"
-        )
+    sounds = sorted(pronunciations or set()) + ([form] if transcribed else [])
+    inner = [
+        f'<Pronunciation notation="source-transcription">{escape(sound)}'
+        "</Pronunciation>"
+        for sound in dict.fromkeys(sounds)
+    ]
     inner += [f'<Tag category="{c}">{escape(v)}</Tag>' for c, v in dict.fromkeys(tags)]
     if not inner:
         return [head + "/>"]
@@ -1069,6 +1240,7 @@ def write_language(language: Language, definitions: dict[str, str]) -> list[str]
                 entry.transcribed,
                 entry.tags,
                 f' partOfSpeech="{entry.pos}"',
+                entry.pronunciations,
             )
         ]
         for form, tags in sorted(entry.forms.items()):
@@ -1238,6 +1410,7 @@ def main() -> None:
     add_tufs(languages, codes)
     add_extra(languages, codes)
     add_wordnets(languages, codes)
+    attach_transcriptions(languages, read_wikidata_words())
     remap(languages)
     place_pro_forms(languages)
     languages = {t: lang for t, lang in languages.items() if lang.entries}

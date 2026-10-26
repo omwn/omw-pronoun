@@ -12,8 +12,8 @@ in each cell of a person x number x gender x case grid: ``1sg_s``, ``12du_a``,
 
 Case is inflection, not meaning, so a **lexeme** is a set of cells that share one
 row of case forms (A, S, O): English *I/me* is one lexeme for 1sg, and *we/us*
-one lexeme for 1du, 1pl, 12du and 12pl. The lemma is the S form (else A); the
-other case forms are variants. The possessive (P) is not a case form: *my* adds
+one lexeme for 1du, 1pl, 12du and 12pl. The lemma is the S form (else A, else O);
+the other case forms are variants. The possessive (P) is not a case form: *my* adds
 a relation to *I*, and Czech *můj* "my" inflects for case itself. Each P form is
 a lexeme of its own, with the cells that share it, and its code ends in ``Poss``
 (``1;Sg;Poss``).
@@ -245,7 +245,9 @@ def main() -> None:
             language["Analect"].lower(),
         )
         for atoms, cases in lexemes(cells):
-            citation = next(iter(sorted(cases.get("s") or cases.get("a") or [""])))
+            citation = next(
+                iter(sorted(cases.get("s") or cases.get("a") or cases.get("o") or [""]))
+            )
             variants = "; ".join(
                 f"{case}:{form}"
                 for case in CORE

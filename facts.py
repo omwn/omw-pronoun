@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["langcodes", "language_data"]
+# dependencies = ["langcodes", "language_data", "unidecode"]
 # ///
 """Compute every pronoun figure the paper cites, and write them to data/facts.json.
 
@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -55,6 +56,7 @@ class Facts(TypedDict):
     direction: dict[str, int]
     time: dict[str, int]
     wordnet_words: dict[str, int]
+    transcriptions: dict[str, int]
 
 
 def generated(code: str) -> bool:
@@ -252,12 +254,7 @@ def parabank_facts(
     """
     added = admitted - from_inventory
     with_iso = [r for r in lexemes if r["iso639_3"]]
-    transcribed = {
-        r["iso639_3"]
-        for r in with_iso
-        if build.IPA.search(r["lemma"] + r["variants"]) or ":" in r["lemma"]
-    }
-    ntumc_tags = {tag for tag, _ in build.NTUMC_LANGUAGES.values()}
+    ipa = build.ipa_languages(with_iso)
     free = {
         (r["language_id"], r["code"]): r["lemma"]
         for r in with_iso
@@ -268,9 +265,7 @@ def parabank_facts(
         for r in with_iso
         if r["analect"] == "bound"
         and r["code"] in codes
-        and not (
-            build.bcp47(r["iso639_3"]) in ntumc_tags and r["iso639_3"] in transcribed
-        )
+        and not build.skipped_parabank(r, ipa)
     ]
     # (bound lexeme, the free pronoun's lemma) for each variant
     variants = [
@@ -417,6 +412,38 @@ def wordnet_word_facts(browser: dict) -> dict[str, int]:
     }
 
 
+def transcription_facts(collection: Path | None = None) -> dict[str, int]:
+    """Parabank transcriptions: attached to a spelled word, or left as lemmas.
+
+    Read from the built collection: a lemma whose pronunciation differs from its
+    spelling has a transcription attached (Swedish *jag*, pronounced *jɑːg*); a
+    lemma pronounced as it is written is a transcription with no spelling found.
+    """
+    collection = collection or build.HERE / "release" / f"{build.BASE}-{build.VERSION}"
+    lemma = re.compile(
+        r'<Lemma [^>]*writtenForm="([^"]*)"[^>]*>(.*?)</Lemma>', re.DOTALL
+    )
+    sound = re.compile(r"<Pronunciation [^>]*>([^<]*)</Pronunciation>")
+    attached = transcribed = wikidata = 0
+    languages = set()
+    for path in sorted(collection.glob(f"{build.BASE}-*/*.xml")):
+        text = path.read_text(encoding="utf8")
+        for written, inner in lemma.findall(text):
+            sounds = sound.findall(inner)
+            transcribed += written in sounds
+            others = sum(1 for x in sounds if x != written)
+            attached += others
+            if others:
+                languages.add(path.parent.name)
+        wikidata += len(re.findall(r'dc:source="[^"]*Wikidata L', text))
+    return {
+        "pronunciations": attached,
+        "pronunciation_languages": len(languages),
+        "lemmas": transcribed,
+        "wikidata_senses": wikidata,
+    }
+
+
 def compute(parabank_source: Path = parabank_words.DEFAULT) -> Facts:
     """Every figure, by topic.
 
@@ -463,6 +490,7 @@ def compute(parabank_source: Path = parabank_words.DEFAULT) -> Facts:
             admitted | from_haspelmath | ntumc_extra | curated,
         ),
         "haspelmath": {"languages": len({r["glottocode"] for r in series})},
+        "transcriptions": transcription_facts(),
         "direction": {
             "languages": len(
                 {r["lang"] for r in extra_lemmas if r["note"] == "direction"}

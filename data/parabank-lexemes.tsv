@@ -631,10 +631,10 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 	standardarabic	stan1318	arb	Standard Arabic stan1318	Afro-Asiatic	Eurasia	901	free	ta		1
 	stthomas	stan1290	fra	French	Indo-European	Eurasia	437	free	al	o:la	1
 	stthomas	stan1290	fra	French	Indo-European	Eurasia	437	free	iy	o:le	1
-	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free		o:kɛ	1
 	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free	akan	o:fɔa	1
 	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free	fɔ		1
 	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free	kɔ		1
+	sua	mans1259	msw	Sua	Atlantic-Congo	Africa	545	free	kɛ		1
 	suki	suki1245	sui	Suki	Suki-Gogodala	Papunesia	15	free	e	o:ek	5
 	swedish	swed1254	swe	Swedish	Indo-European	Eurasia	336	free	han	o:hɔ́nɔ̀m	1
 	swedish	swed1254	swe	Swedish	Indo-European	Eurasia	336	free	hans		1
@@ -3424,7 +3424,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Du	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	alaŋ		1
 1e;Du	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	aliŋ		1
 1e;Du	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	agalu		1
-1e;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=egalua	1
+1e;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=egalua		1
 1e;Du	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	amilua		1
 1e;Du	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	era		1
 1e;Du	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	njirikébba		1
@@ -3709,7 +3709,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1e;Gpl	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	abu		1
 1e;Gpl	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	ale		1
 1e;Gpl	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	ami		1
-1e;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=mami	1
+1e;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=mami		1
 1e;Gpl	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	amiteu		1
 1e;Gpl	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	ema		1
 1e;Gpl	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	njírabba		1
@@ -4356,7 +4356,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1i;Du	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	aliŋ		1
 1i;Du	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	alaŋ		1
 1i;Du	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	italu		1
-1i;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=talua	1
+1i;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=talua		1
 1i;Du	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	egalua		1
 1i;Du	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	awera		1
 1i;Du	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	ŋárabba		1
@@ -4662,7 +4662,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1i;Gpl	mara	mara1385	mec	Mara	Mangarrayi-Maran	Australia	47	free	ṇarwuña		1
 1i;Gpl	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	kica	o:-kiña	1
 1i;Gpl	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	ngaliwa	o:ngaliwaa	1
-1i;Gpl	mathimathi	madh1244	dmd	Mathi-Mathi	Pama-Nyungan	Australia	689	free		o:yangurr	1
+1i;Gpl	mathimathi	madh1244	dmd	Mathi-Mathi	Pama-Nyungan	Australia	689	free	yangurr		1
 1i;Gpl	mekens_icrwb	saki1248	skf	Mekens	Tupian	South America	656	free	kise		1
 1i;Gpl	meyah	meya1236	mej	Meyah	East Bird's Head	Papunesia	219	free	mimif		1
 1i;Gpl	motu	motu1246	meu	Motu	Austronesian	Papunesia	845	free	ita		1
@@ -4673,7 +4673,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 1i;Gpl	mundari_icrlb	mund1320	unr	Mundari	Austroasiatic	Eurasia	652	free	ale		1
 1i;Gpl	mundari_icrtcc	mund1320	unr	Mundari	Austroasiatic	Eurasia	662	free	abu		1
 1i;Gpl	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	ita		1
-1i;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=ta	1
+1i;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=ta		1
 1i;Gpl	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	etatou		1
 1i;Gpl	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	awema		1
 1i;Gpl	ndjebbana	djee1236	djj	Ndjébbana	Maningrida	Australia	118	free	ŋúrabba		1
@@ -5397,7 +5397,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 2;Du	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	omɨko		1
 2;Du	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	nhula	o:nhulana	1
 2;Du	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	amalu		1
-2;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=emalua	1
+2;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=emalua		1
 2;Du	naasioi	naas1242	nas	Naasioi	South Bougainville	Papunesia	232	free	deeʔ		1
 2;Du	nabak	naba1256	naf	Nabak	Nuclear Trans New Guinea	Papunesia	133	free	it		1
 2;Du	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	amulua		1
@@ -5792,7 +5792,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 2;Gpl	mara	mara1385	mec	Mara	Mangarrayi-Maran	Australia	47	free	ṇurwuña		1
 2;Gpl	maranunggu	mara1386	zmr	Maranunggu	Western Daly	Australia	36	free	nica	o:-niña	1
 2;Gpl	martuthunira	mart1255	vma	Martuthunira	Pama-Nyungan	Australia	105	free	nhuwana	o:nhuwanaa	1
-2;Gpl	mathimathi	madh1244	dmd	Mathi-Mathi	Pama-Nyungan	Australia	689	free		o:ngunan; o:pulin	1
+2;Gpl	mathimathi	madh1244	dmd	Mathi-Mathi	Pama-Nyungan	Australia	689	free	ngunan	o:pulin	1
 2;Gpl	mende	mend1268	sim	Mende	Sepik	Papunesia	242	free	jir	o:jirin	1
 2;Gpl	menya	meny1245	mcr	Menya	Angan	Papunesia	195	free	he		1
 2;Gpl	meyah	meya1236	mej	Meyah	East Bird's Head	Papunesia	219	free	iwa		1
@@ -5808,7 +5808,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 2;Gpl	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	omoɨ		1
 2;Gpl	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	nhura	o:nhurana	1
 2;Gpl	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	am		1
-2;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=em	1
+2;Gpl	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=em		1
 2;Gpl	naasioi	naas1242	nas	Naasioi	South Bougainville	Papunesia	232	free	diiʔ		1
 2;Gpl	nabak	naba1256	naf	Nabak	Nuclear Trans New Guinea	Papunesia	133	free	in		1
 2;Gpl	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	amutou		1
@@ -6536,7 +6536,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 2;Pl	turkmen	turk1304	tuk	Turkmen	Turkic	Eurasia	405	free	θið	o:θiði	2
 2;Pl	tuwuli	tuwu1238	bov	Tuwuli	Atlantic-Congo	Africa	568	free	mi		2
 2;Pl	tuyuca	tuyu1244	tue	Tuyuca	Tucanoan	South America	487	free	bɨ̃ã		2
-2;Pl	ukrainian	ukra1253	ukr	Ukrainian	Indo-European	Eurasia	79	free		o:vas	2
+2;Pl	ukrainian	ukra1253	ukr	Ukrainian	Indo-European	Eurasia	79	free	vas		2
 2;Pl	ura	urav1235	uur	Ura	Austronesian	Papunesia	436	free	gimi		2
 2;Pl	urdu	urdu1245	urd	Urdu	Indo-European	Eurasia	417	free	tum	o:tumko	2
 2;Pl	usan	usan1239	wnu	Usan	Nuclear Trans New Guinea	Papunesia	217	free	an	o:an-; o:ani-	2
@@ -7742,7 +7742,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 2;Sg	tinigua	tini1245	tit	Tinigua	Tinigua	South America	514	free	ka'zɨ		1
 2;Sg	toaripi	toar1246	tqo	Toaripi	Eleman	Papunesia	256	free	a	o:aro	1
 2;Sg	tobati	toba1266	tti	Tobati	Austronesian	Papunesia	181	free	nte		1
-2;Sg	tobati_b	toba1266	tti	Tobati	Austronesian	Papunesia	385	bound		o:-ho	1
+2;Sg	tobati_b	toba1266	tti	Tobati	Austronesian	Papunesia	385	bound	-ho		1
 2;Sg	tokpisin	tokp1240	tpi	Tok Pisin	Indo-European	Papunesia	115	free	yu		1
 2;Sg	tolaki	tola1247	lbw	Tolaki	Austronesian	Papunesia	56	free	iŋgoʔo		1
 2;Sg	toqabaqita	toab1237	mlu	Toqabaqita	Austronesian	Papunesia	25	free	qoe	s:qoo; a:qoo; o:qoo	1
@@ -8748,7 +8748,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Du	muruihuitoto	muru1274	huu	Murui Huitoto	Huitotoan	South America	512	free	daɨmaiaɨ		1
 3;Du	muruwari	muru1266	zmu	Muruwari	Pama-Nyungan	Australia	54	free	pula	o:pulana	3
 3;Du	mussauemira	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	381	free	lalu		1
-3;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound		o:=lalua	1
+3;Du	mussauemira_b	muss1246	emi	Mussau-Emira	Austronesian	Papunesia	382	bound	=lalua		1
 3;Du	nabak	naba1256	naf	Nabak	Nuclear Trans New Guinea	Papunesia	133	free	eget		3
 3;Du	nakanai	naka1262	nak	Nakanai	Austronesian	Papunesia	271	free	egirua		1
 3;Du	namia	nami1256	nnm	Namia	Sepik	Papunesia	250	free	lapli		1
@@ -10853,7 +10853,7 @@ code	language_id	glottocode	iso639_3	language	family	macroarea	paradigm	analect	
 3;Sg	timugonmurut	timu1262	tih	Timugon Murut	Austronesian	Papunesia	61	free	io	o:no	3
 3;Sg	toaripi	toar1246	tqo	Toaripi	Eleman	Papunesia	256	free	are	o:arero	2
 3;Sg	tobati	toba1266	tti	Tobati	Austronesian	Papunesia	181	free	nti		3
-3;Sg	tobati_b	toba1266	tti	Tobati	Austronesian	Papunesia	385	bound		o:-i	2
+3;Sg	tobati_b	toba1266	tti	Tobati	Austronesian	Papunesia	385	bound	-i		2
 3;Sg	tokpisin	tokp1240	tpi	Tok Pisin	Indo-European	Papunesia	115	free	em		3
 3;Sg	tolaki	tola1247	lbw	Tolaki	Austronesian	Papunesia	56	free	iee	s:ieʔi; a:ieʔi; o:ieʔi	3
 3;Sg	toqabaqita	toab1237	mlu	Toqabaqita	Austronesian	Papunesia	25	free	nia		3

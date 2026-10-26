@@ -64,6 +64,12 @@
     "now_tufs_languages": 7,
     "then_curated_languages": 6
   },
+  "transcriptions": {
+    "lemmas": 6426,
+    "pronunciation_languages": 24,
+    "pronunciations": 87,
+    "wikidata_senses": 53
+  },
   "tufs": {
     "curated": 907,
     "forms": 752,

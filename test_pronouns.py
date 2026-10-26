@@ -1,6 +1,6 @@
 """Tests for the OMW pronoun wordnet builders.
 
-Run with: uv run --with pytest --with langcodes --with language_data pytest
+Run with: uv run --with pytest --with langcodes --with language_data --with unidecode pytest
 """
 
 from __future__ import annotations
@@ -381,3 +381,36 @@ def test_wikidata_links_name_our_concepts() -> None:
     assert {row["relation"] for row in rows} <= {"exact", "broader", "narrower"}
     keys = [(row["wikidata"], row["lexical_category"]) for row in rows]
     assert len(keys) == len(set(keys))
+
+
+def test_every_parabank_lexeme_has_a_lemma() -> None:
+    with (build.DATA / "parabank-lexemes.tsv").open(encoding="utf8") as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    assert all(row["lemma"] for row in rows)
+
+
+def test_transcriptions_become_pronunciations_of_spelled_words(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(build, "POS", {"1;Sg": "n", "2;Sg": "n", "3;Pl": "n"})
+    monkeypatch.setattr(build, "unchecked_sources", lambda: set())
+    swedish = build.Language("sv", "Swedish")
+    for lemma, code in (("jɑːg", "1;Sg"), ("du", "2;Sg"), ("dɔm", "3;Pl")):
+        entry = swedish.entry(lemma, code)
+        entry.senses[code].add("Parabank swedish")
+        entry.transcribed = True
+    swedish.entry("jɑːg", "1;Sg").forms["miːg"] = [("case", "o")]
+    wikidata = {
+        ("sv", "1;Sg"): {"jag": "Wikidata L1-S1"},
+        ("sv", "2;Sg"): {"du": "Wikidata L2-S1"},
+    }
+    build.attach_transcriptions({"sv": swedish}, wikidata)
+    entries = {e.lemma: e for e in swedish.entries.values()}
+    assert set(entries) == {"jag", "du", "dɔm"}
+    assert entries["jag"].pronunciations == {"jɑːg"}
+    assert entries["jag"].senses["1;Sg"] == {"Parabank swedish", "Wikidata L1-S1"}
+    assert "miːg" not in entries["jag"].forms
+    # a spelling identical to the transcription keeps its entry and adds a source
+    assert entries["du"].senses["2;Sg"] == {"Parabank swedish", "Wikidata L2-S1"}
+    # with no spelling, the transcription stays a lemma
+    assert entries["dɔm"].transcribed and entries["dɔm"].senses["3;Pl"]
