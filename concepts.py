@@ -292,8 +292,12 @@ def define(code: str, pos: str = "n") -> str:
             text = f"a possessive determinative: of or belonging to {whose}"
         rest = parts[1:]
         if rest and rest[0] in NUMBERS:
-            count = NUMBERS[rest[0]]
-            text += f", {count} {'possessor' if possessive else 'in all'}"
+            count, _, note = NUMBERS[rest[0]].partition(" (")
+            # "more than one possessor": the noun agrees with "one"
+            noun = "possessor" if count.endswith("one") else "possessors"
+            text += f", {count} {noun if possessive else 'in all'}"
+            if note:
+                text += f" ({note}"
             rest = rest[1:]
         if rest:
             text += (
