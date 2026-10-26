@@ -16,11 +16,11 @@
     "languages": 5
   },
   "features": {
-    "flagged": 2,
+    "flagged": 0,
     "haspelmath_functions": 9,
     "haspelmath_functions_used": 8,
-    "ili": 30,
-    "proposed": 25,
+    "ili": 31,
+    "proposed": 26,
     "ud": 36,
     "unused": 3,
     "used": 57

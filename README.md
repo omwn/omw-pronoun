@@ -127,10 +127,13 @@ from:
 
 **Features are synsets too** (`data/features.tsv`): each concept links to its head by
 hypernymy and to its other features by `exemplifies` (NTUMC's usage-domain link).
-Of the 57 feature values in use, 30 keep their Princeton ILI (*possessive* is
-i69651), 25 are proposed (NTUMC's own and new ones such as *plural (beyond the
-dual)*, *one of two*, *non-specific locative role* and Haspelmath's functions),
-and 2 point at doubtful Princeton senses (`check`). The locative of a time code
+Of the 57 feature values in use, 31 keep a Princeton ILI (*possessive* is
+i69651), and 26 are proposed (NTUMC's own and new ones such as *plural (beyond
+the dual)*, *one of two*, *non-specific locative role*, *archaic* and Haspelmath's
+functions). NTUMC linked two features to the wrong Princeton senses: *thing* to
+"an artifact" (i60191), now "an entity that is not named specifically" (i60192),
+and *archaic* to *antediluvian* "so extremely old…" (i8971), now proposed, since
+OEWN has no sense for words no longer in everyday use. The locative of a time code
 links to *temporal role* (i69760), of a place code to *locative role* (i69757).
 The proposed *non-specific locative role* (`Dir`) is above both, and is placed
 under Princeton's *semantic role* (i69752), which is included only for that.

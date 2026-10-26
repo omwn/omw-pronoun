@@ -173,8 +173,7 @@ features by `exemplifies`.
 
 ## Features
 
-Each value has a synset with a label, an ILI or an ILI proposal (except two
-whose Princeton match is doubtful, `Thng` and `Arch`), and its Universal
+Each value has a synset with a label, an ILI or an ILI proposal, and its Universal
 Dependencies feature where there is one. The examples are from the
 paper's appendix.
 

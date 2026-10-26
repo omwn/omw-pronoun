@@ -15,7 +15,7 @@ F	gender	feminine	i8149		pwn	Gender=Fem	female (of grammatical gender)
 N	gender	neuter	i8150		pwn	Gender=Neut	neither male nor female (of grammatical gender)
 Poss	case	possessive	i69651		pwn	Poss=Yes	the case expressing ownership
 Pers	head	person	i35562		pwn		a human being
-Thng	head	thing	i60191		check		PWN's thing is "an artifact": find the right sense
+Thng	head	thing	i60192		pwn		an entity that is not named specifically
 Ent	head	entity	i35545		pwn		that which is perceived or known or inferred to have its own distinct existence (living or nonliving)
 Plc	head	place	i82501		pwn		a point located with respect to surface features of some region
 Tim	head	time	i116667		pwn		an indefinite period (usually marked by specific attributes or activities)
@@ -49,7 +49,7 @@ Tmp	direction	temporal	i69760		pwn		the semantic role of the noun phrase that de
 Role	direction	semantic role	i69752		pwn		(linguistics) the underlying relation that a constituent has with the main verb in a clause
 Men	register	men's speech		77010007-n	ntumc		speech used predominately by men
 Wom	register	women's speech		77010008-n	ntumc		speech used predominately by women
-Arch	register	archaic	i8971		check		NTUMC links PWN's antediluvian ("so extremely old..."): find the sense for words no longer in use
+Arch	register	archaic			new		of a word or form: no longer in everyday use, kept for an old-fashioned or formal effect
 SK	type	specific known			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the referent is specific and known to the speaker
 SU	type	specific unknown			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the referent is specific but not known to the speaker
 IRR	type	irrealis non-specific			new	PronType=Ind	an indefinite pronoun function (Haspelmath 1997): the referent is non-specific, occurring only in some imagined mental space
