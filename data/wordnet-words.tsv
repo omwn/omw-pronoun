@@ -1,28 +1,83 @@
 tag	concept	word	source	ili
 abz	Plc;Prox	prodo	abwn:0.1	i81667
 abz	Plc;Prox	do	abwn:0.1	i81667
+abz	Tim;Prox;Loc	yaldo	abwn:0.1	i18426
+abz	Tim;Prox;Loc	yaala	abwn:0.1	i18426
+abz	Tim;Prox;Loc	yaaldo	abwn:0.1	i18426
+abz	Tim;Prox;Loc	yaal	abwn:0.1	i18426
 af	Mnr;Prox+Dist	dus	inaf:0.1	i18911
 af	Mnr;Prox+Dist	so	inaf:0.1	i18911
 af	Plc;Dist	daar	inaf:0.1	i81668
+af	Plc;Dist;Goal	daar	inaf:0.1	i18829
+af	Plc;Dist;Goal	daarheen	inaf:0.1	i18829
+af	Plc;Dist;Loc	daar	inaf:0.1	i18828
+af	Plc;Dist;Src	vandaar	inaf:0.1	i18394
+af	Plc;Dist;Src	van daar	inaf:0.1	i18394
 af	Plc;Prox	hier	inaf:0.1	i81667
+af	Plc;Prox;Goal	hier	inaf:0.1	i18824
+af	Plc;Prox;Goal	hierheen	inaf:0.1	i18824
+af	Plc;Prox;Loc	hier	inaf:0.1	i18823
+af	Plc;Prox;Src	vandaar	inaf:0.1	i18393
+af	Plc;Sg;Elec;Loc+Goal	anyplace	inaf:0.1	i18288
+af	Plc;Sg;Elec;Loc+Goal	oral	inaf:0.1	i18288
+af	Plc;Univ;Loc+Goal	oral	inaf:0.1	i18291
 af	Tim;Dist	dan	inaf:0.1	i117639
+af	Tim;Dist;Loc	dan	inaf:0.1	i18891
 af	Tim;Prox	Nou	inaf:0.1	i116653
+af	Tim;Prox;Loc	nou	inaf:0.1	i18426
+af	Tim;Prox;Loc	op die oomblik	inaf:0.1	i18426
+af	Tim;Sg;Asrt;Loc	ooit	inaf:0.1	i18265
+af	Tim;Sg;Elec;Loc	altyd	inaf:0.1	i19122
+af	Tim;Sg;Elec;Loc	van alle tye	inaf:0.1	i19122
 af	Two;Univ	beide	inaf:0.1	i12555
 ar	Tim;Prox	الأن	omw-arb:2.0	i116653
-bn	Mnr;Prox+Dist	এইজন্য	bangla-wordnet-bn:0.1	i18911
+ca	Plc;Dist;Loc	allí	omw-ca:2.0	i18828
 ca	Plc;Prox	aquí	omw-ca:2.0	i81667
+ca	Plc;Prox;Goal	ací	omw-ca:2.0	i18824
+ca	Plc;Prox;Goal	aquí	omw-ca:2.0	i18824
+ca	Plc;Sg;Elec;Loc+Goal	enlloc	omw-ca:2.0	i18288
+ca	Plc;Sg;Elec;Loc+Goal	onsevulga	omw-ca:2.0	i18288
+ca	Plc;Univ;Loc+Goal	a tot arreu	omw-ca:2.0	i18291
+ca	Plc;Univ;Loc+Goal	tot arreu	omw-ca:2.0	i18291
 ca	Tim;Dist	a continuació	omw-ca:2.0	i117639
 ca	Tim;Prox	ara	omw-ca:2.0	i116653
+ca	Tim;Prox;Loc	actualment	omw-ca:2.0	i18426
+ca	Tim;Prox;Loc	ara	omw-ca:2.0	i18426
+ca	Tim;Sg;Asrt;Loc	algun cop	omw-ca:2.0	i18265
+ca	Tim;Sg;Asrt;Loc	alguna vegada	omw-ca:2.0	i18265
 cmn	Mnr;Prox+Dist	正 是 那样	NTUMC wordnet 00121135-r	i18911
 cmn	Mnr;Prox+Dist	这样	NTUMC wordnet 00121135-r	i18911
 cmn	Mnr;Prox+Dist	正是那样	NTUMC wordnet 00121135-r	i18911
 cmn	Mnr;Prox+Dist	如此	NTUMC wordnet 00121135-r	i18911
 cmn	Mnr;Prox+Dist	便是	NTUMC wordnet 00121135-r	i18911
+cmn	Mnr;Prox+Dist	如此	cow:1.1	i18911
+cmn	Mnr;Prox+Dist	正是那样	cow:1.1	i18911
+cmn	Mnr;Prox+Dist	这样	cow:1.1	i18911
 cmn	Plc;Dist	那里	NTUMC wordnet 08489627-n	i81668
 cmn	Plc;Dist	那个地方	NTUMC wordnet 08489627-n	i81668
 cmn	Plc;Dist	那个 地方	NTUMC wordnet 08489627-n	i81668
 cmn	Plc;Dist	那儿	NTUMC wordnet 08489627-n	i81668
 cmn	Plc;Dist	那边	NTUMC wordnet 08489627-n	i81668
+cmn	Plc;Dist	那儿	cow:1.1	i81668
+cmn	Plc;Dist	那边	cow:1.1	i81668
+cmn	Plc;Dist	那里	cow:1.1	i81668
+cmn	Plc;Dist;Goal	到 那里	NTUMC wordnet 00109328-r	i18829
+cmn	Plc;Dist;Goal	那边	NTUMC wordnet 00109328-r	i18829
+cmn	Plc;Dist;Goal	到那里	NTUMC wordnet 00109328-r	i18829
+cmn	Plc;Dist;Goal	往那里 去	NTUMC wordnet 00109328-r	i18829
+cmn	Plc;Dist;Goal	往那里去	NTUMC wordnet 00109328-r	i18829
+cmn	Plc;Dist;Loc	那边	NTUMC wordnet 00109151-r	i18828
+cmn	Plc;Dist;Loc	那儿	NTUMC wordnet 00109151-r	i18828
+cmn	Plc;Dist;Loc	那里	NTUMC wordnet 00109151-r	i18828
+cmn	Plc;Dist;Loc	在 那里	NTUMC wordnet 00109151-r	i18828
+cmn	Plc;Dist;Loc	在那里	NTUMC wordnet 00109151-r	i18828
+cmn	Plc;Dist;Loc	那一边	NTUMC wordnet 00109151-r	i18828
+cmn	Plc;Dist;Loc	那一边	cow:1.1	i18828
+cmn	Plc;Dist;Src	因此	NTUMC wordnet 00043608-r	i18394
+cmn	Plc;Dist;Src	从那里	NTUMC wordnet 00043608-r	i18394
+cmn	Plc;Dist;Src	从 那里	NTUMC wordnet 00043608-r	i18394
+cmn	Plc;Dist;Src	从 那里 起	NTUMC wordnet 00043608-r	i18394
+cmn	Plc;Dist;Src	从那里起	NTUMC wordnet 00043608-r	i18394
 cmn	Plc;Prox	这里	NTUMC wordnet 08489497-n	i81667
 cmn	Plc;Prox	这	NTUMC wordnet 08489497-n	i81667
 cmn	Plc;Prox	此地	NTUMC wordnet 08489497-n	i81667
@@ -31,22 +86,110 @@ cmn	Plc;Prox	这边	NTUMC wordnet 08489497-n	i81667
 cmn	Plc;Prox	此处	NTUMC wordnet 08489497-n	i81667
 cmn	Plc;Prox	这儿	NTUMC wordnet 08489497-n	i81667
 cmn	Plc;Prox	本地	NTUMC wordnet 08489497-n	i81667
+cmn	Plc;Prox	这	cow:1.1	i81667
+cmn	Plc;Prox	此地	cow:1.1	i81667
+cmn	Plc;Prox	这里	cow:1.1	i81667
+cmn	Plc;Prox	此	cow:1.1	i81667
+cmn	Plc;Prox	这边	cow:1.1	i81667
+cmn	Plc;Prox	此处	cow:1.1	i81667
+cmn	Plc;Prox	这儿	cow:1.1	i81667
+cmn	Plc;Prox	本地	cow:1.1	i81667
+cmn	Plc;Prox;Goal	向这里	NTUMC wordnet 00108647-r	i18824
+cmn	Plc;Prox;Goal	到这里	NTUMC wordnet 00108647-r	i18824
+cmn	Plc;Prox;Goal	到 这里	NTUMC wordnet 00108647-r	i18824
+cmn	Plc;Prox;Goal	向 这里	NTUMC wordnet 00108647-r	i18824
+cmn	Plc;Prox;Goal	向这边	NTUMC wordnet 00108647-r	i18824
+cmn	Plc;Prox;Goal	来	NTUMC wordnet 00108647-r	i18824
+cmn	Plc;Prox;Goal	来	cow:1.1	i18824
+cmn	Plc;Prox;Loc	此处	NTUMC wordnet 00108479-r	i18823
+cmn	Plc;Prox;Loc	在这里	NTUMC wordnet 00108479-r	i18823
+cmn	Plc;Prox;Loc	在 这里	NTUMC wordnet 00108479-r	i18823
+cmn	Plc;Prox;Loc	这里	NTUMC wordnet 00108479-r	i18823
+cmn	Plc;Prox;Src	从此	NTUMC wordnet 00043521-r	i18393
+cmn	Plc;Prox;Src	从这儿	NTUMC wordnet 00043521-r	i18393
+cmn	Plc;Prox;Src	从此+地	NTUMC wordnet 00043521-r	i18393
+cmn	Plc;Prox;Src	从 这儿	NTUMC wordnet 00043521-r	i18393
+cmn	Plc;Prox;Src	从这里	NTUMC wordnet 00043521-r	i18393
+cmn	Plc;Prox;Src	从 这里	NTUMC wordnet 00043521-r	i18393
+cmn	Plc;Sg;Elec;Loc+Goal	任何 地方	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	无论 何处	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	随+地	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	任何地方	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	随	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	无论何处	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	随处	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	何方	NTUMC wordnet 00025290-r	i18288
+cmn	Plc;Sg;Elec;Loc+Goal	何方	cow:1.1	i18288
+cmn	Plc;Univ;Loc+Goal	遍布 表面	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	四处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	遍	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	处处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	遍+地	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各+地	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	到处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	随处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	遍布表面	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各地	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各 地	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	每处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	东西	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	四方	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各方	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各 处	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	诸	NTUMC wordnet 00025728-r	i18291
+cmn	Plc;Univ;Loc+Goal	各处	cow:1.1	i18291
+cmn	Plc;Univ;Loc+Goal	处处	cow:1.1	i18291
+cmn	Plc;Univ;Loc+Goal	各地	cow:1.1	i18291
+cmn	Plc;Univ;Loc+Goal	每处	cow:1.1	i18291
+cmn	Plc;Univ;Loc+Goal	四方	cow:1.1	i18291
 cmn	Tim;Dist	其时	NTUMC wordnet 15296354-n	i117639
 cmn	Tim;Dist	那时	NTUMC wordnet 15296354-n	i117639
 cmn	Tim;Dist	当时	NTUMC wordnet 15296354-n	i117639
 cmn	Tim;Dist	当初	NTUMC wordnet 15296354-n	i117639
 cmn	Tim;Dist	到时	NTUMC wordnet 15296354-n	i117639
-cmn	Tim;Dist	其时	omw-cmn:2.0	i117639
-cmn	Tim;Dist	当时	omw-cmn:2.0	i117639
-cmn	Tim;Dist	那时	omw-cmn:2.0	i117639
+cmn	Tim;Dist	其时	cow:1.1	i117639
+cmn	Tim;Dist	那时	cow:1.1	i117639
+cmn	Tim;Dist	当时	cow:1.1	i117639
+cmn	Tim;Dist	当初	cow:1.1	i117639
+cmn	Tim;Dist	到时	cow:1.1	i117639
+cmn	Tim;Dist;Loc	当时	NTUMC wordnet 00117903-r	i18891
+cmn	Tim;Dist;Loc	那时	NTUMC wordnet 00117903-r	i18891
+cmn	Tim;Dist;Loc	当初	NTUMC wordnet 00117903-r	i18891
+cmn	Tim;Dist;Loc	当年	NTUMC wordnet 00117903-r	i18891
+cmn	Tim;Dist;Loc	当初	cow:1.1	i18891
+cmn	Tim;Dist;Loc	当年	cow:1.1	i18891
 cmn	Tim;Prox	现今	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	现在	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	当下	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	现时	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	此刻	NTUMC wordnet 15119919-n	i116653
 cmn	Tim;Prox	现	NTUMC wordnet 15119919-n	i116653
-cmn	Two;Univ	两个+的	omw-cmn:2.0	i12555
-cmn	Two;Univ	两者+的	omw-cmn:2.0	i12555
+cmn	Tim;Prox	现今	cow:1.1	i116653
+cmn	Tim;Prox;Loc	如今	NTUMC wordnet 00049220-r	i18426
+cmn	Tim;Prox;Loc	此时	NTUMC wordnet 00049220-r	i18426
+cmn	Tim;Prox;Loc	正在	NTUMC wordnet 00049220-r	i18426
+cmn	Tim;Prox;Loc	目前	NTUMC wordnet 00049220-r	i18426
+cmn	Tim;Prox;Loc	此刻	NTUMC wordnet 00049220-r	i18426
+cmn	Tim;Prox;Loc	现在	NTUMC wordnet 00049220-r	i18426
+cmn	Tim;Prox;Loc	此时	cow:1.1	i18426
+cmn	Tim;Sg;Asrt;Loc	某个 时候	NTUMC wordnet 00021702-r	i18265
+cmn	Tim;Sg;Asrt;Loc	某个时候	NTUMC wordnet 00021702-r	i18265
+cmn	Tim;Sg;Asrt;Loc	在某时	NTUMC wordnet 00021702-r	i18265
+cmn	Tim;Sg;Asrt;Loc	在 某时	NTUMC wordnet 00021702-r	i18265
+cmn	Tim;Sg;Asrt;Loc	某个时间	NTUMC wordnet 00021702-r	i18265
+cmn	Tim;Sg;Asrt;Loc	某个 时间	NTUMC wordnet 00021702-r	i18265
+cmn	Tim;Sg;Elec;Loc	曾经	NTUMC wordnet 00146387-r	i19122
+cmn	Tim;Sg;Elec;Loc	在 任何 时候	NTUMC wordnet 00146387-r	i19122
+cmn	Tim;Sg;Elec;Loc	从来	NTUMC wordnet 00146387-r	i19122
+cmn	Tim;Sg;Elec;Loc	在任何时候	NTUMC wordnet 00146387-r	i19122
+cmn	Two;Univ	两者的	cow:1.1	i12555
+cmn	Two;Univ	两者	cow:1.1	i12555
+cmn	Two;Univ	两个	cow:1.1	i12555
+cmn	Two;Univ	两个的	cow:1.1	i12555
+cmn	Two;Univ	两	cow:1.1	i12555
+cmn	Two;Univ	双	cow:1.1	i12555
 cop	Mnr;Prox+Dist	ⲧⲟⲧⲉ	copwn-cop:1.0	i18911
 cop	Mnr;Prox+Dist	ⲉⲧⲓ	copwn-cop:1.0	i18911
 cop	Mnr;Prox+Dist	ⲁⲩⲱ ⲧⲟⲧⲉ	copwn-cop:1.0	i18911
@@ -104,7 +247,35 @@ cop	Plc;Dist	ⲙⲟ	copwn-cop:1.0	i81668
 cop	Plc;Dist	ⲙⲱ	copwn-cop:1.0	i81668
 cop	Plc;Dist	ⲙⲉⲟⲩ	copwn-cop:1.0	i81668
 cop	Plc;Dist	ⲙⲁⲟⲩ	copwn-cop:1.0	i81668
+cop	Plc;Dist;Goal	ⲉⲙⲁⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲙⲁⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲙⲉⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲙⲟ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲙⲱ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲙⲉⲟⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲙⲁⲟⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲉⲡⲙⲁⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲁⲙⲟ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Goal	ⲁⲙⲉⲩ	copwn-cop:1.0	i18829
+cop	Plc;Dist;Loc	ⲙⲁⲩ	copwn-cop:1.0	i18828
+cop	Plc;Dist;Loc	ⲙⲉⲩ	copwn-cop:1.0	i18828
+cop	Plc;Dist;Loc	ⲙⲟ	copwn-cop:1.0	i18828
+cop	Plc;Dist;Loc	ⲙⲱ	copwn-cop:1.0	i18828
+cop	Plc;Dist;Loc	ⲙⲉⲟⲩ	copwn-cop:1.0	i18828
+cop	Plc;Dist;Loc	ⲙⲁⲟⲩ	copwn-cop:1.0	i18828
+cop	Plc;Dist;Src	ⲉⲛⲧⲉⲩⲑⲉⲛ	copwn-cop:1.0	i18394
 cop	Plc;Prox	ⲧⲁⲓ	copwn-cop:1.0	i81667
+cop	Plc;Prox;Goal	ⲧⲁⲓ	copwn-cop:1.0	i18824
+cop	Plc;Prox;Loc	ⲧⲁⲓ	copwn-cop:1.0	i18823
+cop	Plc;Prox;Src	ⲛⲧⲟⲟⲩⲛ	copwn-cop:1.0	i18393
+cop	Plc;Prox;Src	ⲧⲁⲓ	copwn-cop:1.0	i18393
+cop	Plc;Prox;Src	ⲉⲛⲧⲉⲩⲑⲉⲛ	copwn-cop:1.0	i18393
+cop	Plc;Sg;Elec;Loc+Goal	ⲗⲁⲁⲩ	copwn-cop:1.0	i18288
+cop	Plc;Sg;Elec;Loc+Goal	ⲧⲏⲣ⸗	copwn-cop:1.0	i18288
+cop	Plc;Sg;Elec;Loc+Goal	ⲛⲓⲙ	copwn-cop:1.0	i18288
+cop	Plc;Sg;Elec;Loc+Goal	ⲛⲕⲁ ⲛⲓⲙ	copwn-cop:1.0	i18288
+cop	Plc;Univ;Loc+Goal	ⲁⲛⲁ	copwn-cop:1.0	i18291
+cop	Plc;Univ;Loc+Goal	ⲁⲛ⸣ⲁ	copwn-cop:1.0	i18291
 cop	Tim;Dist	ⲧⲟ	copwn-cop:1.0	i117639
 cop	Tim;Dist	ⲁⲣⲁ	copwn-cop:1.0	i117639
 cop	Tim;Dist	ⲕⲁⲓⲣⲱ	copwn-cop:1.0	i117639
@@ -164,6 +335,64 @@ cop	Tim;Dist	ⲟⲩⲛ̄	copwn-cop:1.0	i117639
 cop	Tim;Dist	ⲟⲩ̇ⲛ	copwn-cop:1.0	i117639
 cop	Tim;Dist	ⲟⲩⲛ⳿	copwn-cop:1.0	i117639
 cop	Tim;Dist	ⲁⲩⲱ ⲧⲟⲧⲉ	copwn-cop:1.0	i117639
+cop	Tim;Dist;Loc	ⲛⲧⲟⲟⲩⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲧⲟⲧⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲧⲓ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲁⲩⲱ ⲧⲟⲧⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲁ︤ⲓ︥ⲧⲉⲓ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲁⲓⲧⲉⲓ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲓⲧⲁ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲧⲓ̄	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲡⲁⲗⲓ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲡⲁⲗⲓ̈ⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲡⲁⲗⲓ̄ⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲡⲁⲗⲓⲛ ⲟⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲗⲉⲡⲟⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲗⲟⲓⲡⲟⲩ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲗⲉⲡⲱⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲗⲟⲓⲡⲱⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲩⲕ ⲟⲩⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲁⲗⲗⲁ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲅⲁⲣ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲁⲣⲁ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲩⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ϭⲉ ⲟⲩⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲙ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲩⲛ̇	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲩⲛ̄	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲩ̇ⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲟⲩⲛ⳿	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲙⲁⲗⲗⲟⲛ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲅ︤ⲁ︦ⲣ︥	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲅⲁⲣ⳿	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲁⲣ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲛⲅⲁⲣ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲛ̄ⲅⲁⲣ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲇ}ⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲇⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲡⲗⲏⲛ̄	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲡⲗⲏⲛ ϫⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲧⲟ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲡⲉⲓ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲁⲓⲣⲱ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ϩⲁⲉ ⲛ̄ⲕⲁⲓⲣⲟⲥ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲉⲣⲱ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲁⲓ̄ⲣⲟⲥ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲉⲓⲣⲟⲥ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲉⲣⲟⲥ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲏⲣⲟⲥ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲕⲩⲣⲟⲥ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲧⲱ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲧⲟⲩ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉϣϫⲡⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲓⳉϫⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⳉϫⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲓⳉⲡⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⳉⲡⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉϣⲡⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲓⲥϫⲉ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲓⲥϫⲉⲕ	copwn-cop:1.0	i18891
+cop	Tim;Dist;Loc	ⲉⲡⲓ	copwn-cop:1.0	i18891
 cop	Tim;Prox	ⲙⲧⲟ	copwn-cop:1.0	i116653
 cop	Tim;Prox	ϩⲟⲧ	copwn-cop:1.0	i116653
 cop	Tim;Prox	ⲅⲁⲣ	copwn-cop:1.0	i116653
@@ -191,12 +420,66 @@ cop	Tim;Prox	ⲗⲉⲡⲟⲛ	copwn-cop:1.0	i116653
 cop	Tim;Prox	ⲗⲟⲓⲡⲟⲩ	copwn-cop:1.0	i116653
 cop	Tim;Prox	ⲗⲉⲡⲱⲛ	copwn-cop:1.0	i116653
 cop	Tim;Prox	ⲗⲟⲓⲡⲱⲛ	copwn-cop:1.0	i116653
+cop	Tim;Prox;Loc	ⲛⲧⲟⲟⲩⲛ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲧⲉⲛⲟⲩ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲉⲧⲓ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲁ︤ⲓ︥ⲧⲉⲓ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲁⲓⲧⲉⲓ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲉⲧⲉⲛⲟⲩ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲛⲧⲉⲛⲟⲩ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲉⲓⲧⲁ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲉⲧⲓ̄	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲗⲉⲡⲟⲛ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲗⲟⲓⲡⲟⲩ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲗⲉⲡⲱⲛ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲗⲟⲓⲡⲱⲛ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲁⲗⲗⲁ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲅⲁⲣ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲙⲁⲗⲗⲟⲛ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲅ︤ⲁ︦ⲣ︥	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲅⲁⲣ⳿	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲕⲁⲣ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲛⲅⲁⲣ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲛ̄ⲅⲁⲣ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲇ}ⲉ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ⲇⲉ	copwn-cop:1.0	i18426
+cop	Tim;Prox;Loc	ϯⲛⲟⲩ	copwn-cop:1.0	i18426
+cop	Tim;Sg;Elec;Loc	ⲉⲛⲉϩ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲡⲟⲧⲉ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲁⲓⲣⲱ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ϩⲁⲉ ⲛ̄ⲕⲁⲓⲣⲟⲥ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲉⲣⲱ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲁⲓ̄ⲣⲟⲥ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲉⲓⲣⲟⲥ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲉⲣⲟⲥ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲏⲣⲟⲥ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲕⲩⲣⲟⲥ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲉⲛⲉϩⲉ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲉⲛⲏϩⲉ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲁⲛⲏϩⲉ	copwn-cop:1.0	i19122
+cop	Tim;Sg;Elec;Loc	ⲡⲟⲇⲏ	copwn-cop:1.0	i19122
 cs	Mnr;Prox+Dist	tak	NTUMC wordnet 00121135-r	i18911
 cs	Mnr;Prox+Dist	takhle	NTUMC wordnet 00121135-r	i18911
 cs	Mnr;Prox+Dist	takto	NTUMC wordnet 00121135-r	i18911
+cs	Plc;Dist;Goal	tam	NTUMC wordnet 00109328-r	i18829
+cs	Plc;Dist;Loc	tam	NTUMC wordnet 00109151-r	i18828
+cs	Plc;Dist;Loc	tamhle	NTUMC wordnet 00109151-r	i18828
 cs	Plc;Prox	tady	NTUMC wordnet 08489497-n	i81667
+cs	Plc;Prox;Loc	tady	NTUMC wordnet 00108479-r	i18823
+cs	Plc;Prox;Loc	zde	NTUMC wordnet 00108479-r	i18823
+cs	Plc;Prox;Loc	tu	NTUMC wordnet 00108479-r	i18823
+cs	Plc;Prox;Src	odtud	NTUMC wordnet 00043521-r	i18393
+cs	Plc;Univ;Loc+Goal	všude	NTUMC wordnet 00025728-r	i18291
+cs	Tim;Prox;Loc	teď	NTUMC wordnet 00049220-r	i18426
+cs	Tim;Sg;Asrt;Loc	jednou	NTUMC wordnet 00021702-r	i18265
+cs	Tim;Sg;Asrt;Loc	někdy	NTUMC wordnet 00021702-r	i18265
+cs	Tim;Sg;Elec;Loc	jaktěživ	NTUMC wordnet 00146387-r	i19122
+cs	Tim;Sg;Elec;Loc	jakživ	NTUMC wordnet 00146387-r	i19122
 de	Tim;Prox	Gegenwart	odenet:1.4	i116653
 de	Tim;Prox	Jetzt	odenet:1.4	i116653
+el	Plc;Univ;Loc+Goal	απανταχού	greek-el:20	i18291
+el	Plc;Univ;Loc+Goal	πανταχού	greek-el:20	i18291
+el	Plc;Univ;Loc+Goal	παντού	greek-el:20	i18291
 en	Mnr;Prox+Dist	thus	NTUMC wordnet 00121135-r	i18911
 en	Mnr;Prox+Dist	so	NTUMC wordnet 00121135-r	i18911
 en	Mnr;Prox+Dist	thusly	NTUMC wordnet 00121135-r	i18911
@@ -205,19 +488,78 @@ en	Mnr;Prox+Dist	thusly	oewn:2025+	i18911
 en	Mnr;Prox+Dist	so	oewn:2025+	i18911
 en	Plc;Dist	there	NTUMC wordnet 08489627-n	i81668
 en	Plc;Dist	there	oewn:2025+	i81668
+en	Plc;Dist;Goal	thither	NTUMC wordnet 00109328-r	i18829
+en	Plc;Dist;Goal	there	NTUMC wordnet 00109328-r	i18829
+en	Plc;Dist;Goal	there	oewn:2025+	i18829
+en	Plc;Dist;Goal	thither	oewn:2025+	i18829
+en	Plc;Dist;Loc	there	NTUMC wordnet 00109151-r	i18828
+en	Plc;Dist;Loc	at that place	NTUMC wordnet 00109151-r	i18828
+en	Plc;Dist;Loc	in that location	NTUMC wordnet 00109151-r	i18828
+en	Plc;Dist;Loc	there	oewn:2025+	i18828
+en	Plc;Dist;Src	thence	NTUMC wordnet 00043608-r	i18394
+en	Plc;Dist;Src	therefrom	NTUMC wordnet 00043608-r	i18394
+en	Plc;Dist;Src	thence	oewn:2025+	i18394
+en	Plc;Dist;Src	therefrom	oewn:2025+	i18394
 en	Plc;Prox	here	NTUMC wordnet 08489497-n	i81667
 en	Plc;Prox	'ere	NTUMC wordnet 08489497-n	i81667
 en	Plc;Prox	here	oewn:2025+	i81667
+en	Plc;Prox;Goal	here	NTUMC wordnet 00108647-r	i18824
+en	Plc;Prox;Goal	hither	NTUMC wordnet 00108647-r	i18824
+en	Plc;Prox;Goal	'ere	NTUMC wordnet 00108647-r	i18824
+en	Plc;Prox;Goal	here	oewn:2025+	i18824
+en	Plc;Prox;Goal	hither	oewn:2025+	i18824
+en	Plc;Prox;Loc	here	NTUMC wordnet 00108479-r	i18823
+en	Plc;Prox;Loc	here	oewn:2025+	i18823
+en	Plc;Prox;Src	hence	NTUMC wordnet 00043521-r	i18393
+en	Plc;Prox;Src	hence	oewn:2025+	i18393
+en	Plc;Sg;Elec;Loc+Goal	anywhere	NTUMC wordnet 00025290-r	i18288
+en	Plc;Sg;Elec;Loc+Goal	anyplace	NTUMC wordnet 00025290-r	i18288
+en	Plc;Sg;Elec;Loc+Goal	anywhere	oewn:2025+	i18288
+en	Plc;Sg;Elec;Loc+Goal	anyplace	oewn:2025+	i18288
+en	Plc;Univ;Loc+Goal	everywhere	NTUMC wordnet 00025728-r	i18291
+en	Plc;Univ;Loc+Goal	all over	NTUMC wordnet 00025728-r	i18291
+en	Plc;Univ;Loc+Goal	everyplace	NTUMC wordnet 00025728-r	i18291
+en	Plc;Univ;Loc+Goal	around	NTUMC wordnet 00025728-r	i18291
+en	Plc;Univ;Loc+Goal	all round	NTUMC wordnet 00025728-r	i18291
+en	Plc;Univ;Loc+Goal	everywhere	oewn:2025+	i18291
+en	Plc;Univ;Loc+Goal	everyplace	oewn:2025+	i18291
+en	Plc;Univ;Loc+Goal	all over	oewn:2025+	i18291
 en	Tim;Dist	then	NTUMC wordnet 15296354-n	i117639
 en	Tim;Dist	then	oewn:2025+	i117639
+en	Tim;Dist;Loc	then	NTUMC wordnet 00117903-r	i18891
+en	Tim;Dist;Loc	then	oewn:2025+	i18891
 en	Tim;Prox	now	NTUMC wordnet 15119919-n	i116653
 en	Tim;Prox	now	oewn:2025+	i116653
+en	Tim;Prox;Loc	now	NTUMC wordnet 00049220-r	i18426
+en	Tim;Prox;Loc	at present	NTUMC wordnet 00049220-r	i18426
+en	Tim;Prox;Loc	now	oewn:2025+	i18426
+en	Tim;Prox;Loc	at present	oewn:2025+	i18426
+en	Tim;Sg;Asrt;Loc	sometime	NTUMC wordnet 00021702-r	i18265
+en	Tim;Sg;Asrt;Loc	sometime	oewn:2025+	i18265
+en	Tim;Sg;Elec;Loc	ever	NTUMC wordnet 00146387-r	i19122
+en	Tim;Sg;Elec;Loc	of all time	NTUMC wordnet 00146387-r	i19122
+en	Tim;Sg;Elec;Loc	ever	oewn:2025+	i19122
+en	Tim;Sg;Elec;Loc	of all time	oewn:2025+	i19122
 en	Two;Univ	both	oewn:2025+	i12555
 es	Mnr;Prox+Dist	así	omw-es:2.0	i18911
+es	Plc;Dist;Loc	allá	omw-es:2.0	i18828
+es	Plc;Dist;Loc	allí	omw-es:2.0	i18828
+es	Plc;Dist;Loc	en ese lugar	omw-es:2.0	i18828
+es	Plc;Dist;Loc	en ese sitio	omw-es:2.0	i18828
+es	Plc;Dist;Src	desde ahí	omw-es:2.0	i18394
 es	Plc;Prox	acá	omw-es:2.0	i81667
 es	Plc;Prox	aquí	omw-es:2.0	i81667
+es	Plc;Prox;Goal	acá	omw-es:2.0	i18824
+es	Plc;Prox;Goal	aquí	omw-es:2.0	i18824
+es	Plc;Prox;Loc	aquí	omw-es:2.0	i18823
+es	Plc;Sg;Elec;Loc+Goal	dondequiera	omw-es:2.0	i18288
+es	Plc;Sg;Elec;Loc+Goal	en cualquier parte	omw-es:2.0	i18288
+es	Plc;Univ;Loc+Goal	en todas partes	omw-es:2.0	i18291
+es	Plc;Univ;Loc+Goal	por todas partes	omw-es:2.0	i18291
 es	Tim;Dist	entonces	omw-es:2.0	i117639
 es	Tim;Prox	ahora	omw-es:2.0	i116653
+es	Tim;Prox;Loc	actualmente	omw-es:2.0	i18426
+es	Tim;Prox;Loc	ahora	omw-es:2.0	i18426
 eu	Tim;Dist	orduan	omw-eu:2.0	i117639
 eu	Tim;Prox	orain	omw-eu:2.0	i116653
 fi	Mnr;Prox+Dist	noin	finnish-fi:2.0.1	i18911
@@ -226,63 +568,217 @@ fi	Mnr;Prox+Dist	siten	finnish-fi:2.0.1	i18911
 fi	Mnr;Prox+Dist	niin että	finnish-fi:2.0.1	i18911
 fi	Mnr;Prox+Dist	näin	finnish-fi:2.0.1	i18911
 fi	Plc;Dist	siellä	finnish-fi:2.0.1	i81668
+fi	Plc;Dist;Goal	sinne	finnish-fi:2.0.1	i18829
+fi	Plc;Dist;Goal	siihen	finnish-fi:2.0.1	i18829
+fi	Plc;Dist;Loc	tuolla	finnish-fi:2.0.1	i18828
+fi	Plc;Dist;Loc	siellä	finnish-fi:2.0.1	i18828
+fi	Plc;Dist;Loc	tuossa	finnish-fi:2.0.1	i18828
+fi	Plc;Dist;Src	sieltä	finnish-fi:2.0.1	i18394
 fi	Plc;Prox	tässä	finnish-fi:2.0.1	i81667
 fi	Plc;Prox	täällä	finnish-fi:2.0.1	i81667
+fi	Plc;Prox;Goal	tänne	finnish-fi:2.0.1	i18824
+fi	Plc;Prox;Goal	tähän	finnish-fi:2.0.1	i18824
+fi	Plc;Prox;Loc	tässä	finnish-fi:2.0.1	i18823
+fi	Plc;Prox;Loc	täällä	finnish-fi:2.0.1	i18823
+fi	Plc;Prox;Src	täältä	finnish-fi:2.0.1	i18393
+fi	Plc;Sg;Elec;Loc+Goal	kaikkialla	finnish-fi:2.0.1	i18288
+fi	Plc;Sg;Elec;Loc+Goal	kaikkialle	finnish-fi:2.0.1	i18288
+fi	Plc;Sg;Elec;Loc+Goal	mihin tahansa	finnish-fi:2.0.1	i18288
+fi	Plc;Sg;Elec;Loc+Goal	missä tahansa	finnish-fi:2.0.1	i18288
+fi	Plc;Univ;Loc+Goal	kaikkialla	finnish-fi:2.0.1	i18291
+fi	Plc;Univ;Loc+Goal	kaikkialle	finnish-fi:2.0.1	i18291
+fi	Plc;Univ;Loc+Goal	joka paikassa	finnish-fi:2.0.1	i18291
+fi	Plc;Univ;Loc+Goal	joka puolella	finnish-fi:2.0.1	i18291
 fi	Tim;Dist	silloin	finnish-fi:2.0.1	i117639
+fi	Tim;Dist;Loc	silloin	finnish-fi:2.0.1	i18891
 fi	Tim;Prox	nyt	finnish-fi:2.0.1	i116653
+fi	Tim;Prox;Loc	parhaillaan	finnish-fi:2.0.1	i18426
+fi	Tim;Prox;Loc	tällä hetkellä	finnish-fi:2.0.1	i18426
+fi	Tim;Prox;Loc	nyt	finnish-fi:2.0.1	i18426
+fi	Tim;Sg;Asrt;Loc	joskus	finnish-fi:2.0.1	i18265
+fi	Tim;Sg;Elec;Loc	ikinä	finnish-fi:2.0.1	i19122
+fi	Tim;Sg;Elec;Loc	koskaan	finnish-fi:2.0.1	i19122
+fi	Tim;Sg;Elec;Loc	milloinkaan	finnish-fi:2.0.1	i19122
 fi	Two;Univ	molemmat	finnish-fi:2.0.1	i12555
 fr	Mnr;Prox+Dist	comme	omw-fr:2.0	i18911
 fr	Mnr;Prox+Dist	ainsi	omw-fr:2.0	i18911
 fr	Mnr;Prox+Dist	tellement	omw-fr:2.0	i18911
 fr	Plc;Dist	là-bas	omw-fr:2.0	i81668
 fr	Plc;Dist	là	omw-fr:2.0	i81668
+fr	Plc;Dist;Goal	là-bas	omw-fr:2.0	i18829
+fr	Plc;Dist;Goal	là	omw-fr:2.0	i18829
+fr	Plc;Dist;Loc	là-bas	omw-fr:2.0	i18828
+fr	Plc;Dist;Loc	par-là	omw-fr:2.0	i18828
+fr	Plc;Dist;Loc	là	omw-fr:2.0	i18828
+fr	Plc;Dist;Loc	voici	omw-fr:2.0	i18828
 fr	Plc;Prox	ici	omw-fr:2.0	i81667
+fr	Plc;Prox;Goal	ici	omw-fr:2.0	i18824
+fr	Plc;Prox;Goal	çà	omw-fr:2.0	i18824
+fr	Plc;Prox;Goal	par ici	omw-fr:2.0	i18824
+fr	Plc;Prox;Loc	ici	omw-fr:2.0	i18823
+fr	Plc;Prox;Loc	là-dessus	omw-fr:2.0	i18823
+fr	Plc;Prox;Loc	ores	omw-fr:2.0	i18823
+fr	Plc;Prox;Src	donc	omw-fr:2.0	i18393
+fr	Plc;Prox;Src	ainsi	omw-fr:2.0	i18393
+fr	Plc;Prox;Src	ici	omw-fr:2.0	i18393
+fr	Plc;Sg;Elec;Loc+Goal	n'importe où	omw-fr:2.0	i18288
+fr	Plc;Sg;Elec;Loc+Goal	partout	omw-fr:2.0	i18288
+fr	Plc;Sg;Elec;Loc+Goal	tout	omw-fr:2.0	i18288
+fr	Plc;Univ;Loc+Goal	partout	omw-fr:2.0	i18291
 fr	Tim;Dist	alors	omw-fr:2.0	i117639
+fr	Tim;Dist;Loc	alors	omw-fr:2.0	i18891
 fr	Tim;Prox	rasibus	omw-fr:2.0	i116653
 fr	Tim;Prox	maintenant	omw-fr:2.0	i116653
 fr	Two;Univ	les deux	omw-fr:2.0	i12555
 fr	Two;Univ	tous les deux	omw-fr:2.0	i12555
+ga	Mnr;Prox+Dist	mar sin	gfong:0.1	i18911
+ga	Mnr;Prox+Dist	dá bhrí sin	gfong:0.1	i18911
+ga	Mnr;Prox+Dist	amhlaidh	gfong:0.1	i18911
+ga	Plc;Dist;Loc	ansin	gfong:0.1	i18828
+ga	Plc;Dist;Loc	ann	gfong:0.1	i18828
+ga	Plc;Prox;Loc	anseo	gfong:0.1	i18823
+ga	Tim;Dist;Loc	an uair úd	gfong:0.1	i18891
+ga	Tim;Dist;Loc	an tráth úd	gfong:0.1	i18891
+ga	Tim;Dist;Loc	ag an am úd	gfong:0.1	i18891
+ga	Tim;Dist;Loc	ag an am sin	gfong:0.1	i18891
+ga	Tim;Dist;Loc	ansin	gfong:0.1	i18891
+ga	Tim;Prox;Loc	anois	gfong:0.1	i18426
+ga	Tim;Sg;Elec;Loc	riamh	gfong:0.1	i19122
 gd	Plc;Dist	an àiteigin	usgw-gd:0.9	i81668
 gd	Plc;Prox	an seo	usgw-gd:0.9	i81667
 gd	Plc;Prox	an sin	usgw-gd:0.9	i81667
+gd	Plc;Prox;Goal	a-bhos	usgw-gd:0.9	i18824
+gd	Plc;Prox;Goal	am broinn	usgw-gd:0.9	i18824
+gd	Plc;Prox;Goal	an-seo	usgw-gd:0.9	i18824
+gd	Tim;Dist;Loc	a-rèist	usgw-gd:0.9	i18891
 gd	Tim;Prox	an-dràsta fhèin	usgw-gd:0.9	i116653
+gd	Tim;Prox;Loc	dìreach	usgw-gd:0.9	i18426
+gd	Tim;Sg;Asrt;Loc	corra uair	usgw-gd:0.9	i18265
 he	Mnr;Prox+Dist	כָּךְ	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כֹּה	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כָּכָה	omw-he:2.0	i18911
 he	Mnr;Prox+Dist	כֵּן	omw-he:2.0	i18911
+he	Plc;Dist;Goal	שָׁמָּה	omw-he:2.0	i18829
+he	Plc;Dist;Goal	לְשָׁם	omw-he:2.0	i18829
+he	Plc;Dist;Loc	שָׁם	omw-he:2.0	i18828
+he	Plc;Dist;Loc	שָׁמָּה	omw-he:2.0	i18828
+he	Tim;Dist;Loc	אָז	omw-he:2.0	i18891
+he	Tim;Prox;Loc	עַכְשָׁו	omw-he:2.0	i18426
 hr	Mnr;Prox+Dist	tako	omw-hr:2.0	i18911
+hr	Plc;Dist;Goal	onamo	omw-hr:2.0	i18829
+hr	Plc;Dist;Loc	tamo	omw-hr:2.0	i18828
+hr	Plc;Prox;Goal	ovdje	omw-hr:2.0	i18824
+hr	Plc;Prox;Loc	ovdje	omw-hr:2.0	i18823
+hr	Plc;Univ;Loc+Goal	posvuda	omw-hr:2.0	i18291
+hr	Plc;Univ;Loc+Goal	svuda	omw-hr:2.0	i18291
+hr	Tim;Prox;Loc	sada	omw-hr:2.0	i18426
+hr	Tim;Sg;Elec;Loc	ikada	omw-hr:2.0	i19122
 hu	Mnr;Prox+Dist	így	hungarian-hu:1.0	i18911
+hu	Plc;Dist;Goal	oda	hungarian-hu:1.0	i18829
+hu	Plc;Dist;Loc	ott	hungarian-hu:1.0	i18828
+hu	Plc;Dist;Src	onnan	hungarian-hu:1.0	i18394
+hu	Plc;Dist;Src	onnét	hungarian-hu:1.0	i18394
+hu	Plc;Prox;Goal	ide	hungarian-hu:1.0	i18824
+hu	Plc;Prox;Loc	itt	hungarian-hu:1.0	i18823
+hu	Plc;Sg;Elec;Loc+Goal	bárhova	hungarian-hu:1.0	i18288
+hu	Plc;Univ;Loc+Goal	mindenhol	hungarian-hu:1.0	i18291
+hu	Plc;Univ;Loc+Goal	mindenütt	hungarian-hu:1.0	i18291
+hu	Tim;Dist;Loc	akkoriban	hungarian-hu:1.0	i18891
+hu	Tim;Prox;Loc	most	hungarian-hu:1.0	i18426
+hu	Tim;Sg;Asrt;Loc	valamikor	hungarian-hu:1.0	i18265
+hu	Tim;Sg;Asrt;Loc	egyszer	hungarian-hu:1.0	i18265
+hu	Tim;Sg;Elec;Loc	valaha	hungarian-hu:1.0	i19122
 id	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
 id	Mnr;Prox+Dist	begitu	NTUMC wordnet 00121135-r	i18911
-id	Mnr;Prox+Dist	begini	omw-id:2.0	i18911
-id	Mnr;Prox+Dist	jadi	omw-id:2.0	i18911
+id	Mnr;Prox+Dist	jadi	wnb-id:1.5	i18911
+id	Mnr;Prox+Dist	begini	wnb-id:1.5	i18911
 id	Plc;Dist	sana	NTUMC wordnet 08489627-n	i81668
 id	Plc;Dist	disana	NTUMC wordnet 08489627-n	i81668
 id	Plc;Dist	situ	NTUMC wordnet 08489627-n	i81668
-id	Plc;Dist	sana	omw-id:2.0	i81668
+id	Plc;Dist	sana	wnb-id:1.5	i81668
+id	Plc;Dist;Loc	ke situ	NTUMC wordnet 00109151-r	i18828
+id	Plc;Dist;Loc	di sana	NTUMC wordnet 00109151-r	i18828
+id	Plc;Dist;Loc	situ	NTUMC wordnet 00109151-r	i18828
+id	Plc;Dist;Loc	ada	NTUMC wordnet 00109151-r	i18828
+id	Plc;Dist;Loc	ke sana	NTUMC wordnet 00109151-r	i18828
+id	Plc;Dist;Loc	di situ	NTUMC wordnet 00109151-r	i18828
+id	Plc;Dist;Loc	di sana	wnb-id:1.5	i18828
+id	Plc;Dist;Loc	situ	wnb-id:1.5	i18828
+id	Plc;Dist;Loc	ada	wnb-id:1.5	i18828
+id	Plc;Dist;Loc	ke situ	wnb-id:1.5	i18828
+id	Plc;Dist;Loc	ke sana	wnb-id:1.5	i18828
+id	Plc;Dist;Loc	di situ	wnb-id:1.5	i18828
 id	Plc;Prox	sini	NTUMC wordnet 08489497-n	i81667
-id	Plc;Prox	di sini	omw-id:2.0	i81667
-id	Plc;Prox	sini	omw-id:2.0	i81667
+id	Plc;Prox	sini	wnb-id:1.5	i81667
+id	Plc;Prox;Goal	kemari	NTUMC wordnet 00108647-r	i18824
+id	Plc;Prox;Goal	kemari	wnb-id:1.5	i18824
+id	Plc;Prox;Loc	di sini	NTUMC wordnet 00108479-r	i18823
+id	Plc;Prox;Loc	ke sini	NTUMC wordnet 00108479-r	i18823
+id	Plc;Prox;Loc	ke mari	NTUMC wordnet 00108479-r	i18823
+id	Plc;Prox;Loc	di sini	wnb-id:1.5	i18823
+id	Plc;Prox;Loc	ke sini	wnb-id:1.5	i18823
+id	Plc;Prox;Src	oleh kerana itu	NTUMC wordnet 00043521-r	i18393
+id	Plc;Sg;Elec;Loc+Goal	mana-mana	NTUMC wordnet 00025290-r	i18288
+id	Plc;Sg;Elec;Loc+Goal	mana-mana	wnb-id:1.5	i18288
+id	Plc;Univ;Loc+Goal	sebilang	NTUMC wordnet 00025728-r	i18291
+id	Plc;Univ;Loc+Goal	mana-mana	NTUMC wordnet 00025728-r	i18291
+id	Plc;Univ;Loc+Goal	sebilang	wnb-id:1.5	i18291
+id	Plc;Univ;Loc+Goal	mana-mana	wnb-id:1.5	i18291
 id	Tim;Dist	ketika	NTUMC wordnet 15296354-n	i117639
 id	Tim;Dist	masa	NTUMC wordnet 15296354-n	i117639
 id	Tim;Dist	waktu	NTUMC wordnet 15296354-n	i117639
-id	Tim;Dist	ketika	omw-id:2.0	i117639
-id	Tim;Dist	masa	omw-id:2.0	i117639
-id	Tim;Dist	waktu	omw-id:2.0	i117639
+id	Tim;Dist	ketika	wnb-id:1.5	i117639
+id	Tim;Dist	masa	wnb-id:1.5	i117639
+id	Tim;Dist	waktu	wnb-id:1.5	i117639
 id	Tim;Prox	sekarang	NTUMC wordnet 15119919-n	i116653
 id	Tim;Prox	kini	NTUMC wordnet 15119919-n	i116653
 id	Tim;Prox	saat ini	NTUMC wordnet 15119919-n	i116653
-id	Tim;Prox	kini	omw-id:2.0	i116653
-id	Tim;Prox	sekarang	omw-id:2.0	i116653
-id	Two;Univ	kedua	omw-id:2.0	i12555
+id	Tim;Prox	sekarang	wnb-id:1.5	i116653
+id	Tim;Prox	kini	wnb-id:1.5	i116653
+id	Tim;Prox;Loc	sekarang	NTUMC wordnet 00049220-r	i18426
+id	Tim;Prox;Loc	sekarang	wnb-id:1.5	i18426
+id	Tim;Sg;Elec;Loc	jemah	NTUMC wordnet 00146387-r	i19122
+id	Tim;Sg;Elec;Loc	pernah	NTUMC wordnet 00146387-r	i19122
+id	Tim;Sg;Elec;Loc	pernah	wnb-id:1.5	i19122
+id	Two;Univ	kedua	wnb-id:1.5	i12555
 it	Mnr;Prox+Dist	così	NTUMC wordnet 00121135-r	i18911
 it	Mnr;Prox+Dist	quindi	NTUMC wordnet 00121135-r	i18911
 it	Mnr;Prox+Dist	così	omw-it:2.0	i18911
 it	Mnr;Prox+Dist	quindi	omw-it:2.0	i18911
 it	Plc;Prox	qua	NTUMC wordnet 08489497-n	i81667
 it	Plc;Prox	qui	NTUMC wordnet 08489497-n	i81667
+it	Plc;Prox;Goal	qui	NTUMC wordnet 00108647-r	i18824
+it	Plc;Prox;Goal	qua	NTUMC wordnet 00108647-r	i18824
+it	Plc;Prox;Goal	qua	omw-it:2.0	i18824
+it	Plc;Prox;Goal	qui	omw-it:2.0	i18824
+it	Plc;Prox;Loc	qui	NTUMC wordnet 00108479-r	i18823
+it	Plc;Prox;Loc	qui	omw-it:2.0	i18823
+it	Plc;Univ;Loc+Goal	ovunque	NTUMC wordnet 00025728-r	i18291
+it	Plc;Univ;Loc+Goal	dovunque	NTUMC wordnet 00025728-r	i18291
+it	Plc;Univ;Loc+Goal	dappertutto	NTUMC wordnet 00025728-r	i18291
+it	Plc;Univ;Loc+Goal	dappertutto	omw-it:2.0	i18291
+it	Plc;Univ;Loc+Goal	dovunque	omw-it:2.0	i18291
+it	Plc;Univ;Loc+Goal	ovunque	omw-it:2.0	i18291
+it	Tim;Dist;Loc	poi	NTUMC wordnet 00117903-r	i18891
+it	Tim;Dist;Loc	quindi	NTUMC wordnet 00117903-r	i18891
+it	Tim;Dist;Loc	allora	NTUMC wordnet 00117903-r	i18891
+it	Tim;Dist;Loc	allora	omw-it:2.0	i18891
+it	Tim;Dist;Loc	poi	omw-it:2.0	i18891
+it	Tim;Dist;Loc	quindi	omw-it:2.0	i18891
+it	Tim;Prox;Loc	ora	NTUMC wordnet 00049220-r	i18426
+it	Tim;Prox;Loc	adesso	NTUMC wordnet 00049220-r	i18426
+it	Tim;Prox;Loc	presentemente	NTUMC wordnet 00049220-r	i18426
+it	Tim;Prox;Loc	momentaneamente	NTUMC wordnet 00049220-r	i18426
+it	Tim;Prox;Loc	attualmente	NTUMC wordnet 00049220-r	i18426
+it	Tim;Prox;Loc	attualmente	omw-it:2.0	i18426
+it	Tim;Prox;Loc	momentaneamente	omw-it:2.0	i18426
+it	Tim;Prox;Loc	presentemente	omw-it:2.0	i18426
+it	Tim;Sg;Elec;Loc	mai	NTUMC wordnet 00146387-r	i19122
+it	Tim;Sg;Elec;Loc	sempre	NTUMC wordnet 00146387-r	i19122
+it	Tim;Sg;Elec;Loc	mai	omw-it:2.0	i19122
+it	Tim;Sg;Elec;Loc	sempre	omw-it:2.0	i19122
 ja	Mnr;Prox+Dist	かく	NTUMC wordnet 00121135-r	i18911
 ja	Mnr;Prox+Dist	爾く	NTUMC wordnet 00121135-r	i18911
 ja	Mnr;Prox+Dist	そう	NTUMC wordnet 00121135-r	i18911
@@ -294,26 +790,129 @@ ja	Mnr;Prox+Dist	斯う	NTUMC wordnet 00121135-r	i18911
 ja	Mnr;Prox+Dist	然	NTUMC wordnet 00121135-r	i18911
 ja	Mnr;Prox+Dist	こうして	NTUMC wordnet 00121135-r	i18911
 ja	Mnr;Prox+Dist	斯うして	NTUMC wordnet 00121135-r	i18911
-ja	Mnr;Prox+Dist	こうして	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	そない	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	かく	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	そう	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	斯うして	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	斯う	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	斯く	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	然く	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	然	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	爾く	omw-ja:2.0	i18911
-ja	Mnr;Prox+Dist	爾	omw-ja:2.0	i18911
+ja	Mnr;Prox+Dist	然う	wnja:2.1	i18911
+ja	Mnr;Prox+Dist	ソナイ	wnja:2.1	i18911
+ja	Mnr;Prox+Dist	斯う	wnja:2.1	i18911
+ja	Mnr;Prox+Dist	斯うして	wnja:2.1	i18911
+ja	Mnr;Prox+Dist	斯く	wnja:2.1	i18911
+ja	Mnr;Prox+Dist	然く	wnja:2.1	i18911
+ja	Mnr;Prox+Dist	爾く	wnja:2.1	i18911
 ja	Plc;Dist	それ	NTUMC wordnet 08489627-n	i81668
 ja	Plc;Dist	そこ	NTUMC wordnet 08489627-n	i81668
-ja	Plc;Dist	そこ	omw-ja:2.0	i81668
-ja	Plc;Dist	それ	omw-ja:2.0	i81668
+ja	Plc;Dist	其処	wnja:2.1	i81668
+ja	Plc;Dist;Goal	あそこへ	NTUMC wordnet 00109328-r	i18829
+ja	Plc;Dist;Goal	そこへ	NTUMC wordnet 00109328-r	i18829
+ja	Plc;Dist;Goal	あそこへ	wnja:2.1	i18829
+ja	Plc;Dist;Goal	そこへ	wnja:2.1	i18829
+ja	Plc;Dist;Loc	あそこで	NTUMC wordnet 00109151-r	i18828
+ja	Plc;Dist;Loc	そこに	NTUMC wordnet 00109151-r	i18828
+ja	Plc;Dist;Loc	あそこで	wnja:2.1	i18828
+ja	Plc;Dist;Loc	そこに	wnja:2.1	i18828
+ja	Plc;Dist;Src	そこから	NTUMC wordnet 00043608-r	i18394
+ja	Plc;Dist;Src	ソコカラ	wnja:2.1	i18394
 ja	Plc;Prox	ここ	NTUMC wordnet 08489497-n	i81667
 ja	Plc;Prox	こちら	NTUMC wordnet 08489497-n	i81667
 ja	Plc;Prox	此処	NTUMC wordnet 08489497-n	i81667
 ja	Plc;Prox	此所	NTUMC wordnet 08489497-n	i81667
-ja	Plc;Prox	ここ	omw-ja:2.0	i81667
+ja	Plc;Prox	此処	wnja:2.1	i81667
+ja	Plc;Prox;Goal	此処に	NTUMC wordnet 00108647-r	i18824
+ja	Plc;Prox;Goal	此に	NTUMC wordnet 00108647-r	i18824
+ja	Plc;Prox;Goal	是に	NTUMC wordnet 00108647-r	i18824
+ja	Plc;Prox;Goal	茲に	NTUMC wordnet 00108647-r	i18824
+ja	Plc;Prox;Goal	こちらへ	NTUMC wordnet 00108647-r	i18824
+ja	Plc;Prox;Goal	爰に	NTUMC wordnet 00108647-r	i18824
+ja	Plc;Prox;Goal	是に	wnja:2.1	i18824
+ja	Plc;Prox;Goal	此に	wnja:2.1	i18824
+ja	Plc;Prox;Goal	此処に	wnja:2.1	i18824
+ja	Plc;Prox;Goal	爰に	wnja:2.1	i18824
+ja	Plc;Prox;Goal	茲に	wnja:2.1	i18824
+ja	Plc;Prox;Goal	こちらへ	wnja:2.1	i18824
+ja	Plc;Prox;Loc	此処に	NTUMC wordnet 00108479-r	i18823
+ja	Plc;Prox;Loc	此に	NTUMC wordnet 00108479-r	i18823
+ja	Plc;Prox;Loc	是に	NTUMC wordnet 00108479-r	i18823
+ja	Plc;Prox;Loc	茲に	NTUMC wordnet 00108479-r	i18823
+ja	Plc;Prox;Loc	爰に	NTUMC wordnet 00108479-r	i18823
+ja	Plc;Prox;Loc	是に	wnja:2.1	i18823
+ja	Plc;Prox;Loc	此に	wnja:2.1	i18823
+ja	Plc;Prox;Loc	此処に	wnja:2.1	i18823
+ja	Plc;Prox;Loc	爰に	wnja:2.1	i18823
+ja	Plc;Prox;Loc	茲に	wnja:2.1	i18823
+ja	Plc;Prox;Src	ここから	NTUMC wordnet 00043521-r	i18393
+ja	Plc;Prox;Src	ここから	wnja:2.1	i18393
+ja	Plc;Sg;Elec;Loc+Goal	どこへも	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	どこへでも	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所構わず	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所嫌わず	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	ところ嫌わず	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	どこにも	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処も彼処も	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所かまわず	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所きらわず	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	どこかに	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処もかしこも	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	どこにでも	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	ところ構わず	NTUMC wordnet 00025290-r	i18288
+ja	Plc;Sg;Elec;Loc+Goal	ところ嫌わず	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	ところ構わず	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	どこかに	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	どこへでも	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処にでも	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処にも	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処へも	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処もかしこも	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	何処も彼処も	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所かまわず	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所きらわず	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所嫌わず	wnja:2.1	i18288
+ja	Plc;Sg;Elec;Loc+Goal	所構わず	wnja:2.1	i18288
+ja	Plc;Univ;Loc+Goal	普く	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	端から端まで	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	至る所に	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	一面に	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	あちこち	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	隈無く	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	彼方此方	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	所構わず	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	所嫌わず	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	遍く	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	隈なく	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	どこでも	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	ところ嫌わず	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	満遍無く	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	何処も彼処も	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	満遍なく	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	此所彼所	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	所かまわず	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	くまなく	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	あちらこちら	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	所きらわず	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	あっちこっち	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	何処もかしこも	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	べったり	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	万遍なく	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	万遍無く	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	ところ構わず	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	此処彼処	NTUMC wordnet 00025728-r	i18291
+ja	Plc;Univ;Loc+Goal	ところ嫌わず	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	ところ構わず	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	何処もかしこも	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	何処も彼処も	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	所かまわず	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	所きらわず	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	所嫌わず	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	所構わず	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	あちらこちら	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	ベッタリ	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	一面に	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	万遍無く	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	何処でも	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	彼方此方	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	此処彼処	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	此所彼所	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	端から端まで	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	至る所に	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	遍く	wnja:2.1	i18291
+ja	Plc;Univ;Loc+Goal	隈無く	wnja:2.1	i18291
 ja	Tim;Dist	其時	NTUMC wordnet 15296354-n	i117639
 ja	Tim;Dist	其節	NTUMC wordnet 15296354-n	i117639
 ja	Tim;Dist	其折	NTUMC wordnet 15296354-n	i117639
@@ -328,20 +927,22 @@ ja	Tim;Dist	其の折	NTUMC wordnet 15296354-n	i117639
 ja	Tim;Dist	当時	NTUMC wordnet 15296354-n	i117639
 ja	Tim;Dist	其の頃	NTUMC wordnet 15296354-n	i117639
 ja	Tim;Dist	其の時	NTUMC wordnet 15296354-n	i117639
-ja	Tim;Dist	そのとき	omw-ja:2.0	i117639
-ja	Tim;Dist	其の折	omw-ja:2.0	i117639
-ja	Tim;Dist	其折	omw-ja:2.0	i117639
-ja	Tim;Dist	其の時	omw-ja:2.0	i117639
-ja	Tim;Dist	其時	omw-ja:2.0	i117639
-ja	Tim;Dist	其の節	omw-ja:2.0	i117639
-ja	Tim;Dist	其節	omw-ja:2.0	i117639
-ja	Tim;Dist	其の頃	omw-ja:2.0	i117639
-ja	Tim;Dist	其頃	omw-ja:2.0	i117639
-ja	Tim;Dist	当時	omw-ja:2.0	i117639
-ja	Tim;Dist	その折	omw-ja:2.0	i117639
-ja	Tim;Dist	その時	omw-ja:2.0	i117639
-ja	Tim;Dist	その節	omw-ja:2.0	i117639
-ja	Tim;Dist	その頃	omw-ja:2.0	i117639
+ja	Tim;Dist	その時	wnja:2.1	i117639
+ja	Tim;Dist	其の時	wnja:2.1	i117639
+ja	Tim;Dist	当時	wnja:2.1	i117639
+ja	Tim;Dist	その折	wnja:2.1	i117639
+ja	Tim;Dist	その頃	wnja:2.1	i117639
+ja	Tim;Dist	其の折	wnja:2.1	i117639
+ja	Tim;Dist	其の節	wnja:2.1	i117639
+ja	Tim;Dist	其の頃	wnja:2.1	i117639
+ja	Tim;Dist	其折	wnja:2.1	i117639
+ja	Tim;Dist	其時	wnja:2.1	i117639
+ja	Tim;Dist	其節	wnja:2.1	i117639
+ja	Tim;Dist	其頃	wnja:2.1	i117639
+ja	Tim;Dist;Loc	その時	NTUMC wordnet 00117903-r	i18891
+ja	Tim;Dist;Loc	その時	wnja:2.1	i18891
+ja	Tim;Dist;Loc	其の時	wnja:2.1	i18891
+ja	Tim;Dist;Loc	当時	wnja:2.1	i18891
 ja	Tim;Prox	ただいま	NTUMC wordnet 15119919-n	i116653
 ja	Tim;Prox	方今	NTUMC wordnet 15119919-n	i116653
 ja	Tim;Prox	目下	NTUMC wordnet 15119919-n	i116653
@@ -353,39 +954,186 @@ ja	Tim;Prox	現下	NTUMC wordnet 15119919-n	i116653
 ja	Tim;Prox	現今	NTUMC wordnet 15119919-n	i116653
 ja	Tim;Prox	現在	NTUMC wordnet 15119919-n	i116653
 ja	Tim;Prox	只今	NTUMC wordnet 15119919-n	i116653
-ja	Tim;Prox	ただいま	omw-ja:2.0	i116653
-ja	Tim;Prox	今	omw-ja:2.0	i116653
-ja	Tim;Prox	刻下	omw-ja:2.0	i116653
-ja	Tim;Prox	即今	omw-ja:2.0	i116653
-ja	Tim;Prox	只今	omw-ja:2.0	i116653
-ja	Tim;Prox	方今	omw-ja:2.0	i116653
-ja	Tim;Prox	現下	omw-ja:2.0	i116653
-ja	Tim;Prox	現今	omw-ja:2.0	i116653
-ja	Tim;Prox	現在	omw-ja:2.0	i116653
-ja	Tim;Prox	現時点	omw-ja:2.0	i116653
-ja	Tim;Prox	目下	omw-ja:2.0	i116653
+ja	Tim;Prox	今	wnja:2.1	i116653
+ja	Tim;Prox	只今	wnja:2.1	i116653
+ja	Tim;Prox	現在	wnja:2.1	i116653
+ja	Tim;Prox	刻下	wnja:2.1	i116653
+ja	Tim;Prox	方今	wnja:2.1	i116653
+ja	Tim;Prox	現下	wnja:2.1	i116653
+ja	Tim;Prox	現今	wnja:2.1	i116653
+ja	Tim;Prox	現時点	wnja:2.1	i116653
+ja	Tim;Prox	目下	wnja:2.1	i116653
+ja	Tim;Prox	即今	wnja:2.1	i116653
+ja	Tim;Prox;Loc	差し当り	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差し当たって	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差向き	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	さしあたり	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	今	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差当り	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差しむき	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	さし向き	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	さしあたって	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差し当たり	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	現在	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差し向き	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差当たり	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	差しあたり	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	今や	NTUMC wordnet 00049220-r	i18426
+ja	Tim;Prox;Loc	今	wnja:2.1	i18426
+ja	Tim;Prox;Loc	今や	wnja:2.1	i18426
+ja	Tim;Prox;Loc	現在	wnja:2.1	i18426
+ja	Tim;Prox;Loc	さし向き	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差しあたり	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差しむき	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差し向き	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差し当たり	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差し当り	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差向き	wnja:2.1	i18426
+ja	Tim;Prox;Loc	差当って	wnja:2.1	i18426
+ja	Tim;Sg;Asrt;Loc	いつか	NTUMC wordnet 00021702-r	i18265
+ja	Tim;Sg;Asrt;Loc	何時か	NTUMC wordnet 00021702-r	i18265
+ja	Tim;Sg;Asrt;Loc	そのうちに	NTUMC wordnet 00021702-r	i18265
+ja	Tim;Sg;Asrt;Loc	いずれ	NTUMC wordnet 00021702-r	i18265
+ja	Tim;Sg;Asrt;Loc	その内に	wnja:2.1	i18265
+ja	Tim;Sg;Asrt;Loc	何時か	wnja:2.1	i18265
+ja	Tim;Sg;Asrt;Loc	孰	wnja:2.1	i18265
+ja	Tim;Sg;Elec;Loc	これまでに	NTUMC wordnet 00146387-r	i19122
+ja	Tim;Sg;Elec;Loc	空前の	NTUMC wordnet 00146387-r	i19122
+ja	Tim;Sg;Elec;Loc	曾て	NTUMC wordnet 00146387-r	i19122
+ja	Tim;Sg;Elec;Loc	曽て	NTUMC wordnet 00146387-r	i19122
+ja	Tim;Sg;Elec;Loc	甞て	NTUMC wordnet 00146387-r	i19122
+ja	Tim;Sg;Elec;Loc	嘗て	wnja:2.1	i19122
+ja	Tim;Sg;Elec;Loc	曽て	wnja:2.1	i19122
+ja	Tim;Sg;Elec;Loc	甞て	wnja:2.1	i19122
+ja	Tim;Sg;Elec;Loc	此れ迄に	wnja:2.1	i19122
+ja	Tim;Sg;Elec;Loc	空前の	wnja:2.1	i19122
+ja	Two;Univ	両方の	wnja:2.1	i12555
+kaw	Plc;Prox;Goal	maririki	wnkaw:2026.03.14	i18824
 la	Mnr;Prox+Dist	ita	latin-la:2.0	i18911
 la	Mnr;Prox+Dist	sic	latin-la:2.0	i18911
 la	Mnr;Prox+Dist	tam	latin-la:2.0	i18911
 la	Mnr;Prox+Dist	ita	latin-revised-la:2.0	i18911
 la	Mnr;Prox+Dist	tam	latin-revised-la:2.0	i18911
+la	Plc;Dist;Src	abinde	latin-revised-la:2.0	i18394
+la	Plc;Prox;Goal	hactenus	latin-la:2.0	i18824
+la	Plc;Prox;Goal	hic	latin-la:2.0	i18824
+la	Plc;Prox;Goal	huc	latin-la:2.0	i18824
+la	Plc;Prox;Goal	eic	latin-revised-la:2.0	i18824
+la	Plc;Prox;Goal	huci	latin-revised-la:2.0	i18824
+la	Plc;Prox;Loc	praesto	latin-revised-la:2.0	i18823
+la	Plc;Prox;Src	abhinc	latin-revised-la:2.0	i18393
+la	Plc;Univ;Loc+Goal	ubique	latin-la:2.0	i18291
+la	Plc;Univ;Loc+Goal	undique	latin-la:2.0	i18291
+la	Tim;Dist;Loc	eic	latin-revised-la:2.0	i18891
+la	Tim;Dist;Loc	ibi	latin-revised-la:2.0	i18891
+la	Tim;Prox;Loc	eic	latin-revised-la:2.0	i18426
+la	Tim;Sg;Asrt;Loc	aliquando	latin-revised-la:2.0	i18265
+la	Tim;Sg;Elec;Loc	aliquando	latin-revised-la:2.0	i19122
 la	Two;Univ	ambo	latin-la:2.0	i12555
 la	Two;Univ	duo	latin-revised-la:2.0	i12555
+lt	Tim;Prox;Loc	šiuo metu	omw-lt:2.0	i18426
+lt	Tim;Prox;Loc	dabar	omw-lt:2.0	i18426
+lt	Tim;Sg;Asrt;Loc	kažkada	omw-lt:2.0	i18265
+lt	Tim;Sg;Asrt;Loc	kada nors	omw-lt:2.0	i18265
+lv	Tim;Dist;Loc	tad	wordnet_lv:1.0	i18891
+lv	Tim;Dist;Loc	tobrīd	wordnet_lv:1.0	i18891
+lv	Tim;Dist;Loc	tobrīdi	wordnet_lv:1.0	i18891
+lv	Tim;Dist;Loc	tolaik	wordnet_lv:1.0	i18891
+lv	Tim;Dist;Loc	toreiz	wordnet_lv:1.0	i18891
 mn	Plc;Dist	тэнд	monwn-mn:1.0	i81668
 mn	Plc;Prox	энд	monwn-mn:1.0	i81667
+mn	Plc;Prox;Goal	наашаа	monwn-mn:1.0	i18824
+mn	Plc;Univ;Loc+Goal	хаа сайгүй	monwn-mn:1.0	i18291
+mn	Plc;Univ;Loc+Goal	газар сайгүй	monwn-mn:1.0	i18291
+mn	Plc;Univ;Loc+Goal	эндитэндгүй	monwn-mn:1.0	i18291
 mn	Tim;Prox	одоо	monwn-mn:1.0	i116653
 my	Tim;Prox	ခု	mow:0.1.3	i116653
-pl	Tim;Prox	teraz	omw-pl:2.0	i116653
+pl	Plc;Dist;Goal	tam	plwn:5.0	i18829
+pl	Plc;Prox;Loc	tu	plwn:5.0	i18823
+pl	Plc;Prox;Loc	tutaj	plwn:5.0	i18823
+pl	Plc;Sg;Elec;Loc+Goal	gdziekolwiek	plwn:5.0	i18288
+pl	Tim;Dist;Loc	wtedy	plwn:5.0	i18891
+pl	Tim;Prox	teraz	plwn:5.0	i116653
+pl	Tim;Prox;Loc	teraz	plwn:5.0	i18426
+pl	Tim;Sg;Elec;Loc	kiedykolwiek	plwn:5.0	i19122
+pt	Mnr;Prox+Dist	assim	own-pt:2026.04.07	i18911
+pt	Plc;Dist;Loc	acolá	own-pt:2026.04.07	i18828
+pt	Plc;Dist;Loc	ali	own-pt:2026.04.07	i18828
+pt	Plc;Dist;Loc	eis	own-pt:2026.04.07	i18828
+pt	Plc;Dist;Loc	eis ali	own-pt:2026.04.07	i18828
+pt	Plc;Dist;Loc	eis aí	own-pt:2026.04.07	i18828
+pt	Plc;Dist;Loc	lá	own-pt:2026.04.07	i18828
+pt	Plc;Dist;Src	daí	own-pt:2026.04.07	i18394
+pt	Plc;Dist;Src	desde aí	own-pt:2026.04.07	i18394
+pt	Plc;Dist;Src	por isso	own-pt:2026.04.07	i18394
+pt	Plc;Prox	aqui	own-pt:2026.04.07	i81667
+pt	Plc;Prox	cá	own-pt:2026.04.07	i81667
+pt	Plc;Prox;Goal	aqui	own-pt:2026.04.07	i18824
+pt	Plc;Prox;Goal	cá	own-pt:2026.04.07	i18824
+pt	Plc;Prox;Loc	aqui	own-pt:2026.04.07	i18823
+pt	Plc;Prox;Src	daqui	own-pt:2026.04.07	i18393
+pt	Plc;Sg;Elec;Loc+Goal	algures	own-pt:2026.04.07	i18288
+pt	Plc;Sg;Elec;Loc+Goal	em qualquer lugar	own-pt:2026.04.07	i18288
+pt	Plc;Sg;Elec;Loc+Goal	em qualquer parte	own-pt:2026.04.07	i18288
+pt	Plc;Sg;Elec;Loc+Goal	para qualquer parte	own-pt:2026.04.07	i18288
+pt	Plc;Univ;Loc+Goal	em toda a parte	own-pt:2026.04.07	i18291
+pt	Plc;Univ;Loc+Goal	em toda parte	own-pt:2026.04.07	i18291
+pt	Plc;Univ;Loc+Goal	em todo o lugar	own-pt:2026.04.07	i18291
+pt	Tim;Dist	então	own-pt:2026.04.07	i117639
+pt	Tim;Dist;Loc	então	own-pt:2026.04.07	i18891
+pt	Tim;Dist;Loc	naquela época	own-pt:2026.04.07	i18891
+pt	Tim;Prox	agora	own-pt:2026.04.07	i116653
+pt	Tim;Prox;Loc	actualmente	own-pt:2026.04.07	i18426
+pt	Tim;Prox;Loc	agora	own-pt:2026.04.07	i18426
+pt	Tim;Prox;Loc	atualmente	own-pt:2026.04.07	i18426
+pt	Tim;Prox;Loc	no momento	own-pt:2026.04.07	i18426
+pt	Tim;Prox;Loc	no presente	own-pt:2026.04.07	i18426
+pt	Tim;Prox;Loc	ora	own-pt:2026.04.07	i18426
+pt	Tim;Sg;Elec;Loc	de todos os tempos	own-pt:2026.04.07	i19122
+pt	Tim;Sg;Elec;Loc	em todo o tempo	own-pt:2026.04.07	i19122
 ro	Mnr;Prox+Dist	așa	romanian-ro:1.1	i18911
 ro	Mnr;Prox+Dist	astfel	romanian-ro:1.1	i18911
 ro	Plc;Dist	acolo	romanian-ro:1.1	i81668
+ro	Plc;Dist;Goal	încolo	romanian-ro:1.1	i18829
+ro	Plc;Dist;Loc	acolo	romanian-ro:1.1	i18828
+ro	Plc;Dist;Src	de-acolo	romanian-ro:1.1	i18394
 ro	Plc;Prox	aici	romanian-ro:1.1	i81667
+ro	Plc;Prox;Goal	încoace	romanian-ro:1.1	i18824
+ro	Plc;Prox;Loc	aici	romanian-ro:1.1	i18823
+ro	Plc;Prox;Src	de aici încolo	romanian-ro:1.1	i18393
+ro	Plc;Sg;Elec;Loc+Goal	încotro	romanian-ro:1.1	i18288
+ro	Plc;Sg;Elec;Loc+Goal	orișiunde	romanian-ro:1.1	i18288
+ro	Plc;Sg;Elec;Loc+Goal	oriunde	romanian-ro:1.1	i18288
+ro	Plc;Univ;Loc+Goal	orișiunde	romanian-ro:1.1	i18291
+ro	Plc;Univ;Loc+Goal	oriunde	romanian-ro:1.1	i18291
+ro	Plc;Univ;Loc+Goal	pretutindeni	romanian-ro:1.1	i18291
 ro	Tim;Dist	momentul acela	romanian-ro:1.1	i117639
+ro	Tim;Dist;Loc	atunci	romanian-ro:1.1	i18891
 ro	Tim;Prox	acum	romanian-ro:1.1	i116653
+ro	Tim;Prox;Loc	acum	romanian-ro:1.1	i18426
+ro	Tim;Prox;Loc	actualmente	romanian-ro:1.1	i18426
+ro	Tim;Sg;Asrt;Loc	cândva	romanian-ro:1.1	i18265
+ro	Tim;Sg;Elec;Loc	vreodată	romanian-ro:1.1	i19122
+sga	Mnr;Prox+Dist	amal	sga:0.1	i18911
+sga	Tim;Dist;Loc	dano	sga:0.1	i18891
+sk	Tim;Prox;Loc	teraz	omw-sk:2.0	i18426
+sk	Tim;Prox;Loc	momentálne	omw-sk:2.0	i18426
+sk	Tim;Sg;Asrt;Loc	niekedy	omw-sk:2.0	i18265
+sk	Tim;Sg;Asrt;Loc	raz	omw-sk:2.0	i18265
 th	Plc;Dist	ที่นั่น	omw-th:2.0	i81668
+th	Plc;Dist;Goal	ไปยังที่นั่น	omw-th:2.0	i18829
+th	Plc;Dist;Loc	ที่นั่น	omw-th:2.0	i18828
+th	Plc;Dist;Src	จากที่หนึ่ง	omw-th:2.0	i18394
 th	Plc;Prox	ที่นี่	omw-th:2.0	i81667
+th	Plc;Sg;Elec;Loc+Goal	ที่ไหนก็ตาม	omw-th:2.0	i18288
+th	Plc;Sg;Elec;Loc+Goal	ทุกแห่ง	omw-th:2.0	i18288
+th	Plc;Univ;Loc+Goal	ทุกหนทุกแห่ง	omw-th:2.0	i18291
 th	Tim;Prox	ตอนนี้	omw-th:2.0	i116653
 th	Tim;Prox	เดี๋ยวนี้	omw-th:2.0	i116653
+th	Tim;Prox;Loc	ตอนนี้	omw-th:2.0	i18426
+th	Tim;Sg;Asrt;Loc	บ้างครั้ง	omw-th:2.0	i18265
+th	Tim;Sg;Elec;Loc	ทุกเวลา	omw-th:2.0	i19122
+th	Tim;Sg;Elec;Loc	ในเวลาใดก็ตาม	omw-th:2.0	i19122
 tr	Mnr;Prox+Dist	böyle	kenet:1.0	i18911
 tr	Mnr;Prox+Dist	hakeza	kenet:1.0	i18911
 tr	Mnr;Prox+Dist	öyle	kenet:1.0	i18911
@@ -393,37 +1141,117 @@ tr	Mnr;Prox+Dist	o yolda	kenet:1.0	i18911
 tr	Mnr;Prox+Dist	öylece	kenet:1.0	i18911
 tr	Mnr;Prox+Dist	şöyle	kenet:1.0	i18911
 tr	Mnr;Prox+Dist	şöylece	kenet:1.0	i18911
+tr	Plc;Dist;Goal	oraya	kenet:1.0	i18829
+tr	Plc;Dist;Loc	orada	kenet:1.0	i18828
+tr	Plc;Dist;Src	oradan	kenet:1.0	i18394
 tr	Plc;Prox	bura	kenet:1.0	i81667
 tr	Plc;Prox	burası	kenet:1.0	i81667
+tr	Plc;Prox;Loc	burada	kenet:1.0	i18823
+tr	Plc;Prox;Src	buradan	kenet:1.0	i18393
+tr	Tim;Prox;Loc	şimdilik	kenet:1.0	i18426
+tr	Tim;Sg;Asrt;Loc	bir ara	kenet:1.0	i18265
+tr	Tim;Sg;Asrt;Loc	bir lahzacık	kenet:1.0	i18265
+tr	Tim;Sg;Asrt;Loc	bir lahza	kenet:1.0	i18265
+tr	Tim;Sg;Asrt;Loc	bir parça	kenet:1.0	i18265
 uz	Mnr;Prox+Dist	demak	UzWordnet-uz:1.0	i18911
 uz	Mnr;Prox+Dist	shunday qilib	UzWordnet-uz:1.0	i18911
 uz	Mnr;Prox+Dist	shunday	UzWordnet-uz:1.0	i18911
 uz	Mnr;Prox+Dist	shunaqa	UzWordnet-uz:1.0	i18911
+uz	Plc;Dist;Goal	u yerda	UzWordnet-uz:1.0	i18829
+uz	Plc;Dist;Goal	o‘sha yerda	UzWordnet-uz:1.0	i18829
+uz	Plc;Dist;Goal	o'shajoyda	UzWordnet-uz:1.0	i18829
+uz	Plc;Dist;Loc	u yerda	UzWordnet-uz:1.0	i18828
+uz	Plc;Dist;Loc	o‘sha yerda	UzWordnet-uz:1.0	i18828
+uz	Plc;Dist;Loc	o'shajoyda	UzWordnet-uz:1.0	i18828
+uz	Plc;Dist;Src	shu sababdan	UzWordnet-uz:1.0	i18394
+uz	Plc;Dist;Src	shundan	UzWordnet-uz:1.0	i18394
+uz	Plc;Dist;Src	buning natijasida	UzWordnet-uz:1.0	i18394
+uz	Plc;Prox;Goal	bu yerda 	UzWordnet-uz:1.0	i18824
+uz	Plc;Prox;Goal	shu yerda	UzWordnet-uz:1.0	i18824
+uz	Plc;Prox;Loc	bu yerda 	UzWordnet-uz:1.0	i18823
+uz	Plc;Prox;Loc	shu yerda	UzWordnet-uz:1.0	i18823
+uz	Plc;Sg;Elec;Loc+Goal	qayerda bo'lmasin	UzWordnet-uz:1.0	i18288
+uz	Plc;Univ;Loc+Goal	har joyda	UzWordnet-uz:1.0	i18291
+uz	Plc;Univ;Loc+Goal	hamma yoqda	UzWordnet-uz:1.0	i18291
+uz	Plc;Univ;Loc+Goal	har  yerda	UzWordnet-uz:1.0	i18291
+uz	Plc;Univ;Loc+Goal	hamma joyda	UzWordnet-uz:1.0	i18291
+uz	Tim;Dist;Loc	u vaqtda	UzWordnet-uz:1.0	i18891
+uz	Tim;Dist;Loc	u mahalda	UzWordnet-uz:1.0	i18891
+uz	Tim;Prox;Loc	hozir	UzWordnet-uz:1.0	i18426
+uz	Tim;Sg;Asrt;Loc	bir kunmas	UzWordnet-uz:1.0	i18265
+uz	Tim;Sg;Asrt;Loc	bir kun	UzWordnet-uz:1.0	i18265
+uz	Tim;Sg;Asrt;Loc	qachon bolmasin	UzWordnet-uz:1.0	i18265
+uz	Tim;Sg;Asrt;Loc	bir payti kelib	UzWordnet-uz:1.0	i18265
+yue	Plc;Dist;Goal	嗰度	cantown-yue:1.0	i18829
+yue	Plc;Prox;Loc	呢度	cantown-yue:1.0	i18823
+yue	Plc;Prox;Loc	呢處	cantown-yue:1.0	i18823
+yue	Plc;Sg;Elec;Loc+Goal	隨處	cantown-yue:1.0	i18288
+yue	Plc;Sg;Elec;Loc+Goal	度度	cantown-yue:1.0	i18288
+yue	Plc;Sg;Elec;Loc+Goal	無論邊度	cantown-yue:1.0	i18288
 yue	Tim;Dist	嗰陣	cantown-yue:1.0	i117639
 yue	Tim;Dist	嗰陣時	cantown-yue:1.0	i117639
 yue	Tim;Dist	當時	cantown-yue:1.0	i117639
 yue	Tim;Dist	當其時	cantown-yue:1.0	i117639
 yue	Tim;Dist	當初	cantown-yue:1.0	i117639
+yue	Tim;Prox;Loc	目前	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	依家	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	而家	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	當前	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	此時此刻	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	眼前	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	喺度	cantown-yue:1.0	i18426
+yue	Tim;Prox;Loc	如今	cantown-yue:1.0	i18426
+yue	Tim;Sg;Elec;Loc	無論幾時	cantown-yue:1.0	i19122
+yue	Tim;Sg;Elec;Loc	任何時候	cantown-yue:1.0	i19122
 zsm	Mnr;Prox+Dist	begini	NTUMC wordnet 00121135-r	i18911
 zsm	Mnr;Prox+Dist	oleh demikian	NTUMC wordnet 00121135-r	i18911
 zsm	Mnr;Prox+Dist	jadi	NTUMC wordnet 00121135-r	i18911
-zsm	Mnr;Prox+Dist	begini	omw-zsm:2.0	i18911
-zsm	Mnr;Prox+Dist	jadi	omw-zsm:2.0	i18911
+zsm	Mnr;Prox+Dist	jadi	wnb-zsm:1.5	i18911
+zsm	Mnr;Prox+Dist	begini	wnb-zsm:1.5	i18911
 zsm	Plc;Dist	sana	NTUMC wordnet 08489627-n	i81668
 zsm	Plc;Dist	disana	NTUMC wordnet 08489627-n	i81668
-zsm	Plc;Dist	sana	omw-zsm:2.0	i81668
+zsm	Plc;Dist	sana	wnb-zsm:1.5	i81668
+zsm	Plc;Dist;Loc	ke situ	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	dr situ	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	di sana	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	situ	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	dr sana	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	ada	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	ke sana	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	di situ	NTUMC wordnet 00109151-r	i18828
+zsm	Plc;Dist;Loc	di sana	wnb-zsm:1.5	i18828
+zsm	Plc;Dist;Loc	situ	wnb-zsm:1.5	i18828
+zsm	Plc;Dist;Loc	ada	wnb-zsm:1.5	i18828
+zsm	Plc;Dist;Loc	ke situ	wnb-zsm:1.5	i18828
+zsm	Plc;Dist;Loc	ke sana	wnb-zsm:1.5	i18828
+zsm	Plc;Dist;Loc	di situ	wnb-zsm:1.5	i18828
 zsm	Plc;Prox	sini	NTUMC wordnet 08489497-n	i81667
-zsm	Plc;Prox	di sini	omw-zsm:2.0	i81667
-zsm	Plc;Prox	sini	omw-zsm:2.0	i81667
+zsm	Plc;Prox	sini	wnb-zsm:1.5	i81667
+zsm	Plc;Prox;Loc	di sini	NTUMC wordnet 00108479-r	i18823
+zsm	Plc;Prox;Loc	ke sini	NTUMC wordnet 00108479-r	i18823
+zsm	Plc;Prox;Loc	ke mari	NTUMC wordnet 00108479-r	i18823
+zsm	Plc;Prox;Loc	di sini	wnb-zsm:1.5	i18823
+zsm	Plc;Prox;Loc	ke sini	wnb-zsm:1.5	i18823
+zsm	Plc;Prox;Src	oleh kerana itu	NTUMC wordnet 00043521-r	i18393
+zsm	Plc;Sg;Elec;Loc+Goal	di mana-mana pun	NTUMC wordnet 00025290-r	i18288
+zsm	Plc;Sg;Elec;Loc+Goal	di mana	NTUMC wordnet 00025290-r	i18288
+zsm	Plc;Sg;Elec;Loc+Goal	ke tempat	NTUMC wordnet 00025290-r	i18288
+zsm	Plc;Sg;Elec;Loc+Goal	tempat	NTUMC wordnet 00025290-r	i18288
+zsm	Plc;Sg;Elec;Loc+Goal	ke mana	NTUMC wordnet 00025290-r	i18288
+zsm	Plc;Univ;Loc+Goal	ke merata-rata tempat	NTUMC wordnet 00025728-r	i18291
 zsm	Tim;Dist	ketika	NTUMC wordnet 15296354-n	i117639
 zsm	Tim;Dist	masa	NTUMC wordnet 15296354-n	i117639
 zsm	Tim;Dist	waktu	NTUMC wordnet 15296354-n	i117639
-zsm	Tim;Dist	ketika	omw-zsm:2.0	i117639
-zsm	Tim;Dist	masa	omw-zsm:2.0	i117639
-zsm	Tim;Dist	waktu	omw-zsm:2.0	i117639
+zsm	Tim;Dist	ketika	wnb-zsm:1.5	i117639
+zsm	Tim;Dist	masa	wnb-zsm:1.5	i117639
+zsm	Tim;Dist	waktu	wnb-zsm:1.5	i117639
 zsm	Tim;Prox	sekarang	NTUMC wordnet 15119919-n	i116653
 zsm	Tim;Prox	kini	NTUMC wordnet 15119919-n	i116653
 zsm	Tim;Prox	saat ini	NTUMC wordnet 15119919-n	i116653
-zsm	Tim;Prox	kini	omw-zsm:2.0	i116653
-zsm	Tim;Prox	sekarang	omw-zsm:2.0	i116653
-zsm	Two;Univ	kedua	omw-zsm:2.0	i12555
+zsm	Tim;Prox	kini	wnb-zsm:1.5	i116653
+zsm	Tim;Prox	sekarang	wnb-zsm:1.5	i116653
+zsm	Tim;Prox;Loc	sekarang	NTUMC wordnet 00049220-r	i18426
+zsm	Tim;Prox;Loc	sekarang	wnb-zsm:1.5	i18426
+zsm	Tim;Sg;Elec;Loc	pernah	NTUMC wordnet 00146387-r	i19122
+zsm	Tim;Sg;Elec;Loc	pernah	wnb-zsm:1.5	i19122
+zsm	Two;Univ	kedua	wnb-zsm:1.5	i12555

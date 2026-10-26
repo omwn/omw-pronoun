@@ -34,8 +34,9 @@ from ntumc_pronouns import DEFAULT_DB
 
 logger = logging.getLogger(__name__)
 
-#: lexicons left out: TUFS is read directly (`tufs_pronouns.py`)
-SKIP_PREFIXES = ("tufs-",)
+#: lexicons left out: TUFS is read directly (`tufs_pronouns.py`), and this
+#: wordnet itself, which Cygnet now includes
+SKIP_PREFIXES = ("tufs-", "omw-pronoun")
 #: ILI -> Princeton 3.0 synset, as NTUMC's synsets are identified
 ILI_MAP = DEFAULT_DB.parent / "ili-map-pwn30.tab"
 

@@ -24,8 +24,8 @@ comment = ""
 ["1+2;Pl;Poss"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "first person or second person plural possessive determiner"
-definition = "a first person or second person plural possessive determiner"
+label = "first person or second person plural possessive determinative"
+definition = "a first person or second person plural possessive determinative"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -45,8 +45,8 @@ comment = ""
 
 ["1;Pl;Poss"]
 ntumc = ["our <- 77000006-a"]
-label = "first person plural possessive determiner"
-definition = "a possessive determiner: of or belonging to the speaker, more than one possessor"
+label = "first person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, more than one possessor"
 ntumc_definitions = ["77000006-a: possessive determiner, 1st person, plural"]
 hypernyms = ["1+2;Pl;Poss"]
 ancestors = ["1+2;Pl;Poss"]
@@ -79,8 +79,8 @@ comment = ""
 
 ["1;Sg;Poss"]
 ntumc = ["my <- 77000107-a"]
-label = "first person singular possessive determiner"
-definition = "a possessive determiner: of or belonging to the speaker, one possessor"
+label = "first person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, one possessor"
 ntumc_definitions = ["77000107-a: possessive determiner, 1st person, singular"]
 hypernyms = []
 ancestors = []
@@ -132,8 +132,8 @@ comment = ""
 ["2;Poss"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "second person possessive determiner"
-definition = "a possessive determiner: of or belonging to the addressee"
+label = "second person possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -154,8 +154,8 @@ comment = ""
 
 ["2;Sg;Poss"]
 ntumc = ["your <- 77000024-a"]
-label = "second person singular possessive determiner"
-definition = "a possessive determiner: of or belonging to the addressee, one possessor"
+label = "second person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, one possessor"
 ntumc_definitions = ["77000024-a: possessive determiner, 2nd person, singular"]
 hypernyms = ["2;Poss"]
 ancestors = ["2;Poss"]
@@ -197,8 +197,8 @@ comment = ""
 
 ["3;Pl;Poss"]
 ntumc = ["their <- 77000039-a"]
-label = "third person plural possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, more than one possessor"
+label = "third person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, more than one possessor"
 ntumc_definitions = ["77000039-a: possessive determiner, 3rd person, plural"]
 hypernyms = ["3;Poss"]
 ancestors = ["3;Poss"]
@@ -218,8 +218,8 @@ comment = ""
 ["3;Poss"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "third person possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee"
+label = "third person possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -250,16 +250,16 @@ comment = ""
 ["3;Sg;F+N;Poss"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "third person singular feminine or neuter possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine, neuter)"
+label = "third person singular feminine or neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine or neuter)"
 hypernyms = ["3;Sg;Poss"]
 ancestors = ["3;Sg;Poss", "3;Poss"]
 comment = ""
 
 ["3;Sg;F;Poss"]
 ntumc = ["her <- 77000043-a"]
-label = "third person singular feminine possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+label = "third person singular feminine possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
 ntumc_definitions = ["77000043-a: possessive determiner, 3rd person, singular, feminine"]
 hypernyms = ["3;Sg;F+N;Poss"]
 ancestors = ["3;Sg;F+N;Poss", "3;Sg;Poss", "3;Poss"]
@@ -294,7 +294,7 @@ comment = ""
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
 label = "third person singular masculine or neuter pronoun"
-definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine or neuter)"
 hypernyms = ["3;Sg"]
 ancestors = ["3;Sg", "3"]
 comment = ""
@@ -302,16 +302,16 @@ comment = ""
 ["3;Sg;M+N;Poss"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "third person singular masculine or neuter possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine, neuter)"
+label = "third person singular masculine or neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (masculine or neuter)"
 hypernyms = ["3;Sg;Poss"]
 ancestors = ["3;Sg;Poss", "3;Poss"]
 comment = ""
 
 ["3;Sg;M;Poss"]
 ntumc = ["his <- 77000050-a"]
-label = "third person singular masculine possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine)"
+label = "third person singular masculine possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (masculine)"
 ntumc_definitions = ["77000050-a: possessive determiner, 3rd person, singular, masculine"]
 hypernyms = ["3;Sg;M+N;Poss"]
 ancestors = ["3;Sg;M+N;Poss", "3;Sg;Poss", "3;Poss"]
@@ -341,8 +341,8 @@ comment = ""
 
 ["3;Sg;N;Poss"]
 ntumc = ["its <- 77000054-a"]
-label = "third person singular neuter possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (neuter)"
+label = "third person singular neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (neuter)"
 ntumc_definitions = ["77000054-a: possessive determiner, 3rd person, singular, neuter"]
 hypernyms = ["3;Sg;F+N;Poss", "3;Sg;M+N;Poss"]
 ancestors = ["3;Sg;F+N;Poss", "3;Sg;M+N;Poss", "3;Sg;Poss", "3;Poss"]
@@ -362,16 +362,16 @@ comment = ""
 ["3;Sg;Poss"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "third person singular possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor"
+label = "third person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor"
 hypernyms = ["3;Poss"]
 ancestors = ["3;Poss"]
 comment = ""
 
 ["Asrt"]
 ntumc = ["some <- 02267308-a", "several <- 02267308-a"]
-label = "assertive existential pronoun"
-definition = "an assertive existential pronoun"
+label = "assertive existential determinative"
+definition = "an assertive existential determinative"
 ntumc_definitions = ["02267308-a: quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential"]
 existing_by_lemma = ["some -> oewn oewn-02275064-a [i12553] some: (quantifier) used with either mass nouns or plural count nouns to indicate an unspecified number or quantity", "some -> oewn oewn-00007414-r [i18193] approximately, about, close to, just about, some, roughly, ...: (of quantities) imprecise but fairly close to correct", "some -> oewn oewn-01556991-s [i8524] some: relatively many but unspecified in number", "some -> oewn oewn-01683245-s [i9195] some: remarkable", "several -> oewn oewn-02276025-s [i12556] several: (used with count nouns) of an indefinite number more than 2 or 3 but not many", "several -> oewn oewn-00496454-s [i2778] respective, several, various: considered individually", "several -> oewn oewn-02075578-s [i11337] several: distinct and individual"]
 hypernyms = []
@@ -382,27 +382,17 @@ comment = ""
 ["Dist"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "distal pronoun"
-definition = "a distal pronoun"
+label = "distal determinative"
+definition = "a distal determinative"
 ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
 hypernyms = ["Prox+Dist"]
 ancestors = ["Prox+Dist"]
 comment = ""
 
-["Dur+Tim;Int"]
-lemmas = []
-status = "unlexicalized: no en word; included for the hierarchy"
-label = "duration or time interrogative pronoun"
-definition = "a duration or time interrogative pronoun"
-ntumc_definitions = ["77000103-n: time pronoun; duration, interrogative pronoun"]
-hypernyms = ["feature:Dur", "feature:Tim"]
-ancestors = ["feature:Dur", "feature:Tim"]
-comment = ""
-
 ["Elec"]
 ntumc = ["any <- 02267686-a", "whatever <- 02267686-a", "whatsoever <- 02267686-a", "whichever <- 02267686-a"]
-label = "elective existential pronoun"
-definition = "an elective existential pronoun"
+label = "elective existential determinative"
+definition = "an elective existential determinative"
 ntumc_definitions = ["02267686-a: one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential"]
 existing_by_lemma = ["any -> oewn oewn-00024868-r [i18283] any: to any degree or extent", "any -> oewn oewn-02275443-s [i12554] any, whatever, whatsoever: one or some or every or all without specification; entity, elective existential pronoun; quantifier, elective existential", "whatever -> oewn oewn-02275443-s [i12554] any, whatever, whatsoever: one or some or every or all without specification; entity, elective existential pronoun; quantifier, elective existential", "whatsoever -> oewn oewn-02275443-s [i12554] any, whatever, whatsoever: one or some or every or all without specification; entity, elective existential pronoun; quantifier, elective existential"]
 hypernyms = []
@@ -695,8 +685,8 @@ comment = ""
 ["Int"]
 lemmas = ["which", "what"]
 ntumc = ["what <- 77000091-a", "which <- 77000091-a"]
-label = "interrogative pronoun"
-definition = "an interrogative pronoun"
+label = "interrogative determinative"
+definition = "an interrogative determinative"
 ntumc_definitions = ["77000091-a: interrogative determiner, general"]
 existing_by_lemma = ["which -> tufs-en tufs-en-77000064-n [-] which: which ～", "what -> tufs-en tufs-en-77000091-n [-] what: what kind of ～"]
 hypernyms = []
@@ -709,8 +699,8 @@ comment = ""
 ["Knd;Prox+Dist"]
 lemmas = ["such"]
 new_senses = ["such"]
-label = "kind proximal or distal pronoun"
-definition = "a kind proximal or distal pronoun"
+label = "kind proximal or distal determinative"
+definition = "a kind proximal or distal determinative"
 existing_by_lemma = ["such -> oewn oewn-00148422-r [i19129] such: to so extreme a degree", "such -> oewn oewn-01558587-s [i8532] such: of so extreme a degree or extent; demonstrative, other pronoun; demonstrative determiner, kind", "such -> tufs-en tufs-en-77000089-a [-] such: such"]
 hypernyms = ["Prox+Dist"]
 ancestors = ["Prox+Dist"]
@@ -721,20 +711,20 @@ comment = ""
 
 ["Mnr;Int"]
 ntumc = ["how <- 77000090-n"]
-label = "manner interrogative pronoun"
-definition = "a manner interrogative pronoun"
+label = "manner interrogative adverb"
+definition = "a manner interrogative adverb"
 ntumc_definitions = ["77000090-n: manner, interrogative pronoun"]
 existing_by_lemma = ["how -> tufs-en tufs-en-77000090-n [-] how: Would you like ～ ?", "how -> tufs-en tufs-en-80001331-x [-] how: Would you like ～ ?"]
-hypernyms = ["feature:Mnr"]
-ancestors = ["feature:Mnr"]
+hypernyms = []
+ancestors = []
 status = "built (NTUMC only)"
 comment = ""
 
 ["Mnr;Prox+Dist"]
 lemmas = ["so"]
 new_senses = ["so"]
-label = "manner proximal or distal pronoun"
-definition = "a manner proximal or distal pronoun"
+label = "manner proximal or distal adverb"
+definition = "a manner proximal or distal adverb"
 existing_by_lemma = ["so -> oewn oewn-00147630-r [i19124] so: to a very great extent or degree", "so -> oewn oewn-00119259-r [i18894] so: in a manner that facilitates", "so -> oewn oewn-00147962-r [i19126] so: in such a condition or manner, especially as expressed or implied", "so -> oewn oewn-00148162-r [i19127] so: to a certain unspecified extent or degree", "so -> oewn oewn-00148308-r [i19128] so: in the same way; also", "so -> oewn oewn-00122019-r [i18911] thus, thusly, so: in the way indicated", "so -> oewn oewn-00147799-r [i19125] so: (usually followed by ‘that’) to an extent or degree as expressed", "so -> oewn oewn-00118527-r [i18890] then, so, and so: subsequently or soon afterward (often used as sentence connectors)", "so -> oewn oewn-00043413-r [i18390] therefore, hence, thence, thus, so: (used to introduce a logical conclusion) from that fact or reason or as a result", "so -> oewn oewn-00038035-r [i18359] indeed, so: in truth (often tends to intensify)", "so -> tufs-en tufs-en-00118032-r [i18892] so, then: (CILI) in that case or as a consequence", "so -> tufs-en tufs-en-00121135-r [i18911] so: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
 existing_hidden = 1  # other senses of these lemmas
 hypernyms = []
@@ -830,8 +820,8 @@ comment = ""
 
 ["Pl;Dist"]
 ntumc = ["those <- 77000082-a"]
-label = "plural distal pronoun"
-definition = "a plural distal pronoun"
+label = "plural distal determinative"
+definition = "a plural distal determinative"
 ntumc_definitions = ["77000082-a: demonstrative determiner, plural, distal"]
 hypernyms = ["Dist"]
 ancestors = ["Dist", "Prox+Dist"]
@@ -840,8 +830,8 @@ comment = ""
 
 ["Pl;Prox"]
 ntumc = ["these <- 77000058-a"]
-label = "plural proximal pronoun"
-definition = "a plural proximal pronoun"
+label = "plural proximal determinative"
+definition = "a plural proximal determinative"
 ntumc_definitions = ["77000058-a: demonstrative determiner, plural, proximal"]
 hypernyms = ["Prox"]
 ancestors = ["Prox", "Prox+Dist"]
@@ -855,8 +845,8 @@ label = "place distal pronoun"
 definition = "a place distal pronoun"
 ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
 existing_by_lemma = ["there -> oewn oewn-08506637-n [i81668] there: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal", "there -> oewn oewn-00109919-r [i18828] there: in or at that place or location", "there -> oewn oewn-00110206-r [i18830] there: in that matter; in that respect; on that point", "there -> oewn oewn-00110073-r [i18829] there, thither: to or toward that place; away from the speaker", "there -> tufs-en tufs-en-08489627-n [i81668] there: (CILI) a location other than here; that place", "there -> tufs-en tufs-en-00109151-r [i18828] there: (CILI) in or at that place"]
-hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
-ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
 tufs = ["there <- あっち (high), そちら (high)"]
 curator_notes = ["NEW", "NEW; heading そちら (Med); English is two-way"]
 status = "built"
@@ -882,47 +872,16 @@ label = "place proximal pronoun"
 definition = "a place proximal pronoun"
 ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
 existing_by_lemma = ["here -> oewn oewn-09586312-n [i86915] Hera, Here: queen of the Olympian gods in ancient Greek mythology; sister and wife of Zeus remembered for her jealousy of the many mortal women Zeus fell in love with; identified with Roman Juno", "here -> oewn oewn-08506507-n [i81667] here: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal", "here -> oewn oewn-00109247-r [i18823] here: in or at this place; where the speaker or writer is", "here -> oewn oewn-00109541-r [i18825] here: in this circumstance or respect or on this point or detail", "here -> oewn oewn-00109415-r [i18824] here, hither: to this place (especially toward the speaker)", "here -> oewn oewn-00109789-r [i18827] here: at this time; now", "here -> oewn oewn-01853170-s [i10149] here: being here now", "here -> tufs-en tufs-en-77000072-n [-] here: this way", "here -> tufs-en tufs-en-08489497-n [i81667] here: (CILI) the present location; this place"]
-hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
-ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
 tufs = ["here <- こちら (high)"]
 status = "built"
 comment = ""
 
-["Plc;Prox+Dist"]
-lemmas = []
-status = "unlexicalized: no en word; included for the hierarchy"
-label = "place proximal or distal pronoun"
-definition = "a place proximal or distal pronoun"
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
-comment = ""
-
-["Plc;Sg;Elec"]
-ntumc = ["wherever <- 00495377-r", "wheresoever <- 00495377-r", "anywhere <- 00495377-r"]
-label = "place singular elective existential pronoun"
-definition = "a place singular elective existential pronoun"
-ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
-existing_by_lemma = ["wherever -> oewn oewn-00497575-r [i21592] wherever, wheresoever: where in the world; location, singular, elective existential pronoun", "wheresoever -> oewn oewn-00497575-r [i21592] wherever, wheresoever: where in the world; location, singular, elective existential pronoun", "anywhere -> oewn oewn-00025699-r [i18288] anywhere, anyplace: at or in or to any place"]
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
-status = "built (NTUMC only)"
-comment = ""
-
-["Plc;Univ"]
-ntumc = ["everywhere <- 00025728-r", "all over <- 00025728-r", "everyplace <- 00025728-r", "around <- 00025728-r", "all round <- 00025728-r"]
-label = "place universal pronoun"
-definition = "a place universal pronoun"
-ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
-existing_by_lemma = ["everywhere -> oewn oewn-00026137-r [i18291] everywhere, everyplace, all over: to or in any or all places; pronoun, location; quantifier: universal", "all over -> oewn oewn-00199469-r [i19506] all over, over: over the entire area", "all over -> oewn oewn-00026137-r [i18291] everywhere, everyplace, all over: to or in any or all places; pronoun, location; quantifier: universal", "all over -> oewn oewn-01006696-s [i5493] complete, concluded, ended, over, all over, terminated: having come or been brought to a conclusion", "everyplace -> oewn oewn-00026137-r [i18291] everywhere, everyplace, all over: to or in any or all places; pronoun, location; quantifier: universal", "around -> oewn oewn-00071565-r [i18567] about, around: in the area or vicinity", "around -> oewn oewn-00072001-r [i18570] around: by a circular or circuitous route", "around -> oewn oewn-00072729-r [i18575] about, around: used of movement to or among many different places or in no particular direction", "around -> oewn oewn-00072141-r [i18571] around: in a circle or circular motion", "around -> oewn oewn-00007414-r [i18193] approximately, about, close to, just about, some, roughly, ...: (of quantities) imprecise but fairly close to correct", "around -> oewn oewn-00072601-r [i18574] about, around: in or to a reversed position or direction", "around -> oewn oewn-00072443-r [i18573] around: to a particular destination either specified or understood", "around -> oewn oewn-00072240-r [i18572] about, around: all around or on all sides", "around -> oewn oewn-00071450-r [i18566] around: in circumference", "around -> oewn oewn-00071856-r [i18569] round, around: from beginning to end; throughout"]
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
-status = "built (NTUMC only)"
-comment = ""
-
 ["Poss;Int"]
 ntumc = ["whose <- 77000120-a"]
-label = "possessive interrogative determiner"
-definition = "a possessive interrogative determiner"
+label = "possessive interrogative determinative"
+definition = "a possessive interrogative determinative"
 ntumc_definitions = ["77000120-a: interrogative determiner, possessive"]
 hypernyms = []
 ancestors = []
@@ -932,8 +891,8 @@ comment = ""
 ["Prox"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "proximal pronoun"
-definition = "a proximal pronoun"
+label = "proximal determinative"
+definition = "a proximal determinative"
 ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
 hypernyms = ["Prox+Dist"]
 ancestors = ["Prox+Dist"]
@@ -942,8 +901,8 @@ comment = ""
 ["Prox+Dist"]
 lemmas = []
 status = "unlexicalized: no en word; included for the hierarchy"
-label = "proximal or distal pronoun"
-definition = "a proximal or distal pronoun"
+label = "proximal or distal determinative"
+definition = "a proximal or distal determinative"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -962,12 +921,12 @@ comment = ""
 
 ["Rsn;Int"]
 ntumc = ["why <- 77000112-n"]
-label = "reason interrogative pronoun"
-definition = "a reason interrogative pronoun"
+label = "reason interrogative adverb"
+definition = "a reason interrogative adverb"
 ntumc_definitions = ["77000112-n: cause, interrogative pronoun"]
 existing_hidden = 1  # other senses of these lemmas
-hypernyms = ["feature:Rsn"]
-ancestors = ["feature:Rsn"]
+hypernyms = []
+ancestors = []
 status = "built (NTUMC only)"
 comment = ""
 
@@ -983,8 +942,8 @@ comment = ""
 ["Sg;Dist"]
 lemmas = ["that"]
 ntumc = ["that <- 77000079-a"]
-label = "singular distal pronoun"
-definition = "a singular distal pronoun"
+label = "singular distal determinative"
+definition = "a singular distal determinative"
 ntumc_definitions = ["77000079-a: demonstrative determiner, distal"]
 existing_by_lemma = ["that -> tufs-en tufs-en-77000079-a [-] that: that ～"]
 hypernyms = ["Dist"]
@@ -996,8 +955,8 @@ comment = ""
 
 ["Sg;Oth"]
 ntumc = ["another <- 02070188-a", "some other <- 02070188-a"]
-label = "singular other pronoun"
-definition = "a singular other pronoun"
+label = "singular other determinative"
+definition = "a singular other determinative"
 ntumc_definitions = ["02070188-a: any of various alternatives; some other; quantifier, singular, another"]
 existing_by_lemma = ["another -> oewn oewn-02077592-s [i11344] another, some other: any of various alternatives; some other; entity, singular, other pronoun; quantifier, singular, another", "some other -> oewn oewn-02077592-s [i11344] another, some other: any of various alternatives; some other; entity, singular, other pronoun; quantifier, singular, another"]
 hypernyms = []
@@ -1008,8 +967,8 @@ comment = ""
 ["Sg;Prox"]
 lemmas = ["this"]
 ntumc = ["this <- 77000061-a"]
-label = "singular proximal pronoun"
-definition = "a singular proximal pronoun"
+label = "singular proximal determinative"
+definition = "a singular proximal determinative"
 ntumc_definitions = ["77000061-a: demonstrative determiner, singular, proximal"]
 existing_by_lemma = ["this -> tufs-en tufs-en-77000061-a [-] this: this ～", "this -> tufs-en tufs-en-80001619-a [-] this: this ～", "this -> tufs-en tufs-en-77000075-a [-] this: this ～"]
 hypernyms = ["Prox"]
@@ -1021,8 +980,8 @@ comment = ""
 
 ["Sg;Two;Elec"]
 ntumc = ["either <- 77000142-a"]
-label = "singular elective existential pronoun of two"
-definition = "a singular elective existential pronoun of two"
+label = "singular elective existential determinative of two"
+definition = "a singular elective existential determinative of two"
 ntumc_definitions = ["77000142-a: quantifier, singular, of two, elective existential"]
 existing_by_lemma = ["either -> oewn oewn-00025252-r [i18286] either: after a negative statement used as an intensive meaning something like ‘likewise’ or ‘also’"]
 hypernyms = ["Elec"]
@@ -1032,8 +991,8 @@ comment = ""
 
 ["Sg;Two;Neg"]
 ntumc = ["neither <- 00524607-a", "nor <- 00524607-a"]
-label = "singular negative pronoun of two"
-definition = "a singular negative pronoun of two"
+label = "singular negative determinative of two"
+definition = "a singular negative determinative of two"
 ntumc_definitions = ["00524607-a: not either; not one or the other; entity, of two, negative pronoun; quantifier, of two, negative"]
 existing_by_lemma = ["neither -> oewn oewn-00526784-s [i2944] neither: not either; not one or the other; entity, dual, negative pronoun; quantifier, dual, negative"]
 hypernyms = []
@@ -1043,8 +1002,8 @@ comment = ""
 
 ["Sg;Two;Univ"]
 ntumc = ["either <- 77000141-a"]
-label = "singular universal pronoun of two"
-definition = "a singular universal pronoun of two"
+label = "singular universal determinative of two"
+definition = "a singular universal determinative of two"
 ntumc_definitions = ["77000141-a: quantifier, singular, of two, universal"]
 existing_by_lemma = ["either -> oewn oewn-00025252-r [i18286] either: after a negative statement used as an intensive meaning something like ‘likewise’ or ‘also’"]
 hypernyms = ["Sg;Univ", "Two;Univ"]
@@ -1054,8 +1013,8 @@ comment = ""
 
 ["Sg;Univ"]
 ntumc = ["each <- 02269635-a"]
-label = "singular universal pronoun"
-definition = "a singular universal pronoun"
+label = "singular universal determinative"
+definition = "a singular universal determinative"
 ntumc_definitions = ["02269635-a: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
 existing_by_lemma = ["each -> oewn oewn-00241635-r [i19793] each, to each one, for each one, from each one, apiece: to or from every one of two or more (considered individually)", "each -> oewn oewn-02277394-s [i12562] each: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
 hypernyms = ["Univ"]
@@ -1104,26 +1063,16 @@ label = "time interrogative pronoun"
 definition = "a time interrogative pronoun"
 ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
 existing_by_lemma = ["when -> tufs-en tufs-en-77000104-n [-] when: when"]
-hypernyms = ["Dur+Tim;Int", "feature:Tim"]
-ancestors = ["Dur+Tim;Int", "feature:Tim", "feature:Dur"]
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
 tufs = ["when <- いつ (high)"]
 status = "built"
 comment = ""
 
-["Tim;Sg;Elec"]
-ntumc = ["whenever <- 77000106-n"]
-label = "time singular elective existential pronoun"
-definition = "a time singular elective existential pronoun"
-ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
-hypernyms = ["feature:Tim"]
-ancestors = ["feature:Tim"]
-status = "built (NTUMC only)"
-comment = ""
-
 ["Two;Univ"]
 ntumc = ["both <- 77000076-a"]
-label = "universal pronoun of two"
-definition = "a universal pronoun of two"
+label = "universal determinative of two"
+definition = "a universal determinative of two"
 ntumc_definitions = ["77000076-a: quantifier, of two, universal"]
 existing_by_lemma = ["both -> oewn oewn-02275890-s [i12555] both: (used with count nouns) two considered together; the two"]
 hypernyms = ["Univ"]
@@ -1133,23 +1082,13 @@ comment = ""
 
 ["Univ"]
 ntumc = ["all <- 02269286-a", "every <- 02269286-a"]
-label = "universal pronoun"
-definition = "a universal pronoun"
+label = "universal determinative"
+definition = "a universal determinative"
 ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
 existing_by_lemma = ["all -> oewn oewn-02277044-a [i12561] all: (quantifier) used with either mass or count nouns to indicate the whole number or amount of or every one of a class", "all -> oewn oewn-00008423-r [i19554] wholly, entirely, completely, totally, all, altogether, ...: to a complete degree or to the full or entire extent; Completely or entirely", "all -> oewn oewn-00523527-s [i2924] all: completely given to or absorbed by", "every -> oewn oewn-02277553-s [i12563] every: (used of count nouns) each and all of the members of a group considered singly and without exception", "every -> oewn oewn-02277945-s [i12565] every: each and all of a series of entities or intervals as specified"]
 hypernyms = []
 ancestors = []
 status = "built (NTUMC only)"
-comment = ""
-
-["feature:Dur"]
-lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "duration"
-definition = "the period of time during which something continues"
-existing_by_ili = ["oewn oewn-15158573-n [i116723] duration, continuance: the period of time during which something continues"]
-hypernyms = []
-ancestors = []
 comment = ""
 
 ["feature:Ent"]
@@ -1158,16 +1097,6 @@ status = "unlexicalized: feature synset, no words in any language"
 label = "entity"
 definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
 existing_by_ili = ["oewn oewn-00001740-n [i35545] entity: that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"]
-hypernyms = []
-ancestors = []
-comment = ""
-
-["feature:Mnr"]
-lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "manner"
-definition = "how something is done or how it happens"
-existing_by_ili = ["oewn oewn-04936080-n [i62886] manner, mode, style, way, fashion: how something is done or how it happens"]
 hypernyms = []
 ancestors = []
 comment = ""
@@ -1202,22 +1131,12 @@ hypernyms = []
 ancestors = []
 comment = ""
 
-["feature:Rsn"]
-lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "reason"
-definition = "a justification for something existing or happening"
-existing_by_ili = ["oewn oewn-06753097-n [i71919] cause, reason, grounds: a justification for something existing or happening"]
-hypernyms = []
-ancestors = []
-comment = ""
-
 ["feature:Thng"]
 lemmas = []
 status = "unlexicalized: feature synset, no words in any language"
 label = "thing"
-definition = "PWN's thing is \"an artifact\": find the right sense"
-existing_by_ili = ["oewn oewn-04431353-n [i60191] thing: an artifact"]
+definition = "an entity that is not named specifically"
+existing_by_ili = ["oewn oewn-04431553-n [i60192] thing: an entity that is not named specifically"]
 hypernyms = []
 ancestors = []
 comment = ""
