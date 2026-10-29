@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["langcodes", "language_data"]
+# dependencies = ["langcodes", "language_data", "unidecode"]
 # ///
 """Collect pronouns for our concepts from Wikidata lexemes (CC0).
 

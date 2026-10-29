@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["langcodes", "language_data", "wn>=1.1"]
+# dependencies = ["langcodes", "language_data", "unidecode", "wn>=1.1"]
 # ///
 """Collect words for the ILI-linked pronoun concepts from existing wordnets.
 

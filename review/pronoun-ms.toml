@@ -1,0 +1,662 @@
+# TUFS pro-forms for Malay, as curated for the OMW pronoun wordnet.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
+# ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
+# definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+# prosub: suggested words from ProSub (abd4dd6; Okano et al. 2022), NOT in the build (no licence yet),
+#   as form "gloss" [items] uses, where uses are 1st/2nd (refers to speaker/addressee),
+#   address, title. prosub_new: those not in the built lexicon, TUFS or NTUMC for this concept.
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["we"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+ntumc_definitions = ["77000002-n: 1st person, plural pronoun; personal pronoun, person, 1st person, plural"]
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+comment = ""
+
+["1;Sg"]
+prosub = ["saya \"I\" [139] 1st"]
+prosub_new = ["saya"]
+english = ["I"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+ntumc_definitions = ["77000015-n: personal pronoun, person, 1st person, singular"]
+hypernyms = []
+ancestors = []
+status = "not built: suggested by ProSub only"
+comment = ""
+
+["1;Sg;Fml"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular formal pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal)"
+ntumc_definitions = ["77000011-n: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal"]
+hypernyms = ["1;Sg"]
+ancestors = ["1;Sg"]
+comment = ""
+
+["1;Sg;Fml;Hon+Pol"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular formal honorific or polite pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal, honorific or polite)"
+ntumc_definitions = ["77000013-n: 1st person, singular, formal, polite, honorific pronoun; personal pronoun, person, 1st person, singular, formal, polite, honorific"]
+hypernyms = ["1;Sg;Fml"]
+ancestors = ["1;Sg;Fml", "1;Sg"]
+comment = ""
+
+["1;Sg;Fml;Pol"]
+lemmas = ["saya"]
+new_senses = ["saya"]
+english = ["I"]
+english_via = "1;Sg"
+label = "first person singular formal polite pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal, polite)"
+ntumc_definitions = ["77000012-n: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite"]
+hypernyms = ["1;Sg;Fml;Hon+Pol"]
+ancestors = ["1;Sg;Fml;Hon+Pol", "1;Sg;Fml", "1;Sg"]
+tufs = ["saya <- 私（わたくし） (high), 私（わたし） (high), 自分 (medium)"]
+curator_notes = ["as Indonesian NTUMC; etym. sahaya 'servant'", "as Indonesian NTUMC", "'I'; renders 自分 in its first-person use"]
+status = "built"
+comment = ""
+
+["1e;Pl"]
+prosub = ["kami \"we (exclusive)\" [141] 1st"]
+prosub_new = ["kami"]
+english = ["we"]
+english_via = "1;Pl"
+label = "first person exclusive plural pronoun"
+definition = "a pronoun referring to the speaker and others, not the addressee, more than one in all"
+ntumc_definitions = ["80001133-n: personal pronoun, person, 1st person, plural, exclusive"]
+hypernyms = ["1;Pl"]
+ancestors = ["1;Pl", "1+2;Pl"]
+status = "not built: suggested by ProSub only"
+comment = ""
+
+["1i;Pl"]
+prosub = ["kita \"we (inclusive)\" [140] 1st"]
+prosub_new = ["kita"]
+english = ["we"]
+english_via = "1;Pl"
+label = "first person inclusive plural pronoun"
+definition = "a pronoun referring to the speaker and the addressee, more than one in all"
+ntumc_definitions = ["77000139-n: personal pronoun, person, 1st person, plural, inclusive"]
+hypernyms = ["1;Pl"]
+ancestors = ["1;Pl", "1+2;Pl"]
+status = "not built: suggested by ProSub only"
+comment = ""
+
+["2"]
+prosub = ["awak \"you (singular)\" [142,143] 2nd address"]
+prosub_new = ["awak"]
+english = ["you"]
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+status = "not built: suggested by ProSub only"
+comment = ""
+
+["2;Pl"]
+lemmas = ["awak semua"]
+new_words = ["awak semua"]
+english = ["you"]
+english_via = "2"
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+ntumc_definitions = ["77000019-n: personal pronoun, person, 2nd person, plural"]
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+tufs = ["awak semua <- 皆さん (medium)"]
+curator_notes = ["awak 'you' + semua 'all'; cf. NTUMC ini semua"]
+status = "built"
+comment = ""
+
+["2;Sg"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+ntumc_definitions = ["77000021-n: personal pronoun, person, 2nd person, singular"]
+hypernyms = ["2"]
+ancestors = ["2"]
+comment = ""
+
+["2;Sg;Infml"]
+lemmas = ["awak"]
+new_words = ["awak"]
+english = ["you"]
+english_via = "2"
+label = "second person singular informal pronoun"
+definition = "a pronoun referring to the addressee, one in all (informal)"
+ntumc_definitions = ["77000023-n: personal pronoun, person, 2nd person, singular, informal"]
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+tufs = ["awak <- あなた (medium)"]
+curator_notes = ["you (familiar, peers); orig. 'body/self'"]
+status = "built"
+comment = ""
+
+["3"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Pl"]
+prosub = ["mereka \"they\" [146,147] no person use"]
+prosub_new = ["mereka"]
+english = ["they"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+hypernyms = ["3"]
+ancestors = ["3"]
+status = "not built: suggested by ProSub only"
+comment = ""
+
+["3;Sg"]
+prosub = ["dia \"he, she\" [144,145] no person use"]
+prosub_new = ["dia"]
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
+status = "not built: suggested by ProSub only"
+comment = ""
+
+["Asrt"]
+ntumc = ["sebagian <- 02267308-a", "beberapa <- 02267308-a"]
+english = ["several", "some"]
+label = "assertive existential determinative"
+definition = "an assertive existential determinative"
+ntumc_definitions = ["02267308-a: quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Dist"]
+lemmas = ["itu"]
+new_words = ["itu"]
+label = "distal determinative"
+definition = "a distal determinative"
+ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+tufs = ["itu <- あちら (high), あの (high), そちら (medium), その (high)"]
+curator_notes = ["'that'; heading is place (mismatch)", "ini/itu two-way", "'that'; heading is place"]
+status = "built"
+comment = ""
+
+["Elec"]
+ntumc = ["manapun <- 02267686-a", "sebarang <- 02267686-a", "apapun <- 02267686-a", "apa saja <- 02267686-a"]
+english = ["any", "whatever", "whatsoever", "whichever"]
+label = "elective existential determinative"
+definition = "an elective existential determinative"
+ntumc_definitions = ["02267686-a: one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["Ent;Dist"]
+lemmas = ["itu"]
+prosub = ["itu \"that, those\" [109,110,111,112] no person use"]
+new_words = ["itu"]
+label = "entity distal pronoun"
+definition = "an entity distal pronoun"
+ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+tufs = ["itu <- あちら (high), あれ (high), そちら (medium), それ (high)"]
+curator_notes = ["'that'; heading is place (mismatch)", "ini/itu two-way", "'that'; heading is place"]
+status = "built"
+comment = ""
+
+["Ent;Elec"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["any", "whatever", "whichever"]
+label = "entity elective existential pronoun"
+definition = "an entity elective existential pronoun"
+ntumc_definitions = ["02267686-n: pronoun, entity; quantifier: elective existential"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Int"]
+lemmas = ["yang mana"]
+new_words = ["yang mana"]
+english = ["which"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+ntumc_definitions = ["77000064-n: entity, interrogative pronoun"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+tufs = ["yang mana <- どちら (high), どっち (high), どの (high), どれ (high)"]
+curator_notes = ["which one", "which one; not informal", "which (one)"]
+status = "built"
+comment = ""
+
+["Ent;Prox"]
+lemmas = ["ini"]
+prosub = ["ini \"this, these\" [107,108] 1st"]
+new_senses = ["ini"]
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+ntumc_definitions = ["77000075-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+tufs = ["ini <- こちら (high), これ (high)"]
+curator_notes = ["'this (one/person)'"]
+status = "built"
+comment = ""
+
+["Ent;Sg;Univ"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["each", "everything"]
+label = "entity singular universal pronoun"
+definition = "an entity singular universal pronoun"
+ntumc_definitions = ["02269635-n: entity, singular, universal pronoun", "77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+comment = ""
+
+["Ent;Univ"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Int"]
+lemmas = ["mana"]
+new_senses = ["mana"]
+english = ["what", "which"]
+label = "interrogative determinative"
+definition = "an interrogative determinative"
+ntumc_definitions = ["77000091-a: interrogative determiner, general"]
+hypernyms = []
+ancestors = []
+tufs = ["mana <- どこ (high), どちら (high)"]
+curator_notes = ["which"]
+status = "built"
+comment = ""
+
+["Mnr;Dist"]
+lemmas = ["begitu"]
+new_senses = ["begitu"]
+english = ["so", "thus", "thusly"]
+english_via = "Mnr;Prox+Dist"
+label = "manner distal adverb"
+definition = "a manner distal adverb"
+ntumc_definitions = ["77000088-r: manner, distal pronoun"]
+hypernyms = ["Mnr;Prox+Dist"]
+ancestors = ["Mnr;Prox+Dist"]
+tufs = ["begitu <- そう (high)"]
+curator_notes = ["as Indonesian NTUMC"]
+status = "built"
+comment = ""
+
+["Mnr;Int"]
+lemmas = ["bagaimana"]
+new_senses = ["bagaimana"]
+english = ["how"]
+label = "manner interrogative adverb"
+definition = "a manner interrogative adverb"
+ntumc_definitions = ["77000090-n: manner, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+tufs = ["bagaimana <- どう (high)"]
+status = "built"
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+english = ["so", "thus", "thusly"]
+label = "manner proximal or distal adverb"
+definition = "a manner proximal or distal adverb"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Pers;Int"]
+lemmas = ["siapa"]
+new_senses = ["siapa"]
+english = ["who", "whom"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
+tufs = ["siapa <- だれ (high), どなた (high)"]
+curator_notes = ["not honorific"]
+status = "built"
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["sendiri"]
+new_senses = ["sendiri"]
+english = ["oneself"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+ntumc_definitions = ["77000098-n: personal pronoun, person, reflexive"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+tufs = ["sendiri <- 自分 (medium)"]
+curator_notes = ["'self, oneself, alone'; full reflexive diri sendiri"]
+status = "built"
+comment = ""
+
+["Pers;Sg;Elec"]
+lemmas = ["sesiapa"]
+new_words = ["sesiapa"]
+english = ["anybody", "anyone", "whoever"]
+label = "person singular elective existential pronoun"
+definition = "a person singular elective existential pronoun"
+ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
+hypernyms = ["Ent;Elec", "feature:Pers"]
+ancestors = ["Ent;Elec", "feature:Pers", "feature:Ent"]
+tufs = ["sesiapa <- だれか (medium)"]
+curator_notes = ["'anyone, whoever' (someone = seseorang)"]
+status = "built"
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["semua"]
+prosub = ["semua \"everyone\" [104] 2nd address"]
+english = ["everybody", "everyone"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
+tufs = ["semua <- みんな (low)"]
+curator_notes = ["quantifier 'all'; 'everyone' strictly semua orang"]
+status = "held: low confidence"
+comment = ""
+
+["Plc;Dist"]
+ntumc = ["sana <- 08489627-n", "disana <- 08489627-n"]
+english = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Plc;Int"]
+lemmas = ["mana"]
+new_senses = ["mana"]
+english = ["where"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+tufs = ["mana <- どこ (high), どちら (high)"]
+curator_notes = ["where"]
+status = "built"
+comment = ""
+
+["Plc;Med"]
+lemmas = ["situ"]
+prosub = ["situ \"there (medial)\" [114] no person use"]
+new_senses = ["situ"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place medial pronoun"
+definition = "a place medial pronoun"
+ntumc_definitions = ["77000117-n: demonstrative pronoun, location; quantifier: demonstrative determiner, medial"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc"]
+tufs = ["situ <- そこ (high), そっち (high)"]
+status = "built"
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["sini"]
+ntumc = ["sini <- 08489497-n"]
+prosub = ["sini \"here\" [113] no person use"]
+english = ["'ere", "here"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+tufs = ["sini <- ここ (high), こちら (high), こっち (high)"]
+status = "built"
+comment = ""
+
+["Plc;Rem"]
+lemmas = ["sana"]
+prosub = ["sana \"there (distal)\" [115] no person use"]
+new_senses = ["sana"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place remote pronoun"
+definition = "a place remote pronoun"
+ntumc_definitions = ["77000081-n: demonstrative pronoun, location; quantifier: demonstrative determiner, remote"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc"]
+tufs = ["sana <- あそこ (high), あっち (high), そちら (high)"]
+curator_notes = ["sini/situ/sana three-way", "'over there' (remote), heading medial"]
+status = "built"
+comment = ""
+
+["Prox"]
+lemmas = ["ini"]
+new_senses = ["ini"]
+label = "proximal determinative"
+definition = "a proximal determinative"
+ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+tufs = ["ini <- こちら (high), この (high)"]
+curator_notes = ["'this'; heading is place"]
+status = "built"
+comment = ""
+
+["Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no ms word; included for the hierarchy"
+label = "proximal or distal determinative"
+definition = "a proximal or distal determinative"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["berapa"]
+new_senses = ["berapa"]
+english = ["how many", "how much"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+tufs = ["berapa <- いくつ (high), いくら (high)"]
+status = "built"
+comment = ""
+
+["Rsn;Int"]
+lemmas = ["kenapa", "mengapa"]
+new_senses = ["mengapa"]
+new_words = ["kenapa"]
+english = ["why"]
+label = "reason interrogative adverb"
+definition = "a reason interrogative adverb"
+ntumc_definitions = ["77000112-n: cause, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+tufs = ["kenapa <- どうして (high)", "mengapa <- なぜ (high)"]
+status = "built"
+comment = ""
+
+["Sg;Univ"]
+ntumc = ["kali <- 02269635-a"]
+english = ["each"]
+label = "singular universal determinative"
+definition = "a singular universal determinative"
+ntumc_definitions = ["02269635-a: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "built (NTUMC only)"
+comment = ""
+
+["Thng;Int"]
+lemmas = ["apa"]
+new_words = ["apa"]
+english = ["what", "which"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
+tufs = ["apa <- 何（なに・なん） (high)"]
+status = "built"
+comment = ""
+
+["Thng;Sg;Univ"]
+lemmas = ["semuanya"]
+new_senses = ["semuanya"]
+english = ["each", "everything"]
+english_via = "Ent;Sg;Univ"
+label = "thing singular universal pronoun"
+definition = "a thing singular universal pronoun"
+ntumc_definitions = ["77000094-n: thing (object:), singular, universal pronoun; pronoun, thing, singular; quantifier: universal"]
+hypernyms = ["Ent;Sg;Univ", "feature:Thng"]
+ancestors = ["Ent;Sg;Univ", "feature:Thng", "Ent;Univ", "feature:Ent"]
+tufs = ["semuanya <- 全部 (medium)"]
+curator_notes = ["semua 'all' + -nya: 'all of it/them'"]
+status = "built"
+comment = ""
+
+["Tim;Int"]
+lemmas = ["bila"]
+new_words = ["bila"]
+english = ["when"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+tufs = ["bila <- いつ (high)"]
+curator_notes = ["when"]
+status = "built"
+comment = ""
+
+["Univ"]
+ntumc = ["semua <- 02269286-a", "segala <- 02269286-a"]
+english = ["all", "every"]
+label = "universal determinative"
+definition = "a universal determinative"
+ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
+hypernyms = []
+ancestors = []
+status = "built (NTUMC only)"
+comment = ""
+
+["feature:Ent"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "entity"
+definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Pers"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "person"
+definition = "a human being"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Plc"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "place"
+definition = "a point located with respect to surface features of some region"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Qnt"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "quantity"
+definition = "how much there is or how many there are of something that you can quantify"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Thng"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "thing"
+definition = "an entity that is not named specifically"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Tim"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "time"
+definition = "an indefinite period (usually marked by specific attributes or activities)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["(none)"]
+lemmas = ["seperti ini", "yang bagaimana"]
+label = ""
+definition = ""
+tufs = ["seperti ini <- こんな (medium)", "yang bagaimana <- どんな (medium)"]
+curator_notes = ["phrase seperti 'like' + ini 'this'; would be Knd;Prox if phrases admitted", "phrase yang 'REL' + bagaimana 'how' = what kind; would be Knd;Int if phrases admitted"]
+status = "held: not-proform"
+comment = ""

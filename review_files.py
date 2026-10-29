@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["langcodes", "language_data", "wn>=1.1"]  # build.py, cygnet_wordnets.py
+# dependencies = ["langcodes", "language_data", "unidecode", "wn>=1.1"]  # build.py, cygnet_wordnets.py
 # ///
 """Write the curated TUFS pro-forms of some languages as TOML for human review.
 
@@ -11,7 +11,10 @@ first), its label and definition, what TUFS listed them under, and the status
 (built, or held back and why). Each table ends with an empty ``comment`` for
 the reviewer.
 
-Usage: uv run review_files.py [tufs_lang ...]   (default: en zh ja id)
+Where a clone of ProSub is at ``../ProSub``, tables also list the pronouns and
+demonstratives it suggests, which are not in the build (`prosub`).
+
+Usage: uv run review_files.py [tufs_lang ...]   (default: en zh ja id ms)
 """
 
 from __future__ import annotations
@@ -28,6 +31,7 @@ from xml.etree import ElementTree
 
 import cygnet_wordnets
 import ntumc_pronouns
+import prosub
 from build import (
     NTUMC_LANGUAGES,
     VERSION,
@@ -55,11 +59,14 @@ NAMES = {
     "zh": "Mandarin Chinese",
     "ja": "Japanese",
     "id": "Indonesian",
+    "ms": "Malay",
 }
 
 
 #: TUFS language code -> NTUMC language column
-TUFS_NTUMC = {"en": "eng", "zh": "cmn", "ja": "jpn", "id": "ind"}
+#: TUFS language code -> our lexicon tag, where they differ
+TUFS_TAG = {"zh": "cmn", "ms": "zsm"}
+TUFS_NTUMC = {"en": "eng", "zh": "cmn", "ja": "jpn", "id": "ind", "ms": "zsm"}
 #: lexicon tag -> NTUMC language column (``cs`` -> ``ces``)
 TAG_NTUMC = {tag: column for column, (tag, _) in NTUMC_LANGUAGES.items()}
 
@@ -287,6 +294,53 @@ def status(row: dict[str, str], codes: set[str]) -> str:
     return "built"
 
 
+PROSUB_NOTE = (
+    "# prosub: suggested words from ProSub ({version}; Okano et al. 2022), NOT in the"
+    ' build (no licence yet),\n#   as form "gloss" [items] uses, where uses are'
+    " 1st/2nd (refers to speaker/addressee),\n#   address, title. prosub_new: those"
+    " not in the built lexicon, TUFS or NTUMC for this concept."
+)
+
+
+def built_lemmas(tag: str) -> dict[str, set[str]]:
+    """The built lexicon's lemmas for each concept code; empty if not built."""
+    lexicon = f"omw-pronoun-{tag}"
+    path = (
+        HERE
+        / "release"
+        / f"omw-pronoun-{VERSION}"
+        / lexicon
+        / f"{lexicon}-{VERSION}.xml"
+    )
+    if not path.exists():
+        return {}
+    root = ElementTree.parse(path).getroot()
+    dc = "{https://globalwordnet.github.io/schemas/dc/}"
+    code_of = {
+        s.get("id"): s.get(dc + "identifier").removeprefix("pronoun:")
+        for s in root.iter("Synset")
+    }
+    found: dict[str, set[str]] = defaultdict(set)
+    for entry in root.iter("LexicalEntry"):
+        lemma = entry.find("Lemma").get("writtenForm")
+        for sense in entry.iter("Sense"):
+            found[code_of[sense.get("synset")]].add(lemma)
+    return found
+
+
+def prosub_lines(
+    code: str, suggested: dict[str, list[tuple[str, str]]], known: list[str]
+) -> list[str]:
+    """The ``prosub`` lines of a table: ProSub's words, and those not yet known."""
+    if not suggested.get(code):
+        return []
+    lines = [f"prosub = [{', '.join(toml_string(x) for _, x in suggested[code])}]"]
+    new = sorted({form for form, _ in suggested[code]} - set(known))
+    if new:
+        lines.append(f"prosub_new = [{', '.join(toml_string(w) for w in new)}]")
+    return lines
+
+
 def toml_string(value: str) -> str:
     """A TOML basic string (JSON escaping is valid TOML for these strings)."""
     return json.dumps(value, ensure_ascii=False)
@@ -355,7 +409,9 @@ def write(
         by_code[row["code"] or "(none)"].append(row)
     ntumc = ntumc_for(TUFS_NTUMC.get(lang), set(concepts))
     defs = ntumc_definitions(concepts)
-    for code in ntumc:
+    suggested = prosub.suggestions(lang, set(concepts))
+    lexicon_words = built_lemmas(TUFS_TAG.get(lang, lang)) if suggested else {}
+    for code in [*ntumc, *suggested]:
         by_code.setdefault(code, [])
     extra = hierarchy_only(set(by_code) - {"(none)"}, parents)
     context = {
@@ -372,6 +428,7 @@ def write(
         "# definition: generated from the code; ntumc_definitions: NTUMC's own",
         NEW_NOTE,
         HIERARCHY_NOTE,
+        *([PROSUB_NOTE.format(version=prosub.version())] if suggested else []),
         "",
     ]
     for code in sorted(set(by_code) | extra, key=lambda c: (c == "(none)", c)):
@@ -381,17 +438,22 @@ def write(
         group = by_code[code]
         concept = concepts.get(code, {})
         lines.append(f"[{toml_string(code)}]")
-        if not group:  # NTUMC only
+        known = [item.split(" <- ")[0] for item in ntumc.get(code, [])]
+        known += sorted(lexicon_words.get(code, set()))
+        if not group:  # NTUMC or ProSub only
             lines += ntumc_line(code, ntumc)
+            lines += prosub_lines(code, suggested, known)
             if lang != "en":
                 lines += english_lines(code, english)
             lines.append(f"label = {toml_string(concept.get('label', ''))}")
             lines += definition_lines(concept, defs.get(code, []))
-            lines += existing_lines(
-                lang, "", [item.split(" <- ")[0] for item in ntumc[code]]
-            )
+            lines += existing_lines(lang, "", known)
             lines += hierarchy_lines(code, parents)
-            lines.append('status = "built (NTUMC only)"')
+            lines.append(
+                'status = "built (NTUMC only)"'
+                if ntumc.get(code)
+                else 'status = "not built: suggested by ProSub only"'
+            )
             lines.append('comment = ""')
             lines.append("")
             continue
@@ -402,6 +464,7 @@ def write(
             headings[r["form"]][f"{r['heading']} ({r['confidence']})"] = None
         lines.append(f"lemmas = [{', '.join(toml_string(f) for f in headings)}]")
         lines += ntumc_line(code, ntumc)
+        lines += prosub_lines(code, suggested, [*headings, *known])
         built = [r["form"] for r in group if status(r, set(concepts)) == "built"]
         lines += new_lines(
             code, list(dict.fromkeys(built)), ntumc, TUFS_NTUMC.get(lang)
@@ -521,7 +584,7 @@ def write_lexicon(
 def main() -> None:
     """Write the review files.
 
-    Arguments are TUFS language codes (default: en zh ja id); ``--lexicon TAG``
+    Arguments are TUFS language codes (default: en zh ja id ms); ``--lexicon TAG``
     instead writes a review of a built lexicon, for languages TUFS lacks.
     """
     if sys.argv[1:2] == ["--lexicon"]:
@@ -533,7 +596,7 @@ def main() -> None:
             path = write_lexicon(tag, concepts, english_lemmas(), hierarchy(concepts))
             print(path.relative_to(HERE), file=sys.stderr)
         return
-    langs = sys.argv[1:] or ["en", "zh", "ja", "id"]
+    langs = sys.argv[1:] or ["en", "zh", "ja", "id", "ms"]
     with (HERE / "data" / "concepts.tsv").open(encoding="utf8") as handle:
         concepts = {row["code"]: row for row in csv.DictReader(handle, delimiter="\t")}
     with (HERE / "data" / "tufs-curation.tsv").open(encoding="utf8") as handle:

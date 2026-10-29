@@ -16,6 +16,7 @@ import concepts
 import facts
 import ntumc_pronouns
 import parabank_words
+import prosub
 
 
 def test_code_follows_the_papers_order() -> None:
@@ -414,3 +415,24 @@ def test_transcriptions_become_pronunciations_of_spelled_words(
     assert entries["du"].senses["2;Sg"] == {"Parabank swedish", "Wikidata L2-S1"}
     # with no spelling, the transcription stays a lemma
     assert entries["dɔm"].transcribed and entries["dɔm"].senses["3;Pl"]
+
+
+def test_prosub_words_go_to_the_narrowest_code_covering_their_items(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    rows = [
+        ["zsm", item, "", "", "", form, "", gloss, use, "yes"]
+        for item, form, gloss, use in (
+            ("142", "awak", "you", "2nd"),
+            ("143", "awak", "you", "address"),
+            ("139", "saya", "I", "1st"),
+        )
+    ]
+    data = tmp_path / "data.tsv"
+    data.write_text("\n".join("\t".join(r) for r in rows), encoding="utf8")
+    monkeypatch.setattr(prosub, "DATA", data)
+    found = prosub.suggestions("ms", {"1;Sg", "2", "2;Sg", "2;Pl"})
+    assert found == {
+        "2": [("awak", 'awak "you" [142,143] 2nd address')],
+        "1;Sg": [("saya", 'saya "I" [139] 1st')],
+    }

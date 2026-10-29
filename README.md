@@ -21,6 +21,12 @@ uv run --with pytest --with langcodes --with language_data --with unidecode pyte
 Sources are read from sibling clones: `../NTUMC` (built database), `../tufs`, and
 `../parabank-pronouns` (github.com/SimonGreenhill/pronouns, pinned by commit).
 
+`review_files.py` (`uv run review_files.py ja id ms`) writes `review/pronoun-<lang>.toml`.
+If `../ProSub` (github.com/matbahasa/ProSub) is there, each table also lists the
+pronouns and demonstratives ProSub suggests for the concept, with whether each
+can refer to the speaker or addressee or serve as an address term (`prosub`).
+ProSub has no licence yet, so these are for review only and are not in the build.
+
 ## The Cygnet site
 
 `docs/` is also a [Cygnet](https://github.com/omwn/cygnet) site, browsing the
