@@ -1,0 +1,604 @@
+# TUFS pro-forms for de, as curated for the OMW pronoun wordnet.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
+# ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
+# definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = ["wir"]
+english = ["we"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+ntumc_definitions = ["77000002-n: 1st person, plural pronoun; personal pronoun, person, 1st person, plural"]
+existing_by_lemma = ["wir -> odenet odenet-8034-a [-] ich und die anderen, unsereins, wir, unsereiner, wir alle, ich mit den anderen", "wir -> tufs-de tufs-de-77000002-n [-] wir"]
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+tufs = ["wir <- 私たち (high)"]
+status = "built"
+comment = ""
+
+["1;Sg"]
+lemmas = ["ich"]
+english = ["I"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+ntumc_definitions = ["77000015-n: personal pronoun, person, 1st person, singular"]
+existing_by_lemma = ["ich -> odenet odenet-25532-n [i87150] Ich, Ego, Selbst: eine Person, die als einzigartiges Individuum betrachtet wird", "ich -> tufs-de tufs-de-77000012-n [-] ich: I", "ich -> tufs-de tufs-de-77000015-n [-] ich: I"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+tufs = ["ich <- 私（わたし） (high)"]
+status = "built"
+comment = ""
+
+["2"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["you"]
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Pl"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+ntumc_definitions = ["77000019-n: personal pronoun, person, 2nd person, plural"]
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+comment = ""
+
+["2;Pl;Fml;Pol"]
+lemmas = ["Sie"]
+english = ["you"]
+english_via = "2"
+label = "second person plural formal polite pronoun"
+definition = "a pronoun referring to the addressee, more than one in all (formal, polite)"
+existing_by_lemma = ["Sie -> tufs-de tufs-de-77000021-n [-] du, Sie: you"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["2;Pl"]
+ancestors = ["2;Pl", "1+2;Pl", "2"]
+tufs = ["Sie <- あなた (high)"]
+curator_notes = ["NEW; Sie is also formal plural"]
+status = "built"
+comment = ""
+
+["2;Sg"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+ntumc_definitions = ["77000021-n: personal pronoun, person, 2nd person, singular"]
+hypernyms = ["2"]
+ancestors = ["2"]
+comment = ""
+
+["2;Sg;Fml"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular formal pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal)"
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+comment = ""
+
+["2;Sg;Fml;Pol"]
+lemmas = ["Sie"]
+english = ["you"]
+english_via = "2"
+label = "second person singular formal polite pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal, polite)"
+ntumc_definitions = ["77000022-n: personal pronoun, person, 2nd person, singular, formal, polite"]
+existing_by_lemma = ["Sie -> tufs-de tufs-de-77000021-n [-] du, Sie: you"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["2;Sg;Fml"]
+ancestors = ["2;Sg;Fml", "2;Sg", "2"]
+tufs = ["Sie <- あなた (high)"]
+status = "built"
+comment = ""
+
+["2;Sg;Infml"]
+lemmas = ["du"]
+english = ["you"]
+english_via = "2"
+label = "second person singular informal pronoun"
+definition = "a pronoun referring to the addressee, one in all (informal)"
+ntumc_definitions = ["77000023-n: personal pronoun, person, 2nd person, singular, informal"]
+existing_by_lemma = ["du -> tufs-de tufs-de-77000021-n [-] du, Sie: you"]
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+tufs = ["du <- 君（きみ） (high)"]
+status = "built"
+comment = ""
+
+["3"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Pl"]
+lemmas = ["sie"]
+english = ["they"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+existing_by_lemma = ["sie -> odenet odenet-27153-a [-] die, ebendiese, diese, selbige, diese und jene, sie, ...", "sie -> tufs-de tufs-de-77000021-n [-] du, Sie: you", "sie -> tufs-de tufs-de-77000031-n [-] sie"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["3"]
+ancestors = ["3"]
+tufs = ["sie <- 彼女 (high)"]
+curator_notes = ["sie is also 'they'"]
+status = "built"
+comment = ""
+
+["3;Sg"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
+comment = ""
+
+["3;Sg;F"]
+lemmas = ["sie"]
+english = ["she"]
+label = "third person singular feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
+ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
+existing_by_lemma = ["sie -> odenet odenet-27153-a [-] die, ebendiese, diese, selbige, diese und jene, sie, ...", "sie -> tufs-de tufs-de-77000021-n [-] du, Sie: you", "sie -> tufs-de tufs-de-77000031-n [-] sie"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
+tufs = ["sie <- 彼女 (high)"]
+status = "built"
+comment = ""
+
+["3;Sg;M"]
+lemmas = ["er"]
+english = ["he"]
+label = "third person singular masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
+ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
+existing_by_lemma = ["er -> tufs-de tufs-de-15576-n [-] er"]
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
+tufs = ["er <- 彼（かれ） (high)"]
+status = "built"
+comment = ""
+
+["3;Sg;M+N"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "third person singular masculine or neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine or neuter)"
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
+comment = ""
+
+["Ent;Asrt"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["several", "some"]
+label = "entity assertive existential pronoun"
+definition = "an entity assertive existential pronoun"
+ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+comment = ""
+
+["Ent;Int"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["which"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+ntumc_definitions = ["77000064-n: entity, interrogative pronoun"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Prox"]
+lemmas = ["dieser"]
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+ntumc_definitions = ["77000075-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal"]
+existing_by_lemma = ["dieser -> odenet odenet-15474-a [-] solcher, dieser, welcher", "dieser -> odenet odenet-15801-a [i3182] fraglich, bewusst, bekannt, genannt, kein anderer als, vorbezeichnet, ...: wissend und wahrnehmend; sich der Umgebung, der Empfindungen und der Gedanken bewusst sein", "dieser -> tufs-de tufs-de-77000061-a [-] dieser: this ～", "dieser -> tufs-de tufs-de-80001619-a [-] dieser: this ～", "dieser -> tufs-de tufs-de-77000075-a [-] dieser: this ～"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+tufs = ["dieser <- この (high)"]
+curator_notes = ["pronoun use"]
+status = "built"
+comment = ""
+
+["Ent;Univ"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Int"]
+lemmas = ["welch"]
+english = ["what", "which"]
+label = "interrogative determinative"
+definition = "an interrogative determinative"
+ntumc_definitions = ["77000091-a: interrogative determiner, general"]
+existing_by_lemma = ["welch -> tufs-de tufs-de-77000064-n [-] welch: which ～"]
+hypernyms = []
+ancestors = []
+tufs = ["welch <- どの (high), どんな (medium)"]
+curator_notes = ["welch- 'which' (determiner)", "welch- 'which'; kind would be was für; heading どんな"]
+status = "built"
+comment = ""
+
+["Knd;Prox+Dist"]
+lemmas = ["solch"]
+english = ["such"]
+label = "kind proximal or distal determinative"
+definition = "a kind proximal or distal determinative"
+existing_by_lemma = ["solch -> odenet odenet-7027-a [-] so ein, son, derartig, solchergestalt, in der Weise, solch, ...", "solch -> odenet odenet-15175-a [-] solcherart, dergleichen, dieserart, solch, solcherlei, dererlei, ...", "solch -> tufs-de tufs-de-77000089-a [-] solch: such"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+tufs = ["solch <- こんな (high)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
+status = "built"
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = ["so"]
+english = ["so", "thus", "thusly"]
+label = "manner proximal or distal adverb"
+definition = "a manner proximal or distal adverb"
+existing_by_lemma = ["so -> tufs-de tufs-de-00121135-r [i18911] so: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
+hypernyms = []
+ancestors = []
+tufs = ["so <- そう (high)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
+status = "built"
+comment = ""
+
+["Pers;Int"]
+lemmas = ["wer"]
+english = ["who", "whom"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
+existing_by_lemma = ["wer -> tufs-de tufs-de-77000095-n [-] wer: who"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
+tufs = ["wer <- だれ (high), どなた (high)"]
+curator_notes = ["not polite; heading どなた"]
+status = "built"
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["selber"]
+english = ["oneself"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+ntumc_definitions = ["77000098-n: personal pronoun, person, reflexive"]
+existing_by_lemma = ["selber -> odenet odenet-3017-a [i12239] selbständig, eigenhändig, selber, selbst, allein, mit eigenen Augen: der Einzige sein; allein und isoliert von anderen", "selber -> odenet odenet-15625-a [i11821] einzeln, selber, solo, für sich, ohne fremde Hilfe, im Alleingang, ...: charakteristisch für eine einzelne Person oder Sache oder für diese bestimmt", "selber -> tufs-de tufs-de-09604981-n [i87150] selber: (CILI) a person considered as a unique individual"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+tufs = ["selber <- 自分 (medium)"]
+curator_notes = ["emphatic/intensifier self; reflexive proper is sich"]
+status = "built"
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = ["jemand"]
+english = ["someone"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+existing_by_lemma = ["jemand -> odenet odenet-4494-a [-] irgendwer, irgendeiner, jemand, irgendjemand, unbekannte Person", "jemand -> odenet odenet-7482-a [-] jemand, irgendjemand, jeder beliebige", "jemand -> tufs-de tufs-de-00007846-n [i35562] jemand: (CILI) a human being"]
+hypernyms = ["Ent;Asrt", "feature:Pers"]
+ancestors = ["Ent;Asrt", "feature:Pers", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+tufs = ["jemand <- だれか (high)"]
+status = "built"
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["alle"]
+english = ["everybody", "everyone"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
+existing_by_lemma = ["alle -> odenet odenet-3648-a [i12562] allesamt, jeder, jedermann, Freund und Feind, sämtliche, jedweder, ...: (bei Zählsubstantiven) jeder für sich betrachtet; Quantifizierer, Singular, Universalpronomen; Quantifizierer, Singular, Universalpronomen", "alle -> odenet odenet-5363-a [i13474] schlaff, kraftlos, kaputt, platt, down, daneben, ...: extrem erschöpft", "alle -> odenet odenet-9985-a [i5977] leer, alle, nicht mehr da, aus, zur Neige gegangen, es hat kein mehr, ...: nicht voll.", "alle -> odenet odenet-26380-a [i12561] sämtliche, alle, die ganzen: (Quantifizierer), der entweder mit Massen- oder Zählsubstantiven verwendet wird, um die gesamte Anzahl oder Menge oder jedes einzelne Substantiv einer Klasse anzugeben", "alle -> tufs-de tufs-de-77000099-n [-] alle: everyone"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
+tufs = ["alle <- みんな (high)"]
+curator_notes = ["'everybody' (plural); also determiner 'all'"]
+status = "built"
+comment = ""
+
+["Plc;Dist;Dir"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "place distal adposition"
+definition = "an adposition: at, to or from a place (distal)"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Dist;Loc"]
+lemmas = ["dort"]
+english = ["at that place", "in that location", "there"]
+label = "place distal adposition (at)"
+definition = "an adposition: at a place (distal)"
+existing_by_lemma = ["dort -> odenet odenet-4261-a [i138] gegenwärtig, vorhanden, dort, bestehend, existent, seiend, ...: als Vermutung anerkannt", "dort -> odenet odenet-10007-a [-] dort, daselbst, ebenda, ebd., da, ib., ...", "dort -> tufs-de tufs-de-08489627-n [i81668] dort: (CILI) a location other than here; that place"]
+hypernyms = ["Plc;Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Loc+Goal", "Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
+tufs = ["dort <- あっち (high)"]
+curator_notes = ["NEW; location only, as against goal and source"]
+status = "built"
+comment = ""
+
+["Plc;Dist;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["there"]
+label = "place distal adposition (at or to)"
+definition = "an adposition: at or to a place (distal)"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Int;Dir"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "place interrogative adposition"
+definition = "an adposition: at, to or from a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Int;Loc"]
+lemmas = ["wo"]
+english = ["where"]
+english_via = "Plc;Int;Loc+Goal"
+label = "place interrogative adposition (at)"
+definition = "an adposition: at a place (interrogative)"
+ntumc_definitions = ["77000143-n: location, interrogative pronoun, locative"]
+existing_by_lemma = ["wo -> tufs-de tufs-de-77000084-n [-] wo: which way"]
+hypernyms = ["Plc;Int;Loc+Goal"]
+ancestors = ["Plc;Int;Loc+Goal", "Plc;Int;Dir"]
+tufs = ["wo <- どちら (high)"]
+curator_notes = ["location only, as against goal and source"]
+status = "built"
+comment = ""
+
+["Plc;Int;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["where"]
+label = "place interrogative adposition (at or to)"
+definition = "an adposition: at or to a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
+comment = ""
+
+["Plc;Prox+Dist"]
+lemmas = ["da"]
+label = ""
+definition = ""
+existing_by_lemma = ["da -> odenet odenet-9018-a [-] alldieweil, indem, denn, mithin, also, nachdem, ...", "da -> odenet odenet-10007-a [-] dort, daselbst, ebenda, ebd., da, ib., ...", "da -> odenet odenet-10168-a [-] schließlich, denn, zumal, ja, da, da ja, ...", "da -> odenet odenet-33738-n [-] reinkriegen, vorrätig, da haben, reinbekommen, da", "da -> tufs-de tufs-de-00109151-r [i18828] da: (CILI) in or at that place"]
+hypernyms = []
+ancestors = []
+tufs = ["da <- そちら (medium)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast); also temporal/causal"]
+status = "held: no such concept"
+comment = ""
+
+["Plc;Prox+Dist;Dir"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "place proximal or distal adposition"
+definition = "an adposition: at, to or from a place (proximal or distal)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Prox+Dist;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "place proximal or distal adposition (at or to)"
+definition = "an adposition: at or to a place (proximal or distal)"
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Dir"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "place proximal adposition"
+definition = "an adposition: at, to or from a place (proximal)"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Loc"]
+lemmas = ["hier"]
+english = ["here"]
+label = "place proximal adposition (at)"
+definition = "an adposition: at a place (proximal)"
+existing_by_lemma = ["hier -> odenet odenet-10007-a [-] dort, daselbst, ebenda, ebd., da, ib., ...", "hier -> odenet odenet-10091-a [-] hier, an dieser Stelle, hüben, an diesem Ort", "hier -> odenet odenet-11320-a [-] nun, dabei, dazu, hier, hierbei, unterdies, ...", "hier -> odenet odenet-12579-a [i9497] dann, hier, hierbei, in diesem Fall, zu dieser Gelegenheit, an diesem Punkt, ...: zu einer bestimmten früheren Zeit", "hier -> odenet odenet-15173-a [-] hier, diesseits, hüben, auf dieser Seite", "hier -> odenet odenet-23983-a [i10149] hier, bei uns, in diesem Land, hierzulande: jetzt hier sein", "hier -> tufs-de tufs-de-77000072-n [-] hier: this way", "hier -> tufs-de tufs-de-08489497-n [i81667] hier: (CILI) the present location; this place"]
+hypernyms = ["Plc;Prox;Loc+Goal"]
+ancestors = ["Plc;Prox;Loc+Goal", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+tufs = ["hier <- こちら (high)"]
+curator_notes = ["location only, as against goal and source"]
+status = "built"
+comment = ""
+
+["Plc;Prox;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+english = ["'ere", "here"]
+label = "place proximal adposition (at or to)"
+definition = "an adposition: at or to a place (proximal)"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir"]
+ancestors = ["Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Prox"]
+lemmas = ["dieser"]
+label = "proximal determinative"
+definition = "a proximal determinative"
+ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
+existing_by_lemma = ["dieser -> odenet odenet-15474-a [-] solcher, dieser, welcher", "dieser -> odenet odenet-15801-a [i3182] fraglich, bewusst, bekannt, genannt, kein anderer als, vorbezeichnet, ...: wissend und wahrnehmend; sich der Umgebung, der Empfindungen und der Gedanken bewusst sein", "dieser -> tufs-de tufs-de-77000061-a [-] dieser: this ～", "dieser -> tufs-de tufs-de-80001619-a [-] dieser: this ～", "dieser -> tufs-de tufs-de-77000075-a [-] dieser: this ～"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+tufs = ["dieser <- この (high)"]
+curator_notes = ["determiner"]
+status = "built"
+comment = ""
+
+["Prox+Dist"]
+lemmas = ["der"]
+label = "proximal or distal determinative"
+definition = "a proximal or distal determinative"
+existing_by_lemma = ["der -> tufs-de tufs-de-77000079-a [-] der: that ～"]
+hypernyms = []
+ancestors = []
+tufs = ["der <- あの (low)"]
+curator_notes = ["NEW; definite article / proximity-neutral demonstrative (no near/far contrast); distal would be jener; heading あの"]
+status = "held: low confidence"
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["wie viel"]
+english = ["how many", "how much"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+existing_by_lemma = ["wie viel -> tufs-de tufs-de-80001077-n [-] wie viel, was: how many"]
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+tufs = ["wie viel <- いくつ (high)"]
+status = "built"
+comment = ""
+
+["SK+SU+IRR+Q+COND+INEG"]
+lemmas = []
+status = "unlexicalized: no de word; included for the hierarchy"
+label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
+definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Thng;Int"]
+lemmas = ["was"]
+english = ["what", "which"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
+existing_by_lemma = ["was -> odenet odenet-8939-a [-] wie kommt es, dass..., weshalb, weswegen, was, wieso, aus welchem Grund, ...", "was -> odenet odenet-15653-a [-] was", "was -> odenet odenet-20253-a [i5660] gell, nicht, ja, was, etwa nicht, gelt, ...: weiter achtern gelegen", "was -> tufs-de tufs-de-80001077-n [-] wie viel, was: how many"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
+tufs = ["was <- いくら (high)"]
+curator_notes = ["'what'; heading いくら via was kostet"]
+status = "built"
+comment = ""
+
+["Tim;Int"]
+lemmas = ["wann"]
+english = ["when"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
+existing_by_lemma = ["wann -> odenet odenet-125-a [-] wann, zu welchem Zeitpunkt, zu welcher Zeit: verwendet, um eine Frage nach der Zeit oder dem Zeitpunkt einzuleiten", "wann -> odenet odenet-24818-a [-] wann, bei was, in welchem Fall: unter welcher Bedingung, mit welcher Voraussetzung", "wann -> tufs-de tufs-de-77000104-n [-] wann: when"]
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+tufs = ["wann <- いつ (high)"]
+status = "built"
+comment = ""
+
+["feature:Ent"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "entity"
+definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Pers"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "person"
+definition = "a human being"
+existing_by_ili = ["tufs-de tufs-de-00007846-n [i35562] jemand: (CILI) a human being"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Qnt"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "quantity"
+definition = "how much there is or how many there are of something that you can quantify"
+existing_by_ili = ["odenet odenet-4330-n [i35594] Anzahl, Zahl: wie viel es von etwas gibt, das man quantifizieren kann"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Thng"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "thing"
+definition = "an entity that is not named specifically"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Tim"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "time"
+definition = "an indefinite period (usually marked by specific attributes or activities)"
+existing_by_ili = ["tufs-de tufs-de-15122231-n [i116667] Zeit: (CILI) an indefinite period (usually marked by specific attributes or activities)"]
+hypernyms = []
+ancestors = []
+comment = ""
