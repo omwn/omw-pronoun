@@ -328,6 +328,39 @@ def built_lemmas(tag: str) -> dict[str, set[str]]:
     return found
 
 
+PROPOSED_NOTE = (
+    "# proposed: words NOT in the build, written by Claude Opus 5.5 from its own"
+    " knowledge\n#   (review/pronoun-<lang>-proposed.tsv), for a speaker to check:"
+    " accept, correct or reject each."
+)
+
+
+def proposals(lang: str) -> dict[str, list[dict[str, str]]]:
+    """Proposed words not yet in the build, code -> rows of the proposals file."""
+    path = HERE / "review" / f"pronoun-{lang}-proposed.tsv"
+    found: dict[str, list[dict[str, str]]] = defaultdict(list)
+    if path.exists():
+        with path.open(encoding="utf8") as handle:
+            for row in csv.DictReader(handle, delimiter="\t"):
+                found[row["code"]].append(row)
+    return found
+
+
+def proposed_lines(code: str, proposed: dict[str, list[dict[str, str]]]) -> list[str]:
+    """The ``proposed``, ``confidence`` and ``notes`` lines for a concept."""
+    rows = proposed.get(code, [])
+    if not rows:
+        return []
+    lines = [
+        f"proposed = [{', '.join(toml_string(r['lemma']) for r in rows)}]",
+        f"confidence = [{', '.join(toml_string(r['confidence']) for r in rows)}]",
+    ]
+    notes = [f"{r['lemma']}: {r['note']}" for r in rows if r["note"]]
+    if notes:
+        lines.append(f"notes = [{', '.join(toml_string(n) for n in notes)}]")
+    return lines
+
+
 def prosub_lines(
     code: str, suggested: dict[str, list[tuple[str, str]]], known: list[str]
 ) -> list[str]:
@@ -411,7 +444,8 @@ def write(
     defs = ntumc_definitions(concepts)
     suggested = prosub.suggestions(lang, set(concepts))
     lexicon_words = built_lemmas(TUFS_TAG.get(lang, lang)) if suggested else {}
-    for code in [*ntumc, *suggested]:
+    proposed = proposals(lang)
+    for code in [*ntumc, *suggested, *(c for c in proposed if c in concepts)]:
         by_code.setdefault(code, [])
     extra = hierarchy_only(set(by_code) - {"(none)"}, parents)
     context = {
@@ -429,6 +463,7 @@ def write(
         NEW_NOTE,
         HIERARCHY_NOTE,
         *([PROSUB_NOTE.format(version=prosub.version())] if suggested else []),
+        *([PROPOSED_NOTE] if proposed else []),
         "",
     ]
     for code in sorted(set(by_code) | extra, key=lambda c: (c == "(none)", c)):
@@ -440,9 +475,10 @@ def write(
         lines.append(f"[{toml_string(code)}]")
         known = [item.split(" <- ")[0] for item in ntumc.get(code, [])]
         known += sorted(lexicon_words.get(code, set()))
-        if not group:  # NTUMC or ProSub only
+        if not group:  # NTUMC, ProSub or proposals only
             lines += ntumc_line(code, ntumc)
             lines += prosub_lines(code, suggested, known)
+            lines += proposed_lines(code, proposed)
             if lang != "en":
                 lines += english_lines(code, english)
             lines.append(f"label = {toml_string(concept.get('label', ''))}")
@@ -453,6 +489,8 @@ def write(
                 'status = "built (NTUMC only)"'
                 if ntumc.get(code)
                 else 'status = "not built: suggested by ProSub only"'
+                if suggested.get(code)
+                else 'status = "not built: proposed only"'
             )
             lines.append('comment = ""')
             lines.append("")
@@ -465,6 +503,7 @@ def write(
         lines.append(f"lemmas = [{', '.join(toml_string(f) for f in headings)}]")
         lines += ntumc_line(code, ntumc)
         lines += prosub_lines(code, suggested, [*headings, *known])
+        lines += proposed_lines(code, proposed)
         built = [r["form"] for r in group if status(r, set(concepts)) == "built"]
         lines += new_lines(
             code, list(dict.fromkeys(built)), ntumc, TUFS_NTUMC.get(lang)
@@ -539,14 +578,19 @@ def write_lexicon(
     name = root.find("Lexicon").get("label").removeprefix("OMW pronouns: ")
     ntumc = ntumc_for(TAG_NTUMC.get(tag), set(concepts))
     defs = ntumc_definitions(concepts)
+    proposed = proposals(tag)
     lines = [
         f"# Pronouns for {name}, from the built OMW pronoun lexicon {lexicon}.",
         "# One table per concept. Edit `comment`; leave the rest as generated.",
         "# definition: generated from the code; ntumc_definitions: NTUMC's own",
         *([NEW_NOTE] if TAG_NTUMC.get(tag) else []),
         HIERARCHY_NOTE,
+        *([PROPOSED_NOTE] if proposed else []),
         "",
     ]
+    for code in proposed:
+        if code in concepts:
+            by_code.setdefault(code, {})
     extra = hierarchy_only(set(by_code), parents)
     context = {
         "concepts": concepts,
@@ -564,6 +608,7 @@ def write_lexicon(
         lines.append(f"lemmas = [{', '.join(toml_string(w) for w in lemmas)}]")
         lines += ntumc_line(code, ntumc)
         lines += new_lines(code, list(lemmas), ntumc, TAG_NTUMC.get(tag))
+        lines += proposed_lines(code, proposed)
         lines += english_lines(code, english)
         lines.append(f"label = {toml_string(concept.get('label', ''))}")
         lines += definition_lines(concept, defs.get(code, []))
@@ -573,7 +618,10 @@ def write_lexicon(
         if forms:
             lines.append(f"forms = [{', '.join(toml_string(f) for f in forms)}]")
         sources = [f"{w} <- {', '.join(sorted(src))}" for w, (_, src) in lemmas.items()]
-        lines.append(f"sources = [{', '.join(toml_string(s) for s in sources)}]")
+        if sources:
+            lines.append(f"sources = [{', '.join(toml_string(s) for s in sources)}]")
+        else:
+            lines.append('status = "not built: proposed only"')
         lines.append('comment = ""')
         lines.append("")
     out = HERE / "review" / f"pronoun-{tag}.toml"

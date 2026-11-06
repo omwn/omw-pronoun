@@ -7,6 +7,8 @@
 #   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
 #   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
 #   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+# proposed: words NOT in the build, written by Claude Opus 5.5 from its own knowledge
+#   (review/pronoun-<lang>-proposed.tsv), for a speaker to check: accept, correct or reject each.
 
 ["1+2;Pl"]
 lemmas = []
@@ -131,6 +133,47 @@ forms = ["ty: teba (o)"]
 sources = ["ty <- Parabank"]
 comment = ""
 
+["2;Sg;Fml"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular formal pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal)"
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+comment = ""
+
+["2;Sg;Fml;Pol"]
+lemmas = []
+proposed = ["vy"]
+confidence = ["high"]
+notes = ["vy: polite singular (vykanie); written Vy capitalized in letters; verb plural, past participle/adjective often singular (\"boli ste unavený\")"]
+english = ["you"]
+english_via = "2"
+label = "second person singular formal polite pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal, polite)"
+ntumc_definitions = ["77000022-n: personal pronoun, person, 2nd person, singular, formal, polite"]
+hypernyms = ["2;Sg;Fml"]
+ancestors = ["2;Sg;Fml", "2;Sg", "2"]
+status = "not built: proposed only"
+comment = ""
+
+["2;Sg;Infml"]
+lemmas = []
+proposed = ["ty"]
+confidence = ["high"]
+notes = ["ty: informal singular (tykanie)"]
+english = ["you"]
+english_via = "2"
+label = "second person singular informal pronoun"
+definition = "a pronoun referring to the addressee, one in all (informal)"
+ntumc_definitions = ["77000023-n: personal pronoun, person, 2nd person, singular, informal"]
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+status = "not built: proposed only"
+comment = ""
+
 ["2;Sg;Poss"]
 lemmas = ["tvoj"]
 english = ["your"]
@@ -155,6 +198,9 @@ comment = ""
 
 ["3;Pl"]
 lemmas = ["oni"]
+proposed = ["ony"]
+confidence = ["medium"]
+notes = ["ony: plural for feminine, neuter and masculine inanimate referents"]
 english = ["they"]
 label = "third person plural pronoun"
 definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
@@ -163,6 +209,21 @@ hypernyms = ["3"]
 ancestors = ["3"]
 forms = ["oni: ich (o)"]
 sources = ["oni <- Parabank"]
+comment = ""
+
+["3;Pl;M"]
+lemmas = []
+proposed = ["oni"]
+confidence = ["medium"]
+notes = ["oni: masculine animate (personal) plural only"]
+english = ["they"]
+english_via = "3;Pl"
+label = "third person plural masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)"
+ntumc_definitions = ["77000029-n: personal pronoun, person, 3rd person, masculine, plural"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
+status = "not built: proposed only"
 comment = ""
 
 ["3;Pl;Poss"]
@@ -278,13 +339,902 @@ hypernyms = ["3;Poss"]
 ancestors = ["3;Poss"]
 comment = ""
 
-["Tim;Prox;Dir"]
+["Asrt"]
+lemmas = []
+proposed = ["nejaký"]
+confidence = ["high"]
+notes = ["nejaký: some (determinative)"]
+english = ["several", "some"]
+label = "assertive existential determinative"
+definition = "an assertive existential determinative"
+ntumc_definitions = ["02267308-a: quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Dist"]
 lemmas = []
 status = "unlexicalized: no sk word; included for the hierarchy"
+label = "distal determinative"
+definition = "a distal determinative"
+ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Elec"]
+lemmas = []
+proposed = ["akýkoľvek", "hocijaký"]
+confidence = ["medium", "medium"]
+notes = ["akýkoľvek: any (determinative)", "hocijaký: any (determinative), colloquial"]
+english = ["any", "whatever", "whatsoever", "whichever"]
+label = "elective existential determinative"
+definition = "an elective existential determinative"
+ntumc_definitions = ["02267686-a: one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Asrt"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["several", "some"]
+label = "entity assertive existential pronoun"
+definition = "an entity assertive existential pronoun"
+ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+comment = ""
+
+["Ent;Dist"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "entity distal pronoun"
+definition = "an entity distal pronoun"
+ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Elec"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["any", "whatever", "whichever"]
+label = "entity elective existential pronoun"
+definition = "an entity elective existential pronoun"
+ntumc_definitions = ["02267686-n: pronoun, entity; quantifier: elective existential"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Int"]
+lemmas = []
+proposed = ["ktorý"]
+confidence = ["medium"]
+notes = ["ktorý: which one (pronominal use)"]
+english = ["which"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+ntumc_definitions = ["77000064-n: entity, interrogative pronoun"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Prox"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+ntumc_definitions = ["77000075-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Dist"]
+lemmas = []
+proposed = ["to", "tamto"]
+confidence = ["high", "medium"]
+notes = ["to: that / it (neuter, pronominal)", "tamto: that over there (neuter, pronominal)"]
+english = ["that"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+ntumc_definitions = ["77000079-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Neg"]
+lemmas = []
+proposed = ["nič"]
+confidence = ["low"]
+notes = ["nič: nothing; no thing-negative code exists, check if Ent;Sg;Neg is right"]
+english = ["none"]
+label = "entity singular negative pronoun"
+definition = "an entity singular negative pronoun"
+ntumc_definitions = ["02269039-n: pronoun, entity; qantifier: negative existential"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Oth"]
+lemmas = []
+proposed = ["druhý"]
+confidence = ["medium"]
+notes = ["druhý: the other (one)"]
+english = ["another", "other"]
+label = "entity singular other pronoun"
+definition = "an entity singular other pronoun"
+ntumc_definitions = ["02070188-n: pronoun, entity, quantifier: singular, another"]
+hypernyms = ["Oth", "feature:Ent"]
+ancestors = ["Oth", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Prox"]
+lemmas = []
+proposed = ["tento", "toto"]
+confidence = ["high", "high"]
+notes = ["tento: this one", "toto: this (neuter, pronominal: \"toto je...\")"]
+english = ["this"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+ntumc_definitions = ["77000061-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "entity singular proximal or distal pronoun"
+definition = "an entity singular proximal or distal pronoun"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Univ"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["each", "everything"]
+label = "entity singular universal pronoun"
+definition = "an entity singular universal pronoun"
+ntumc_definitions = ["02269635-n: entity, singular, universal pronoun", "77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+comment = ""
+
+["Ent;Two;Univ"]
+lemmas = []
+proposed = ["oba"]
+confidence = ["medium"]
+notes = ["oba: both (pronominal)"]
+english = ["both"]
+label = "entity universal pronoun of two"
+definition = "an entity universal pronoun of two"
+ntumc_definitions = ["77000076-n: entity, of two, universal pronoun; pronoun, entity, of two; quantifier: of two, universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Univ"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Int"]
+lemmas = []
+proposed = ["ktorý"]
+confidence = ["high"]
+notes = ["ktorý: which (determinative)"]
+english = ["what", "which"]
+label = "interrogative determinative"
+definition = "an interrogative determinative"
+ntumc_definitions = ["77000091-a: interrogative determiner, general"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Knd;Int"]
+lemmas = []
+proposed = ["aký"]
+confidence = ["high"]
+notes = ["aký: what kind of"]
+english = ["what", "which"]
+english_via = "Int"
+label = "kind interrogative determinative"
+definition = "a kind interrogative determinative"
+hypernyms = ["Int"]
+ancestors = ["Int"]
+status = "not built: proposed only"
+comment = ""
+
+["Knd;Prox"]
+lemmas = []
+proposed = ["takýto"]
+confidence = ["medium"]
+notes = ["takýto: this kind of"]
+english = ["such"]
+english_via = "Knd;Prox+Dist"
+label = "kind proximal determinative"
+definition = "a kind proximal determinative"
+ntumc_definitions = ["77000089-a: demonstrative determiner, kind, proximal"]
+hypernyms = ["Knd;Prox+Dist", "Prox"]
+ancestors = ["Knd;Prox+Dist", "Prox", "Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Knd;Prox+Dist"]
+lemmas = []
+proposed = ["taký"]
+confidence = ["high"]
+notes = ["taký: such"]
+english = ["such"]
+label = "kind proximal or distal determinative"
+definition = "a kind proximal or distal determinative"
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Mnr;Int"]
+lemmas = []
+proposed = ["ako"]
+confidence = ["high"]
+notes = ["ako: how"]
+english = ["how"]
+label = "manner interrogative adverb"
+definition = "a manner interrogative adverb"
+ntumc_definitions = ["77000090-n: manner, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Mnr;Prox"]
+lemmas = []
+proposed = ["takto"]
+confidence = ["medium"]
+notes = ["takto: like this; Czech has takto at Mnr;Prox+Dist"]
+english = ["so", "thus", "thusly"]
+english_via = "Mnr;Prox+Dist"
+label = "manner proximal adverb"
+definition = "a manner proximal adverb"
+ntumc_definitions = ["77000089-r: manner, proximal pronoun"]
+hypernyms = ["Mnr;Prox+Dist"]
+ancestors = ["Mnr;Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = []
+proposed = ["tak"]
+confidence = ["high"]
+notes = ["tak: so, thus"]
+english = ["so", "thus", "thusly"]
+label = "manner proximal or distal adverb"
+definition = "a manner proximal or distal adverb"
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Oth"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "other pronoun"
+definition = "an other pronoun"
+ntumc_definitions = ["77000001-n: other pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Pers;Int"]
+lemmas = []
+proposed = ["kto"]
+confidence = ["high"]
+notes = ["kto: who"]
+english = ["who", "whom"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Pers;Refl"]
+lemmas = []
+proposed = ["seba", "sa"]
+confidence = ["high", "medium"]
+notes = ["seba: reflexive pronoun, no nominative; seba is the citation (genitive/accusative) form", "sa: reflexive clitic (accusative); also marks reflexive verbs"]
+english = ["oneself"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+ntumc_definitions = ["77000098-n: personal pronoun, person, reflexive"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+status = "not built: proposed only"
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = []
+proposed = ["niekto"]
+confidence = ["high"]
+notes = ["niekto: someone"]
+english = ["someone"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+hypernyms = ["Ent;Asrt", "feature:Pers"]
+ancestors = ["Ent;Asrt", "feature:Pers", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Pers;Sg;Elec"]
+lemmas = []
+proposed = ["ktokoľvek", "hocikto"]
+confidence = ["high", "high"]
+notes = ["ktokoľvek: anyone (free choice)", "hocikto: anyone (free choice), colloquial"]
+english = ["anybody", "anyone", "whoever"]
+label = "person singular elective existential pronoun"
+definition = "a person singular elective existential pronoun"
+ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
+hypernyms = ["Ent;Elec", "feature:Pers"]
+ancestors = ["Ent;Elec", "feature:Pers", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Pers;Sg;Neg"]
+lemmas = []
+proposed = ["nikto"]
+confidence = ["high"]
+notes = ["nikto: nobody"]
+english = ["no one", "no-one", "nobody", "noone"]
+label = "person singular negative pronoun"
+definition = "a person singular negative pronoun"
+ntumc_definitions = ["77000137-n: person, singular, negative pronoun; pronoun, person, singular; quantifier: negative existential"]
+hypernyms = ["Ent;Sg;Neg", "feature:Pers"]
+ancestors = ["Ent;Sg;Neg", "feature:Pers", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Pers;Univ"]
+lemmas = []
+proposed = ["každý", "všetci"]
+confidence = ["high", "medium"]
+notes = ["každý: everyone", "všetci: everyone (plural masculine animate form of všetok)"]
+english = ["everybody", "everyone"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Dist;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place distal adposition"
+definition = "an adposition: at, to or from a place (distal)"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Dist;Goal"]
+lemmas = []
+proposed = ["tam"]
+confidence = ["high"]
+notes = ["tam: there (to)"]
+english = ["there", "thither"]
+label = "place distal adposition (to)"
+definition = "an adposition: to a place (distal)"
+hypernyms = ["Plc;Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Loc+Goal", "Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Dist;Loc"]
+lemmas = []
+proposed = ["tam", "tamhľa"]
+confidence = ["high", "medium"]
+notes = ["tam: there (at)", "tamhľa: over there (pointing)"]
+english = ["at that place", "in that location", "there"]
+label = "place distal adposition (at)"
+definition = "an adposition: at a place (distal)"
+hypernyms = ["Plc;Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Loc+Goal", "Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Dist;Loc+Goal"]
+lemmas = []
+proposed = ["tam"]
+confidence = ["high"]
+notes = ["tam: there (location and direction)"]
+english = ["there"]
+label = "place distal adposition (at or to)"
+definition = "an adposition: at or to a place (distal)"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Dist;Src"]
+lemmas = []
+proposed = ["odtiaľ", "odtamtiaľ"]
+confidence = ["high", "medium"]
+notes = ["odtiaľ: from there", "odtamtiaľ: from over there"]
+english = ["thence", "therefrom"]
+label = "place distal adposition (from)"
+definition = "an adposition: from a place (distal)"
+hypernyms = ["Plc;Dist;Dir"]
+ancestors = ["Plc;Dist;Dir", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Int;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place interrogative adposition"
+definition = "an adposition: at, to or from a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Int;Goal"]
+lemmas = []
+proposed = ["kam"]
+confidence = ["high"]
+notes = ["kam: where to"]
+english = ["where"]
+english_via = "Plc;Int;Loc+Goal"
+label = "place interrogative adposition (to)"
+definition = "an adposition: to a place (interrogative)"
+ntumc_definitions = ["77000144-n: location, interrogative pronoun, goal"]
+hypernyms = ["Plc;Int;Loc+Goal"]
+ancestors = ["Plc;Int;Loc+Goal", "Plc;Int;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Int;Loc"]
+lemmas = []
+proposed = ["kde"]
+confidence = ["high"]
+notes = ["kde: where (at)"]
+english = ["where"]
+english_via = "Plc;Int;Loc+Goal"
+label = "place interrogative adposition (at)"
+definition = "an adposition: at a place (interrogative)"
+ntumc_definitions = ["77000143-n: location, interrogative pronoun, locative"]
+hypernyms = ["Plc;Int;Loc+Goal"]
+ancestors = ["Plc;Int;Loc+Goal", "Plc;Int;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Int;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["where"]
+label = "place interrogative adposition (at or to)"
+definition = "an adposition: at or to a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
+comment = ""
+
+["Plc;Int;Src"]
+lemmas = []
+proposed = ["odkiaľ"]
+confidence = ["high"]
+notes = ["odkiaľ: where from"]
+label = "place interrogative adposition (from)"
+definition = "an adposition: from a place (interrogative)"
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Prox+Dist;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place proximal or distal adposition"
+definition = "an adposition: at, to or from a place (proximal or distal)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Prox+Dist;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place proximal or distal adposition (at or to)"
+definition = "an adposition: at or to a place (proximal or distal)"
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place proximal adposition"
+definition = "an adposition: at, to or from a place (proximal)"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Goal"]
+lemmas = []
+proposed = ["sem"]
+confidence = ["high"]
+notes = ["sem: (to) here"]
+english = ["'ere", "here", "hither"]
+label = "place proximal adposition (to)"
+definition = "an adposition: to a place (proximal)"
+hypernyms = ["Plc;Prox;Loc+Goal"]
+ancestors = ["Plc;Prox;Loc+Goal", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Prox;Loc"]
+lemmas = []
+proposed = ["tu", "tuto", "tuná"]
+confidence = ["high", "low", "low"]
+notes = ["tu: here", "tuto: colloquial/regional", "tuná: regional"]
+english = ["here"]
+label = "place proximal adposition (at)"
+definition = "an adposition: at a place (proximal)"
+hypernyms = ["Plc;Prox;Loc+Goal"]
+ancestors = ["Plc;Prox;Loc+Goal", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Prox;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["'ere", "here"]
+label = "place proximal adposition (at or to)"
+definition = "an adposition: at or to a place (proximal)"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir"]
+ancestors = ["Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Src"]
+lemmas = []
+proposed = ["odtiaľto"]
+confidence = ["high"]
+notes = ["odtiaľto: from here"]
+english = ["hence"]
+label = "place proximal adposition (from)"
+definition = "an adposition: from a place (proximal)"
+hypernyms = ["Plc;Prox;Dir"]
+ancestors = ["Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Sg;Asrt"]
+lemmas = []
+proposed = ["niekde"]
+confidence = ["high"]
+notes = ["niekde: somewhere"]
+english = ["several", "some"]
+english_via = "Asrt"
+label = "place singular assertive existential pronoun"
+definition = "a place singular assertive existential pronoun"
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Plc"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Plc"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Sg;Elec;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place singular elective existential adposition"
+definition = "an adposition: at, to or from a place (singular, elective existential)"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Sg;Elec;Loc+Goal"]
+lemmas = []
+proposed = ["kdekoľvek", "hocikde"]
+confidence = ["medium", "medium"]
+notes = ["kdekoľvek: anywhere", "hocikde: anywhere, colloquial"]
+english = ["anyplace", "anywhere", "wheresoever", "wherever"]
+label = "place singular elective existential adposition (at or to)"
+definition = "an adposition: at or to a place (singular, elective existential)"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+hypernyms = ["Plc;Sg;Elec;Dir"]
+ancestors = ["Plc;Sg;Elec;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Univ;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "place universal adposition"
+definition = "an adposition: at, to or from a place (universal)"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Univ;Loc+Goal"]
+lemmas = []
+proposed = ["všade"]
+confidence = ["high"]
+notes = ["všade: everywhere"]
+english = ["all over", "all round", "around", "everyplace", "everywhere"]
+label = "place universal adposition (at or to)"
+definition = "an adposition: at or to a place (universal)"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+hypernyms = ["Plc;Univ;Dir"]
+ancestors = ["Plc;Univ;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Poss;Int"]
+lemmas = []
+proposed = ["čí"]
+confidence = ["high"]
+notes = ["čí: whose"]
+english = ["whose"]
+label = "possessive interrogative determinative"
+definition = "a possessive interrogative determinative"
+ntumc_definitions = ["77000120-a: interrogative determiner, possessive"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Prox"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "proximal determinative"
+definition = "a proximal determinative"
+ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "proximal or distal determinative"
+definition = "a proximal or distal determinative"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Qnt;Int"]
+lemmas = []
+proposed = ["koľko"]
+confidence = ["high"]
+notes = ["koľko: how many / how much"]
+english = ["how many", "how much"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+status = "not built: proposed only"
+comment = ""
+
+["Rsn;Int"]
+lemmas = []
+proposed = ["prečo"]
+confidence = ["high"]
+notes = ["prečo: why"]
+english = ["why"]
+label = "reason interrogative adverb"
+definition = "a reason interrogative adverb"
+ntumc_definitions = ["77000112-n: cause, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["SK+SU+IRR+Q+COND+INEG"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
+definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Sg;Dist"]
+lemmas = []
+proposed = ["ten", "tamten", "onen"]
+confidence = ["high", "high", "low"]
+notes = ["ten: that / the (weak demonstrative)", "tamten: that (over there)", "onen: literary/archaic"]
+english = ["that"]
+label = "singular distal determinative"
+definition = "a singular distal determinative"
+ntumc_definitions = ["77000079-a: demonstrative determiner, distal"]
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Sg;Oth"]
+lemmas = []
+proposed = ["iný", "ďalší"]
+confidence = ["high", "medium"]
+notes = ["iný: other", "ďalší: another, next"]
+english = ["another", "some other"]
+label = "singular other determinative"
+definition = "a singular other determinative"
+ntumc_definitions = ["02070188-a: any of various alternatives; some other; quantifier, singular, another"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Sg;Prox"]
+lemmas = []
+proposed = ["tento"]
+confidence = ["high"]
+notes = ["tento: this (determinative)"]
+english = ["this"]
+label = "singular proximal determinative"
+definition = "a singular proximal determinative"
+ntumc_definitions = ["77000061-a: demonstrative determiner, singular, proximal"]
+hypernyms = ["Prox"]
+ancestors = ["Prox", "Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Sg;Univ"]
+lemmas = []
+proposed = ["každý"]
+confidence = ["high"]
+notes = ["každý: every (determinative)"]
+english = ["each"]
+label = "singular universal determinative"
+definition = "a singular universal determinative"
+ntumc_definitions = ["02269635-a: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Int"]
+lemmas = []
+proposed = ["čo"]
+confidence = ["high"]
+notes = ["čo: what"]
+english = ["what", "which"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Sg;Asrt"]
+lemmas = []
+proposed = ["niečo"]
+confidence = ["high"]
+notes = ["niečo: something"]
+english = ["something"]
+label = "thing singular assertive existential pronoun"
+definition = "a thing singular assertive existential pronoun"
+ntumc_definitions = ["77000092-n: thing (object:), singular, assertive existential pronoun; pronoun, thing, singular; quantifier: assertive existential"]
+hypernyms = ["Ent;Asrt", "feature:Thng"]
+ancestors = ["Ent;Asrt", "feature:Thng", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Sg;Elec"]
+lemmas = []
+proposed = ["čokoľvek", "hocičo"]
+confidence = ["high", "high"]
+notes = ["čokoľvek: anything (free choice); Czech cokoliv is at Ent;Elec", "hocičo: anything, colloquial"]
+english = ["anything"]
+label = "thing singular elective existential pronoun"
+definition = "a thing singular elective existential pronoun"
+ntumc_definitions = ["77000093-n: thing (object:), singular, elective existential pronoun; pronoun, thing, singular; quantifier: elective existential; Additional information to the common topic"]
+hypernyms = ["Ent;Elec", "feature:Thng"]
+ancestors = ["Ent;Elec", "feature:Thng", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Sg;Univ"]
+lemmas = []
+proposed = ["všetko"]
+confidence = ["high"]
+notes = ["všetko: everything"]
+english = ["each", "everything"]
+english_via = "Ent;Sg;Univ"
+label = "thing singular universal pronoun"
+definition = "a thing singular universal pronoun"
+ntumc_definitions = ["77000094-n: thing (object:), singular, universal pronoun; pronoun, thing, singular; quantifier: universal"]
+hypernyms = ["Ent;Sg;Univ", "feature:Thng"]
+ancestors = ["Ent;Sg;Univ", "feature:Thng", "Ent;Univ", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Dist;Dir"]
+lemmas = []
+proposed = ["vtedy"]
+confidence = ["high"]
+notes = ["vtedy: then; coded as Czech tehdy"]
+label = "time distal adposition"
+definition = "an adposition: at, until or since a time (distal)"
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Dist;Loc"]
+lemmas = []
+proposed = ["vtedy"]
+confidence = ["medium"]
+notes = ["vtedy: then; coded as Polish wtedy"]
+english = ["then"]
+label = "time distal adposition (at)"
+definition = "an adposition: at a time (distal)"
+hypernyms = ["Tim;Dist;Dir"]
+ancestors = ["Tim;Dist;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Int;Dir"]
+lemmas = []
+proposed = ["kedy"]
+confidence = ["high"]
+notes = ["kedy: when; coded as Czech kdy"]
+label = "time interrogative adposition"
+definition = "an adposition: at, until or since a time (interrogative)"
+ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Int;Loc"]
+lemmas = []
+proposed = ["kedy"]
+confidence = ["medium"]
+notes = ["kedy: when (at what time); parallels teraz at Tim;Prox;Loc"]
+english = ["when"]
+label = "time interrogative adposition (at)"
+definition = "an adposition: at a time (interrogative)"
+ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
+hypernyms = ["Tim;Int;Dir"]
+ancestors = ["Tim;Int;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Prox;Dir"]
+lemmas = []
+proposed = ["teraz"]
+confidence = ["high"]
+notes = ["teraz: now; Czech teď is at both Tim;Prox;Dir and Tim;Prox;Loc"]
 label = "time proximal adposition"
 definition = "an adposition: at, until or since a time (proximal)"
 hypernyms = []
 ancestors = []
+status = "not built: proposed only"
 comment = ""
 
 ["Tim;Prox;Loc"]
@@ -317,4 +1267,106 @@ existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["Tim;Sg;Asrt;Dir"]
 ancestors = ["Tim;Sg;Asrt;Dir"]
 sources = ["niekedy <- omw-sk:2.0", "raz <- omw-sk:2.0"]
+comment = ""
+
+["Tim;Sg;Elec;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "time singular elective existential adposition"
+definition = "an adposition: at, until or since a time (singular, elective existential)"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Tim;Sg;Elec;Loc"]
+lemmas = []
+proposed = ["kedykoľvek", "hocikedy"]
+confidence = ["medium", "medium"]
+notes = ["kedykoľvek: any time", "hocikedy: any time, colloquial"]
+english = ["ever", "of all time", "whenever"]
+label = "time singular elective existential adposition (at)"
+definition = "an adposition: at a time (singular, elective existential)"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
+hypernyms = ["Tim;Sg;Elec;Dir"]
+ancestors = ["Tim;Sg;Elec;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Two;Univ"]
+lemmas = []
+proposed = ["oba"]
+confidence = ["high"]
+notes = ["oba: both (masculine form; f/n obe)"]
+english = ["both"]
+label = "universal determinative of two"
+definition = "a universal determinative of two"
+ntumc_definitions = ["77000076-a: quantifier, of two, universal"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "not built: proposed only"
+comment = ""
+
+["Univ"]
+lemmas = []
+proposed = ["všetok"]
+confidence = ["high"]
+notes = ["všetok: all (determinative); citation form rare, usually všetci/všetky/všetko"]
+english = ["all", "every"]
+label = "universal determinative"
+definition = "a universal determinative"
+ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["feature:Ent"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "entity"
+definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+existing_by_ili = ["omw-sk omw-sk-00001740-n [i35545] entita: (CILI) that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Pers"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "person"
+definition = "a human being"
+existing_by_ili = ["omw-sk omw-sk-00007846-n [i35562] jedinec, človek, jednotlivec: (CILI) a human being"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Plc"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "place"
+definition = "a point located with respect to surface features of some region"
+existing_by_ili = ["omw-sk omw-sk-08664443-n [i82501] miesto, bod, topografická oblasť: (CILI) a point located with respect to surface features of some region"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Qnt"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "quantity"
+definition = "how much there is or how many there are of something that you can quantify"
+existing_by_ili = ["omw-sk omw-sk-00033615-n [i35594] množstvo, miera, veľkosť: (CILI) how much there is or how many there are of something that you can quantify"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Thng"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "thing"
+definition = "an entity that is not named specifically"
+existing_by_ili = ["omw-sk omw-sk-04424418-n [i60192] vec: (CILI) an entity that is not named specifically"]
+hypernyms = []
+ancestors = []
 comment = ""

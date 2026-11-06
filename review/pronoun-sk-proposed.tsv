@@ -1,0 +1,74 @@
+code	lemma	confidence	note
+2;Sg;Infml	ty	high	informal singular (tykanie)
+2;Sg;Fml;Pol	vy	high	polite singular (vykanie); written Vy capitalized in letters; verb plural, past participle/adjective often singular ("boli ste unavený")
+3;Pl	ony	medium	plural for feminine, neuter and masculine inanimate referents
+3;Pl;M	oni	medium	masculine animate (personal) plural only
+Pers;Refl	seba	high	reflexive pronoun, no nominative; seba is the citation (genitive/accusative) form
+Pers;Refl	sa	medium	reflexive clitic (accusative); also marks reflexive verbs
+Poss;Int	čí	high	whose
+Pers;Int	kto	high	who
+Thng;Int	čo	high	what
+Int	ktorý	high	which (determinative)
+Ent;Int	ktorý	medium	which one (pronominal use)
+Knd;Int	aký	high	what kind of
+Qnt;Int	koľko	high	how many / how much
+Mnr;Int	ako	high	how
+Rsn;Int	prečo	high	why
+Tim;Int;Dir	kedy	high	when; coded as Czech kdy
+Tim;Int;Loc	kedy	medium	when (at what time); parallels teraz at Tim;Prox;Loc
+Plc;Int;Loc	kde	high	where (at)
+Plc;Int;Goal	kam	high	where to
+Plc;Int;Src	odkiaľ	high	where from
+Sg;Prox	tento	high	this (determinative)
+Ent;Sg;Prox	tento	high	this one
+Ent;Sg;Prox	toto	high	this (neuter, pronominal: "toto je...")
+Sg;Dist	ten	high	that / the (weak demonstrative)
+Sg;Dist	tamten	high	that (over there)
+Sg;Dist	onen	low	literary/archaic
+Ent;Sg;Dist	to	high	that / it (neuter, pronominal)
+Ent;Sg;Dist	tamto	medium	that over there (neuter, pronominal)
+Knd;Prox	takýto	medium	this kind of
+Knd;Prox+Dist	taký	high	such
+Mnr;Prox+Dist	tak	high	so, thus
+Mnr;Prox	takto	medium	like this; Czech has takto at Mnr;Prox+Dist
+Sg;Oth	iný	high	other
+Sg;Oth	ďalší	medium	another, next
+Ent;Sg;Oth	druhý	medium	the other (one)
+Two;Univ	oba	high	both (masculine form; f/n obe)
+Ent;Two;Univ	oba	medium	both (pronominal)
+Pers;Sg;Asrt	niekto	high	someone
+Thng;Sg;Asrt	niečo	high	something
+Asrt	nejaký	high	some (determinative)
+Plc;Sg;Asrt	niekde	high	somewhere
+Pers;Sg;Neg	nikto	high	nobody
+Ent;Sg;Neg	nič	low	nothing; no thing-negative code exists, check if Ent;Sg;Neg is right
+Pers;Sg;Elec	ktokoľvek	high	anyone (free choice)
+Pers;Sg;Elec	hocikto	high	anyone (free choice), colloquial
+Thng;Sg;Elec	čokoľvek	high	anything (free choice); Czech cokoliv is at Ent;Elec
+Thng;Sg;Elec	hocičo	high	anything, colloquial
+Elec	akýkoľvek	medium	any (determinative)
+Elec	hocijaký	medium	any (determinative), colloquial
+Plc;Sg;Elec;Loc+Goal	kdekoľvek	medium	anywhere
+Plc;Sg;Elec;Loc+Goal	hocikde	medium	anywhere, colloquial
+Tim;Sg;Elec;Loc	kedykoľvek	medium	any time
+Tim;Sg;Elec;Loc	hocikedy	medium	any time, colloquial
+Pers;Univ	každý	high	everyone
+Sg;Univ	každý	high	every (determinative)
+Pers;Univ	všetci	medium	everyone (plural masculine animate form of všetok)
+Thng;Sg;Univ	všetko	high	everything
+Univ	všetok	high	all (determinative); citation form rare, usually všetci/všetky/všetko
+Plc;Univ;Loc+Goal	všade	high	everywhere
+Plc;Prox;Loc	tu	high	here
+Plc;Prox;Loc	tuto	low	colloquial/regional
+Plc;Prox;Loc	tuná	low	regional
+Plc;Prox;Goal	sem	high	(to) here
+Plc;Prox;Src	odtiaľto	high	from here
+Plc;Dist;Loc+Goal	tam	high	there (location and direction)
+Plc;Dist;Loc	tam	high	there (at)
+Plc;Dist;Goal	tam	high	there (to)
+Plc;Dist;Loc	tamhľa	medium	over there (pointing)
+Plc;Dist;Src	odtiaľ	high	from there
+Plc;Dist;Src	odtamtiaľ	medium	from over there
+Tim;Prox;Dir	teraz	high	now; Czech teď is at both Tim;Prox;Dir and Tim;Prox;Loc
+Tim;Dist;Dir	vtedy	high	then; coded as Czech tehdy
+Tim;Dist;Loc	vtedy	medium	then; coded as Polish wtedy

@@ -11,6 +11,8 @@
 #   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
 #   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
 #   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+# proposed: words NOT in the build, written by Claude Opus 5.5 from its own knowledge
+#   (review/pronoun-<lang>-proposed.tsv), for a speaker to check: accept, correct or reject each.
 
 ["1+2;Pl"]
 lemmas = []
@@ -21,8 +23,20 @@ hypernyms = []
 ancestors = []
 comment = ""
 
+["1+2;Pl;Poss"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "first person or second person plural possessive determinative"
+definition = "a first person or second person plural possessive determinative"
+hypernyms = []
+ancestors = []
+comment = ""
+
 ["1;Pl"]
 lemmas = ["nosotros"]
+proposed = ["nosotras"]
+confidence = ["high"]
+notes = ["nosotras: feminine of nosotros (no 1;Pl;F concept)"]
 english = ["we"]
 label = "first person plural pronoun"
 definition = "a pronoun referring to the speaker, more than one in all"
@@ -33,6 +47,32 @@ ancestors = ["1+2;Pl"]
 tufs = ["nosotros <- 私たち (high)"]
 curator_notes = ["masculine/mixed; feminine nosotras"]
 status = "built"
+comment = ""
+
+["1;Pl;Poss"]
+proposed = ["nuestro"]
+confidence = ["high"]
+notes = ["nuestro: possessive determinative (nuestro, nuestra, nuestros, nuestras)"]
+english = ["our"]
+label = "first person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, more than one possessor"
+ntumc_definitions = ["77000006-a: possessive determiner, 1st person, plural"]
+hypernyms = ["1+2;Pl;Poss"]
+ancestors = ["1+2;Pl;Poss"]
+status = "not built: proposed only"
+comment = ""
+
+["1;Pl;Refl"]
+proposed = ["nos"]
+confidence = ["medium"]
+notes = ["nos: clitic; also non-reflexive object 'us'"]
+english = ["ourselves"]
+label = "first person plural reflexive pronoun"
+definition = "a pronoun referring to the speaker, more than one in all (reflexive)"
+ntumc_definitions = ["77000008-n: 1st person, plural, reflexive pronoun; personal pronoun, person, 1st person, plural, reflexive"]
+hypernyms = ["1;Pl"]
+ancestors = ["1;Pl", "1+2;Pl"]
+status = "not built: proposed only"
 comment = ""
 
 ["1;Sg"]
@@ -49,6 +89,32 @@ tufs = ["yo <- 私（わたし） (high)"]
 status = "built"
 comment = ""
 
+["1;Sg;Poss"]
+proposed = ["mi"]
+confidence = ["high"]
+notes = ["mi: possessive determinative (mi casa); plural mis"]
+english = ["my"]
+label = "first person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, one possessor"
+ntumc_definitions = ["77000107-a: possessive determiner, 1st person, singular"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["1;Sg;Refl"]
+proposed = ["me"]
+confidence = ["medium"]
+notes = ["me: clitic; also non-reflexive object 'me'"]
+english = ["myself"]
+label = "first person singular reflexive pronoun"
+definition = "a pronoun referring to the speaker, one in all (reflexive)"
+ntumc_definitions = ["77000016-n: 1st person, singular, reflexive pronoun; personal pronoun, person, 1st person, singular, reflexive"]
+hypernyms = ["1;Sg"]
+ancestors = ["1;Sg"]
+status = "not built: proposed only"
+comment = ""
+
 ["2"]
 lemmas = []
 status = "unlexicalized: no es word; included for the hierarchy"
@@ -61,6 +127,9 @@ comment = ""
 
 ["2;Pl"]
 lemmas = ["ustedes"]
+proposed = ["vosotros", "vosotras"]
+confidence = ["high", "high"]
+notes = ["vosotros: informal 2pl, Spain only (Latin America uses ustedes); no 2;Pl;Infml concept exists, so on 2;Pl", "vosotras: feminine of vosotros; Spain only"]
 english = ["you"]
 english_via = "2"
 label = "second person plural pronoun"
@@ -86,6 +155,42 @@ ancestors = ["2;Pl", "1+2;Pl", "2"]
 tufs = ["ustedes <- あなた方 (medium)"]
 curator_notes = ["NEW; formal plural in Spain (vs vosotros)"]
 status = "built"
+comment = ""
+
+["2;Pl;Poss"]
+proposed = ["vuestro"]
+confidence = ["high"]
+notes = ["vuestro: Spain only (Latin America uses su / de ustedes)"]
+english = ["your"]
+english_via = "2;Poss"
+label = "second person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, more than one possessor"
+hypernyms = ["1+2;Pl;Poss", "2;Poss"]
+ancestors = ["1+2;Pl;Poss", "2;Poss"]
+status = "not built: proposed only"
+comment = ""
+
+["2;Pl;Refl"]
+proposed = ["os"]
+confidence = ["medium"]
+notes = ["os: clitic, Spain only; also non-reflexive object"]
+english = ["yourselves"]
+label = "second person plural reflexive pronoun"
+definition = "a pronoun referring to the addressee, more than one in all (reflexive)"
+ntumc_definitions = ["77000020-n: 2nd person, plural, reflexive pronoun; personal pronoun, person, 2nd person, plural, reflexive"]
+hypernyms = ["2;Pl"]
+ancestors = ["2;Pl", "1+2;Pl", "2"]
+status = "not built: proposed only"
+comment = ""
+
+["2;Poss"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["your"]
+label = "second person possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee"
+hypernyms = []
+ancestors = []
 comment = ""
 
 ["2;Sg"]
@@ -127,6 +232,9 @@ comment = ""
 
 ["2;Sg;Infml"]
 lemmas = ["tú"]
+proposed = ["vos"]
+confidence = ["high"]
+notes = ["vos: regional: the normal informal 2sg in Argentina, Uruguay, Paraguay, most of Central America (Costa Rica, Nicaragua, Honduras, El Salvador, Guatemala); also parts of Colombia (Antioquia, Valle), Venezuela (Zulia), Bolivia, Ecuador and Chiapas; Chile mostly verbal voseo with tú"]
 english = ["you"]
 english_via = "2"
 label = "second person singular informal pronoun"
@@ -137,6 +245,33 @@ hypernyms = ["2;Sg"]
 ancestors = ["2;Sg", "2"]
 tufs = ["tú <- 君（きみ） (high)"]
 status = "built"
+comment = ""
+
+["2;Sg;Poss"]
+proposed = ["tu"]
+confidence = ["high"]
+notes = ["tu: possessive determinative of tú/vos (tu casa)"]
+english = ["your"]
+english_via = "2;Poss"
+label = "second person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, one possessor"
+ntumc_definitions = ["77000024-a: possessive determiner, 2nd person, singular"]
+hypernyms = ["2;Poss"]
+ancestors = ["2;Poss"]
+status = "not built: proposed only"
+comment = ""
+
+["2;Sg;Refl"]
+proposed = ["te"]
+confidence = ["medium"]
+notes = ["te: clitic; also non-reflexive object 'you'"]
+english = ["yourself"]
+label = "second person singular reflexive pronoun"
+definition = "a pronoun referring to the addressee, one in all (reflexive)"
+ntumc_definitions = ["77000025-n: 2nd person, singular, reflexive pronoun; personal pronoun, person, 2nd person, singular, reflexive"]
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+status = "not built: proposed only"
 comment = ""
 
 ["3"]
@@ -189,6 +324,44 @@ curator_notes = ["masculine/mixed plural; known 3;Pl;F looks wrong"]
 status = "built"
 comment = ""
 
+["3;Pl;Recp"]
+proposed = ["se"]
+confidence = ["medium"]
+notes = ["se: reciprocal use (se quieren 'they love each other')"]
+english = ["they"]
+english_via = "3;Pl"
+label = "third person plural reciprocal pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (reciprocal)"
+ntumc_definitions = ["77000033-n: 3rd person, plural, reciprocal pronoun; personal pronoun, person, 3rd person, plural, reciprocal"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
+status = "not built: proposed only"
+comment = ""
+
+["3;Pl;Refl"]
+proposed = ["se", "sí"]
+confidence = ["medium", "medium"]
+notes = ["se: see se on 3;Sg;M;Refl", "sí: see sí on 3;Sg;M;Refl"]
+english = ["themselves"]
+label = "third person plural reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (reflexive)"
+ntumc_definitions = ["77000034-n: 3rd person, plural, reflexive pronoun; personal pronoun, person, 3rd person, plural, reflexive"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
+status = "not built: proposed only"
+comment = ""
+
+["3;Poss"]
+proposed = ["su"]
+confidence = ["high"]
+notes = ["su: 3rd person possessor, any number/gender; also used for usted/ustedes possessor"]
+label = "third person possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee"
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
 ["3;Sg"]
 lemmas = []
 status = "unlexicalized: no es word; included for the hierarchy"
@@ -210,6 +383,19 @@ hypernyms = ["3;Sg"]
 ancestors = ["3;Sg", "3"]
 tufs = ["ella <- 彼女 (high)"]
 status = "built"
+comment = ""
+
+["3;Sg;F;Refl"]
+proposed = ["se", "sí"]
+confidence = ["medium", "medium"]
+notes = ["se: see se on 3;Sg;M;Refl", "sí: see sí on 3;Sg;M;Refl"]
+english = ["herself"]
+label = "third person singular feminine reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine, reflexive)"
+ntumc_definitions = ["77000045-n: 3rd person, singular, feminine, reflexive pronoun; personal pronoun, person, 3rd person, singular, feminine, reflexive"]
+hypernyms = ["3;Sg;F"]
+ancestors = ["3;Sg;F", "3;Sg", "3"]
+status = "not built: proposed only"
 comment = ""
 
 ["3;Sg;M"]
@@ -235,6 +421,45 @@ hypernyms = ["3;Sg"]
 ancestors = ["3;Sg", "3"]
 comment = ""
 
+["3;Sg;M;Refl"]
+proposed = ["se", "sí"]
+confidence = ["medium", "medium"]
+notes = ["se: reflexive clitic, 3sg and 3pl (and usted/ustedes); no 3;Refl concept", "sí: prepositional reflexive (para sí, consigo); 3sg/3pl"]
+english = ["himself"]
+label = "third person singular masculine reflexive pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, reflexive)"
+ntumc_definitions = ["77000052-n: 3rd person, singular, masculine, reflexive pronoun; personal pronoun, person, 3rd person, singular, masculine, reflexive"]
+hypernyms = ["3;Sg;M"]
+ancestors = ["3;Sg;M", "3;Sg;M+N", "3;Sg", "3"]
+status = "not built: proposed only"
+comment = ""
+
+["3;Sg;N"]
+proposed = ["ello"]
+confidence = ["medium"]
+notes = ["ello: neuter 3sg, formal/literary (por ello, para ello)"]
+english = ["it"]
+label = "third person singular neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)"
+ntumc_definitions = ["77000053-n: personal pronoun, entity, 3rd person, singular, neuter"]
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
+status = "not built: proposed only"
+comment = ""
+
+["Asrt"]
+proposed = ["alguno"]
+confidence = ["high"]
+notes = ["alguno: determinative (algún libro); citation form alguno"]
+english = ["several", "some"]
+label = "assertive existential determinative"
+definition = "an assertive existential determinative"
+ntumc_definitions = ["02267308-a: quantifier, an unspecified amount of; quantifier, assertive existential pronoun; quantifier, assertive existential"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
 ["Dist"]
 lemmas = []
 status = "unlexicalized: no es word; included for the hierarchy"
@@ -245,15 +470,142 @@ hypernyms = ["Prox+Dist"]
 ancestors = ["Prox+Dist"]
 comment = ""
 
+["Elec"]
+proposed = ["cualquier"]
+confidence = ["medium"]
+notes = ["cualquier: free-choice determinative (cualquier libro); lemma may be cualquiera"]
+english = ["any", "whatever", "whatsoever", "whichever"]
+label = "elective existential determinative"
+definition = "an elective existential determinative"
+ntumc_definitions = ["02267686-a: one or some or every or all without specification; entity, elective existential pronoun; quantifier,  elective existential"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Ent;1;Pl;Poss"]
+proposed = ["nuestro"]
+confidence = ["high"]
+notes = ["nuestro: el nuestro (same lemma as the determinative)"]
+english = ["ours"]
+label = "first person plural possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the speaker, more than one possessor"
+ntumc_definitions = ["77000006-n: 1st person, plural, possessive pronoun; possessive pronoun, person, 1st person, plural"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;1;Sg;Poss"]
+proposed = ["mío"]
+confidence = ["high"]
+notes = ["mío: el mío; also stressed post-nominal adjective (un amigo mío)"]
+english = ["mine"]
+label = "first person singular possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the speaker, one possessor"
+ntumc_definitions = ["77000107-n: possessive pronoun, person, 1st person, singular"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;2;Poss"]
+proposed = ["vuestro"]
+confidence = ["medium"]
+notes = ["vuestro: el vuestro, Spain only; no Ent;2;Pl;Poss concept"]
+english = ["yours"]
+label = "second person possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the addressee"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;2;Sg;Poss"]
+proposed = ["tuyo"]
+confidence = ["high"]
+notes = ["tuyo: el tuyo"]
+english = ["yours"]
+english_via = "Ent;2;Poss"
+label = "second person singular possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to the addressee, one possessor"
+ntumc_definitions = ["77000024-n: 2nd person, singular, possessive pronoun; possessive pronoun, person, 2nd person, singular"]
+hypernyms = ["Ent;2;Poss", "feature:Ent"]
+ancestors = ["Ent;2;Poss", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;3;Pl;Poss"]
+proposed = ["suyo"]
+confidence = ["medium"]
+notes = ["suyo: see suyo on Ent;3;Sg;M;Poss"]
+english = ["theirs"]
+label = "third person plural possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, more than one possessor"
+ntumc_definitions = ["77000111-n: possessive pronoun, person, 3nd person, plural"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;3;Sg;F;Poss"]
+proposed = ["suyo"]
+confidence = ["medium"]
+notes = ["suyo: see suyo on Ent;3;Sg;M;Poss"]
+english = ["hers"]
+label = "third person singular feminine possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+ntumc_definitions = ["77000044-n: 3rd person, singular, feminine, subjective pronoun; possessive pronoun, 3rd person, singular, feminine"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;3;Sg;M;Poss"]
+proposed = ["suyo"]
+confidence = ["medium"]
+notes = ["suyo: el suyo: possessor of any person 3 (and usted); no Ent;3;Poss concept, so listed on each 3rd person code"]
+english = ["his"]
+label = "third person singular masculine possessive pronoun"
+definition = "a possessive pronoun: someone or something belonging to someone or something other than speaker and addressee, one possessor (masculine)"
+ntumc_definitions = ["77000050-n: 3rd person, singular, masculine, possessive pronoun; possessive pronoun, person, 3rd person, singular, masculine"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
 ["Ent;Asrt"]
-lemmas = []
-status = "unlexicalized: no es word; included for the hierarchy"
+proposed = ["alguno"]
+confidence = ["medium"]
+notes = ["alguno: pronoun (alguno lo sabrá)"]
 english = ["several", "some"]
 label = "entity assertive existential pronoun"
 definition = "an entity assertive existential pronoun"
 ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
 hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
 ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Dist"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "entity distal pronoun"
+definition = "an entity distal pronoun"
+ntumc_definitions = ["77000080-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, distal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Elec"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["any", "whatever", "whichever"]
+label = "entity elective existential pronoun"
+definition = "an entity elective existential pronoun"
+ntumc_definitions = ["02267686-n: pronoun, entity; quantifier: elective existential"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
 comment = ""
 
 ["Ent;Int"]
@@ -270,6 +622,155 @@ curator_notes = ["'which one'"]
 status = "built"
 comment = ""
 
+["Ent;Prox"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "entity proximal pronoun"
+definition = "an entity proximal pronoun"
+ntumc_definitions = ["77000075-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, proximal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Dist"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["that"]
+label = "entity singular distal pronoun"
+definition = "an entity singular distal pronoun"
+ntumc_definitions = ["77000079-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Dist", "Ent;Sg;Prox+Dist", "feature:Ent"]
+comment = ""
+
+["Ent;Sg;Med"]
+proposed = ["ese", "eso"]
+confidence = ["high", "high"]
+notes = ["ese: pronoun use; older spelling ése; follows Japanese sore", "eso: neuter pronoun 'that (near you)'"]
+english = ["that"]
+english_via = "Ent;Sg;Dist"
+label = "entity singular medial pronoun"
+definition = "an entity singular medial pronoun"
+ntumc_definitions = ["77000060-n: demonstratives, singular, medial pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, medial"]
+hypernyms = ["Ent;Sg;Dist", "feature:Ent"]
+ancestors = ["Ent;Sg;Dist", "feature:Ent", "Ent;Dist", "Ent;Sg;Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Neg"]
+proposed = ["nada", "ninguno"]
+confidence = ["high", "high"]
+notes = ["nada: 'nothing' (no Thng;Neg concept)", "ninguno: 'none, no one'; also determinative ningún (no Neg determinative concept)"]
+english = ["none"]
+label = "entity singular negative pronoun"
+definition = "an entity singular negative pronoun"
+ntumc_definitions = ["02269039-n: pronoun, entity; qantifier: negative existential"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Oth"]
+proposed = ["otro"]
+confidence = ["high"]
+notes = ["otro: el otro 'the other one'"]
+english = ["another", "other"]
+label = "entity singular other pronoun"
+definition = "an entity singular other pronoun"
+ntumc_definitions = ["02070188-n: pronoun, entity, quantifier: singular, another"]
+hypernyms = ["Oth", "feature:Ent"]
+ancestors = ["Oth", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Prox"]
+proposed = ["este", "esto"]
+confidence = ["high", "high"]
+notes = ["este: pronoun use (este es mío); older spelling éste; follows Japanese kore", "esto: neuter pronoun 'this'"]
+english = ["this"]
+label = "entity singular proximal pronoun"
+definition = "an entity singular proximal pronoun"
+ntumc_definitions = ["77000061-n: demonstrative pronoun, entity; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+ancestors = ["Ent;Prox", "Ent;Sg;Prox+Dist", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "entity singular proximal or distal pronoun"
+definition = "an entity singular proximal or distal pronoun"
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Ent;Sg;Rem"]
+proposed = ["aquel", "aquello"]
+confidence = ["high", "high"]
+notes = ["aquel: pronoun use; older spelling aquél; follows Japanese are", "aquello: neuter pronoun 'that (over there)'"]
+english = ["that"]
+english_via = "Ent;Sg;Dist"
+label = "entity singular remote pronoun"
+definition = "an entity singular remote pronoun"
+ntumc_definitions = ["77000059-n: demonstratives, singular, remote pronoun; demonstrative pronoun, entity; quantifier: demonstrative determiner, remote"]
+hypernyms = ["Ent;Sg;Dist", "feature:Ent"]
+ancestors = ["Ent;Sg;Dist", "feature:Ent", "Ent;Dist", "Ent;Sg;Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Two;Elec"]
+proposed = ["cualquiera de los dos"]
+confidence = ["low"]
+notes = ["cualquiera de los dos: 'either'; multiword"]
+english = ["either"]
+label = "entity singular elective existential pronoun of two"
+definition = "an entity singular elective existential pronoun of two"
+ntumc_definitions = ["77000074-n: entity, singular, of two, elective existential pronoun"]
+hypernyms = ["Ent;Elec", "feature:Ent"]
+ancestors = ["Ent;Elec", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Two;Neg"]
+proposed = ["ninguno de los dos"]
+confidence = ["low"]
+notes = ["ninguno de los dos: 'neither'; multiword"]
+english = ["neither"]
+label = "entity singular negative pronoun of two"
+definition = "an entity singular negative pronoun of two"
+ntumc_definitions = ["00524607-n: pronoun, entity, singular; quantifier: quantifier, of two, negative"]
+hypernyms = ["Ent;Sg;Neg", "feature:Ent"]
+ancestors = ["Ent;Sg;Neg", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Sg;Univ"]
+proposed = ["cada uno"]
+confidence = ["high"]
+notes = ["cada uno: 'each one'; multiword"]
+english = ["each", "everything"]
+label = "entity singular universal pronoun"
+definition = "an entity singular universal pronoun"
+ntumc_definitions = ["02269635-n: entity, singular, universal pronoun", "77000078-n: entity, singular, universal pronoun; pronoun, entity, singular; quantifier: universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Ent;Two;Univ"]
+proposed = ["ambos"]
+confidence = ["high"]
+notes = ["ambos: 'both' pronoun"]
+english = ["both"]
+label = "entity universal pronoun of two"
+definition = "an entity universal pronoun of two"
+ntumc_definitions = ["77000076-n: entity, of two, universal pronoun; pronoun, entity, of two; quantifier: of two, universal"]
+hypernyms = ["Ent;Univ", "feature:Ent"]
+ancestors = ["Ent;Univ", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
 ["Ent;Univ"]
 lemmas = []
 status = "unlexicalized: no es word; included for the hierarchy"
@@ -279,6 +780,19 @@ definition = "an entity universal pronoun"
 ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
 hypernyms = ["feature:Ent"]
 ancestors = ["feature:Ent"]
+comment = ""
+
+["Int"]
+proposed = ["qué", "cuál"]
+confidence = ["high", "medium"]
+notes = ["qué: interrogative determinative (¿qué libro?)", "cuál: determinative use (¿cuál libro?) is Latin American / colloquial; Spain prefers qué"]
+english = ["what", "which"]
+label = "interrogative determinative"
+definition = "an interrogative determinative"
+ntumc_definitions = ["77000091-a: interrogative determiner, general"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
 comment = ""
 
 ["Knd;Prox+Dist"]
@@ -334,6 +848,18 @@ curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
 status = "built"
 comment = ""
 
+["Oth"]
+proposed = ["demás"]
+confidence = ["low"]
+notes = ["demás: los demás 'the others, the rest'"]
+label = "other pronoun"
+definition = "an other pronoun"
+ntumc_definitions = ["77000001-n: other pronoun"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
 ["Pers;Int"]
 lemmas = ["quién"]
 english = ["who", "whom"]
@@ -374,8 +900,37 @@ tufs = ["alguien <- だれか (high)"]
 status = "built"
 comment = ""
 
+["Pers;Sg;Elec"]
+proposed = ["cualquiera"]
+confidence = ["medium"]
+notes = ["cualquiera: free-choice 'anyone' (cualquiera puede venir); not used in questions or negation, where Spanish uses alguien / nadie"]
+english = ["anybody", "anyone", "whoever"]
+label = "person singular elective existential pronoun"
+definition = "a person singular elective existential pronoun"
+ntumc_definitions = ["77000097-n: person, singular, elective existential pronoun; pronoun, person, singular; quantifier: elective existential"]
+hypernyms = ["Ent;Elec", "feature:Pers"]
+ancestors = ["Ent;Elec", "feature:Pers", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Pers;Sg;Neg"]
+proposed = ["nadie"]
+confidence = ["high"]
+notes = ["nadie: 'nobody'"]
+english = ["no one", "no-one", "nobody", "noone"]
+label = "person singular negative pronoun"
+definition = "a person singular negative pronoun"
+ntumc_definitions = ["77000137-n: person, singular, negative pronoun; pronoun, person, singular; quantifier: negative existential"]
+hypernyms = ["Ent;Sg;Neg", "feature:Pers"]
+ancestors = ["Ent;Sg;Neg", "feature:Pers", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
 ["Pers;Univ"]
 lemmas = ["todo el mundo"]
+proposed = ["todos"]
+confidence = ["medium"]
+notes = ["todos: 'everybody'; plural, todo el mundo is already in the build"]
 english = ["everybody", "everyone"]
 label = "person universal pronoun"
 definition = "a person universal pronoun"
@@ -412,6 +967,52 @@ tufs = ["dónde <- どちら (high)"]
 status = "built"
 comment = ""
 
+["Plc;Int;Dir"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "place interrogative adposition"
+definition = "an adposition: at, to or from a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Int;Goal"]
+proposed = ["adónde"]
+confidence = ["medium"]
+notes = ["adónde: 'where to'; an adverb in Spanish though the concept is POS p"]
+english = ["where"]
+english_via = "Plc;Int;Loc+Goal"
+label = "place interrogative adposition (to)"
+definition = "an adposition: to a place (interrogative)"
+ntumc_definitions = ["77000144-n: location, interrogative pronoun, goal"]
+hypernyms = ["Plc;Int;Loc+Goal"]
+ancestors = ["Plc;Int;Loc+Goal", "Plc;Int;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Int;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["where"]
+label = "place interrogative adposition (at or to)"
+definition = "an adposition: at or to a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
+comment = ""
+
+["Plc;Int;Src"]
+proposed = ["de dónde"]
+confidence = ["low"]
+notes = ["de dónde: 'where from'; multiword"]
+label = "place interrogative adposition (from)"
+definition = "an adposition: from a place (interrogative)"
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
+status = "not built: proposed only"
+comment = ""
+
 ["Plc;Med"]
 lemmas = ["ahí"]
 english = ["there"]
@@ -428,6 +1029,9 @@ comment = ""
 
 ["Plc;Prox"]
 lemmas = ["aquí"]
+proposed = ["acá"]
+confidence = ["medium"]
+notes = ["acá: Latin America: general 'here' (esp. Río de la Plata); Spain: mostly with motion verbs and less precise than aquí"]
 english = ["'ere", "here"]
 label = "place proximal pronoun"
 definition = "a place proximal pronoun"
@@ -441,6 +1045,9 @@ comment = ""
 
 ["Plc;Rem"]
 lemmas = ["allí"]
+proposed = ["allá"]
+confidence = ["medium"]
+notes = ["allá: less precise/more remote than allí; Latin America general 'there'; with motion verbs in Spain"]
 english = ["there"]
 english_via = "Plc;Dist"
 label = "place remote pronoun"
@@ -452,6 +1059,92 @@ ancestors = ["Plc;Dist", "feature:Plc"]
 tufs = ["allí <- あっち (high)"]
 curator_notes = ["aquí/ahí/allí three-way"]
 status = "built"
+comment = ""
+
+["Plc;Sg;Asrt"]
+proposed = ["alguna parte"]
+confidence = ["low"]
+notes = ["alguna parte: 'somewhere' (also algún sitio, algún lugar)"]
+english = ["several", "some"]
+english_via = "Asrt"
+label = "place singular assertive existential pronoun"
+definition = "a place singular assertive existential pronoun"
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Plc"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Plc"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Sg;Elec;Dir"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "place singular elective existential adposition"
+definition = "an adposition: at, to or from a place (singular, elective existential)"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Sg;Elec;Loc+Goal"]
+proposed = ["dondequiera"]
+confidence = ["low"]
+notes = ["dondequiera: 'wherever'; literary, colloquial donde sea"]
+english = ["anyplace", "anywhere", "wheresoever", "wherever"]
+label = "place singular elective existential adposition (at or to)"
+definition = "an adposition: at or to a place (singular, elective existential)"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+hypernyms = ["Plc;Sg;Elec;Dir"]
+ancestors = ["Plc;Sg;Elec;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Sg;Oth"]
+proposed = ["otra parte"]
+confidence = ["low"]
+notes = ["otra parte: 'elsewhere' (also otro sitio, otro lugar)"]
+english = ["another", "some other"]
+english_via = "Sg;Oth"
+label = "place singular other pronoun"
+definition = "a place singular other pronoun"
+ntumc_definitions = ["77000085-n: location, other pronoun; pronoun, location; quantifier:  singular, another"]
+hypernyms = ["Oth", "feature:Plc"]
+ancestors = ["Oth", "feature:Plc"]
+status = "not built: proposed only"
+comment = ""
+
+["Plc;Univ;Dir"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "place universal adposition"
+definition = "an adposition: at, to or from a place (universal)"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Univ;Loc+Goal"]
+proposed = ["en todas partes"]
+confidence = ["low"]
+notes = ["en todas partes: 'everywhere'; multiword"]
+english = ["all over", "all round", "around", "everyplace", "everywhere"]
+label = "place universal adposition (at or to)"
+definition = "an adposition: at or to a place (universal)"
+ntumc_definitions = ["00025728-r: to or in any or all places; pronoun, location; quantifier: universal"]
+hypernyms = ["Plc;Univ;Dir"]
+ancestors = ["Plc;Univ;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Poss;Int"]
+proposed = ["cúyo"]
+confidence = ["low"]
+notes = ["cúyo: archaic/literary interrogative 'whose'; modern speech uses de quién"]
+english = ["whose"]
+label = "possessive interrogative determinative"
+definition = "a possessive interrogative determinative"
+ntumc_definitions = ["77000120-a: interrogative determiner, possessive"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
 comment = ""
 
 ["Prox"]
@@ -490,6 +1183,42 @@ tufs = ["cuántos <- いくつ (high)", "cuánto <- いくら (high)"]
 status = "built"
 comment = ""
 
+["Qnt;Prox"]
+proposed = ["tanto"]
+confidence = ["low"]
+notes = ["tanto: 'so much/many'; not really deictic"]
+label = "quantity proximal pronoun"
+definition = "a quantity proximal pronoun"
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+status = "not built: proposed only"
+comment = ""
+
+["Rem"]
+proposed = ["aquel"]
+confidence = ["high"]
+notes = ["aquel: remote determinative, follows Japanese ano (Rem); este is on Prox and ese on Med in the build"]
+label = "remote determinative"
+definition = "a remote determinative"
+ntumc_definitions = ["77000059-a: demonstrative determiner, remote"]
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
+status = "not built: proposed only"
+comment = ""
+
+["Rsn;Int"]
+proposed = ["por qué"]
+confidence = ["high"]
+notes = ["por qué: 'why' (written as two words)"]
+english = ["why"]
+label = "reason interrogative adverb"
+definition = "a reason interrogative adverb"
+ntumc_definitions = ["77000112-n: cause, interrogative pronoun"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
 ["SK+SU+IRR+Q+COND+INEG"]
 lemmas = []
 status = "unlexicalized: no es word; included for the hierarchy"
@@ -497,6 +1226,97 @@ label = "specific known or specific unknown or irrealis non-specific or question
 definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
 hypernyms = []
 ancestors = []
+comment = ""
+
+["Sg;Oth"]
+proposed = ["otro"]
+confidence = ["high"]
+notes = ["otro: 'other, another' (determinative)"]
+english = ["another", "some other"]
+label = "singular other determinative"
+definition = "a singular other determinative"
+ntumc_definitions = ["02070188-a: any of various alternatives; some other; quantifier, singular, another"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
+comment = ""
+
+["Sg;Univ"]
+proposed = ["cada"]
+confidence = ["high"]
+notes = ["cada: 'each, every'"]
+english = ["each"]
+label = "singular universal determinative"
+definition = "a singular universal determinative"
+ntumc_definitions = ["02269635-a: (used of count nouns) every one considered individually; quantifier, singular, universal pronoun; quantifier, singular, universal"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Int"]
+proposed = ["qué"]
+confidence = ["high"]
+notes = ["qué: 'what' (pronoun)"]
+english = ["what", "which"]
+label = "thing interrogative pronoun"
+definition = "a thing interrogative pronoun"
+ntumc_definitions = ["77000091-n: thing (object:), interrogative pronoun; thing, interrogative pronoun; what"]
+hypernyms = ["Ent;Int", "feature:Thng"]
+ancestors = ["Ent;Int", "feature:Thng", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Sg;Asrt"]
+proposed = ["algo"]
+confidence = ["high"]
+notes = ["algo: 'something'"]
+english = ["something"]
+label = "thing singular assertive existential pronoun"
+definition = "a thing singular assertive existential pronoun"
+ntumc_definitions = ["77000092-n: thing (object:), singular, assertive existential pronoun; pronoun, thing, singular; quantifier: assertive existential"]
+hypernyms = ["Ent;Asrt", "feature:Thng"]
+ancestors = ["Ent;Asrt", "feature:Thng", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Sg;Elec"]
+proposed = ["cualquier cosa"]
+confidence = ["low"]
+notes = ["cualquier cosa: 'anything' (free choice); multiword"]
+english = ["anything"]
+label = "thing singular elective existential pronoun"
+definition = "a thing singular elective existential pronoun"
+ntumc_definitions = ["77000093-n: thing (object:), singular, elective existential pronoun; pronoun, thing, singular; quantifier: elective existential; Additional information to the common topic"]
+hypernyms = ["Ent;Elec", "feature:Thng"]
+ancestors = ["Ent;Elec", "feature:Thng", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Thng;Sg;Univ"]
+proposed = ["todo"]
+confidence = ["high"]
+notes = ["todo: 'everything'"]
+english = ["each", "everything"]
+english_via = "Ent;Sg;Univ"
+label = "thing singular universal pronoun"
+definition = "a thing singular universal pronoun"
+ntumc_definitions = ["77000094-n: thing (object:), singular, universal pronoun; pronoun, thing, singular; quantifier: universal"]
+hypernyms = ["Ent;Sg;Univ", "feature:Thng"]
+ancestors = ["Ent;Sg;Univ", "feature:Thng", "Ent;Univ", "feature:Ent"]
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Dist"]
+proposed = ["entonces"]
+confidence = ["high"]
+notes = ["entonces: 'then'"]
+english = ["then"]
+label = "time distal pronoun"
+definition = "a time distal pronoun"
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+status = "not built: proposed only"
 comment = ""
 
 ["Tim;Int"]
@@ -510,6 +1330,88 @@ hypernyms = ["feature:Tim"]
 ancestors = ["feature:Tim"]
 tufs = ["cuándo <- いつ (high)"]
 status = "built"
+comment = ""
+
+["Tim;Prox"]
+proposed = ["ahora"]
+confidence = ["high"]
+notes = ["ahora: 'now'"]
+english = ["now"]
+label = "time proximal pronoun"
+definition = "a time proximal pronoun"
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Sg;Asrt;Dir"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "time singular assertive existential adposition"
+definition = "an adposition: at, until or since a time (singular, assertive existential)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Tim;Sg;Asrt;Loc"]
+proposed = ["alguna vez"]
+confidence = ["low"]
+notes = ["alguna vez: 'sometime, ever'; multiword"]
+english = ["sometime"]
+label = "time singular assertive existential adposition (at)"
+definition = "an adposition: at a time (singular, assertive existential)"
+hypernyms = ["Tim;Sg;Asrt;Dir"]
+ancestors = ["Tim;Sg;Asrt;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Tim;Sg;Elec;Dir"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "time singular elective existential adposition"
+definition = "an adposition: at, until or since a time (singular, elective existential)"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Tim;Sg;Elec;Loc"]
+proposed = ["cuandoquiera"]
+confidence = ["low"]
+notes = ["cuandoquiera: 'whenever'; literary, colloquial cuando sea"]
+english = ["ever", "of all time", "whenever"]
+label = "time singular elective existential adposition (at)"
+definition = "an adposition: at a time (singular, elective existential)"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
+hypernyms = ["Tim;Sg;Elec;Dir"]
+ancestors = ["Tim;Sg;Elec;Dir"]
+status = "not built: proposed only"
+comment = ""
+
+["Two;Univ"]
+proposed = ["ambos"]
+confidence = ["high"]
+notes = ["ambos: 'both' determinative; also pronoun"]
+english = ["both"]
+label = "universal determinative of two"
+definition = "a universal determinative of two"
+ntumc_definitions = ["77000076-a: quantifier, of two, universal"]
+hypernyms = ["Univ"]
+ancestors = ["Univ"]
+status = "not built: proposed only"
+comment = ""
+
+["Univ"]
+proposed = ["todo"]
+confidence = ["high"]
+notes = ["todo: determinative (todo el día, todos los libros)"]
+english = ["all", "every"]
+label = "universal determinative"
+definition = "a universal determinative"
+ntumc_definitions = ["02269286-a: quantifier, used to refer to the entire quantity or extent of something; entity, universal pronoun; quantifier, universal"]
+hypernyms = []
+ancestors = []
+status = "not built: proposed only"
 comment = ""
 
 ["feature:Ent"]
@@ -548,6 +1450,16 @@ status = "unlexicalized: feature synset, no words in any language"
 label = "quantity"
 definition = "how much there is or how many there are of something that you can quantify"
 existing_by_ili = ["omw-es omw-es-00033615-n [i35594] cantidad, cuantía, medida: cuánto hay o cuántos hay de algo que se puede cuantificar"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Thng"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "thing"
+definition = "an entity that is not named specifically"
+existing_by_ili = ["omw-es omw-es-04424418-n [i60192] cosa: (CILI) an entity that is not named specifically"]
 hypernyms = []
 ancestors = []
 comment = ""

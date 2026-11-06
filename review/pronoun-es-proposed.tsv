@@ -1,0 +1,75 @@
+code	lemma	confidence	note
+2;Sg;Infml	vos	high	regional: the normal informal 2sg in Argentina, Uruguay, Paraguay, most of Central America (Costa Rica, Nicaragua, Honduras, El Salvador, Guatemala); also parts of Colombia (Antioquia, Valle), Venezuela (Zulia), Bolivia, Ecuador and Chiapas; Chile mostly verbal voseo with tú
+2;Pl	vosotros	high	informal 2pl, Spain only (Latin America uses ustedes); no 2;Pl;Infml concept exists, so on 2;Pl
+2;Pl	vosotras	high	feminine of vosotros; Spain only
+1;Pl	nosotras	high	feminine of nosotros (no 1;Pl;F concept)
+3;Sg;N	ello	medium	neuter 3sg, formal/literary (por ello, para ello)
+1;Sg;Poss	mi	high	possessive determinative (mi casa); plural mis
+2;Sg;Poss	tu	high	possessive determinative of tú/vos (tu casa)
+3;Poss	su	high	3rd person possessor, any number/gender; also used for usted/ustedes possessor
+1;Pl;Poss	nuestro	high	possessive determinative (nuestro, nuestra, nuestros, nuestras)
+2;Pl;Poss	vuestro	high	Spain only (Latin America uses su / de ustedes)
+Ent;1;Sg;Poss	mío	high	el mío; also stressed post-nominal adjective (un amigo mío)
+Ent;2;Sg;Poss	tuyo	high	el tuyo
+Ent;1;Pl;Poss	nuestro	high	el nuestro (same lemma as the determinative)
+Ent;2;Poss	vuestro	medium	el vuestro, Spain only; no Ent;2;Pl;Poss concept
+Ent;3;Sg;M;Poss	suyo	medium	el suyo: possessor of any person 3 (and usted); no Ent;3;Poss concept, so listed on each 3rd person code
+Ent;3;Sg;F;Poss	suyo	medium	see suyo on Ent;3;Sg;M;Poss
+Ent;3;Pl;Poss	suyo	medium	see suyo on Ent;3;Sg;M;Poss
+3;Sg;M;Refl	se	medium	reflexive clitic, 3sg and 3pl (and usted/ustedes); no 3;Refl concept
+3;Sg;F;Refl	se	medium	see se on 3;Sg;M;Refl
+3;Pl;Refl	se	medium	see se on 3;Sg;M;Refl
+3;Pl;Recp	se	medium	reciprocal use (se quieren 'they love each other')
+3;Sg;M;Refl	sí	medium	prepositional reflexive (para sí, consigo); 3sg/3pl
+3;Sg;F;Refl	sí	medium	see sí on 3;Sg;M;Refl
+3;Pl;Refl	sí	medium	see sí on 3;Sg;M;Refl
+1;Sg;Refl	me	medium	clitic; also non-reflexive object 'me'
+1;Pl;Refl	nos	medium	clitic; also non-reflexive object 'us'
+2;Sg;Refl	te	medium	clitic; also non-reflexive object 'you'
+2;Pl;Refl	os	medium	clitic, Spain only; also non-reflexive object
+Rem	aquel	high	remote determinative, follows Japanese ano (Rem); este is on Prox and ese on Med in the build
+Ent;Sg;Prox	este	high	pronoun use (este es mío); older spelling éste; follows Japanese kore
+Ent;Sg;Prox	esto	high	neuter pronoun 'this'
+Ent;Sg;Med	ese	high	pronoun use; older spelling ése; follows Japanese sore
+Ent;Sg;Med	eso	high	neuter pronoun 'that (near you)'
+Ent;Sg;Rem	aquel	high	pronoun use; older spelling aquél; follows Japanese are
+Ent;Sg;Rem	aquello	high	neuter pronoun 'that (over there)'
+Plc;Prox	acá	medium	Latin America: general 'here' (esp. Río de la Plata); Spain: mostly with motion verbs and less precise than aquí
+Plc;Rem	allá	medium	less precise/more remote than allí; Latin America general 'there'; with motion verbs in Spain
+Tim;Prox	ahora	high	'now'
+Tim;Dist	entonces	high	'then'
+Thng;Int	qué	high	'what' (pronoun)
+Int	qué	high	interrogative determinative (¿qué libro?)
+Int	cuál	medium	determinative use (¿cuál libro?) is Latin American / colloquial; Spain prefers qué
+Rsn;Int	por qué	high	'why' (written as two words)
+Plc;Int;Goal	adónde	medium	'where to'; an adverb in Spanish though the concept is POS p
+Plc;Int;Src	de dónde	low	'where from'; multiword
+Poss;Int	cúyo	low	archaic/literary interrogative 'whose'; modern speech uses de quién
+Thng;Sg;Asrt	algo	high	'something'
+Asrt	alguno	high	determinative (algún libro); citation form alguno
+Ent;Asrt	alguno	medium	pronoun (alguno lo sabrá)
+Pers;Sg;Neg	nadie	high	'nobody'
+Ent;Sg;Neg	nada	high	'nothing' (no Thng;Neg concept)
+Ent;Sg;Neg	ninguno	high	'none, no one'; also determinative ningún (no Neg determinative concept)
+Ent;Sg;Two;Neg	ninguno de los dos	low	'neither'; multiword
+Pers;Sg;Elec	cualquiera	medium	free-choice 'anyone' (cualquiera puede venir); not used in questions or negation, where Spanish uses alguien / nadie
+Elec	cualquier	medium	free-choice determinative (cualquier libro); lemma may be cualquiera
+Thng;Sg;Elec	cualquier cosa	low	'anything' (free choice); multiword
+Ent;Sg;Two;Elec	cualquiera de los dos	low	'either'; multiword
+Thng;Sg;Univ	todo	high	'everything'
+Univ	todo	high	determinative (todo el día, todos los libros)
+Pers;Univ	todos	medium	'everybody'; plural, todo el mundo is already in the build
+Sg;Univ	cada	high	'each, every'
+Ent;Sg;Univ	cada uno	high	'each one'; multiword
+Two;Univ	ambos	high	'both' determinative; also pronoun
+Ent;Two;Univ	ambos	high	'both' pronoun
+Sg;Oth	otro	high	'other, another' (determinative)
+Ent;Sg;Oth	otro	high	el otro 'the other one'
+Oth	demás	low	los demás 'the others, the rest'
+Plc;Sg;Asrt	alguna parte	low	'somewhere' (also algún sitio, algún lugar)
+Plc;Sg;Oth	otra parte	low	'elsewhere' (also otro sitio, otro lugar)
+Plc;Sg;Elec;Loc+Goal	dondequiera	low	'wherever'; literary, colloquial donde sea
+Plc;Univ;Loc+Goal	en todas partes	low	'everywhere'; multiword
+Tim;Sg;Asrt;Loc	alguna vez	low	'sometime, ever'; multiword
+Tim;Sg;Elec;Loc	cuandoquiera	low	'whenever'; literary, colloquial cuando sea
+Qnt;Prox	tanto	low	'so much/many'; not really deictic
