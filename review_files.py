@@ -296,7 +296,7 @@ def status(row: dict[str, str], codes: set[str]) -> str:
 
 PROSUB_NOTE = (
     "# prosub: suggested words from ProSub ({version}; Okano et al. 2022), NOT in the"
-    ' build (no licence yet),\n#   as form "gloss" [items] uses, where uses are'
+    ' build (CC BY 4.0, unchecked),\n#   as form "gloss" [items] uses, where uses are'
     " 1st/2nd (refers to speaker/addressee),\n#   address, title. prosub_new: those"
     " not in the built lexicon, TUFS or NTUMC for this concept."
 )

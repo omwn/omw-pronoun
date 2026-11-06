@@ -3,9 +3,10 @@
 ProSub (github.com/matbahasa/ProSub; Okano et al. 2022) asks, for eight Asian
 languages, which words are used for its questionnaire items, and whether each
 can refer to the speaker (``1st``), to the addressee (``2nd``), or serve as an
-address term or a title. It has no licence yet, so its words go only into the
-review files, as suggestions for a speaker to check. The clone is expected at
-``../ProSub``; without it the review files are written without them.
+address term or a title. It is CC BY 4.0, but its words are not checked, so
+they go only into the review files, as suggestions for a speaker to check. The
+clone is expected at ``../ProSub``; without it the review files are written
+without them.
 
 Each item is a concept code. A word listed under several items gets the
 narrowest concept that covers them all: Indonesian *itu* under both "that
@@ -34,7 +35,7 @@ LANGUAGES = {
     "ms": "zsm",
     "th": "tha",
     "vi": "vie",
-    "my": "myn",
+    "my": "mya",
 }
 #: ProSub's pronoun and demonstrative items as codes (its NTU synsets name
 #: several; this is the plain one)

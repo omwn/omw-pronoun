@@ -11,7 +11,7 @@
 #   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
 #   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
 #   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
-# prosub: suggested words from ProSub (abd4dd6; Okano et al. 2022), NOT in the build (no licence yet),
+# prosub: suggested words from ProSub (c01cdf8; Okano et al. 2022), NOT in the build (CC BY 4.0, unchecked),
 #   as form "gloss" [items] uses, where uses are 1st/2nd (refers to speaker/addressee),
 #   address, title. prosub_new: those not in the built lexicon, TUFS or NTUMC for this concept.
 
