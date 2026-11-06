@@ -29,13 +29,13 @@ synset	pos	code	head	class	person	number	domain	gender	case	type	formality	polit
 77000009-n	n	1;Pl;M;Infml;Men	person	personal	1	pl		m			informal				men	1st person, plural, masculine, informal pronoun; personal pronoun, person, 1st person, plural, men's speech, informal			僕たち; ぼくら; 僕ら; ぼくたち						
 77000010-n	n	1;Sg			1	sg										1st person, singular pronoun									
 77000011-n	n	1;Sg;Fml	person	personal	1	sg					formal					1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal			我; われ						
-77000012-n	n	1;Sg;Fml;Pol	person	personal	1	sg					formal	polite				1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite			私; わたし	saya					
-77000013-n	n	1;Sg;Fml;Hon+Pol	person	personal	1	sg					formal	honorific+polite				1st person, singular, formal, polite, honorific pronoun; personal pronoun, person, 1st person, singular, formal, polite, honorific			わたくし						
+77000012-n	n	1;Sg;Fml	person	personal	1	sg					formal	polite				1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite			私; わたし	saya					
+77000013-n	n	1;Sg;Fml;Hum	person	personal	1	sg					formal	honorific+polite				1st person, singular, formal, polite, honorific pronoun; personal pronoun, person, 1st person, singular, formal, polite, honorific			わたくし						
 77000014-n	n	1;Sg;Obj			1	sg			obj							1st person, singular, objective pronoun									
 77000015-n	n	1;Sg	person	personal	1	sg										personal pronoun, person, 1st person, singular	I; me	我				já			
 77000016-n	n	1;Sg;Refl	person	personal	1	sg				reflexive						1st person, singular, reflexive pronoun; personal pronoun, person, 1st person, singular, reflexive	myself								
 77000017-n	n	1;Sg;M;Infml;Men	person	personal	1	sg		m			informal				men	1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal			おれ; ぼく; 俺; 僕						
-77000018-n	n	1;Sg;M;Infml;Hon;Arch+Men	person	personal	1	sg		m			informal	honorific			archaic+men	1st person, singular, masculine, informal, archaic honorific pronoun; personal pronoun, person, 1st person, singular, men's speech, informal, archaic honorific			わし						
+77000018-n	n	1;Sg;M;Infml;Arch+Men	person	personal	1	sg		m			informal	honorific			archaic+men	1st person, singular, masculine, informal, archaic honorific pronoun; personal pronoun, person, 1st person, singular, men's speech, informal, archaic honorific			わし						
 77000019-n	n	2;Pl	person	personal	2	pl										personal pronoun, person, 2nd person, plural	you	你们	あなた方	kalian		vy			
 77000020-n	n	2;Pl;Refl	person	personal	2	pl				reflexive						2nd person, plural, reflexive pronoun; personal pronoun, person, 2nd person, plural, reflexive	yourselves								
 77000021-n	n	2;Sg	person	personal	2	sg										personal pronoun, person, 2nd person, singular	you					ty			

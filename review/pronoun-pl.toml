@@ -20,8 +20,8 @@ comment = ""
 ["1+2;Pl;Poss"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
-label = "first person or second person plural possessive determiner"
-definition = "a first person or second person plural possessive determiner"
+label = "first person or second person plural possessive determinative"
+definition = "a first person or second person plural possessive determinative"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -41,9 +41,10 @@ comment = ""
 ["1;Pl;Poss"]
 lemmas = ["nasz"]
 english = ["our"]
-label = "first person plural possessive determiner"
-definition = "a possessive determiner: of or belonging to the speaker, more than one possessor"
+label = "first person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, more than one possessor"
 ntumc_definitions = ["77000006-a: possessive determiner, 1st person, plural"]
+existing_by_lemma = ["nasz -> plwn plwn-syn-f3d41924-aac4-11ed-aae5-0242ac130002 [-] nasz"]
 hypernyms = ["1+2;Pl;Poss"]
 ancestors = ["1+2;Pl;Poss"]
 sources = ["nasz <- Parabank"]
@@ -65,9 +66,10 @@ comment = ""
 ["1;Sg;Poss"]
 lemmas = ["mój"]
 english = ["my"]
-label = "first person singular possessive determiner"
-definition = "a possessive determiner: of or belonging to the speaker, one possessor"
+label = "first person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, one possessor"
 ntumc_definitions = ["77000107-a: possessive determiner, 1st person, singular"]
+existing_by_lemma = ["mój -> plwn plwn-syn-f3d41587-aac4-11ed-aae5-0242ac130002 [-] mój", "mój -> plwn plwn-syn-f82ca2ac-aac4-11ed-aae5-0242ac130002 [-] mój: czyjś mąż, ślubny; określenie stosowane tylko przez tę osobę, której mąż to jest."]
 hypernyms = []
 ancestors = []
 sources = ["mój <- Parabank"]
@@ -100,8 +102,9 @@ comment = ""
 lemmas = ["wasz"]
 english = ["your"]
 english_via = "2;Poss"
-label = "second person plural possessive determiner"
-definition = "a possessive determiner: of or belonging to the addressee, more than one possessor"
+label = "second person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, more than one possessor"
+existing_by_lemma = ["wasz -> plwn plwn-syn-f3d7aed2-aac4-11ed-aae5-0242ac130002 [-] wasz"]
 hypernyms = ["1+2;Pl;Poss", "2;Poss"]
 ancestors = ["1+2;Pl;Poss", "2;Poss"]
 sources = ["wasz <- Parabank"]
@@ -111,8 +114,8 @@ comment = ""
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
 english = ["your"]
-label = "second person possessive determiner"
-definition = "a possessive determiner: of or belonging to the addressee"
+label = "second person possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -134,9 +137,10 @@ comment = ""
 lemmas = ["twój"]
 english = ["your"]
 english_via = "2;Poss"
-label = "second person singular possessive determiner"
-definition = "a possessive determiner: of or belonging to the addressee, one possessor"
+label = "second person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, one possessor"
 ntumc_definitions = ["77000024-a: possessive determiner, 2nd person, singular"]
+existing_by_lemma = ["twój -> plwn plwn-syn-f3d77794-aac4-11ed-aae5-0242ac130002 [-] twój"]
 hypernyms = ["2;Poss"]
 ancestors = ["2;Poss"]
 sources = ["twój <- Parabank"]
@@ -179,8 +183,8 @@ comment = ""
 ["3;Poss"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
-label = "third person possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee"
+label = "third person possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee"
 hypernyms = []
 ancestors = []
 comment = ""
@@ -210,8 +214,8 @@ comment = ""
 ["3;Sg;F+N;Poss"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
-label = "third person singular feminine or neuter possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine, neuter)"
+label = "third person singular feminine or neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine or neuter)"
 hypernyms = ["3;Sg;Poss"]
 ancestors = ["3;Sg;Poss", "3;Poss"]
 comment = ""
@@ -219,8 +223,8 @@ comment = ""
 ["3;Sg;F;Poss"]
 lemmas = ["ta"]
 english = ["her"]
-label = "third person singular feminine possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+label = "third person singular feminine possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
 ntumc_definitions = ["77000043-a: possessive determiner, 3rd person, singular, feminine"]
 existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["3;Sg;F+N;Poss"]
@@ -244,15 +248,15 @@ comment = ""
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
 label = "third person singular masculine or neuter pronoun"
-definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine, neuter)"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine or neuter)"
 hypernyms = ["3;Sg"]
 ancestors = ["3;Sg", "3"]
 comment = ""
 
 ["3;Sg;M+N;Poss"]
 lemmas = ["jego"]
-label = "third person singular masculine or neuter possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor (masculine, neuter)"
+label = "third person singular masculine or neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (masculine or neuter)"
 hypernyms = ["3;Sg;Poss"]
 ancestors = ["3;Sg;Poss", "3;Poss"]
 sources = ["jego <- Parabank"]
@@ -274,8 +278,8 @@ comment = ""
 ["3;Sg;Poss"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
-label = "third person singular possessive determiner"
-definition = "a possessive determiner: of or belonging to someone or something other than speaker and addressee, one possessor"
+label = "third person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor"
 hypernyms = ["3;Poss"]
 ancestors = ["3;Poss"]
 comment = ""
@@ -290,101 +294,186 @@ ancestors = []
 sources = ["ni- <- Haspelmath"]
 comment = ""
 
-["Plc;Dist"]
+["Plc;Dist;Dir"]
 lemmas = ["tam"]
-english = ["there"]
-label = "place distal pronoun"
-definition = "a place distal pronoun"
+label = "place distal adposition"
+definition = "an adposition: at, to or from a place (distal)"
 ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
-hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
-ancestors = ["Plc;Prox+Dist", "feature:Plc"]
+existing_by_lemma = ["tam -> plwn plwn-syn-0141a813-aac5-11ed-aae5-0242ac130002 [i18829] tam: w miejscu oddalonym od miejsca, gdzie znajduje się osoba mówiąca to słowo, i na które ta osoba wskazuje.", "tam -> plwn plwn-syn-0141a8be-aac5-11ed-aae5-0242ac130002 [-] tam: w miejscu wskazywanym przez nadawcę, które w jego świadomości jest dalekie; także: w tym punkcie struktury, na którą nadawca komunikatu wskazuje, ale która w jego ocenie jest odległa, peryferyjna.", "tam -> plwn plwn-syn-0141ae13-aac5-11ed-aae5-0242ac130002 [-] tam: w sytuacji, w którą nadawca komunikatu nie jest bezpośrednio zaangażowany."]
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
 sources = ["tam <- curated"]
+comment = ""
+
+["Plc;Dist;Goal"]
+lemmas = ["tam"]
+english = ["there", "thither"]
+label = "place distal adposition (to)"
+definition = "an adposition: to a place (distal)"
+existing_by_lemma = ["tam -> plwn plwn-syn-0141a813-aac5-11ed-aae5-0242ac130002 [i18829] tam: w miejscu oddalonym od miejsca, gdzie znajduje się osoba mówiąca to słowo, i na które ta osoba wskazuje.", "tam -> plwn plwn-syn-0141a8be-aac5-11ed-aae5-0242ac130002 [-] tam: w miejscu wskazywanym przez nadawcę, które w jego świadomości jest dalekie; także: w tym punkcie struktury, na którą nadawca komunikatu wskazuje, ale która w jego ocenie jest odległa, peryferyjna.", "tam -> plwn plwn-syn-0141ae13-aac5-11ed-aae5-0242ac130002 [-] tam: w sytuacji, w którą nadawca komunikatu nie jest bezpośrednio zaangażowany."]
+hypernyms = ["Plc;Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Loc+Goal", "Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
+sources = ["tam <- plwn:5.0"]
+comment = ""
+
+["Plc;Dist;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["there"]
+label = "place distal adposition (at or to)"
+definition = "an adposition: at or to a place (distal)"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal"]
+ancestors = ["Plc;Dist;Dir", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox+Dist;Dir"]
 comment = ""
 
 ["Plc;Dist;Src"]
 lemmas = ["stamtąd"]
-english = ["there"]
-english_via = "Plc;Dist"
-label = "place distal source pronoun"
-definition = "a place distal source pronoun"
-hypernyms = ["Plc;Dist", "feature:Plc"]
-ancestors = ["Plc;Dist", "feature:Plc", "Plc;Prox+Dist"]
+english = ["thence", "therefrom"]
+label = "place distal adposition (from)"
+definition = "an adposition: from a place (distal)"
+existing_by_lemma = ["stamtąd -> plwn plwn-syn-018782b1-aac5-11ed-aae5-0242ac130002 [-] stamtąd: z tamtego, pewnego oddalonego miejsca."]
+hypernyms = ["Plc;Dist;Dir"]
+ancestors = ["Plc;Dist;Dir", "Plc;Prox+Dist;Dir"]
 sources = ["stamtąd <- curated"]
 comment = ""
 
-["Plc;Int"]
+["Plc;Int;Dir"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
-english = ["where"]
-label = "place interrogative pronoun"
-definition = "a place interrogative pronoun"
+label = "place interrogative adposition"
+definition = "an adposition: at, to or from a place (interrogative)"
 ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
+hypernyms = []
+ancestors = []
 comment = ""
 
 ["Plc;Int;Goal"]
 lemmas = ["dokąd"]
 english = ["where"]
-english_via = "Plc;Int"
-label = "place interrogative goal pronoun"
-definition = "a place interrogative goal pronoun"
-hypernyms = ["Plc;Int", "feature:Plc"]
-ancestors = ["Plc;Int", "feature:Plc"]
+english_via = "Plc;Int;Loc+Goal"
+label = "place interrogative adposition (to)"
+definition = "an adposition: to a place (interrogative)"
+ntumc_definitions = ["77000144-n: location, interrogative pronoun, goal"]
+hypernyms = ["Plc;Int;Loc+Goal"]
+ancestors = ["Plc;Int;Loc+Goal", "Plc;Int;Dir"]
 sources = ["dokąd <- curated"]
 comment = ""
 
 ["Plc;Int;Loc"]
 lemmas = ["gdzie"]
 english = ["where"]
-english_via = "Plc;Int"
-label = "place interrogative locative pronoun"
-definition = "a place interrogative locative pronoun"
-hypernyms = ["Plc;Int", "feature:Plc"]
-ancestors = ["Plc;Int", "feature:Plc"]
+english_via = "Plc;Int;Loc+Goal"
+label = "place interrogative adposition (at)"
+definition = "an adposition: at a place (interrogative)"
+ntumc_definitions = ["77000143-n: location, interrogative pronoun, locative"]
+existing_by_lemma = ["gdzie -> plwn plwn-syn-01ac14f2-aac5-11ed-aae5-0242ac130002 [i18290] gdzieś, gdzie: w niezidentyfikowanym miejscu.", "gdzie -> plwn plwn-syn-018790fa-aac5-11ed-aae5-0242ac130002 [-] gdzieś, dokądś, gdzie: do jakiegoś miejsca, punktu, w jakimś kierunku."]
+hypernyms = ["Plc;Int;Loc+Goal"]
+ancestors = ["Plc;Int;Loc+Goal", "Plc;Int;Dir"]
 sources = ["gdzie <- curated"]
+comment = ""
+
+["Plc;Int;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+english = ["where"]
+label = "place interrogative adposition (at or to)"
+definition = "an adposition: at or to a place (interrogative)"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
 comment = ""
 
 ["Plc;Int;Src"]
 lemmas = ["skąd"]
-english = ["where"]
-english_via = "Plc;Int"
-label = "place interrogative source pronoun"
-definition = "a place interrogative source pronoun"
-hypernyms = ["Plc;Int", "feature:Plc"]
-ancestors = ["Plc;Int", "feature:Plc"]
+label = "place interrogative adposition (from)"
+definition = "an adposition: from a place (interrogative)"
+hypernyms = ["Plc;Int;Dir"]
+ancestors = ["Plc;Int;Dir"]
 sources = ["skąd <- curated"]
 comment = ""
 
-["Plc;Prox"]
+["Plc;Prox+Dist;Dir"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "place proximal or distal adposition"
+definition = "an adposition: at, to or from a place (proximal or distal)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Prox+Dist;Loc+Goal"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "place proximal or distal adposition (at or to)"
+definition = "an adposition: at or to a place (proximal or distal)"
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Dir"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "place proximal adposition"
+definition = "an adposition: at, to or from a place (proximal)"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+hypernyms = ["Plc;Prox+Dist;Dir"]
+ancestors = ["Plc;Prox+Dist;Dir"]
+comment = ""
+
+["Plc;Prox;Loc"]
+lemmas = ["tu", "tutaj"]
+english = ["here"]
+label = "place proximal adposition (at)"
+definition = "an adposition: at a place (proximal)"
+existing_by_lemma = ["tu -> plwn plwn-syn-0141a868-aac5-11ed-aae5-0242ac130002 [-] tu, tutaj: w miejscu, które w świadomości nadawcy komunikatu jest bliskie, które jest ośrodkiem zdarzeń, punktem centralnym; w punkcie struktury, na którym ogniskuje się w danym momencie uwaga nadawcy.", "tu -> plwn plwn-syn-0141a7be-aac5-11ed-aae5-0242ac130002 [i18823] tu, tutaj: w miejscu, gdzie jest osoba wypowiadająca to słowo, lub w pobliżu tego miejsca.", "tu -> plwn plwn-syn-0141aaf0-aac5-11ed-aae5-0242ac130002 [-] tu, tutaj: w sytuacji, w której znajduje się nadawca, lub w sytuacji, na której ogniskuje się uwaga nadawcy komunikatu jako na zdarzeniu kluczowym dla nadawcy lub dla kogoś albo czegoś; w tej sytuacji, w tym momencie.", "tutaj -> plwn plwn-syn-0141a868-aac5-11ed-aae5-0242ac130002 [-] tu, tutaj: w miejscu, które w świadomości nadawcy komunikatu jest bliskie, które jest ośrodkiem zdarzeń, punktem centralnym; w punkcie struktury, na którym ogniskuje się w danym momencie uwaga nadawcy.", "tutaj -> plwn plwn-syn-0141aaf0-aac5-11ed-aae5-0242ac130002 [-] tu, tutaj: w sytuacji, w której znajduje się nadawca, lub w sytuacji, na której ogniskuje się uwaga nadawcy komunikatu jako na zdarzeniu kluczowym dla nadawcy lub dla kogoś albo czegoś; w tej sytuacji, w tym momencie.", "tutaj -> plwn plwn-syn-0141a7be-aac5-11ed-aae5-0242ac130002 [i18823] tu, tutaj: w miejscu, gdzie jest osoba wypowiadająca to słowo, lub w pobliżu tego miejsca."]
+hypernyms = ["Plc;Prox;Loc+Goal"]
+ancestors = ["Plc;Prox;Loc+Goal", "Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
+sources = ["tu <- plwn:5.0", "tutaj <- plwn:5.0"]
+comment = ""
+
+["Plc;Prox;Loc+Goal"]
 lemmas = []
 status = "unlexicalized: no pl word; included for the hierarchy"
 english = ["'ere", "here"]
-label = "place proximal pronoun"
-definition = "a place proximal pronoun"
+label = "place proximal adposition (at or to)"
+definition = "an adposition: at or to a place (proximal)"
 ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
-hypernyms = ["Plc;Prox+Dist", "feature:Plc"]
-ancestors = ["Plc;Prox+Dist", "feature:Plc"]
-comment = ""
-
-["Plc;Prox+Dist"]
-lemmas = []
-status = "unlexicalized: no pl word; included for the hierarchy"
-label = "place proximal or distal pronoun"
-definition = "a place proximal or distal pronoun"
-hypernyms = ["feature:Plc"]
-ancestors = ["feature:Plc"]
+hypernyms = ["Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir"]
+ancestors = ["Plc;Prox+Dist;Loc+Goal", "Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
 comment = ""
 
 ["Plc;Prox;Src"]
 lemmas = ["stąd"]
-english = ["'ere", "here"]
-english_via = "Plc;Prox"
-label = "place proximal source pronoun"
-definition = "a place proximal source pronoun"
-hypernyms = ["Plc;Prox", "feature:Plc"]
-ancestors = ["Plc;Prox", "feature:Plc", "Plc;Prox+Dist"]
+english = ["hence"]
+label = "place proximal adposition (from)"
+definition = "an adposition: from a place (proximal)"
+existing_by_lemma = ["stąd -> plwn plwn-syn-018786eb-aac5-11ed-aae5-0242ac130002 [-] stąd: z tego źródła.", "stąd -> plwn plwn-syn-01878696-aac5-11ed-aae5-0242ac130002 [-] stąd: z tego miejsca, punktu, lokalizacji."]
+hypernyms = ["Plc;Prox;Dir"]
+ancestors = ["Plc;Prox;Dir", "Plc;Prox+Dist;Dir"]
 sources = ["stąd <- curated"]
+comment = ""
+
+["Plc;Sg;Elec;Dir"]
+lemmas = []
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "place singular elective existential adposition"
+definition = "an adposition: at, to or from a place (singular, elective existential)"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Plc;Sg;Elec;Loc+Goal"]
+lemmas = ["gdziekolwiek"]
+english = ["anyplace", "anywhere", "wheresoever", "wherever"]
+label = "place singular elective existential adposition (at or to)"
+definition = "an adposition: at or to a place (singular, elective existential)"
+ntumc_definitions = ["00495377-r: where in the world; location, singular, elective existential pronoun"]
+existing_by_lemma = ["gdziekolwiek -> plwn plwn-syn-01ac82c2-aac5-11ed-aae5-0242ac130002 [i18288] gdziekolwiek: w dowolnym, nieokreślonym, niesprecyzowanym miejscu."]
+hypernyms = ["Plc;Sg;Elec;Dir"]
+ancestors = ["Plc;Sg;Elec;Dir"]
+sources = ["gdziekolwiek <- plwn:5.0"]
 comment = ""
 
 ["SK+SU+IRR+Q+COND+INEG"]
@@ -396,43 +485,66 @@ ancestors = []
 sources = ["-s <- Haspelmath"]
 comment = ""
 
-["Tim;Dist"]
+["Tim;Dist;Dir"]
 lemmas = ["wtedy"]
-english = ["then"]
-label = "time distal pronoun"
-definition = "a time distal pronoun"
-hypernyms = ["feature:Tim"]
-ancestors = ["feature:Tim"]
+label = "time distal adposition"
+definition = "an adposition: at, until or since a time (distal)"
+existing_by_lemma = ["wtedy -> plwn plwn-syn-01a62b96-aac5-11ed-aae5-0242ac130002 [i18891] wtedy: w jakimś czasie, w trakcie jakiegoś zdarzenia, w pewnych okolicznościach."]
+hypernyms = []
+ancestors = []
 sources = ["wtedy <- curated"]
 comment = ""
 
-["Tim;Prox"]
+["Tim;Dist;Loc"]
+lemmas = ["wtedy"]
+english = ["then"]
+label = "time distal adposition (at)"
+definition = "an adposition: at a time (distal)"
+existing_by_lemma = ["wtedy -> plwn plwn-syn-01a62b96-aac5-11ed-aae5-0242ac130002 [i18891] wtedy: w jakimś czasie, w trakcie jakiegoś zdarzenia, w pewnych okolicznościach."]
+hypernyms = ["Tim;Dist;Dir"]
+ancestors = ["Tim;Dist;Dir"]
+sources = ["wtedy <- plwn:5.0"]
+comment = ""
+
+["Tim;Prox;Dir"]
 lemmas = ["teraz"]
-english = ["now"]
-label = "time proximal pronoun"
-definition = "a time proximal pronoun"
-existing_by_lemma = ["teraz -> omw-pl omw-pl-15119919-n [i116653] teraz: (CILI) the momentary present"]
-hypernyms = ["feature:Tim"]
-ancestors = ["feature:Tim"]
-sources = ["teraz <- curated, omw-pl:2.0"]
+label = "time proximal adposition"
+definition = "an adposition: at, until or since a time (proximal)"
+existing_by_lemma = ["teraz -> plwn plwn-syn-f3ba6d88-aac4-11ed-aae5-0242ac130002 [i116653] teraz: chwila bieżąca, moment, który trwa.", "teraz -> plwn plwn-syn-01a7d6a1-aac5-11ed-aae5-0242ac130002 [i18426] teraz: w danej chwili, w tym momencie."]
+hypernyms = []
+ancestors = []
+sources = ["teraz <- curated, plwn:5.0"]
 comment = ""
 
-["feature:Plc"]
+["Tim;Prox;Loc"]
+lemmas = ["teraz"]
+english = ["at present", "now"]
+label = "time proximal adposition (at)"
+definition = "an adposition: at a time (proximal)"
+existing_by_lemma = ["teraz -> plwn plwn-syn-f3ba6d88-aac4-11ed-aae5-0242ac130002 [i116653] teraz: chwila bieżąca, moment, który trwa.", "teraz -> plwn plwn-syn-01a7d6a1-aac5-11ed-aae5-0242ac130002 [i18426] teraz: w danej chwili, w tym momencie."]
+hypernyms = ["Tim;Prox;Dir"]
+ancestors = ["Tim;Prox;Dir"]
+sources = ["teraz <- plwn:5.0"]
+comment = ""
+
+["Tim;Sg;Elec;Dir"]
 lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "place"
-definition = "a point located with respect to surface features of some region"
-existing_by_ili = ["omw-pl omw-pl-08664443-n [i82501] miejsce: (CILI) a point located with respect to surface features of some region"]
+status = "unlexicalized: no pl word; included for the hierarchy"
+label = "time singular elective existential adposition"
+definition = "an adposition: at, until or since a time (singular, elective existential)"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
 hypernyms = []
 ancestors = []
 comment = ""
 
-["feature:Tim"]
-lemmas = []
-status = "unlexicalized: feature synset, no words in any language"
-label = "time"
-definition = "an indefinite period (usually marked by specific attributes or activities)"
-existing_by_ili = ["omw-pl omw-pl-15122231-n [i116667] czas: (CILI) an indefinite period (usually marked by specific attributes or activities)"]
-hypernyms = []
-ancestors = []
+["Tim;Sg;Elec;Loc"]
+lemmas = ["kiedykolwiek"]
+english = ["ever", "of all time", "whenever"]
+label = "time singular elective existential adposition (at)"
+definition = "an adposition: at a time (singular, elective existential)"
+ntumc_definitions = ["77000106-n: time, singular, elective existential pronoun; pronoun, time, singular; quantifier: elective existential"]
+existing_by_lemma = ["kiedykolwiek -> plwn plwn-syn-01ac826b-aac5-11ed-aae5-0242ac130002 [i19122] kiedykolwiek: w dowolnym czasie, w dowolnej porze, w jakimś nieokreślonym, niekonkretnym wycinku, punkcie w czasie."]
+hypernyms = ["Tim;Sg;Elec;Dir"]
+ancestors = ["Tim;Sg;Elec;Dir"]
+sources = ["kiedykolwiek <- plwn:5.0"]
 comment = ""

@@ -1,0 +1,320 @@
+# Pronouns for Slovak, from the built OMW pronoun lexicon omw-pronoun-sk.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# definition: generated from the code; ntumc_definitions: NTUMC's own
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1+2;Pl;Poss"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "first person or second person plural possessive determinative"
+definition = "a first person or second person plural possessive determinative"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = ["my"]
+english = ["we"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+ntumc_definitions = ["77000002-n: 1st person, plural pronoun; personal pronoun, person, 1st person, plural"]
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+forms = ["my: nás (o)"]
+sources = ["my <- Parabank"]
+comment = ""
+
+["1;Pl;Poss"]
+lemmas = ["náš"]
+english = ["our"]
+label = "first person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, more than one possessor"
+ntumc_definitions = ["77000006-a: possessive determiner, 1st person, plural"]
+existing_by_lemma = ["náš -> omw-sk omw-sk-01219827-a [i6681] náš, domáci: (CILI) used of your own ground"]
+hypernyms = ["1+2;Pl;Poss"]
+ancestors = ["1+2;Pl;Poss"]
+sources = ["náš <- Parabank"]
+comment = ""
+
+["1;Sg"]
+lemmas = ["ja"]
+english = ["I"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+ntumc_definitions = ["77000015-n: personal pronoun, person, 1st person, singular"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+forms = ["ja: mňa (o)"]
+sources = ["ja <- Parabank"]
+comment = ""
+
+["1;Sg;Poss"]
+lemmas = ["môj"]
+english = ["my"]
+label = "first person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the speaker, one possessor"
+ntumc_definitions = ["77000107-a: possessive determiner, 1st person, singular"]
+hypernyms = []
+ancestors = []
+sources = ["môj <- Parabank"]
+comment = ""
+
+["2"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["you"]
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Pl"]
+lemmas = ["vy"]
+english = ["you"]
+english_via = "2"
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+ntumc_definitions = ["77000019-n: personal pronoun, person, 2nd person, plural"]
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+forms = ["vy: vás (o)"]
+sources = ["vy <- Parabank"]
+comment = ""
+
+["2;Pl;Poss"]
+lemmas = ["váš"]
+english = ["your"]
+english_via = "2;Poss"
+label = "second person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, more than one possessor"
+hypernyms = ["1+2;Pl;Poss", "2;Poss"]
+ancestors = ["1+2;Pl;Poss", "2;Poss"]
+sources = ["váš <- Parabank"]
+comment = ""
+
+["2;Poss"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+english = ["your"]
+label = "second person possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Sg"]
+lemmas = ["ty"]
+english = ["you"]
+english_via = "2"
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+ntumc_definitions = ["77000021-n: personal pronoun, person, 2nd person, singular"]
+hypernyms = ["2"]
+ancestors = ["2"]
+forms = ["ty: teba (o)"]
+sources = ["ty <- Parabank"]
+comment = ""
+
+["2;Sg;Poss"]
+lemmas = ["tvoj"]
+english = ["your"]
+english_via = "2;Poss"
+label = "second person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to the addressee, one possessor"
+ntumc_definitions = ["77000024-a: possessive determiner, 2nd person, singular"]
+hypernyms = ["2;Poss"]
+ancestors = ["2;Poss"]
+sources = ["tvoj <- Parabank"]
+comment = ""
+
+["3"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Pl"]
+lemmas = ["oni"]
+english = ["they"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+hypernyms = ["3"]
+ancestors = ["3"]
+forms = ["oni: ich (o)"]
+sources = ["oni <- Parabank"]
+comment = ""
+
+["3;Pl;Poss"]
+lemmas = ["ich"]
+english = ["their"]
+label = "third person plural possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, more than one possessor"
+ntumc_definitions = ["77000039-a: possessive determiner, 3rd person, plural"]
+hypernyms = ["3;Poss"]
+ancestors = ["3;Poss"]
+sources = ["ich <- Parabank"]
+comment = ""
+
+["3;Poss"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "third person possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Sg"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
+comment = ""
+
+["3;Sg;F"]
+lemmas = ["ona"]
+english = ["she"]
+label = "third person singular feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
+ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
+forms = ["ona: ju (o)"]
+sources = ["ona <- Parabank"]
+comment = ""
+
+["3;Sg;F+N;Poss"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "third person singular feminine or neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine or neuter)"
+hypernyms = ["3;Sg;Poss"]
+ancestors = ["3;Sg;Poss", "3;Poss"]
+comment = ""
+
+["3;Sg;F;Poss"]
+lemmas = ["jej"]
+english = ["her"]
+label = "third person singular feminine possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (feminine)"
+ntumc_definitions = ["77000043-a: possessive determiner, 3rd person, singular, feminine"]
+hypernyms = ["3;Sg;F+N;Poss"]
+ancestors = ["3;Sg;F+N;Poss", "3;Sg;Poss", "3;Poss"]
+sources = ["jej <- Parabank"]
+comment = ""
+
+["3;Sg;M"]
+lemmas = ["on"]
+english = ["he"]
+label = "third person singular masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
+ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
+forms = ["on: jeho (o)"]
+sources = ["on <- Parabank"]
+comment = ""
+
+["3;Sg;M+N"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "third person singular masculine or neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine or neuter)"
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
+comment = ""
+
+["3;Sg;M+N;Poss"]
+lemmas = ["jeho"]
+label = "third person singular masculine or neuter possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor (masculine or neuter)"
+hypernyms = ["3;Sg;Poss"]
+ancestors = ["3;Sg;Poss", "3;Poss"]
+sources = ["jeho <- Parabank"]
+comment = ""
+
+["3;Sg;N"]
+lemmas = ["ono"]
+english = ["it"]
+label = "third person singular neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (neuter)"
+ntumc_definitions = ["77000053-n: personal pronoun, entity, 3rd person, singular, neuter"]
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
+forms = ["ono: ho (o)"]
+sources = ["ono <- Parabank"]
+comment = ""
+
+["3;Sg;Poss"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "third person singular possessive determinative"
+definition = "a possessive determinative: of or belonging to someone or something other than speaker and addressee, one possessor"
+hypernyms = ["3;Poss"]
+ancestors = ["3;Poss"]
+comment = ""
+
+["Tim;Prox;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "time proximal adposition"
+definition = "an adposition: at, until or since a time (proximal)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Tim;Prox;Loc"]
+lemmas = ["momentálne", "teraz"]
+english = ["at present", "now"]
+label = "time proximal adposition (at)"
+definition = "an adposition: at a time (proximal)"
+existing_by_lemma = ["momentálne -> omw-sk omw-sk-00048268-r [i18422] práve, momentálne, aktuálne: (CILI) at this time or period; now", "momentálne -> omw-sk omw-sk-00049220-r [i18426] teraz, momentálne: (CILI) at the present moment", "teraz -> omw-sk omw-sk-00033308-r [i18330] pred chvíľkou, teraz, práve, práve teraz: (CILI) only a moment ago", "teraz -> omw-sk omw-sk-00049220-r [i18426] teraz, momentálne: (CILI) at the present moment"]
+hypernyms = ["Tim;Prox;Dir"]
+ancestors = ["Tim;Prox;Dir"]
+sources = ["momentálne <- omw-sk:2.0", "teraz <- omw-sk:2.0"]
+comment = ""
+
+["Tim;Sg;Asrt;Dir"]
+lemmas = []
+status = "unlexicalized: no sk word; included for the hierarchy"
+label = "time singular assertive existential adposition"
+definition = "an adposition: at, until or since a time (singular, assertive existential)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Tim;Sg;Asrt;Loc"]
+lemmas = ["niekedy", "raz"]
+english = ["sometime"]
+label = "time singular assertive existential adposition (at)"
+definition = "an adposition: at a time (singular, assertive existential)"
+existing_by_lemma = ["niekedy -> omw-sk omw-sk-00021702-r [i18265] niekedy, raz: (CILI) at some indefinite or unstated time", "niekedy -> omw-sk omw-sk-00021212-r [i18264] chvíľami, niekedy, občas, raz začas, čas od času, z času na čas, ...: (CILI) now and then or here and there", "niekedy -> omw-sk omw-sk-00157412-r [i19205] niekedy, občas, príležitostne: (CILI) occasionally", "niekedy -> omw-sk omw-sk-00021878-r [i18266] niekedy, občas, zavše: (CILI) on certain occasions or in certain cases but not always; at other times for six months\"", "niekedy -> omw-sk omw-sk-00189401-r [i19441] niekedy, jedného dňa, raz: (CILI) some unspecified time in the future", "raz -> omw-sk omw-sk-00021702-r [i18265] niekedy, raz: (CILI) at some indefinite or unstated time", "raz -> omw-sk omw-sk-00189401-r [i19441] niekedy, jedného dňa, raz: (CILI) some unspecified time in the future"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["Tim;Sg;Asrt;Dir"]
+ancestors = ["Tim;Sg;Asrt;Dir"]
+sources = ["niekedy <- omw-sk:2.0", "raz <- omw-sk:2.0"]
+comment = ""

@@ -50,40 +50,16 @@ status = "not built: suggested by ProSub only"
 comment = ""
 
 ["1;Sg;Fml"]
-lemmas = []
-status = "unlexicalized: no id word; included for the hierarchy"
-english = ["I"]
-english_via = "1;Sg"
-label = "first person singular formal pronoun"
-definition = "a pronoun referring to the speaker, one in all (formal)"
-ntumc_definitions = ["77000011-n: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal"]
-hypernyms = ["1;Sg"]
-ancestors = ["1;Sg"]
-comment = ""
-
-["1;Sg;Fml;Hon+Pol"]
-lemmas = []
-status = "unlexicalized: no id word; included for the hierarchy"
-english = ["I"]
-english_via = "1;Sg"
-label = "first person singular formal honorific or polite pronoun"
-definition = "a pronoun referring to the speaker, one in all (formal, honorific or polite)"
-ntumc_definitions = ["77000013-n: 1st person, singular, formal, polite, honorific pronoun; personal pronoun, person, 1st person, singular, formal, polite, honorific"]
-hypernyms = ["1;Sg;Fml"]
-ancestors = ["1;Sg;Fml", "1;Sg"]
-comment = ""
-
-["1;Sg;Fml;Pol"]
 lemmas = ["saya"]
 ntumc = ["saya <- 77000012-n"]
 english = ["I"]
 english_via = "1;Sg"
-label = "first person singular formal polite pronoun"
-definition = "a pronoun referring to the speaker, one in all (formal, polite)"
-ntumc_definitions = ["77000012-n: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite"]
+label = "first person singular formal pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal)"
+ntumc_definitions = ["77000011-n: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal", "77000012-n: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite"]
 existing_by_lemma = ["saya -> wnb-id wnb-id-77000012-n [-] saya: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite", "saya -> tufs-id tufs-id-77000012-n [-] saya: I", "saya -> tufs-id tufs-id-77000015-n [-] saya: I"]
-hypernyms = ["1;Sg;Fml;Hon+Pol"]
-ancestors = ["1;Sg;Fml;Hon+Pol", "1;Sg;Fml", "1;Sg"]
+hypernyms = ["1;Sg"]
+ancestors = ["1;Sg"]
 tufs = ["saya <- 私（わたし） (high)"]
 curator_notes = ["NTUMC"]
 status = "built"

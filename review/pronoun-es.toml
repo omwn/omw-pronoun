@@ -1,0 +1,563 @@
+# TUFS pro-forms for es, as curated for the OMW pronoun wordnet.
+# One table per concept. Edit `comment`; leave the rest as generated.
+# status: built = in the wordnet; held = kept out (substitute, not-proform, low confidence)
+# ntumc: the concept's lemmas in the NTUMC wordnet, with their synsets
+# definition: generated from the code; ntumc_definitions: NTUMC's own
+# Not yet in the NTUMC wordnet (built lemmas only): new_senses, words it has but not
+#   for this concept; new_words, words it does not have at all.
+# hypernyms: direct hypernyms in the shared (mul) hierarchy; ancestors: all of them, nearest first.
+# Nodes with no word here are included where the hierarchy needs them (status `unlexicalized`).
+# existing_by_ili, existing_by_lemma: synsets in the language's Cygnet wordnets (oewn, omw-pl, ...), as
+#   lexicon id [ILI] lemmas: definition; (CILI) marks a definition taken from the ILI.
+#   Lemma matches keep only senses that could be pro-forms (no ILI, adjective, adverb,
+#   or a noun in noun.Tops/person/location/time by OEWN); existing_hidden counts the rest.
+
+["1+2;Pl"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "first person or second person plural pronoun"
+definition = "a first person or second person plural pronoun"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["1;Pl"]
+lemmas = ["nosotros"]
+english = ["we"]
+label = "first person plural pronoun"
+definition = "a pronoun referring to the speaker, more than one in all"
+ntumc_definitions = ["77000002-n: 1st person, plural pronoun; personal pronoun, person, 1st person, plural"]
+existing_by_lemma = ["nosotros -> tufs-es tufs-es-77000002-n [-] nosotros"]
+hypernyms = ["1+2;Pl"]
+ancestors = ["1+2;Pl"]
+tufs = ["nosotros <- 私たち (high)"]
+curator_notes = ["masculine/mixed; feminine nosotras"]
+status = "built"
+comment = ""
+
+["1;Sg"]
+lemmas = ["yo"]
+english = ["I"]
+label = "first person singular pronoun"
+definition = "a pronoun referring to the speaker, one in all"
+ntumc_definitions = ["77000015-n: personal pronoun, person, 1st person, singular"]
+existing_by_lemma = ["yo -> tufs-es tufs-es-77000012-n [-] yo: I", "yo -> tufs-es tufs-es-77000015-n [-] yo: I"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = []
+ancestors = []
+tufs = ["yo <- 私（わたし） (high)"]
+status = "built"
+comment = ""
+
+["2"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["you"]
+label = "second person pronoun"
+definition = "a pronoun referring to the addressee"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["2;Pl"]
+lemmas = ["ustedes"]
+english = ["you"]
+english_via = "2"
+label = "second person plural pronoun"
+definition = "a pronoun referring to the addressee, more than one in all"
+ntumc_definitions = ["77000019-n: personal pronoun, person, 2nd person, plural"]
+existing_by_lemma = ["ustedes -> tufs-es tufs-es-15525-n [-] ustedes"]
+hypernyms = ["1+2;Pl", "2"]
+ancestors = ["1+2;Pl", "2"]
+tufs = ["ustedes <- あなた方 (high)"]
+curator_notes = ["plain plural in Latin America"]
+status = "built"
+comment = ""
+
+["2;Pl;Fml;Pol"]
+lemmas = ["ustedes"]
+english = ["you"]
+english_via = "2"
+label = "second person plural formal polite pronoun"
+definition = "a pronoun referring to the addressee, more than one in all (formal, polite)"
+existing_by_lemma = ["ustedes -> tufs-es tufs-es-15525-n [-] ustedes"]
+hypernyms = ["2;Pl"]
+ancestors = ["2;Pl", "1+2;Pl", "2"]
+tufs = ["ustedes <- あなた方 (medium)"]
+curator_notes = ["NEW; formal plural in Spain (vs vosotros)"]
+status = "built"
+comment = ""
+
+["2;Sg"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular pronoun"
+definition = "a pronoun referring to the addressee, one in all"
+ntumc_definitions = ["77000021-n: personal pronoun, person, 2nd person, singular"]
+hypernyms = ["2"]
+ancestors = ["2"]
+comment = ""
+
+["2;Sg;Fml"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["you"]
+english_via = "2"
+label = "second person singular formal pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal)"
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+comment = ""
+
+["2;Sg;Fml;Pol"]
+lemmas = ["usted"]
+english = ["you"]
+english_via = "2"
+label = "second person singular formal polite pronoun"
+definition = "a pronoun referring to the addressee, one in all (formal, polite)"
+ntumc_definitions = ["77000022-n: personal pronoun, person, 2nd person, singular, formal, polite"]
+existing_by_lemma = ["usted -> tufs-es tufs-es-77000021-n [-] tú, usted: you"]
+hypernyms = ["2;Sg;Fml"]
+ancestors = ["2;Sg;Fml", "2;Sg", "2"]
+tufs = ["usted <- あなた (high)"]
+status = "built"
+comment = ""
+
+["2;Sg;Infml"]
+lemmas = ["tú"]
+english = ["you"]
+english_via = "2"
+label = "second person singular informal pronoun"
+definition = "a pronoun referring to the addressee, one in all (informal)"
+ntumc_definitions = ["77000023-n: personal pronoun, person, 2nd person, singular, informal"]
+existing_by_lemma = ["tú -> tufs-es tufs-es-77000021-n [-] tú, usted: you"]
+hypernyms = ["2;Sg"]
+ancestors = ["2;Sg", "2"]
+tufs = ["tú <- 君（きみ） (high)"]
+status = "built"
+comment = ""
+
+["3"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "third person pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee"
+ntumc_definitions = ["80000003-n: personal pronoun, entity, 3rd person", "80000047-n: personal pronoun, entity, 3rd person; it can only be used as an object"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["3;Pl"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["they"]
+label = "third person plural pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all"
+ntumc_definitions = ["77000031-n: 3rd person, plural, subjective pronoun; personal pronoun, person, 3rd person, plural", "80001131-n: personal pronoun, person, 3rd person, plural"]
+hypernyms = ["3"]
+ancestors = ["3"]
+comment = ""
+
+["3;Pl;F"]
+lemmas = ["ellas"]
+english = ["they"]
+english_via = "3;Pl"
+label = "third person plural feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (feminine)"
+ntumc_definitions = ["77000035-n: personal pronoun, person, 3rd person, plural, feminine"]
+existing_by_lemma = ["ellas -> tufs-es tufs-es-15579-n [-] ellos, ellas"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
+tufs = ["ellas <- 彼ら (high)"]
+status = "built"
+comment = ""
+
+["3;Pl;M"]
+lemmas = ["ellos"]
+english = ["they"]
+english_via = "3;Pl"
+label = "third person plural masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, more than one in all (masculine)"
+ntumc_definitions = ["77000029-n: personal pronoun, person, 3rd person, masculine, plural"]
+existing_by_lemma = ["ellos -> tufs-es tufs-es-15579-n [-] ellos, ellas"]
+hypernyms = ["3;Pl"]
+ancestors = ["3;Pl", "3"]
+tufs = ["ellos <- 彼ら (high)"]
+curator_notes = ["masculine/mixed plural; known 3;Pl;F looks wrong"]
+status = "built"
+comment = ""
+
+["3;Sg"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "third person singular pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all"
+ntumc_definitions = ["80001130-n: personal pronoun, person, 3rd person, singular"]
+hypernyms = ["3"]
+ancestors = ["3"]
+comment = ""
+
+["3;Sg;F"]
+lemmas = ["ella"]
+english = ["she"]
+label = "third person singular feminine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (feminine)"
+ntumc_definitions = ["77000041-n: personal pronoun, person, 3rd person, singular, feminine"]
+existing_by_lemma = ["ella -> tufs-es tufs-es-77000031-n [-] ella"]
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
+tufs = ["ella <- 彼女 (high)"]
+status = "built"
+comment = ""
+
+["3;Sg;M"]
+lemmas = ["él"]
+english = ["he"]
+label = "third person singular masculine pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine)"
+ntumc_definitions = ["77000046-n: personal pronoun, person, 3rd person, singular, masculine"]
+existing_by_lemma = ["él -> tufs-es tufs-es-15576-n [-] él"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["3;Sg;M+N"]
+ancestors = ["3;Sg;M+N", "3;Sg", "3"]
+tufs = ["él <- 彼（かれ） (high)"]
+status = "built"
+comment = ""
+
+["3;Sg;M+N"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "third person singular masculine or neuter pronoun"
+definition = "a pronoun referring to someone or something other than speaker and addressee, one in all (masculine or neuter)"
+hypernyms = ["3;Sg"]
+ancestors = ["3;Sg", "3"]
+comment = ""
+
+["Dist"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "distal determinative"
+definition = "a distal determinative"
+ntumc_definitions = ["77000080-a: demonstrative determiner, distal"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+comment = ""
+
+["Ent;Asrt"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["several", "some"]
+label = "entity assertive existential pronoun"
+definition = "an entity assertive existential pronoun"
+ntumc_definitions = ["02267308-n: entity, assertive existential pronoun; pronoun, entity; quantifier: assertive existential"]
+hypernyms = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+ancestors = ["SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+comment = ""
+
+["Ent;Int"]
+lemmas = ["cuál"]
+english = ["which"]
+label = "entity interrogative pronoun"
+definition = "an entity interrogative pronoun"
+ntumc_definitions = ["77000064-n: entity, interrogative pronoun"]
+existing_by_lemma = ["cuál -> tufs-es tufs-es-77000064-n [-] cuál: which ～"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+tufs = ["cuál <- どの (high)"]
+curator_notes = ["'which one'"]
+status = "built"
+comment = ""
+
+["Ent;Univ"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["all"]
+label = "entity universal pronoun"
+definition = "an entity universal pronoun"
+ntumc_definitions = ["02269286-n: pronoun, entity; quantifier: universal"]
+hypernyms = ["feature:Ent"]
+ancestors = ["feature:Ent"]
+comment = ""
+
+["Knd;Prox+Dist"]
+lemmas = ["tal"]
+english = ["such"]
+label = "kind proximal or distal determinative"
+definition = "a kind proximal or distal determinative"
+existing_by_lemma = ["tal -> omw-es omw-es-01554230-a [i8532] así, semejante, tal: (CILI) of so extreme a degree or extent", "tal -> tufs-es tufs-es-77000089-a [-] tal: such"]
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+tufs = ["tal <- こんな (high)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
+status = "built"
+comment = ""
+
+["Med"]
+lemmas = ["ese"]
+label = "medial determinative"
+definition = "a medial determinative"
+ntumc_definitions = ["77000060-a: demonstrative determiner, medial"]
+existing_by_lemma = ["ese -> tufs-es tufs-es-77000079-a [-] ese, esa, esos, esas: that ～"]
+hypernyms = ["Dist"]
+ancestors = ["Dist", "Prox+Dist"]
+tufs = ["ese <- あの (high)"]
+curator_notes = ["medial (este/ese/aquel); heading あの is Rem, aquel would fit"]
+status = "built"
+comment = ""
+
+["Mnr;Int"]
+lemmas = ["cómo"]
+english = ["how"]
+label = "manner interrogative adverb"
+definition = "a manner interrogative adverb"
+ntumc_definitions = ["77000090-n: manner, interrogative pronoun"]
+existing_by_lemma = ["cómo -> omw-es omw-es-00022131-r [i18267] como, tan: (CILI) to the same degree (often followed by `as')", "cómo -> tufs-es tufs-es-77000091-n [-] cómo: what kind of ～"]
+hypernyms = []
+ancestors = []
+tufs = ["cómo <- どんな (high)"]
+curator_notes = ["'how'; heading どんな (kind would be qué tipo de)"]
+status = "built"
+comment = ""
+
+["Mnr;Prox+Dist"]
+lemmas = ["así"]
+english = ["so", "thus", "thusly"]
+label = "manner proximal or distal adverb"
+definition = "a manner proximal or distal adverb"
+existing_by_lemma = ["así -> omw-es omw-es-01554230-a [i8532] así, semejante, tal: (CILI) of so extreme a degree or extent", "así -> omw-es omw-es-00043003-r [i18390] así: (CILI) (used to introduce a logical conclusion) from that fact or reason or as a result", "así -> omw-es omw-es-00118363-r [i18894] así: (CILI) in a manner that facilitates", "así -> omw-es omw-es-00121002-r [i18910] así: (CILI) by that means or because of that", "así -> omw-es omw-es-00121135-r [i18911] así: (CILI) in the way indicated; (`thusly' is a nonstandard variant)", "así -> tufs-es tufs-es-00121135-r [i18911] así: (CILI) in the way indicated; (`thusly' is a nonstandard variant)"]
+hypernyms = []
+ancestors = []
+tufs = ["así <- そう (high)"]
+curator_notes = ["NEW; proximity-neutral demonstrative (no near/far contrast)"]
+status = "built"
+comment = ""
+
+["Pers;Int"]
+lemmas = ["quién"]
+english = ["who", "whom"]
+label = "person interrogative pronoun"
+definition = "a person interrogative pronoun"
+ntumc_definitions = ["77000095-n: person, interrogative pronoun"]
+existing_by_lemma = ["quién -> tufs-es tufs-es-77000095-n [-] quién: who"]
+hypernyms = ["Ent;Int", "feature:Pers"]
+ancestors = ["Ent;Int", "feature:Pers", "feature:Ent"]
+tufs = ["quién <- だれ (high), どなた (high)"]
+curator_notes = ["not polite; heading どなた"]
+status = "built"
+comment = ""
+
+["Pers;Refl"]
+lemmas = ["sí mismo"]
+english = ["oneself"]
+label = "person reflexive pronoun"
+definition = "a person reflexive pronoun"
+ntumc_definitions = ["77000098-n: personal pronoun, person, reflexive"]
+existing_by_lemma = ["sí mismo -> tufs-es tufs-es-09604981-n [i87150] sí mismo: (CILI) a person considered as a unique individual"]
+hypernyms = ["feature:Pers"]
+ancestors = ["feature:Pers"]
+tufs = ["sí mismo <- 自分 (medium)"]
+curator_notes = ["3rd person/generic 'oneself' (emphatic reflexive)"]
+status = "built"
+comment = ""
+
+["Pers;Sg;Asrt"]
+lemmas = ["alguien"]
+english = ["someone"]
+label = "person singular assertive existential pronoun"
+definition = "a person singular assertive existential pronoun"
+existing_by_lemma = ["alguien -> omw-es omw-es-00007846-n [i35562] alguien, alguno, alma, humano, individuo, mortal, ...: Un ser humano", "alguien -> tufs-es tufs-es-00007846-n [i35562] alguien: (CILI) a human being"]
+hypernyms = ["Ent;Asrt", "feature:Pers"]
+ancestors = ["Ent;Asrt", "feature:Pers", "SK+SU+IRR+Q+COND+INEG", "feature:Ent"]
+tufs = ["alguien <- だれか (high)"]
+status = "built"
+comment = ""
+
+["Pers;Univ"]
+lemmas = ["todo el mundo"]
+english = ["everybody", "everyone"]
+label = "person universal pronoun"
+definition = "a person universal pronoun"
+ntumc_definitions = ["77000099-n: person, universal pronoun; pronoun, person; quantifier: universal"]
+existing_by_lemma = ["todo el mundo -> tufs-es tufs-es-77000099-n [-] todo el mundo: everyone"]
+hypernyms = ["Ent;Univ", "feature:Pers"]
+ancestors = ["Ent;Univ", "feature:Pers", "feature:Ent"]
+tufs = ["todo el mundo <- みんな (medium)"]
+curator_notes = ["multiword expression"]
+status = "built"
+comment = ""
+
+["Plc;Dist"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+english = ["there"]
+label = "place distal pronoun"
+definition = "a place distal pronoun"
+ntumc_definitions = ["08489627-n: a location other than here; that place; location, medial pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, distal; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, distal"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+comment = ""
+
+["Plc;Int"]
+lemmas = ["dónde"]
+english = ["where"]
+label = "place interrogative pronoun"
+definition = "a place interrogative pronoun"
+ntumc_definitions = ["77000084-n: location, interrogative pronoun"]
+existing_by_lemma = ["dónde -> tufs-es tufs-es-77000084-n [-] dónde: which way"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+tufs = ["dónde <- どちら (high)"]
+status = "built"
+comment = ""
+
+["Plc;Med"]
+lemmas = ["ahí"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place medial pronoun"
+definition = "a place medial pronoun"
+ntumc_definitions = ["77000117-n: demonstrative pronoun, location; quantifier: demonstrative determiner, medial"]
+existing_by_lemma = ["ahí -> tufs-es tufs-es-00109151-r [i18828] ahí: (CILI) in or at that place"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc"]
+tufs = ["ahí <- そちら (high)"]
+status = "built"
+comment = ""
+
+["Plc;Prox"]
+lemmas = ["aquí"]
+english = ["'ere", "here"]
+label = "place proximal pronoun"
+definition = "a place proximal pronoun"
+ntumc_definitions = ["08489497-n: the present location; this place; location, proximal pronoun; demonstrative pronoun, location; quantifier: demonstrative determiner, singular, proximal"]
+existing_by_lemma = ["aquí -> omw-es omw-es-08489497-n [i81667] acá, aquí: (CILI) the present location; this place", "aquí -> omw-es omw-es-00108479-r [i18823] aquí: (CILI) in or at this place; where the speaker or writer is", "aquí -> omw-es omw-es-00108647-r [i18824] acá, aquí: (CILI) to this place (especially toward the speaker)", "aquí -> omw-es omw-es-00108773-r [i18825] aquí: (CILI) in this circumstance or respect or on this point or detail", "aquí -> omw-es omw-es-00260998-r [i19964] aquí: (CILI) in a specified area or place", "aquí -> tufs-es tufs-es-77000072-n [-] aquí: this way", "aquí -> tufs-es tufs-es-08489497-n [i81667] aquí: (CILI) the present location; this place"]
+hypernyms = ["feature:Plc"]
+ancestors = ["feature:Plc"]
+tufs = ["aquí <- こちら (high)"]
+status = "built"
+comment = ""
+
+["Plc;Rem"]
+lemmas = ["allí"]
+english = ["there"]
+english_via = "Plc;Dist"
+label = "place remote pronoun"
+definition = "a place remote pronoun"
+ntumc_definitions = ["77000081-n: demonstrative pronoun, location; quantifier: demonstrative determiner, remote"]
+existing_by_lemma = ["allí -> omw-es omw-es-00109151-r [i18828] allá, allí, en ese lugar, en ese sitio: dentro de o en ese lugar", "allí -> tufs-es tufs-es-08489627-n [i81668] allí: (CILI) a location other than here; that place"]
+hypernyms = ["Plc;Dist", "feature:Plc"]
+ancestors = ["Plc;Dist", "feature:Plc"]
+tufs = ["allí <- あっち (high)"]
+curator_notes = ["aquí/ahí/allí three-way"]
+status = "built"
+comment = ""
+
+["Prox"]
+lemmas = ["este"]
+label = "proximal determinative"
+definition = "a proximal determinative"
+ntumc_definitions = ["77000075-a: demonstrative determiner, proximal"]
+existing_by_lemma = ["este -> tufs-es tufs-es-77000061-a [-] este: this ～", "este -> tufs-es tufs-es-80001619-a [-] este: this ～", "este -> tufs-es tufs-es-77000075-a [-] este: this ～"]
+existing_hidden = 2  # other senses of these lemmas
+hypernyms = ["Prox+Dist"]
+ancestors = ["Prox+Dist"]
+tufs = ["este <- この (high)"]
+curator_notes = ["determiner; also pronoun"]
+status = "built"
+comment = ""
+
+["Prox+Dist"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "proximal or distal determinative"
+definition = "a proximal or distal determinative"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Qnt;Int"]
+lemmas = ["cuántos", "cuánto"]
+english = ["how many", "how much"]
+label = "quantity interrogative pronoun"
+definition = "a quantity interrogative pronoun"
+existing_by_lemma = ["cuántos -> tufs-es tufs-es-80001077-n [-] cuántos, cuánto: how many", "cuánto -> tufs-es tufs-es-80001077-n [-] cuántos, cuánto: how many"]
+existing_hidden = 1  # other senses of these lemmas
+hypernyms = ["feature:Qnt"]
+ancestors = ["feature:Qnt"]
+tufs = ["cuántos <- いくつ (high)", "cuánto <- いくら (high)"]
+status = "built"
+comment = ""
+
+["SK+SU+IRR+Q+COND+INEG"]
+lemmas = []
+status = "unlexicalized: no es word; included for the hierarchy"
+label = "specific known or specific unknown or irrealis non-specific or question or conditional or indirect negation pronoun"
+definition = "an indefinite pronoun series used for: specific known, specific unknown, irrealis non-specific, question, conditional, indirect negation (Haspelmath's functions)"
+hypernyms = []
+ancestors = []
+comment = ""
+
+["Tim;Int"]
+lemmas = ["cuándo"]
+english = ["when"]
+label = "time interrogative pronoun"
+definition = "a time interrogative pronoun"
+ntumc_definitions = ["77000104-n: time, interrogative pronoun"]
+existing_by_lemma = ["cuándo -> tufs-es tufs-es-77000104-n [-] cuándo: when"]
+hypernyms = ["feature:Tim"]
+ancestors = ["feature:Tim"]
+tufs = ["cuándo <- いつ (high)"]
+status = "built"
+comment = ""
+
+["feature:Ent"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "entity"
+definition = "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+existing_by_ili = ["omw-es omw-es-00001740-n [i35545] ente, entidad: aquello que se percibe o se sabe o se infiere que tiene su existencia propia distinta (viva o no viva)"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Pers"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "person"
+definition = "a human being"
+existing_by_ili = ["omw-es omw-es-00007846-n [i35562] alguien, alguno, alma, humano, individuo, mortal, ...: Un ser humano", "tufs-es tufs-es-00007846-n [i35562] alguien: (CILI) a human being"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Plc"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "place"
+definition = "a point located with respect to surface features of some region"
+existing_by_ili = ["omw-es omw-es-08664443-n [i82501] lugar, paraje, punto, sitio: (CILI) a point located with respect to surface features of some region"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Qnt"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "quantity"
+definition = "how much there is or how many there are of something that you can quantify"
+existing_by_ili = ["omw-es omw-es-00033615-n [i35594] cantidad, cuantía, medida: cuánto hay o cuántos hay de algo que se puede cuantificar"]
+hypernyms = []
+ancestors = []
+comment = ""
+
+["feature:Tim"]
+lemmas = []
+status = "unlexicalized: feature synset, no words in any language"
+label = "time"
+definition = "an indefinite period (usually marked by specific attributes or activities)"
+existing_by_ili = ["omw-es omw-es-15122231-n [i116667] momento, período, tiempo, época: (CILI) an indefinite period (usually marked by specific attributes or activities)", "tufs-es tufs-es-15122231-n [i116667] tiempo: (CILI) an indefinite period (usually marked by specific attributes or activities)"]
+hypernyms = []
+ancestors = []
+comment = ""

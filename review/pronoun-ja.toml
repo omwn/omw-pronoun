@@ -90,50 +90,36 @@ status = "not built: suggested by ProSub only"
 comment = ""
 
 ["1;Sg;Fml"]
-ntumc = ["我 <- 77000011-n", "われ <- 77000011-n"]
+lemmas = ["私", "わたし"]
+ntumc = ["我 <- 77000011-n", "われ <- 77000011-n", "私 <- 77000012-n", "わたし <- 77000012-n"]
 english = ["I"]
 english_via = "1;Sg"
 label = "first person singular formal pronoun"
 definition = "a pronoun referring to the speaker, one in all (formal)"
-ntumc_definitions = ["77000011-n: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal"]
-existing_by_lemma = ["我 -> wnja wnja-80001192-a [-] 我が, 吾が, わが, 我: possessive determiner, 1st person", "我 -> wnja wnja-09604981-n [i87150] 自ずから, 自ら, 我, 我, 自己, 本人, ...: ユニークな人として見なされた人", "我 -> wnja wnja-77000011-n [-] 我, われ: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal", "われ -> wnja wnja-80001192-a [-] 我が, 吾が, わが, 我: possessive determiner, 1st person", "われ -> wnja wnja-09604981-n [i87150] 自ずから, 自ら, 我, 我, 自己, 本人, ...: ユニークな人として見なされた人", "われ -> wnja wnja-77000011-n [-] 我, われ: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal", "われ -> wnja wnja-80001192-a [-] 我が, 吾が, わが, 我: possessive determiner, 1st person", "われ -> wnja wnja-09604981-n [i87150] 自ずから, 自ら, 我, 我, 自己, 本人, ...: ユニークな人として見なされた人", "われ -> wnja wnja-77000011-n [-] 我, われ: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal", "我 -> wnja wnja-80001192-a [-] 我が, 吾が, わが, 我: possessive determiner, 1st person", "我 -> wnja wnja-09604981-n [i87150] 自ずから, 自ら, 我, 我, 自己, 本人, ...: ユニークな人として見なされた人", "我 -> wnja wnja-77000011-n [-] 我, われ: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal"]
-existing_hidden = 10  # other senses of these lemmas
+ntumc_definitions = ["77000011-n: 1st person, singular, formal pronoun; personal pronoun, person, 1st person, singular, formal", "77000012-n: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite"]
+existing_by_lemma = ["私 -> wnja wnja-77000012-n [-] 私, わたし: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite", "私 -> tufs-ja tufs-ja-15475-n [-] 私: I", "わたし -> wnja wnja-01860207-a [i10213] 私～: 威厳のない、またはひときわ目立った役職、または地位等に関連しない", "わたし -> wnja wnja-77000012-n [-] 私, わたし: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite", "わたし -> tufs-ja tufs-ja-77000012-n [-] わたし: I", "わたし -> tufs-ja tufs-ja-77000015-n [-] わたし: I"]
+existing_hidden = 1  # other senses of these lemmas
 hypernyms = ["1;Sg"]
 ancestors = ["1;Sg"]
-status = "built (NTUMC only)"
+tufs = ["私 <- 私（わたくし） (high)", "わたし <- 私（わたし） (high)"]
+curator_notes = ["NTUMC 私; no first-person Pol", "NTUMC"]
+status = "built"
 comment = ""
 
-["1;Sg;Fml;Hon+Pol"]
+["1;Sg;Fml;Hum"]
 lemmas = ["私"]
 ntumc = ["わたくし <- 77000013-n"]
 new_senses = ["私"]
 english = ["I"]
 english_via = "1;Sg"
-label = "first person singular formal honorific or polite pronoun"
-definition = "a pronoun referring to the speaker, one in all (formal, honorific or polite)"
+label = "first person singular formal humble pronoun"
+definition = "a pronoun referring to the speaker, one in all (formal, humble)"
 ntumc_definitions = ["77000013-n: 1st person, singular, formal, polite, honorific pronoun; personal pronoun, person, 1st person, singular, formal, polite, honorific"]
 existing_by_lemma = ["私 -> wnja wnja-77000012-n [-] 私, わたし: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite", "私 -> tufs-ja tufs-ja-15475-n [-] 私: I"]
 hypernyms = ["1;Sg;Fml"]
 ancestors = ["1;Sg;Fml", "1;Sg"]
 tufs = ["私 <- 私（わたくし） (medium)"]
-curator_notes = ["TUFS reads it わたくし, which NTUMC codes Hon+Pol"]
-status = "built"
-comment = ""
-
-["1;Sg;Fml;Pol"]
-lemmas = ["私", "わたし"]
-ntumc = ["私 <- 77000012-n", "わたし <- 77000012-n"]
-english = ["I"]
-english_via = "1;Sg"
-label = "first person singular formal polite pronoun"
-definition = "a pronoun referring to the speaker, one in all (formal, polite)"
-ntumc_definitions = ["77000012-n: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite"]
-existing_by_lemma = ["私 -> wnja wnja-77000012-n [-] 私, わたし: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite", "私 -> tufs-ja tufs-ja-15475-n [-] 私: I", "わたし -> wnja wnja-01860207-a [i10213] 私～: 威厳のない、またはひときわ目立った役職、または地位等に関連しない", "わたし -> wnja wnja-77000012-n [-] 私, わたし: 1st person, singular, formal, polite pronoun; personal pronoun, person, 1st person, singular, formal, polite", "わたし -> tufs-ja tufs-ja-77000012-n [-] わたし: I", "わたし -> tufs-ja tufs-ja-77000015-n [-] わたし: I"]
-existing_hidden = 1  # other senses of these lemmas
-hypernyms = ["1;Sg;Fml;Hon+Pol"]
-ancestors = ["1;Sg;Fml;Hon+Pol", "1;Sg;Fml", "1;Sg"]
-tufs = ["私 <- 私（わたくし） (high)", "わたし <- 私（わたし） (high)"]
-curator_notes = ["NTUMC 私", "NTUMC"]
+curator_notes = ["TUFS reads it わたくし, humble (NTUMC Hon+Pol)"]
 status = "built"
 comment = ""
 
@@ -149,12 +135,12 @@ hypernyms = ["1;Sg"]
 ancestors = ["1;Sg"]
 comment = ""
 
-["1;Sg;M;Infml;Hon;Arch+Men"]
+["1;Sg;M;Infml;Arch+Men"]
 ntumc = ["わし <- 77000018-n"]
 english = ["I"]
 english_via = "1;Sg"
-label = "first person singular masculine informal honorific archaic or men's speech pronoun"
-definition = "a pronoun referring to the speaker, one in all (masculine, informal, honorific, archaic or men's speech)"
+label = "first person singular masculine informal archaic or men's speech pronoun"
+definition = "a pronoun referring to the speaker, one in all (masculine, informal, archaic or men's speech)"
 ntumc_definitions = ["77000018-n: 1st person, singular, masculine, informal, archaic honorific pronoun; personal pronoun, person, 1st person, singular, men's speech, informal, archaic honorific"]
 existing_by_lemma = ["わし -> wnja wnja-77000018-n [-] わし: 1st person, singular, masculine, informal, archaic honorific pronoun; personal pronoun, person, 1st person, singular, men's speech, informal, archaic honorific", "わし -> wnja wnja-77000018-n [-] わし: 1st person, singular, masculine, informal, archaic honorific pronoun; personal pronoun, person, 1st person, singular, men's speech, informal, archaic honorific"]
 existing_hidden = 6  # other senses of these lemmas
@@ -172,8 +158,8 @@ definition = "a pronoun referring to the speaker, one in all (masculine, informa
 ntumc_definitions = ["77000017-n: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal"]
 existing_by_lemma = ["おれ -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "ぼく -> wnja wnja-10292192-n [i91210] 下男, 家僕, 下僕, 下部, 僕, 奴: 男性の召使い", "ぼく -> wnja wnja-10308938-n [i91309] 召し使い, 奉公人, 下部, 僕, 下郎, 奴: 家庭の使用人", "ぼく -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "俺 -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "僕 -> wnja wnja-10292192-n [i91210] 下男, 家僕, 下僕, 下部, 僕, 奴: 男性の召使い", "僕 -> wnja wnja-10308938-n [i91309] 召し使い, 奉公人, 下部, 僕, 下郎, 奴: 家庭の使用人", "僕 -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "おれ -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "ぼく -> wnja wnja-10292192-n [i91210] 下男, 家僕, 下僕, 下部, 僕, 奴: 男性の召使い", "ぼく -> wnja wnja-10308938-n [i91309] 召し使い, 奉公人, 下部, 僕, 下郎, 奴: 家庭の使用人", "ぼく -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "俺 -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal", "僕 -> wnja wnja-10292192-n [i91210] 下男, 家僕, 下僕, 下部, 僕, 奴: 男性の召使い", "僕 -> wnja wnja-10308938-n [i91309] 召し使い, 奉公人, 下部, 僕, 下郎, 奴: 家庭の使用人", "僕 -> wnja wnja-77000017-n [-] 僕, おれ, ぼく, 俺: 1st person, singular, masculine, informal pronoun; personal pronoun, person, 1st person, singular, men's speech, informal"]
 existing_hidden = 2  # other senses of these lemmas
-hypernyms = ["1;Sg;Infml"]
-ancestors = ["1;Sg;Infml", "1;Sg"]
+hypernyms = ["1;Sg;M;Infml;Arch+Men"]
+ancestors = ["1;Sg;M;Infml;Arch+Men", "1;Sg;Infml", "1;Sg"]
 status = "built (NTUMC only)"
 comment = ""
 

@@ -6,10 +6,9 @@ Plc;Sg;Asrt	n	TUFS ja どこか	somewhere
 Tim;Sg;Asrt	n	TUFS ja いつか	sometime
 Knd;Int	a	TUFS ja どのような	what kind of
 Qnt;Int	n	TUFS ja どのぐらい, どれぐらい	how much, how long; Qnt = the paper's Quantifier head
-1;Pl;Fml;Pol	n	TUFS curation	저희
-1;Sg;F;Fml;Pol;Wom	n	TUFS curation	ดิฉัน
-1;Sg;F;Pol;Wom	n	TUFS curation	ကျွန်မ
-1;Sg;M;Pol;Men	n	TUFS curation	ผม, ကျွန်တော်
+1;Pl;Fml;Hum	n	TUFS curation	저희
+1;Sg;F;Fml;Wom	n	TUFS curation	ดิฉัน, ကျွန်မ
+1;Sg;M;Fml;Men	n	TUFS curation	ผม, ကျွန်တော်
 2;Pl;Fml;Pol	n	TUFS curation	Sie, ustedes
 2;Sg;F	n	TUFS curation	إنتي
 2;Sg;Fml	n	TUFS curation	သင်

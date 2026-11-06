@@ -389,9 +389,9 @@ ja	1933	何（なに・なん）	何	何	Thng;Int	pronoun	high	NTUMC
 ja	1933	何（なに・なん）	何	何	Int	pronoun	high	NTUMC; determiner use (何色)
 ja	214	全部	全部	全部	Thng;Sg;Univ	pronoun	high	NTUMC
 ja	512	皆さん	皆さん	皆さん	Pers;Univ;Pol	pronoun	high	extra-lemmas
-ja	13	私（わたくし）	私	私	1;Sg;Fml;Pol	pronoun	high	NTUMC 私
-ja	13	私（わたくし）	私	私	1;Sg;Fml;Hon+Pol	pronoun	medium	TUFS reads it わたくし, which NTUMC codes Hon+Pol
-ja	172	私（わたし）	わたし	わたし	1;Sg;Fml;Pol	pronoun	high	NTUMC
+ja	13	私（わたくし）	私	私	1;Sg;Fml	pronoun	high	NTUMC 私; no first-person Pol
+ja	13	私（わたくし）	私	私	1;Sg;Fml;Hum	pronoun	medium	TUFS reads it わたくし, humble (NTUMC Hon+Pol)
+ja	172	私（わたし）	わたし	わたし	1;Sg;Fml	pronoun	high	NTUMC
 ja	317	自分	自分	自分	Pers;Refl	pronoun	high	NTUMC
 mn	102	あっち	тэнд	тэнд	Plc;Dist	pronoun	high	"there"; two-way энд/тэнд; NEW code Plc;Dist
 mn	233	あなた	та	та	2;Sg;Fml;Pol	pronoun	high	polite "you"
@@ -550,8 +550,8 @@ ko	740	君（きみ）	너	너	2;Sg;Infml	pronoun	high	plain/intimate you
 ko	734	彼女	그 사람들	그 사람들	3;Pl	substitute	medium	lit. "those people" (그 that + 사람 person + 들 PL)
 ko	733	彼女	그, 그녀	그	3;Sg;M	pronoun	medium	written "he" (occasionally gender-neutral)
 ko	733	彼女	그, 그녀	그녀	3;Sg;F	pronoun	high	written "she"
-ko	736	私たち	저희	저희	1;Pl;Fml;Pol	pronoun	high	NEW code 1;Pl;Fml;Pol (plural of 저 1;Sg;Fml;Pol): humble we, excludes hearer (vs 우리)
-ko	735	私（わたし）	저	저	1;Sg;Fml;Pol	pronoun	high	humble I (vs plain 나)
+ko	736	私たち	저희	저희	1;Pl;Fml;Hum	pronoun	high	NEW code 1;Pl;Fml;Hum (plural of 저 1;Sg;Fml;Hum): humble we, excludes hearer (vs 우리)
+ko	735	私（わたし）	저	저	1;Sg;Fml;Hum	pronoun	high	humble I (vs plain 나)
 ko	748	自分	자기	자기	Pers;Refl	pronoun	high	
 lo	103	あっち	ຢູ່ພຸ້ນ	ຢູ່ພຸ້ນ	Plc;Rem	pronoun	medium	ຢູ່ "at" + ພຸ້ນ yonder; Lao three-way ນີ້/ນັ້ນ/ພຸ້ນ
 lo	195	あなた	ເຈົ້າ	ເຈົ້າ	2;Sg	pronoun	high	standard polite-neutral you
@@ -609,8 +609,8 @@ th	234	彼女	เขา, เธอ	เขา	3;Sg	pronoun	high	he/she, esp. he
 th	234	彼女	เขา, เธอ	เธอ	3;Sg;F	pronoun	high	
 th	234	彼女	เขา, เธอ	เธอ	2;Sg;Infml	pronoun	high	
 th	237	私たち	พวกเรา	พวกเรา	1;Pl	pronoun	high	
-th	236	私（わたし）	ดิฉัน, ผม	ดิฉัน	1;Sg;F;Fml;Pol;Wom	pronoun	high	NEW code: formal polite I, female speaker; speaker sex also gender (was 1;Sg;Fml;Pol;Wom)
-th	236	私（わたし）	ดิฉัน, ผม	ผม	1;Sg;M;Pol;Men	pronoun	high	NEW code: polite I, male speaker (lit. also "hair"); speaker sex also gender (was 1;Sg;Pol;Men)
+th	236	私（わたし）	ดิฉัน, ผม	ดิฉัน	1;Sg;F;Fml;Wom	pronoun	high	NEW code: formal I, female speaker; speaker sex also gender
+th	236	私（わたし）	ดิฉัน, ผม	ผม	1;Sg;M;Fml;Men	pronoun	high	NEW code: formal I, male speaker (lit. also "hair"); speaker sex also gender
 th	249	自分	ตัวเอง	ตัวเอง	Pers;Refl	pronoun	high	
 zh	108	あっち	那儿	那儿	Plc;Dist	pronoun	high	NEW code Plc;Dist (two-way 这儿/那儿)
 zh	255	あなた	您	您	2;Sg;Fml;Pol	pronoun	high	NTUMC
@@ -679,7 +679,7 @@ id	485	彼女	ia	ia	3;Sg	pronoun	high	gender-neutral he/she/it
 id	659	彼女	mereka	mereka	3;Pl	pronoun	high	they; heading presumably 彼女ら
 id	350	私たち	kami	kami	1e;Pl	pronoun	high	exclusive we; known code 1i;Pl is wrong
 id	143	私たち	kita	kita	1i;Pl	pronoun	high	NTUMC; inclusive we (colloquially also exclusive)
-id	10	私（わたし）	saya	saya	1;Sg;Fml;Pol	pronoun	high	NTUMC
+id	10	私（わたし）	saya	saya	1;Sg;Fml	pronoun	high	NTUMC
 id	868	自分	diri	diri	Pers;Refl	pronoun	medium	noun 'self' used reflexively (membela diri)
 id	662	自分	diri sendiri	diri sendiri	Pers;Refl	pronoun	high	NTUMC
 ms	293	あそこ	sana	sana	Plc;Rem	pronoun	high	sini/situ/sana three-way
@@ -727,9 +727,9 @@ ms	1088	みんな	semua	semua	Pers;Univ	pronoun	low	quantifier 'all'; 'everyone'
 ms	1933	何（なに・なん）	apa	apa	Thng;Int	pronoun	high	
 ms	214	全部	semuanya	semuanya	Thng;Sg;Univ	pronoun	medium	semua 'all' + -nya: 'all of it/them'
 ms	512	皆さん	awak semua	awak semua	2;Pl	pronoun	medium	awak 'you' + semua 'all'; cf. NTUMC ini semua
-ms	13	私（わたくし）	saya	saya	1;Sg;Fml;Pol	pronoun	high	as Indonesian NTUMC; etym. sahaya 'servant'
-ms	172	私（わたし）	saya	saya	1;Sg;Fml;Pol	pronoun	high	as Indonesian NTUMC
-ms	317	自分	saya	saya	1;Sg;Fml;Pol	pronoun	medium	'I'; renders 自分 in its first-person use
+ms	13	私（わたくし）	saya	saya	1;Sg;Fml	pronoun	high	as Indonesian NTUMC; etym. sahaya 'servant'
+ms	172	私（わたし）	saya	saya	1;Sg;Fml	pronoun	high	as Indonesian NTUMC
+ms	317	自分	saya	saya	1;Sg;Fml	pronoun	medium	'I'; renders 自分 in its first-person use
 ms	317	自分	sendiri	sendiri	Pers;Refl	pronoun	medium	'self, oneself, alone'; full reflexive diri sendiri
 my	293	あそこ	ဟို	ဟို	Rem	pronoun	high	ho 'that (yonder)'; place needs ဟိုမှာ; ဒီ/အဲဒီ/ဟို three-way
 my	293	あそこ	ဟိုနေရာ	ဟိုနေရာ	Plc;Rem	pronoun	medium	ho 'that' + neya 'place'
@@ -811,10 +811,10 @@ my	214	全部	အားလုံး	အားလုံး	Thng;Sg;Univ	pronoun	m
 my	214	全部	အားလုံးပေါင်း	အားလုံးပေါင်း		not-proform	medium	'all together, in total'
 my	512	皆さん	မင်းတို့	မင်းတို့	2;Pl	pronoun	high	min 'you' + plural toh; familiar, not polite
 my	512	皆さん	အားလုံး	အားလုံး	Pers;Univ	pronoun	low	quantifier 'all'
-my	13	私（わたくし）	ကျွန်တော်	ကျွန်တော်	1;Sg;M;Pol;Men	pronoun	high	NEW; I, male speaker; etym. 'royal servant'
-my	13	私（わたくし）	ကျွန်မ	ကျွန်မ	1;Sg;F;Pol;Wom	pronoun	high	NEW; I, female speaker; etym. 'servant-female'
-my	172	私（わたし）	ကျွန်တော်	ကျွန်တော်	1;Sg;M;Pol;Men	pronoun	high	NEW; I, male speaker; etym. 'royal servant'
-my	172	私（わたし）	ကျွန်မ	ကျွန်မ	1;Sg;F;Pol;Wom	pronoun	high	NEW; I, female speaker; etym. 'servant-female'
+my	13	私（わたくし）	ကျွန်တော်	ကျွန်တော်	1;Sg;M;Fml;Men	pronoun	high	NEW; I, male speaker; etym. 'royal servant'
+my	13	私（わたくし）	ကျွန်မ	ကျွန်မ	1;Sg;F;Fml;Wom	pronoun	high	NEW; I, female speaker; etym. 'servant-female'
+my	172	私（わたし）	ကျွန်တော်	ကျွန်တော်	1;Sg;M;Fml;Men	pronoun	high	NEW; I, male speaker; etym. 'royal servant'
+my	172	私（わたし）	ကျွန်မ	ကျွန်မ	1;Sg;F;Fml;Wom	pronoun	high	NEW; I, female speaker; etym. 'servant-female'
 my	172	私（わたし）	ကျွန်ုပ်	ကျွန်ုပ်	1;Sg;Fml	pronoun	high	formal/literary I, either sex
 my	317	自分	ကိုယ်	ကိုယ်	Pers;Refl	pronoun	high	self (lit. 'body')
 my	317	自分	ကိုယ်	ကိုယ်	1;Sg	substitute	medium	noun 'body/self' used as familiar 'I'

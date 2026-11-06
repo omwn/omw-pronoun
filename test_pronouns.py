@@ -354,6 +354,7 @@ SLOT_ORDER = [
     "case",
     "type",
     "formality",
+    "humility",
     "politeness",
     "proximity",
     "direction",

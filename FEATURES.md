@@ -27,7 +27,8 @@ A code is a sequence of features separated by `;`. Each feature fills one
 | case | `Poss` |
 | type | `Asrt` `Elec` `Neg` `Univ` `Int` `Refl` `Recp` `Oth`, and Haspelmath's functions `SK` `SU` `IRR` `Q` `COND` `INEG` `DNEG` `COMP` `FC` |
 | formality | `Fml` `Infml` |
-| politeness | `Pol` `Hon` `NHon` |
+| humility | `Hum` |
+| politeness | `Hon` `Pol` `Fam` `NHon` |
 | proximity | `Prox` `Med` `Dist` `Rem` |
 | direction | `Dir` `Loc` `Goal` `Src` |
 | register | `Men` `Wom` `Arch` |
@@ -283,13 +284,29 @@ only for specific referents). His test sentences:
 
 ### Formality and politeness
 
-| value | meaning | UD | example | code |
-|---|---|---|---|---|
-| `Fml` | formal | `Polite=Form` | Indonesian *Anda* "you" | `2;Sg;Fml;Pol` |
-| `Infml` | informal | `Polite=Infm` | Indonesian *kamu* "you" | `2;Sg;Infml` |
-| `Pol` | polite | `Polite=Elev` | Mandarin *nín* 您 "you" | `2;Sg;Fml;Pol` |
-| `Hon` | honorific | `Polite=Elev` | Japanese *watakushi* わたくし "I" | `1;Sg;Fml;Hon+Pol` |
-| `NHon` | non-honorific | | Japanese *yatsu* ヤツ "that guy" | `3;Sg;Infml;NHon` |
+Two axes, after the split between addressee and referent honorification
+(Harada 1976). Formality and humility are the **addressee axis**: how the
+speaker positions themselves towards the addressee or setting. Politeness is
+the **referent axis**: how the speaker positions the person referred to. In
+the second person both axes describe the same person, but they are coded
+independently.
+
+| value | axis | meaning | UD | example | code |
+|---|---|---|---|---|---|
+| `Fml` | addressee | formal | `Polite=Form` | Indonesian *saya* "I" | `1;Sg;Fml` |
+| `Infml` | addressee | informal | `Polite=Infm` | Indonesian *kamu* "you" | `2;Sg;Infml` |
+| `Hum` | addressee | humble: lowers the speaker's side (*kenjōgo* II); entails `Fml` | `Polite=Humb` | Japanese *watakushi* わたくし "I" | `1;Sg;Fml;Hum` |
+| `Hon` | referent | honorific | `Polite=Elev` | Indonesian *beliau* "he, she" | `3;Sg;Hon` |
+| `Pol` | referent | polite | `Polite=Elev` | Mandarin *nín* 您 "you" | `2;Sg;Fml;Pol` |
+| `Fam` | referent | familiar: less respect than `Pol`, without contempt | | Japanese *-chan* ちゃん | |
+| `NHon` | referent | non-honorific, derogatory | | Japanese *yatsu* ヤツ "that guy" | `3;Sg;Infml;NHon` |
+
+A speaker does not elevate themselves, so a first-person code has no
+politeness value: Korean *jeo* 저 "I" is `1;Sg;Fml;Hum`, Thai *phǒm* ผม "I"
+(men's speech) `1;Sg;M;Fml;Men`. `Hum` has a slot of its own because `+`
+within a slot means "or". *beliau* and *-chan* are examples, not yet
+in the wordnet. Kin terms carry the same values on their senses,
+not their codes (omw-kinship).
 
 ### Proximity
 
@@ -329,8 +346,8 @@ from.
 | value | meaning | example | code |
 |---|---|---|---|
 | `Men` | men's speech | Japanese *ore* おれ "I" | `1;Sg;M;Infml;Men` |
-| `Wom` | women's speech | Thai *dichǎn* "I" | `1;Sg;F;Fml;Pol;Wom` |
-| `Arch` | archaic | Japanese *washi* わし "I" | `1;Sg;M;Infml;Hon;Arch+Men` |
+| `Wom` | women's speech | Thai *dichǎn* "I" | `1;Sg;F;Fml;Wom` |
+| `Arch` | archaic | Japanese *washi* わし "I" | `1;Sg;M;Infml;Arch+Men` |
 
 ### Operators
 
@@ -339,9 +356,9 @@ from.
 | `;` | conjunction of features in different slots | `3;Sg;F` "she" |
 | `+` | alternatives within a slot | `Ent;Sg;Prox+Dist` French *ça* |
 
-In ids, `;` becomes `-` and `+` becomes `_`: `1;Sg;Fml;Hon+Pol` is the synset
-`omw-pronoun-1-Sg-Fml-Hon_Pol`. The `dc:identifier` keeps the code as it is
-(`pronoun:1;Sg;Fml;Hon+Pol`).
+In ids, `;` becomes `-` and `+` becomes `_`: `1;Sg;M;Infml;Arch+Men` is the synset
+`omw-pronoun-1-Sg-M-Infml-Arch_Men`. The `dc:identifier` keeps the code as it is
+(`pronoun:1;Sg;M;Infml;Arch+Men`).
 
 ## References
 
@@ -351,6 +368,9 @@ Resource Grammar. In *Proceedings of the Ninth International Conference on
 Language Resources and Evaluation (LREC'14)*, 875–881. See also the DELPH-IN wiki
 page ErgSemantics_ImplicitLocatives,
 https://github.com/delph-in/docs/wiki/ErgSemantics_ImplicitLocatives.
+
+Harada, S. I. (1976). Honorifics. In Masayoshi Shibatani (ed.), *Syntax and
+Semantics 5: Japanese Generative Grammar*, 499–561. New York: Academic Press.
 
 Huddleston, Rodney and Geoffrey K. Pullum (2002). *The Cambridge Grammar of the
 English Language*. Cambridge University Press. Chapter 7, Prepositions and

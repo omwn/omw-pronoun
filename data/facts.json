@@ -4,12 +4,12 @@
     "adposition_known": 13,
     "direction": 7,
     "haspelmath": 4,
-    "n": 144,
+    "n": 142,
     "noun_and_adposition": 8,
     "p": 35,
     "r": 9,
     "time": 2,
-    "total": 241,
+    "total": 239,
     "two": 15
   },
   "direction": {
@@ -22,19 +22,19 @@
     "ili": 31,
     "proposed": 26,
     "ud": 36,
-    "unused": 3,
+    "unused": 5,
     "used": 57
   },
   "haspelmath": {
     "languages": 40
   },
   "hierarchy": {
-    "multiple_hypernyms": 28,
+    "multiple_hypernyms": 27,
     "tops": 58
   },
   "ili": {
     "linked": 18,
-    "proposed": 223,
+    "proposed": 221,
     "unattested": 0
   },
   "languages": 669,
@@ -45,7 +45,7 @@
     "extra_new_shared": 4,
     "extra_skipped": 11,
     "extra_synsets": 35,
-    "inventory_concepts": 120,
+    "inventory_concepts": 119,
     "synsets": 120
   },
   "parabank": {
@@ -78,8 +78,8 @@
     "held_back_rows": 66,
     "japanese_not_in_ntumc": 12,
     "languages": 22,
-    "new_concepts": 33,
-    "new_concepts_only": 31,
+    "new_concepts": 32,
+    "new_concepts_only": 30,
     "new_concepts_shared": 2,
     "senses": 841,
     "there_forms": 20

@@ -34,8 +34,10 @@ Recp	type	reciprocal	i69728		pwn	PronType=Rcp	a pronoun or pronominal phrase (as
 Oth	type	other			new		of a pronoun or quantifier that refers to a referent other than one already mentioned, as English other, another
 Fml	formality	formal	i5725		pwn	Polite=Form	(of spoken and written language) adhering to traditional standards of correctness and without casual, contracted, and colloquial forms
 Infml	formality	informal	i5727		pwn	Polite=Infm	used of spoken and written language
+Hum	humility	humble	i10379		pwn	Polite=Humb	marked by meekness or modesty; not arrogant or prideful
 Pol	politeness	polite	i3566		pwn	Polite=Elev	showing regard for others in manners, speech, behavior, etc.
 Hon	politeness	honorific	i10923		pwn	Polite=Elev	conferring or showing honor or respect
+Fam	politeness	familiar			new		of a word for a person: showing less respect than a polite one, without contempt
 NHon	politeness	non-honorific		77010000-a	ntumc		not conferring or showing honor or respect
 Prox	proximity	proximal		77010002-a	ntumc	PronType=Dem|Deixis=Prox	relating to or characteristic of a word referring to something at a proximal distance
 Med	proximity	medial		77010001-a	ntumc	PronType=Dem|Deixis=Med	relating to or characteristic of a word referring to something at a medium distance
