@@ -115,6 +115,7 @@ WORDS = {
     "Hum": "humble",
     "Pol": "polite",
     "Hon": "honorific",
+    "Pln": "plain",
     "Fam": "familiar",
     "NHon": "non-honorific",
     "Prox": "proximal",

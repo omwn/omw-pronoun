@@ -28,7 +28,7 @@ A code is a sequence of features separated by `;`. Each feature fills one
 | type | `Asrt` `Elec` `Neg` `Univ` `Int` `Refl` `Recp` `Oth`, and Haspelmath's functions `SK` `SU` `IRR` `Q` `COND` `INEG` `DNEG` `COMP` `FC` |
 | formality | `Fml` `Infml` |
 | humility | `Hum` |
-| politeness | `Hon` `Pol` `Fam` `NHon` |
+| politeness | `Hon` `Pol` `Pln` `Fam` `NHon` |
 | proximity | `Prox` `Med` `Dist` `Rem` |
 | direction | `Dir` `Loc` `Goal` `Src` |
 | register | `Men` `Wom` `Arch` |
@@ -291,18 +291,34 @@ the **referent axis**: how the speaker positions the person referred to. In
 the second person both axes describe the same person, but they are coded
 independently.
 
-| value | axis | meaning | UD | example | code |
-|---|---|---|---|---|---|
-| `Fml` | addressee | formal | `Polite=Form` | Indonesian *saya* "I" | `1;Sg;Fml` |
-| `Infml` | addressee | informal | `Polite=Infm` | Indonesian *kamu* "you" | `2;Sg;Infml` |
-| `Hum` | addressee | humble: lowers the speaker's side (*kenjōgo* II); entails `Fml` | `Polite=Humb` | Japanese *watakushi* わたくし "I" | `1;Sg;Fml;Hum` |
-| `Hon` | referent | honorific | `Polite=Elev` | Indonesian *beliau* "he, she" | `3;Sg;Hon` |
-| `Pol` | referent | polite | `Polite=Elev` | Mandarin *nín* 您 "you" | `2;Sg;Fml;Pol` |
-| `Fam` | referent | familiar: less respect than `Pol`, without contempt | | Japanese *-chan* ちゃん | |
-| `NHon` | referent | non-honorific, derogatory | | Japanese *yatsu* ヤツ "that guy" | `3;Sg;Infml;NHon` |
+**Addressee axis** (formality and humility):
 
-A speaker does not elevate themselves, so a first-person code has no
-politeness value: Korean *jeo* 저 "I" is `1;Sg;Fml;Hum`, Thai *phǒm* ผม "I"
+| value | meaning | UD | example | code |
+|---|---|---|---|---|
+| `Fml` | formal | `Polite=Form` | Indonesian *saya* "I" | `1;Sg;Fml` |
+| `Infml` | informal | `Polite=Infm` | Indonesian *kamu* "you" | `2;Sg;Infml` |
+| `Hum` | humble: lowers the speaker's side (*kenjōgo* II); entails `Fml` | `Polite=Humb` | Japanese *watakushi* わたくし "I" | `1;Sg;Fml;Hum` |
+| — | unspecified: any of these, or none | | English *I* | `1;Sg` |
+
+**Referent axis** (politeness):
+
+| value | meaning | UD | example | code |
+|---|---|---|---|---|
+| `Hon` | honorific | `Polite=Elev` | Indonesian *beliau* "he, she" | `3;Sg;Hon` |
+| `Pol` | polite | `Polite=Elev` | Mandarin *nín* 您 "you" | `2;Sg;Fml;Pol` |
+| `Pln` | plain: neither raising nor lowering the person meant | | Japanese *otōto* 弟 "younger brother" | |
+| `Fam` | familiar: less respect than `Pol`, without contempt | | Japanese *-chan* ちゃん | |
+| `NHon` | non-honorific, derogatory | | Japanese *yatsu* ヤツ "that guy" | `3;Sg;Infml;NHon` |
+| — | unspecified: any of these, or none | | English *you* | `2` |
+
+The referent axis is a scale, `Hon` > `Pol` > `Pln` > `Fam` > `NHon`. No value
+means unspecified, never plain: a code without one covers every value, so
+`1;Sg` is above `1;Sg;Fml;Hum`, and the words placed on it are those that do
+not mark the distinction (English *I*). On a kin term's sense, no value means
+it has not been annotated.
+
+A speaker does not raise or lower themselves on the referent axis, so a
+first-person code has no politeness value: Korean *jeo* 저 "I" is `1;Sg;Fml;Hum`, Thai *phǒm* ผม "I"
 (men's speech) `1;Sg;M;Fml;Men`. `Hum` has a slot of its own because `+`
 within a slot means "or". *beliau* and *-chan* are examples, not yet
 in the wordnet. Kin terms carry the same values on their senses,

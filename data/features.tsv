@@ -37,6 +37,7 @@ Infml	formality	informal	i5727		pwn	Polite=Infm	used of spoken and written langu
 Hum	humility	humble	i10379		pwn	Polite=Humb	marked by meekness or modesty; not arrogant or prideful
 Pol	politeness	polite	i3566		pwn	Polite=Elev	showing regard for others in manners, speech, behavior, etc.
 Hon	politeness	honorific	i10923		pwn	Polite=Elev	conferring or showing honor or respect
+Pln	politeness	plain			new		of a word for a person: neither raising nor lowering them
 Fam	politeness	familiar			new		of a word for a person: showing less respect than a polite one, without contempt
 NHon	politeness	non-honorific		77010000-a	ntumc		not conferring or showing honor or respect
 Prox	proximity	proximal		77010002-a	ntumc	PronType=Dem|Deixis=Prox	relating to or characteristic of a word referring to something at a proximal distance

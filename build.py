@@ -259,7 +259,7 @@ CATEGORIES = {
     "formality": {"Fml", "Infml"},
     # self-lowering speech to the addressee (kenjogo II); Hum entails Fml
     "humility": {"Hum"},
-    "politeness": {"Pol", "Hon", "Fam", "NHon"},
+    "politeness": {"Pol", "Hon", "Pln", "Fam", "NHon"},
     "proximity": {"Prox", "Med", "Dist", "Rem"},
     "direction": {"Loc", "Goal", "Src", "Dir"},
     "register": {"Men", "Wom", "Arch"},
