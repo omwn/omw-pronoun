@@ -123,9 +123,9 @@ itself, so it is not a kind of *anybody*.
    "since when" need a preposition. The feature synset is chosen by head too:
    `Loc` of a place code links to *locative role* (i69757), of a time code to
    *temporal role* (i69760, `Tmp` in `data/features.tsv`). The kinship wordnet
-   has the same kind of exception: there `Gr` and the cousin use of `El`/`Yn`
-   depend on the subdomain (omw-kinship `FEATURES.md`, "What the algebra does
-   not cover").
+   had exceptions of this kind, KinDiv's `Gr` and its cousin ages, and has
+   removed both: a relative age there is compared with the nearest earlier
+   person of the same generation (omw-kinship `FEATURES.md`, "Positions").
 
 ### Order and hypernymy
 
