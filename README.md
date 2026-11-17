@@ -25,7 +25,8 @@ Sources are read from sibling clones: `../NTUMC` (built database), `../tufs`, an
 If `../ProSub` (github.com/matbahasa/ProSub) is there, each table also lists the
 pronouns and demonstratives ProSub suggests for the concept, with whether each
 can refer to the speaker or addressee or serve as an address term (`prosub`).
-ProSub has no licence yet, so these are for review only and are not in the build.
+ProSub is CC BY 4.0, but its words are not checked, so they are for review
+only and are not in the build.
 
 ## The Cygnet site
 
